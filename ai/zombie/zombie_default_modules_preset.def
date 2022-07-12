@@ -1,0 +1,10 @@
+!include("ai_modules.def")
+
+Module(LOGIC_MODULE, "InfectedLogicModule")
+Module(MOVEMENT_MODULE, "ZombieMovementModule")
+Module(ELECTROCUTION_MODULE, "ElectrocutionModule")
+Module(ALARMING_MODULE, "ZombieAlarmingModule")
+Module(ATTRACTOR_MODULE, "ZombieAttractorModule")
+Module(TRACKING_MODULE, "TrackingModule")
+Module(GRAB_FAIL_REACTION_MODULE, "GrabFailReactionModule")
+Module(ESCAPE_MODULE, "EscapeModule")
