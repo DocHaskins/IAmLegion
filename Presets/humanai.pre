@@ -24526,39 +24526,6 @@ sub main()
                 SetField("m_AttachableItem1Probability", "1.0");
         }
 
-        Preset("Volatile_smaller_IAL")
-        {
-                SetField("MeshName", "zombie_man_a.msh");
-                SetField("SkinName", "Default");
-                SetField("m_BroadcastRange", "12.0");
-                SetField("m_CanCutOffHead", "1");
-                SetField("m_CanEscape", "0");
-                SetField("m_CanUseAttractors", "1");
-                SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_ALL);
-                SetField("m_CrippleBonesEnable", "1");
-                SetField("m_CustomDataPreset", "volatile_IAL");
-                SetField("m_CutOffBonesEnable", "1");
-                SetField("m_DamageInfluencesNames", "electric:0.2;fire:0.0;poison:0.0");
-                SetField("m_ForcedBodyScaleMax", "1.2");
-                SetField("m_ForcedBodyScaleMin", "1.0");
-                SetField("m_Gender", "0");
-                SetField("m_GrabEnabled", "1");
-                SetField("m_HarvestingLootType", "Harvesting_Volatile_Body");
-                SetField("m_IsHarvestable", "1");
-                SetField("m_IsNightCreature", "0");
-                SetField("m_KnowledgeBasePreset", "volatile_IAL");
-                SetField("m_MaxLevelDiff", "1");
-                SetField("m_MinLevelDiff", "-5");
-                SetField("m_ModulesPreset", "1");
-                SetField("m_NeverHolsterWeapon", "1");
-                SetField("m_PrimaryWeaponProbability", "0.0");
-                SetField("m_Seed", "0");
-                SetField("m_ShowFlies", "0");
-                SetField("m_SoundPreset", "Volatile");
-                SetField("m_StepPreset", "Volatile");
-                SetField("m_Type", "3");
-        }
-
 		Preset("Volatile_Unturned")
         {
                 SetField("MeshName", "zombie_voleteile.msh");
@@ -24671,7 +24638,7 @@ sub main()
        
 	   Preset("Volatile_Blister")
         {
-                SetField("MeshName", "zombie_man_a.msh");
+                SetField("MeshName", "zombie_voleteile.msh");
                 SetField("SkinName", "Default");
                 SetField("m_AttachableItem1Name", "Zombie_Blister");
                 SetField("m_AttachableItem1Probability", "1.0");
@@ -24697,46 +24664,6 @@ sub main()
                 SetField("m_IsHarvestable", "1");
                 SetField("m_IsNightCreature", "1");
                 SetField("m_KnowledgeBasePreset", "volatile");
-                SetField("m_MaxLevelDiff", "1");
-                SetField("m_MinLevelDiff", "-5");
-                SetField("m_ModulesPreset", "1");
-                SetField("m_NeverHolsterWeapon", "1");
-                SetField("m_PrimaryWeaponProbability", "0.0");
-                SetField("m_Seed", "0");
-                SetField("m_ShowFlies", "0");
-                SetField("m_SoundPreset", "Volatile");
-                SetField("m_StepPreset", "Volatile");
-                SetField("m_Type", "3");
-        }
-		
-			   Preset("Volatile_Blister_IAL")
-        {
-                SetField("MeshName", "zombie_voleteile.msh");
-                SetField("SkinName", "Default");
-                SetField("m_AttachableItem1Name", "Zombie_Blister");
-                SetField("m_AttachableItem1Probability", "1.0");
-                SetField("m_AttachableItem2Name", "Zombie_Blister");
-                SetField("m_AttachableItem2Probability", "1.0");
-                SetField("m_AttachableItem3Name", "Zombie_Blister");
-                SetField("m_AttachableItem3Probability", "1.0");
-                SetField("m_BroadcastRange", "12.0");
-                SetField("m_CanBeBackstabbed", "0");
-                SetField("m_CanCutOffHead", "1");
-                SetField("m_CanEscape", "0");
-                SetField("m_CanUseAttractors", "1");
-                SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_ALL);
-                SetField("m_CrippleBonesEnable", "1");
-                SetField("m_CustomDataPreset", "volatile_IAL");
-                SetField("m_CutOffBonesEnable", "1");
-                SetField("m_DamageInfluencesNames", "electric:0.2;fire:0.0;poison:0.0");
-                SetField("m_ForcedBodyScaleMax", "1.2");
-                SetField("m_ForcedBodyScaleMin", "1.05");
-                SetField("m_Gender", "0");
-                SetField("m_GrabEnabled", "1");
-                SetField("m_HarvestingLootType", "Harvesting_Volatile_Body");
-                SetField("m_IsHarvestable", "1");
-                SetField("m_IsNightCreature", "0");
-                SetField("m_KnowledgeBasePreset", "volatile_IAL");
                 SetField("m_MaxLevelDiff", "1");
                 SetField("m_MinLevelDiff", "-5");
                 SetField("m_ModulesPreset", "1");

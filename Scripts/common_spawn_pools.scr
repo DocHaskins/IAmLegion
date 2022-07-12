@@ -74,7 +74,6 @@
         Type("peak_IAL;special_IAL")
         Preset("Vessel_Init, 20;Vessel_Lurker, 5;Vessel_DeadBody, 5;")//35
         Preset("Human_To_Infected_In_Attractor, 10")//10
-		Preset("Day_Walker, 10;Volatile_Day_IAL, 15;")//35
 		Preset("Goon, 15;")//15
 		Preset("Vessel_GasTank, 15;")//15
 		Preset("Toad_Medium, 30;")//30

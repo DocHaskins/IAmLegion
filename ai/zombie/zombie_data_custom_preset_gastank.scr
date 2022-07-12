@@ -49,6 +49,7 @@ AddAdditionalInfo(HUMAN_AI_ADDITIONAL_INFO_IS_GAS_TANK)
 //ParamFloat("explode_physical_damage", 2.0)
 ParamFloat("melee_range", 1.8) //converted
 ParamFloat("melee_range_vs_ai", 1.8)
+ParamBool("can_give_camouflage", 0)
 ParamFloat("grab_counterattack_prob", 0.0)
 ParamFloat("explode_range", 8.0)
 ParamBool("can_react_on_blast", 1)

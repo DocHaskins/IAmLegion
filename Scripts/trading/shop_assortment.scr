@@ -3,7 +3,8 @@ import "assortment_sets.scr"
 sub main() 
 {
 	// SLUMS /////////////////////////////////////////////////////////////////////////////////////////////////////////
-	
+
+
 	Assortment("Shop_Slums_Brecken_Floor")								//QUATERMASTER
     {
         Buy()
@@ -13,6 +14,10 @@ sub main()
 			use Quartermaster_UVFlashlight();
 			use Quartermaster_Shield();
 			
+			use Quartermaster_ArrowsBlueprint();
+			use Quartermaster_Arrows();
+			use Quartermaster_Bow();
+			
 			//ITEMS SET, 							COLOR SET, 			MIN,	MAX
             //--------------- STATUS LEVEL 1 -------------------------------------------
 			Set("Quatermaster_Level_1_other",       "whites_only",      1, 2)
@@ -31,19 +36,25 @@ sub main()
                 MinStatusLevel(0);
 				Limited();
             }
-            Set("Quatermaster_Level_2_crafting",    "whites_greens",      2, 4)
+            Set("Quatermaster_Level_2_crafting",    "whites_greens",	2, 4)
             {
                 MinStatusLevel(2);
                 MaxStatusLevel(4);
                 Limited();
             }
-            Set("Quatermaster_Level_3_crafting",    "whites_greens",      4, 6)
+            Set("Quatermaster_Level_3_crafting",    "whites_greens",	4, 6)
             {
                 MinStatusLevel(5);
                 Limited();
             }
-        }
+            Set("Quatermaster_Silencer",    		"blue_only",		2)
+            {
+                MinStatusLevel(12);
+                Limited();
+            }
+		}	
 	}
+
 	Assortment("Shop_Slums_Spike")								//QUATERMASTER
     {
         Buy()
@@ -52,6 +63,10 @@ sub main()
 			use Quartermaster_GrapplingHook();
 			use Quartermaster_UVFlashlight();
 			use Quartermaster_Shield();
+			
+			use Quartermaster_ArrowsBlueprint();
+			use Quartermaster_Arrows();
+			use Quartermaster_Bow();
 			
 			//ITEMS SET, 							COLOR SET, 			MIN,	MAX
             //--------------- STATUS LEVEL 1 -------------------------------------------
@@ -80,6 +95,18 @@ sub main()
             Set("Quatermaster_Level_3_crafting",    "whites_greens",      4, 6)
             {
                 MinStatusLevel(5);
+                Limited();
+            }
+
+            Set("Quartermaster_Bow",    			"blue_only",			1, 1)
+            {
+                MinStatusLevel(25);
+                Limited();
+            }
+
+            Set("Quatermaster_Silencer",    		"blue_only",		2)
+            {
+                MinStatusLevel(12);
                 Limited();
             }
         }
@@ -94,11 +121,16 @@ sub main()
 			use Firearms();
 			use Ammo();
             use Throwable_Weapons();
-            use Healing_Items();
-            use Miscellaneous();
+            //use Healing_Items();
+            //use Miscellaneous();
             use Crafting_Materials();
 			use Universal_Blueprints();	
 			use ElementalBoost_Blueprints();	
+			
+			use ArrowsBlueprintElementals();
+			use ArrowsBlueprint();
+			use Arrows();
+			use Bow();
         }
 		Sell()
 		{
@@ -112,15 +144,20 @@ sub main()
         Buy()
         {
 			use Weapons();
-			//use Weapons2H();
-			//use Firearms();
-			//use Ammo();
-            //use Throwable_Weapons();
+			use Weapons2H();
+			use Firearms();
+			use Ammo();
+            use Throwable_Weapons();
             //use Healing_Items();
             //use Miscellaneous();
             use Crafting_Materials();
-			//use Universal_Blueprints();
-			//use ElementalBoost_Blueprints();			
+			use Universal_Blueprints();
+			use ElementalBoost_Blueprints();		
+			
+			use ArrowsBlueprintElementals();
+			use ArrowsBlueprint();
+			use Arrows();
+			use Bow();		
 		}
 		Sell()
 		{
@@ -133,15 +170,20 @@ sub main()
         Buy()
         {
 			use Weapons();
-			//use Weapons2H();
-			//use Firearms();
-			//use Ammo();
-            //use Throwable_Weapons();
+			use Weapons2H();
+			use Firearms();
+			use Ammo();
+            use Throwable_Weapons();
             //use Healing_Items();
             //use Miscellaneous();
-            //use Crafting_Materials();
-			//use Universal_Blueprints();
-			use ElementalBoost_Blueprints();			
+            use Crafting_Materials();
+			use Universal_Blueprints();
+			use ElementalBoost_Blueprints();				
+
+			use ArrowsBlueprintElementals();
+			use ArrowsBlueprint();
+			use Arrows();
+			use Bow();	
         }
 		Sell()
 		{
@@ -155,14 +197,19 @@ sub main()
         {
 			use Weapons();
 			use Weapons2H();
-            //use Throwable_Weapons();
-			//use Firearms();
-			//use Ammo();
+            use Throwable_Weapons();
+			use Firearms();
+			use Ammo();
             //use Healing_Items();
             //use Miscellaneous();
-            //use Crafting_Materials();	
+            use Crafting_Materials();	
 			use Universal_Blueprints();	
-			use ElementalBoost_Blueprints();					
+			use ElementalBoost_Blueprints();		
+
+			use ArrowsBlueprintElementals();
+			use ArrowsBlueprint();
+			use Arrows();
+			use Bow();			
         }
 		Sell()
 		{
@@ -175,15 +222,20 @@ sub main()
         Buy()
         {
 			use Weapons();
-			//use Weapons2H();
-            //use Throwable_Weapons();
-			//use Firearms();
-			//use Ammo();
-            use Healing_Items();
-            use Miscellaneous();
-            //use Crafting_Materials();
-			//use Universal_Blueprints();	
-			//use ElementalBoost_Blueprints();					
+			use Weapons2H();
+            use Throwable_Weapons();
+			use Firearms();
+			use Ammo();
+            //use Healing_Items();
+            //use Miscellaneous();
+            use Crafting_Materials();
+			use Universal_Blueprints();	
+			use ElementalBoost_Blueprints();
+
+			use ArrowsBlueprintElementals();
+			use ArrowsBlueprint();
+			use Arrows();
+			use Bow();			
         }
 		Sell()
 		{
@@ -197,14 +249,19 @@ sub main()
         {
 			use Weapons();
 			use Weapons2H();
-			//use Firearms();
-			//use Ammo();
+			use Firearms();
+			use Ammo();
             use Throwable_Weapons();
             //use Healing_Items();
             //use Miscellaneous();
-            //use Crafting_Materials();
+            use Crafting_Materials();
 			use Universal_Blueprints();	
-			use ElementalBoost_Blueprints();					
+			use ElementalBoost_Blueprints();	
+
+			use ArrowsBlueprintElementals();
+			use ArrowsBlueprint();
+			use Arrows();
+			use Bow();			
         }
 		Sell()
 		{
@@ -218,14 +275,19 @@ sub main()
         {
 			use Weapons();
 			use Weapons2H();
-			//use Firearms();
+			use Firearms();
 			use Ammo();
-            //use Throwable_Weapons();
+            use Throwable_Weapons();
             //use Healing_Items();
             //use Miscellaneous();
-            //use Crafting_Materials();
+            use Crafting_Materials();
 			use Universal_Blueprints();	
-			//use ElementalBoost_Blueprints();					
+			use ElementalBoost_Blueprints();	
+
+			use ArrowsBlueprintElementals();
+			use ArrowsBlueprint();
+			use Arrows();
+			use Bow();			
         }
 		Sell()
 		{
@@ -239,14 +301,19 @@ sub main()
         {
 			use Weapons();
 			use Weapons2H();
-			//use Firearms();
-			//use Ammo();
-            //use Throwable_Weapons();
+			use Firearms();
+			use Ammo();
+            use Throwable_Weapons();
             //use Healing_Items();
             //use Miscellaneous();
-            //use Crafting_Materials();
+            use Crafting_Materials();
 			use Universal_Blueprints();	
-			use ElementalBoost_Blueprints();					
+			use ElementalBoost_Blueprints();	
+
+			use ArrowsBlueprintElementals();
+			use ArrowsBlueprint();
+			use Arrows();
+			use Bow();			
         }
 		Sell()
 		{
@@ -259,15 +326,20 @@ sub main()
         Buy()
         {
 			use Weapons();
-			//use Weapons2H();
-			//use Firearms();
+			use Weapons2H();
+			use Firearms();
 			use Ammo();
-            //use Throwable_Weapons();
-            use Healing_Items();
-            use Miscellaneous();
+            use Throwable_Weapons();
+            //use Healing_Items();
+            //use Miscellaneous();
             use Crafting_Materials();
 			use Universal_Blueprints();	
-			use ElementalBoost_Blueprints();					
+			use ElementalBoost_Blueprints();
+
+			use ArrowsBlueprintElementals();
+			use ArrowsBlueprint();
+			use Arrows();
+			use Bow();			
         }
 		Sell()
 		{
@@ -281,14 +353,19 @@ sub main()
         {
 			use Weapons();
 			use Weapons2H();
-			//use Firearms();
-			//use Ammo();
-            //use Throwable_Weapons();
+			use Firearms();
+			use Ammo();
+            use Throwable_Weapons();
             //use Healing_Items();
             //use Miscellaneous();
             use Crafting_Materials();
-			//use Universal_Blueprints();	
-			use ElementalBoost_Blueprints();					
+			use Universal_Blueprints();	
+			use ElementalBoost_Blueprints();	
+
+			use ArrowsBlueprintElementals();
+			use ArrowsBlueprint();
+			use Arrows();
+			use Bow();			
         }
 		Sell()
 		{
@@ -302,14 +379,19 @@ sub main()
         {
 			use Weapons();
 			use Weapons2H();
-			//use Firearms();
-			//use Ammo();
+			use Firearms();
+			use Ammo();
             use Throwable_Weapons();
             //use Healing_Items();
             //use Miscellaneous();
             use Crafting_Materials();
 			use Universal_Blueprints();	
-			//use ElementalBoost_Blueprints();					
+			use ElementalBoost_Blueprints();	
+
+			use ArrowsBlueprintElementals();
+			use ArrowsBlueprint();
+			use Arrows();
+			use Bow();			
         }
 		Sell()
 		{
@@ -328,11 +410,16 @@ sub main()
 			use Firearms();
 			use Ammo();
             use Throwable_Weapons();
-            use Healing_Items();
-            use Miscellaneous();
+            //use Healing_Items();
+            //use Miscellaneous();
             use Crafting_Materials();
 			use Universal_Blueprints();
-			use ElementalBoost_Blueprints();			
+			use ElementalBoost_Blueprints();
+
+			use ArrowsBlueprintElementals();
+			use ArrowsBlueprint();
+			use Arrows();
+			use Bow();			
         }
 		Sell()
 		{
@@ -346,14 +433,19 @@ sub main()
         {
 			use Weapons();
 			use Weapons2H();
-			//use Firearms();
+			use Firearms();
 			use Ammo();
-            //use Throwable_Weapons();
+            use Throwable_Weapons();
             //use Healing_Items();
             //use Miscellaneous();
             use Crafting_Materials();
 			use Universal_Blueprints();
-			use ElementalBoost_Blueprints();			
+			use ElementalBoost_Blueprints();	
+
+			use ArrowsBlueprintElementals();
+			use ArrowsBlueprint();
+			use Arrows();
+			use Bow();			
         }
 		Sell()
 		{
@@ -369,12 +461,17 @@ sub main()
 			use Weapons2H();
 			use Firearms();
 			use Ammo();
-            //use Throwable_Weapons();
+            use Throwable_Weapons();
             //use Healing_Items();
-            use Miscellaneous();
+            //use Miscellaneous();
             use Crafting_Materials();
 			use Universal_Blueprints();
-			use ElementalBoost_Blueprints();			
+			use ElementalBoost_Blueprints();	
+
+			use ArrowsBlueprintElementals();
+			use ArrowsBlueprint();
+			use Arrows();
+			use Bow();			
         }
 		Sell()
 		{
@@ -387,15 +484,20 @@ sub main()
         Buy()
         {
 			use Weapons();
-			//use Weapons2H();
+			use Weapons2H();
 			use Firearms();
 			use Ammo();
-            //use Throwable_Weapons();
-            use Healing_Items();
-            use Miscellaneous();
+            use Throwable_Weapons();
+            //use Healing_Items();
+            //use Miscellaneous();
             use Crafting_Materials();
 			use Universal_Blueprints();
-			use ElementalBoost_Blueprints();			
+			use ElementalBoost_Blueprints();	
+
+			use ArrowsBlueprintElementals();
+			use ArrowsBlueprint();
+			use Arrows();
+			use Bow();			
         }
 		Sell()
 		{
@@ -409,14 +511,19 @@ sub main()
         {
 			use Weapons();
 			use Weapons2H();
-			//use Firearms();
-			//use Ammo();
-            //use Throwable_Weapons();
+			use Firearms();
+			use Ammo();
+            use Throwable_Weapons();
             //use Healing_Items();
             //use Miscellaneous();
-            //use Crafting_Materials();
+            use Crafting_Materials();
 			use Universal_Blueprints();	
-			use ElementalBoost_Blueprints();			
+			use ElementalBoost_Blueprints();
+
+			use ArrowsBlueprintElementals();
+			use ArrowsBlueprint();
+			use Arrows();
+			use Bow();			
         }
 		Sell()
 		{
@@ -428,16 +535,21 @@ sub main()
     {
         Buy()
         {
-			//use Weapons();
-			//use Weapons2H();
-			//use Firearms();
-			//use Ammo();
-            //use Throwable_Weapons();
-            use Healing_Items();
-            use Miscellaneous();
+			use Weapons();
+			use Weapons2H();
+			use Firearms();
+			use Ammo();
+            use Throwable_Weapons();
+            //use Healing_Items();
+            //use Miscellaneous();
             use Crafting_Materials();
 			use Universal_Blueprints();
-			use ElementalBoost_Blueprints();			
+			use ElementalBoost_Blueprints();	
+
+			use ArrowsBlueprintElementals();
+			use ArrowsBlueprint();
+			use Arrows();
+			use Bow();			
         }
 		Sell()
 		{
@@ -450,15 +562,20 @@ sub main()
         Buy()
         {
 			use Weapons();
-			//use Weapons2H();
-			//use Firearms();
-			//use Ammo();
+			use Weapons2H();
+			use Firearms();
+			use Ammo();
             use Throwable_Weapons();
             //use Healing_Items();
             //use Miscellaneous();
-            //use Crafting_Materials();
-			//use Universal_Blueprints();
-			use ElementalBoost_Blueprints();			
+            use Crafting_Materials();
+			use Universal_Blueprints();
+			use ElementalBoost_Blueprints();	
+
+			use ArrowsBlueprintElementals();
+			use ArrowsBlueprint();
+			use Arrows();
+			use Bow();			
         }
 		Sell()
 		{
@@ -472,14 +589,19 @@ sub main()
         {
 			use Weapons();
 			use Weapons2H();
-			//use Firearms();
+			use Firearms();
 			use Ammo();
             use Throwable_Weapons();
-            use Healing_Items();
+            //use Healing_Items();
             //use Miscellaneous();
             use Crafting_Materials();
 			use Universal_Blueprints();
-			use ElementalBoost_Blueprints();			
+			use ElementalBoost_Blueprints();	
+
+			use ArrowsBlueprintElementals();
+			use ArrowsBlueprint();
+			use Arrows();
+			use Bow();			
         }
 		Sell()
 		{
@@ -493,14 +615,19 @@ sub main()
         {
 			use Weapons();
 			use Weapons2H();
-			//use Firearms();
-			//use Ammo();
+			use Firearms();
+			use Ammo();
             use Throwable_Weapons();
             //use Healing_Items();
             //use Miscellaneous();
             use Crafting_Materials();
 			use Universal_Blueprints();
-			use ElementalBoost_Blueprints();			
+			use ElementalBoost_Blueprints();	
+
+			use ArrowsBlueprintElementals();
+			use ArrowsBlueprint();
+			use Arrows();
+			use Bow();			
         }
 		Sell()
 		{
@@ -512,8 +639,8 @@ sub main()
     {
         Buy()
         {
-			//use Weapons();
-			//use Weapons2H();
+			use Weapons();
+			use Weapons2H();
 			use Firearms();
 			use Ammo();
             use Throwable_Weapons();
@@ -521,7 +648,12 @@ sub main()
             //use Miscellaneous();
             use Crafting_Materials();
 			use Universal_Blueprints();
-			use ElementalBoost_Blueprints();			
+			use ElementalBoost_Blueprints();	
+
+			use ArrowsBlueprintElementals();
+			use ArrowsBlueprint();
+			use Arrows();
+			use Bow();			
         }
 		Sell()
 		{
@@ -533,16 +665,21 @@ sub main()
     {
         Buy()
         {
-			//use Weapons();
+			use Weapons();
 			use Weapons2H();
 			use Firearms();
 			use Ammo();
-            //use Throwable_Weapons();
+            use Throwable_Weapons();
             //use Healing_Items();
             //use Miscellaneous();
-            //use Crafting_Materials();
+            use Crafting_Materials();
 			use Universal_Blueprints();
-			use ElementalBoost_Blueprints();			
+			use ElementalBoost_Blueprints();	
+
+			use ArrowsBlueprintElementals();
+			use ArrowsBlueprint();
+			use Arrows();
+			use Bow();			
         }
 		Sell()
 		{
@@ -556,14 +693,19 @@ sub main()
         {
 			use Weapons();
 			use Weapons2H();
-			//use Firearms();
-			//use Ammo();
+			use Firearms();
+			use Ammo();
             use Throwable_Weapons();
             //use Healing_Items();
             //use Miscellaneous();
             use Crafting_Materials();
 			use Universal_Blueprints();
-			use ElementalBoost_Blueprints();			
+			use ElementalBoost_Blueprints();	
+
+			use ArrowsBlueprintElementals();
+			use ArrowsBlueprint();
+			use Arrows();
+			use Bow();			
         }
 		Sell()
 		{
@@ -576,15 +718,20 @@ sub main()
         Buy()
         {
 			use Weapons();
-			//use Weapons2H();
-			//use Firearms();
-			//use Ammo();
+			use Weapons2H();
+			use Firearms();
+			use Ammo();
             use Throwable_Weapons();
-            use Healing_Items();
-            use Miscellaneous();
-            //use Crafting_Materials();
-			//use Universal_Blueprints();
-			//use ElementalBoost_Blueprints();			
+            //use Healing_Items();
+            //use Miscellaneous();
+            use Crafting_Materials();
+			use Universal_Blueprints();
+			use ElementalBoost_Blueprints();	
+
+			use ArrowsBlueprintElementals();
+			use ArrowsBlueprint();
+			use Arrows();
+			use Bow();			
         }
 		Sell()
 		{
@@ -596,16 +743,21 @@ sub main()
     {
         Buy()
         {
-			//use Weapons();
+			use Weapons();
 			use Weapons2H();
-			//use Firearms();
-			//use Ammo();
-            //use Throwable_Weapons();
+			use Firearms();
+			use Ammo();
+            use Throwable_Weapons();
             //use Healing_Items();
             //use Miscellaneous();
-            //use Crafting_Materials();
-			//use Universal_Blueprints();
-			//use ElementalBoost_Blueprints();			
+            use Crafting_Materials();
+			use Universal_Blueprints();
+			use ElementalBoost_Blueprints();	
+
+			use ArrowsBlueprintElementals();
+			use ArrowsBlueprint();
+			use Arrows();
+			use Bow();			
         }
 		Sell()
 		{
@@ -618,15 +770,20 @@ sub main()
         Buy()
         {
 			use Weapons();
-			//use Weapons2H();
-			//use Firearms();
+			use Weapons2H();
+			use Firearms();
 			use Ammo();
             use Throwable_Weapons();
             //use Healing_Items();
             //use Miscellaneous();
-            //use Crafting_Materials();
-			//use Universal_Blueprints();
-			//use ElementalBoost_Blueprints();			
+            use Crafting_Materials();
+			use Universal_Blueprints();
+			use ElementalBoost_Blueprints();	
+
+			use ArrowsBlueprintElementals();
+			use ArrowsBlueprint();
+			use Arrows();
+			use Bow();			
         }
 		Sell()
 		{
@@ -643,8 +800,13 @@ sub main()
 			use Encounter_Shop_Weapons();
 			use Weapons2H();
 			use Firearms();
-			//use Ammo();
+			use Ammo();
 			use Crafting_Materials_Encounter_Shop();
+			
+			use ArrowsBlueprintElementals();
+			use ArrowsBlueprint();
+			use Arrows();
+			use Bow();
 		}
 		Sell()
 		{
@@ -652,6 +814,272 @@ sub main()
 		}
     } 
 
+	/// COUNTRYSIDE SHOPS /////////////////////////////////////////////////
+	
+	Assortment("Shop_Wasteland_Jasir")									//COUNTRYSIDE, Jasir's Settlement
+    {
+        Buy()
+        {
+			use Weapons_Wasteland();
+			use AmmoFollowing();
+            use Throwable_Weapons();
+            use Healing_Items();
+            use Crafting_Materials();	
+			use SafeZone_Components();
+			use Highway_Screws();
+			use Quatermaster_Bolts_Rep3();
+			use Quatermaster_Bolts_Rep4();
+			use ItemoftheDay_Following();
+			
+			use ArrowsBlueprintElementals();
+			use ArrowsBlueprint();
+			use Arrows();
+			use Bow();
+		}
+		Sell()
+		{
+			use SalesPromotion_Wasteland();
+		}
+    }
+	
+	Assortment("Shop_Wasteland_Highway_Start")									//COUNTRYSIDE, Highway Man
+    {
+        Buy()
+        {
+			//use Weapons();
+			//use Weapons2H();
+			//use FirearmsFollowing();
+			//use AmmoFollowing();
+            //use Throwable_Weapons();
+            //use Healing_Items();
+            //use Miscellaneous();
+            //use Universal_Blueprints();
+			//use ElementalBoost_Blueprints();			
+			//use Quatermaster_Components();
+			use Highway_PartsFirst();
+			//use Highway_Fuel();
+			use Highway_Components();
+			use Highway_Screws();
+		}		
+		
+		Sell()
+		{
+			use SalesPromotion_Highway();
+		}
+    }
+	
+	Assortment("Shop_Wasteland_Highway_Trust2")									//COUNTRYSIDE, Highway Man
+    {
+        Buy()
+        {
+			//use Weapons();
+			//use Weapons2H();
+			//use Firearms();
+			//use AmmoFollowing();
+            //use Throwable_Weapons();
+            //use Healing_Items();
+            //use Miscellaneous();
+            //use Universal_Blueprints();
+			//use ElementalBoost_Blueprints();			
+			//use Quatermaster_Components();
+			use Highway_Parts_Trust2();
+			//use Highway_Fuel();
+			use Highway_Components();
+			use Highway_Screws();
+			use ItemOftheDay_Highway();
+		}		
+		
+		Sell()
+		{
+			use SalesPromotion_Highway();
+		}
+    }
+	
+	Assortment("Shop_Wasteland_Highway_Trust3")									//COUNTRYSIDE, Highway Man
+    {
+        Buy()
+        {
+			//use Weapons();
+			//use Weapons2H();
+			//use Firearms();
+			//use AmmoFollowing();
+            //use Throwable_Weapons();
+            //use Healing_Items();
+            //use Miscellaneous();
+            //use Universal_Blueprints();
+			//use ElementalBoost_Blueprints();			
+			//use Quatermaster_Components();
+			use Highway_Parts_Trust3();
+			//use Highway_Fuel();
+			use Highway_Components();
+			use Highway_Screws();
+			use ItemOftheDay_Highway();
+		}		
+		
+		Sell()
+		{
+			use SalesPromotion_Highway();
+		}
+    }
+	
+	Assortment("Shop_Wasteland_Highway_Trust4")									//COUNTRYSIDE, Highway Man
+    {
+        Buy()
+        {
+			//use Weapons();
+			//use Weapons2H();
+			//use Firearms();
+			//use AmmoFollowing();
+            //use Throwable_Weapons();
+            //use Healing_Items();
+            //use Miscellaneous();
+            //use Universal_Blueprints();
+			//use ElementalBoost_Blueprints();			
+			//use Quatermaster_Components();
+			use Highway_Parts_Trust4();
+			//use Highway_Fuel();
+			use Highway_Components();
+			use Highway_Screws();
+			use ItemOftheDay_Highway();
+		}		
+		
+		Sell()
+		{
+			use SalesPromotion_Highway();
+		}
+    }
+	Assortment("Shop_Wasteland_Highway_Trust5")									//COUNTRYSIDE, Highway Man
+    {
+        Buy()
+        {
+			//use Weapons();
+			//use Weapons2H();
+			//use Firearms();
+			//use AmmoFollowing();
+            //use Throwable_Weapons();
+            //use Healing_Items();
+            //use Miscellaneous();
+            //use Universal_Blueprints();
+			//use ElementalBoost_Blueprints();			
+			//use Quatermaster_Components();
+			use Highway_Parts_Trust5();
+			//use Highway_Fuel();
+			use Highway_Components();
+			use Highway_Screws();
+			use ItemOftheDay_Highway();
+		}		
+		
+		Sell()
+		{
+			use SalesPromotion_Highway();
+		}
+    }
+
+	Assortment("Shop_Wasteland_Kaan")									//COUNTRYSIDE, Kaan's Camper
+    {
+        Buy()
+        {
+			use Weapons_Wasteland();
+			use Weapons2H_Wasteland();
+			use FirearmsFollowing();
+			use AmmoFollowing();
+            use Throwable_Weapons();
+            //use Healing_Items();
+            //use Miscellaneous();
+            //use Crafting_Materials();
+			//use Universal_Blueprints();
+			//use ElementalBoost_Blueprints();			
+		}
+		Sell()
+		{
+			use SalesPromotion_Wasteland();
+		}
+    }
+	
+	Assortment("Shop_Wasteland_Farm")									//COUNTRYSIDE, All Farm Settlement
+    {
+        Buy()
+        {
+			use Weapons_Wasteland();
+			use AmmoFollowing();
+            use Throwable_Weapons();
+            use Healing_Items();
+            //use Crafting_Materials();
+            use Crafting_Materials_Following();				
+			use SafeZone_Components();
+			use Highway_Screws();
+			use Quatermaster_Bolts_Rep3();
+			use Quatermaster_Bolts_Rep4();
+			use ItemoftheDay_Following();
+			
+			use ArrowsBlueprintElementals();
+			use ArrowsBlueprint();
+			use Arrows();
+			use Bow();
+		}
+		Sell()
+		{
+			use SalesPromotion_Wasteland();
+		}
+    }
+	
+	Assortment("Shop_Wasteland_SafeZone")									//COUNTRYSIDE, All "in the wild" Safe Zones 
+    {
+        Buy()
+        {
+			use Weapons_Wasteland();
+			use Weapons2H_Wasteland();
+			use FirearmsFollowing();
+			use AmmoFollowing();
+            use Throwable_Weapons();
+            use Healing_Items();
+            use Crafting_Materials_Following();		
+			use SafeZone_Components();
+			use Highway_Screws();
+			use Quatermaster_Bolts_Rep3();
+			use Quatermaster_Bolts_Rep4();
+			use ItemoftheDay_Following();
+			
+			use ArrowsBlueprintElementals();
+			use ArrowsBlueprint();
+			use Arrows();
+			use Bow();
+		}
+		Sell()
+		{
+			use SalesPromotion_Wasteland();
+		}
+    }
+	
+	Assortment("Shop_Wasteland_Encounter")									//COUNTRYSIDE, All "in the wild" Safe Zones 
+    {
+        Buy()
+        {
+			use Weapons_Wasteland_EncounterPromo();
+			use Weapons_Wasteland_Encounter();
+			use Weapons2H_Wasteland();
+			use FirearmsFollowing_Encounter();
+			use AmmoFollowing_Encounter();
+            use Throwable_Weapons();
+            use Healing_Items();
+            use Crafting_Materials_Following();		
+			use SafeZone_Components();
+			use Highway_Screws();
+			use Quatermaster_Bolts_Rep3();
+			use Quatermaster_Bolts_Rep4();
+			use ItemoftheDay_Following();
+			
+			use ArrowsBlueprintElementals();
+			use ArrowsBlueprint();
+			use Arrows();
+			use Bow();
+		}
+		Sell()
+		{
+			use SalesPromotion_Wasteland();
+		}
+    }
+	
     /// CHALLENGE SHOP /////////////////////////////////////////////////////////////////////////////////////////////////////////
 
     Assortment("Shop_Challenge_UltimateWeapon")                         //SLUMS, encounter shop, it spawns in random spots placed on map by LD
@@ -661,4 +1089,231 @@ sub main()
             use Encounter_Shop_Weapons();
         }
     } 
-}
+	
+    /// THE FOLLOWING
+	
+	Assortment("Shop_Countryside_Bilal")								//QUATERMASTER
+    {
+        Buy()
+        {
+            use QuartermasterWeapons();
+			use Quartermaster_GrapplingHook();
+			use Quartermaster_UVFlashlight();
+			use Quartermaster_Shield();
+			
+			use Quatermaster_Components();
+			use Quatermaster_Screws();
+			use Quatermaster_Parts();
+			use Quatermaster_Mines();
+			
+			use Quartermaster_ArrowsBlueprint();
+			use Quartermaster_Arrows();
+			use Quartermaster_Bow();
+			
+			//ITEMS SET, 							COLOR SET, 			MIN,	MAX
+            //--------------- STATUS LEVEL 1 -------------------------------------------
+			Set("Quatermaster_Level_1_other",       "whites_only",      1, 2)
+            {
+                MinStatusLevel(0);
+				Limited();
+            }
+            Set("Quatermaster_Level_1_crafting",    "whites_only",      1)
+            {
+                MinStatusLevel(0);
+                MaxStatusLevel(1);
+                Limited();
+            }
+            Set("Quatermaster_Level_1_healing",     "whites_only",      2)
+            {
+                MinStatusLevel(0);
+				Limited();
+            }
+            Set("Quatermaster_Level_2_crafting",    "whites_greens",      2, 4)
+            {
+                MinStatusLevel(2);
+                MaxStatusLevel(4);
+                Limited();
+            }
+            Set("Quatermaster_Level_3_crafting",    "whites_greens",      4, 6)
+            {
+                MinStatusLevel(5);
+                Limited();
+            }
+            Set("Quatermaster_Silencer",    		"blue_only",		2)
+            {
+                MinStatusLevel(12);
+                Limited();
+            }
+        }
+	}
+	Assortment("Shop_Countryside_Bilal_Rep3")								//QUATERMASTER
+    {
+        Buy()
+        {
+            use QuartermasterWeapons();
+			use Quartermaster_GrapplingHook();
+			use Quartermaster_UVFlashlight();
+			use Quartermaster_Shield();
+			
+			use Quatermaster_Components();
+			use Quatermaster_Screws_Rep3();
+			use Quatermaster_Parts_Rep3();
+			use Quatermaster_Mines();
+			
+			use Quatermaster_Bolts_Rep3();
+			
+			use Quartermaster_ArrowsBlueprint();
+			use Quartermaster_Arrows();
+			use Quartermaster_Bow();
+			
+			//ITEMS SET, 							COLOR SET, 			MIN,	MAX
+            //--------------- STATUS LEVEL 1 -------------------------------------------
+			Set("Quatermaster_Level_1_other",       "whites_only",      1, 2)
+            {
+                MinStatusLevel(0);
+				Limited();
+            }
+            Set("Quatermaster_Level_1_crafting",    "whites_only",      1)
+            {
+                MinStatusLevel(0);
+                MaxStatusLevel(1);
+                Limited();
+            }
+            Set("Quatermaster_Level_1_healing",     "whites_only",      2)
+            {
+                MinStatusLevel(0);
+				Limited();
+            }
+            Set("Quatermaster_Level_2_crafting",    "whites_greens",      2, 4)
+            {
+                MinStatusLevel(2);
+                MaxStatusLevel(4);
+                Limited();
+            }
+            Set("Quatermaster_Level_3_crafting",    "whites_greens",      4, 6)
+            {
+                MinStatusLevel(5);
+                Limited();
+            }
+            Set("Quatermaster_Silencer",    		"blue_only",		2)
+            {
+                MinStatusLevel(12);
+                Limited();
+            }
+        }
+	}
+	Assortment("Shop_Countryside_Bilal_Rep4")								//QUATERMASTER
+    {
+        Buy()
+        {
+            use QuartermasterWeapons();
+			use Quartermaster_GrapplingHook();
+			use Quartermaster_UVFlashlight();
+			use Quartermaster_Shield();
+			
+			use Quatermaster_Components();
+			use Quatermaster_Screws_Rep4();
+			use Quatermaster_Parts_Rep4();
+			use Quatermaster_Mines();
+			
+			use Quatermaster_Bolts_Rep3();
+			use Quatermaster_Bolts_Rep4();
+			
+			use Quartermaster_ArrowsBlueprint();
+			use Quartermaster_Arrows();
+			use Quartermaster_Bow();
+			
+			//ITEMS SET, 							COLOR SET, 			MIN,	MAX
+            //--------------- STATUS LEVEL 1 -------------------------------------------
+			Set("Quatermaster_Level_1_other",       "whites_only",      1, 2)
+            {
+                MinStatusLevel(0);
+				Limited();
+            }
+            Set("Quatermaster_Level_1_crafting",    "whites_only",      1)
+            {
+                MinStatusLevel(0);
+                MaxStatusLevel(1);
+                Limited();
+            }
+            Set("Quatermaster_Level_1_healing",     "whites_only",      2)
+            {
+                MinStatusLevel(0);
+				Limited();
+            }
+            Set("Quatermaster_Level_2_crafting",    "whites_greens",      2, 4)
+            {
+                MinStatusLevel(2);
+                MaxStatusLevel(4);
+                Limited();
+            }
+            Set("Quatermaster_Level_3_crafting",    "whites_greens",      4, 6)
+            {
+                MinStatusLevel(5);
+                Limited();
+            }
+            Set("Quatermaster_Silencer",    		"blue_only",		2)
+            {
+                MinStatusLevel(12);
+                Limited();
+            }
+        }
+	}
+	Assortment("Shop_Countryside_Bilal_Rep5")								//QUATERMASTER
+    {
+        Buy()
+        {
+            use QuartermasterWeapons();
+			use Quartermaster_GrapplingHook();
+			use Quartermaster_UVFlashlight();
+			use Quartermaster_Shield();
+			
+			use Quatermaster_Components();
+			use Quatermaster_Screws_Rep5();
+			use Quatermaster_Parts_Rep4();
+			use Quatermaster_Mines();
+			
+			use Quatermaster_Bolts_Rep3();
+			use Quatermaster_Bolts_Rep4();
+			
+			use Quartermaster_ArrowsBlueprint();
+			use Quartermaster_Arrows();
+			use Quartermaster_Bow();
+			
+			//ITEMS SET, 							COLOR SET, 			MIN,	MAX
+            //--------------- STATUS LEVEL 1 -------------------------------------------
+			Set("Quatermaster_Level_1_other",       "whites_only",      1, 2)
+            {
+                MinStatusLevel(0);
+				Limited();
+            }
+            Set("Quatermaster_Level_1_crafting",    "whites_only",      1)
+            {
+                MinStatusLevel(0);
+                MaxStatusLevel(1);
+                Limited();
+            }
+            Set("Quatermaster_Level_1_healing",     "whites_only",      2)
+            {
+                MinStatusLevel(0);
+				Limited();
+            }
+            Set("Quatermaster_Level_2_crafting",    "whites_greens",      2, 4)
+            {
+                MinStatusLevel(2);
+                MaxStatusLevel(4);
+                Limited();
+            }
+            Set("Quatermaster_Level_3_crafting",    "whites_greens",      4, 6)
+            {
+                MinStatusLevel(5);
+                Limited();
+            }
+            Set("Quatermaster_Silencer",    		"blue_only",		2)
+            {
+                MinStatusLevel(12);
+                Limited();
+            }
+        }
+	}
+}	

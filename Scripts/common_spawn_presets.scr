@@ -135,35 +135,6 @@
         ForceTargetType(-1)
         CanSpawnInAttractor(1)
     }
-	
-    //PresetDef("Skeleton") 
-    //{
-        //Difficult(7)
-		//DisallowedMaps("old_town_outposts_museum")
-		//DisallowedMaps("old_town_outposts_radio")
-		//DisallowedMaps("old_town_outposts_office")
-        //AIPreset("HR_Skeleton")
-		//DiffLvlTableName("Hellride_Diff_Random_Skeleton")
-        //SpawnCondition("t_INIT, 1;z_VESSEL, 1")
-        //ForceTargetType(-1)
-        //TimeBtwSpawnZombies(3)
-        //RelativePresets("HR_Skeletor_Shield;HR_Skeletor_l0")
-    //}
-	
-	//PresetDef("HR_Zombie") 
-    //{
-        //Difficult(7)
-		//DisallowedMaps("old_town_outposts_museum")
-		//DisallowedMaps("old_town_outposts_radio")
-		//DisallowedMaps("old_town_outposts_office")
-        //AIPreset("HR_Zombie")
-		//DiffLvlTableName("Hellride_Diff_Random_Zombie")
-        //SpawnCondition("t_INIT, 1;z_VESSEL, 1")
-        //ForceTargetType(-1)
-        //TimeBtwSpawnZombies(3)
-        //RelativePresets("HR_Zombie_Recruit_lvl0")
-    //}
-
 
     PresetDef("Vessel_Init") 
     {
@@ -179,45 +150,6 @@
         RelativePresets("Volatile_Pit;Infected_HumanInit")
     }
 
-	PresetDef("Vessel_Init_IAL")
-    {
-        Difficult(7)
-		DisallowedMaps("old_town_outposts_museum")
-		DisallowedMaps("old_town_outposts_radio")
-		DisallowedMaps("old_town_outposts_office")
-        AIPreset("Biter_Man;Biter_Woman")
-		DiffLvlTableName("Biter_Man;Biter_Woman")
-        SpawnCondition("t_INIT, 0.7;z_VESSEL, 0.7")
-        ForceTargetType(-1)
-        TimeBtwSpawnZombies(3)
-        RelativePresets("Volatile_Pit;Infected_HumanInit")
-    }
-	
-	PresetDef("Day_Walker")
-    {
-        Difficult(15)
-        AIPreset("Biter_Man;Biter_Woman")
-        DiffLvlTableName("Biter_Man;Biter_Woman")
-        ForceTargetType(3)
-        TimeBtwSpawnZombies(1)
-        CanSpawnIntoCrowd(1,"_NW")
-        DieProbality(10)
-        SarcophagusTime(2)
-    }
-    
-	PresetDef("Volatile_Day_IAL")
-    {
-        Difficult(15)
-        AIPreset("Volatile_smaller_IAL")
-		AIPreset("Volatile_Blister_IAL")
-        SpawnCondition("__any__, 1;nav_mesh, -1;t_INIT, -1;p_ROOF, -1;p_INTERIOR, -1")
-        MinDistBtwZombies(35)
-        ForceTargetType(-1)
-        TimeBtwSpawnZombies(3)
-		SarcophagusTime(2)
-		MinSpawnDistance(40)
-    }
-	
     PresetDef("Vessel_WithAToy")
     {
         Difficult(8)

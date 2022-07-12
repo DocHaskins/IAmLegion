@@ -52,6 +52,7 @@ sub main()
 		Item("ZZZZ_Melee_BigHammer_Tactical_Gold")
 		{
 			ForceMul(4.5);
+		}
     }
     
     Difficulty("Normal")
@@ -73,6 +74,93 @@ sub main()
         DeathPenaltyLegendXPFactor(0.0);
 		
 		ForceAttackTrackingUsingEventsOnlyEnabled(true);
+		
+		PlayerDmgFactorMin()
+		{
+			HrSlave(1.3);
+			HrRecruit(1.3); 
+			HrGuard(1.3);
+			Skeleton(1.3);
+			HrAdept(1.3);
+			HrPriest(1.3);	
+			HrTorturer(1.3);
+            HrDarkKnight(1.3);
+			HrBoss(1.3);
+		}
+		
+		PlayerDmgFactorMax()
+		{
+			HrSlave(1.3);
+			HrRecruit(1.3); 
+			HrGuard(1.3);
+			Skeleton(1.3);
+			HrAdept(1.3);
+			HrPriest(1.3);	
+			HrTorturer(1.3);
+            HrDarkKnight(1.3);
+			HrBoss(1.3);
+		} 
+		
+		EnemiesDmgFactor()
+		{
+			HrSlave(0.7);
+			HrRecruit(0.7);
+			HrGuard(0.7);
+			Skeleton(0.7);
+			HrAdept(0.7);
+			HrPriest(0.7);
+			HrTorturer(0.7);
+            HrDarkKnight(0.7);
+			HrBoss(0.7);
+		}
+
+		BannedItemsBTZ()
+        {
+            //flashlights
+			Item("Flashlight_Basic");
+			Item("zzz_Flashlight_HARD");
+			
+			//easter egg items
+			Item("Throwable_Poisonbomb");
+			Item("Throwable_SmokeGrenade");
+			Item("Throwable_Smoke_Flare");
+			Item("DevCraftSquirrelSuit");
+			Item("ZZZZ3_Throwable_SuperZombieGrenade");
+			Item("ZZZZ3_Throwable_SwanLakeGrenade");
+			Item("ZZZZZ_MacheteBKorek2");
+			Item("Throwable_DevCraft1");
+			Item("DevCraftSiCKBomb");
+			Item("DevRightHandofgloVA");
+			Item("DevCraftAirStrike");
+			Item("DevCraftExcalibour");
+			Item("MacheteAKorek");
+			Item("zzz2_Throwable_DevCraft2");
+			Item("ZZZZ3_DevCraft3");
+			Item("ZZZZ3_DevCraft4");
+			Item("ZZZZ3_Firearm_ToyGun_Twins");
+						
+			//shields
+			Item("Shield_Pro");
+			Item("CHV_Shield_Pro_Gold");
+			Item("CHV_Shield_Pro_A");
+			Item("CHV_Shield_Pro_M");
+			Item("Shield_HR_Pro");
+			Item("Shield_Pro_Viking");
+			Item("Burning_Shield_Pro_Viking");
+						
+			//last wish
+			Item("Firearm_Gaas_Revolver");
+						
+			//inmate rifle
+			Item("FireArm_Rifle_Inmate");
+						
+			//Your first wrench
+			Item("Melee_Pipe_Anniversary5");
+						
+			//Deadeye crossbow + bow
+			Item("Crossbow_DeadEye");
+			Item("Bow_Composite_DeadEye");
+        }
     }
 	
 	//Difficulty Normal MUST BE FIRST, DO NOT CHANGE ORDER
@@ -118,6 +206,7 @@ sub main()
 			HrTorturer(2);
 			HrBlinded(2);
 			HrBoss(1.75);
+            HrDarkKnight(1.75);
 		}
 		
 		PlayerDmgFactorMax()
@@ -143,8 +232,8 @@ sub main()
 			HrPriest(1.5);	
 			HrTorturer(2);
 			HrBlinded(2);
+            HrDarkKnight(1.75);
 			HrBoss(1.75);
-            HrDarkKnight(1.0);							  
 		} 
 		
 		EnemiesDmgFactor()
@@ -162,17 +251,65 @@ sub main()
             Spitter(0.75);
             Demolisher(0.75);
             Demolisher_Arena(0.75);
-			HrSlave(0.5);
+			HrSlave(0.3);
 			HrRecruit(0.3); 
-			HrGuard(0.7);
-			Skeleton(0.7);
-			HrAdept(0.75);
-			HrPriest(0.75);	
+			HrGuard(0.5);
+			Skeleton(0.5);
+			HrAdept(0.3);
+			HrPriest(0.5);	
 			HrTorturer(0.5);
 			HrBlinded(0.5);
-			HrBoss(0.75);
-            HrDarkKnight(1.0);							  
+            HrDarkKnight(0.5);
+			HrBoss(0.5);
 		}
+
+		BannedItemsBTZ()
+        {
+            //flashlights
+			Item("Flashlight_Basic");
+			Item("zzz_Flashlight_HARD");
+			
+			//easter egg items
+			Item("Throwable_Poisonbomb");
+			Item("Throwable_SmokeGrenade");
+			Item("Throwable_Smoke_Flare");
+			Item("DevCraftSquirrelSuit");
+			Item("ZZZZ3_Throwable_SuperZombieGrenade");
+			Item("ZZZZ3_Throwable_SwanLakeGrenade");
+			Item("ZZZZZ_MacheteBKorek2");
+			Item("Throwable_DevCraft1");
+			Item("DevCraftSiCKBomb");
+			Item("DevRightHandofgloVA");
+			Item("DevCraftAirStrike");
+			Item("DevCraftExcalibour");
+			Item("MacheteAKorek");
+			Item("zzz2_Throwable_DevCraft2");
+			Item("ZZZZ3_DevCraft3");
+			Item("ZZZZ3_DevCraft4");
+			Item("ZZZZ3_Firearm_ToyGun_Twins");
+						
+			//shields
+			Item("Shield_Pro");
+			Item("CHV_Shield_Pro_Gold");
+			Item("CHV_Shield_Pro_A");
+			Item("CHV_Shield_Pro_M");
+			Item("Shield_HR_Pro");
+			Item("Shield_Pro_Viking");
+			Item("Burning_Shield_Pro_Viking");
+						
+			//last wish
+			Item("Firearm_Gaas_Revolver");
+						
+			//inmate rifle
+			Item("FireArm_Rifle_Inmate");
+						
+			//Your first wrench
+			Item("Melee_Pipe_Anniversary5");
+						
+			//Deadeye crossbow + bow
+			Item("Crossbow_DeadEye");
+			Item("Bow_Composite_DeadEye");
+        }
     }
     
     Difficulty("Hard")
@@ -184,16 +321,16 @@ sub main()
         DeathPenaltyStatusXPFactor(2.5);
         ShootingAccuracyFactor(1.25);
         NightSpottingMult(1.0);       //Multiplier of time need for Volatile to spot player
-        AddHealthFactor(1);         //Multiplier for amount of health received by using medkit.
+        AddHealthFactor(0.5);         //Multiplier for amount of health received by using medkit.
         HealthRegenFactor(3.0);       //Multiplier of time needed to regenerate Player's health from critical health.
         LootTreeName("default_hard");
         SpecialLootTreeName("default_hard");
         AirdropPatrolTimeFactor(0.3);
-        
+		
         MeleeVerticalAttackOffset(0.1);
         MeleeVerticalAttackDeviation(0.0);
-        MeleeHorizontalAttackOffset(0.1);
-        MeleeHorizontalAttackDeviation(0.0);
+        MeleeHorizontalAttackOffset(0.0);
+        MeleeHorizontalAttackDeviation(5.0);
         
         sense_enable_triggers(false);            //Decides if player can see triggers 
                 
@@ -216,16 +353,16 @@ sub main()
             Spitter(0.50);
             Demolisher(0.50);
             Demolisher_Arena(0.7);
-			HrSlave(0.5);
-			HrRecruit(0.5); 
-			HrGuard(0.5);
-			Skeleton(0.50);
-			HrAdept(0.53);
-			HrPriest(0.50);	
-			HrTorturer(0.5);
+			HrSlave(1.0);
+			HrRecruit(1.0); 
+			HrGuard(1.0);
+			Skeleton(1.0);
+			HrAdept(1.0);
+			HrPriest(1.0);	
+			HrTorturer(1.0);
 			HrBlinded(0.5);
-			HrBoss(0.7);
-            HrDarkKnight(1.0);							  
+            HrDarkKnight(1.0);
+			HrBoss(1.0);
         }
         PlayerDmgFactorMax()
         {
@@ -242,16 +379,16 @@ sub main()
             Spitter(0.50);
             Demolisher(0.50);
             Demolisher_Arena(0.7);
-			HrSlave(0.5);
-			HrRecruit(0.5); 
-			HrGuard(0.5);
-			Skeleton(0.50);
-			HrAdept(0.53);
-			HrPriest(0.50);	
-			HrTorturer(0.5);
-			HrBlinded(0.5);
-			HrBoss(0.7);
-            HrDarkKnight(1.0);							  
+			HrSlave(1.0);
+			HrRecruit(1.0); 
+			HrGuard(1.0);
+			Skeleton(1.0);
+			HrAdept(1.0);
+			HrPriest(1.0);	
+			HrTorturer(1.0);
+			HrBlinded(1.0);
+            HrDarkKnight(1.0);
+			HrBoss(1.0);
         }
         
         // The status level range over which PlayerDmgFactorMin and PlayerDmgFactorMin is interpolated.
@@ -281,17 +418,17 @@ sub main()
 			HrGuard(1.0);
 			HrTorturer(1.0);
 			HrBlinded(1.0);
-			HrBoss(0.01);			
-            HrDarkKnight(1.0);							  
+            HrDarkKnight(1.0);
+			HrBoss(0.01);		
         }
 		
         EnemiesDmgFactor()// this means how much damage TAKEN from AI will be modified (ie. Bitter hits with 10 dmg * Biter(1.5) = will give 15 dmg to PLAYER)
         {
-            Biter(2.5);
-            Viral(2.0);
+            Biter(2.0);
+            Viral(1.5);
             HMF(2.0);
             HMF_Leader(2.0);
-            HumanFirearm(3.0);
+            HumanFirearm(2.0);
             HMF_Arena(2.0);
             HumanFirearm_Arena(2.0);
             HMF_Leader_Arena(2.0); 
@@ -299,23 +436,72 @@ sub main()
             Volatile(1.5);
             Spitter(1.38);
             Demolisher(2.0);
-            Demolisher_Arena(2.0); 
-			HrSlave(2.0);
-			HrRecruit(1.3);
-			HrGuard(2.0);
-			Skeleton(1.8);
-			HrAdept(2.0);
-			HrPriest(1.5);	
-			HrTorturer(1.4);
+            Demolisher_Arena(2.0);
+			HrSlave(1.5);
+			HrRecruit(0.8);
+			HrGuard(1.5);
+			Skeleton(1.3);
+			HrAdept(1.5);
+			HrPriest(1.0);	
+			HrTorturer(0.9);
 			HrBlinded(1.5);
-			HrBoss(2.0);
+            HrDarkKnight(1.5);
+			HrBoss(1.5);
         }
-        night_duration_mul(1.0); // normal night during 420 sec, in hard mode during 420x2 = 840 sec
-        day_duration_mul(1.0);//normal day during 3840 sec, in hard mode during 3840x0.89 = 3417 sec
+        night_duration_mul(2.0); // normal night during 420 sec, in hard mode during 420x2 = 840 sec
+        day_duration_mul(0.89);//normal day during 3840 sec, in hard mode during 3840x0.89 = 3417 sec
         hud_enable_hints(false);
         xp_legend_factor(2.5);
         DeathPenaltyLegendXPFactor(0.25);
 		
+		BannedItemsBTZ()
+        {
+            //flashlights
+			Item("Flashlight_Basic");
+			Item("zzz_Flashlight_HARD");
+			
+			//easter egg items
+			Item("Throwable_Poisonbomb");
+			Item("Throwable_SmokeGrenade");
+			Item("Throwable_Smoke_Flare");
+			Item("DevCraftSquirrelSuit");
+			Item("ZZZZ3_Throwable_SuperZombieGrenade");
+			Item("ZZZZ3_Throwable_SwanLakeGrenade");
+			Item("ZZZZZ_MacheteBKorek2");
+			Item("Throwable_DevCraft1");
+			Item("DevCraftSiCKBomb");
+			Item("DevRightHandofgloVA");
+			Item("DevCraftAirStrike");
+			Item("DevCraftExcalibour");
+			Item("MacheteAKorek");
+			Item("zzz2_Throwable_DevCraft2");
+			Item("ZZZZ3_DevCraft3");
+			Item("ZZZZ3_DevCraft4");
+			Item("ZZZZ3_Firearm_ToyGun_Twins");
+						
+			//shields
+			Item("Shield_Pro");
+			Item("CHV_Shield_Pro_Gold");
+			Item("CHV_Shield_Pro_A");
+			Item("CHV_Shield_Pro_M");
+			Item("Shield_HR_Pro");
+			Item("Shield_Pro_Viking");
+			Item("Burning_Shield_Pro_Viking");
+						
+			//last wish
+			Item("Firearm_Gaas_Revolver");
+						
+			//inmate rifle
+			Item("FireArm_Rifle_Inmate");
+						
+			//Your first wrench
+			Item("Melee_Pipe_Anniversary5");
+						
+			//Deadeye crossbow + bow
+			Item("Crossbow_DeadEye");
+			Item("Bow_Composite_DeadEye");
+        }
+
 		ForceAttackTrackingUsingEventsOnlyEnabled(false);
     }
     
@@ -327,7 +513,7 @@ sub main()
         CanAccelerateVehicleComponentDrop(false);
         ShootingAccuracyFactor(1.25);
         NightSpottingMult(1.0);       //Multiplier of time need for Volatile to spot player
-        AddHealthFactor(1.0);         //Multiplier for amount of health received by using medkit.
+        AddHealthFactor(0.5);         //Multiplier for amount of health received by using medkit.
         HealthRegenFactor(3.0);
         LootTreeName("default_nightmare");
         SpecialLootTreeName("default_nightmare");
@@ -357,16 +543,16 @@ sub main()
             Spitter(0.50);
             Demolisher(0.50);
             Demolisher_Arena(0.7);
-			HrSlave(0.8);
+			HrSlave(1.0);
 			HrRecruit(1.0); 
-			HrGuard(0.5);
-			Skeleton(0.7);
+			HrGuard(1.0);
+			Skeleton(1.0);
 			HrAdept(1.0);
-			HrPriest(0.53);	
-			HrTorturer(0.5);
-			HrBlinded(0.5);
-			HrBoss(0.5);
-            HrDarkKnight(1.0);							  
+			HrPriest(1.0);	
+			HrTorturer(1.0);
+			HrBlinded(1.0);
+            HrDarkKnight(1.0);
+			HrBoss(1.0);
         }
         
         PlayerDmgFactorMax()
@@ -384,16 +570,16 @@ sub main()
             Spitter(0.05);
             Demolisher(0.3);
             Demolisher_Arena(0.35);
-			HrSlave(0.8);
+			HrSlave(1.0);
 			HrRecruit(1.0); 
-			HrGuard(0.5);
-			Skeleton(0.7);
+			HrGuard(1.0);
+			Skeleton(1.0);
 			HrAdept(1.0);
-			HrPriest(0.53);	
-			HrTorturer(0.5);
-			HrBlinded(0.5);
-			HrBoss(0.5);
-            HrDarkKnight(1.0);							  
+			HrPriest(1.0);	
+			HrTorturer(1.0);
+			HrBlinded(1.0);
+            HrDarkKnight(1.0);
+			HrBoss(1.0);
         }
         
         // The status level range over which PlayerDmgFactorMin and PlayerDmgFactorMin is interpolated.
@@ -426,16 +612,16 @@ sub main()
 			HrTorturer(1.0);
 			HrBlinded(1.0);
 			HrBoss(0.01);   
-            HrDarkKnight(1.0);							  
+            HrDarkKnight(1.0);
         }
 		
         EnemiesDmgFactor()// this means how much damage TAKEN from AI will be modified (ie. Bitter hits with 10 dmg * Biter(1.5) = will give 15 dmg to PLAYER)
         {
-            Biter(2.5);
-            Viral(2.5);
+            Biter(2.0);
+            Viral(1.5);
             HMF(2.0);
             HMF_Leader(2.0);
-            HumanFirearm(4.0);
+            HumanFirearm(2.0);
             HMF_Arena(2.0);
             HumanFirearm_Arena(2.0);
             HMF_Leader_Arena(2.0);
@@ -444,15 +630,16 @@ sub main()
             Spitter(1.38);
             Demolisher(2.0);
             Demolisher_Arena(2.0);
-			HrSlave(3.0);
-			HrRecruit(1.75); 
-			HrGuard(3.5);
-			Skeleton(2.5);
-			HrAdept(3.0);
-			HrPriest(3.5);	
-			HrTorturer(1.75);
+			HrSlave(2.5);
+			HrRecruit(1.25); 
+			HrGuard(3.0);
+			Skeleton(2.0);
+			HrAdept(2.5);
+			HrPriest(3.0);	
+			HrTorturer(1.25);
 			HrBlinded(2.0);
-			HrBoss(3.5);
+            HrDarkKnight(1.0);
+			HrBoss(3.0);
         }
 
         night_duration_mul(2.0); // normal night during 420 sec, in hard mode during 420x2 = 840 sec
@@ -482,7 +669,55 @@ sub main()
             Item("ZZZZ3_DevCraft4");
             Item("ZZZZ3_Firearm_ToyGun_Twins");
         }
-		
+
+		BannedItemsBTZ()
+        {
+            //flashlights
+			Item("Flashlight_Basic");
+			Item("zzz_Flashlight_HARD");
+			
+			//easter egg items
+			Item("Throwable_Poisonbomb");
+			Item("Throwable_SmokeGrenade");
+			Item("Throwable_Smoke_Flare");
+			Item("DevCraftSquirrelSuit");
+			Item("ZZZZ3_Throwable_SuperZombieGrenade");
+			Item("ZZZZ3_Throwable_SwanLakeGrenade");
+			Item("ZZZZZ_MacheteBKorek2");
+			Item("Throwable_DevCraft1");
+			Item("DevCraftSiCKBomb");
+			Item("DevRightHandofgloVA");
+			Item("DevCraftAirStrike");
+			Item("DevCraftExcalibour");
+			Item("MacheteAKorek");
+			Item("zzz2_Throwable_DevCraft2");
+			Item("ZZZZ3_DevCraft3");
+			Item("ZZZZ3_DevCraft4");
+			Item("ZZZZ3_Firearm_ToyGun_Twins");
+						
+			//shields
+			Item("Shield_Pro");
+			Item("CHV_Shield_Pro_Gold");
+			Item("CHV_Shield_Pro_A");
+			Item("CHV_Shield_Pro_M");
+			Item("Shield_HR_Pro");
+			Item("Shield_Pro_Viking");
+			Item("Burning_Shield_Pro_Viking");
+						
+			//last wish
+			Item("Firearm_Gaas_Revolver");
+						
+			//inmate rifle
+			Item("FireArm_Rifle_Inmate");
+						
+			//Your first wrench
+			Item("Melee_Pipe_Anniversary5");
+						
+			//Deadeye crossbow + bow
+			Item("Crossbow_DeadEye");
+			Item("Bow_Composite_DeadEye");
+        }
+
 		ForceAttackTrackingUsingEventsOnlyEnabled(false);
     }
 }    

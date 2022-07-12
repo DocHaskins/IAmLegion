@@ -67,4 +67,4 @@ ParamFloat("experience_award", 50.0)
 
 ParamFloat("bullet_head_hit_damage_mult", 10.)
 ParamFloat("bullet_body_hit_damage_mult", 10.)
-ParamBool("can_attack_objects_from_move", 1)
+ParamBool("can_attack_objects_from_move", 0)

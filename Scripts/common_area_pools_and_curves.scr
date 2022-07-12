@@ -5,11 +5,6 @@
     {
             Preset("Night_Walker, 10")
     }
-	
-	AreaPool("DayWalkers")
-    {
-            Preset("Day_Walker, 10")
-    }
 
     AreaPool("Vessel")
     {
