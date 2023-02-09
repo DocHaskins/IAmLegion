@@ -7,7 +7,8 @@
 ///////////////////////////////////////////////////////////////////
 //CROWD
 ///////////////////////////////////////////////////////////////////
-CrowdDynamicPatternFill(8)
+CrowdDynamicPatternFill(34)
+SetSpawnDistance(10.0)
 HighDefCrowd()
 SetForceTargetForCrowdOnPlayer()
 
@@ -19,7 +20,7 @@ SetForceTargetForCrowdOnPlayer()
     {
         Difficult(7)
         SpawnCondition("__any__, 1;nav_mesh, -1;t_INIT, -1;p_ROOF, -1;p_INTERIOR, -1")
-        AIPreset("Biter_Man;Biter_Woman")
+        AIPreset("Biter_Man_Fresh;Biter_Woman_Fresh")
 		DiffLvlTableName("Biter_Man;Biter_Woman")
         ForceTargetType(1)
         TimeBtwSpawnZombies(0)
