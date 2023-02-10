@@ -75,10 +75,10 @@ ParamFloat("min_time_btw_throws_projectile", 15.0)
 ParamFloat("sight_range_calm", 40.0) //converted
 ParamFloat("sight_range_calm_interior", 22.0) //[m]
 
-ParamFloat("sight_range", 80.0) //converted
+ParamFloat("sight_range", 50.0) //converted
 ParamFloat("sight_additional_range", 20.0) //converted
 
-ParamFloat("stay_in_cover_time_min", 0.1)           // shortest time ai stays in cover before next shoot
+ParamFloat("stay_in_cover_time_min", 0.2)           // shortest time ai stays in cover before next shoot
 ParamFloat("stay_in_cover_time_max", 1.0)           // longest time ai stays in cover before next shoot
 ParamFloat("stay_in_cover_total_time_max", 3.0)
 

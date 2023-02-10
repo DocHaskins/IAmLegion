@@ -76,7 +76,7 @@
     PresetDef("Vessel_Eating_Corpse")
     {
         Difficult(7)
-        AIPreset("Biter_Man;Biter_Woman")
+        AIPreset("Biter_Man_Fresh;Biter_Woman_Fresh")
 		DiffLvlTableName("Biter_Man;Biter_Woman")
         SpawnCondition("nav_mesh, -1;__any__, 1;t_INIT, -1;p_ROOF, -1")
         DisallowedMaps("Stadium")
@@ -89,7 +89,7 @@
     PresetDef("Vessel_DeadBody")
     {
         Difficult(7)
-        AIPreset("Biter_Man;Biter_Woman")
+        AIPreset("Biter_Man_Fresh;Biter_Woman_Fresh")
 		DiffLvlTableName("Biter_Man;Biter_Woman")
         SpawnCondition("nav_mesh, -1;__any__, 1;t_INIT, -1;p_ROOF, -1")
         SpawnOnFlatTerrain(1)
@@ -128,7 +128,7 @@
     PresetDef("Vessel_In_Attractor")
     {
         Difficult(7)
-        AIPreset("Biter_Man;Biter_Woman")
+        AIPreset("Biter_Man_Fresh;Biter_Woman_Fresh")
 		DiffLvlTableName("Biter_Man;Biter_Woman")
         SpawnCondition("nav_mesh, -1;__any__, 1;p_ROOF, -1")
         MinDistBtwZombies(1)
@@ -142,7 +142,7 @@
 		DisallowedMaps("old_town_outposts_museum")
 		DisallowedMaps("old_town_outposts_radio")
 		DisallowedMaps("old_town_outposts_office")
-        AIPreset("Biter_Man;Biter_Woman")
+        AIPreset("Biter_Man_Fresh;Biter_Woman_Fresh")
 		DiffLvlTableName("Biter_Man;Biter_Woman")
         SpawnCondition("t_INIT, 1;z_VESSEL, 1")
         ForceTargetType(-1)

@@ -108,7 +108,7 @@ sub main()
 		Preset("Biter_m_lv_easy_0")
         {
                 SetField("m_AISkinName", "zombie_weak");
-                SetField("m_AlarmedMimicPreset", "angry");
+                SetField("m_AlarmedMimicPreset", "normal");
                 SetField("m_AllowInitialArmsDamage", "1");
                 SetField("m_CustomDataPreset", "man_level_easy_0_a");
                 SetField("m_TransformIntoPreset", "NightWalker_Man;DiffLevel;NightWalker_m_lvl_easy_0");
@@ -117,7 +117,7 @@ sub main()
 		Preset("Biter_m_lv_easy_1")
         {
                 SetField("m_AISkinName", "zombie_weak");
-                SetField("m_AlarmedMimicPreset", "angry");
+                SetField("m_AlarmedMimicPreset", "normal");
                 SetField("m_AllowInitialArmsDamage", "1");
                 SetField("m_CustomDataPreset", "man_level_easy_1_a");
                 SetField("m_TransformIntoPreset", "NightWalker_Man;DiffLevel;NightWalker_m_lvl_easy_0");
@@ -126,7 +126,7 @@ sub main()
         Preset("Biter_m_lv0")
         {
                 SetField("m_AISkinName", "zombie_weak");
-                SetField("m_AlarmedMimicPreset", "angry");
+                SetField("m_AlarmedMimicPreset", "normal");
                 SetField("m_AllowInitialArmsDamage", "1");
                 SetField("m_CustomDataPreset", "man_level_0_a");
                 SetField("m_TransformIntoPreset", "NightWalker_Man;DiffLevel;NightWalker_m_lvl0");
@@ -135,7 +135,7 @@ sub main()
         Preset("Biter_m_lv0_wast")
         {
                 SetField("m_AISkinName", "zombie_weak");
-                SetField("m_AlarmedMimicPreset", "angry");
+                SetField("m_AlarmedMimicPreset", "normal");
                 SetField("m_AllowInitialArmsDamage", "1");
                 SetField("m_CustomDataPreset", "man_level_0_a");
                 SetField("m_TransformIntoPreset", "Bitter_Man_Agressive;DiffLevel;Viral_m_lvl0");
@@ -144,7 +144,7 @@ sub main()
         Preset("Biter_m_lv1")
         {
                 SetField("m_AISkinName", "default");
-                SetField("m_AlarmedMimicPreset", "angry");
+                SetField("m_AlarmedMimicPreset", "normal");
                 SetField("m_AllowInitialArmsDamage", "0");
                 SetField("m_CustomDataPreset", "man_level_1_b;man_level_1_c");
                 SetField("m_CustomLootType", "DeadBody_Thug");
@@ -304,7 +304,7 @@ sub main()
 		Preset("Biter_w_lv_easy_0")
         {
                 SetField("m_AISkinName", "zombie_weak");
-                SetField("m_AlarmedMimicPreset", "angry");
+                SetField("m_AlarmedMimicPreset", "normal");
                 SetField("m_AllowInitialArmsDamage", "1");
                 SetField("m_CustomDataPreset", "woman_level_easy_0_a");
                 SetField("m_TransformIntoPreset", "NightWalker_Woman;DiffLevel;NightWalker_w_lvl_easy_0");
@@ -313,7 +313,7 @@ sub main()
 		Preset("Biter_w_lv_easy_1")
         {
                 SetField("m_AISkinName", "zombie_weak");
-                SetField("m_AlarmedMimicPreset", "angry");
+                SetField("m_AlarmedMimicPreset", "normal");
                 SetField("m_AllowInitialArmsDamage", "1");
                 SetField("m_CustomDataPreset", "woman_level_easy_1_a");
                 SetField("m_TransformIntoPreset", "NightWalker_Woman;DiffLevel;NightWalker_w_lvl_easy_0");
@@ -322,7 +322,7 @@ sub main()
         Preset("Biter_w_lv0")
         {
                 SetField("m_AISkinName", "zombie_weak");
-                SetField("m_AlarmedMimicPreset", "angry");
+                SetField("m_AlarmedMimicPreset", "normal");
                 SetField("m_AllowInitialArmsDamage", "1");
                 SetField("m_CustomDataPreset", "woman_level_0_a");
                 SetField("m_TransformIntoPreset", "NightWalker_Woman;DiffLevel;NightWalker_w_lvl0");
@@ -28099,6 +28099,70 @@ sub main()
                 SetField("m_Type", "3");
 				SetField("m_HealthMul", "2.0");
 				SetField("m_DamageInfluencesNames", "electric:0.2;fire:0.2;poison:0.0");
+        }
+		
+//////////////////////////IAL\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+		
+		Preset("Biter_Man_Fresh")
+        {
+                SetField("m_BurnOnStart", "0");
+                SetField("m_CanBeLimitedAttacker", "1");
+                SetField("m_CanUseAttractors", "1");
+                SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_ALL);
+                SetField("m_CrippleBonesEnable", "1");
+                SetField("m_CustomDataPreset", "anim_set_waste");
+                SetField("m_CutOffBonesEnable", "1");
+                SetField("m_ForceStinger", "0");
+                SetField("m_ForcedBodyScaleMax", "1.15");
+                SetField("m_ForcedBodyScaleMin", "1.05");
+                SetField("m_Gender", "0");
+                SetField("m_GrabEnabled", "1");
+                SetField("m_HarvestingLootType", "Harvesting_Biter_Body");
+                SetField("m_IsHarvestable", "1");
+                SetField("m_MinLevelDiff", "-5");
+                SetField("m_ModulesPreset", "1");
+                SetField("m_NeverHolsterWeapon", "1");
+                SetField("m_PoisonedOnStart", "0");
+                SetField("m_PrimaryWeaponProbability", "0.5");
+                SetField("m_Seed", "0");
+                SetField("m_ShowFlies", "1");
+                SetField("m_SoundPreset", "ZombieSlowMan00;ZombieSlowMan01");
+                SetField("m_StepPreset", "Default_Zombie");
+                SetField("m_TransformIntoPreset", "NightWalker_Man");
+                SetField("m_Type", "1");
+                SetField("m_VisRepresentationsPool", "humantoviral_man");
+        }
+		
+		Preset("Biter_Woman_Fresh")
+        {
+                SetField("m_BurnOnStart", "0");
+                SetField("m_CanBeLimitedAttacker", "1");
+                SetField("m_CanUseAttractors", "1");
+                SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_ALL);
+                SetField("m_CrippleBonesEnable", "1");
+                SetField("m_CustomDataPreset", "viral_group");
+                SetField("m_CutOffBonesEnable", "1");
+                SetField("m_ForceStinger", "0");
+                SetField("m_ForcedBodyScaleMax", "1.15");
+                SetField("m_ForcedBodyScaleMin", "1.05");
+                SetField("m_Gender", "1");
+                SetField("m_GrabEnabled", "1");
+                SetField("m_HarvestingLootType", "Harvesting_Biter_Body");
+                SetField("m_IsHarvestable", "1");
+                SetField("m_MinLevelDiff", "-5");
+                SetField("m_ModulesPreset", "1");
+                SetField("m_NeverHolsterWeapon", "1");
+                SetField("m_PoisonedOnStart", "0");
+                SetField("m_PrimaryWeaponProbability", "0.5");
+                SetField("m_Seed", "0");
+                SetField("m_ShowFlies", "1");
+                SetField("m_SoundPreset", "ZombieSlowWoman00;ZombieSlowWoman01");
+                SetField("m_StepPreset", "Default_Zombie");
+                SetField("m_TransformIntoPreset", "NightWalker_Woman");
+                SetField("m_Type", "1");
+                SetField("m_UseBaseDataSet", "1");
+                SetField("m_UseRandomDataSet", "0");
+                SetField("m_VisRepresentationsPool", "Biter_Woman");
         }
     }
 }

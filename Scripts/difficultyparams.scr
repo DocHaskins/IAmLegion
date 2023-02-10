@@ -20,7 +20,7 @@ sub main()
 		HrTorturer(1.0);
 		HrBlinded(1.0);
 		HrBoss(1.0);
-        HrDarkKnight(1.0);						  
+        HrDarkKnight(1.0);
     }
     //EncounterXpMul("HelpGrabbedNPC_Grabbed", 2.0);
     //PlayerActionsXpMul("Climb", 10.0);
@@ -36,7 +36,8 @@ sub main()
         //    XpMul(100.0);
         //    DurabilityMul(100.0);
         //}
-		//GAAS		
+		
+		//GAAS
         Item("Melee_BaseballBatASpectral")
 		{
 			ForceMul(4.5);

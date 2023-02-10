@@ -472,7 +472,7 @@ ParamFloat("defend_area_range", 10000.0)
 ParamFloat("warning_range", 1.0)
 ParamFloat("body_container_active_time", -1)
 
-ParamFloat("lost_target_search_dist_min", 108.0)
+ParamFloat("lost_target_search_dist_min", 58.0)
 ParamFloat("lost_target_search_dist_max", 200.0)
 ParamBool("take_damage_from_other_ai_impact", 1)
 

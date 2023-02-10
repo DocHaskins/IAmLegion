@@ -1,7 +1,7 @@
 !include("ai_data.def")
 !include("ai_timing.def")
 
-!include("zombie_data.scr")
+!include("zombie_data_custom_preset_anim_set_a.scr")
 !include("zombie_params_level_0.scr")
 
 ParamFloat("explode_range", 10.0)  // changed range from 5 to 10

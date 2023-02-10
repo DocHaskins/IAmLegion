@@ -1,6 +1,5 @@
 !include("ai_data.def")
 !include("ai_timing.def")
-!include("human_data_params.scr")
 
 // pro melee fighter (newer animations set)
 
@@ -686,7 +685,7 @@ ParamBool("can_keep_distance_during_melee", 0)
 ParamBool("check_enemy_reachable", 1)
 ParamBool("enable_collisions_with_other_ai", 1)
 ParamFloat("melee_range", 1.8)
-ParamFloat("melee_range_vs_ai", 1.8)
+ParamFloat("melee_range_vs_ai", 1.2)
 ParamBool("pro_melee_fighter", 1)
 ParamFloat("dist_to_keep_from_target", 3.0)
 ParamBool("use_slots_to_attack", 1)
@@ -730,7 +729,7 @@ ParamFloat("push_physics_damage_heavy", 9.0)
 ParamFloat("min_time_btw_dodge_jump", 4.0)
 ParamFloat("max_time_btw_dodge_jump", 8.0)
 
-ParamFloat("wander_dist", 220.0)
+ParamFloat("wander_dist", 120.0)
 ParamFloat("sight_range_calm", 45.0) //converted
 ParamFloat("sight_range", 80.0) //converted
 ParamFloat("sight_additional_range", 1.0)
@@ -750,11 +749,11 @@ ParamFloat("stalk_prob", 95.0) // prawdopodobienstwo obchodzenia wroga w grupie
 
 ParamFloat("head_horz_clamp", 70.0)
 
-ParamBool("can_run_away", 0)
+ParamBool("can_run_away", 1)
 ParamBool("can_destroy_head_before_death", 1)
 
 ParamBool("high_alarm_level_on_sound_heard_weapon_use", 1)
-ParamFloat("min_time_to_keep_alarm_level_from_sound_heard_weapon_use", 120.0)
+ParamFloat("min_time_to_keep_alarm_level_from_sound_heard_weapon_use", 60.0)
 
 ParamFloat("dist_to_notice_superior_weapon", 1.0)
 ParamBool("use_advanced_target_keeping_logic", 1)

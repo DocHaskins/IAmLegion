@@ -287,27 +287,8 @@ ParamBool("arena_difficulty_scaling_enabled", 0)
 ParamBool("disable_chatter_system", 0)
 
 //--- HEALTH
-//ParamFloat("health_mul", 1.0)										//Body health is set from CURVE_HEALTH and multiplied by this parameter
-//ParamFloat("head_health_mul", 1.0)									//Head health is a multiplier of body health - when head dies, AI dies.
-//ParamFloat("arms_health_mul", 1.0)									//Arms health is a multiplier of body health
-//ParamFloat("legs_health_mul", 1.0)									//Legs health is a multiplier of body health
-
-//ParamFloat("head_damage_factor", 1.5)								//Damage dealt to particular limb is multiplied by this factor. SHOULD be the same as head_health_influence
-//ParamFloat("left_arm_damage_factor", 1.0)
-//ParamFloat("right_arm_damage_factor", 1.0)
-//ParamFloat("left_leg_damage_factor", 1.0)
-//ParamFloat("right_leg_damage_factor", 1.0)
-
 ParamFloat("pro_player_head_health_influence", 1.0)
 ParamFloat("fire_damage_health_influence_override", -1.0)
-//ParamFloat("head_health_influence", 1.5)
-//ParamFloat("left_arm_health_influence", 1.0)
-//ParamFloat("right_arm_health_influence", 1.0)
-//ParamFloat("left_leg_health_influence", 1.0)
-//ParamFloat("right_leg_health_influence", 1.0)
-//ParamFloat("torso_front_health_influence", 1.0)
-//ParamFloat("torso_back_health_influence", 1.0)
-
 
 //--- STAMINA
 //ParamFloat("stamina_to_health_ratio", 1.0)							//Amount of stamina is based on health from CURVE_HEALTH and multiplied by this factor.
@@ -492,6 +473,7 @@ ParamFloat("time_btw_cover_eval_in_cover", 5.0)
 
 ParamFloat("cover_stay_time_reduction_factor_if_closer_ais", 0.0)
 ParamFloat("cover_change_min_quality_factor_if_closer_ais", 0.0)
+
 ParamFloat("additional_shooting_visibility_time", 1.5)
 
 ParamFloatRange("group_damage_factor", 1.0, 1.0)
@@ -500,7 +482,7 @@ ParamFloatRange("group_damage_attackers_num", 1.0, 1.0)
 ParamFloat("min_time_btw_firearm_melee_attacks", 0.0)
 
 ParamBool("one_shot", 0)
-ParamInt("min_body_hits_to_kill", 1)
+ParamInt("min_body_hits_to_kill", 2)
 ParamInt("min_head_hits_to_kill", -1)
 
 ParamFloat("bulletproof_vest_dmg_mul", 1.0)
@@ -513,9 +495,11 @@ ParamBool("enable_2h_weapon_ik", 0)
 ParamFloatRange("height_to_take_damage", 1.0, 3.0)
 ParamFloatRange("height_to_take_damage_nightmare", 1.0, 5.0)
 ParamFloat("height_damage_exp_factor_nightmare", 7.0)      // Determines how fast the exponential curves ramps up to max
+
 ParamFloatRange("speed_required_to_take_damage", 4.0, 12.0)         // [zachar] modified with code changes (average speed is taken instead of body speed)
 ParamFloatRange("speed_required_to_take_damage_nightmare", 4.0, 12.0)
 ParamFloat("speed_damage_exp_factor_nightmare", 7.0)       // Determines how fast the exponential curves ramps up to max
+
 ParamBool("simple_turn_during_alarming", 0)
 ParamBool("react_on_light", 0)
 

@@ -682,12 +682,11 @@ sub aggro_sounds()
         Radius(100.0);
         Power(10.0);
         MaxPower(20.0);
-
 		RadiusAdd(3.0);
 		ForceInvestigating();
 		MaxRadius(15.0);
     }
-    
+	    
     SoundType("PLAYER_SPRINT")
     {
         MaxLifeTime(1.0);

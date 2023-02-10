@@ -209,6 +209,7 @@
     <prop n="KnockDownMinHorzAngle" v="-30"/>
     <prop n="KnockDownMaxHorzAngle" v="30"/>
 	<prop n="BozakKnockdownTimeToDeath" v="45"/>
+	<prop n="KnockdownAfterKnockdownMinTime" v="0.6"/>
     
     <prop n="NearbyEnemiesSearchRange" v="100.0"/>
 	<prop n="SwimLookTimetMul" v="0.4"/>    
@@ -350,7 +351,8 @@
         
     <!-- CHARGE ATTACK COMMON -->
     <prop n="ChargeSpreadProbability" v="0.0"/>     
-    <prop n="ChargeOverchargeDamage" v="0.0"/>  
+    <prop n="ChargeOverchargeDamage" v="0.0"/>
+	<prop n="ChargeAdditionalRange" v="0.15"/>
     
     <prop n="ChargeStaminaDecreaseFactor" v="0"/>
     <prop n="ChargeAutoReleaseTime" v="-1.0"/>  
@@ -496,6 +498,8 @@
 
     <!-- GROUND POUND -->
     <prop n="GroundPoundCooldown" v="-1.0"/>
+    <prop n="GroundPoundMinHeight" v="1.1"/>
+	
 
     <!-- JUMP ATTACK -->
     <prop n="JumpAttackStaminaUsage" v="0.8"/>

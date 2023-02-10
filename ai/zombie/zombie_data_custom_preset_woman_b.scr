@@ -371,7 +371,7 @@ Data("recover_from_fall:standing:", -2, "m_zombie_standup_fast_right_04", -1, 1)
 //################
 //#### MIMIC #####
 //################
-//## mimic:type
+//## mimic:type:is_speech_played
 //##############
 
 Data("mimic:normal", -2, "mz_mimic_normal1", -1, 1)

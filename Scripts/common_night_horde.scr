@@ -1,6 +1,6 @@
 sub main()
 {
-	NightHorde()
+    NightHorde()
     {
 		DefaultRadius(20.0);
 		MaxRadius(60.0);		

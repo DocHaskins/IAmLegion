@@ -1,0 +1,642 @@
+/////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+//          -    I Am Legion Global Config -                    \\
+//           Casual Survivor Difficulty Settings                \\
+//   This config will allow you to better balance the game to   \\
+//   your specific play style. Feedback is appreciated on the   \\
+//   discord channel if you have any requests or features you'd \\
+//   like included in the config. Some values cannot be added   \\
+//   to the config without messing up the game. This specific   \\
+//   feature takes the most time to test and balance.           \\
+//    Thank you for your support of IALR and enjoy.             \\
+//                      DocOnHoliday                            \\
+/////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+/*
+Sections: (Search for these to quick jump)
+GAMEPLAY
+INTERFACE OPTIONS
+INVENTORY
+EXPERIENCE
+SURVIVOR SENSE
+WEAPONS
+SPAWN DENSITY
+SPAWN LOGIC
+AI SPAWN DIFFICULTY
+AI BEHAVIOR
+AI FALL HEIGHT
+DISMEMBER SYSTEM
+CHASE SYSTEM
+CHEATS
+*/
+/////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+/////////////////////////GAMEPLAY\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+/////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+//////////// -------  HEALTH  ------- \\\\\\\\\\\\\\\\\\\\\\\ 
+//- LOCATION - (scripts/healthdefinitions.scr) -----\\
+export int IAL_Health_Armor_Light = 10; //Default is "10", Ultimate = 7, Survivor = 8, Casual = 10
+export int IAL_Health_Armor_Medium = 20; //Default is "20", Ultimate = 16, Survivor = 18, Casual = 20
+export int IAL_Health_Armor_Heavy = 250; //Default is "250", Ultimate = 200, Survivor = 225, Casual = 250
+
+//////////// -------  RUNNING  ------- \\\\\\\\\\\\\\\\\\\\\
+//- LOCATION - (scripts/player/player_variables_hard.scr) -----\\
+export float IAL_Run_FOV_Focus = 6.0; //Default is 6.0
+
+//////////// -------  COMBAT  ------- \\\\\\\\\\\\\\\\\\\\\\\ 
+//- LOCATION - (scripts/player/player_variables_hard.scr) -----\\
+export float IAL_Combat_StandingOver_DmgMulti = 2.0; //Amount of damage done from standing above enemy, Default is 1.5
+export float IAL_Combat_AirKick_PhysicsDmg = 5.0; //Default is 2.0
+
+////////////// -------  DEATH  ------- \\\\\\\\\\\\\\\\\\\\\\
+//- LOCATION - (scripts/player/player_variables_hard.scr) -----\\
+export float IAL_Death_FadeOutTime = 9.0; //Time you have to wait to respawn, DEFAULT = 9.0
+export float IAL_Death_FadeInTime = 2.25; //Time you have to wait to respawn, DEFAULT = 2.25
+
+//////////// -------  TIMESCALE  ------- \\\\\\\\\\\\\\\\\\\\
+//- LOCATION - (scripts/dw_weather_def.scr) -----\\\\\\\\\\\\\\\\\
+export float IAL_TimeScale_Day = 8200.0; //Vanilla settings: 4800.0
+export float IAL_TimeScale_Night = 8200.0; //Vanilla settings: 2400.0 Nights are much shorter in vanilla
+export float IAL_TimeScale_Interior = 8640.0; //Vanilla settings: 8640.0
+
+//////////// -------  CAMERA  ------- \\\\\\\\\\\\\\\\\\\\\\\ 
+//- LOCATION - (scripts/player/player_variables_hard.scr) -----\\
+export float IAL_Camera_FOV = 70.0; //Default is 57.0
+
+//////////// -------  SLOWMO  ------- \\\\\\\\\\\\\\\\\\\\\\\ 
+//- LOCATION - (scripts/player/player_variables_hard.scr) -----\\
+export float IAL_Slowmo_Chance = 0.80; //Default is 1.0
+export float IAL_Slowmo_Cooldown = 30.0; //Default is 30.0
+
+//////////// -------  XRAY  ------- \\\\\\\\\\\\\\\\\\\\\\\ 
+//- LOCATION - (scripts/player/player_variables_hard.scr) -----\\
+export float IAL_XRAY_Chance = 0.80; //This is the chance that your weapon will cause XRAY to occur. Vanilla = 0.5
+
+//////////// -------  ZIPLINE  ------- \\\\\\\\\\\\\\\\\\\\\\\ 
+//- LOCATION - (scripts/player/player_variables_hard.scr) -----\\
+export string IAL_ZiplineSpeed_Min = "8.0"; //Default is 6.0
+export string IAL_ZiplineSpeed_Max = "15.0"; //Default is 11.0
+
+//////////// -------  LOOTING  ------- \\\\\\\\\\\\\\\\\\\\\\\ 
+//- LOCATION - (scripts/player/player_variables_hard.scr) -----\\
+export int IAL_Loot_MultipleItems_LVL = 3; //Level that the player starts getting multiple items from loot
+export int IAL_Loot_MultipleItems_Amount = 2; //Number of items you recieve from MultipleItems_LVL
+
+//////////// -------  CAMOFLAGE  ------- \\\\\\\\\\\\\\\\\\\\\\\ 
+//- LOCATION - (scripts/player/player_variables_hard.scr) -----\\
+export int IAL_Camo_Actions_CanRun = 1;
+export int IAL_Camo_Actions_CanAttack = 1;
+export float IAL_Camo_RemoveRate_Flashlight = 0.5;
+export float IAL_Camo_RemoveRate_Climbing = 0.1;
+export float IAL_Camo_RemoveRate_AirTime = 0.1;
+export float IAL_Camo_RemoveRate_Shoot = 0.5;
+export int IAL_Camo_RemoveRate_Water = 40;
+
+/////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+/////////////////////INTERFACE OPTIONS\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+/////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+//- LOCATION - (scripts/locations.scr) -----\\
+// "TRUE" is on, "FALSE" is off
+export bool IAL_Interface_HUD_Show3D = TRUE;
+export bool IAL_Interface_HUD_ShowUVLightIcon = FALSE;
+export bool IAL_Interface_HUD_ShowUVLightEdge = FALSE;
+export bool IAL_Interface_HUD_Show3dMarkedIcon = TRUE;
+export bool IAL_Interface_HUD_Show3dMarkedEdge = TRUE;
+export bool IAL_Interface_HUD_ShowBanditCampIcon = FALSE;
+export bool IAL_Interface_HUD_Show3DIconsWhenClose = FALSE;
+export bool IAL_Interface_HUD_ShowScreamerIcon = TRUE; // Toggle showing the Screamer Icon above their head
+export bool IAL_Interface_HUD_ShowEncounterIcon = FALSE;
+export bool IAL_Interface_HUD_ShowEncounterEdge = FALSE;
+export bool IAL_Interface_HUD_ShowEncounterRewardIcon = FALSE;
+export bool IAL_Interface_HUD_ShowEncounterRewardEdge = FALSE;
+export bool IAL_Interface_HUD_ShowEncounterInfectedIcon = FALSE;
+export bool IAL_Interface_HUD_ShowEncounterInfectedEdge = FALSE;
+export bool IAL_Interface_HUD_ShowEncounterIcon_Endgame = FALSE;
+export bool IAL_Interface_HUD_ShowEncounterEdge_Endgame = FALSE;
+export bool IAL_Interface_HUD_ShowEncounter_InfectedIcon_Endgame = FALSE;
+export bool IAL_Interface_HUD_ShowEncounter_InfectedEdge_Endgame = FALSE;
+/////////////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+/////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+/////////////////////////INVENTORY\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+/////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+//DISABLED DUE TO 1.9.0 Update, for now
+/////////////// -------  INVENTORY  ------- \\\\\\\\\\\\\\\\\\\\\\
+//- LOCATION - (scripts/player/player_variables_hard.scr) -----\\\
+//export string IAL_Inventory_Weapon_Slots = "16"; //Default is 99, Ultimate = 10, Survivor = 12, Casual = 99
+//export string IAL_Inventory_Equipment_Slots = "16"; //Default is 99, Ultimate = 10, Survivor = 12, Casual = 99
+//export string IAL_Inventory_Consumables_Slots = "16"; //Default is 99, Ultimate = 12, Survivor = 24, Casual = 99
+//export string IAL_Inventory_Ammo_Slots = "24"; //Default is 12, Ultimate = 12, Survivor = 24, Casual = 99
+
+/////////////// -------  STORAGE  ------- \\\\\\\\\\\\\\\\\\\\\\\ 
+//- LOCATION - (scripts/player/player_variables_hard.scr) -----\\\\\
+//export int IAL_Storage_Size_Equipment = 25; //Default is 25, Ultimate = 15, Survivor = 25, Casual = 150
+//export int IAL_Storage_Size_Consumables = 50; //Default is 99, Ultimate = 20, Survivor = 50, Casual = 99
+//export int IAL_Storage_Size_Ammo = 100; //Default is 100, Ultimate = 100, Survivor = 100, Casual = 100
+//export int IAL_Storage_Size = 125; //Default is 25, Ultimate = 100, Survivor = 125, Casual = 150
+
+/////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+////////////////////////EXPERIENCE\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+/////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+/////////// -------  NIGHT EXPERIENCE  ------- \\\\\\\\\\\\\\\\\\\\\\\ 
+export float IAL_Night_XP_Actions_Reward = 1.0; //Default is 1.0, Ultimate = 1.5, Survivor = 1.0, Casual = 1.0
+export float IAL_Night_XP_Looted_Reward = 5.0; //Default is 5.0, Ultimate = 5.5, Survivor = 5.0, Casual = 5.0
+export float IAL_Night_XP_Unspotted_Reward = 1.7; //Default is 1.7, Ultimate = 2.0, Survivor = 1.7, Casual = 1.7
+export int IAL_Night_XP_Combat_Reward = 20; //Default is 20, Ultimate = 25, Survivor = 20, Casual = 20
+
+/////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+//////////////////////SURVIVOR SENSE\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+/////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+//- LOCATION 1 - (ai/survivor_sense_presets.scr) -----\\\\
+export string IAL_SurvivorSense_Red_Enemies_Range = "20.0"; //DEFAULT is "20.0", "0.1" disables Survivor Sense
+export string IAL_SurvivorSense_White_Loot_Range = "20.0"; //DEFAULT is "20.0", "0.1" disables Survivor Sense
+
+/////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+//- LOCATION 2 - (scripts/player/player_variables.scr) -----\\\\\\
+/////////////// -  USAGE   ------- \\\\\\\\\\\\\\\\\\\\\\\ 
+export string IAL_SurvivorSense_Cooldown = "5.0"; //Default is 0.5
+
+//////////// -------  VISUALS  ------- \\\\\\\\\\\\\\\\\\\\\\\ 
+export string IAL_SurvivorSense_Range = "20.0"; //Default2789 is 20.0
+export string IAL_SurvivorSense_Opacity = "1.0"; //Default is 1.0
+export string IAL_SurvivorSense_Wave_Duration = "3.0"; //Default is 3.0
+export string IAL_SurvivorSense_Icon_Duration = "10.0"; //Default is 10.0
+export string IAL_SurvivorSense_AI_Duration = "10.0"; //Default is 10.0
+
+/////////////// -------  AI  ------- \\\\\\\\\\\\\\\\\\\\\\\\\
+export string IAL_SurvivorSense_AI_Range = "20.0"; //Default is 20.0
+export string IAL_SurvivorSense_AI_Height = "10.0"; //Default is 10.0
+export string IAL_SurvivorSense_AI_Interiors_Height = "4.0"; //Default is 4.0
+export string IAL_SurvivorSense_AI_Sleeping_Range = "20.0"; //Default is 20.0
+export string IAL_SurvivorSense_DetectionTime_BehindPlayer = "15.0"; //Default is 15.0
+
+////////////// -------  LOOT  ------- \\\\\\\\\\\\\\\\\\\\\\\\
+export string IAL_SurvivorSense_Icons_Range = "20.0"; //Default is 20.0
+export string IAL_SurvivorSense_Loot_Height = "10.0"; //Default is 10.0
+export string IAL_SurvivorSense_Loot_Interior_Height = "4.0"; //Default is 4.0
+
+////////////// -------  ICONS  ------- \\\\\\\\\\\\\\\\\\\\\\\
+export string IAL_SurvivorSense_Icons_Default_Range = "20.0"; //Default is 20.0 //These are the icons specific to Loot and world objects
+export string IAL_SurvivorSense_Icons_Hidding_Range = "20.0"; //Default is 20.0 //These are the icons specific to finding hidding spots
+export string IAL_SurvivorSense_Icons_Elements_Range = "20.0"; //Default is 20.0 //These are the icons for the different elements like fire, water, electricity, etc
+export string IAL_SurvivorSense_Icons_Entrances_Range = "20.0"; //Default is 20.0 //These are the icons that show doorways and entrances
+export string IAL_SurvivorSense_Icons_Inhibitors_Range = "20.0"; //Default is 20.0 //These are the icons specific to finding inhibitors
+export string IAL_SurvivorSense_Icons_Quest_Range = "20.0"; //Default is 20.0 //These are the icons specific to quests, such as investigation icons
+
+/////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+//////////////////////////WEAPONS\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+/////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+//////////// -------  GENERAL SETTINGS  ------- \\\\\\\\\\\\\\\\\\
+//- LOCATION - (scripts/player/player_variables_hard.scr) -----\\\
+export float IAL_Weapon_Durability_Global_Reduction = 1.0; //Default value 1.0
+
+////////////// -------  RANGED  ------- \\\\\\\\\\\\\\\\\\\\\\\
+//- LOCATION - (scripts/iventory/inventory_special.scr) -----\\
+export bool IAL_AutoAim = FALSE;
+
+/////// -------  WEAPONS BOUNCE REACTIONS  ------- \\\\\\\\\\\\\\\
+//- LOCATION - (scripts/iventory/inventory_weapondefinitions.scr) -----\\
+// Created in response to people wanting to turn off the bounce effect
+export int IAL_Weapon_Bounce_Blade = 33; //Fix for bouncing weapons, Set to 3 if you like the bounce
+export int IAL_Weapon_Bounce_Axe = 33; //Fix for bouncing weapons, Set to 3 if you like the bounce
+export int IAL_Weapon_Bounce_Sword = 33; //Fix for bouncing weapons, Set to 3 if you like the bounce
+export int IAL_Weapon_Bounce_Hammer = 33; //Fix for bouncing weapons, Set to 3 if you like the bounce
+export int IAL_Weapon_Bounce_Stick = 33; //Fix for bouncing weapons, Set to 3 if you like the bounce
+export int IAL_Weapon_Bounce_Mace = 33; //Fix for bouncing weapons, Set to 3 if you like the bounce
+export int IAL_Weapon_Bounce_Knuckles = 33; //Fix for bouncing weapons, Set to 3 if you like the bounce
+
+///////////////// -------  EXPLOSIVES  ------- \\\\\\\\\\\\\\\\\\\\\\\
+//These settings effect the different explosive types in the game and their reactions\\
+export float IAL_Explosive_Tank_ExplosionDelay = 5.000000;
+export float IAL_Explosive_Tank_Range = 6.0;
+
+export int IAL_Explosive_GasCylinderBig_ExplosionDelay = 5;
+export int IAL_Explosive_GasCylinderBig_Damage = 300;
+export int IAL_Explosive_GasCylinderBig_Range = 8;
+export float IAL_Explosive_GasCylinderBig_Physics = 1.75;
+
+export int IAL_Explosive_GasCylinderSmall_ExplosionDelay = 4;
+export int IAL_Explosive_GasCylinderSmall_Damage = 250;
+export int IAL_Explosive_GasCylinderSmall_Range = 6;
+export float IAL_Explosive_GasCylinderSmall_Physics = 1.55;
+
+export int IAL_Explosive_ExplosiveBarrel_ExplosionDelay = 0;
+export int IAL_Explosive_ExplosiveBarrel_Damage = 350;
+export int IAL_Explosive_ExplosiveBarrel_Range = 10;
+export float IAL_Explosive_ExplosiveBarrel_Physics = 2.05;
+
+///////////////// -------  AI EXPLOSIVE REACTIONS  ------- \\\\\\\\\\\\\\\
+//- LOCATION - (ai/ai_manager.scr) -----\\
+export int IAL_AI_DistanceToReact_Explosion_Min = 70;
+export int IAL_AI_DistanceToReact_Explosion_Max = 120;
+
+////////////// -------  DAMAGE MODIFIERS  ------- \\\\\\\\\\\\\\\\\\\\\\\\
+//GENERAL MODIFIER\\
+export float IAL_Overall_Dmg_To_Player = 0.5;
+export float IAL_Overall_Fall_Dmg_To_Player = 1.5;
+/////////////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+/////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+///////////////////////SPAWN DENSITY\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+/////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+//- LOCATION - (scripts/densitiesSettings.scr) -----\\\\\\\\\\\\\\
+//This is the Day Time density average for all groups
+//Percentage of spawn points used per area
+
+//////////// -------  INTERIORS - DAY  ------- \\\\\\\\\\\\\\\\\\\
+export int IALR_Density_Easy_Day_Interiors_Amount_Min = 1; //Near based and story lines
+export int IALR_Density_Easy_Day_Interiors_Amount_Max = 35; //Near based and story lines
+export int IALR_Density_Normal_Day_Interiors_Amount_Min = 15; //Near based and story lines
+export int IALR_Density_Normal_Day_Interiors_Amount_Max = 55; //Near based and story lines
+export int IALR_Density_Hard_Day_Interiors_Amount_Min = 25; //Near based and story lines
+export int IALR_Density_Hard_Day_Interiors_Amount_Max = 50; //Near based and story lines
+
+//////////// -------  INTERIORS - NIGHT  ------- \\\\\\\\\\\\\\\\\
+export int IALR_Density_Easy_Night_Interiors_Amount_Min = 0; //Near based and story lines
+export int IALR_Density_Easy_Night_Interiors_Amount_Max = 2; //Near based and story lines
+export int IALR_Density_Normal_Night_Interiors_Amount_Min = 0; //Near based and story lines
+export int IALR_Density_Normal_Night_Interiors_Amount_Max = 4; //Near based and story lines
+export int IALR_Density_Hard_Night_Interiors_Amount_Min = 0; //Near based and story lines
+export int IALR_Density_Hard_Night_Interiors_Amount_Max = 4; //Near based and story lines
+
+//////////// -------  OPEN WORLD - DAY  ------- \\\\\\\\\\\\\\\\\\
+export int IAL_Density_Spawn_Percent_Rooftop = 100;
+//This is the Day Time density average for all groups\\
+// The lower the number, the more zombies spawn
+export float IAL_Density_Day = 4.0; // Common areas
+export float IAL_Density_Day_Easy = 4.0; //Default is 4.5, Ultimate = 2.0, Survivor 3.0, Casual = 4.0
+export float IAL_Density_Day_Medium = 4.0; //Default is 3.5, Ultimate = 2.0, Survivor 3.0, Casual = 4.0
+export float IAL_Density_Day_Hard = 4.0; //Default is 2.0, Ultimate = 2.0, Survivor 3.0, Casual = 4.0
+export float IAL_Density_Day_Flooded = 3.0; // Specifically the flooded part of the storyline
+export float IAL_Density_Day_HUBOWA = 3.0; //Near based and story lines
+
+/////////////// -- OPEN WORLD - NIGHT  ------- \\\\\\\\\\\\\\\\\\\\\\\ 
+//This is the Night Time density average for all groups\\
+// The lower the number, the more zombies spawn
+export float IAL_Density_Night = 2.5; // Common areas
+export float IAL_Density_Night_Easy = 3.5; //Default is 4.0, Ultimate = 2.0, Survivor 2.5, Casual = 3.5
+export float IAL_Density_Night_Medium = 3.5; //Default is 4.0, Ultimate = 2.0, Survivor 2.5, Casual = 3.5
+export float IAL_Density_Night_Hard = 3.5; //Default is 4.0, Ultimate = 2.0, Survivor 2.5, Casual = 3.5
+export float IAL_Density_Night_Flooded = 3.0; // Specifically the flooded part of the storyline
+export float IAL_Density_Night_HUBOWA = 3.0; //Near based and story lines
+
+/////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+////////////////////////SPAWN LOGIC\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+/////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+//- LOCATION - (spawn/dynamic_spawn_logic_params.scr) -----\\
+export string IAL_Special_SpawnDistance_min = "100.0"; //Ultimate = 100.0, Survivor 150.0, Casual = 150.0
+export string IAL_Special_SpawnDistance_avg = "200.0"; //Ultimate = 200.0, Survivor 250.0, Casual = 250.0
+
+//////////// -------  DYNAMIC SPAWN LOGIC  ------- \\\\\\\\\\\\\\\\\\\\\\\ 
+//- LOCATION - (spawn/dynamic_spawn_logic_params.scr) -----\\
+export string IAL_Dynamic_Spawn_Bandits_1_Amount = "0";  //Default = 0, Ultimate = 4, Survivor = 1, Casual = 0
+export string IAL_Dynamic_Spawn_Bandits_1_Min = "1";  //Default = 1, Ultimate = 4, Survivor = 3, Casual = 1
+export string IAL_Dynamic_Spawn_Bandits_1_Max = "3";  //Default = 1, Ultimate = 6, Survivor = 5, Casual = 3
+export string IAL_Dynamic_Spawn_Bandits_2_Amount = "1";  //Default = 0, Ultimate = 4, Survivor = 1, Casual = 0
+export string IAL_Dynamic_Spawn_Bandits_2_Min = "1";  //Default = 1, Ultimate = 4, Survivor = 3, Casual = 1
+export string IAL_Dynamic_Spawn_Bandits_2_Max = "3";  //Default = 1, Ultimate = 6, Survivor = 5, Casual = 3
+export string IAL_Dynamic_Spawn_Bandits_3_Amount = "1";  //Default = 0, Ultimate = 4, Survivor = 1, Casual = 0
+export string IAL_Dynamic_Spawn_Bandits_3_Min = "1";  //Default = 1, Ultimate = 4, Survivor = 3, Casual = 1
+export string IAL_Dynamic_Spawn_Bandits_3_Max = "3";  //Default = 1, Ultimate = 6, Survivor = 5, Casual = 3
+export string IAL_Dynamic_Spawn_Survivors_1_Amount = "0";  //Default = 0, Ultimate = 4, Survivor = 1, Casual = 0
+export string IAL_Dynamic_Spawn_Survivors_1_Min = "1";  //Default = 1, Ultimate = 4, Survivor = 3, Casual = 1
+export string IAL_Dynamic_Spawn_Survivors_1_Max = "3";  //Default = 1, Ultimate = 6, Survivor = 5, Casual = 3
+export string IAL_Dynamic_Spawn_Survivors_2_Amount = "1";  //Default = 0, Ultimate = 4, Survivor = 1, Casual = 0
+export string IAL_Dynamic_Spawn_Survivors_2_Min = "1";  //Default = 1, Ultimate = 4, Survivor = 3, Casual = 1
+export string IAL_Dynamic_Spawn_Survivors_2_Max = "3";  //Default = 1, Ultimate = 6, Survivor = 5, Casual = 3
+export string IAL_Dynamic_Spawn_Survivors_3_Amount = "1";  //Default = 0, Ultimate = 4, Survivor = 1, Casual = 0
+export string IAL_Dynamic_Spawn_Survivors_3_Min = "1";  //Default = 1, Ultimate = 4, Survivor = 3, Casual = 1
+export string IAL_Dynamic_Spawn_Survivors_3_Max = "3";  //Default = 1, Ultimate = 6, Survivor = 5, Casual = 3
+export string IAL_Dynamic_Spawn_Renegades_1_Amount = "1";  //Default = 0, Ultimate = 4, Survivor = 1, Casual = 0
+export string IAL_Dynamic_Spawn_Renegades_1_Min = "1";  //Default = 1, Ultimate = 4, Survivor = 3, Casual = 1
+export string IAL_Dynamic_Spawn_Renegades_1_Max = "3";  //Default = 1, Ultimate = 6, Survivor = 5, Casual = 3
+export string IAL_Dynamic_Spawn_PeaceKeepers_1_Amount = "0";  //Default = 0, Ultimate = 4, Survivor = 1, Casual = 0
+export string IAL_Dynamic_Spawn_PeaceKeepers_1_Min = "1";  //Default = 1, Ultimate = 4, Survivor = 3, Casual = 1
+export string IAL_Dynamic_Spawn_PeaceKeepers_1_Max = "3";  //Default = 1, Ultimate = 6, Survivor = 5, Casual = 3
+export string IAL_Dynamic_Spawn_PeaceKeepers_2_Amount = "1";  //Default = 0, Ultimate = 4, Survivor = 1, Casual = 0
+export string IAL_Dynamic_Spawn_PeaceKeepers_2_Min = "1";  //Default = 1, Ultimate = 4, Survivor = 3, Casual = 1
+export string IAL_Dynamic_Spawn_PeaceKeepers_2_Max = "3";  //Default = 1, Ultimate = 6, Survivor = 5, Casual = 3
+export string IAL_Dynamic_Spawn_PeaceKeepers_3_Amount = "1";  //Default = 0, Ultimate = 4, Survivor = 1, Casual = 0
+export string IAL_Dynamic_Spawn_PeaceKeepers_3_Min = "1";  //Default = 1, Ultimate = 4, Survivor = 3, Casual = 1
+export string IAL_Dynamic_Spawn_PeaceKeepers_3_Max = "3";  //Default = 1, Ultimate = 6, Survivor = 5, Casual = 3
+export string IAL_Dynamic_Spawn_PeaceKeepers_Hub_Amount = "1";  //Default = 0, Ultimate = 4, Survivor = 1, Casual = 0
+export string IAL_Dynamic_Spawn_PeaceKeepers_Hub_Min = "1";  //Default = 1, Ultimate = 4, Survivor = 3, Casual = 1
+export string IAL_Dynamic_Spawn_PeaceKeepers_Hub_Max = "3";  //Default = 1, Ultimate = 6, Survivor = 5, Casual = 3
+
+/////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+/////////////////////AI SPAWN DIFFICULTY\\\\\\\\\\\\\\\\\\\\\\\\\\
+/////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+//Change the min and max values here to add additional variation to the levels spawned ingame\\
+// Tiers represent their level of difficulty
+export string IAL_AI_TIER_1_Min = "Tier_1";
+export string IAL_AI_TIER_1_Max = "Tier_1";
+export string IAL_AI_TIER_2_Min = "Tier_2";
+export string IAL_AI_TIER_2_Max = "Tier_2";
+export string IAL_AI_TIER_3_Min = "Tier_3";
+export string IAL_AI_TIER_3_Max = "Tier_3";
+export string IAL_AI_TIER_4_Min = "Tier_4";
+export string IAL_AI_TIER_4_Max = "Tier_4";
+export string IAL_AI_TIER_5_Min = "Tier_5";
+export string IAL_AI_TIER_5_Max = "Tier_5";
+export string IAL_AI_TIER_6_Min = "Tier_6";
+export string IAL_AI_TIER_6_Max = "Tier_6";
+export string IAL_AI_TIER_7_Min = "Tier_7";
+export string IAL_AI_TIER_7_Max = "Tier_7";
+export string IAL_AI_TIER_8_Min = "Tier_8";
+export string IAL_AI_TIER_8_Max = "Tier_8";
+export string IAL_AI_TIER_9_Min = "Tier_9";
+export string IAL_AI_TIER_9_Max = "Tier_9";
+
+//////////// -------  AI SPAWN SETTINGS BY ZONE  ------- \\\\\\\\\\\\\\\\\\\\\\\ 
+//- LOCATION - (scripts/factions/zonelevels.scr) -----\\
+//These settings change the max level of the AI in zones leading up to the ending\\
+export int IAL_AI_Early_Zones_min_Lvl = 1;
+export int IAL_AI_Early_Zones_max_Lvl = 3;
+export int IAL_AI_City_Zones_min_Lvl = 3;
+export int IAL_AI_City_Zones_max_Lvl = 9;
+export int IAL_AI_Flooded_Zones_min_Lvl = 1;
+export int IAL_AI_Flooded_Zones_max_Lvl = 9;
+export int IAL_AI_Endgame_Zones_min_Lvl = 5;
+export int IAL_AI_Endgame_Zones_max_Lvl = 9;
+
+//These settings change the max level of the AI's gear in zones leading up to the ending\\
+//////////// -------  INFECTED Difficulty Tiers Settings  ------- \\\\\\\\\\\\\\\\\\\\\\\ 
+export string IAL_AI_Infected_Early_Zones_Lvl_Min = "Tier_1";
+export string IAL_AI_Infected_Early_Zones_Lvl_Max = "Tier_2";
+export string IAL_AI_Infected_City_Zones_Lvl_Min = "Tier_3";
+export string IAL_AI_Infected_City_Zones_Lvl_Max = "Tier_9";
+export string IAL_AI_Infected_Industrial_Zones_Lvl_Min = "Tier_5";
+export string IAL_AI_Infected_Industrial_Zones_Lvl_Max = "Tier_9";
+export string IAL_AI_Infected_Flooded_Zones_Lvl_Min = "Tier_5";
+export string IAL_AI_Infected_Flooded_Zones_Lvl_Max = "Tier_9";
+export string IAL_AI_Infected_Darkzone_Zones_Lvl_Min = "Tier_6";
+export string IAL_AI_Infected_Darkzone_Zones_Lvl_Max = "Tier_9";
+
+//////////// -------  INFECTED ENDGAME Difficulty Tiers Settings  ------- \\\\\\\\\\\\\\\\\\\\\\\ 
+export string IAL_AI_Infected_Early_Zones_Endgame_Lvl_Min = "Tier_6";
+export string IAL_AI_Infected_Early_Zones_Endgame_Lvl_Max = "Tier_9";
+export string IAL_AI_Infected_City_Zones_Endgame_Lvl_Min = "Tier_7";
+export string IAL_AI_Infected_City_Zones_Endgame_Lvl_Max = "Tier_9";
+export string IAL_AI_Infected_Renegade_Zones_Endgame_Lvl_Min = "Tier_8";
+export string IAL_AI_Infected_Renegade_Zones_Endgame_Lvl_Max = "Tier_9";
+export string IAL_AI_Infected_Industrial_Zones_Endgame_Lvl_Min = "Tier_8";
+export string IAL_AI_Infected_Industrial_Zones_Endgame_Lvl_Max = "Tier_9";
+export string IAL_AI_Infected_Flooded_Zones_Endgame_Lvl_Min = "Tier_8";
+export string IAL_AI_Infected_Flooded_Zones_Endgame_Lvl_Max = "Tier_9";
+export string IAL_AI_Infected_Epilogue_Lvl_Min = "Tier_8";
+export string IAL_AI_Infected_Epilogue_Lvl_Max = "Tier_9";
+
+//////////// -------  HUMAN GANG Difficulty Tiers Settings  ------- \\\\\\\\\\\\\\\\\\\\\\\ 
+export string IAL_AI_Encounter_Difficulty_Bloodgang_Lvl_Min = "Tier_1";
+export string IAL_AI_Encounter_Difficulty_Bloodgang_Lvl_Max = "Tier_5";
+export string IAL_AI_Encounter_Difficulty_Skyscraper_Lvl_Min = "Tier_1";
+export string IAL_AI_Encounter_Difficulty_Skyscraper_Lvl_Max = "Tier_5";
+export string IAL_AI_Encounter_Difficulty_Flooded_Lvl_Min = "Tier_1";
+export string IAL_AI_Encounter_Difficulty_Flooded_Lvl_Max = "Tier_9";
+export string IAL_AI_Encounter_Difficulty_Vertical_Lvl_Min = "Tier_1";
+export string IAL_AI_Encounter_Difficulty_Vertical_Lvl_Max = "Tier_9";
+export string IAL_AI_Encounter_Difficulty_Military_Lvl_Min = "Tier_1";
+export string IAL_AI_Encounter_Difficulty_Military_Lvl_Max = "Tier_9";
+export string IAL_AI_Encounter_Difficulty_Chemicals_Lvl_Min = "Tier_1";
+export string IAL_AI_Encounter_Difficulty_Chemicals_Lvl_Max = "Tier_9";
+/////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+/////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+/////////////////////////AI BEHAVIOR\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+/////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+//////////// -------  Biter Movement Settings  ------- \\\\\\\\\\\
+export string IALR_Biter_Movement = "biter_level_walker"; //Determines if the main biters can walk or run, set "biter_level_runner" for them to run and "biter_level_walker" to keep them all walking
+export string IALR_Biter_Nightwalker_Movement = "biter_level_walker"; //Determines if the main biters can walk or run, set "biter_level_runner" for them to run and "biter_level_walker" to keep them all walking
+
+//////////// -------  Biter Climbing Settings  ------- \\\\\\\\\\\\
+export string IALR_Biter_Climbing_Ability = "biter"; //Determines if the main biters can climb, Set "biter_ultimate" to make them climb and "biter" to keep them from climbing
+export string IALR_Biter_Nightwalker_Climbing_Ability = "biter"; //Determines if the main biters can climb, Set "biter_nightwalker" to make them climb and "biter" to keep them from climbing
+
+export string IALR_FreshDead_Biter_Movement = "biter_level_walker"; //Determines if the main biters can walk or run, set "biter_level_runner" for them to run and "biter_level_walker" to keep them all walking
+export string IALR_FreshDead_Climbing_Ability = "biter"; //Determines if the main biters can climb, Set "biter_fresh" to make them climb and "biter" to keep them from climbing
+//////////// -------  Infected Damage  ------- \\\\\\\\\\\\\\\\\\\\\\\ 
+export string IAL_Biter_Swip_DMG_Percent = "15%-20% of MaxHealth"; //Total percent of health
+export string IAL_Biter_GrabBite_DMG_Percent = "70% of MaxHealth";
+
+//////////// -------  Goon Movement Settings  ------- \\\\\\\\\\\\\\\\\\\\\\\ 
+export string IALR_Goon_Movement = "m_goon"; //Determines if the Goons can walk or run, set "m_goon_runner" for them to run and "m_goon" to keep them all walking
+
+//////////// ------- Human Grouping System  ------- \\\\\\\\\\\\\\\\\\\\\ 
+export float IAL_Group_Enemies_Max = 12.0; // Based on documentation, I believe the max amount of Allies allowed to band together
+
+/////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+///////////////////////AI FALL HEIGHT\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+/////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+//- LOCATION - (ai/modulesparams/collisionmodulehumanpresets.scr) -----\\
+export float IAL_AI_FallHeight_ImmediateKill = 25.0; //Height for the subject to fall to immediately die, Default is 15.0
+
+//////////// -------  HUMANS  ------- \\\\\\\\\\\\\\\\\\\\\\\ 
+export float IAL_AI_FallHeight_Human_ImmediateKill = 25.0; //Height for the subject to fall to immediately die, Default is 15.0
+export float IAL_AI_FallHeight_Human_MinDmg = 10.0;
+export float IAL_AI_FallHeight_Human_MaxDmg = 50.0;
+
+//////////// -------  INFECTED  ------- \\\\\\\\\\\\\\\\\\\\\\\
+export float IAL_AI_FallHeight_Infected_ImmediateKill = 55.0; //Height for the subject to fall to immediately die, Default is 15.0
+export float IAL_AI_FallHeight_Infected_MinDmg = 5.0;
+export float IAL_AI_FallHeight_Infected_MaxDmg = 50.0;
+
+//////////// -------  LARGE INFECTED (GOONS, DEMO)  ------- \\\\\\\\\\\\\\\\\\\\\\\
+export float IAL_AI_FallHeight_Large_Infected_ImmediateKill = 75.0; //Height for the subject to fall to immediately die, Default is 15.0
+export float IAL_AI_FallHeight_InfectedLarge_MinDmg = 10.0;
+export float IAL_AI_FallHeight_InfectedLarge_MaxDmg = 75.0;
+
+//////////// -------  VOLATILES  ------- \\\\\\\\\\\\\\\\\\\\\\\
+export float IAL_AI_FallHeight_Volatile_ImmediateKill = 100.0; //Height for the subject to fall to immediately die, Default is 20.0
+export float IAL_AI_FallHeight_Volatile_MinDmg = 10.0;
+export float IAL_AI_FallHeight_Volatile_MaxDmg = 49.0;
+
+//////////// -------  ALPHA ZOMBIE  ------- \\\\\\\\\\\\\\\\\\\\\\\
+export float IAL_AI_FallHeight_AlphaZombie_MinDmg = 100.0;
+export float IAL_AI_FallHeight_AlphaZombie_MaxDmg = 150.0;
+
+//////////// -------  PLAYER  ------- \\\\\\\\\\\\\\\\\\\\\\\
+//- LOCATION - (scripts/player/player_variables_hard.scr) -----\\
+export float IAL_Player_FallHeight_Stagger = 4.8; //Height that causes the player to lose momentum, Default is 4.8
+export float IAL_Player_FallHeight_Hurt = 6.8; //Height that causes small amount of damage, Default is 6.8
+export float IAL_Player_FallHeight_Lethal = 14.0; //Height that kills the player, Default is 14.0
+
+/////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+//////////////////AI WEAPON DROP LOGIC\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+/////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+//- LOCATION - (presets/logic/humanai/humanai_open_world.def) -----\\
+// Set to "1" to turn on weapon dropping on each group!
+export string IAL_Humans_Drop_Weapons_Everyone_1handed = "0"; //Default = 0, Ultimate = 0, Survivor = 0, Casual = 0
+export string IAL_Humans_Drop_Weapons_Everyone_2handed = "0"; //Default = 0, Ultimate = 0, Survivor = 0, Casual = 0
+export string IAL_Humans_Drop_Weapons_Everyone_Bow = "0"; //Default = 0, Ultimate = 0, Survivor = 0, Casual = 0
+export string IAL_Humans_Drop_Weapons_Renegade_1handed = "0"; //Default = 0, Ultimate = 0, Survivor = 0, Casual = 0
+export string IAL_Humans_Drop_Weapons_Renegade_2handed = "0"; //Default = 0, Ultimate = 0, Survivor = 0, Casual = 0
+export string IAL_Humans_Drop_Weapons_Renegade_Bow = "0"; //Default = 0, Ultimate = 0, Survivor = 0, Casual = 0
+export string IAL_Humans_Drop_Weapons_PK_1handed = "0"; //Default = 0, Ultimate = 0, Survivor = 0, Casual = 0
+export string IAL_Humans_Drop_Weapons_PK_2handed = "0"; //Default = 0, Ultimate = 0, Survivor = 0, Casual = 0
+export string IAL_Humans_Drop_Weapons_PK_Bow = "0"; //Default = 0, Ultimate = 0, Survivor = 0, Casual = 0
+export string IAL_Humans_Drop_Weapons_Colonel_1handed = "0"; //Default = 0, Ultimate = 0, Survivor = 0, Casual = 0
+export string IAL_Humans_Drop_Weapons_Colonel_2handed = "0"; //Default = 0, Ultimate = 0, Survivor = 0, Casual = 0
+export string IAL_Humans_Drop_Weapons_Colonel_Bow = "0"; //Default = 0, Ultimate = 0, Survivor = 0, Casual = 0
+export string IAL_Humans_Drop_Weapons_Bandits_1handed = "0"; //Default = 0, Ultimate = 0, Survivor = 0, Casual = 0
+export string IAL_Humans_Drop_Weapons_Bandits_2handed = "0"; //Default = 0, Ultimate = 0, Survivor = 0, Casual = 0
+export string IAL_Humans_Drop_Weapons_Bandits_Bow = "0"; //Default = 0, Ultimate = 0, Survivor = 0, Casual = 0
+export string IAL_Humans_Drop_Weapons_Survivors_1handed = "0"; //Default = 0, Ultimate = 0, Survivor = 0, Casual = 0
+export string IAL_Humans_Drop_Weapons_Survivors_2handed = "0"; //Default = 0, Ultimate = 0, Survivor = 0, Casual = 0
+export string IAL_Humans_Drop_Weapons_Survivors_Bow = "0"; //Default = 0, Ultimate = 0, Survivor = 0, Casual = 0
+
+/////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+/////////////////////DISMEMBER SYSTEM\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+/////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+//- LOCATION - (AI/DamageModel/body_elements.scr) -----\\
+//Probably to cut Infected Limbs and Arms
+//////////// -------  HUMANS  ------- \\\\\\\\\\\\\\\\\\\\\\\ 
+export int IAL_GORE_Dismember_Human_Head = 40; //Subject health where this can happen without killing the subject
+export bool IAL_GORE_Dismember_Human_KillOnComponent_Head = true; //The subject died when this is destroyed "true" or "false"
+export int IAL_GORE_Dismember_Human_Arms = 80; //Subject health where this can happen without killing the subject
+export bool IAL_GORE_Dismember_Human_KillOnComponent_Arms = false; //The subject died when this is destroyed "true" or "false"
+export int IAL_GORE_Dismember_Human_Legs = 70; //Subject health where this can happen without killing the subject
+export bool IAL_GORE_Dismember_Human_KillOnComponent_Legs = true; //The subject died when this is destroyed "true" or "false"
+
+//////////// -------  INFECTED  ------- \\\\\\\\\\\\\\\\\\\\\\\
+export int IAL_GORE_Dismember_DI_Head = 40; //Subject health where this can happen without killing the subject
+export bool IAL_GORE_Dismember_DI_KillOnComponent_Head = true; //The subject died when this is destroyed "true" or "false"
+export int IAL_GORE_Dismember_DI_Arms = 80; //Subject health where this can happen without killing the subject
+export bool IAL_GORE_Dismember_DI_KillOnComponent_Arms = false; //The subject died when this is destroyed "true" or "false"
+export int IAL_GORE_Dismember_DI_Legs = 70; //Subject health where this can happen without killing the subject
+export bool IAL_GORE_Dismember_DI_KillOnComponent_Legs = false; //The subject died when this is destroyed "true" or "false"
+
+//////////// -------  BITERS  ------- \\\\\\\\\\\\\\\\\\\\\\\
+export int IAL_GORE_Dismember_Biter_Head = 40; //Subject health where this can happen without killing the subject
+export bool IAL_GORE_Dismember_Biter_KillOnComponent_Head = true; //The subject died when this is destroyed "true" or "false"
+export int IAL_GORE_Dismember_Biter_Arms = 90; //Subject health where this can happen without killing the subject
+export bool IAL_GORE_Dismember_Biter_KillOnComponent_Arms = false; //The subject died when this is destroyed "true" or "false"
+export int IAL_GORE_Dismember_Biter_Legs = 75; //Subject health where this can happen without killing the subject
+export bool IAL_GORE_Dismember_Biter_KillOnComponent_Legs = false; //The subject died when this is destroyed "true" or "false"
+
+//////////// -------  VIRALS  ------- \\\\\\\\\\\\\\\\\\\\\\\
+export int IAL_GORE_Dismember_Viral_Head = 40; //Subject health where this can happen without killing the subject
+export bool IAL_GORE_Dismember_Viral_KillOnComponent_Head = true; //The subject died when this is destroyed "true" or "false"
+export int IAL_GORE_Dismember_Viral_Arms = 80; //Subject health where this can happen without killing the subject
+export bool IAL_GORE_Dismember_Viral_KillOnComponent_Arms = false; //The subject died when this is destroyed "true" or "false"
+export int IAL_GORE_Dismember_Viral_Legs = 40; //Subject health where this can happen without killing the subject
+export bool IAL_GORE_Dismember_Viral_KillOnComponent_Legs = true; //The subject died when this is destroyed "true" or "false"
+/////////////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+/////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+///////////////////////CHASE SYSTEM\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+/////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+//- LOCATION - (ai/chasedata/chase_base_data.scr) -----\\
+export int IALR_Chase_Viral_Count_Min = 1; //Minimum number of virals that can immediately spawn on Chase, 0 means sometimes they don't spawn
+export int IALR_Chase_Viral_Count_Max = 3; //Maximum number of virals that can immediately spawn on Chase
+export int IALR_Chase_Charger_Count_Min = 0; //Minimum number of virals that can immediately spawn on Chase, 0 means sometimes they don't spawn
+export int IALR_Chase_Charger_Count_Max = 0; //Maximum number of virals that can immediately spawn on Chase
+export int IALR_Chase_Banshee_Count_Min = 0; //Minimum number of virals that can immediately spawn on Chase, 0 means sometimes they don't spawn
+export int IALR_Chase_Banshee_Count_Max = 1; //Maximum number of virals that can immediately spawn on Chase
+export int IALR_Chase_Spitter_Count_Min = 0; //Minimum number of virals that can immediately spawn on Chase, 0 means sometimes they don't spawn
+export int IALR_Chase_Spitter_Count_Max = 0; //Maximum number of virals that can immediately spawn on Chase
+export int IALR_Chase_Goon_Count_Min = 0; //Minimum number of virals that can immediately spawn on Chase, 0 means sometimes they don't spawn
+export int IALR_Chase_Goon_Count_Max = 0; //Maximum number of virals that can immediately spawn on Chase
+export int IALR_Chase_Demolisher_Count_Min = 0; //Minimum number of virals that can immediately spawn on Chase, 0 means sometimes they don't spawn
+export int IALR_Chase_Demolisher_Count_Max = 0; //Maximum number of virals that can immediately spawn on Chase
+export int IALR_Chase_Corruptor_Count_Min = 0; //Minimum number of virals that can immediately spawn on Chase, 0 means sometimes they don't spawn
+export int IALR_Chase_Corruptor_Count_Max = 0; //Maximum number of virals that can immediately spawn on Chase
+
+//- LOCATION - (ai/chasedata/chase_base_data.scr) -----\\
+//Chase Data for the night intensity after Chase begins
+//Delay before Zombies start Chasing you
+export int IAL_Chase_InitialDelay = 2;
+
+//Point increase on chase based on infected class - GENERAL Settings\\
+export int IAL_Chase_PointsPerSecondIfSeen_Viral_Close = 3;
+export int IAL_Chase_PointsPerSecondIfSeen_Viral_Far = 2;
+export int IAL_Chase_PointsPerSecondIfSeen_Screamer_Close = 8;
+export int IAL_Chase_PointsPerSecondIfSeen_Screamer_Far = 6;
+export int IAL_Chase_PointsPerSecondIfSeen_Screamer_Screaming = 15;
+
+//Range for the screamers screen to cause chase points to increase\\
+export int IAL_Chase_MaxRangeForScreamer = 20;
+
+//Time before chase ends\\
+export int IAL_Chase_LVL1_ChaseEndDelay = 15;
+export int IAL_Chase_LVL2_ChaseEndDelay = 25;
+export int IAL_Chase_LVL3_ChaseEndDelay = 30;
+export int IAL_Chase_LVL4_ChaseEndDelay = 50;
+
+//Time before chase ends under UV Light\\
+export int IAL_Chase_LVL1_ChaseEndUnderUVDelay = 20;
+export int IAL_Chase_LVL2_ChaseEndUnderUVDelay = 25;
+export int IAL_Chase_LVL3_ChaseEndUnderUVDelay = 30;
+export int IAL_Chase_LVL4_ChaseEndUnderUVDelay = 50;
+
+//These are the amount of points required to move to next levels in chase\\
+export int IAL_Chase_UpgradePoints_ToLVL2 = 50;
+export int IAL_Chase_UpgradePoints_ToLVL3 = 175;
+export int IAL_Chase_UpgradePoints_ToLVL4 = 225;
+
+//Time before the chase ends after the player is lost by AI\\
+export int IAL_Chase_LVL1_LostPlayer_TimeBeforeEndChase = 30;
+export int IAL_Chase_LVL2_LostPlayer_TimeBeforeEndChase = 30;
+export int IAL_Chase_LVL3_LostPlayer_TimeBeforeEndChase = 30;
+export int IAL_Chase_LVL4_LostPlayer_TimeBeforeEndChase = 30;
+
+//Number of Infected based on Chase Points - SINGLE PLAYER\\
+export int IAL_Chase_LVL1_Avg_Virals = 4;
+export int IAL_Chase_LVL1_Max_Virals = 8;
+export int IAL_Chase_LVL2_Avg_Virals = 8;
+export int IAL_Chase_LVL2_Max_Virals = 12;
+export int IAL_Chase_LVL3_Avg_Virals = 12;
+export int IAL_Chase_LVL3_Max_Virals = 16;
+export int IAL_Chase_LVL4_Avg_Virals = 16;
+export int IAL_Chase_LVL4_Max_Virals = 20;
+
+export int IAL_Chase_LVL1_Avg_Volatiles = 0;
+export int IAL_Chase_LVL1_Max_Volatiles = 1;
+export int IAL_Chase_LVL2_Avg_Volatiles = 1;
+export int IAL_Chase_LVL2_Max_Volatiles = 2;
+export int IAL_Chase_LVL3_Avg_Volatiles = 1;
+export int IAL_Chase_LVL3_Max_Volatiles = 3;
+export int IAL_Chase_LVL4_Avg_Volatiles = 1;
+export int IAL_Chase_LVL4_Max_Volatiles = 4;
+	
+//Number of Infected based on Chase Points - COOP\\
+export int IAL_Chase_Coop_LVL1_Virals_Close = 12;
+export int IAL_Chase_Coop_LVL1_Virals_Far = 15;
+export int IAL_Chase_Coop_LVL2_Virals_Close = 18;
+export int IAL_Chase_Coop_LVL2_Virals_Far = 18;
+export int IAL_Chase_Coop_LVL3_Virals_Close = 24;
+export int IAL_Chase_Coop_LVL3_Virals_Far = 24;
+export int IAL_Chase_Coop_LVL4_Virals_Close = 30;
+export int IAL_Chase_Coop_LVL4_Virals_Far = 30;
+
+export int IAL_Chase_Coop_LVL1_Volatiles_Close = 0;
+export int IAL_Chase_Coop_LVL1_Volatiles_Far = 1;
+export int IAL_Chase_Coop_LVL2_Volatiles_Close = 2;
+export int IAL_Chase_Coop_LVL2_Volatiles_Far = 3;
+export int IAL_Chase_Coop_LVL3_Volatiles_Close = 2;
+export int IAL_Chase_Coop_LVL3_Volatiles_Far = 4;
+export int IAL_Chase_Coop_LVL4_Volatiles_Close = 5;
+export int IAL_Chase_Coop_LVL4_Volatiles_Far = 8;
+
+//CHASE GENERAL COOP Settings\\
+export int IAL_Chase_Coop_Range_Far = 80;
+export int IAL_Chase_Coop_Range_Close = 40;
+
+//Intensity times and cooldowns\\
+export int IAL_Chase_LVL1_High_Intensity_Time = 40;
+export int IAL_Chase_LVL2_High_Intensity_Time = 80;
+export int IAL_Chase_LVL3_High_Intensity_Time = 120;
+
+export int IAL_Chase_LVL1_High_Intensity_Cooldown = 10;
+export int IAL_Chase_LVL2_High_Intensity_Cooldown = 8;
+export int IAL_Chase_LVL3_High_Intensity_Cooldown = 6;
+
+//CHASE DAMAGE MODIFIER\\
+export float IAL_Night_Aggression_Dmg_Multi_LVL1 = 0.1;
+export float IAL_Night_Aggression_Dmg_Multi_LVL2 = 0.2;
+export float IAL_Night_Aggression_Dmg_Multi_LVL3 = 0.5;
+export float IAL_Night_Aggression_Dmg_Multi_LVL4 = 1.0;	
+/////////////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+////////////CHEATS\\\\\\\\\\\\\\\\\\\
+export int IAL_GhostMode = 0; //Enemies can detect you, Great for screenshots
+export bool IAL_InfiniteStamina = FALSE; //Never lose Stamina
+/////////////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\

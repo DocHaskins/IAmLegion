@@ -1,8 +1,10 @@
 !include("ai_data.def")
 !include("ai_timing.def")
 
-!include("zombie_data.scr")
-!include("zombie_params_level_0.scr")
+!include("zombie_data_custom_preset_anim_set_b.scr")
+
+// zombie gastank
+
 !include("export_gastank_params.scr")
 !include("human_ai_info_types.def")
 
