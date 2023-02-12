@@ -19,7 +19,7 @@
     {
         UseCondition("Day")
         DisallowedMaps("old_town_outposts_radio;Sewers_Stadium")
-        MaxProgressCondition(2)
+        //MaxProgressCondition(2)
         Type("base")
         Preset("Stinger, 5;Vessel_Eating_Corpse, 10;Vessel_In_Attractor, 10;Vessel_Init, 40;")
     }
@@ -29,7 +29,7 @@
         UseCondition("Day")
         BannedAreaAttribs("POOR_DISTRICT")
         DisallowedMaps("old_town_outposts_radio;Sewers_Stadium")
-        MinProgressCondition(2)
+        //MinProgressCondition(2)
         Type("base")
         Preset("Stinger, 5;Vessel_Eating_Corpse, 5;Vessel_Lurker_Int, 5;Vessel_Stinger_Int, 5;Vessel_In_Attractor, 5;Vessel_Init, 25;Vessel_WithAToy, 5;Nurker, 10;DeadZone_Policeman, 15;Biter_Special, 15;Human_To_Infected_In_Attractor, 10;")
 	}
