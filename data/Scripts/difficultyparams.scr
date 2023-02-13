@@ -1,3 +1,5 @@
+import "ial_settings.mth"
+
 sub main()
 {
     NewGamePlusParams()
@@ -58,14 +60,17 @@ sub main()
     
     Difficulty("Normal")
     {
-        CanUseShopColorSetHard(false);
+        CanUseShopColorSetHard(IAL_Difficulty_AllowHardShopItems_Normal);
         CanAccelerateBluprintPartDrop(true);
         CanAccelerateVehicleComponentDrop(true);
         LootTreeName("default");
         SpecialLootTreeName("default");
-        ShootingAccuracyFactor(1.0);
-        NightSpottingMult(1.0);
-        AirdropPatrolTimeFactor(1.0);
+        ShootingAccuracyFactor(IAL_Difficulty_ShotAccuracy_Normal);
+        NightSpottingMult(IAL_Difficulty_NightSpotting_Normal);
+        AirdropPatrolTimeFactor(IAL_Difficulty_Airdrops_Normal);
+		
+		AddHealthFactor(IAL_Health_Medkit_Gain_Normal);         //Multiplier for amount of health received by using medkit.
+        HealthRegenFactor(IAL_Health_Regen_Normal);       //Multiplier of time needed to regenerate Player's health from critical health.
        
         MeleeVerticalAttackOffset(0.1);
         MeleeVerticalAttackDeviation(0.0);
@@ -167,9 +172,12 @@ sub main()
 	//Difficulty Normal MUST BE FIRST, DO NOT CHANGE ORDER
 	Difficulty("Easy")
     {
+		CanUseShopColorSetHard(IAL_Difficulty_AllowHardShopItems_Easy);
+		ShootingAccuracyFactor(IAL_Difficulty_ShotAccuracy_Easy);
+		
 		shop_sell_price_mul(1.2);
-		AddHealthFactor(2);
-		HealthRegenFactor(0.5);
+		AddHealthFactor(IAL_Health_Medkit_Gain_Easy);         //Multiplier for amount of health received by using medkit.
+        HealthRegenFactor(IAL_Health_Regen_Easy);       //Multiplier of time needed to regenerate Player's health from critical health.
 		
 		stamina_ch_attack_mul(0.75);
 		stamina_attack_mul(0.5);
@@ -178,7 +186,8 @@ sub main()
 
 		night_duration_mul(0.75);
 		day_duration_mul(1.25);
-		AirdropPatrolTimeFactor(2);
+		AirdropPatrolTimeFactor(IAL_Difficulty_Airdrops_Easy);
+		NightSpottingMult(IAL_Difficulty_NightSpotting_Easy);
 				
 		xp_legend_factor(0.5);
 		DeathPenaltyStatusXPFactor(0.5);
@@ -316,17 +325,17 @@ sub main()
     Difficulty("Hard")
     {
         CanShowPatrolCones(false);
-        CanUseShopColorSetHard(true);
+        CanUseShopColorSetHard(IAL_Difficulty_AllowHardShopItems_Hard);
         CanAccelerateBluprintPartDrop(false);
         CanAccelerateVehicleComponentDrop(false);
         DeathPenaltyStatusXPFactor(2.5);
-        ShootingAccuracyFactor(1.25);
-        NightSpottingMult(1.0);       //Multiplier of time need for Volatile to spot player
-        AddHealthFactor(0.5);         //Multiplier for amount of health received by using medkit.
-        HealthRegenFactor(3.0);       //Multiplier of time needed to regenerate Player's health from critical health.
+        ShootingAccuracyFactor(IAL_Difficulty_ShotAccuracy_Hard);
+        NightSpottingMult(IAL_Difficulty_NightSpotting_Hard);       //Multiplier of time need for Volatile to spot player
+        AddHealthFactor(IAL_Health_Medkit_Gain_Hard);         //Multiplier for amount of health received by using medkit.
+        HealthRegenFactor(IAL_Health_Regen_Hard);       //Multiplier of time needed to regenerate Player's health from critical health.
         LootTreeName("default_hard");
         SpecialLootTreeName("default_hard");
-        AirdropPatrolTimeFactor(0.3);
+        AirdropPatrolTimeFactor(IAL_Difficulty_Airdrops_Hard);
 		
         MeleeVerticalAttackOffset(0.1);
         MeleeVerticalAttackDeviation(0.0);
@@ -509,16 +518,16 @@ sub main()
     Difficulty("Nightmare")
     {
         CanShowPatrolCones(false);
-        CanUseShopColorSetHard(false);
+        CanUseShopColorSetHard(IAL_Difficulty_AllowHardShopItems_Nightmare);
         CanAccelerateBluprintPartDrop(false);
         CanAccelerateVehicleComponentDrop(false);
-        ShootingAccuracyFactor(1.25);
-        NightSpottingMult(1.0);       //Multiplier of time need for Volatile to spot player
-        AddHealthFactor(0.5);         //Multiplier for amount of health received by using medkit.
-        HealthRegenFactor(3.0);
+        ShootingAccuracyFactor(IAL_Difficulty_ShotAccuracy_Nightmare);
+        NightSpottingMult(IAL_Difficulty_NightSpotting_Nightmare);       //Multiplier of time need for Volatile to spot player
+        AddHealthFactor(IAL_Health_Medkit_Gain_Nightmare);         //Multiplier for amount of health received by using medkit.
+        HealthRegenFactor(IAL_Health_Regen_Nightmare);
         LootTreeName("default_nightmare");
         SpecialLootTreeName("default_nightmare");
-        AirdropPatrolTimeFactor(0.3);
+        AirdropPatrolTimeFactor(IAL_Difficulty_Airdrops_Nightmare);
        
         MeleeVerticalAttackOffset(0.1);
         MeleeVerticalAttackDeviation(0.0);

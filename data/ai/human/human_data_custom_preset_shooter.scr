@@ -2,7 +2,6 @@
 !include("ai_timing.def")
 !include("human_shooter_params.scr")
 !include("human_shooter_common.scr")
-!include("human_data_params.scr")
 
 // shooting npc for scripted actions - longer sight range.
 

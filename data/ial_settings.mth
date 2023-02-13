@@ -13,6 +13,7 @@
 /*
 Sections: (Search for these to quick jump)
 GAMEPLAY
+DIFFICULTY
 INTERFACE OPTIONS
 INVENTORY
 EXPERIENCE
@@ -32,9 +33,17 @@ CHEATS
 /////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 //////////// -------  HEALTH  ------- \\\\\\\\\\\\\\\\\\\\\\\ 
 //- LOCATION - (scripts/healthdefinitions.scr) -----\\
-export int IAL_Health_Armor_Light = 10; //Default is "10", Ultimate = 7, Survivor = 8, Casual = 10
-export int IAL_Health_Armor_Medium = 20; //Default is "20", Ultimate = 16, Survivor = 18, Casual = 20
-export int IAL_Health_Armor_Heavy = 250; //Default is "250", Ultimate = 200, Survivor = 225, Casual = 250
+//Multiplier of time needed to regenerate Player's health from critical health.
+export float IAL_Health_Regen_Easy = 3.0; //Default 3.0
+export float IAL_Health_Regen_Normal = 2.5; //Default 3.0
+export float IAL_Health_Regen_Hard = 2.0; //Default 3.0
+export float IAL_Health_Regen_Nightmare = 1.5; //Default 3.0
+
+//Multiplier for amount of health received by using medkit.
+export float IAL_Health_Medkit_Gain_Easy = 3.0; //Default 3.0
+export float IAL_Health_Medkit_Gain_Normal = 3.0; //Default 3.0
+export float IAL_Health_Medkit_Gain_Hard = 3.0; //Default 3.0
+export float IAL_Health_Medkit_Gain_Nightmare = 0.5; //Default 0.5
 
 //////////// -------  RUNNING  ------- \\\\\\\\\\\\\\\\\\\\\
 //- LOCATION - (scripts/player/player_variables_hard.scr) -----\\
@@ -88,6 +97,37 @@ export float IAL_Camo_RemoveRate_Climbing = 0.1;
 export float IAL_Camo_RemoveRate_AirTime = 0.1;
 export float IAL_Camo_RemoveRate_Shoot = 0.5;
 export int IAL_Camo_RemoveRate_Water = 40;
+
+/////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+////////////////////////DIFFICULTY\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+/////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+//- LOCATION - (scripts/difficultyparams.scr) -----\\\\\\\\\\\\\\\
+////////////////// -------  AI  ------- \\\\\\\\\\\\\\\\\\\\\\\\\\
+export float IAL_Difficulty_NightSpotting_Easy = 2.0; //Default: 1.0
+export float IAL_Difficulty_NightSpotting_Normal = 1.0; //Default: 1.0
+export float IAL_Difficulty_NightSpotting_Hard = 1.0; //Default: 1.0
+export float IAL_Difficulty_NightSpotting_Nightmare = 1.0; //Default: 1.0
+
+/////////////// -------  AIRDROPS  ------- \\\\\\\\\\\\\\\\\\\\\\\
+//This is the time percentage for Rais' patrols and Airdrops
+export float IAL_Difficulty_Airdrops_Easy = 1.5; //Default: 2.0, 
+export float IAL_Difficulty_Airdrops_Normal = 1.0; //Default: 1.0
+export float IAL_Difficulty_Airdrops_Hard = 0.3; //Default: 0.3
+export float IAL_Difficulty_Airdrops_Nightmare = 0.3; //Default: 0.3
+
+///////////////// -------  GUNS  ------- \\\\\\\\\\\\\\\\\\\\\\\\\
+//This is the percentage of chance for hitting the target
+export float IAL_Difficulty_ShotAccuracy_Easy = 1.5; //Default: 1.0, 
+export float IAL_Difficulty_ShotAccuracy_Normal = 1.0; //Default: 1.0
+export float IAL_Difficulty_ShotAccuracy_Hard = 0.9; //Default: 1.25
+export float IAL_Difficulty_ShotAccuracy_Nightmare = 0.9; //Default: 1.25
+
+/////////////// -------  TRADERS  ------- \\\\\\\\\\\\\\\\\\\\\\\\
+//This allows Hard tier weapons on Easy difficulty in shops
+export bool IAL_Difficulty_AllowHardShopItems_Easy = TRUE; //Default: False, 
+export bool IAL_Difficulty_AllowHardShopItems_Normal = TRUE; //Default: False
+export bool IAL_Difficulty_AllowHardShopItems_Hard = TRUE; //Default: True
+export bool IAL_Difficulty_AllowHardShopItems_Nightmare = TRUE; //Default: False
 
 /////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 /////////////////////INTERFACE OPTIONS\\\\\\\\\\\\\\\\\\\\\\\\\\\\

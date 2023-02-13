@@ -1,6 +1,5 @@
 !include("ai_data.def")
 !include("ai_timing.def")
-!include("zombie_data.scr")
 
 // m_zombie_common.scr and m_zombie_b.scr    new vessel animation set
 
