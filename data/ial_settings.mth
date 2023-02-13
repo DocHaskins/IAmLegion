@@ -14,6 +14,8 @@
 Sections: (Search for these to quick jump)
 GAMEPLAY
 DIFFICULTY
+PHYSICS
+COMMERCE
 INTERFACE OPTIONS
 INVENTORY
 EXPERIENCE
@@ -31,8 +33,8 @@ CHEATS
 /////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 /////////////////////////GAMEPLAY\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 /////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-//////////// -------  HEALTH  ------- \\\\\\\\\\\\\\\\\\\\\\\ 
-//- LOCATION - (scripts/healthdefinitions.scr) -----\\
+//////////////// -------  HEALTH  ------- \\\\\\\\\\\\\\\\\\\\\\\\
+//- LOCATION - (scripts/difficultyparams.scr) -----\\\\\\\\\\\\\\\
 //Multiplier of time needed to regenerate Player's health from critical health.
 export float IAL_Health_Regen_Easy = 3.0; //Default 3.0
 export float IAL_Health_Regen_Normal = 2.5; //Default 3.0
@@ -45,25 +47,56 @@ export float IAL_Health_Medkit_Gain_Normal = 3.0; //Default 3.0
 export float IAL_Health_Medkit_Gain_Hard = 3.0; //Default 3.0
 export float IAL_Health_Medkit_Gain_Nightmare = 0.5; //Default 0.5
 
-//////////// -------  RUNNING  ------- \\\\\\\\\\\\\\\\\\\\\
-//- LOCATION - (scripts/player/player_variables_hard.scr) -----\\
-export float IAL_Run_FOV_Focus = 6.0; //Default is 6.0
+/////////////// -------  STAMINA  ------- \\\\\\\\\\\\\\\\\\\\\\\\
+//- LOCATION - (scripts/difficultyparams.scr) -----\\\\\\\\\\\\\\\
+//The amount of stamina drained when running based on difficulty
+export float IAL_Stamina_Run_Drain_Easy = 0.75; //Default is 0.75
+export float IAL_Stamina_Run_Drain_Normal = 1.0; //Default is 1.0
+export float IAL_Stamina_Run_Drain_Hard = 1.1; //Default is 1.0
+export float IAL_Stamina_Run_Drain_Nightmare = 1.2; //Default is 1.0
 
-//////////// -------  COMBAT  ------- \\\\\\\\\\\\\\\\\\\\\\\ 
+//The amount of stamina drained when attacking on difficulty
+export float IAL_Stamina_Attack_Drain_Easy = 0.75; //Default is 0.75
+export float IAL_Stamina_Attack_Drain_Normal = 1.0; //Default is 1.0
+export float IAL_Stamina_Attack_Drain_Hard = 1.1; //Default is 1.0
+export float IAL_Stamina_Attack_Drain_Nightmare = 1.2; //Default is 1.0
+
+//////////////// -------  COMBAT  ------- \\\\\\\\\\\\\\\\\\\\\\\\
 //- LOCATION - (scripts/player/player_variables_hard.scr) -----\\
 export float IAL_Combat_StandingOver_DmgMulti = 2.0; //Amount of damage done from standing above enemy, Default is 1.5
 export float IAL_Combat_AirKick_PhysicsDmg = 5.0; //Default is 2.0
 
 ////////////// -------  DEATH  ------- \\\\\\\\\\\\\\\\\\\\\\
-//- LOCATION - (scripts/player/player_variables_hard.scr) -----\\
-export float IAL_Death_FadeOutTime = 9.0; //Time you have to wait to respawn, DEFAULT = 9.0
-export float IAL_Death_FadeInTime = 2.25; //Time you have to wait to respawn, DEFAULT = 2.25
+//- LOCATION - (scripts/difficultyparams.scr) -----\\\\\\\\\\\\\\\
+//Death penalty for XP
+export float IAL_Death_Penalty_XP_Easy = 0.0; //Default 0.0
+export float IAL_Death_Penalty_XP_Normal = 0.5; //Default 0.5
+export float IAL_Death_Penalty_XP_Hard = 2.5; //Default 2.5
+export float IAL_Death_Penalty_XP_Nightmare = 2.5; //Default 2.5
+
+//Death penalty for Legend XP
+export float IAL_Death_Penalty_LegendXP_Easy = 0.0; //Default 0.0
+export float IAL_Death_Penalty_LegendXP_Normal = 0.0; //Default 0.0
+export float IAL_Death_Penalty_LegendXP_Hard = 0.0; //Default 0.0
+export float IAL_Death_Penalty_LegendXP_Nightmare = 1.0; //Default 1.0
 
 //////////// -------  TIMESCALE  ------- \\\\\\\\\\\\\\\\\\\\
 //- LOCATION - (scripts/dw_weather_def.scr) -----\\\\\\\\\\\\\\\\\
+//Total time for each day, currently it's around 2x as long for days and 4x for nights
 export float IAL_TimeScale_Day = 8200.0; //Vanilla settings: 4800.0
 export float IAL_TimeScale_Night = 8200.0; //Vanilla settings: 2400.0 Nights are much shorter in vanilla
 export float IAL_TimeScale_Interior = 8640.0; //Vanilla settings: 8640.0
+
+//- LOCATION 2 - (scripts/difficultyparams.scr) -----\\\\\\\\\\\\\\\\\
+//Multiplier applied by the difficulty setting for Day and Night
+export float IAL_TimeScale_Multiplier_Day_Easy = 1.25; //Default 1.25
+export float IAL_TimeScale_Multiplier_Night_Easy = 0.75; //Default 0.75
+export float IAL_TimeScale_Multiplier_Day_Normal = 0.0; //Default 0.0
+export float IAL_TimeScale_Multiplier_Night_Normal = 0.0; //Default 0.0
+export float IAL_TimeScale_Multiplier_Day_Hard = 0.0; //Default 0.0
+export float IAL_TimeScale_Multiplier_Night_Hard = 0.0; //Default 0.0
+export float IAL_TimeScale_Multiplier_Day_Nightmare = 0.89; //Default 0.89
+export float IAL_TimeScale_Multiplier_Night_Nightmare = 2.0; //Default 2.0
 
 //////////// -------  CAMERA  ------- \\\\\\\\\\\\\\\\\\\\\\\ 
 //- LOCATION - (scripts/player/player_variables_hard.scr) -----\\
@@ -89,14 +122,12 @@ export int IAL_Loot_MultipleItems_LVL = 3; //Level that the player starts gettin
 export int IAL_Loot_MultipleItems_Amount = 2; //Number of items you recieve from MultipleItems_LVL
 
 //////////// -------  CAMOFLAGE  ------- \\\\\\\\\\\\\\\\\\\\\\\ 
-//- LOCATION - (scripts/player/player_variables_hard.scr) -----\\
-export int IAL_Camo_Actions_CanRun = 1;
-export int IAL_Camo_Actions_CanAttack = 1;
-export float IAL_Camo_RemoveRate_Flashlight = 0.5;
-export float IAL_Camo_RemoveRate_Climbing = 0.1;
-export float IAL_Camo_RemoveRate_AirTime = 0.1;
-export float IAL_Camo_RemoveRate_Shoot = 0.5;
-export int IAL_Camo_RemoveRate_Water = 40;
+//- LOCATION - (scripts/difficultyparams.scr) -----\\\\\\\\\\\\\
+//Boosts applied to Camoflage based on difficulty
+export float IAL_Camo_Duration_Multiplier_Easy = 1.25; //Default: 0.66
+export float IAL_Camo_Duration_Multiplier_Normal = 1.0; //Default: 0.66
+export float IAL_Camo_Duration_Multiplier_Hard = 0.66; //Default: 0.66
+export float IAL_Camo_Duration_Multiplier_Nightmare = 0.66; //Default: 0.66
 
 /////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 ////////////////////////DIFFICULTY\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
@@ -110,10 +141,10 @@ export float IAL_Difficulty_NightSpotting_Nightmare = 1.0; //Default: 1.0
 
 /////////////// -------  AIRDROPS  ------- \\\\\\\\\\\\\\\\\\\\\\\
 //This is the time percentage for Rais' patrols and Airdrops
-export float IAL_Difficulty_Airdrops_Easy = 1.5; //Default: 2.0, 
-export float IAL_Difficulty_Airdrops_Normal = 1.0; //Default: 1.0
-export float IAL_Difficulty_Airdrops_Hard = 0.3; //Default: 0.3
-export float IAL_Difficulty_Airdrops_Nightmare = 0.3; //Default: 0.3
+export float IAL_Commerce_SellingPrices_Easy = 1.5; //Default: 2.0, 
+export float IAL_Commerce_SellingPrices_Normal = 1.0; //Default: 1.0
+export float IAL_Commerce_SellingPrices_Hard = 0.3; //Default: 0.3
+export float IAL_Commerce_SellingPrices_Nightmare = 0.3; //Default: 0.3
 
 ///////////////// -------  GUNS  ------- \\\\\\\\\\\\\\\\\\\\\\\\\
 //This is the percentage of chance for hitting the target
@@ -122,12 +153,15 @@ export float IAL_Difficulty_ShotAccuracy_Normal = 1.0; //Default: 1.0
 export float IAL_Difficulty_ShotAccuracy_Hard = 0.9; //Default: 1.25
 export float IAL_Difficulty_ShotAccuracy_Nightmare = 0.9; //Default: 1.25
 
-/////////////// -------  TRADERS  ------- \\\\\\\\\\\\\\\\\\\\\\\\
-//This allows Hard tier weapons on Easy difficulty in shops
-export bool IAL_Difficulty_AllowHardShopItems_Easy = TRUE; //Default: False, 
-export bool IAL_Difficulty_AllowHardShopItems_Normal = TRUE; //Default: False
-export bool IAL_Difficulty_AllowHardShopItems_Hard = TRUE; //Default: True
-export bool IAL_Difficulty_AllowHardShopItems_Nightmare = TRUE; //Default: False
+/////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+//////////////////////////PHYSICS\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+/////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+//- LOCATION - (scripts/difficultyparams.scr) -----\\\\\\\\\\\\\\\
+//Additional force applied based on game difficulty
+export float IAL_Overall_Phys_To_Enemies_Easy = 0.0; //Default: 0.0
+export float IAL_Overall_Phys_To_Enemies_Normal = 0.0; //Default: 0.0
+export float IAL_Overall_Phys_To_Enemies_Hard = 0.7; //Default: 0.0
+export float IAL_Overall_Phys_To_Enemies_Nightmare = 1.7; //Default: 0.0
 
 /////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 /////////////////////INTERFACE OPTIONS\\\\\\\\\\\\\\\\\\\\\\\\\\\\
@@ -135,23 +169,36 @@ export bool IAL_Difficulty_AllowHardShopItems_Nightmare = TRUE; //Default: False
 //- LOCATION - (scripts/locations.scr) -----\\
 // "TRUE" is on, "FALSE" is off
 export bool IAL_Interface_HUD_Show3D = TRUE;
-export bool IAL_Interface_HUD_ShowUVLightIcon = FALSE;
-export bool IAL_Interface_HUD_ShowUVLightEdge = FALSE;
-export bool IAL_Interface_HUD_Show3dMarkedIcon = TRUE;
-export bool IAL_Interface_HUD_Show3dMarkedEdge = TRUE;
-export bool IAL_Interface_HUD_ShowBanditCampIcon = FALSE;
-export bool IAL_Interface_HUD_Show3DIconsWhenClose = FALSE;
-export bool IAL_Interface_HUD_ShowScreamerIcon = TRUE; // Toggle showing the Screamer Icon above their head
-export bool IAL_Interface_HUD_ShowEncounterIcon = FALSE;
-export bool IAL_Interface_HUD_ShowEncounterEdge = FALSE;
-export bool IAL_Interface_HUD_ShowEncounterRewardIcon = FALSE;
-export bool IAL_Interface_HUD_ShowEncounterRewardEdge = FALSE;
-export bool IAL_Interface_HUD_ShowEncounterInfectedIcon = FALSE;
-export bool IAL_Interface_HUD_ShowEncounterInfectedEdge = FALSE;
-export bool IAL_Interface_HUD_ShowEncounterIcon_Endgame = FALSE;
-export bool IAL_Interface_HUD_ShowEncounterEdge_Endgame = FALSE;
-export bool IAL_Interface_HUD_ShowEncounter_InfectedIcon_Endgame = FALSE;
-export bool IAL_Interface_HUD_ShowEncounter_InfectedEdge_Endgame = FALSE;
+
+//- LOCATION 2 - (scripts/difficultyparams.scr) -----\\\\\\\\\\\\\\\\\
+//Setting for turning on and off Hud Tips
+export bool IAL_Interface_HudTips_Easy = TRUE; //Default: False
+export bool IAL_Interface_HudTips_Normal = TRUE; //Default: False
+export bool IAL_Interface_HudTips_Hard = TRUE; //Default: False
+export bool IAL_Interface_HudTips_Nightmare = FALSE; //Default: False
+
+//Setting for turning on and off patrol cones
+export bool IAL_Interface_PatrolCone_Easy = TRUE; //Default: False
+export bool IAL_Interface_PatrolCone_Normal = TRUE; //Default: False
+export bool IAL_Interface_PatrolCone_Hard = FALSE; //Default: False
+export bool IAL_Interface_PatrolCone_Nightmare = FALSE; //Default: False
+/////////////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+/////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+/////////////////////////COMMERCE\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+/////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+/////////////// -------  TRADERS  ------- \\\\\\\\\\\\\\\\\\\\\\\\
+//This allows Hard tier weapons on Easy difficulty in shops
+export bool IAL_Commerce_AllowHardShopItems_Easy = TRUE; //Default: False, 
+export bool IAL_Commerce_AllowHardShopItems_Normal = TRUE; //Default: False
+export bool IAL_Commerce_AllowHardShopItems_Hard = TRUE; //Default: True
+export bool IAL_Commerce_AllowHardShopItems_Nightmare = TRUE; //Default: False
+
+//This is the multiplier for shop prices based on difficulty
+export float IAL_Commerce_SellingPrices_Easy = 1.2; //Default: 1.2, 
+export float IAL_Commerce_SellingPrices_Normal = 1.0; //Default: 1.0
+export float IAL_Commerce_SellingPrices_Hard = 0.8; //Default: 1.0
+export float IAL_Commerce_SellingPrices_Nightmare = 0.5; //Default: 1.0
 /////////////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
 /////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
@@ -175,12 +222,29 @@ export bool IAL_Interface_HUD_ShowEncounter_InfectedEdge_Endgame = FALSE;
 /////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 ////////////////////////EXPERIENCE\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 /////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+//- LOCATION - (scripts/difficultyparams.scr) -----\\\\\\\\\\\\\\\\\
+////////// -------  LEGEND EXPERIENCE  ------- \\\\\\\\\\\\\\\\\\\\\ 
+//Amount of Legend experience you will recieve based on difficulty
+export float IAL_Experience_Legend_XP_Easy = 0.5; //Default is 0.5
+export float IAL_Experience_Legend_XP_Normal = 1.0; //Default is 1.0
+export float IAL_Experience_Legend_XP_Hard = 2.5; //Default is 2.5
+export float IAL_Experience_Legend_XP_Nightmare = 10.0; //Default is 10.0
 
-/////////// -------  NIGHT EXPERIENCE  ------- \\\\\\\\\\\\\\\\\\\\\\\ 
-export float IAL_Night_XP_Actions_Reward = 1.0; //Default is 1.0, Ultimate = 1.5, Survivor = 1.0, Casual = 1.0
-export float IAL_Night_XP_Looted_Reward = 5.0; //Default is 5.0, Ultimate = 5.5, Survivor = 5.0, Casual = 5.0
-export float IAL_Night_XP_Unspotted_Reward = 1.7; //Default is 1.7, Ultimate = 2.0, Survivor = 1.7, Casual = 1.7
-export int IAL_Night_XP_Combat_Reward = 20; //Default is 20, Ultimate = 25, Survivor = 20, Casual = 20
+//Amount of Legend experience you will recieve playing Coop while playing based on difficulty
+export float IAL_Experience_Legend_XP_2Player_Easy = 1.1; //Default is 1.1
+export float IAL_Experience_Legend_XP_2Player_Normal = 1.1; //Default is 1.1
+export float IAL_Experience_Legend_XP_2Player_Hard = 1.1; //Default is 1.1
+export float IAL_Experience_Legend_XP_2Player_Nightmare = 1.1; //Default is 1.1
+
+export float IAL_Experience_Legend_XP_3Player_Easy = 1.2; //Default is 1.2
+export float IAL_Experience_Legend_XP_3Player_Normal = 1.2; //Default is 1.2
+export float IAL_Experience_Legend_XP_3Player_Hard = 1.2; //Default is 1.2
+export float IAL_Experience_Legend_XP_3Player_Nightmare = 1.2; //Default is 1.2
+
+export float IAL_Experience_Legend_XP_4Player_Easy = 1.3; //Default is 1.3
+export float IAL_Experience_Legend_XP_4Player_Normal = 1.3; //Default is 1.3
+export float IAL_Experience_Legend_XP_4Player_Hard = 1.3; //Default is 1.3
+export float IAL_Experience_Legend_XP_4Player_Nightmare = 1.3; //Default is 1.3
 
 /////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 //////////////////////SURVIVOR SENSE\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
@@ -232,17 +296,6 @@ export float IAL_Weapon_Durability_Global_Reduction = 1.0; //Default value 1.0
 //- LOCATION - (scripts/iventory/inventory_special.scr) -----\\
 export bool IAL_AutoAim = FALSE;
 
-/////// -------  WEAPONS BOUNCE REACTIONS  ------- \\\\\\\\\\\\\\\
-//- LOCATION - (scripts/iventory/inventory_weapondefinitions.scr) -----\\
-// Created in response to people wanting to turn off the bounce effect
-export int IAL_Weapon_Bounce_Blade = 33; //Fix for bouncing weapons, Set to 3 if you like the bounce
-export int IAL_Weapon_Bounce_Axe = 33; //Fix for bouncing weapons, Set to 3 if you like the bounce
-export int IAL_Weapon_Bounce_Sword = 33; //Fix for bouncing weapons, Set to 3 if you like the bounce
-export int IAL_Weapon_Bounce_Hammer = 33; //Fix for bouncing weapons, Set to 3 if you like the bounce
-export int IAL_Weapon_Bounce_Stick = 33; //Fix for bouncing weapons, Set to 3 if you like the bounce
-export int IAL_Weapon_Bounce_Mace = 33; //Fix for bouncing weapons, Set to 3 if you like the bounce
-export int IAL_Weapon_Bounce_Knuckles = 33; //Fix for bouncing weapons, Set to 3 if you like the bounce
-
 ///////////////// -------  EXPLOSIVES  ------- \\\\\\\\\\\\\\\\\\\\\\\
 //These settings effect the different explosive types in the game and their reactions\\
 export float IAL_Explosive_Tank_ExplosionDelay = 5.000000;
@@ -270,8 +323,18 @@ export int IAL_AI_DistanceToReact_Explosion_Max = 120;
 
 ////////////// -------  DAMAGE MODIFIERS  ------- \\\\\\\\\\\\\\\\\\\\\\\\
 //GENERAL MODIFIER\\
-export float IAL_Overall_Dmg_To_Player = 0.5;
-export float IAL_Overall_Fall_Dmg_To_Player = 1.5;
+export float IAL_Overall_Dmg_To_Player_Min_Easy = 0.5; //Default: 1.3
+export float IAL_Overall_Dmg_To_Player_Max_Easy = 1.0; //Default: 1.3
+export float IAL_Overall_Dmg_To_Enemies_Easy = 0.7; //Default: 0.7
+export float IAL_Overall_Dmg_To_Player_Min_Normal = 0.5; //Default: 1.3
+export float IAL_Overall_Dmg_To_Player_Max_Normal = 1.0; //Default: 1.3
+export float IAL_Overall_Dmg_To_Enemies_Normal = 0.7; //Default: 0.7
+export float IAL_Overall_Dmg_To_Player_Min_Hard = 0.5; //Default: 1.3
+export float IAL_Overall_Dmg_To_Player_Max_Hard = 1.0; //Default: 1.3
+export float IAL_Overall_Dmg_To_Enemies_Hard = 0.7; //Default: 0.7
+export float IAL_Overall_Dmg_To_Player_Min_Nightmare = 0.5; //Default: 1.3
+export float IAL_Overall_Dmg_To_Player_Max_Nightmare = 1.0; //Default: 1.3
+export float IAL_Overall_Dmg_To_Enemies_Nightmare = 0.7; //Default: 0.7
 /////////////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
 /////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
@@ -464,40 +527,14 @@ export string IALR_Goon_Movement = "m_goon"; //Determines if the Goons can walk 
 export float IAL_Group_Enemies_Max = 12.0; // Based on documentation, I believe the max amount of Allies allowed to band together
 
 /////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-///////////////////////AI FALL HEIGHT\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+////////////////////////FALL HEIGHT\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 /////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-//- LOCATION - (ai/modulesparams/collisionmodulehumanpresets.scr) -----\\
-export float IAL_AI_FallHeight_ImmediateKill = 25.0; //Height for the subject to fall to immediately die, Default is 15.0
-
-//////////// -------  HUMANS  ------- \\\\\\\\\\\\\\\\\\\\\\\ 
-export float IAL_AI_FallHeight_Human_ImmediateKill = 25.0; //Height for the subject to fall to immediately die, Default is 15.0
-export float IAL_AI_FallHeight_Human_MinDmg = 10.0;
-export float IAL_AI_FallHeight_Human_MaxDmg = 50.0;
-
-//////////// -------  INFECTED  ------- \\\\\\\\\\\\\\\\\\\\\\\
-export float IAL_AI_FallHeight_Infected_ImmediateKill = 55.0; //Height for the subject to fall to immediately die, Default is 15.0
-export float IAL_AI_FallHeight_Infected_MinDmg = 5.0;
-export float IAL_AI_FallHeight_Infected_MaxDmg = 50.0;
-
-//////////// -------  LARGE INFECTED (GOONS, DEMO)  ------- \\\\\\\\\\\\\\\\\\\\\\\
-export float IAL_AI_FallHeight_Large_Infected_ImmediateKill = 75.0; //Height for the subject to fall to immediately die, Default is 15.0
-export float IAL_AI_FallHeight_InfectedLarge_MinDmg = 10.0;
-export float IAL_AI_FallHeight_InfectedLarge_MaxDmg = 75.0;
-
-//////////// -------  VOLATILES  ------- \\\\\\\\\\\\\\\\\\\\\\\
-export float IAL_AI_FallHeight_Volatile_ImmediateKill = 100.0; //Height for the subject to fall to immediately die, Default is 20.0
-export float IAL_AI_FallHeight_Volatile_MinDmg = 10.0;
-export float IAL_AI_FallHeight_Volatile_MaxDmg = 49.0;
-
-//////////// -------  ALPHA ZOMBIE  ------- \\\\\\\\\\\\\\\\\\\\\\\
-export float IAL_AI_FallHeight_AlphaZombie_MinDmg = 100.0;
-export float IAL_AI_FallHeight_AlphaZombie_MaxDmg = 150.0;
-
-//////////// -------  PLAYER  ------- \\\\\\\\\\\\\\\\\\\\\\\
-//- LOCATION - (scripts/player/player_variables_hard.scr) -----\\
-export float IAL_Player_FallHeight_Stagger = 4.8; //Height that causes the player to lose momentum, Default is 4.8
-export float IAL_Player_FallHeight_Hurt = 6.8; //Height that causes small amount of damage, Default is 6.8
-export float IAL_Player_FallHeight_Lethal = 14.0; //Height that kills the player, Default is 14.0
+//- LOCATION - (scripts/difficultyparams.scr) -----\\\\\\\\\\\\\\\\\
+//Amount of Legend experience you will recieve based on difficulty
+export float IAL_Fall_Height_Dmg_Multi_Easy = 0.5; //Default is 0.5
+export float IAL_Fall_Height_Dmg_Multi_Normal = 1.0; //Default is 0.5
+export float IAL_Fall_Height_Dmg_Multi_Hard = 1.1; //Default is 0.5
+export float IAL_Fall_Height_Dmg_Multi_Nightmare = 1.2; //Default is 0.5
 
 /////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 //////////////////AI WEAPON DROP LOGIC\\\\\\\\\\\\\\\\\\\\\\\\\\\\
