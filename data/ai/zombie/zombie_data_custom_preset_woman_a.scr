@@ -21,13 +21,17 @@
 
 //Data("idle:standing::regenerate:::", 0, "",-1, 1)
 
-Data("idle:standing::stand:::", -2, "m_zombie_b_idle_01",-1, 1)
-Data("idle:standing::stand:::", -2, "m_zombie_b_idle_02",-1, 1)
+Data("idle:standing::stand:::", -2, "w_zombie_a_idle_01_long",-1, 1)
+Data("idle:standing::stand:::", -2, "w_zombie_a_idle_01_short",-1, 1)
+Data("idle:standing::stand:::", -2, "w_zombie_a_idle_02_long",-1, 1)
+Data("idle:standing::stand:::", -2, "w_zombie_a_idle_02_short",-1, 1)
+Data("idle:standing::stand:::", -2, "w_zombie_a_idle_03",-1, 1)
 
-Data("idle:standing::stand:::", -2, "m_zombie_idle_moving_03",-1, 1)
+//Data("idle:standing::stand:::", -2, "m_zombie_idle_moving_03",-1, 1)
 
-Data("idle:standing::look_around:::", -2, "m_zombie_b_idle_01",-1, 1)
-Data("idle:standing::look_around:::", -2, "m_zombie_idle_moving_03",-1, 1)
+Data("idle:standing::look_around:::", -2, "w_zombie_a_idle_01_long",-1, 1)
+Data("idle:standing::look_around:::", -2, "w_zombie_a_idle_02_long",-1, 1)
+Data("idle:standing::look_around:::", -2, "w_zombie_a_idle_03",-1, 1)
 
 Data("idle:standing::special:::", -2, "m_zombie_night_change_03", -1, 1)
 Data("idle:standing::special:::", -2, "vessel_transform_e3_02", -1, 1)
@@ -42,8 +46,11 @@ Data("idle:standing::confused:::", 0, "",-1, 1)
 
 Data("idle:standing::stand:::", 0, "",-1, 1)
 */
-Data("idle:standing::scared:::", -2, "m_zombie_b_idle_01",-1, 1)
-Data("idle:standing::scared:::", -2, "m_zombie_b_idle_02",-1, 1)
+Data("idle:standing::scared:::", -2, "w_zombie_a_idle_01_long",-1, 1)
+Data("idle:standing::scared:::", -2, "w_zombie_a_idle_01_long",-1, 1)
+Data("idle:standing::scared:::", -2, "w_zombie_a_idle_02_long",-1, 1)
+Data("idle:standing::scared:::", -2, "w_zombie_a_idle_02_short",-1, 1)
+Data("idle:standing::scared:::", -2, "w_zombie_a_idle_03",-1, 1)
 /*
 Data("idle:standing::attracted:::", 0, "",-1, 1)
 Data("idle:standing::attracted:::", 0, "",-1, 1)
@@ -55,17 +62,20 @@ Data("idle:standing::attracted:::", 0, "",-1, 1)
 Data("idle:standing::attracted:::", 0, "",-1, 1)
 */
 
+// missing animation - taken from zombie man
+
 //###############
 //#### START ####
 //###############
 //## start:is_standing:alarm_level:item_type:movement_type:angle:direction
 //##############
 
-Data("start:standing::::90:left:", -2, "w_zombie_b_walk_start90L",-1, 1)
-Data("start:standing::::90:right:", -2, "w_zombie_b_walk_start90R",-1, 1)
-Data("start:standing::::0::", -2, "W_zombie_B_walk_start_01",-1, 1)
-Data("start:standing::::180:left:", -2, "w_zombie_B_walk_start180l",-1, 1)
-Data("start:standing::::180:right:", -2, "w_zombie_B_walk_start180r",-1, 1)
+Data("start:standing::::90:left:", -2, "W_zombie_A_walk_start_90L",-1, 1)
+Data("start:standing::::90:right:", -2, "W_zombie_A_walk_start_90R",-1, 1)
+Data("start:standing::::0::", -2, "W_zombie_A_walk_start_01",-1, 1)
+Data("start:standing::::0::", -2, "W_zombie_A_walk_start_02",-1, 1)
+Data("start:standing::::180:left:", -2, "W_zombie_A_walk_start_180L",-1, 1)
+Data("start:standing::::180:right:", -2, "W_zombie_A_walk_start_180R",-1, 1)
 /*
 Data("start:standing::::0::", 0, "m_zombie_b_walk_start_01",-1, 1)
 Data("start:standing::::0::", 0, "m_zombie_b_walk_start_01",-1, 1)
@@ -81,10 +91,11 @@ Data("start:standing::::90:right:", 0, "m_zombie_b_walk_start90R",-1, 1)
 //## stop:is_standing:alarm_level:item_type:movement_type:angle:direction
 //##############
 
-Data("stop:standing::::0::false:", -2, "W_zombie_B_walk_stop_v01", -1, 1)
-Data("stop:standing::::0::false:", -2, "W_zombie_B_walk_stop_v02", -1, 1)
-Data("stop:standing::::0::false:", -2, "W_zombie_B_walk_stop_short_v01", -1, 1)
-Data("stop:standing::::0::false:", -2, "W_zombie_B_walk_stop_short_v02", -1, 1)
+Data("stop:standing::::0::false:", -2, "W_zombie_A_walk_stop_01", -1, 1)
+Data("stop:standing::::0::false:", -2, "W_zombie_A_walk_stop_02", -1, 1)
+Data("stop:standing::::0::false:", -2, "W_zombie_A_walk_stop_03", -1, 1)
+//Data("stop:standing::::0::false:", -2, "W_zombie_B_walk_stop_short_v01", -1, 1)
+//Data("stop:standing::::0::false:", -2, "W_zombie_B_walk_stop_short_v02", -1, 1)
 
 //##################
 //#### MOVEMENT ####
@@ -92,15 +103,15 @@ Data("stop:standing::::0::false:", -2, "W_zombie_B_walk_stop_short_v02", -1, 1)
 //## movement:is_standing:movement_type:movement_direction:alarm_level:item_type:ram_type:stairs_climbing_state
 //##################
 
-Data("movement:standing:walk:forward::::", -2, "W_zombie_b_walk_loop_01",-1, 1)
-Data("movement:standing:run:forward::::", -2, "W_zombie_b_walk_loop_01",-1, 1)
+Data("movement:standing:walk:forward::::", -2, "W_zombie_A_walk_loop_01",-1, 1)
+Data("movement:standing:run:forward::::", -2, "W_zombie_A_walk_loop_01",-1, 1)
 
-Data("movement:standing:walk:forward::::", -2, "W_zombie_b_walk_loop_02",-1, 1)
-Data("movement:standing:run:forward::::", -2, "W_zombie_b_walk_loop_02",-1, 1)
+Data("movement:standing:walk:forward::::", -2, "W_zombie_A_walk_loop_02",-1, 1)
+Data("movement:standing:run:forward::::", -2, "W_zombie_A_walk_loop_02",-1, 1)
 
 
-Data("movement:standing:walk:forward::::", -2, "W_zombie_B_walk_loop_03",-1, 1)
-Data("movement:standing:run:forward::::", -2, "W_zombie_B_walk_loop_03",-1, 1)
+
+
 
 
 
@@ -153,12 +164,10 @@ Data("attack:standing::grab:backward::", -2, "mz_grab_from_stand_back_r", -1, 1)
 */
 
 ////////// grab /////////////
+Data("movement:standing:berserker_grab:forward::::", -2, 		"W_zombie_A_grab_from_walk_01", -1, 1)
+Data("movement:standing:berserker_grab:forward::::", -2, 		"W_zombie_A_grab_from_walk_02", -1, 2)  //needs changing pose
 
-Data("movement:standing:berserker_grab:forward::::", -2, 		"W_zombie_common_grab_from_walk_01", -1, 2)
-Data("movement:standing:berserker_grab:forward::::", -2, 		"W_zombie_common_grab_from_walk_02", -1, 1)
-//Data("movement:standing:berserker_grab:forward::::", -2, 		"W_zombie_common_grab_from_walk_03", -1, 2)
-
-//////////////////////////////
+/////////////////////////////
 
 
 Data("attack:laying::left_arm_strike:::", -2, "mz_upset_crawl_attack_leftthand_v01", -1, 1) ////  OLD
@@ -172,7 +181,6 @@ Data("attack:standing::bite:::", -2, "mz_upset_stand_attack_bite_v02", -1, 1)///
 Data("attack:standing::bite:::", -2, "m_zombie_common_bite_attack_01", -1, 1)
 Data("attack:standing::bite:::", -2, "m_zombie_common_bite_attack_02", -1, 1)
 Data("attack:standing::bite:::", -2, "m_zombie_common_standing_bite_attack_01", -1, 1)
-
 
 
 
@@ -205,6 +213,7 @@ Data("attack:laying::grab_from_stand:::", -2, "mz_upset_attack_stinger_no_legs",
 Data("attack:laying::grab_from_stand:::", -2, "mz_upset_attack_stinger_no_legs_back", 210, 1)////  OLD
 
 // grab from standing up
+
 Data("attack:laying::grab_from_stand:forward::true", -2, "w_zombie_grab_from_bentpose_front_01", -1, 1)
 Data("attack:laying::grab_from_stand:left::true", -2, "w_zombie_grab_from_bentpose_turn_left_01", -1, 1)
 Data("attack:laying::grab_from_stand:right::true", -2, "w_zombie_grab_from_bentpose_turn_right_01", -1, 1)
@@ -274,7 +283,6 @@ Data("grab:standing:true:finish_win:clench:", -2, "mz_unarmed_clench_finishwins"
 
 Data("grab:standing:true:finish_lose:clench:", -2, "mz_unarmed_clench_finishlose", -1, 1)
 
-
 Data("grab:standing:true:begin_front:grab:", -2, "mz_grab_begin_front", -1, 1)
 Data("grab:standing:true:begin_right:grab:", -2, "mz_grab_begin_right", -1, 1)
 Data("grab:standing:true:begin_front_right:grab:", -2, "mz_grab_begin_front_right", -1, 1)
@@ -306,7 +314,7 @@ Data("grab:standing:true:begin_front_left:grabweakleft:", -2, "mz_grableft_begin
 Data("grab:standing:true:fight:grabweakleft:", -2, "mz_grableft_loop", -1, 1)
 Data("grab:standing:true:punch1:grabweakleft:", -2, "mz_grableft_punch", -1, 1)
 Data("grab:standing:true:fast_finish_win_front:grabweakleft:", -2, "mz_grab_begin_finish", -1, 1)
-Data("grab:standing:true:fast_finish_win_break:grabweakleft:", -2, "mz_grab_fastkick", -1, 1)
+Data("grab:standing:true:fast_finish_win_break:grabweakleft:", -2,  "mz_grab_fastkick", -1, 1)
 Data("grab:standing:true:finish_win:grabweakleft:", -2, "mz_weak_grab_finish", -1, 1)
 
 
@@ -335,36 +343,23 @@ Data("grab:standing:true:finish_win:finisherbackfast:", -2, "w_finisherbackfast"
 Data("grab:laying:true:finish_win:finisherbackfast:", -2, "w_finisherbackfast", -1, 1)
 
 
+
+
 //###########################
 //#### RECOVER FROM FALL ####
 //###########################
-//## recover_from_fall:is_standing
+//## recover_from_fall:pose:item_type
 //###########################
-
-Data("recover_from_fall:standing:", -2, "W_zombie_common_standup_right_01", -1, 1)
-Data("recover_from_fall:standing:", -2, "W_zombie_common_standup_left_01", -1, 1)
-//Data("recover_from_fall:standing:", -2, "W_zombie_common_standup_front_01", -1, 1)    // actor is moving
-Data("recover_from_fall:standing:", -2, "m_zombie_standup_fast_back_01", -1, 1)
 Data("recover_from_fall:standing:", -2, "m_zombie_standup_slow_back_01", -1, 1)
-Data("recover_from_fall:standing:", -2, "m_zombie_standup_fast_back_02", -1, 1)
-Data("recover_from_fall:standing:", -2, "m_zombie_standup_fast_back_03", -1, 1)
+Data("recover_from_fall:standing:", -2, "mz_upset_standup_v03a", 200, 1)
+Data("recover_from_fall:standing:", -2, "mz_upset_standup_v04", 200, 1)
+Data("recover_from_fall:standing:", -2, "m_zombie_standup_fast_back_02", -1, 1) 
 Data("recover_from_fall:standing:", -2, "m_zombie_standup_fast_back_04", -1, 1)
-
-Data("recover_from_fall:standing:", -2, "m_zombie_standup_fast_front_01", 1, 1)
 Data("recover_from_fall:standing:", -2, "m_zombie_standup_fast_front_02", -1, 1)
 Data("recover_from_fall:standing:", -2, "m_zombie_standup_fast_front_03", 200, 1)
-Data("recover_from_fall:standing:", -2, "m_zombie_standup_fast_front_04", 1, 1)
-Data("recover_from_fall:standing:", -2, "m_zombie_standup_fast_front_05", 1, 1)
-
-Data("recover_from_fall:standing:", -2, "m_zombie_standup_fast_left_01", -1, 1)
-Data("recover_from_fall:standing:", -2, "m_zombie_standup_fast_left_02", -1, 1)
-Data("recover_from_fall:standing:", -2, "m_zombie_standup_fast_left_03", -1, 1)
 Data("recover_from_fall:standing:", -2, "m_zombie_standup_fast_left_04", -1, 1)
-
-Data("recover_from_fall:standing:", -2, "m_zombie_standup_fast_right_01", -1, 1)    
 Data("recover_from_fall:standing:", -2, "m_zombie_standup_fast_right_02", 1, 1)
 Data("recover_from_fall:standing:", -2, "m_zombie_standup_fast_right_03", -1, 1)
-Data("recover_from_fall:standing:", -2, "m_zombie_standup_fast_right_04", -1, 1)
 
 
 //################

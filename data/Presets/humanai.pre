@@ -3585,7 +3585,9 @@ sub main()
         {
                 SetField("m_BurnOnStart", "0");
                 SetField("m_CanBeLimitedAttacker", "1");
+				SetField("m_CanBeBackstabbed", "1");
                 SetField("m_CanUseAttractors", "1");
+				SetField("m_CanFall", "1");
                 SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_ALL);
                 SetField("m_CrippleBonesEnable", "1");
                 SetField("m_CustomDataPreset", "anim_set_a;anim_set_b;anim_set_c");
@@ -3598,6 +3600,7 @@ sub main()
                 SetField("m_HarvestingLootType", "Harvesting_Biter_Body");
                 SetField("m_IsHarvestable", "1");
                 SetField("m_MinLevelDiff", "-5");
+				SetField("m_MaxLevelDiff", "2");
                 SetField("m_ModulesPreset", "1");
                 SetField("m_NeverHolsterWeapon", "1");
                 SetField("m_PoisonedOnStart", "0");
@@ -3995,7 +3998,9 @@ sub main()
         {
                 SetField("m_BurnOnStart", "0");
                 SetField("m_CanBeLimitedAttacker", "1");
+				SetField("m_CanBeBackstabbed", "1");
                 SetField("m_CanUseAttractors", "1");
+				SetField("m_CanFall", "1");
                 SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_ALL);
                 SetField("m_CrippleBonesEnable", "1");
                 SetField("m_CustomDataPreset", "woman_a;woman_b");
@@ -4008,6 +4013,7 @@ sub main()
                 SetField("m_HarvestingLootType", "Harvesting_Biter_Body");
                 SetField("m_IsHarvestable", "1");
                 SetField("m_MinLevelDiff", "-5");
+				SetField("m_MaxLevelDiff", "2");
                 SetField("m_ModulesPreset", "1");
                 SetField("m_NeverHolsterWeapon", "1");
                 SetField("m_PoisonedOnStart", "0");
@@ -4018,8 +4024,8 @@ sub main()
                 SetField("m_StepPreset", "Default_Zombie");
                 SetField("m_TransformIntoPreset", "NightWalker_Woman");
                 SetField("m_Type", "1");
-                SetField("m_UseBaseDataSet", "1");
-                SetField("m_UseRandomDataSet", "0");
+                SetField("m_UseBaseDataSet", "0");
+                SetField("m_UseRandomDataSet", "1");
                 SetField("m_VisRepresentationsPool", "Biter_Woman");
         }
 

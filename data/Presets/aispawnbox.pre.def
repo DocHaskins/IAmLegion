@@ -3,7 +3,7 @@ sub declare_ai_presets()
 
     Preset("Biter")
     {
-        SetField("m_AIPresets", "Goon;Goon");
+        SetField("m_AIPresets", "Biter_Man_Fresh;Biter_Woman_Fresh");
         SetField("m_DiffLevelTables", "Biter_Man;Biter_Woman");
         SetField("m_BeforeSpawnSoundStartRange", "40.0");
         SetField("m_BeforeSpawnSoundStartRangeMin", "13.0");
