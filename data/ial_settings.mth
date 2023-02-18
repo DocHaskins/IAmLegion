@@ -62,8 +62,12 @@ export float IAL_Stamina_Attack_Drain_Hard = 1.1; //Default is 1.0
 export float IAL_Stamina_Attack_Drain_Nightmare = 1.2; //Default is 1.0
 
 //////////////// -------  COMBAT  ------- \\\\\\\\\\\\\\\\\\\\\\\\
-//- LOCATION - (scripts/player/player_variables_hard.scr) -----\\
-export float IAL_Combat_StandingOver_DmgMulti = 2.0; //Amount of damage done from standing above enemy, Default is 1.5
+//- LOCATION - (ai/player/player_variables_hard.scr) -----\\
+export float IAL_Combat_Human_Overall_DmgMulti = 1.0; //Default: 1.0
+export float IAL_Combat_Human_Overall_DmgMulti_COOP2player = 1.1; //Default: 1.1
+export float IAL_Combat_Human_Overall_DmgMulti_COOP3player = 1.2; //Default: 1.2
+export float IAL_Combat_Human_Overall_DmgMulti_COOP4player = 1.3; //Default: 1.3
+export float IAL_Combat_Human_Overall_DmgVsAIMulti = 1.0; //Default: 1.0
 export float IAL_Combat_AirKick_PhysicsDmg = 5.0; //Default is 2.0
 
 ////////////// -------  DEATH  ------- \\\\\\\\\\\\\\\\\\\\\\
@@ -290,31 +294,22 @@ export string IAL_SurvivorSense_Icons_Quest_Range = "20.0"; //Default is 20.0 //
 /////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 //////////// -------  GENERAL SETTINGS  ------- \\\\\\\\\\\\\\\\\\
 //- LOCATION - (scripts/player/player_variables_hard.scr) -----\\\
-export float IAL_Weapon_Durability_Global_Reduction = 1.0; //Default value 1.0
+export float IAL_Weapon_Global_Damage_Mul = 5.0; //Default: 1.0
+export float IAL_Weapon_Metal_Damage_Mul = 5.0; //Default: 1.0
+export float IAL_Weapon_Wood_Damage_Mul = 5.0; //Default: 1.0
 
 ////////////// -------  RANGED  ------- \\\\\\\\\\\\\\\\\\\\\\\
 //- LOCATION - (scripts/iventory/inventory_special.scr) -----\\
-export bool IAL_AutoAim = FALSE;
+export float IAL_Weapons_Ranged_Zombie_NightmareDif_HeadshotDMG_Mul = 2.1;//Default: 2.0
+export float IAL_Weapons_Ranged_Zombie_HeadshotDMG_Mul = 1.1;//Default: 1.0
+export float IAL_Weapons_Ranged_Zombie_BodyDMG_Mul = 0.3;//Default: 0.4
+export float IAL_Weapons_Ranged_Human_HeadshotDMG_Mul = 2.0; //Default: 2.0
+export float IAL_Weapons_Ranged_Human_BodyDMG_Mul = 1.0; //Default: 1.0
 
 ///////////////// -------  EXPLOSIVES  ------- \\\\\\\\\\\\\\\\\\\\\\\
 //These settings effect the different explosive types in the game and their reactions\\
-export float IAL_Explosive_Tank_ExplosionDelay = 5.000000;
-export float IAL_Explosive_Tank_Range = 6.0;
-
-export int IAL_Explosive_GasCylinderBig_ExplosionDelay = 5;
-export int IAL_Explosive_GasCylinderBig_Damage = 300;
-export int IAL_Explosive_GasCylinderBig_Range = 8;
-export float IAL_Explosive_GasCylinderBig_Physics = 1.75;
-
-export int IAL_Explosive_GasCylinderSmall_ExplosionDelay = 4;
-export int IAL_Explosive_GasCylinderSmall_Damage = 250;
-export int IAL_Explosive_GasCylinderSmall_Range = 6;
-export float IAL_Explosive_GasCylinderSmall_Physics = 1.55;
-
-export int IAL_Explosive_ExplosiveBarrel_ExplosionDelay = 0;
-export int IAL_Explosive_ExplosiveBarrel_Damage = 350;
-export int IAL_Explosive_ExplosiveBarrel_Range = 10;
-export float IAL_Explosive_ExplosiveBarrel_Physics = 2.05;
+export float IAL_Explosive_Zombie_Damage = 1.3;//Default: 1.0
+export float IAL_Explosive_Human_Damage = 1.3;//Default: 1.3
 
 ///////////////// -------  AI EXPLOSIVE REACTIONS  ------- \\\\\\\\\\\\\\\
 //- LOCATION - (ai/ai_manager.scr) -----\\
