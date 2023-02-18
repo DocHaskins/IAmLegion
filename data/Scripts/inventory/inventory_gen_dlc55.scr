@@ -1,6 +1,8 @@
 //VIKING BUNDLE
 
 import "inventorystuff.scr" 
+import "ial_settings.mth"
+
 sub main() 
 {	
 	Item("Melee_AxeBig_Viking", CategoryType_Melee)
@@ -12,7 +14,7 @@ sub main()
         UpgradeLevel(0);
         Condition(40);
         CriticalCondition(11);
-        Damage(125.0);
+        Damage(125.0 * IAL_Weapon_Cut_Damage_Mul);
         Force(100.0);
         CriticalProb(0.0);
         CriticalDamage(2.0);
@@ -107,7 +109,7 @@ sub main()
         UpgradeLevel(0);
         Condition(35);
         CriticalCondition(11);
-        Damage(213.0);
+        Damage(213.0 * IAL_Weapon_Cut_Damage_Mul);
         Force(25.0);
         CriticalProb(0.0);
         CriticalDamage(2.0);
@@ -272,7 +274,7 @@ sub main()
         UpgradeLevel(0);
         Condition(40);
         CriticalCondition(11);
-        Damage(125.0);
+        Damage(125.0 * IAL_Weapon_Cut_Damage_Mul);
         Force(100.0);
         CriticalProb(0.0);
         CriticalDamage(2.0);
@@ -368,7 +370,7 @@ sub main()
         UpgradeLevel(0);
         Condition(35);
         CriticalCondition(11);
-        Damage(213.0);
+        Damage(213.0 * IAL_Weapon_Cut_Damage_Mul);
         Force(25.0);
         CriticalProb(0.0);
         CriticalDamage(2.0);

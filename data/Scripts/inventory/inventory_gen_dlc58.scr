@@ -1,6 +1,8 @@
 //OX WARRIOR BUNDLE
 
 import "inventorystuff.scr" 
+import "ial_settings.mth"
+
 sub main() 
 {		
 	Item("Firearm_Shotgun_Ox", CategoryType_Firearm)
@@ -80,16 +82,16 @@ sub main()
         DamageHeadMult(10.0);
         DamageToPhysicsObjects(125.0);
         FirePointRange(0,700.0 *0.01);
-        FirePointDamage(0,900.0);
+        FirePointDamage(0,900.0 * IAL_Weapon_Firearm_Damage_Mul);
         FirePointForce(0,100.0);
         FirePointRange(1,1100.0 *0.01);
-        FirePointDamage(1,900.0);
+        FirePointDamage(1,900.0 * IAL_Weapon_Firearm_Damage_Mul);
         FirePointForce(1,100.0);
         FirePointRange(2,1600.0 *0.01);
-        FirePointDamage(2,450.0);
+        FirePointDamage(2,450.0 * IAL_Weapon_Firearm_Damage_Mul);
         FirePointForce(2,50.0);
         FirePointRange(3,3000.0 *0.01);
-        FirePointDamage(3,225.0);
+        FirePointDamage(3,225.0 * IAL_Weapon_Firearm_Damage_Mul);
         FirePointForce(3,25.0);
         Color(Color_Blue);
         GenType(GenType_Firearm);

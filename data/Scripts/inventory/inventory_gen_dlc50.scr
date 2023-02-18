@@ -1,4 +1,6 @@
 import "inventorystuff.scr" 
+import "ial_settings.mth"
+
 sub main() 
 {	
 	Item("Melee_Pipe_Anniversary5", CategoryType_Melee)
@@ -10,7 +12,7 @@ sub main()
         UpgradeLevel(0);
         Condition(45);
         CriticalCondition(11);
-        Damage(250.0);
+        Damage(250.0 * IAL_Weapon_Blunt_Damage_Mul);
         Force(25.0);
         CriticalProb(0.0);
         CriticalDamage(2.0);
@@ -104,7 +106,7 @@ sub main()
         UpgradeLevel(0);
         Condition(45);
         CriticalCondition(11);
-        Damage(250.0);
+        Damage(250.0 * IAL_Weapon_Blunt_Damage_Mul);
         Force(100.0);
         CriticalProb(0.0);
         CriticalDamage(2.0);
@@ -267,16 +269,16 @@ sub main()
         DamageHeadMult(10.0);
         DamageToPhysicsObjects(150.0);
         FirePointRange(0,700.0 *0.01);
-        FirePointDamage(0,1225.0);
+        FirePointDamage(0,1225.0 * IAL_Weapon_Firearm_Damage_Mul);
         FirePointForce(0,100.0);
         FirePointRange(1,1100.0 *0.01);
-        FirePointDamage(1,1225.0);
+        FirePointDamage(1,1225.0 * IAL_Weapon_Firearm_Damage_Mul);
         FirePointForce(1,100.0);
         FirePointRange(2,1600.0 *0.01);
-        FirePointDamage(2,410.0);
+        FirePointDamage(2,410.0 * IAL_Weapon_Firearm_Damage_Mul);
         FirePointForce(2,50.0);
         FirePointRange(3,3000.0 *0.01);
-        FirePointDamage(3,205.0);
+        FirePointDamage(3,205.0 * IAL_Weapon_Firearm_Damage_Mul);
         FirePointForce(3,25.0);
         Color(Color_Blue);
         ShotTailDelay(0.0);

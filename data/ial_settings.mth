@@ -300,6 +300,7 @@ export float IAL_Weapon_Cut_Damage_Mul = 5.0; //Default: 1.0
 export float IAL_Weapon_Firearm_Damage_Mul = 5.0; //Default: 1.0
 export float IAL_Weapon_Bow_Damage_Mul = 5.0; //Default: 1.0
 export float IAL_Weapon_Crossbow_Damage_Mul = 5.0; //Default: 1.0
+export float IAL_Weapon_Elemental_Damage_Mul = 5.0; //Default: 1.0
 
 ////////////// -------  RANGED  ------- \\\\\\\\\\\\\\\\\\\\\\\
 //- LOCATION - (scripts/iventory/inventory_special.scr) -----\\

@@ -17,7 +17,27 @@ SetForceTargetForCrowdOnPlayer()
 //PRESETS
 ///////////////////////////////////////////////////////////////////
 
-//Warning: All presets moved to common_spawn.scr
+	PresetDef("Biter_Fresh")
+    {
+        Difficult(40)
+        AIPreset("Volatile")
+        SpawnCondition("z_VOLATILE, 1")
+        MinDistBtwZombies(5)
+        ForceTargetType(1)
+        TimeBtwSpawnZombies(15)
+        SarcophagusTime(3)
+    }
+	
+	PresetDef("Vessel_Init") 
+    {
+        Difficult(7)
+        AIPreset("Biter_Man_Fresh;Biter_Woman_Fresh")
+		DiffLvlTableName("Biter_Man;Biter_Woman")
+        SpawnCondition("t_INIT, 1;z_VESSEL, 1")
+        ForceTargetType(-1)
+        TimeBtwSpawnZombies(3)
+        RelativePresets("Volatile_Pit;Infected_HumanInit")
+    }
 
 ///////////////////////////////////////////////////////////////////
 //SPECIALS
@@ -29,6 +49,14 @@ SetForceTargetForCrowdOnPlayer()
 ///////////////////////////////////////////////////////////////////
 //POOLS
 ///////////////////////////////////////////////////////////////////
+
+	Pool("base")
+    {
+        UseCondition("Day")
+        //MinProgressCondition(2)
+        Type("base")
+        Preset("Stinger, 5;Vessel_Eating_Corpse, 5;Vessel_Lurker_Int, 5;Vessel_Stinger_Int, 5;Vessel_In_Attractor, 5;Vessel_Init, 25;Vessel_WithAToy, 5;Nurker, 10;DeadZone_Policeman, 15;Biter_Special, 15;Human_To_Infected_In_Attractor, 10;")
+	}
 
     AreaPool("Challenge_Kill")
     {

@@ -1,5 +1,7 @@
 //SPECIAL AGENT BUNDLE
 import "inventorystuff.scr" 
+import "ial_settings.mth"
+
 sub main() 
 {		
 	Item("Melee_Cane_SpecialAgent", CategoryType_Melee)
@@ -10,7 +12,7 @@ sub main()
         UpgradeLevel(0);
         Condition(35);
         CriticalCondition(11);
-        Damage(1.0);
+        Damage(1.0 * IAL_Weapon_Blunt_Damage_Mul);
         Force(25.0);
         CriticalProb(0.0);
         CriticalDamage(2.0);
@@ -162,11 +164,11 @@ sub main()
         DamageHeadMult(2.0);
         DamageToPhysicsObjects(30.0);
         FirePointRange(0,1000.0 *0.01);
-        FirePointDamage(0,1.0);
+        FirePointDamage(0,1.0 * IAL_Weapon_Firearm_Damage_Mul);
         FirePointForce(0,100.0);
         FirePointPhysicsDamage(0,1.0);
         FirePointRange(1,6000.0 *0.01);
-        FirePointDamage(1,1.0);
+        FirePointDamage(1,1.0 * IAL_Weapon_Firearm_Damage_Mul);
         FirePointForce(1,20.0);
         FirePointPhysicsDamage(1,0.5);
         Color(Color_Blue);
@@ -269,16 +271,16 @@ sub main()
         DamageHeadMult(6.0);
         DamageToPhysicsObjects(10.0);
         FirePointRange(0,400.0 *0.01);
-        FirePointDamage(0,1.0);             //All FirePoints Damage and Force are set to 1 to always inherit stats from base weapon.
+        FirePointDamage(0,1.0 * IAL_Weapon_Firearm_Damage_Mul);             //All FirePoints Damage and Force are set to 1 to always inherit stats from base weapon.
         FirePointForce(0,1.0);
         FirePointRange(1,700.0 *0.01);
-        FirePointDamage(1,1.0);
+        FirePointDamage(1,1.0 * IAL_Weapon_Firearm_Damage_Mul);
         FirePointForce(1,1.0);
         FirePointRange(2,2500.0 *0.01);
-        FirePointDamage(2,1.0);
+        FirePointDamage(2,1.0 * IAL_Weapon_Firearm_Damage_Mul);
         FirePointForce(2,1.0);
         FirePointRange(3,10000.0 *0.01);
-        FirePointDamage(3,1.0);
+        FirePointDamage(3,1.0 * IAL_Weapon_Firearm_Damage_Mul);
         FirePointForce(3,1.0);
         Color(Color_Blue);
         GenType(GenType_Firearm);

@@ -1,6 +1,8 @@
 //ASTRONAUT BUNDLE
 
 import "inventorystuff.scr" 
+import "ial_settings.mth"
+
 sub main() 
 {		
     ////////////////////////////////CROSSBOW////////////////////////////////
@@ -26,15 +28,15 @@ sub main()
         DamageHeadMult(10.0);
         DamageToPhysicsObjects(20.0);
         FirePointRange(0, 10.0);
-        FirePointDamage(0, 390.0); 
+        FirePointDamage(0, 390.0 * IAL_Weapon_Crossbow_Damage_Mul); 
         FirePointForce(0, 90.0);
         FirePointPhysicsDamage(0, 1.5);
         FirePointRange(1, 25.0);
-        FirePointDamage(1, 195.0);
+        FirePointDamage(1, 195.0 * IAL_Weapon_Crossbow_Damage_Mul);
         FirePointForce(1, 80.0);
         FirePointPhysicsDamage(1, 1.3);
         FirePointRange(2, 50.0);
-        FirePointDamage(2, 97.0);
+        FirePointDamage(2, 97.0 * IAL_Weapon_Crossbow_Damage_Mul);
         FirePointForce(2, 60.0);
         FirePointPhysicsDamage(2, 1.1);
         Mesh("wn_crossbow_f.msh");        
@@ -165,16 +167,16 @@ sub main()
         DamageHeadMult(10.0);
         DamageToPhysicsObjects(100.0);
         FirePointRange(0,700.0 *0.01);
-        FirePointDamage(0,666.0); 
+        FirePointDamage(0,666.0 * IAL_Weapon_Firearm_Damage_Mul); 
         FirePointForce(0,100.0);
         FirePointRange(1,1100.0 *0.01);
-        FirePointDamage(1,666.0);
+        FirePointDamage(1,666.0 * IAL_Weapon_Firearm_Damage_Mul);
         FirePointForce(1,100.0);
         FirePointRange(2,1600.0 *0.01);
-        FirePointDamage(2,333.0);
+        FirePointDamage(2,333.0 * IAL_Weapon_Firearm_Damage_Mul);
         FirePointForce(2,50.0);
         FirePointRange(3,3000.0 *0.01);
-        FirePointDamage(3,166.0);
+        FirePointDamage(3,166.0 * IAL_Weapon_Firearm_Damage_Mul);
         FirePointForce(3,25.0);
         Color(Color_Blue);
         GenType(GenType_Firearm);
@@ -240,7 +242,7 @@ sub main()
         UpgradeLevel(0);
         Condition(66);
         CriticalCondition(15);
-        Damage(200.0);
+        Damage(200.0 * IAL_Weapon_Cut_Damage_Mul);
         Force(55.0); //increased force
         CriticalProb(0.0);
         CriticalDamage(2.0);

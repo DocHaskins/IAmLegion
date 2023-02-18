@@ -1,6 +1,8 @@
 //DIESELPUNK BUNDLE
 
 import "inventorystuff.scr" 
+import "ial_settings.mth"
+
 sub main() 
 {		
     //////////////////////////CHAINSAW//////////////////////////
@@ -77,7 +79,7 @@ sub main()
         DamageHeadMult(8.0);
         DamageToPhysicsObjects(17.5);
 		FirePointRange(0,1.75);
-        FirePointDamage(0,300.0); 
+        FirePointDamage(0,300.0 * IAL_Weapon_Cut_Damage_Mul); 
         FirePointForce(0,250.0); 
         Color(Color_Blue);
         GenType(GenType_Firearm);
@@ -107,7 +109,7 @@ sub main()
         UpgradeLevel(0);
         Condition(70);
         CriticalCondition(20);
-        Damage(230.0);
+        Damage(230.0 * IAL_Weapon_Cut_Damage_Mul);
         Force(50.0);
         CriticalProb(0.2);
         CriticalDamage(4.0);
@@ -261,11 +263,11 @@ sub main()
         DamageHeadMult(2.0);
         DamageToPhysicsObjects(30.0);
         FirePointRange(0,1000.0 *0.01);
-        FirePointDamage(0,110.0);
+        FirePointDamage(0,110.0 * IAL_Weapon_Firearm_Damage_Mul);
         FirePointForce(0,100.0);
         FirePointPhysicsDamage(0,1.0);
         FirePointRange(1,6000.0 *0.01);
-        FirePointDamage(1,25.0);
+        FirePointDamage(1,25.0 * IAL_Weapon_Firearm_Damage_Mul);
         FirePointForce(1,20.0);
         FirePointPhysicsDamage(1,0.5);
         Color(Color_Blue);

@@ -176,7 +176,7 @@
     {
         Difficult(15)
         AIPreset("ViralHumanity_Man_OldTown;ViralHumanity_Woman_OldTown")
-		DiffLvlTableName("Viral_Man;Viral_Woman")
+		DiffLvlTableName("Biter_Man_Fresh;Biter_Woman_Fresh;Viral_Man;Viral_Woman")
         SpawnCondition("__any__, 1;nav_mesh, -1;t_INIT, -1;p_ROOF, -1;p_INTERIOR, -1")
         MinDistBtwZombies(15)
         TimeBtwSpawnZombies(1)
@@ -189,7 +189,7 @@
     {
         Difficult(15)
         AIPreset("ViralHumanity_Man_OldTown;ViralHumanity_Woman_OldTown")
-		DiffLvlTableName("Viral_Man;Viral_Woman")
+		DiffLvlTableName("Biter_Man_Fresh;Biter_Woman_Fresh;Viral_Man;Viral_Woman")
 		BannedAreaAttribs("NOISE_SPAWN_BLOCKER")
         SpawnCondition("t_INIT, 1;z_INFECTED, 1;p_ROOF, 1")
         MinDistBtwZombies(15)
@@ -204,7 +204,7 @@
     {
         Difficult(15)
         AIPreset("ViralHumanity_Man_OldTown;ViralHumanity_Woman_OldTown")
-		DiffLvlTableName("Viral_Man;Viral_Woman")
+		DiffLvlTableName("Biter_Man_Fresh;Biter_Woman_Fresh;Viral_Man;Viral_Woman")
 		BannedAreaAttribs("NOISE_SPAWN_BLOCKER")
 		SpawnCondition("t_INIT, 1;z_INFECTED, 1;p_ROOF, 1")
         MinDistBtwZombies(15)

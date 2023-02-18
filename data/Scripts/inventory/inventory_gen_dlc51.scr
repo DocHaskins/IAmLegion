@@ -1,6 +1,8 @@
 //UNTURNED FREE DLC
 
 import "inventorystuff.scr" 
+import "ial_settings.mth"
+
 sub main() 
 {	
 	Item("Unturned_HockeyStick", CategoryType_Melee)
@@ -12,7 +14,7 @@ sub main()
         UpgradeLevel(0);
 		Condition(200);
         CriticalCondition(12);
-        Damage(120.0);
+        Damage(120.0 * IAL_Weapon_Blunt_Damage_Mul);
         Force(40.0);
         CriticalProb(0.5);
         CriticalDamage(2.0);
@@ -100,7 +102,7 @@ sub main()
         UpgradeLevel(0);
 		Condition(200);
         CriticalCondition(12);
-		Damage(120.0);
+		Damage(120.0 * IAL_Weapon_Blunt_Damage_Mul);
         Force(40.0);
         CriticalProb(0.5);
         CriticalDamage(2.0);
@@ -191,7 +193,7 @@ sub main()
         UpgradeLevel(0);
         Condition(200);
         CriticalCondition(11);
-        Damage(100.0);
+        Damage(100.0 * IAL_Weapon_Cut_Damage_Mul);
         Force(30.0);
         CriticalProb(0.0);
         CriticalDamage(2.0);

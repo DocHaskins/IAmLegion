@@ -1,6 +1,8 @@
 //HARRAN TACTICAL BUNDLE
 
 import "inventorystuff.scr" 
+import "ial_settings.mth"
+
 sub main() 
 {			
 	Item("Firearm_Rifle_Tactical", CategoryType_Firearm)
@@ -76,16 +78,16 @@ sub main()
         DamageHeadMult(8.0);
         DamageToPhysicsObjects(10.0);
         FirePointRange(0,600.0 *0.01);
-        FirePointDamage(0,275.0);
+        FirePointDamage(0,275.0 * IAL_Weapon_Firearm_Damage_Mul);
         FirePointForce(0,20.0);
         FirePointRange(1,1200.0 *0.01);
-        FirePointDamage(1,275.0);
+        FirePointDamage(1,275.0 * IAL_Weapon_Firearm_Damage_Mul);
         FirePointForce(1,20.0);
         FirePointRange(2,2500.0 *0.01);
-        FirePointDamage(2,137.5);
+        FirePointDamage(2,137.5 * IAL_Weapon_Firearm_Damage_Mul);
         FirePointForce(2,10.0);
         FirePointRange(3,10000.0 *0.01);
-        FirePointDamage(3,68.75);
+        FirePointDamage(3,68.75 * IAL_Weapon_Firearm_Damage_Mul);
         FirePointForce(3,5.0);
         Color(Color_Blue);
         GenType(GenType_Firearm);
@@ -192,16 +194,16 @@ sub main()
         DamageHeadMult(10.0);
         DamageToPhysicsObjects(125.0);
         FirePointRange(0,700.0 *0.01);
-        FirePointDamage(0,1.0);
+        FirePointDamage(0,1.0 * IAL_Weapon_Firearm_Damage_Mul);
         FirePointForce(0,100.0);
         FirePointRange(1,1100.0 *0.01);
-        FirePointDamage(1,1.0);
+        FirePointDamage(1,1.0 * IAL_Weapon_Firearm_Damage_Mul);
         FirePointForce(1,100.0);
         FirePointRange(2,1600.0 *0.01);
-        FirePointDamage(2,1.0);
+        FirePointDamage(2,1.0 * IAL_Weapon_Firearm_Damage_Mul);
         FirePointForce(2,50.0);
         FirePointRange(3,3000.0 *0.01);
-        FirePointDamage(3,1.0);
+        FirePointDamage(3,1.0 * IAL_Weapon_Firearm_Damage_Mul);
         FirePointForce(3,25.0);
         Color(Color_Blue);
         GenType(GenType_Firearm);
@@ -242,7 +244,7 @@ sub main()
         UpgradeLevel(0);
         Condition(45);
         CriticalCondition(11);
-        Damage(213.0);
+        Damage(213.0 * IAL_Weapon_Blunt_Damage_Mul);
         Force(100.0);
         CriticalProb(0.0);
         CriticalDamage(2.0);
