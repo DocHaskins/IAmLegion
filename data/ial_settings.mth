@@ -295,8 +295,11 @@ export string IAL_SurvivorSense_Icons_Quest_Range = "20.0"; //Default is 20.0 //
 //////////// -------  GENERAL SETTINGS  ------- \\\\\\\\\\\\\\\\\\
 //- LOCATION - (scripts/player/player_variables_hard.scr) -----\\\
 export float IAL_Weapon_Global_Damage_Mul = 5.0; //Default: 1.0
-export float IAL_Weapon_Metal_Damage_Mul = 5.0; //Default: 1.0
-export float IAL_Weapon_Wood_Damage_Mul = 5.0; //Default: 1.0
+export float IAL_Weapon_Blunt_Damage_Mul = 5.0; //Default: 1.0
+export float IAL_Weapon_Cut_Damage_Mul = 5.0; //Default: 1.0
+export float IAL_Weapon_Firearm_Damage_Mul = 5.0; //Default: 1.0
+export float IAL_Weapon_Bow_Damage_Mul = 5.0; //Default: 1.0
+export float IAL_Weapon_Crossbow_Damage_Mul = 5.0; //Default: 1.0
 
 ////////////// -------  RANGED  ------- \\\\\\\\\\\\\\\\\\\\\\\
 //- LOCATION - (scripts/iventory/inventory_special.scr) -----\\

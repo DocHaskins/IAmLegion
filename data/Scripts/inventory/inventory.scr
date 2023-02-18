@@ -888,7 +888,7 @@ sub main()
         ItemType(ItemType_Fists);
         WeaponBuildType(WeaponBuildType_Metal);
         Condition(-1);
-        Damage(5.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(5.0 *IAL_Weapon_Global_Damage_Mul);
         CriticalProb(0.0);
         CriticalDamage(2.0);
         DamageRange(115.0 *0.01);
@@ -931,7 +931,7 @@ sub main()
     Item("Melee_Fists", CategoryType_Melee)
     {
         Visibility(false);
-        Damage(5.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(5.0 *IAL_Weapon_Global_Damage_Mul);
         DamageRange(115.0 *0.01);
         Force(10.0);
         DamageType(DamageType_Punch1);
@@ -949,7 +949,7 @@ sub main()
         WeaponBuildType(WeaponBuildType_Metal);
         PhysicsScript("single_dropped_inventory.phx");
         Condition(54);
-        Damage(15.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(15.0 *IAL_Weapon_Global_Damage_Mul);
         CriticalProb(0.0);
         CriticalDamage(0.0);
         DamageRange(180.0 *0.01);
@@ -1005,7 +1005,7 @@ sub main()
         WeaponBuildType(WeaponBuildType_Metal);
         PhysicsScript("single_dropped_inventory.phx");
         Condition(54);
-        Damage(15.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(15.0 *IAL_Weapon_Global_Damage_Mul);
         CriticalProb(0.0);
         CriticalDamage(0.0);
         DamageRange(180.0 *0.01);
@@ -1061,7 +1061,7 @@ sub main()
         WeaponBuildType(WeaponBuildType_Metal);
         PhysicsScript("single_dropped_inventory.phx");
         Condition(54);
-        Damage(15.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(15.0 *IAL_Weapon_Global_Damage_Mul);
         CriticalProb(0.0);
         CriticalDamage(0.0);
         DamageRange(180.0 *0.01);
@@ -1116,7 +1116,7 @@ sub main()
         WeaponBuildType(WeaponBuildType_Metal);
         PhysicsScript("single_dropped_inventory.phx");
         Condition(54);
-        Damage(15.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(15.0 *IAL_Weapon_Global_Damage_Mul);
         CriticalProb(0.0);
         CriticalDamage(0.0);
         DamageRange(180.0 *0.01);
@@ -1171,7 +1171,7 @@ sub main()
         WeaponBuildType(WeaponBuildType_Metal);
         PhysicsScript("single_dropped_inventory.phx");
         Condition(54);
-        Damage(15.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(15.0 *IAL_Weapon_Global_Damage_Mul);
         CriticalProb(0.0);
         CriticalDamage(0.0);
         DamageRange(180.0 *0.01);
@@ -1226,7 +1226,7 @@ sub main()
         WeaponBuildType(WeaponBuildType_Metal);
         PhysicsScript("single_dropped_inventory.phx");
         Condition(54);
-        Damage(15.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(15.0 *IAL_Weapon_Global_Damage_Mul);
         CriticalProb(0.0);
         CriticalDamage(0.0);
         DamageRange(180.0 *0.01);
@@ -1281,7 +1281,7 @@ sub main()
         WeaponBuildType(WeaponBuildType_Metal);
         PhysicsScript("single_dropped_inventory.phx");
         Condition(54);
-        Damage(15.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(15.0 *IAL_Weapon_Global_Damage_Mul);
         CriticalProb(0.0);
         CriticalDamage(0.0);
         DamageRange(180.0 *0.01);
@@ -1336,7 +1336,7 @@ sub main()
         WeaponBuildType(WeaponBuildType_Metal);
         PhysicsScript("single_dropped_inventory.phx");
         Condition(54);
-        Damage(15.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(15.0 *IAL_Weapon_Global_Damage_Mul);
         CriticalProb(0.0);
         CriticalDamage(0.0);
         DamageRange(180.0 *0.01);
@@ -1391,7 +1391,7 @@ sub main()
         WeaponBuildType(WeaponBuildType_Metal);
         PhysicsScript("single_dropped_inventory.phx");
         Condition(54);
-        Damage(15.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(15.0 *IAL_Weapon_Global_Damage_Mul);
         CriticalProb(0.0);
         CriticalDamage(0.0);
         DamageRange(180.0 *0.01);
@@ -1446,7 +1446,7 @@ sub main()
         WeaponBuildType(WeaponBuildType_Metal);
         PhysicsScript("single_dropped_inventory.phx");
         Condition(54);
-        Damage(15.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(15.0 *IAL_Weapon_Global_Damage_Mul);
         CriticalProb(0.0);
         CriticalDamage(0.0);
         DamageRange(180.0 *0.01);
@@ -1501,7 +1501,7 @@ sub main()
         WeaponBuildType(WeaponBuildType_Metal);
         PhysicsScript("single_dropped_inventory.phx");
         Condition(54);
-        Damage(15.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(15.0 *IAL_Weapon_Global_Damage_Mul);
         CriticalProb(0.0);
         CriticalDamage(0.0);
         DamageRange(180.0 *0.01);
@@ -1556,7 +1556,7 @@ sub main()
         WeaponBuildType(WeaponBuildType_Metal);
         PhysicsScript("single_dropped_inventory.phx");
         Condition(54);
-        Damage(15.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(15.0 *IAL_Weapon_Global_Damage_Mul);
         CriticalProb(0.0);
         CriticalDamage(0.0);
         DamageRange(180.0 *0.01);
@@ -1611,7 +1611,7 @@ sub main()
         WeaponBuildType(WeaponBuildType_Metal);
         PhysicsScript("single_dropped_inventory.phx");
         Condition(54);
-        Damage(15.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(15.0 *IAL_Weapon_Global_Damage_Mul);
         CriticalProb(0.0);
         CriticalDamage(0.0);
         DamageRange(180.0 *0.01);
@@ -1666,7 +1666,7 @@ sub main()
         WeaponBuildType(WeaponBuildType_Metal);
         PhysicsScript("single_dropped_inventory.phx");
         Condition(54);
-        Damage(15.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(15.0 *IAL_Weapon_Global_Damage_Mul);
         CriticalProb(0.0);
         CriticalDamage(0.0);
         DamageRange(180.0 *0.01);
@@ -1721,7 +1721,7 @@ sub main()
         WeaponBuildType(WeaponBuildType_Metal);
         PhysicsScript("single_dropped_inventory.phx");
         Condition(54);
-        Damage(15.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(15.0 *IAL_Weapon_Global_Damage_Mul);
         CriticalProb(0.0);
         CriticalDamage(0.0);
         DamageRange(180.0 *0.01);
@@ -1776,7 +1776,7 @@ sub main()
         WeaponBuildType(WeaponBuildType_Metal);
         PhysicsScript("single_dropped_inventory.phx");
         Condition(54);
-        Damage(15.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(15.0 *IAL_Weapon_Global_Damage_Mul);
         CriticalProb(0.0);
         CriticalDamage(0.0);
         DamageRange(180.0 *0.01);
@@ -1831,7 +1831,7 @@ sub main()
         WeaponBuildType(WeaponBuildType_Metal);
         PhysicsScript("single_dropped_inventory.phx");
         Condition(54);
-        Damage(15.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(15.0 *IAL_Weapon_Global_Damage_Mul);
         CriticalProb(0.0);
         CriticalDamage(0.0);
         DamageRange(180.0 *0.01);
@@ -1886,7 +1886,7 @@ sub main()
         WeaponBuildType(WeaponBuildType_Metal);
         PhysicsScript("single_dropped_inventory.phx");
         Condition(54);
-        Damage(15.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(15.0 *IAL_Weapon_Global_Damage_Mul);
         CriticalProb(0.0);
         CriticalDamage(0.0);
         DamageRange(180.0 *0.01);
@@ -1941,7 +1941,7 @@ sub main()
         WeaponBuildType(WeaponBuildType_Metal);
         PhysicsScript("single_dropped_inventory.phx");
         Condition(54);
-        Damage(15.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(15.0 *IAL_Weapon_Global_Damage_Mul);
         CriticalProb(0.0);
         CriticalDamage(0.0);
         DamageRange(180.0 *0.01);
@@ -1996,7 +1996,7 @@ sub main()
         WeaponBuildType(WeaponBuildType_Metal);
         PhysicsScript("single_dropped_inventory.phx");
         Condition(54);
-        Damage(15.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(15.0 *IAL_Weapon_Global_Damage_Mul);
         CriticalProb(0.0);
         CriticalDamage(0.0);
         DamageRange(180.0 *0.01);
@@ -2051,7 +2051,7 @@ sub main()
         WeaponBuildType(WeaponBuildType_Metal);
         PhysicsScript("single_dropped_inventory.phx");
         Condition(54);
-        Damage(15.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(15.0 *IAL_Weapon_Global_Damage_Mul);
         CriticalProb(0.0);
         CriticalDamage(0.0);
         DamageRange(180.0 *0.01);
@@ -2106,7 +2106,7 @@ sub main()
         WeaponBuildType(WeaponBuildType_Metal);
         PhysicsScript("single_dropped_inventory.phx");
         Condition(54);
-        Damage(15.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(15.0 *IAL_Weapon_Global_Damage_Mul);
         CriticalProb(0.0);
         CriticalDamage(0.0);
         DamageRange(180.0 *0.01);
@@ -2161,7 +2161,7 @@ sub main()
         WeaponBuildType(WeaponBuildType_Metal);
         PhysicsScript("single_dropped_inventory.phx");
         Condition(54);
-        Damage(15.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(15.0 *IAL_Weapon_Global_Damage_Mul);
         CriticalProb(0.0);
         CriticalDamage(0.0);
         DamageRange(180.0 *0.01);
@@ -2216,7 +2216,7 @@ sub main()
         WeaponBuildType(WeaponBuildType_Metal);
         PhysicsScript("single_dropped_inventory.phx");
         Condition(54);
-        Damage(15.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(15.0 *IAL_Weapon_Global_Damage_Mul);
         CriticalProb(0.0);
         CriticalDamage(0.0);
         DamageRange(180.0 *0.01);
@@ -2271,7 +2271,7 @@ sub main()
         WeaponBuildType(WeaponBuildType_Metal);
         PhysicsScript("single_dropped_inventory.phx");
         Condition(54);
-        Damage(15.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(15.0 *IAL_Weapon_Global_Damage_Mul);
         CriticalProb(0.0);
         CriticalDamage(0.0);
         DamageRange(180.0 *0.01);
@@ -2326,7 +2326,7 @@ sub main()
         WeaponBuildType(WeaponBuildType_Metal);
         PhysicsScript("single_dropped_inventory.phx");
         Condition(54);
-        Damage(15.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(15.0 *IAL_Weapon_Global_Damage_Mul);
         CriticalProb(0.0);
         CriticalDamage(0.0);
         DamageRange(180.0 *0.01);
@@ -2381,7 +2381,7 @@ sub main()
         WeaponBuildType(WeaponBuildType_Metal);
         PhysicsScript("single_dropped_inventory.phx");
         Condition(54);
-        Damage(15.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(15.0 *IAL_Weapon_Global_Damage_Mul);
         CriticalProb(0.0);
         CriticalDamage(0.0);
         DamageRange(180.0 *0.01);
@@ -2436,7 +2436,7 @@ sub main()
         WeaponBuildType(WeaponBuildType_Metal);
         PhysicsScript("single_dropped_inventory.phx");
         Condition(54);
-        Damage(15.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(15.0 *IAL_Weapon_Global_Damage_Mul);
         CriticalProb(0.0);
         CriticalDamage(0.0);
         DamageRange(180.0 *0.01);
@@ -2491,7 +2491,7 @@ sub main()
         WeaponBuildType(WeaponBuildType_Metal);
         PhysicsScript("single_dropped_inventory.phx");
         Condition(54);
-        Damage(15.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(15.0 *IAL_Weapon_Global_Damage_Mul);
         CriticalProb(0.0);
         CriticalDamage(0.0);
         DamageRange(180.0 *0.01);
@@ -2546,7 +2546,7 @@ sub main()
         WeaponBuildType(WeaponBuildType_Metal);
         PhysicsScript("single_dropped_inventory.phx");
         Condition(54);
-        Damage(15.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(15.0 *IAL_Weapon_Global_Damage_Mul);
         CriticalProb(0.0);
         CriticalDamage(0.0);
         DamageRange(180.0 *0.01);
@@ -2601,7 +2601,7 @@ sub main()
         WeaponBuildType(WeaponBuildType_Metal);
         PhysicsScript("single_dropped_inventory.phx");
         Condition(54);
-        Damage(15.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(15.0 *IAL_Weapon_Global_Damage_Mul);
         CriticalProb(0.0);
         CriticalDamage(0.0);
         DamageRange(180.0 *0.01);
@@ -2656,7 +2656,7 @@ sub main()
         WeaponBuildType(WeaponBuildType_Metal);
         PhysicsScript("single_dropped_inventory.phx");
         Condition(54);
-        Damage(15.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(15.0 *IAL_Weapon_Global_Damage_Mul);
         CriticalProb(0.0);
         CriticalDamage(0.0);
         DamageRange(180.0 *0.01);
@@ -2711,7 +2711,7 @@ sub main()
         WeaponBuildType(WeaponBuildType_Metal);
         PhysicsScript("single_dropped_inventory.phx");
         Condition(54);
-        Damage(15.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(15.0 *IAL_Weapon_Global_Damage_Mul);
         CriticalProb(0.0);
         CriticalDamage(0.0);
         DamageRange(180.0 *0.01);
@@ -2766,7 +2766,7 @@ sub main()
         WeaponBuildType(WeaponBuildType_Metal);
         PhysicsScript("single_dropped_inventory.phx");
         Condition(54);
-        Damage(15.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(15.0 *IAL_Weapon_Global_Damage_Mul);
         CriticalProb(0.0);
         CriticalDamage(0.0);
         DamageRange(180.0 *0.01);
@@ -2821,7 +2821,7 @@ sub main()
         WeaponBuildType(WeaponBuildType_Metal);
         PhysicsScript("single_dropped_inventory.phx");
         Condition(54);
-        Damage(15.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(15.0 *IAL_Weapon_Global_Damage_Mul);
         CriticalProb(0.0);
         CriticalDamage(0.0);
         DamageRange(180.0 *0.01);
@@ -2876,7 +2876,7 @@ sub main()
         WeaponBuildType(WeaponBuildType_Metal);
         PhysicsScript("single_dropped_inventory.phx");
         Condition(54);
-        Damage(15.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(15.0 *IAL_Weapon_Global_Damage_Mul);
         CriticalProb(0.0);
         CriticalDamage(0.0);
         DamageRange(180.0 *0.01);
@@ -2931,7 +2931,7 @@ sub main()
         WeaponBuildType(WeaponBuildType_Metal);
         PhysicsScript("single_dropped_inventory.phx");
         Condition(54);
-        Damage(15.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(15.0 *IAL_Weapon_Global_Damage_Mul);
         CriticalProb(0.0);
         CriticalDamage(0.0);
         DamageRange(180.0 *0.01);
@@ -2986,7 +2986,7 @@ sub main()
         WeaponBuildType(WeaponBuildType_Metal);
         PhysicsScript("single_dropped_inventory.phx");
         Condition(54);
-        Damage(15.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(15.0 *IAL_Weapon_Global_Damage_Mul);
         CriticalProb(0.0);
         CriticalDamage(0.0);
         DamageRange(180.0 *0.01);
@@ -3041,7 +3041,7 @@ sub main()
         WeaponBuildType(WeaponBuildType_Metal);
         PhysicsScript("single_dropped_inventory.phx");
         Condition(54);
-        Damage(15.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(15.0 *IAL_Weapon_Global_Damage_Mul);
         CriticalProb(0.0);
         CriticalDamage(0.0);
         DamageRange(180.0 *0.01);
@@ -3096,7 +3096,7 @@ sub main()
         WeaponBuildType(WeaponBuildType_Metal);
         PhysicsScript("single_dropped_inventory.phx");
         Condition(54);
-        Damage(15.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(15.0 *IAL_Weapon_Global_Damage_Mul);
         CriticalProb(0.0);
         CriticalDamage(0.0);
         DamageRange(180.0 *0.01);
@@ -3151,7 +3151,7 @@ sub main()
         WeaponBuildType(WeaponBuildType_Metal);
         PhysicsScript("single_dropped_inventory.phx");
         Condition(54);
-        Damage(15.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(15.0 *IAL_Weapon_Global_Damage_Mul);
         CriticalProb(0.0);
         CriticalDamage(0.0);
         DamageRange(180.0 *0.01);
@@ -3206,7 +3206,7 @@ sub main()
         WeaponBuildType(WeaponBuildType_Metal);
         PhysicsScript("single_dropped_inventory.phx");
         Condition(54);
-        Damage(15.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(15.0 *IAL_Weapon_Global_Damage_Mul);
         CriticalProb(0.0);
         CriticalDamage(0.0);
         DamageRange(180.0 *0.01);
@@ -3261,7 +3261,7 @@ sub main()
         WeaponBuildType(WeaponBuildType_Metal);
         PhysicsScript("single_dropped_inventory.phx");
         Condition(54);
-        Damage(15.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(15.0 *IAL_Weapon_Global_Damage_Mul);
         CriticalProb(0.0);
         CriticalDamage(0.0);
         DamageRange(180.0 *0.01);
@@ -3316,7 +3316,7 @@ sub main()
         WeaponBuildType(WeaponBuildType_Metal);
         PhysicsScript("single_dropped_inventory.phx");
         Condition(54);
-        Damage(15.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(15.0 *IAL_Weapon_Global_Damage_Mul);
         CriticalProb(0.0);
         CriticalDamage(0.0);
         DamageRange(180.0 *0.01);
@@ -3371,7 +3371,7 @@ sub main()
         WeaponBuildType(WeaponBuildType_Metal);
         PhysicsScript("single_dropped_inventory.phx");
         Condition(54);
-        Damage(15.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(15.0 *IAL_Weapon_Global_Damage_Mul);
         CriticalProb(0.0);
         CriticalDamage(0.0);
         DamageRange(180.0 *0.01);
@@ -3426,7 +3426,7 @@ sub main()
         WeaponBuildType(WeaponBuildType_Metal);
         PhysicsScript("single_dropped_inventory.phx");
         Condition(54);
-        Damage(15.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(15.0 *IAL_Weapon_Global_Damage_Mul);
         CriticalProb(0.0);
         CriticalDamage(0.0);
         DamageRange(180.0 *0.01);
@@ -3481,7 +3481,7 @@ sub main()
         WeaponBuildType(WeaponBuildType_Metal);
         PhysicsScript("single_dropped_inventory.phx");
         Condition(54);
-        Damage(15.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(15.0 *IAL_Weapon_Global_Damage_Mul);
         CriticalProb(0.0);
         CriticalDamage(0.0);
         DamageRange(180.0 *0.01);
@@ -3536,7 +3536,7 @@ sub main()
         WeaponBuildType(WeaponBuildType_Metal);
         PhysicsScript("single_dropped_inventory.phx");
         Condition(54);
-        Damage(15.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(15.0 *IAL_Weapon_Global_Damage_Mul);
         CriticalProb(0.0);
         CriticalDamage(0.0);
         DamageRange(180.0 *0.01);
@@ -3591,7 +3591,7 @@ sub main()
         WeaponBuildType(WeaponBuildType_Metal);
         PhysicsScript("single_dropped_inventory.phx");
         Condition(54);
-        Damage(15.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(15.0 *IAL_Weapon_Global_Damage_Mul);
         CriticalProb(0.0);
         CriticalDamage(0.0);
         DamageRange(180.0 *0.01);
@@ -3646,7 +3646,7 @@ sub main()
         WeaponBuildType(WeaponBuildType_Metal);
         PhysicsScript("single_dropped_inventory.phx");
         Condition(54);
-        Damage(15.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(15.0 *IAL_Weapon_Global_Damage_Mul);
         CriticalProb(0.0);
         CriticalDamage(0.0);
         DamageRange(180.0 *0.01);
@@ -3701,7 +3701,7 @@ sub main()
         WeaponBuildType(WeaponBuildType_Metal);
         PhysicsScript("single_dropped_inventory.phx");
         Condition(54);
-        Damage(15.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(15.0 *IAL_Weapon_Global_Damage_Mul);
         CriticalProb(0.0);
         CriticalDamage(0.0);
         DamageRange(180.0 *0.01);
@@ -3756,7 +3756,7 @@ sub main()
         WeaponBuildType(WeaponBuildType_Metal);
         PhysicsScript("single_dropped_inventory.phx");
         Condition(54);
-        Damage(15.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(15.0 *IAL_Weapon_Global_Damage_Mul);
         CriticalProb(0.0);
         CriticalDamage(0.0);
         DamageRange(180.0 *0.01);
@@ -3811,7 +3811,7 @@ sub main()
         WeaponBuildType(WeaponBuildType_Metal);
         PhysicsScript("single_dropped_inventory.phx");
         Condition(54);
-        Damage(15.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(15.0 *IAL_Weapon_Global_Damage_Mul);
         CriticalProb(0.0);
         CriticalDamage(0.0);
         DamageRange(180.0 *0.01);
@@ -3866,7 +3866,7 @@ sub main()
         WeaponBuildType(WeaponBuildType_Metal);
         PhysicsScript("single_dropped_inventory.phx");
         Condition(54);
-        Damage(15.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(15.0 *IAL_Weapon_Global_Damage_Mul);
         CriticalProb(0.0);
         CriticalDamage(0.0);
         DamageRange(180.0 *0.01);
@@ -3921,7 +3921,7 @@ sub main()
         WeaponBuildType(WeaponBuildType_Metal);
         PhysicsScript("single_dropped_inventory.phx");
         Condition(54);
-        Damage(15.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(15.0 *IAL_Weapon_Global_Damage_Mul);
         CriticalProb(0.0);
         CriticalDamage(0.0);
         DamageRange(180.0 *0.01);
@@ -3976,7 +3976,7 @@ sub main()
         WeaponBuildType(WeaponBuildType_Metal);
         PhysicsScript("single_dropped_inventory.phx");
         Condition(54);
-        Damage(15.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(15.0 *IAL_Weapon_Global_Damage_Mul);
         CriticalProb(0.0);
         CriticalDamage(0.0);
         DamageRange(180.0 *0.01);
@@ -4031,7 +4031,7 @@ sub main()
         WeaponBuildType(WeaponBuildType_Metal);
         PhysicsScript("single_dropped_inventory.phx");
         Condition(54);
-        Damage(15.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(15.0 *IAL_Weapon_Global_Damage_Mul);
         CriticalProb(0.0);
         CriticalDamage(0.0);
         DamageRange(180.0 *0.01);
@@ -4086,7 +4086,7 @@ sub main()
         WeaponBuildType(WeaponBuildType_Metal);
         PhysicsScript("single_dropped_inventory.phx");
         Condition(54);
-        Damage(15.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(15.0 *IAL_Weapon_Global_Damage_Mul);
         CriticalProb(0.0);
         CriticalDamage(0.0);
         DamageRange(180.0 *0.01);
@@ -4141,7 +4141,7 @@ sub main()
         WeaponBuildType(WeaponBuildType_Metal);
         PhysicsScript("single_dropped_inventory.phx");
         Condition(54);
-        Damage(15.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(15.0 *IAL_Weapon_Global_Damage_Mul);
         CriticalProb(0.0);
         CriticalDamage(0.0);
         DamageRange(180.0 *0.01);
@@ -4196,7 +4196,7 @@ sub main()
         WeaponBuildType(WeaponBuildType_Metal);
         PhysicsScript("single_dropped_inventory.phx");
         Condition(54);
-        Damage(15.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(15.0 *IAL_Weapon_Global_Damage_Mul);
         CriticalProb(0.0);
         CriticalDamage(0.0);
         DamageRange(180.0 *0.01);
@@ -4251,7 +4251,7 @@ sub main()
         WeaponBuildType(WeaponBuildType_Metal);
         PhysicsScript("single_dropped_inventory.phx");
         Condition(54);
-        Damage(15.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(15.0 *IAL_Weapon_Global_Damage_Mul);
         CriticalProb(0.0);
         CriticalDamage(0.0);
         DamageRange(180.0 *0.01);
@@ -4306,7 +4306,7 @@ sub main()
         WeaponBuildType(WeaponBuildType_Metal);
         PhysicsScript("single_dropped_inventory.phx");
         Condition(54);
-        Damage(15.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(15.0 *IAL_Weapon_Global_Damage_Mul);
         CriticalProb(0.0);
         CriticalDamage(0.0);
         DamageRange(180.0 *0.01);
@@ -4361,7 +4361,7 @@ sub main()
         WeaponBuildType(WeaponBuildType_Metal);
         PhysicsScript("single_dropped_inventory.phx");
         Condition(54);
-        Damage(15.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(15.0 *IAL_Weapon_Global_Damage_Mul);
         CriticalProb(0.0);
         CriticalDamage(0.0);
         DamageRange(180.0 *0.01);
@@ -4416,7 +4416,7 @@ sub main()
         WeaponBuildType(WeaponBuildType_Metal);
         PhysicsScript("single_dropped_inventory.phx");
         Condition(54);
-        Damage(15.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(15.0 *IAL_Weapon_Global_Damage_Mul);
         CriticalProb(0.0);
         CriticalDamage(0.0);
         DamageRange(180.0 *0.01);
@@ -4471,7 +4471,7 @@ sub main()
         WeaponBuildType(WeaponBuildType_Metal);
         PhysicsScript("single_dropped_inventory.phx");
         Condition(54);
-        Damage(15.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(15.0 *IAL_Weapon_Global_Damage_Mul);
         CriticalProb(0.0);
         CriticalDamage(0.0);
         DamageRange(180.0 *0.01);
@@ -4526,7 +4526,7 @@ sub main()
         WeaponBuildType(WeaponBuildType_Metal);
         PhysicsScript("single_dropped_inventory.phx");
         Condition(54);
-        Damage(15.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(15.0 *IAL_Weapon_Global_Damage_Mul);
         CriticalProb(0.0);
         CriticalDamage(0.0);
         DamageRange(180.0 *0.01);
@@ -4581,7 +4581,7 @@ sub main()
         WeaponBuildType(WeaponBuildType_Metal);
         PhysicsScript("single_dropped_inventory.phx");
         Condition(54);
-        Damage(15.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(15.0 *IAL_Weapon_Global_Damage_Mul);
         CriticalProb(0.0);
         CriticalDamage(0.0);
         DamageRange(180.0 *0.01);
@@ -4636,7 +4636,7 @@ sub main()
         WeaponBuildType(WeaponBuildType_Metal);
         PhysicsScript("single_dropped_inventory.phx");
         Condition(54);
-        Damage(15.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(15.0 *IAL_Weapon_Global_Damage_Mul);
         CriticalProb(0.0);
         CriticalDamage(0.0);
         DamageRange(180.0 *0.01);
@@ -4691,7 +4691,7 @@ sub main()
         WeaponBuildType(WeaponBuildType_Metal);
         PhysicsScript("single_dropped_inventory.phx");
         Condition(54);
-        Damage(15.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(15.0 *IAL_Weapon_Global_Damage_Mul);
         CriticalProb(0.0);
         CriticalDamage(0.0);
         DamageRange(180.0 *0.01);
@@ -4746,7 +4746,7 @@ sub main()
         WeaponBuildType(WeaponBuildType_Metal);
         PhysicsScript("single_dropped_inventory.phx");
         Condition(54);
-        Damage(15.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(15.0 *IAL_Weapon_Global_Damage_Mul);
         CriticalProb(0.0);
         CriticalDamage(0.0);
         DamageRange(180.0 *0.01);
@@ -4801,7 +4801,7 @@ sub main()
         WeaponBuildType(WeaponBuildType_Metal);
         PhysicsScript("single_dropped_inventory.phx");
         Condition(54);
-        Damage(15.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(15.0 *IAL_Weapon_Global_Damage_Mul);
         CriticalProb(0.0);
         CriticalDamage(0.0);
         DamageRange(180.0 *0.01);
@@ -4856,7 +4856,7 @@ sub main()
         WeaponBuildType(WeaponBuildType_Metal);
         PhysicsScript("single_dropped_inventory.phx");
         Condition(54);
-        Damage(15.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(15.0 *IAL_Weapon_Global_Damage_Mul);
         CriticalProb(0.0);
         CriticalDamage(0.0);
         DamageRange(180.0 *0.01);
@@ -4911,7 +4911,7 @@ sub main()
         WeaponBuildType(WeaponBuildType_Metal);
         PhysicsScript("single_dropped_inventory.phx");
         Condition(54);
-        Damage(15.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(15.0 *IAL_Weapon_Global_Damage_Mul);
         CriticalProb(0.0);
         CriticalDamage(0.0);
         DamageRange(180.0 *0.01);
@@ -4966,7 +4966,7 @@ sub main()
         WeaponBuildType(WeaponBuildType_Metal);
         PhysicsScript("single_dropped_inventory.phx");
         Condition(54);
-        Damage(15.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(15.0 *IAL_Weapon_Global_Damage_Mul);
         CriticalProb(0.0);
         CriticalDamage(0.0);
         DamageRange(180.0 *0.01);
@@ -5021,7 +5021,7 @@ sub main()
         WeaponBuildType(WeaponBuildType_Metal);
         PhysicsScript("single_dropped_inventory.phx");
         Condition(54);
-        Damage(15.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(15.0 *IAL_Weapon_Global_Damage_Mul);
         CriticalProb(0.0);
         CriticalDamage(0.0);
         DamageRange(180.0 *0.01);
@@ -5076,7 +5076,7 @@ sub main()
         WeaponBuildType(WeaponBuildType_Metal);
         PhysicsScript("single_dropped_inventory.phx");
         Condition(54);
-        Damage(15.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(15.0 *IAL_Weapon_Global_Damage_Mul);
         CriticalProb(0.0);
         CriticalDamage(0.0);
         DamageRange(220.0 *0.01);
@@ -5134,7 +5134,7 @@ sub main()
         WeaponBuildType(WeaponBuildType_Metal);
         PhysicsScript("single_dropped_inventory.phx");
         Condition(54);
-        Damage(15.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(15.0 *IAL_Weapon_Global_Damage_Mul);
         CriticalProb(0.0);
         CriticalDamage(0.0);
         DamageRange(180.0 *0.01);
@@ -5189,7 +5189,7 @@ sub main()
         WeaponBuildType(WeaponBuildType_Metal);
         PhysicsScript("single_dropped_inventory.phx");
         Condition(54);
-        Damage(15.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(15.0 *IAL_Weapon_Global_Damage_Mul);
         CriticalProb(0.0);
         CriticalDamage(0.0);
         DamageRange(220.0 *0.01);
@@ -5247,7 +5247,7 @@ sub main()
         WeaponBuildType(WeaponBuildType_Metal);
         PhysicsScript("single_dropped_inventory.phx");
         Condition(54);
-        Damage(15.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(15.0 *IAL_Weapon_Global_Damage_Mul);
         CriticalProb(0.0);
         CriticalDamage(0.0);
         DamageRange(220.0 *0.01);
@@ -5306,7 +5306,7 @@ sub main()
         WeaponBuildType(WeaponBuildType_Metal);
         PhysicsScript("single_dropped_inventory.phx");
         Condition(54);
-        Damage(15.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(15.0 *IAL_Weapon_Global_Damage_Mul);
         CriticalProb(0.0);
         CriticalDamage(0.0);
         DamageRange(220.0 *0.01);
@@ -5847,7 +5847,7 @@ sub main()
         PhysicsScript("single_dropped_inventory.phx");
         HudIcon("weapon_throw_knives");
         Condition(1);
-        Damage(137.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(137.0 *IAL_Weapon_Global_Damage_Mul);
         Force(10.0);
         DamageToPhysicsObjects(137.0);
         CriticalProb(0.0);
@@ -5902,7 +5902,7 @@ sub main()
         PhysicsScript("single_dropped_inventory.phx");
         HudIcon("weapon_throw_knives");
         Condition(1);
-        Damage(123.3 * IAL_Weapon_Global_Damage_Mul);
+        Damage(123.3 *IAL_Weapon_Global_Damage_Mul);
         Force(10.0);
         DamageToPhysicsObjects(123.3);
         CriticalProb(0.0);
@@ -5957,7 +5957,7 @@ sub main()
         PhysicsScript("single_dropped_inventory.phx");
         HudIcon("weapon_throw_knives");
         Condition(1);
-        Damage(178.1 * IAL_Weapon_Global_Damage_Mul);
+        Damage(178.1 *IAL_Weapon_Global_Damage_Mul);
         Force(10.0);
         DamageToPhysicsObjects(178.1);
         CriticalProb(0.0);
@@ -6012,7 +6012,7 @@ sub main()
         PhysicsScript("single_dropped_inventory.phx");
         HudIcon("weapon_throw_knives");
         Condition(1);
-        Damage(205.5 * IAL_Weapon_Global_Damage_Mul);
+        Damage(205.5 *IAL_Weapon_Global_Damage_Mul);
         Force(10.0);
         DamageToPhysicsObjects(205.5);
         CriticalProb(0.0);
@@ -6067,7 +6067,7 @@ sub main()
         PhysicsScript("single_dropped_inventory.phx");
         HudIcon("weapon_throw_knives");
         Condition(1);
-        Damage(274.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(274.0 *IAL_Weapon_Global_Damage_Mul);
         Force(10.0);
         DamageToPhysicsObjects(274.0);
         CriticalProb(0.0);
@@ -6119,7 +6119,7 @@ sub main()
         PhysicsScript("single_dropped_inventory.phx");
         HudIcon("weapon_throw_knives");
         Condition(1);
-        Damage(118.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(118.0 *IAL_Weapon_Global_Damage_Mul);
         Force(10.0);
         DamageToPhysicsObjects(118.0);
         CriticalProb(0.0);
@@ -6171,7 +6171,7 @@ sub main()
         PhysicsScript("single_dropped_inventory.phx");
         HudIcon("weapon_throw_knives");
         Condition(1);
-        Damage(15.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(15.0 *IAL_Weapon_Global_Damage_Mul);
         Force(0.0);
         DamageToPhysicsObjects(15.0);
         CriticalProb(0.0);
@@ -6223,7 +6223,7 @@ sub main()
         PhysicsScript("single_dropped_inventory.phx");
         HudIcon("weapon_throwing_axe_a");
         Condition(1);
-        Damage(184.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(184.0 *IAL_Weapon_Global_Damage_Mul);
         Force(12.0);
         DamageToPhysicsObjects(184.0);
         CriticalProb(0.0);
@@ -6278,7 +6278,7 @@ sub main()
         PhysicsScript("single_dropped_inventory.phx");
         HudIcon("weapon_throwing_axe_a");
         Condition(1);
-        Damage(147.2 * IAL_Weapon_Global_Damage_Mul);
+        Damage(147.2 *IAL_Weapon_Global_Damage_Mul);
         Force(12.0);
         DamageToPhysicsObjects(147.2);
         CriticalProb(0.0);
@@ -6333,7 +6333,7 @@ sub main()
         PhysicsScript("single_dropped_inventory.phx");
         HudIcon("weapon_throwing_axe_a");
         Condition(1);
-        Damage(165.6 * IAL_Weapon_Global_Damage_Mul);
+        Damage(165.6 *IAL_Weapon_Global_Damage_Mul);
         Force(12.0);
         DamageToPhysicsObjects(165.6);
         CriticalProb(0.0);
@@ -6388,7 +6388,7 @@ sub main()
         PhysicsScript("single_dropped_inventory.phx");
         HudIcon("weapon_throwing_axe_a");
         Condition(1);
-        Damage(276.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(276.0 *IAL_Weapon_Global_Damage_Mul);
         Force(12.0);
         DamageToPhysicsObjects(276.0);
         CriticalProb(0.0);
@@ -6443,7 +6443,7 @@ sub main()
         PhysicsScript("single_dropped_inventory.phx");
         HudIcon("weapon_throwing_axe_a");
         Condition(1);
-        Damage(368.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(368.0 *IAL_Weapon_Global_Damage_Mul);
         Force(12.0);
         DamageToPhysicsObjects(368.0);
         CriticalProb(0.0);
@@ -6495,7 +6495,7 @@ sub main()
         PhysicsScript("single_dropped_inventory.phx");
         HudIcon("weapon_throwing_axe_b");
         Condition(1);
-        Damage(159.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(159.0 *IAL_Weapon_Global_Damage_Mul);
         Force(12.0);
         DamageToPhysicsObjects(159.0);
         CriticalProb(0.0);
@@ -6550,7 +6550,7 @@ sub main()
         PhysicsScript("single_dropped_inventory.phx");
         HudIcon("weapon_throwing_axe_b");
         Condition(1);
-        Damage(127.2 * IAL_Weapon_Global_Damage_Mul);
+        Damage(127.2 *IAL_Weapon_Global_Damage_Mul);
         Force(12.0);
         DamageToPhysicsObjects(127.2);
         CriticalProb(0.0);
@@ -6605,7 +6605,7 @@ sub main()
         PhysicsScript("single_dropped_inventory.phx");
         HudIcon("weapon_throwing_axe_b");
         Condition(1);
-        Damage(143.1 * IAL_Weapon_Global_Damage_Mul);
+        Damage(143.1 *IAL_Weapon_Global_Damage_Mul);
         Force(12.0);
         DamageToPhysicsObjects(143.1);
         CriticalProb(0.0);
@@ -6715,7 +6715,7 @@ sub main()
         PhysicsScript("single_dropped_inventory.phx");
         HudIcon("weapon_throwing_axe_b");
         Condition(1);
-        Damage(318.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(318.0 *IAL_Weapon_Global_Damage_Mul);
         Force(12.0);
         DamageToPhysicsObjects(318.0);
         CriticalProb(0.0);
@@ -6767,7 +6767,7 @@ sub main()
         PhysicsScript("single_dropped_inventory.phx");
         HudIcon("weapon_throwing_axe_c");
         Condition(1);
-        Damage(213.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(213.0 *IAL_Weapon_Global_Damage_Mul);
         Force(12.0);
         DamageToPhysicsObjects(213.0);
         CriticalProb(0.0);
@@ -6822,7 +6822,7 @@ sub main()
         PhysicsScript("single_dropped_inventory.phx");
         HudIcon("weapon_throwing_axe_c");
         Condition(1);
-        Damage(170.4 * IAL_Weapon_Global_Damage_Mul);
+        Damage(170.4 *IAL_Weapon_Global_Damage_Mul);
         Force(12.0);
         DamageToPhysicsObjects(170.4);
         CriticalProb(0.0);
@@ -6877,7 +6877,7 @@ sub main()
         PhysicsScript("single_dropped_inventory.phx");
         HudIcon("weapon_throwing_axe_c");
         Condition(1);
-        Damage(191.7 * IAL_Weapon_Global_Damage_Mul);
+        Damage(191.7 *IAL_Weapon_Global_Damage_Mul);
         Force(12.0);
         DamageToPhysicsObjects(191.7);
         CriticalProb(0.0);
@@ -6932,7 +6932,7 @@ sub main()
         PhysicsScript("single_dropped_inventory.phx");
         HudIcon("weapon_throwing_axe_c");
         Condition(1);
-        Damage(202.35 * IAL_Weapon_Global_Damage_Mul);
+        Damage(202.35 *IAL_Weapon_Global_Damage_Mul);
         Force(12.0);
         DamageToPhysicsObjects(202.35);
         CriticalProb(0.0);
@@ -6987,7 +6987,7 @@ sub main()
         PhysicsScript("single_dropped_inventory.phx");
         HudIcon("weapon_throwing_axe_c");
         Condition(1);
-        Damage(319.5 * IAL_Weapon_Global_Damage_Mul);
+        Damage(319.5 *IAL_Weapon_Global_Damage_Mul);
         Force(12.0);
         DamageToPhysicsObjects(319.5);
         CriticalProb(0.0);
@@ -7042,7 +7042,7 @@ sub main()
         PhysicsScript("single_dropped_inventory.phx");
         HudIcon("weapon_throwing_axe_c");
         Condition(1);
-        Damage(447.3 * IAL_Weapon_Global_Damage_Mul);
+        Damage(447.3 *IAL_Weapon_Global_Damage_Mul);
         Force(12.0);
         DamageToPhysicsObjects(447.3);
         CriticalProb(0.0);
@@ -7094,7 +7094,7 @@ sub main()
         PhysicsScript("single_dropped_inventory.phx");
         HudIcon("weapon_throwing_axe_b");
         Condition(1);
-        Damage(15.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(15.0 *IAL_Weapon_Global_Damage_Mul);
         Force(0.0);
         DamageToPhysicsObjects(15.0);
         CriticalProb(0.0);
@@ -7146,7 +7146,7 @@ sub main()
         PhysicsScript("single_dropped_inventory.phx");
         HudIcon("weapon_shuriken_a");
         Condition(1);
-        Damage(102.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(102.0 *IAL_Weapon_Global_Damage_Mul);
         Force(10.0);
         DamageToPhysicsObjects(102.0);
         CriticalProb(0.0);
@@ -7201,7 +7201,7 @@ sub main()
         PhysicsScript("single_dropped_inventory.phx");
         HudIcon("weapon_shuriken_a");
         Condition(1);
-        Damage(112.2 * IAL_Weapon_Global_Damage_Mul);
+        Damage(112.2 *IAL_Weapon_Global_Damage_Mul);
         Force(10.0);
         DamageToPhysicsObjects(112.2);
         CriticalProb(0.0);
@@ -7256,7 +7256,7 @@ sub main()
         PhysicsScript("single_dropped_inventory.phx");
         HudIcon("weapon_shuriken_a");
         Condition(1);
-        Damage(132.6 * IAL_Weapon_Global_Damage_Mul);
+        Damage(132.6 *IAL_Weapon_Global_Damage_Mul);
         Force(10.0);
         DamageToPhysicsObjects(132.6);
         CriticalProb(0.0);
@@ -7311,7 +7311,7 @@ sub main()
         PhysicsScript("single_dropped_inventory.phx");
         HudIcon("weapon_shuriken_a");
         Condition(1);
-        Damage(153.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(153.0 *IAL_Weapon_Global_Damage_Mul);
         Force(10.0);
         DamageToPhysicsObjects(153.0);
         CriticalProb(0.0);
@@ -7366,7 +7366,7 @@ sub main()
         PhysicsScript("single_dropped_inventory.phx");
         HudIcon("weapon_shuriken_a");
         Condition(1);
-        Damage(204.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(204.0 *IAL_Weapon_Global_Damage_Mul);
         Force(10.0);
         DamageToPhysicsObjects(204.0);
         CriticalProb(0.0);
@@ -7418,7 +7418,7 @@ sub main()
         PhysicsScript("single_dropped_inventory.phx");
         HudIcon("weapon_shuriken_b");
         Condition(1);
-        Damage(88.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(88.0 *IAL_Weapon_Global_Damage_Mul);
         Force(10.0);
         DamageToPhysicsObjects(88.0);
         CriticalProb(0.0);
@@ -7470,7 +7470,7 @@ sub main()
         PhysicsScript("single_dropped_inventory.phx");
         HudIcon("weapon_shuriken_a");
         Condition(1);
-        Damage(15.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(15.0 *IAL_Weapon_Global_Damage_Mul);
         Force(0.0);
         DamageToPhysicsObjects(15.0);
         CriticalProb(0.0);
@@ -7522,7 +7522,7 @@ sub main()
         PhysicsScript("single_dropped_inventory.phx");
         HudIcon("weapon_throw_decoy");
         Condition(1);
-        Damage(0.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(0.0 *IAL_Weapon_Global_Damage_Mul);
         DamageToPhysicsObjects(0.0);
         CriticalProb(0.0);
         CriticalDamage(0.0);
@@ -7552,7 +7552,7 @@ sub main()
         AnimPrefix("Grenade");
         PhysicsScript("single_dropped_inventory.phx");
         HudIcon("weapon_frag_grenade");
-        Damage(1500.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(1500.0 *IAL_Weapon_Global_Damage_Mul);
         DamageToPhysicsObjects(150.0);
         DamageRange(7.0);
         PhysicsDamageMul(1.0);
@@ -7587,7 +7587,7 @@ sub main()
         PhysicsScript("single_dropped_inventory.phx");
         HudIcon("weapon_throw_decoy");
         Condition(1);
-        Damage(1000.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(1000.0 *IAL_Weapon_Global_Damage_Mul);
         DamageToPhysicsObjects(100.0);
         CriticalProb(0.0);
         CriticalDamage(0.0);
@@ -7624,7 +7624,7 @@ sub main()
         AnimPrefix("Grenade");
         PhysicsScript("single_dropped_inventory.phx");
         HudIcon("weapon_frag_grenade");
-        Damage(250.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(250.0 *IAL_Weapon_Global_Damage_Mul);
         DamageToPhysicsObjects(25.0);
         DamageRange(6.0);
         PhysicsDamageMul(1.0);
@@ -7657,7 +7657,7 @@ sub main()
         AnimPrefix("Grenade");
         PhysicsScript("single_dropped_inventory.phx");
         HudIcon("weapon_frag_grenade");
-        Damage(50.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(50.0 *IAL_Weapon_Global_Damage_Mul);
         DamageToPhysicsObjects(25.0);
         DamageRange(6.0);
         PhysicsDamageMul(0.5);
@@ -7691,7 +7691,7 @@ sub main()
         AnimPrefix("Grenade");
         PhysicsScript("single_dropped_inventory.phx");
         HudIcon("weapon_frag_grenade");
-        Damage(100.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(100.0 *IAL_Weapon_Global_Damage_Mul);
         DamageRange(6.0);
         PhysicsDamageMul(1.0);
         HeadCutProb(1.0);
@@ -7724,7 +7724,7 @@ sub main()
         PhysicsScript("single_dropped_inventory.phx");
         HudIcon("weapon_shuriken_b");
         Condition(1);
-        Damage(250.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(250.0 *IAL_Weapon_Global_Damage_Mul);
         Force(10.0);
         DamageToPhysicsObjects(25.0);
         CriticalProb(0.0);
@@ -7775,7 +7775,7 @@ sub main()
         AnimPrefix("Grenade");
         PhysicsScript("single_dropped_inventory.phx");
         HudIcon("weapon_frag_grenade");
-        Damage(50.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(50.0 *IAL_Weapon_Global_Damage_Mul);
         DamageToPhysicsObjects(25.0);
         DamageRange(3.5);
         PhysicsDamageMul(1.0);
@@ -7810,7 +7810,7 @@ sub main()
         PhysicsScript("single_dropped_inventory.phx");
         HudIcon("weapon_shuriken_b");
         Condition(1);
-        Damage(250.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(250.0 *IAL_Weapon_Global_Damage_Mul);
         Force(10.0);
         DamageToPhysicsObjects(25.0);
         CriticalProb(0.0);
@@ -7862,7 +7862,7 @@ sub main()
         PhysicsScript("single_dropped_inventory.phx");
         HudIcon("weapon_shuriken_b");
         Condition(1);
-        Damage(100.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(100.0 *IAL_Weapon_Global_Damage_Mul);
         Force(10.0);
         DamageToPhysicsObjects(25.0);
         CriticalProb(0.0);
@@ -7913,7 +7913,7 @@ sub main()
         PhysicsScript("single_dropped_inventory.phx");
         HudIcon("weapon_throw_decoy");
         Condition(1);
-        Damage(250.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(250.0 *IAL_Weapon_Global_Damage_Mul);
         DamageToPhysicsObjects(25.0);
         CriticalProb(0.0);
         CriticalDamage(0.0);
@@ -7949,7 +7949,7 @@ sub main()
         PhysicsScript("single_dropped_inventory.phx");
         HudIcon("weapon_throw_decoy");
         Condition(1);
-        Damage(1250.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(1250.0 *IAL_Weapon_Global_Damage_Mul);
         DamageToPhysicsObjects(125.0);
         CriticalProb(0.0);
         CriticalDamage(0.0);
@@ -7985,7 +7985,7 @@ sub main()
         PhysicsScript("single_dropped_inventory.phx");
         HudIcon("weapon_throw_decoy");
         Condition(1);
-        Damage(250.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(250.0 *IAL_Weapon_Global_Damage_Mul);
         DamageToPhysicsObjects(25.0);
         CriticalProb(0.0);
         CriticalDamage(0.0);
@@ -8021,7 +8021,7 @@ sub main()
         PhysicsScript("single_dropped_inventory.phx");
         HudIcon("weapon_throwing_axe_c");
         Condition(1);
-        Damage(443.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(443.0 *IAL_Weapon_Global_Damage_Mul);
         Force(14.0);
         DamageToPhysicsObjects(443.0);
         CriticalProb(0.0);
@@ -8070,7 +8070,7 @@ sub main()
         AnimPrefix("Molotov");
         PhysicsScript("single_dropped_inventory.phx");
         HudIcon("weapon_molotov");
-        Damage(30.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(30.0 *IAL_Weapon_Global_Damage_Mul);
         HeadCutProb(0.0);
         ArmsCutProb(0.0);
         LegsCutProb(0.0);
@@ -8125,7 +8125,7 @@ sub main()
         AnimPrefix("Molotov");
         PhysicsScript("single_dropped_inventory.phx");
         HudIcon("weapon_molotov");
-        Damage(40.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(40.0 *IAL_Weapon_Global_Damage_Mul);
         HeadCutProb(0.0);
         ArmsCutProb(0.0);
         LegsCutProb(0.0);
@@ -8181,7 +8181,7 @@ sub main()
         AnimPrefix("Grenade");
         PhysicsScript("single_dropped_inventory.phx");
         HudIcon("weapon_frag_grenade");
-        Damage(10.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(10.0 *IAL_Weapon_Global_Damage_Mul);
         HeadCutProb(0.0);
         ArmsCutProb(0.0);
         LegsCutProb(0.0);
@@ -8906,7 +8906,7 @@ sub main()
         PhysicsScript("single_dropped_inventory.phx");
         UpgradeLevel(0);
         Condition(-1);
-        Damage(17.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(17.0 *IAL_Weapon_Global_Damage_Mul);
         Force(0.0);
         CriticalProb(0.05);
         CriticalDamage(2.0);
@@ -8956,7 +8956,7 @@ sub main()
         PhysicsScript("single_dropped_inventory.phx");
         UpgradeLevel(0);
         Condition(-1);
-        Damage(17.0 * IAL_Weapon_Global_Damage_Mul);
+        Damage(17.0 *IAL_Weapon_Global_Damage_Mul);
         Force(0.0);
         CriticalProb(0.05);
         CriticalDamage(2.0);
