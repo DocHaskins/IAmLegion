@@ -8,7 +8,18 @@
 ///////////////////////////////////////////////////////////////////
 //CROWD
 ///////////////////////////////////////////////////////////////////
-CrowdDynamicPatternFill(15)
+SetPatrolSightRangeMul(4.5)
+SetPatrolYRangeMul(2)
+SetUse360DegVehicleSight()//ustawia 360 stopni widocznosci kiedy gracz w pojezdzie
+SetPatrolConesAreAlwaysVis()//ustawia widocznosc stozkow nawet podczas poscigu
+
+SetDiffLevelDependentFormPlayerLevels(1)
+SetDiffLevelMod(-8)
+
+CrowdDynamicPatternFill(64)
+SetSpawnDistance(80.0)
+HighDefCrowd()
+SetForceTargetForCrowdOnPlayer()
 
 ///////////////////////////////////////////////////////////////////
 //PRESETS

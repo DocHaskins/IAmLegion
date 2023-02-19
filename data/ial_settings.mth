@@ -19,7 +19,6 @@ COMMERCE
 INTERFACE OPTIONS
 INVENTORY
 EXPERIENCE
-SURVIVOR SENSE
 WEAPONS
 SPAWN DENSITY
 SPAWN LOGIC
@@ -251,56 +250,11 @@ export float IAL_Experience_Legend_XP_4Player_Hard = 1.3; //Default is 1.3
 export float IAL_Experience_Legend_XP_4Player_Nightmare = 1.3; //Default is 1.3
 
 /////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-//////////////////////SURVIVOR SENSE\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-/////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-//- LOCATION 1 - (ai/survivor_sense_presets.scr) -----\\\\
-export string IAL_SurvivorSense_Red_Enemies_Range = "20.0"; //DEFAULT is "20.0", "0.1" disables Survivor Sense
-export string IAL_SurvivorSense_White_Loot_Range = "20.0"; //DEFAULT is "20.0", "0.1" disables Survivor Sense
-
-/////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-//- LOCATION 2 - (scripts/player/player_variables.scr) -----\\\\\\
-/////////////// -  USAGE   ------- \\\\\\\\\\\\\\\\\\\\\\\ 
-export string IAL_SurvivorSense_Cooldown = "5.0"; //Default is 0.5
-
-//////////// -------  VISUALS  ------- \\\\\\\\\\\\\\\\\\\\\\\ 
-export string IAL_SurvivorSense_Range = "20.0"; //Default2789 is 20.0
-export string IAL_SurvivorSense_Opacity = "1.0"; //Default is 1.0
-export string IAL_SurvivorSense_Wave_Duration = "3.0"; //Default is 3.0
-export string IAL_SurvivorSense_Icon_Duration = "10.0"; //Default is 10.0
-export string IAL_SurvivorSense_AI_Duration = "10.0"; //Default is 10.0
-
-/////////////// -------  AI  ------- \\\\\\\\\\\\\\\\\\\\\\\\\
-export string IAL_SurvivorSense_AI_Range = "20.0"; //Default is 20.0
-export string IAL_SurvivorSense_AI_Height = "10.0"; //Default is 10.0
-export string IAL_SurvivorSense_AI_Interiors_Height = "4.0"; //Default is 4.0
-export string IAL_SurvivorSense_AI_Sleeping_Range = "20.0"; //Default is 20.0
-export string IAL_SurvivorSense_DetectionTime_BehindPlayer = "15.0"; //Default is 15.0
-
-////////////// -------  LOOT  ------- \\\\\\\\\\\\\\\\\\\\\\\\
-export string IAL_SurvivorSense_Icons_Range = "20.0"; //Default is 20.0
-export string IAL_SurvivorSense_Loot_Height = "10.0"; //Default is 10.0
-export string IAL_SurvivorSense_Loot_Interior_Height = "4.0"; //Default is 4.0
-
-////////////// -------  ICONS  ------- \\\\\\\\\\\\\\\\\\\\\\\
-export string IAL_SurvivorSense_Icons_Default_Range = "20.0"; //Default is 20.0 //These are the icons specific to Loot and world objects
-export string IAL_SurvivorSense_Icons_Hidding_Range = "20.0"; //Default is 20.0 //These are the icons specific to finding hidding spots
-export string IAL_SurvivorSense_Icons_Elements_Range = "20.0"; //Default is 20.0 //These are the icons for the different elements like fire, water, electricity, etc
-export string IAL_SurvivorSense_Icons_Entrances_Range = "20.0"; //Default is 20.0 //These are the icons that show doorways and entrances
-export string IAL_SurvivorSense_Icons_Inhibitors_Range = "20.0"; //Default is 20.0 //These are the icons specific to finding inhibitors
-export string IAL_SurvivorSense_Icons_Quest_Range = "20.0"; //Default is 20.0 //These are the icons specific to quests, such as investigation icons
-
-/////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 //////////////////////////WEAPONS\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 /////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 //////////// -------  GENERAL SETTINGS  ------- \\\\\\\\\\\\\\\\\\
 //- LOCATION - (scripts/player/player_variables_hard.scr) -----\\\
-export float IAL_Weapon_Global_Damage_Mul = 5.0; //Default: 1.0
-export float IAL_Weapon_Blunt_Damage_Mul = 5.0; //Default: 1.0
-export float IAL_Weapon_Cut_Damage_Mul = 5.0; //Default: 1.0
-export float IAL_Weapon_Firearm_Damage_Mul = 5.0; //Default: 1.0
-export float IAL_Weapon_Bow_Damage_Mul = 5.0; //Default: 1.0
-export float IAL_Weapon_Crossbow_Damage_Mul = 5.0; //Default: 1.0
-export float IAL_Weapon_Elemental_Damage_Mul = 5.0; //Default: 1.0
+
 
 ////////////// -------  RANGED  ------- \\\\\\\\\\\\\\\\\\\\\\\
 //- LOCATION - (scripts/iventory/inventory_special.scr) -----\\
@@ -322,6 +276,7 @@ export int IAL_AI_DistanceToReact_Explosion_Max = 120;
 
 ////////////// -------  DAMAGE MODIFIERS  ------- \\\\\\\\\\\\\\\\\\\\\\\\
 //GENERAL MODIFIER\\
+export float IAL_Overall_Fall_Dmg_To_Player = 1.5;
 export float IAL_Overall_Dmg_To_Player_Min_Easy = 0.5; //Default: 1.3
 export float IAL_Overall_Dmg_To_Player_Max_Easy = 1.0; //Default: 1.3
 export float IAL_Overall_Dmg_To_Enemies_Easy = 0.7; //Default: 0.7
@@ -334,6 +289,14 @@ export float IAL_Overall_Dmg_To_Enemies_Hard = 0.7; //Default: 0.7
 export float IAL_Overall_Dmg_To_Player_Min_Nightmare = 0.5; //Default: 1.3
 export float IAL_Overall_Dmg_To_Player_Max_Nightmare = 1.0; //Default: 1.3
 export float IAL_Overall_Dmg_To_Enemies_Nightmare = 0.7; //Default: 0.7
+
+export float IAL_Weapon_Global_Damage_Mul = 5.0; //Default: 1.0
+export float IAL_Weapon_Blunt_Damage_Mul = 5.0; //Default: 1.0
+export float IAL_Weapon_Cut_Damage_Mul = 5.0; //Default: 1.0
+export float IAL_Weapon_Firearm_Damage_Mul = 5.0; //Default: 1.0
+export float IAL_Weapon_Bow_Damage_Mul = 5.0; //Default: 1.0
+export float IAL_Weapon_Crossbow_Damage_Mul = 5.0; //Default: 1.0
+export float IAL_Weapon_Elemental_Damage_Mul = 5.0; //Default: 1.0
 /////////////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
 /////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\

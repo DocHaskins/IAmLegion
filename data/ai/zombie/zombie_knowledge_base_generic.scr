@@ -48,7 +48,11 @@ Method(InvestigateSuspiciousPlace)
 Method(ReachForcedInvisibleTarget)
 Method(WaitForStinger)
 Method(Loiter)
+Method(PatrolAndGeneratePathBasedOnPOI)
+Method(PatrolAndGeneratePath)
 Method(Patrol)
+Method(Loiter)
+Method(Idle)
 
 // use_attractor
 Method(UseAttractor)

@@ -6,7 +6,7 @@ sub main()
     {
         Biter(0.9);
         Viral(0.8);
-        HMF(0.7 + IAL_Overall_Dmg_To_Enemies_Normal);
+        HMF(0.7);
         HMF_Leader(0.6);
         HumanFirearm(0.5);
         Goon(0.4);

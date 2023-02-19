@@ -2,8 +2,8 @@
 
 sub main()
 {
-    platform("PC10", 4.5, 4.5);
-    platform("PC11", 5.0, 5.0);
+    platform("PC10", 8.5, 8.5);
+    platform("PC11", 9.0, 9.0);
     platform("XBOX1", 2.0, 2.0);
     platform("PS4", 2.0, 2.0);
 }
