@@ -28111,63 +28111,61 @@ sub main()
 		
 		Preset("Biter_Man_Fresh")
         {
-                SetField("m_BurnOnStart", "0");
-                SetField("m_CanBeLimitedAttacker", "1");
+                SetField("m_CanBeInHumanity", "0");
                 SetField("m_CanUseAttractors", "1");
                 SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_ALL);
                 SetField("m_CrippleBonesEnable", "1");
-                SetField("m_CustomDataPreset", "anim_set_waste");
+                SetField("m_CustomDataPreset", "infected_humanity");
                 SetField("m_CutOffBonesEnable", "1");
-                SetField("m_ForceStinger", "0");
                 SetField("m_ForcedBodyScaleMax", "1.15");
                 SetField("m_ForcedBodyScaleMin", "1.05");
+                SetField("m_ForcedTargetType", "-1");
                 SetField("m_Gender", "0");
                 SetField("m_GrabEnabled", "1");
-                SetField("m_HarvestingLootType", "Harvesting_Biter_Body");
+                SetField("m_HarvestingLevelRequired", "1");
+                SetField("m_HarvestingLootType", "Harvesting_Viral_Body");
                 SetField("m_IsHarvestable", "1");
-                SetField("m_MinLevelDiff", "-5");
-                SetField("m_ModulesPreset", "1");
+                SetField("m_KnowledgeBasePreset", "infected_humanity");
+                SetField("m_MaxLevelDiff", "5");
+                SetField("m_MinLevelDiff", "3");
+                SetField("m_ModulesPreset", "infected_humanity");
                 SetField("m_NeverHolsterWeapon", "1");
-                SetField("m_PoisonedOnStart", "0");
                 SetField("m_PrimaryWeaponProbability", "0.5");
                 SetField("m_Seed", "0");
-                SetField("m_ShowFlies", "1");
-                SetField("m_SoundPreset", "ZombieSlowMan00;ZombieSlowMan01");
+                SetField("m_ShowFlies", "0");
+                SetField("m_SoundPreset", "ZombieInfectedMale00");
                 SetField("m_StepPreset", "Default_Zombie");
-                SetField("m_TransformIntoPreset", "NightWalker_Man");
-                SetField("m_Type", "1");
+                SetField("m_Type", "3");
                 SetField("m_VisRepresentationsPool", "humantoviral_man");
         }
 		
 		Preset("Biter_Woman_Fresh")
         {
-                SetField("m_BurnOnStart", "0");
-                SetField("m_CanBeLimitedAttacker", "1");
+                SetField("m_CanBeInHumanity", "0");
                 SetField("m_CanUseAttractors", "1");
                 SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_ALL);
                 SetField("m_CrippleBonesEnable", "1");
-                SetField("m_CustomDataPreset", "viral_group");
+                SetField("m_CustomDataPreset", "infected_woman_humanity");
                 SetField("m_CutOffBonesEnable", "1");
-                SetField("m_ForceStinger", "0");
                 SetField("m_ForcedBodyScaleMax", "1.15");
                 SetField("m_ForcedBodyScaleMin", "1.05");
+                SetField("m_ForcedTargetType", "-1");
                 SetField("m_Gender", "1");
                 SetField("m_GrabEnabled", "1");
-                SetField("m_HarvestingLootType", "Harvesting_Biter_Body");
+                SetField("m_HarvestingLevelRequired", "1");
+                SetField("m_HarvestingLootType", "Harvesting_Viral_Body");
                 SetField("m_IsHarvestable", "1");
+                SetField("m_KnowledgeBasePreset", "infected_humanity");
+                SetField("m_MaxLevelDiff", "2");
                 SetField("m_MinLevelDiff", "-5");
-                SetField("m_ModulesPreset", "1");
+                SetField("m_ModulesPreset", "infected_humanity");
                 SetField("m_NeverHolsterWeapon", "1");
-                SetField("m_PoisonedOnStart", "0");
                 SetField("m_PrimaryWeaponProbability", "0.5");
                 SetField("m_Seed", "0");
-                SetField("m_ShowFlies", "1");
-                SetField("m_SoundPreset", "ZombieSlowWoman00;ZombieSlowWoman01");
+                SetField("m_ShowFlies", "0");
+                SetField("m_SoundPreset", "ZombieInfectedFemale00");
                 SetField("m_StepPreset", "Default_Zombie");
-                SetField("m_TransformIntoPreset", "NightWalker_Woman");
-                SetField("m_Type", "1");
-                SetField("m_UseBaseDataSet", "1");
-                SetField("m_UseRandomDataSet", "0");
+                SetField("m_Type", "3");
                 SetField("m_VisRepresentationsPool", "Biter_Woman");
         }
     }
