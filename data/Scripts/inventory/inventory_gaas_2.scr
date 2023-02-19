@@ -75,7 +75,7 @@ sub main()
         DamageHeadMult(10.0);
         DamageToPhysicsObjects(100.0);
         FirePointRange(0,700.0 *0.01);
-        FirePointDamage(0,300.0) * IAL_Weapon_Firearm_Damage_Mul; 
+        FirePointDamage(0,300.0 * IAL_Weapon_Firearm_Damage_Mul); 
         FirePointForce(0,100.0);
         FirePointRange(1,1100.0 *0.01);
         FirePointDamage(1,300.0 * IAL_Weapon_Firearm_Damage_Mul);
