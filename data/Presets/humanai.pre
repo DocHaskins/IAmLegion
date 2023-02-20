@@ -138,7 +138,7 @@ sub main()
                 SetField("m_AlarmedMimicPreset", "normal");
                 SetField("m_AllowInitialArmsDamage", "1");
                 SetField("m_CustomDataPreset", "man_level_0_a");
-                SetField("m_TransformIntoPreset", "Bitter_Man_Agressive;DiffLevel;Viral_m_lvl0");
+                SetField("m_TransformIntoPreset", "Biter_Man_Agressive;DiffLevel;Viral_m_lvl0");
         }
 
         Preset("Biter_m_lv1")
@@ -172,7 +172,7 @@ sub main()
                 SetField("m_CustomDataPreset", "man_level_1_b;man_level_1_c");
                 SetField("m_CustomLootType", "DeadBody_Thug");
                 SetField("m_CustomLootTypeString", "Biter_lvl1_wast");
-                SetField("m_TransformIntoPreset", "Bitter_Man_Agressive;DiffLevel;Viral_m_lvl1");
+                SetField("m_TransformIntoPreset", "Biter_Man_Agressive;DiffLevel;Viral_m_lvl1");
         }
 
         Preset("Biter_m_lv2")
@@ -202,7 +202,7 @@ sub main()
                 SetField("m_AllowInitialArmsDamage", "0");
                 SetField("m_CustomDataPreset", "man_level_2_b;man_level_2_c");
                 SetField("m_CustomLootTypeString", "Biter_lvl2_wast");
-                SetField("m_TransformIntoPreset", "Bitter_Man_Agressive;DiffLevel;Viral_m_lvl2");
+                SetField("m_TransformIntoPreset", "Biter_Man_Agressive;DiffLevel;Viral_m_lvl2");
         }
 
         Preset("Biter_m_lv3")
@@ -255,7 +255,7 @@ sub main()
                 SetField("m_AllowInitialArmsDamage", "0");
                 SetField("m_CustomDataPreset", "man_level_3_b;man_level_3_c");
                 SetField("m_CustomLootTypeString", "Biter_lvl3_wast");
-                SetField("m_TransformIntoPreset", "Bitter_Man_Agressive;DiffLevel;Viral_m_lvl3");
+                SetField("m_TransformIntoPreset", "Biter_Man_Agressive;DiffLevel;Viral_m_lvl3");
                 SetField("m_VisRepresentationsPool", "Biter_Heavy");
         }
 
@@ -275,7 +275,7 @@ sub main()
                 SetField("m_AllowInitialArmsDamage", "0");
                 SetField("m_CustomDataPreset", "man_level_4_b;man_level_4_c");
                 SetField("m_CustomLootTypeString", "Biter_lvl4_wast");
-                SetField("m_TransformIntoPreset", "Bitter_Man_Agressive;DiffLevel;Viral_m_lvl4");
+                SetField("m_TransformIntoPreset", "Biter_Man_Agressive;DiffLevel;Viral_m_lvl4");
                 SetField("m_VisRepresentationsPool", "biter_very_heavy");
         }
 
@@ -298,7 +298,7 @@ sub main()
                 SetField("m_CustomDataPreset", "man_level_5_b;man_level_5_c");
                 SetField("m_CustomLootTypeString", "Biter_lvl5_wast");
                 SetField("m_GrabEnabled", "0");
-                SetField("m_TransformIntoPreset", "Bitter_Man_Agressive;DiffLevel;Viral_m_lvl4");
+                SetField("m_TransformIntoPreset", "Biter_Man_Agressive;DiffLevel;Viral_m_lvl4");
         }
 		
 		Preset("Biter_w_lv_easy_0")
@@ -2059,7 +2059,15 @@ sub main()
 
         Preset("BTZ_Biter_Man")
         {
-                SetField("m_BurnOnStart", "0");
+                SetField("m_AttachableItem1Name", "Zombie_Blister");
+                SetField("m_AttachableItem1Probability", "0.4");
+				SetField("m_AttachableItem2Name", "fire_helmet");
+                SetField("m_AttachableItem2Probability", "0.1");
+				SetField("m_AttachableItem3Name", "miner_helmet");
+                SetField("m_AttachableItem3Probability", "0.1");
+				SetField("m_AttachableItem4Name", "Attachable_Flashlight");
+                SetField("m_AttachableItem4Probability", "0.2");
+				SetField("m_BurnOnStart", "0");
                 SetField("m_CanBeLimitedAttacker", "1");
                 SetField("m_CanUseAttractors", "1");
                 SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_ALL);
@@ -2089,7 +2097,15 @@ sub main()
 
         Preset("BTZ_Biter_Man_Hard")
         {
-                SetField("m_BurnOnStart", "0");
+                SetField("m_AttachableItem1Name", "Zombie_Blister");
+                SetField("m_AttachableItem1Probability", "0.4");
+				SetField("m_AttachableItem2Name", "fire_helmet");
+                SetField("m_AttachableItem2Probability", "0.1");
+				SetField("m_AttachableItem3Name", "miner_helmet");
+                SetField("m_AttachableItem3Probability", "0.1");
+				SetField("m_AttachableItem4Name", "Attachable_Flashlight");
+                SetField("m_AttachableItem4Probability", "0.2");
+				SetField("m_BurnOnStart", "0");
                 SetField("m_CanBeLimitedAttacker", "0");
                 SetField("m_CanUseAttractors", "1");
                 SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_ALL);
@@ -2157,7 +2173,9 @@ sub main()
 
         Preset("BTZ_Biter_RaisBandit")
         {
-                SetField("m_Boss", "0");
+				SetField("m_AttachableItem1Name", "Attachable_Flashlight");
+                SetField("m_AttachableItem1Probability", "0.2");
+				SetField("m_Boss", "0");
                 SetField("m_BurnOnStart", "0");
                 SetField("m_CanBeBackstabbed", "0");
                 SetField("m_CanBeLimitedAttacker", "1");
@@ -2227,7 +2245,11 @@ sub main()
 
         Preset("BTZ_Biter_Soldier")
         {
-                SetField("m_Boss", "0");
+                SetField("m_AttachableItem1Name", "Zombie_Blister");
+                SetField("m_AttachableItem1Probability", "0.4");
+				SetField("m_AttachableItem2Name", "Attachable_Flashlight");
+                SetField("m_AttachableItem2Probability", "0.2");
+				SetField("m_Boss", "0");
                 SetField("m_BurnOnStart", "0");
                 SetField("m_CanBeBackstabbed", "0");
                 SetField("m_CanBeLimitedAttacker", "1");
@@ -2263,7 +2285,11 @@ sub main()
 
         Preset("BTZ_Biter_Woman")
         {
-                SetField("m_BurnOnStart", "0");
+                SetField("m_AttachableItem1Name", "Zombie_Blister");
+                SetField("m_AttachableItem1Probability", "0.4");
+				SetField("m_AttachableItem2Name", "Attachable_Flashlight");
+                SetField("m_AttachableItem2Probability", "0.2");
+				SetField("m_BurnOnStart", "0");
                 SetField("m_CanBeLimitedAttacker", "1");
                 SetField("m_CanUseAttractors", "1");
                 SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_ALL);
@@ -2295,7 +2321,11 @@ sub main()
 
         Preset("BTZ_Biter_Woman_Hard")
         {
-                SetField("m_BurnOnStart", "0");
+                SetField("m_AttachableItem1Name", "Zombie_Blister");
+                SetField("m_AttachableItem1Probability", "0.4");
+				SetField("m_AttachableItem2Name", "Attachable_Flashlight");
+                SetField("m_AttachableItem2Probability", "0.2");
+				SetField("m_BurnOnStart", "0");
                 SetField("m_CanBeLimitedAttacker", "1");
                 SetField("m_CanUseAttractors", "1");
                 SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_ALL);
@@ -2327,7 +2357,11 @@ sub main()
 
         Preset("BTZ_Biter_Worker")
         {
-                SetField("m_AlarmedMimicPreset", "angry");
+                SetField("m_AttachableItem1Name", "Zombie_Blister");
+                SetField("m_AttachableItem1Probability", "0.4");
+				SetField("m_AttachableItem2Name", "Attachable_Flashlight");
+                SetField("m_AttachableItem2Probability", "0.2");
+				SetField("m_AlarmedMimicPreset", "angry");
                 SetField("m_BurnOnStart", "0");
                 SetField("m_CanBeLimitedAttacker", "1");
                 SetField("m_CanUseAttractors", "1");
@@ -2358,7 +2392,11 @@ sub main()
 
         Preset("BTZ_NightWalker_Man")
         {
-                SetField("m_CanBeInHumanity", "0");
+                SetField("m_AttachableItem1Name", "Zombie_Blister");
+                SetField("m_AttachableItem1Probability", "0.4");
+				SetField("m_AttachableItem2Name", "Attachable_Flashlight");
+                SetField("m_AttachableItem2Probability", "0.2");
+				SetField("m_CanBeInHumanity", "0");
                 SetField("m_CanEscape", "1");
                 SetField("m_CanUseAttractors", "0");
                 SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_ALL);
@@ -2421,7 +2459,11 @@ sub main()
 
         Preset("BTZ_NightWalker_Man_Hard")
         {
-                SetField("m_CanBeInHumanity", "0");
+                SetField("m_AttachableItem1Name", "Zombie_Blister");
+                SetField("m_AttachableItem1Probability", "0.4");
+				SetField("m_AttachableItem2Name", "Attachable_Flashlight");
+                SetField("m_AttachableItem2Probability", "0.2");
+				SetField("m_CanBeInHumanity", "0");
                 SetField("m_CanEscape", "1");
                 SetField("m_CanUseAttractors", "0");
                 SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_ALL);
@@ -2484,7 +2526,11 @@ sub main()
 
         Preset("BTZ_NightWalker_Woman")
         {
-                SetField("m_CanBeInHumanity", "0");
+                SetField("m_AttachableItem1Name", "Zombie_Blister");
+                SetField("m_AttachableItem1Probability", "0.4");
+				SetField("m_AttachableItem2Name", "Attachable_Flashlight");
+                SetField("m_AttachableItem2Probability", "0.2");
+				SetField("m_CanBeInHumanity", "0");
                 SetField("m_CanEscape", "1");
                 SetField("m_CanUseAttractors", "0");
                 SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_ALL);
@@ -2547,7 +2593,11 @@ sub main()
 
         Preset("BTZ_NightWalker_Woman_Hard")
         {
-                SetField("m_CanBeInHumanity", "0");
+                SetField("m_AttachableItem1Name", "Zombie_Blister");
+                SetField("m_AttachableItem1Probability", "0.4");
+				SetField("m_AttachableItem2Name", "Attachable_Flashlight");
+                SetField("m_AttachableItem2Probability", "0.2");
+				SetField("m_CanBeInHumanity", "0");
                 SetField("m_CanEscape", "1");
                 SetField("m_CanUseAttractors", "0");
                 SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_ALL);
@@ -3583,7 +3633,15 @@ sub main()
 
         Preset("Biter_Man")
         {
-                SetField("m_BurnOnStart", "0");
+                SetField("m_AttachableItem1Name", "Zombie_Blister");
+                SetField("m_AttachableItem1Probability", "0.4");
+				SetField("m_AttachableItem2Name", "fire_helmet");
+                SetField("m_AttachableItem2Probability", "0.1");
+				SetField("m_AttachableItem3Name", "miner_helmet");
+                SetField("m_AttachableItem3Probability", "0.1");
+				SetField("m_AttachableItem4Name", "Attachable_Flashlight");
+                SetField("m_AttachableItem4Probability", "0.2");
+				SetField("m_BurnOnStart", "0");
                 SetField("m_CanBeLimitedAttacker", "1");
 				SetField("m_CanBeBackstabbed", "1");
                 SetField("m_CanUseAttractors", "1");
@@ -3609,14 +3667,22 @@ sub main()
                 SetField("m_ShowFlies", "1");
                 SetField("m_SoundPreset", "ZombieSlowMan00;ZombieSlowMan01");
                 SetField("m_StepPreset", "Default_Zombie");
-                SetField("m_TransformIntoPreset", "NightWalker_Man");
+                SetField("m_TransformIntoPreset", "Biter_Man_Agressive");
                 SetField("m_Type", "1");
                 SetField("m_VisRepresentationsPool", "Biter_Man");
         }
 
         Preset("Biter_Man_AG")
         {
-                SetField("m_BurnOnStart", "0");
+                SetField("m_AttachableItem1Name", "Zombie_Blister");
+                SetField("m_AttachableItem1Probability", "0.4");
+				SetField("m_AttachableItem2Name", "fire_helmet");
+                SetField("m_AttachableItem2Probability", "0.1");
+				SetField("m_AttachableItem3Name", "miner_helmet");
+                SetField("m_AttachableItem3Probability", "0.1");
+				SetField("m_AttachableItem4Name", "Attachable_Flashlight");
+                SetField("m_AttachableItem4Probability", "0.2");
+				SetField("m_BurnOnStart", "0");
                 SetField("m_CanBeLimitedAttacker", "1");
                 SetField("m_CanUseAttractors", "1");
                 SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_ALL);
@@ -3640,14 +3706,22 @@ sub main()
                 SetField("m_ShowFlies", "1");
                 SetField("m_SoundPreset", "ZombieSlowMan00;ZombieSlowMan01");
                 SetField("m_StepPreset", "Default_Zombie");
-                SetField("m_TransformIntoPreset", "Bitter_Man_Agressive");
+                SetField("m_TransformIntoPreset", "Biter_Man_Agressive");
                 SetField("m_Type", "1");
                 SetField("m_VisRepresentationsPool", "Biter_Man");
         }
 
         Preset("Biter_Man_NW")
         {
-                SetField("m_BurnOnStart", "0");
+                SetField("m_AttachableItem1Name", "Zombie_Blister");
+                SetField("m_AttachableItem1Probability", "0.4");
+				SetField("m_AttachableItem2Name", "fire_helmet");
+                SetField("m_AttachableItem2Probability", "0.1");
+				SetField("m_AttachableItem3Name", "miner_helmet");
+                SetField("m_AttachableItem3Probability", "0.1");
+				SetField("m_AttachableItem4Name", "Attachable_Flashlight");
+                SetField("m_AttachableItem4Probability", "0.2");
+				SetField("m_BurnOnStart", "0");
                 SetField("m_CanBeLimitedAttacker", "1");
                 SetField("m_CanUseAttractors", "1");
                 SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_ALL);
@@ -3959,7 +4033,11 @@ sub main()
 
         Preset("Biter_Soldier")
         {
-                SetField("m_Boss", "0");
+                SetField("m_AttachableItem1Name", "Zombie_Blister");
+                SetField("m_AttachableItem1Probability", "0.4");
+				SetField("m_AttachableItem2Name", "Attachable_Flashlight");
+                SetField("m_AttachableItem2Probability", "0.2");
+				SetField("m_Boss", "0");
                 SetField("m_BurnOnStart", "0");
                 SetField("m_CanBeBackstabbed", "0");
                 SetField("m_CanBeLimitedAttacker", "1");
@@ -3996,7 +4074,11 @@ sub main()
 
         Preset("Biter_Woman")
         {
-                SetField("m_BurnOnStart", "0");
+                SetField("m_AttachableItem1Name", "Zombie_Blister");
+                SetField("m_AttachableItem1Probability", "0.4");
+				SetField("m_AttachableItem2Name", "Attachable_Flashlight");
+                SetField("m_AttachableItem2Probability", "0.2");
+				SetField("m_BurnOnStart", "0");
                 SetField("m_CanBeLimitedAttacker", "1");
 				SetField("m_CanBeBackstabbed", "1");
                 SetField("m_CanUseAttractors", "1");
@@ -4031,7 +4113,11 @@ sub main()
 
         Preset("Biter_Woman_AG")
         {
-                SetField("m_BurnOnStart", "0");
+                SetField("m_AttachableItem1Name", "Zombie_Blister");
+                SetField("m_AttachableItem1Probability", "0.4");
+				SetField("m_AttachableItem2Name", "Attachable_Flashlight");
+                SetField("m_AttachableItem2Probability", "0.2");
+				SetField("m_BurnOnStart", "0");
                 SetField("m_CanBeLimitedAttacker", "1");
                 SetField("m_CanUseAttractors", "1");
                 SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_ALL);
@@ -4064,7 +4150,11 @@ sub main()
 
         Preset("Biter_Woman_Agressive")
         {
-                SetField("m_CanBeInHumanity", "0");
+                SetField("m_AttachableItem1Name", "Zombie_Blister");
+                SetField("m_AttachableItem1Probability", "0.4");
+				SetField("m_AttachableItem2Name", "Attachable_Flashlight");
+                SetField("m_AttachableItem2Probability", "0.2");
+				SetField("m_CanBeInHumanity", "0");
                 SetField("m_CanUseAttractors", "1");
                 SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_ALL);
                 SetField("m_CrippleBonesEnable", "1");
@@ -4094,7 +4184,11 @@ sub main()
 
         Preset("Biter_Woman_NW")
         {
-                SetField("m_BurnOnStart", "0");
+                SetField("m_AttachableItem1Name", "Zombie_Blister");
+                SetField("m_AttachableItem1Probability", "0.4");
+				SetField("m_AttachableItem2Name", "Attachable_Flashlight");
+                SetField("m_AttachableItem2Probability", "0.2");
+				SetField("m_BurnOnStart", "0");
                 SetField("m_CanBeLimitedAttacker", "1");
                 SetField("m_CanUseAttractors", "1");
                 SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_ALL);
@@ -4160,7 +4254,11 @@ sub main()
 	
         Preset("Biter_Worker")
         {
-                SetField("m_AlarmedMimicPreset", "angry");
+                SetField("m_AttachableItem1Name", "Zombie_Blister");
+                SetField("m_AttachableItem1Probability", "0.4");
+				SetField("m_AttachableItem2Name", "Attachable_Flashlight");
+                SetField("m_AttachableItem2Probability", "0.2");
+				SetField("m_AlarmedMimicPreset", "angry");
                 SetField("m_BurnOnStart", "0");
                 SetField("m_CanBeLimitedAttacker", "1");
                 SetField("m_CanUseAttractors", "1");
@@ -4190,9 +4288,13 @@ sub main()
                 SetField("m_VisRepresentationsPool", "Biter_Worker");
         }
 
-        Preset("Bitter_Man_Agressive")
+        Preset("Biter_Man_Agressive")
         {
-                SetField("m_CanBeInHumanity", "0");
+                SetField("m_AttachableItem1Name", "Zombie_Blister");
+                SetField("m_AttachableItem1Probability", "0.4");
+				SetField("m_AttachableItem2Name", "Attachable_Flashlight");
+                SetField("m_AttachableItem2Probability", "0.2");
+				SetField("m_CanBeInHumanity", "0");
                 SetField("m_CanUseAttractors", "1");
                 SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_ALL);
                 SetField("m_CrippleBonesEnable", "1");
@@ -6415,7 +6517,8 @@ sub main()
                 SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_PLAYER);
                 SetField("m_ConsiderGroup", "1");
                 SetField("m_CrippleBonesEnable", "1");
-                SetField("m_KnowledgeBasePreset", "shooter");
+				SetField("m_CustomDataPreset", "shooter_vest");
+				SetField("m_KnowledgeBasePreset", "shooter");
                 SetField("m_MainGoalRulesPreset", "shooter");
                 SetField("m_CustomLootType", "DeadBody_Human_Firearm");
                 SetField("m_CutOffBonesEnable", "1");
@@ -6565,6 +6668,7 @@ sub main()
                 SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_PLAYER);
                 SetField("m_ConsiderGroup", "1");
                 SetField("m_CrippleBonesEnable", "1");
+                SetField("m_CustomDataPreset", "shooter_vest");
                 SetField("m_KnowledgeBasePreset", "shooter");
                 SetField("m_MainGoalRulesPreset", "shooter");
                 SetField("m_CustomLootType", "DeadBody_Human_Firearm");
@@ -6598,7 +6702,8 @@ sub main()
                 SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_PLAYER);
                 SetField("m_ConsiderGroup", "1");
                 SetField("m_CrippleBonesEnable", "1");
-                SetField("m_KnowledgeBasePreset", "shooter");
+				SetField("m_CustomDataPreset", "shooter_vest");
+				SetField("m_KnowledgeBasePreset", "shooter");
                 SetField("m_MainGoalRulesPreset", "shooter");
                 SetField("m_CustomLootType", "DeadBody_Human_Firearm");
                 SetField("m_CutOffBonesEnable", "1");
@@ -14305,7 +14410,8 @@ sub main()
                 SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_PLAYER);
                 SetField("m_ConsiderGroup", "1");
                 SetField("m_CrippleBonesEnable", "1");
-                SetField("m_KnowledgeBasePreset", "shooter");
+				SetField("m_CustomDataPreset", "shooter_vest");
+				SetField("m_KnowledgeBasePreset", "shooter");
                 SetField("m_MainGoalRulesPreset", "shooter");
                 SetField("m_CustomLootType", "DeadBody_Human_Firearm");
                 SetField("m_CutOffBonesEnable", "1");
@@ -14380,7 +14486,8 @@ sub main()
                 SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_PLAYER);
                 SetField("m_ConsiderGroup", "1");
                 SetField("m_CrippleBonesEnable", "1");
-                SetField("m_KnowledgeBasePreset", "shooter");
+				SetField("m_CustomDataPreset", "shooter_vest");
+				SetField("m_KnowledgeBasePreset", "shooter");
                 SetField("m_MainGoalRulesPreset", "shooter");
                 SetField("m_CustomLootType", "DeadBody_Human_Firearm");
                 SetField("m_CutOffBonesEnable", "1");
@@ -14523,7 +14630,8 @@ sub main()
                 SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_PLAYER);
                 SetField("m_ConsiderGroup", "1");
                 SetField("m_CrippleBonesEnable", "1");
-                SetField("m_KnowledgeBasePreset", "shooter");
+				SetField("m_CustomDataPreset", "shooter_vest");
+				SetField("m_KnowledgeBasePreset", "shooter");
                 SetField("m_MainGoalRulesPreset", "shooter");
                 SetField("m_CustomLootType", "DeadBody_Human_Firearm");
                 SetField("m_CutOffBonesEnable", "1");
@@ -14752,7 +14860,8 @@ sub main()
                 SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_PLAYER);
                 SetField("m_ConsiderGroup", "1");
                 SetField("m_CrippleBonesEnable", "1");
-                SetField("m_KnowledgeBasePreset", "shooter");
+				SetField("m_CustomDataPreset", "shooter_vest");
+				SetField("m_KnowledgeBasePreset", "shooter");
                 SetField("m_MainGoalRulesPreset", "shooter");
                 SetField("m_CustomLootType", "DeadBody_Human_Firearm");
                 SetField("m_CutOffBonesEnable", "1");
@@ -14899,7 +15008,8 @@ sub main()
                 SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_PLAYER);
                 SetField("m_ConsiderGroup", "1");
                 SetField("m_CrippleBonesEnable", "1");
-                SetField("m_KnowledgeBasePreset", "shooter");
+				SetField("m_CustomDataPreset", "shooter_vest");
+				SetField("m_KnowledgeBasePreset", "shooter");
                 SetField("m_MainGoalRulesPreset", "shooter");
                 SetField("m_CustomLootType", "DeadBody_Human_Firearm");
                 SetField("m_CutOffBonesEnable", "1");
@@ -15077,7 +15187,8 @@ sub main()
                 SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_PLAYER);
                 SetField("m_ConsiderGroup", "1");
                 SetField("m_CrippleBonesEnable", "1");
-                SetField("m_KnowledgeBasePreset", "shooter");
+				SetField("m_CustomDataPreset", "shooter_vest");
+				SetField("m_KnowledgeBasePreset", "shooter");
                 SetField("m_MainGoalRulesPreset", "shooter");
                 SetField("m_CustomLootType", "DeadBody_Human_Firearm");
                 SetField("m_CutOffBonesEnable", "1");
@@ -15116,7 +15227,8 @@ sub main()
                 SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_PLAYER);
                 SetField("m_ConsiderGroup", "1");
                 SetField("m_CrippleBonesEnable", "1");
-                SetField("m_KnowledgeBasePreset", "shooter");
+				SetField("m_CustomDataPreset", "shooter_vest");
+				SetField("m_KnowledgeBasePreset", "shooter");
                 SetField("m_MainGoalRulesPreset", "shooter");
                 SetField("m_CustomLootType", "DeadBody_Human_Firearm");
                 SetField("m_CutOffBonesEnable", "1");
@@ -15151,7 +15263,8 @@ sub main()
                 SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_PLAYER);
                 SetField("m_ConsiderGroup", "1");
                 SetField("m_CrippleBonesEnable", "1");
-                SetField("m_KnowledgeBasePreset", "shooter");
+				SetField("m_CustomDataPreset", "shooter_vest");
+				SetField("m_KnowledgeBasePreset", "shooter");
                 SetField("m_MainGoalRulesPreset", "shooter");
                 SetField("m_CustomLootType", "DeadBody_Human_Firearm");
                 SetField("m_CutOffBonesEnable", "1");
@@ -15399,7 +15512,8 @@ sub main()
                 SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_PLAYER);
                 SetField("m_ConsiderGroup", "1");
                 SetField("m_CrippleBonesEnable", "1");
-                SetField("m_KnowledgeBasePreset", "shooter");
+				SetField("m_CustomDataPreset", "shooter_vest");
+				SetField("m_KnowledgeBasePreset", "shooter");
                 SetField("m_MainGoalRulesPreset", "shooter");
                 SetField("m_CustomLootType", "DeadBody_Human_Firearm");
                 SetField("m_CutOffBonesEnable", "1");
@@ -15648,7 +15762,8 @@ sub main()
                 SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_PLAYER);
                 SetField("m_ConsiderGroup", "1");
                 SetField("m_CrippleBonesEnable", "1");
-                SetField("m_KnowledgeBasePreset", "shooter");
+				SetField("m_CustomDataPreset", "shooter_vest");
+				SetField("m_KnowledgeBasePreset", "shooter");
                 SetField("m_MainGoalRulesPreset", "shooter");
                 SetField("m_CustomLootType", "DeadBody_Human_Firearm");
                 SetField("m_CutOffBonesEnable", "1");
@@ -24283,7 +24398,15 @@ sub main()
 
         Preset("Viral_Man")
         {
-                SetField("m_CanBeInHumanity", "1");
+                SetField("m_AttachableItem1Name", "Zombie_Blister");
+                SetField("m_AttachableItem1Probability", "0.4");
+				SetField("m_AttachableItem2Name", "fire_helmet");
+                SetField("m_AttachableItem2Probability", "0.1");
+				SetField("m_AttachableItem3Name", "miner_helmet");
+                SetField("m_AttachableItem3Probability", "0.1");
+				SetField("m_AttachableItem4Name", "Attachable_Flashlight");
+                SetField("m_AttachableItem4Probability", "0.2");
+				SetField("m_CanBeInHumanity", "1");
                 SetField("m_CanUseAttractors", "1");
                 SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_ALL);
                 SetField("m_CrippleBonesEnable", "1");
@@ -24313,7 +24436,15 @@ sub main()
 
         Preset("Viral_Man_Group")
         {
-                SetField("m_CanBeInHumanity", "0");
+                SetField("m_AttachableItem1Name", "Zombie_Blister");
+                SetField("m_AttachableItem1Probability", "0.4");
+				SetField("m_AttachableItem2Name", "fire_helmet");
+                SetField("m_AttachableItem2Probability", "0.1");
+				SetField("m_AttachableItem3Name", "miner_helmet");
+                SetField("m_AttachableItem3Probability", "0.1");
+				SetField("m_AttachableItem4Name", "Attachable_Flashlight");
+                SetField("m_AttachableItem4Probability", "0.2");
+				SetField("m_CanBeInHumanity", "0");
                 SetField("m_CanUseAttractors", "1");
                 SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_ALL);
                 SetField("m_CrippleBonesEnable", "1");
@@ -24343,7 +24474,15 @@ sub main()
 
         Preset("Viral_Man_Museum")
         {
-                SetField("m_CanBeInHumanity", "1");
+                SetField("m_AttachableItem1Name", "Zombie_Blister");
+                SetField("m_AttachableItem1Probability", "0.4");
+				SetField("m_AttachableItem2Name", "fire_helmet");
+                SetField("m_AttachableItem2Probability", "0.1");
+				SetField("m_AttachableItem3Name", "miner_helmet");
+                SetField("m_AttachableItem3Probability", "0.1");
+				SetField("m_AttachableItem4Name", "Attachable_Flashlight");
+                SetField("m_AttachableItem4Probability", "0.2");
+				SetField("m_CanBeInHumanity", "1");
                 SetField("m_CanUseAttractors", "1");
                 SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_ALL);
                 SetField("m_CrippleBonesEnable", "1");
@@ -24431,7 +24570,11 @@ sub main()
 
         Preset("Viral_Woman")
         {
-                SetField("m_CanBeInHumanity", "1");
+                SetField("m_AttachableItem1Name", "Zombie_Blister");
+                SetField("m_AttachableItem1Probability", "0.4");
+				SetField("m_AttachableItem2Name", "Attachable_Flashlight");
+                SetField("m_AttachableItem2Probability", "0.2");
+				SetField("m_CanBeInHumanity", "1");
                 SetField("m_CanUseAttractors", "1");
                 SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_ALL);
                 SetField("m_CrippleBonesEnable", "1");
@@ -24461,7 +24604,11 @@ sub main()
 
         Preset("Viral_Woman_Group")
         {
-                SetField("m_CanBeInHumanity", "0");
+                SetField("m_AttachableItem1Name", "Zombie_Blister");
+                SetField("m_AttachableItem1Probability", "0.4");
+				SetField("m_AttachableItem2Name", "Attachable_Flashlight");
+                SetField("m_AttachableItem2Probability", "0.2");
+				SetField("m_CanBeInHumanity", "0");
                 SetField("m_CanUseAttractors", "1");
                 SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_ALL);
                 SetField("m_CrippleBonesEnable", "1");
@@ -24491,7 +24638,11 @@ sub main()
 
         Preset("Viral_Woman_Museum")
         {
-                SetField("m_CanBeInHumanity", "1");
+                SetField("m_AttachableItem1Name", "Zombie_Blister");
+                SetField("m_AttachableItem1Probability", "0.4");
+				SetField("m_AttachableItem2Name", "Attachable_Flashlight");
+                SetField("m_AttachableItem2Probability", "0.2");
+				SetField("m_CanBeInHumanity", "1");
                 SetField("m_CanUseAttractors", "1");
                 SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_ALL);
                 SetField("m_CrippleBonesEnable", "1");
@@ -25371,7 +25522,8 @@ sub main()
                 SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_PLAYER);
                 SetField("m_ConsiderGroup", "1");
                 SetField("m_CrippleBonesEnable", "1");
-                SetField("m_KnowledgeBasePreset", "shooter");
+				SetField("m_CustomDataPreset", "shooter_vest");
+				SetField("m_KnowledgeBasePreset", "shooter");
                 SetField("m_MainGoalRulesPreset", "shooter");
                 SetField("m_CustomLootType", "DeadBody_Human_Firearm");
                 SetField("m_CutOffBonesEnable", "1");
@@ -25407,7 +25559,8 @@ sub main()
                 SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_PLAYER);
                 SetField("m_ConsiderGroup", "1");
                 SetField("m_CrippleBonesEnable", "1");
-                SetField("m_KnowledgeBasePreset", "shooter");
+				SetField("m_CustomDataPreset", "shooter_vest");
+				SetField("m_KnowledgeBasePreset", "shooter");
                 SetField("m_MainGoalRulesPreset", "shooter");
                 SetField("m_CustomLootType", "DeadBody_Human_Firearm");
                 SetField("m_CutOffBonesEnable", "1");
@@ -25420,8 +25573,6 @@ sub main()
                 SetField("m_HeldReleaseTime", "5.0");
                 SetField("m_IsRaisMan", "1");
                 SetField("m_IsVip", "0");
-                SetField("m_KnowledgeBasePreset", "shooter");
-                SetField("m_MainGoalRulesPreset", "shooter");
                 SetField("m_MaxLevelDiff", "2");
                 SetField("m_MinLevelDiff", "1");
                 SetField("m_ModulesPreset", "1");
@@ -25667,7 +25818,8 @@ sub main()
                 SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_PLAYER);
                 SetField("m_ConsiderGroup", "1");
                 SetField("m_CrippleBonesEnable", "1");
-                SetField("m_KnowledgeBasePreset", "shooter");
+				SetField("m_CustomDataPreset", "shooter_vest");
+				SetField("m_KnowledgeBasePreset", "shooter");
                 SetField("m_MainGoalRulesPreset", "shooter");
                 SetField("m_CustomLootType", "DeadBody_Human_Firearm");
                 SetField("m_CutOffBonesEnable", "1");
@@ -25740,7 +25892,8 @@ sub main()
                 SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_PLAYER);
                 SetField("m_ConsiderGroup", "1");
                 SetField("m_CrippleBonesEnable", "1");
-                SetField("m_KnowledgeBasePreset", "shooter");
+				SetField("m_CustomDataPreset", "shooter_vest");
+				SetField("m_KnowledgeBasePreset", "shooter");
                 SetField("m_MainGoalRulesPreset", "shooter");
                 SetField("m_CustomLootType", "DeadBody_Human_Firearm");
                 SetField("m_CutOffBonesEnable", "1");
@@ -26143,7 +26296,8 @@ sub main()
                 SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_PLAYER);
                 SetField("m_ConsiderGroup", "1");
                 SetField("m_CrippleBonesEnable", "1");
-                SetField("m_KnowledgeBasePreset", "shooter");
+				SetField("m_CustomDataPreset", "shooter_vest");
+				SetField("m_KnowledgeBasePreset", "shooter");
                 SetField("m_MainGoalRulesPreset", "shooter");
                 SetField("m_CustomLootType", "DeadBody_Human_Firearm");
                 SetField("m_CutOffBonesEnable", "1");
@@ -26296,7 +26450,8 @@ sub main()
                 SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_PLAYER);
                 SetField("m_ConsiderGroup", "1");
                 SetField("m_CrippleBonesEnable", "1");
-                SetField("m_KnowledgeBasePreset", "shooter");
+				SetField("m_CustomDataPreset", "shooter_vest");
+				SetField("m_KnowledgeBasePreset", "shooter");
                 SetField("m_MainGoalRulesPreset", "shooter");
                 SetField("m_CustomLootType", "DeadBody_Human_Firearm");
                 SetField("m_CutOffBonesEnable", "1");
@@ -26405,7 +26560,8 @@ sub main()
                 SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_PLAYER);
                 SetField("m_ConsiderGroup", "1");
                 SetField("m_CrippleBonesEnable", "1");
-                SetField("m_KnowledgeBasePreset", "shooter");
+				SetField("m_CustomDataPreset", "shooter_vest");
+				SetField("m_KnowledgeBasePreset", "shooter");
                 SetField("m_MainGoalRulesPreset", "shooter");
                 SetField("m_CustomLootType", "DeadBody_Human_Firearm");
                 SetField("m_CutOffBonesEnable", "1");
@@ -28172,31 +28328,34 @@ sub main()
 		
 		Preset("Biter_Man_Fresh")
         {
-                SetField("m_CanBeInHumanity", "0");
+                SetField("m_BurnOnStart", "0");
+                SetField("m_CanBeLimitedAttacker", "1");
+				SetField("m_CanBeBackstabbed", "1");
                 SetField("m_CanUseAttractors", "1");
+				SetField("m_CanFall", "1");
                 SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_ALL);
                 SetField("m_CrippleBonesEnable", "1");
-                SetField("m_CustomDataPreset", "infected_humanity");
+                SetField("m_CustomDataPreset", "anim_set_a;anim_set_b;anim_set_c");
                 SetField("m_CutOffBonesEnable", "1");
+                SetField("m_ForceStinger", "0");
                 SetField("m_ForcedBodyScaleMax", "1.15");
                 SetField("m_ForcedBodyScaleMin", "1.05");
-                SetField("m_ForcedTargetType", "-1");
                 SetField("m_Gender", "0");
                 SetField("m_GrabEnabled", "1");
-                SetField("m_HarvestingLevelRequired", "1");
-                SetField("m_HarvestingLootType", "Harvesting_Viral_Body");
+                SetField("m_HarvestingLootType", "Harvesting_Biter_Body");
                 SetField("m_IsHarvestable", "1");
-                SetField("m_KnowledgeBasePreset", "infected_humanity");
-                SetField("m_MaxLevelDiff", "5");
-                SetField("m_MinLevelDiff", "3");
-                SetField("m_ModulesPreset", "infected_humanity");
+                SetField("m_MinLevelDiff", "-5");
+				SetField("m_MaxLevelDiff", "2");
+                SetField("m_ModulesPreset", "1");
                 SetField("m_NeverHolsterWeapon", "1");
+                SetField("m_PoisonedOnStart", "0");
                 SetField("m_PrimaryWeaponProbability", "0.5");
                 SetField("m_Seed", "0");
-                SetField("m_ShowFlies", "0");
-                SetField("m_SoundPreset", "ZombieInfectedMale00");
+                SetField("m_ShowFlies", "1");
+                SetField("m_SoundPreset", "ZombieSlowMan00;ZombieSlowMan01");
                 SetField("m_StepPreset", "Default_Zombie");
-                SetField("m_Type", "3");
+                SetField("m_TransformIntoPreset", "Biter_Man_Agressive;DiffLevel;Viral_m_lvl4");
+                SetField("m_Type", "1");
                 SetField("m_VisRepresentationsPool", "humantoviral_man");
         }
 		
@@ -28206,7 +28365,7 @@ sub main()
                 SetField("m_CanUseAttractors", "1");
                 SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_ALL);
                 SetField("m_CrippleBonesEnable", "1");
-                SetField("m_CustomDataPreset", "infected_woman_humanity");
+                SetField("m_CustomDataPreset", "viral_group");
                 SetField("m_CutOffBonesEnable", "1");
                 SetField("m_ForcedBodyScaleMax", "1.15");
                 SetField("m_ForcedBodyScaleMin", "1.05");
@@ -28216,10 +28375,10 @@ sub main()
                 SetField("m_HarvestingLevelRequired", "1");
                 SetField("m_HarvestingLootType", "Harvesting_Viral_Body");
                 SetField("m_IsHarvestable", "1");
-                SetField("m_KnowledgeBasePreset", "infected_humanity");
-                SetField("m_MaxLevelDiff", "2");
-                SetField("m_MinLevelDiff", "-5");
-                SetField("m_ModulesPreset", "infected_humanity");
+                SetField("m_KnowledgeBasePreset", "night_walker");
+                SetField("m_MaxLevelDiff", "5");
+                SetField("m_MinLevelDiff", "3");
+                SetField("m_ModulesPreset", "night_walker");
                 SetField("m_NeverHolsterWeapon", "1");
                 SetField("m_PrimaryWeaponProbability", "0.5");
                 SetField("m_Seed", "0");
@@ -28258,7 +28417,7 @@ sub main()
                 SetField("m_ShowFlies", "1");
                 SetField("m_SoundPreset", "ZombieSlowMan00;ZombieSlowMan01");
                 SetField("m_StepPreset", "Default_Zombie");
-                SetField("m_TransformIntoPreset", "NightWalker_Man");
+                SetField("m_TransformIntoPreset", "Biter_Man_Agressive;DiffLevel;Viral_m_lvl4");
                 SetField("m_Type", "1");
                 SetField("MeshName", "survivor_a.msh");
                 SetField("SkinName", "npc_Maalik_injured");
@@ -28292,7 +28451,7 @@ sub main()
                 SetField("m_ShowFlies", "1");
                 SetField("m_SoundPreset", "ZombieSlowMan00;ZombieSlowMan01");
                 SetField("m_StepPreset", "Default_Zombie");
-                SetField("m_TransformIntoPreset", "NightWalker_Man");
+                SetField("m_TransformIntoPreset", "Biter_Man_Agressive;DiffLevel;Viral_m_lvl4");
                 SetField("m_Type", "1");
                 SetField("MeshName", "survivor_a.msh");
                 SetField("SkinName", "npc_injured_a");
@@ -28326,7 +28485,7 @@ sub main()
                 SetField("m_ShowFlies", "1");
                 SetField("m_SoundPreset", "ZombieSlowMan00;ZombieSlowMan01");
                 SetField("m_StepPreset", "Default_Zombie");
-                SetField("m_TransformIntoPreset", "NightWalker_Man");
+                SetField("m_TransformIntoPreset", "Biter_Man_Agressive;DiffLevel;Viral_m_lvl4");
                 SetField("m_Type", "1");
                 SetField("MeshName", "survivor_a.msh");
                 SetField("SkinName", "npc_injured_b");
@@ -28360,7 +28519,7 @@ sub main()
                 SetField("m_ShowFlies", "1");
                 SetField("m_SoundPreset", "ZombieSlowMan00;ZombieSlowMan01");
                 SetField("m_StepPreset", "Default_Zombie");
-                SetField("m_TransformIntoPreset", "NightWalker_Man");
+                SetField("m_TransformIntoPreset", "Biter_Man_Agressive;DiffLevel;Viral_m_lvl4");
                 SetField("m_Type", "1");
                 SetField("MeshName", "survivor_a.msh");
                 SetField("SkinName", "npc_injured_c");
@@ -28394,12 +28553,146 @@ sub main()
                 SetField("m_ShowFlies", "1");
                 SetField("m_SoundPreset", "ZombieSlowWoman00;ZombieSlowWoman01");
                 SetField("m_StepPreset", "Default_Zombie");
-                SetField("m_TransformIntoPreset", "NightWalker_Woman");
+                SetField("m_TransformIntoPreset", "Biter_Woman_Agressive;DiffLevel;Viral_m_lvl4");
                 SetField("m_Type", "1");
                 SetField("m_UseBaseDataSet", "0");
                 SetField("m_UseRandomDataSet", "1");
                 SetField("MeshName", "survivor_woman_a.msh");
                 SetField("SkinName", "Default");
+        }
+		
+		Preset("Biter_Man_FreshDead_02")
+        {
+                SetField("m_BurnOnStart", "0");
+                SetField("m_CanBeLimitedAttacker", "1");
+				SetField("m_CanBeBackstabbed", "1");
+                SetField("m_CanUseAttractors", "1");
+				SetField("m_CanFall", "1");
+                SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_ALL);
+                SetField("m_CrippleBonesEnable", "1");
+                SetField("m_CustomDataPreset", "anim_set_a;anim_set_b;anim_set_c");
+                SetField("m_CutOffBonesEnable", "1");
+                SetField("m_ForceStinger", "0");
+                SetField("m_ForcedBodyScaleMax", "1.15");
+                SetField("m_ForcedBodyScaleMin", "1.05");
+                SetField("m_Gender", "0");
+                SetField("m_GrabEnabled", "1");
+                SetField("m_HarvestingLootType", "Harvesting_Biter_Body");
+                SetField("m_IsHarvestable", "1");
+                SetField("m_MinLevelDiff", "-5");
+				SetField("m_MaxLevelDiff", "2");
+                SetField("m_ModulesPreset", "1");
+                SetField("m_NeverHolsterWeapon", "1");
+                SetField("m_PoisonedOnStart", "0");
+                SetField("m_PrimaryWeaponProbability", "0.5");
+                SetField("m_Seed", "0");
+                SetField("m_ShowFlies", "1");
+                SetField("m_SoundPreset", "ZombieSlowMan00;ZombieSlowMan01");
+                SetField("m_StepPreset", "Default_Zombie");
+                SetField("m_TransformIntoPreset", "Biter_Man_Agressive;DiffLevel;Viral_m_lvl4");
+                SetField("m_Type", "1");
+                SetField("m_VisRepresentationsPool", "Viral_Man");
+        }
+		
+		Preset("Biter_Woman_Agressive")
+        {
+                SetField("m_CanBeInHumanity", "0");
+                SetField("m_CanUseAttractors", "1");
+                SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_ALL);
+                SetField("m_CrippleBonesEnable", "1");
+                SetField("m_CustomDataPreset", "viral_group");
+                SetField("m_CutOffBonesEnable", "1");
+                SetField("m_ForcedBodyScaleMax", "1.15");
+                SetField("m_ForcedBodyScaleMin", "1.05");
+                SetField("m_ForcedTargetType", "-1");
+                SetField("m_Gender", "1");
+                SetField("m_GrabEnabled", "1");
+                SetField("m_HarvestingLevelRequired", "1");
+                SetField("m_HarvestingLootType", "Harvesting_Viral_Body");
+                SetField("m_IsHarvestable", "1");
+                SetField("m_KnowledgeBasePreset", "night_walker");
+                SetField("m_MaxLevelDiff", "5");
+                SetField("m_MinLevelDiff", "3");
+                SetField("m_ModulesPreset", "night_walker");
+                SetField("m_NeverHolsterWeapon", "1");
+                SetField("m_PrimaryWeaponProbability", "0.5");
+                SetField("m_Seed", "0");
+                SetField("m_ShowFlies", "0");
+                SetField("m_SoundPreset", "ZombieInfectedFemale00");
+                SetField("m_StepPreset", "Default_Zombie");
+                SetField("m_Type", "3");
+                SetField("m_VisRepresentationsPool", "Viral_Woman");
+        }
+		
+		Preset("Biter_Woman_FreshDead_02")
+        {
+                SetField("m_BurnOnStart", "0");
+                SetField("m_CanBeLimitedAttacker", "1");
+				SetField("m_CanBeBackstabbed", "1");
+                SetField("m_CanUseAttractors", "1");
+				SetField("m_CanFall", "1");
+                SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_ALL);
+                SetField("m_CrippleBonesEnable", "1");
+                SetField("m_CustomDataPreset", "woman_a;woman_b");
+                SetField("m_CutOffBonesEnable", "1");
+                SetField("m_ForceStinger", "0");
+                SetField("m_ForcedBodyScaleMax", "1.15");
+                SetField("m_ForcedBodyScaleMin", "1.05");
+                SetField("m_Gender", "1");
+                SetField("m_GrabEnabled", "1");
+                SetField("m_HarvestingLootType", "Harvesting_Biter_Body");
+                SetField("m_IsHarvestable", "1");
+                SetField("m_MinLevelDiff", "-5");
+				SetField("m_MaxLevelDiff", "2");
+                SetField("m_ModulesPreset", "1");
+                SetField("m_NeverHolsterWeapon", "1");
+                SetField("m_PoisonedOnStart", "0");
+                SetField("m_PrimaryWeaponProbability", "0.5");
+                SetField("m_Seed", "0");
+                SetField("m_ShowFlies", "1");
+                SetField("m_SoundPreset", "ZombieSlowWoman00;ZombieSlowWoman01");
+                SetField("m_StepPreset", "Default_Zombie");
+                SetField("m_TransformIntoPreset", "Biter_Woman_Agressive;DiffLevel;Viral_m_lvl4");
+                SetField("m_Type", "1");
+                SetField("m_UseBaseDataSet", "0");
+                SetField("m_UseRandomDataSet", "1");
+                SetField("m_VisRepresentationsPool", "Viral_Woman");
+        }
+		
+		Preset("Biter_Man_FireFighter")
+        {
+                SetField("m_BurnOnStart", "0");
+                SetField("m_CanBeLimitedAttacker", "1");
+				SetField("m_CanBeBackstabbed", "1");
+                SetField("m_CanUseAttractors", "1");
+				SetField("m_CanFall", "1");
+                SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_ALL);
+                SetField("m_CrippleBonesEnable", "1");
+                SetField("m_CustomDataPreset", "anim_set_a;anim_set_b;anim_set_c");
+                SetField("m_CutOffBonesEnable", "1");
+                SetField("m_ForceStinger", "0");
+                SetField("m_ForcedBodyScaleMax", "1.15");
+                SetField("m_ForcedBodyScaleMin", "1.05");
+                SetField("m_Gender", "0");
+                SetField("m_GrabEnabled", "1");
+                SetField("m_HarvestingLootType", "Harvesting_Biter_Body");
+                SetField("m_IsHarvestable", "1");
+                SetField("m_MinLevelDiff", "-5");
+				SetField("m_MaxLevelDiff", "2");
+                SetField("m_ModulesPreset", "1");
+                SetField("m_NeverHolsterWeapon", "1");
+                SetField("m_PoisonedOnStart", "0");
+                SetField("m_PrimaryWeaponProbability", "0.5");
+                SetField("m_Seed", "0");
+                SetField("m_ShowFlies", "1");
+                SetField("m_SoundPreset", "ZombieSlowMan00;ZombieSlowMan01");
+                SetField("m_StepPreset", "Default_Zombie");
+                SetField("m_TransformIntoPreset", "Biter_Man_Agressive;DiffLevel;Viral_m_lvl4");
+                SetField("m_Type", "1");
+                SetField("MeshName", "zombie_goon.msh");
+                SetField("SkinName", "Zombie_Fireman");
+                SetField("m_AttachableItem1Name", "fire_helmet");
+                SetField("m_AttachableItem1Probability", "0.5");
         }
     }
 }

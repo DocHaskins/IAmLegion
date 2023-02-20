@@ -25,21 +25,10 @@ SetForceTargetForCrowdOnPlayer()
 //PRESETS
 ///////////////////////////////////////////////////////////////////
 
-	PresetDef("Biter_Fresh")
-    {
-        Difficult(40)
-        AIPreset("Volatile")
-        SpawnCondition("z_VOLATILE, 1")
-        MinDistBtwZombies(5)
-        ForceTargetType(1)
-        TimeBtwSpawnZombies(15)
-        SarcophagusTime(3)
-    }
-	
 	PresetDef("Vessel_Init") 
     {
         Difficult(7)
-        AIPreset("Biter_Man_Fresh;Biter_Woman_Fresh")
+        AIPreset("Biter_Man_Fresh;Biter_Woman_Fresh;IAL_Biter_New;IAL_Human_New")
 		DiffLvlTableName("Biter_Man;Biter_Woman")
         SpawnCondition("t_INIT, 1;z_VESSEL, 1")
         ForceTargetType(-1)
