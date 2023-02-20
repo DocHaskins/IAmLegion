@@ -1725,7 +1725,7 @@ sub main()
                 SetField("m_HealthMul", "10.0");
                 SetField("m_HeldReleaseTime", "5.0");
                 SetField("m_Immortal", "0");
-                SetField("m_InvisibleToEnemies", "1");
+                SetField("m_InvisibleToEnemies", "0");
                 SetField("m_IsVip", "0");
                 SetField("m_KnowledgeBasePreset", "melee_fighter");
                 SetField("m_MaxLevelDiff", "2");
@@ -4227,7 +4227,8 @@ sub main()
                 SetField("m_ConflictSide", CONFLICT_SIDE_NEUTRAL);
                 SetField("m_ConsiderGroup", "1");
                 SetField("m_CrippleBonesEnable", "0");
-                SetField("m_CustomDataPreset", "npc");
+                SetField("m_KnowledgeBasePreset", "shooter");
+                SetField("m_MainGoalRulesPreset", "shooter");
                 SetField("m_DialogCharacterType", "1");
                 SetField("m_DialogSpeakerName", "blake");
                 SetField("m_FaceMimicPreset", "normal");
@@ -4498,7 +4499,7 @@ sub main()
                 SetField("m_ForcedBodyScaleMin", "1.0");
                 SetField("m_Gender", "0");
                 SetField("m_Immortal", "1");
-                SetField("m_InvisibleToEnemies", "1");
+                SetField("m_InvisibleToEnemies", "0");
                 SetField("m_IsVip", "0");
                 SetField("m_MustHaveTags", "");
                 SetField("m_MustNotHaveTags", "");
@@ -4537,7 +4538,8 @@ sub main()
                 SetField("m_ConflictSide", CONFLICT_SIDE_PRO_PLAYER);
                 SetField("m_ConsiderGroup", "1");
                 SetField("m_CrippleBonesEnable", "0");
-                SetField("m_CustomDataPreset", "shooter");
+                SetField("m_KnowledgeBasePreset", "shooter");
+                SetField("m_MainGoalRulesPreset", "shooter");
                 SetField("m_DialogCharacterType", "1");
                 SetField("m_DialogSpeakerName", "camden");
                 SetField("m_FaceMimicPreset", "normal");
@@ -4721,7 +4723,8 @@ sub main()
                 SetField("m_ConflictSide", CONFLICT_SIDE_PRO_PLAYER);
                 SetField("m_ConsiderGroup", "1");
                 SetField("m_CrippleBonesEnable", "0");
-                SetField("m_CustomDataPreset", "shooter");
+                SetField("m_KnowledgeBasePreset", "shooter");
+                SetField("m_MainGoalRulesPreset", "shooter");
                 SetField("m_DialogCharacterType", "1");
                 SetField("m_DialogSpeakerName", "camden");
                 SetField("m_FaceMimicPreset", "normal");
@@ -4980,7 +4983,7 @@ sub main()
                 SetField("m_ForcedBodyScaleMin", "1.0");
                 SetField("m_Gender", "0");
                 SetField("m_Immortal", "0");
-                SetField("m_InvisibleToEnemies", "1");
+                SetField("m_InvisibleToEnemies", "0");
                 SetField("m_IsVip", "0");
                 SetField("m_KnowledgeBasePreset", "melee_fighter");
                 SetField("m_MustHaveTags", "");
@@ -5040,7 +5043,8 @@ sub main()
                 SetField("m_ConflictSide", CONFLICT_SIDE_PRO_PLAYER);
                 SetField("m_ConsiderGroup", "1");
                 SetField("m_CrippleBonesEnable", "0");
-                SetField("m_CustomDataPreset", "shooter");
+                SetField("m_KnowledgeBasePreset", "shooter");
+                SetField("m_MainGoalRulesPreset", "shooter");
                 SetField("m_DialogCharacterType", "4");
                 SetField("m_DialogSpeakerName", "dahlia_guard");
                 SetField("m_FaceMimicPreset", "Angry");
@@ -6191,7 +6195,8 @@ sub main()
                 SetField("m_ConflictSide", CONFLICT_SIDE_NEUTRAL);
                 SetField("m_ConsiderGroup", "1");
                 SetField("m_CrippleBonesEnable", "0");
-                SetField("m_CustomDataPreset", "npc");
+                SetField("m_KnowledgeBasePreset", "shooter");
+                SetField("m_MainGoalRulesPreset", "shooter");
                 SetField("m_DialogCharacterType", "1");
                 SetField("m_DialogSpeakerName", "dusty");
                 SetField("m_FaceMimicPreset", "normal");
@@ -6216,7 +6221,8 @@ sub main()
                 SetField("m_ConflictSide", CONFLICT_SIDE_NEUTRAL);
                 SetField("m_ConsiderGroup", "1");
                 SetField("m_CrippleBonesEnable", "0");
-                SetField("m_CustomDataPreset", "npc");
+                SetField("m_KnowledgeBasePreset", "shooter");
+                SetField("m_MainGoalRulesPreset", "shooter");
                 SetField("m_DialogCharacterType", "1");
                 SetField("m_DialogSpeakerName", "edward");
                 SetField("m_FaceMimicPreset", "normal");
@@ -6359,7 +6365,9 @@ sub main()
                 SetField("m_ConflictSide", CONFLICT_SIDE_NEUTRAL);
                 SetField("m_ConsiderGroup", "1");
                 SetField("m_CrippleBonesEnable", "0");
-                SetField("m_CustomDataPreset", "npc");
+                SetField("m_CustomDataPreset", "melee_fighter_a");
+				SetField("m_KnowledgeBasePreset", "melee_fighter");
+				SetField("m_PrimaryWeaponName", "Melee_Friendly_Survivor");
                 SetField("m_DialogCharacterType", "1");
                 SetField("m_DialogSpeakerName", "embersguard01");
                 SetField("m_FaceMimicPreset", "normal");
@@ -6382,7 +6390,9 @@ sub main()
                 SetField("m_ConflictSide", CONFLICT_SIDE_NEUTRAL);
                 SetField("m_ConsiderGroup", "1");
                 SetField("m_CrippleBonesEnable", "0");
-                SetField("m_CustomDataPreset", "npc");
+                SetField("m_CustomDataPreset", "melee_fighter_a");
+				SetField("m_KnowledgeBasePreset", "melee_fighter");
+				SetField("m_PrimaryWeaponName", "Melee_Friendly_Survivor");
                 SetField("m_DialogCharacterType", "1");
                 SetField("m_DialogSpeakerName", "embersguard02");
                 SetField("m_FaceMimicPreset", "normal");
@@ -6405,7 +6415,8 @@ sub main()
                 SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_PLAYER);
                 SetField("m_ConsiderGroup", "1");
                 SetField("m_CrippleBonesEnable", "1");
-                SetField("m_CustomDataPreset", "shooter");
+                SetField("m_KnowledgeBasePreset", "shooter");
+                SetField("m_MainGoalRulesPreset", "shooter");
                 SetField("m_CustomLootType", "DeadBody_Human_Firearm");
                 SetField("m_CutOffBonesEnable", "1");
                 SetField("m_DialogCharacterType", "4");
@@ -6554,7 +6565,8 @@ sub main()
                 SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_PLAYER);
                 SetField("m_ConsiderGroup", "1");
                 SetField("m_CrippleBonesEnable", "1");
-                SetField("m_CustomDataPreset", "shooter");
+                SetField("m_KnowledgeBasePreset", "shooter");
+                SetField("m_MainGoalRulesPreset", "shooter");
                 SetField("m_CustomLootType", "DeadBody_Human_Firearm");
                 SetField("m_CutOffBonesEnable", "1");
                 SetField("m_DialogCharacterType", "4");
@@ -6586,7 +6598,8 @@ sub main()
                 SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_PLAYER);
                 SetField("m_ConsiderGroup", "1");
                 SetField("m_CrippleBonesEnable", "1");
-                SetField("m_CustomDataPreset", "shooter");
+                SetField("m_KnowledgeBasePreset", "shooter");
+                SetField("m_MainGoalRulesPreset", "shooter");
                 SetField("m_CustomLootType", "DeadBody_Human_Firearm");
                 SetField("m_CutOffBonesEnable", "1");
                 SetField("m_DialogCharacterType", "4");
@@ -6723,7 +6736,8 @@ sub main()
                 SetField("m_ConflictSide", CONFLICT_SIDE_NEUTRAL);
                 SetField("m_ConsiderGroup", "1");
                 SetField("m_CrippleBonesEnable", "0");
-                SetField("m_CustomDataPreset", "npc");
+                SetField("m_CustomDataPreset", "melee_fighter_a");
+				SetField("m_KnowledgeBasePreset", "melee_fighter");
                 SetField("m_CustomLootType", "DeadBody_Human_Raisman");
                 SetField("m_DialogCharacterType", "4");
                 SetField("m_DialogSpeakerName", "enemy_s_bandit_melee001_neutral");
@@ -6982,7 +6996,7 @@ sub main()
                 SetField("m_ForcedBodyScaleMin", "1.0");
                 SetField("m_Gender", "0");
                 SetField("m_Immortal", "0");
-                SetField("m_InvisibleToEnemies", "1");
+                SetField("m_InvisibleToEnemies", "0");
                 SetField("m_IsVip", "0");
                 SetField("m_MustHaveTags", "");
                 SetField("m_MustNotHaveTags", "");
@@ -6998,7 +7012,9 @@ sub main()
                 SetField("m_ConflictSide", CONFLICT_SIDE_NEUTRAL);
                 SetField("m_ConsiderGroup", "1");
                 SetField("m_CrippleBonesEnable", "0");
-                SetField("m_CustomDataPreset", "npc");
+                SetField("m_CustomDataPreset", "melee_fighter_a");
+				SetField("m_KnowledgeBasePreset", "melee_fighter");
+				SetField("m_PrimaryWeaponName", "Melee_Friendly_Survivor");
                 SetField("m_DialogCharacterType", "1");
                 SetField("m_DialogSpeakerName", "farmer01");
                 SetField("m_FaceMimicPreset", "normal");
@@ -7006,7 +7022,7 @@ sub main()
                 SetField("m_ForcedBodyScaleMin", "1.0");
                 SetField("m_Gender", "0");
                 SetField("m_Immortal", "0");
-                SetField("m_InvisibleToEnemies", "1");
+                SetField("m_InvisibleToEnemies", "0");
                 SetField("m_IsVip", "0");
                 SetField("m_MustHaveTags", "");
                 SetField("m_MustNotHaveTags", "");
@@ -7024,7 +7040,9 @@ sub main()
                 SetField("m_ConflictSide", CONFLICT_SIDE_NEUTRAL);
                 SetField("m_ConsiderGroup", "1");
                 SetField("m_CrippleBonesEnable", "0");
-                SetField("m_CustomDataPreset", "npc");
+                SetField("m_CustomDataPreset", "melee_fighter_a");
+				SetField("m_KnowledgeBasePreset", "melee_fighter");
+				SetField("m_PrimaryWeaponName", "Melee_Friendly_Survivor");
                 SetField("m_DialogCharacterType", "1");
                 SetField("m_DialogSpeakerName", "farmer02");
                 SetField("m_FaceMimicPreset", "normal");
@@ -8279,7 +8297,7 @@ sub main()
                 SetField("m_ForcedBodyScaleMin", "1.0");
                 SetField("m_Gender", "0");
                 SetField("m_Immortal", "0");
-                SetField("m_InvisibleToEnemies", "1");
+                SetField("m_InvisibleToEnemies", "0");
                 SetField("m_IsVip", "0");
                 SetField("m_MustHaveTags", "");
                 SetField("m_MustNotHaveTags", "");
@@ -8296,7 +8314,9 @@ sub main()
                 SetField("m_ConflictSide", CONFLICT_SIDE_NEUTRAL);
                 SetField("m_ConsiderGroup", "1");
                 SetField("m_CrippleBonesEnable", "0");
-                SetField("m_CustomDataPreset", "npc");
+                SetField("m_KnowledgeBasePreset", "shooter");
+                SetField("m_MainGoalRulesPreset", "shooter");
+				SetField("m_KnowledgeBasePreset", "shooter");
                 SetField("m_DialogCharacterType", "1");
                 SetField("m_DialogSpeakerName", "hazan");
                 SetField("m_FaceMimicPreset", "normal");
@@ -8599,7 +8619,7 @@ sub main()
                 SetField("m_ForcedBodyScaleMin", "1.0");
                 SetField("m_Gender", "0");
                 SetField("m_Immortal", "0");
-                SetField("m_InvisibleToEnemies", "1");
+                SetField("m_InvisibleToEnemies", "0");
                 SetField("m_IsVip", "0");
                 SetField("m_MustHaveTags", "");
                 SetField("m_MustNotHaveTags", "");
@@ -9705,7 +9725,7 @@ sub main()
                 SetField("m_ForcedBodyScaleMin", "1.0");
                 SetField("m_Gender", "0");
                 SetField("m_Immortal", "0");
-                SetField("m_InvisibleToEnemies", "1");
+                SetField("m_InvisibleToEnemies", "0");
                 SetField("m_IsVip", "0");
                 SetField("m_MustHaveTags", "");
                 SetField("m_MustNotHaveTags", "RaceBlack|AI_HeadCover");
@@ -9971,7 +9991,8 @@ sub main()
         Preset("Library_Guard")
         {
                 SetField("SkinName", "npc_library_guard");
-                SetField("m_CustomDataPreset", "npc");
+                SetField("m_KnowledgeBasePreset", "shooter");
+                SetField("m_MainGoalRulesPreset", "shooter");
                 SetField("m_DialogCharacterType", "1");
                 SetField("m_DialogSpeakerName", "library_guard");
                 SetField("m_NeverHolsterWeapon", "1");
@@ -11370,7 +11391,8 @@ sub main()
                 SetField("m_ConflictSide", CONFLICT_SIDE_NEUTRAL);
                 SetField("m_ConsiderGroup", "1");
                 SetField("m_CrippleBonesEnable", "0");
-                SetField("m_CustomDataPreset", "npc");
+                SetField("m_KnowledgeBasePreset", "shooter");
+                SetField("m_MainGoalRulesPreset", "shooter");
                 SetField("m_DialogCharacterType", "1");
                 SetField("m_DialogSpeakerName", "npc02_tir");
                 SetField("m_FaceMimicPreset", "normal");
@@ -11450,7 +11472,7 @@ sub main()
                 SetField("m_ForcedBodyScaleMin", "1.0");
                 SetField("m_Gender", "0");
                 SetField("m_Immortal", "1");
-                SetField("m_InvisibleToEnemies", "1");
+                SetField("m_InvisibleToEnemies", "0");
                 SetField("m_IsVip", "0");
                 SetField("m_MustHaveTags", "");
                 SetField("m_MustNotHaveTags", "");
@@ -11588,7 +11610,8 @@ sub main()
                 SetField("m_ConflictSide", CONFLICT_SIDE_NEUTRAL);
                 SetField("m_ConsiderGroup", "1");
                 SetField("m_CrippleBonesEnable", "0");
-                SetField("m_CustomDataPreset", "npc");
+                SetField("m_KnowledgeBasePreset", "shooter");
+                SetField("m_MainGoalRulesPreset", "shooter");
                 SetField("m_DialogCharacterType", "1");
                 SetField("m_DialogSpeakerName", "npc05_tir");
                 SetField("m_FaceMimicPreset", "normal");
@@ -13141,7 +13164,8 @@ sub main()
                 SetField("m_ConflictSide", CONFLICT_SIDE_NEUTRAL);
                 SetField("m_ConsiderGroup", "1");
                 SetField("m_CrippleBonesEnable", "0");
-                SetField("m_CustomDataPreset", "npc");
+                SetField("m_KnowledgeBasePreset", "shooter");
+                SetField("m_MainGoalRulesPreset", "shooter");
                 SetField("m_CustomLootType", "DeadBody_Human_Raisman");
                 SetField("m_DialogCharacterType", "1");
                 SetField("m_DialogSpeakerName", "quest_arena_raisguard01");
@@ -13150,7 +13174,7 @@ sub main()
                 SetField("m_ForcedBodyScaleMin", "1.0");
                 SetField("m_Gender", "0");
                 SetField("m_Immortal", "1");
-                SetField("m_InvisibleToEnemies", "1");
+                SetField("m_InvisibleToEnemies", "0");
                 SetField("m_IsRaisMan", "1");
                 SetField("m_IsVip", "0");
                 SetField("m_MustHaveTags", "");
@@ -13169,7 +13193,8 @@ sub main()
                 SetField("m_ConflictSide", CONFLICT_SIDE_NEUTRAL);
                 SetField("m_ConsiderGroup", "1");
                 SetField("m_CrippleBonesEnable", "0");
-                SetField("m_CustomDataPreset", "npc");
+                SetField("m_KnowledgeBasePreset", "shooter");
+                SetField("m_MainGoalRulesPreset", "shooter");
                 SetField("m_CustomLootType", "DeadBody_Human_Raisman");
                 SetField("m_DialogCharacterType", "1");
                 SetField("m_DialogSpeakerName", "quest_arena_raisguard02");
@@ -13178,7 +13203,7 @@ sub main()
                 SetField("m_ForcedBodyScaleMin", "1.0");
                 SetField("m_Gender", "0");
                 SetField("m_Immortal", "1");
-                SetField("m_InvisibleToEnemies", "1");
+                SetField("m_InvisibleToEnemies", "0");
                 SetField("m_IsRaisMan", "1");
                 SetField("m_IsVip", "0");
                 SetField("m_MustHaveTags", "");
@@ -14280,7 +14305,8 @@ sub main()
                 SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_PLAYER);
                 SetField("m_ConsiderGroup", "1");
                 SetField("m_CrippleBonesEnable", "1");
-                SetField("m_CustomDataPreset", "shooter");
+                SetField("m_KnowledgeBasePreset", "shooter");
+                SetField("m_MainGoalRulesPreset", "shooter");
                 SetField("m_CustomLootType", "DeadBody_Human_Firearm");
                 SetField("m_CutOffBonesEnable", "1");
                 SetField("m_DialogCharacterType", "4");
@@ -14354,7 +14380,8 @@ sub main()
                 SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_PLAYER);
                 SetField("m_ConsiderGroup", "1");
                 SetField("m_CrippleBonesEnable", "1");
-                SetField("m_CustomDataPreset", "shooter");
+                SetField("m_KnowledgeBasePreset", "shooter");
+                SetField("m_MainGoalRulesPreset", "shooter");
                 SetField("m_CustomLootType", "DeadBody_Human_Firearm");
                 SetField("m_CutOffBonesEnable", "1");
                 SetField("m_DialogCharacterType", "4");
@@ -14496,7 +14523,8 @@ sub main()
                 SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_PLAYER);
                 SetField("m_ConsiderGroup", "1");
                 SetField("m_CrippleBonesEnable", "1");
-                SetField("m_CustomDataPreset", "shooter");
+                SetField("m_KnowledgeBasePreset", "shooter");
+                SetField("m_MainGoalRulesPreset", "shooter");
                 SetField("m_CustomLootType", "DeadBody_Human_Firearm");
                 SetField("m_CutOffBonesEnable", "1");
                 SetField("m_DialogCharacterType", "4");
@@ -14724,7 +14752,8 @@ sub main()
                 SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_PLAYER);
                 SetField("m_ConsiderGroup", "1");
                 SetField("m_CrippleBonesEnable", "1");
-                SetField("m_CustomDataPreset", "shooter");
+                SetField("m_KnowledgeBasePreset", "shooter");
+                SetField("m_MainGoalRulesPreset", "shooter");
                 SetField("m_CustomLootType", "DeadBody_Human_Firearm");
                 SetField("m_CutOffBonesEnable", "1");
                 SetField("m_DialogCharacterType", "4");
@@ -14870,7 +14899,8 @@ sub main()
                 SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_PLAYER);
                 SetField("m_ConsiderGroup", "1");
                 SetField("m_CrippleBonesEnable", "1");
-                SetField("m_CustomDataPreset", "shooter");
+                SetField("m_KnowledgeBasePreset", "shooter");
+                SetField("m_MainGoalRulesPreset", "shooter");
                 SetField("m_CustomLootType", "DeadBody_Human_Firearm");
                 SetField("m_CutOffBonesEnable", "1");
                 SetField("m_DialogCharacterType", "4");
@@ -15047,7 +15077,8 @@ sub main()
                 SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_PLAYER);
                 SetField("m_ConsiderGroup", "1");
                 SetField("m_CrippleBonesEnable", "1");
-                SetField("m_CustomDataPreset", "shooter");
+                SetField("m_KnowledgeBasePreset", "shooter");
+                SetField("m_MainGoalRulesPreset", "shooter");
                 SetField("m_CustomLootType", "DeadBody_Human_Firearm");
                 SetField("m_CutOffBonesEnable", "1");
                 SetField("m_DialogCharacterType", "4");
@@ -15085,7 +15116,8 @@ sub main()
                 SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_PLAYER);
                 SetField("m_ConsiderGroup", "1");
                 SetField("m_CrippleBonesEnable", "1");
-                SetField("m_CustomDataPreset", "shooter");
+                SetField("m_KnowledgeBasePreset", "shooter");
+                SetField("m_MainGoalRulesPreset", "shooter");
                 SetField("m_CustomLootType", "DeadBody_Human_Firearm");
                 SetField("m_CutOffBonesEnable", "1");
                 SetField("m_DialogCharacterType", "4");
@@ -15119,7 +15151,8 @@ sub main()
                 SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_PLAYER);
                 SetField("m_ConsiderGroup", "1");
                 SetField("m_CrippleBonesEnable", "1");
-                SetField("m_CustomDataPreset", "shooter");
+                SetField("m_KnowledgeBasePreset", "shooter");
+                SetField("m_MainGoalRulesPreset", "shooter");
                 SetField("m_CustomLootType", "DeadBody_Human_Firearm");
                 SetField("m_CutOffBonesEnable", "1");
                 SetField("m_DialogCharacterType", "4");
@@ -15366,7 +15399,8 @@ sub main()
                 SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_PLAYER);
                 SetField("m_ConsiderGroup", "1");
                 SetField("m_CrippleBonesEnable", "1");
-                SetField("m_CustomDataPreset", "shooter");
+                SetField("m_KnowledgeBasePreset", "shooter");
+                SetField("m_MainGoalRulesPreset", "shooter");
                 SetField("m_CustomLootType", "DeadBody_Human_Firearm");
                 SetField("m_CutOffBonesEnable", "1");
                 SetField("m_DialogCharacterType", "4");
@@ -15614,7 +15648,8 @@ sub main()
                 SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_PLAYER);
                 SetField("m_ConsiderGroup", "1");
                 SetField("m_CrippleBonesEnable", "1");
-                SetField("m_CustomDataPreset", "shooter");
+                SetField("m_KnowledgeBasePreset", "shooter");
+                SetField("m_MainGoalRulesPreset", "shooter");
                 SetField("m_CustomLootType", "DeadBody_Human_Firearm");
                 SetField("m_CutOffBonesEnable", "1");
                 SetField("m_DialogCharacterType", "4");
@@ -16030,7 +16065,9 @@ sub main()
                 SetField("m_ConflictSide", CONFLICT_SIDE_NEUTRAL);
                 SetField("m_ConsiderGroup", "1");
                 SetField("m_CrippleBonesEnable", "0");
-                SetField("m_CustomDataPreset", "npc");
+                SetField("m_KnowledgeBasePreset", "shooter");
+                SetField("m_MainGoalRulesPreset", "shooter");
+                SetField("m_KnowledgeBasePreset", "shooter");
                 SetField("m_CustomLootType", "DeadBody_Human_Raisman");
                 SetField("m_DialogCharacterType", "1");
                 SetField("m_DialogSpeakerName", "raiswarehouseguard01");
@@ -16109,7 +16146,9 @@ sub main()
                 SetField("m_ConflictSide", CONFLICT_SIDE_NEUTRAL);
                 SetField("m_ConsiderGroup", "1");
                 SetField("m_CrippleBonesEnable", "0");
-                SetField("m_CustomDataPreset", "npc");
+                SetField("m_KnowledgeBasePreset", "shooter");
+                SetField("m_MainGoalRulesPreset", "shooter");
+                SetField("m_KnowledgeBasePreset", "shooter");
                 SetField("m_CustomLootType", "DeadBody_Human_Raisman");
                 SetField("m_DialogCharacterType", "1");
                 SetField("m_DialogSpeakerName", "raiswarehouseguard04");
@@ -16190,7 +16229,9 @@ sub main()
                 SetField("m_ConflictSide", CONFLICT_SIDE_NEUTRAL);
                 SetField("m_ConsiderGroup", "1");
                 SetField("m_CrippleBonesEnable", "0");
-                SetField("m_CustomDataPreset", "npc");
+                SetField("m_KnowledgeBasePreset", "shooter");
+                SetField("m_MainGoalRulesPreset", "shooter");
+                SetField("m_KnowledgeBasePreset", "shooter");
                 SetField("m_CustomLootType", "DeadBody_Human_Raisman");
                 SetField("m_DialogCharacterType", "1");
                 SetField("m_DialogSpeakerName", "raiswarehouseguard07");
@@ -16226,7 +16267,7 @@ sub main()
                 SetField("m_ForcedBodyScaleMin", "1.0");
                 SetField("m_Gender", "0");
                 SetField("m_Immortal", "1");
-                SetField("m_InvisibleToEnemies", "1");
+                SetField("m_InvisibleToEnemies", "0");
                 SetField("m_IsVip", "0");
                 SetField("m_MustHaveTags", "");
                 SetField("m_MustNotHaveTags", "");
@@ -16381,7 +16422,9 @@ sub main()
                 SetField("m_ConflictSide", CONFLICT_SIDE_NEUTRAL);
                 SetField("m_ConsiderGroup", "1");
                 SetField("m_CrippleBonesEnable", "0");
-                SetField("m_CustomDataPreset", "npc");
+                SetField("m_KnowledgeBasePreset", "shooter");
+                SetField("m_MainGoalRulesPreset", "shooter");
+                SetField("m_KnowledgeBasePreset", "shooter");
                 SetField("m_DialogCharacterType", "1");
                 SetField("m_DialogSpeakerName", "reish");
                 SetField("m_FaceMimicPreset", "normal");
@@ -16389,7 +16432,7 @@ sub main()
                 SetField("m_ForcedBodyScaleMin", "1.0");
                 SetField("m_Gender", "0");
                 SetField("m_Immortal", "1");
-                SetField("m_InvisibleToEnemies", "1");
+                SetField("m_InvisibleToEnemies", "0");
                 SetField("m_IsVip", "0");
                 SetField("m_KnowledgeBasePreset", "generic");
                 SetField("m_MustHaveTags", "");
@@ -16462,7 +16505,7 @@ sub main()
                 SetField("m_ForcedBodyScaleMin", "0.75");
                 SetField("m_Gender", "0");
                 SetField("m_Immortal", "1");
-                SetField("m_InvisibleToEnemies", "1");
+                SetField("m_InvisibleToEnemies", "0");
                 SetField("m_IsVip", "1");
                 SetField("m_MustHaveTags", "");
                 SetField("m_MustNotHaveTags", "");
@@ -17632,7 +17675,7 @@ sub main()
                 SetField("m_ForcedBodyScaleMin", "1.0");
                 SetField("m_Gender", "0");
                 SetField("m_Immortal", "1");
-                SetField("m_InvisibleToEnemies", "1");
+                SetField("m_InvisibleToEnemies", "0");
                 SetField("m_IsVip", "0");
                 SetField("m_MustHaveTags", "");
                 SetField("m_MustNotHaveTags", "");
@@ -17965,7 +18008,7 @@ sub main()
                 SetField("m_ForcedBodyScaleMin", "1.0");
                 SetField("m_Gender", "0");
                 SetField("m_Immortal", "1");
-                SetField("m_InvisibleToEnemies", "1");
+                SetField("m_InvisibleToEnemies", "0");
                 SetField("m_IsVip", "0");
                 SetField("m_MustHaveTags", "");
                 SetField("m_MustNotHaveTags", "");
@@ -17989,7 +18032,7 @@ sub main()
                 SetField("m_ForcedBodyScaleMin", "1.0");
                 SetField("m_Gender", "0");
                 SetField("m_Immortal", "1");
-                SetField("m_InvisibleToEnemies", "1");
+                SetField("m_InvisibleToEnemies", "0");
                 SetField("m_IsVip", "0");
                 SetField("m_MustHaveTags", "");
                 SetField("m_MustNotHaveTags", "");
@@ -18013,7 +18056,7 @@ sub main()
                 SetField("m_ForcedBodyScaleMin", "1.0");
                 SetField("m_Gender", "0");
                 SetField("m_Immortal", "1");
-                SetField("m_InvisibleToEnemies", "1");
+                SetField("m_InvisibleToEnemies", "0");
                 SetField("m_IsVip", "0");
                 SetField("m_MustHaveTags", "");
                 SetField("m_MustNotHaveTags", "");
@@ -18037,7 +18080,7 @@ sub main()
                 SetField("m_ForcedBodyScaleMin", "1.0");
                 SetField("m_Gender", "0");
                 SetField("m_Immortal", "1");
-                SetField("m_InvisibleToEnemies", "1");
+                SetField("m_InvisibleToEnemies", "0");
                 SetField("m_IsVip", "0");
                 SetField("m_MustHaveTags", "");
                 SetField("m_MustNotHaveTags", "");
@@ -18061,7 +18104,7 @@ sub main()
                 SetField("m_ForcedBodyScaleMin", "1.0");
                 SetField("m_Gender", "0");
                 SetField("m_Immortal", "1");
-                SetField("m_InvisibleToEnemies", "1");
+                SetField("m_InvisibleToEnemies", "0");
                 SetField("m_IsVip", "0");
                 SetField("m_MustHaveTags", "");
                 SetField("m_MustNotHaveTags", "");
@@ -18085,7 +18128,7 @@ sub main()
                 SetField("m_ForcedBodyScaleMin", "1.0");
                 SetField("m_Gender", "0");
                 SetField("m_Immortal", "1");
-                SetField("m_InvisibleToEnemies", "1");
+                SetField("m_InvisibleToEnemies", "0");
                 SetField("m_IsVip", "0");
                 SetField("m_MustHaveTags", "");
                 SetField("m_MustNotHaveTags", "");
@@ -18223,7 +18266,7 @@ sub main()
                 SetField("m_ForcedBodyScaleMin", "1.0");
                 SetField("m_Gender", "0");
                 SetField("m_Immortal", "1");
-                SetField("m_InvisibleToEnemies", "1");
+                SetField("m_InvisibleToEnemies", "0");
                 SetField("m_IsVip", "0");
                 SetField("m_MustHaveTags", "");
                 SetField("m_MustNotHaveTags", "AI_HeadCover");
@@ -18247,7 +18290,7 @@ sub main()
                 SetField("m_ForcedBodyScaleMin", "1.0");
                 SetField("m_Gender", "0");
                 SetField("m_Immortal", "1");
-                SetField("m_InvisibleToEnemies", "1");
+                SetField("m_InvisibleToEnemies", "0");
                 SetField("m_IsVip", "0");
                 SetField("m_MustHaveTags", "");
                 SetField("m_MustNotHaveTags", "AI_HeadCover");
@@ -18271,7 +18314,7 @@ sub main()
                 SetField("m_ForcedBodyScaleMin", "1.0");
                 SetField("m_Gender", "0");
                 SetField("m_Immortal", "1");
-                SetField("m_InvisibleToEnemies", "1");
+                SetField("m_InvisibleToEnemies", "0");
                 SetField("m_IsVip", "0");
                 SetField("m_MustHaveTags", "");
                 SetField("m_MustNotHaveTags", "AI_HeadCover");
@@ -18295,7 +18338,7 @@ sub main()
                 SetField("m_ForcedBodyScaleMin", "1.0");
                 SetField("m_Gender", "0");
                 SetField("m_Immortal", "1");
-                SetField("m_InvisibleToEnemies", "1");
+                SetField("m_InvisibleToEnemies", "0");
                 SetField("m_IsVip", "0");
                 SetField("m_MustHaveTags", "");
                 SetField("m_MustNotHaveTags", "AI_HeadCover");
@@ -18319,7 +18362,7 @@ sub main()
                 SetField("m_ForcedBodyScaleMin", "1.0");
                 SetField("m_Gender", "0");
                 SetField("m_Immortal", "1");
-                SetField("m_InvisibleToEnemies", "1");
+                SetField("m_InvisibleToEnemies", "0");
                 SetField("m_IsVip", "0");
                 SetField("m_MustHaveTags", "");
                 SetField("m_MustNotHaveTags", "");
@@ -18343,7 +18386,7 @@ sub main()
                 SetField("m_ForcedBodyScaleMin", "1.0");
                 SetField("m_Gender", "0");
                 SetField("m_Immortal", "1");
-                SetField("m_InvisibleToEnemies", "1");
+                SetField("m_InvisibleToEnemies", "0");
                 SetField("m_IsVip", "0");
                 SetField("m_MustHaveTags", "");
                 SetField("m_MustNotHaveTags", "");
@@ -18367,7 +18410,7 @@ sub main()
                 SetField("m_ForcedBodyScaleMin", "1.0");
                 SetField("m_Gender", "0");
                 SetField("m_Immortal", "1");
-                SetField("m_InvisibleToEnemies", "1");
+                SetField("m_InvisibleToEnemies", "0");
                 SetField("m_IsVip", "0");
                 SetField("m_MustHaveTags", "");
                 SetField("m_MustNotHaveTags", "");
@@ -18889,7 +18932,7 @@ sub main()
                 SetField("m_ForcedBodyScaleMin", "0.94");
                 SetField("m_Gender", "0");
                 SetField("m_Immortal", "1");
-                SetField("m_InvisibleToEnemies", "1");
+                SetField("m_InvisibleToEnemies", "0");
                 SetField("m_IsVip", "0");
                 SetField("m_MustHaveTags", "");
                 SetField("m_MustNotHaveTags", "AI_HeadCover");
@@ -19001,7 +19044,9 @@ sub main()
                 SetField("m_ConflictSide", CONFLICT_SIDE_NEUTRAL);
                 SetField("m_ConsiderGroup", "1");
                 SetField("m_CrippleBonesEnable", "0");
-                SetField("m_CustomDataPreset", "npc");
+                SetField("m_KnowledgeBasePreset", "shooter");
+                SetField("m_MainGoalRulesPreset", "shooter");
+                SetField("m_KnowledgeBasePreset", "shooter");
                 SetField("m_DialogCharacterType", "1");
                 SetField("m_DialogSpeakerName", "slums_fishermen_guard_01_light");
                 SetField("m_FaceMimicPreset", "Normal");
@@ -19050,7 +19095,9 @@ sub main()
                 SetField("m_ConflictSide", CONFLICT_SIDE_NEUTRAL);
                 SetField("m_ConsiderGroup", "1");
                 SetField("m_CrippleBonesEnable", "0");
-                SetField("m_CustomDataPreset", "npc");
+                SetField("m_KnowledgeBasePreset", "shooter");
+                SetField("m_MainGoalRulesPreset", "shooter");
+                SetField("m_KnowledgeBasePreset", "shooter");
                 SetField("m_DialogCharacterType", "1");
                 SetField("m_DialogSpeakerName", "slums_fishermen_guard_03");
                 SetField("m_FaceMimicPreset", "Normal");
@@ -19076,7 +19123,9 @@ sub main()
                 SetField("m_ConflictSide", CONFLICT_SIDE_NEUTRAL);
                 SetField("m_ConsiderGroup", "1");
                 SetField("m_CrippleBonesEnable", "0");
-                SetField("m_CustomDataPreset", "npc");
+                SetField("m_KnowledgeBasePreset", "shooter");
+                SetField("m_MainGoalRulesPreset", "shooter");
+                SetField("m_KnowledgeBasePreset", "shooter");
                 SetField("m_DialogCharacterType", "1");
                 SetField("m_DialogSpeakerName", "slums_fishermen_guard_04_light");
                 SetField("m_FaceMimicPreset", "Normal");
@@ -19101,7 +19150,9 @@ sub main()
                 SetField("m_ConflictSide", CONFLICT_SIDE_NEUTRAL);
                 SetField("m_ConsiderGroup", "1");
                 SetField("m_CrippleBonesEnable", "0");
-                SetField("m_CustomDataPreset", "npc");
+                SetField("m_KnowledgeBasePreset", "shooter");
+                SetField("m_MainGoalRulesPreset", "shooter");
+                SetField("m_KnowledgeBasePreset", "shooter");
                 SetField("m_DialogCharacterType", "1");
                 SetField("m_DialogSpeakerName", "slums_fishermen_guard_05");
                 SetField("m_FaceMimicPreset", "Normal");
@@ -19125,7 +19176,9 @@ sub main()
                 SetField("m_ConflictSide", CONFLICT_SIDE_NEUTRAL);
                 SetField("m_ConsiderGroup", "1");
                 SetField("m_CrippleBonesEnable", "0");
-                SetField("m_CustomDataPreset", "npc");
+                SetField("m_KnowledgeBasePreset", "shooter");
+                SetField("m_MainGoalRulesPreset", "shooter");
+                SetField("m_KnowledgeBasePreset", "shooter");
                 SetField("m_DialogCharacterType", "1");
                 SetField("m_DialogSpeakerName", "slums_fishermen_guard_06");
                 SetField("m_FaceMimicPreset", "Normal");
@@ -19151,7 +19204,9 @@ sub main()
                 SetField("m_ConflictSide", CONFLICT_SIDE_NEUTRAL);
                 SetField("m_ConsiderGroup", "1");
                 SetField("m_CrippleBonesEnable", "0");
-                SetField("m_CustomDataPreset", "npc");
+                SetField("m_KnowledgeBasePreset", "shooter");
+                SetField("m_MainGoalRulesPreset", "shooter");
+                SetField("m_KnowledgeBasePreset", "shooter");
                 SetField("m_DialogCharacterType", "1");
                 SetField("m_DialogSpeakerName", "slums_fishermen_guard_07_light");
                 SetField("m_FaceMimicPreset", "Normal");
@@ -19176,7 +19231,9 @@ sub main()
                 SetField("m_ConflictSide", CONFLICT_SIDE_NEUTRAL);
                 SetField("m_ConsiderGroup", "1");
                 SetField("m_CrippleBonesEnable", "0");
-                SetField("m_CustomDataPreset", "npc");
+                SetField("m_KnowledgeBasePreset", "shooter");
+                SetField("m_MainGoalRulesPreset", "shooter");
+                SetField("m_KnowledgeBasePreset", "shooter");
                 SetField("m_DialogCharacterType", "1");
                 SetField("m_DialogSpeakerName", "slums_fishermen_guard_08");
                 SetField("m_FaceMimicPreset", "Normal");
@@ -19689,7 +19746,9 @@ sub main()
                 SetField("m_ConflictSide", CONFLICT_SIDE_NEUTRAL);
                 SetField("m_ConsiderGroup", "1");
                 SetField("m_CrippleBonesEnable", "0");
-                SetField("m_CustomDataPreset", "npc");
+                SetField("m_KnowledgeBasePreset", "shooter");
+                SetField("m_MainGoalRulesPreset", "shooter");
+                SetField("m_KnowledgeBasePreset", "shooter");
                 SetField("m_DialogCharacterType", "1");
                 SetField("m_DialogSpeakerName", "slums_morgan_guard_1_light");
                 SetField("m_FaceMimicPreset", "Normal");
@@ -19716,7 +19775,9 @@ sub main()
                 SetField("m_ConflictSide", CONFLICT_SIDE_NEUTRAL);
                 SetField("m_ConsiderGroup", "1");
                 SetField("m_CrippleBonesEnable", "0");
-                SetField("m_CustomDataPreset", "npc");
+                SetField("m_KnowledgeBasePreset", "shooter");
+                SetField("m_MainGoalRulesPreset", "shooter");
+                SetField("m_KnowledgeBasePreset", "shooter");
                 SetField("m_DialogCharacterType", "1");
                 SetField("m_DialogSpeakerName", "slums_morgan_guard_2_light");
                 SetField("m_FaceMimicPreset", "Normal");
@@ -19743,7 +19804,9 @@ sub main()
                 SetField("m_ConflictSide", CONFLICT_SIDE_NEUTRAL);
                 SetField("m_ConsiderGroup", "1");
                 SetField("m_CrippleBonesEnable", "0");
-                SetField("m_CustomDataPreset", "npc");
+                SetField("m_KnowledgeBasePreset", "shooter");
+                SetField("m_MainGoalRulesPreset", "shooter");
+                SetField("m_KnowledgeBasePreset", "shooter");
                 SetField("m_DialogCharacterType", "1");
                 SetField("m_DialogSpeakerName", "slums_morgan_guard_3_light");
                 SetField("m_FaceMimicPreset", "Normal");
@@ -20091,7 +20154,7 @@ sub main()
                 SetField("m_ForcedBodyScaleMin", "1.0");
                 SetField("m_Gender", "0");
                 SetField("m_Immortal", "1");
-                SetField("m_InvisibleToEnemies", "1");
+                SetField("m_InvisibleToEnemies", "0");
                 SetField("m_IsRaisMan", "1");
                 SetField("m_IsVip", "0");
                 SetField("m_ModulesPreset", "shooter_flashlight");
@@ -20113,7 +20176,9 @@ sub main()
                 SetField("m_ConflictSide", CONFLICT_SIDE_NEUTRAL);
                 SetField("m_ConsiderGroup", "1");
                 SetField("m_CrippleBonesEnable", "0");
-                SetField("m_CustomDataPreset", "npc");
+                SetField("m_KnowledgeBasePreset", "shooter");
+                SetField("m_MainGoalRulesPreset", "shooter");
+                SetField("m_KnowledgeBasePreset", "shooter");
                 SetField("m_CustomLootType", "DeadBody_Human_Raisman");
                 SetField("m_DialogCharacterType", "1");
                 SetField("m_DialogSpeakerName", "slums_raiswarehouseguard02");
@@ -20141,7 +20206,9 @@ sub main()
                 SetField("m_ConflictSide", CONFLICT_SIDE_NEUTRAL);
                 SetField("m_ConsiderGroup", "1");
                 SetField("m_CrippleBonesEnable", "0");
-                SetField("m_CustomDataPreset", "npc");
+                SetField("m_KnowledgeBasePreset", "shooter");
+                SetField("m_MainGoalRulesPreset", "shooter");
+                SetField("m_KnowledgeBasePreset", "shooter");
                 SetField("m_CustomLootType", "DeadBody_Human_Raisman");
                 SetField("m_DialogCharacterType", "1");
                 SetField("m_DialogSpeakerName", "slums_raiswarehouseguard03");
@@ -20587,7 +20654,9 @@ sub main()
                 SetField("m_ConflictSide", CONFLICT_SIDE_NEUTRAL);
                 SetField("m_ConsiderGroup", "1");
                 SetField("m_CrippleBonesEnable", "0");
-                SetField("m_CustomDataPreset", "npc");
+                SetField("m_KnowledgeBasePreset", "shooter");
+                SetField("m_MainGoalRulesPreset", "shooter");
+                SetField("m_KnowledgeBasePreset", "shooter");
                 SetField("m_DialogCharacterType", "1");
                 SetField("m_DialogSpeakerName", "slums_thetower_guard_19th_03");
                 SetField("m_FaceMimicPreset", "Normal");
@@ -20612,7 +20681,9 @@ sub main()
                 SetField("m_ConflictSide", CONFLICT_SIDE_NEUTRAL);
                 SetField("m_ConsiderGroup", "1");
                 SetField("m_CrippleBonesEnable", "0");
-                SetField("m_CustomDataPreset", "npc");
+                SetField("m_KnowledgeBasePreset", "shooter");
+                SetField("m_MainGoalRulesPreset", "shooter");
+                SetField("m_KnowledgeBasePreset", "shooter");
                 SetField("m_DialogCharacterType", "1");
                 SetField("m_DialogSpeakerName", "slums_thetower_guard_19th_04");
                 SetField("m_FaceMimicPreset", "Normal");
@@ -20637,7 +20708,9 @@ sub main()
                 SetField("m_ConflictSide", CONFLICT_SIDE_NEUTRAL);
                 SetField("m_ConsiderGroup", "1");
                 SetField("m_CrippleBonesEnable", "0");
-                SetField("m_CustomDataPreset", "npc");
+                SetField("m_KnowledgeBasePreset", "shooter");
+                SetField("m_MainGoalRulesPreset", "shooter");
+                SetField("m_KnowledgeBasePreset", "shooter");
                 SetField("m_DialogCharacterType", "1");
                 SetField("m_DialogSpeakerName", "slums_thetower_guard_ground_01");
                 SetField("m_FaceMimicPreset", "Normal");
@@ -20662,7 +20735,9 @@ sub main()
                 SetField("m_ConflictSide", CONFLICT_SIDE_NEUTRAL);
                 SetField("m_ConsiderGroup", "1");
                 SetField("m_CrippleBonesEnable", "0");
-                SetField("m_CustomDataPreset", "npc");
+                SetField("m_KnowledgeBasePreset", "shooter");
+                SetField("m_MainGoalRulesPreset", "shooter");
+                SetField("m_KnowledgeBasePreset", "shooter");
                 SetField("m_DialogCharacterType", "1");
                 SetField("m_DialogSpeakerName", "slums_thetower_guard_ground_02");
                 SetField("m_FaceMimicPreset", "Normal");
@@ -20687,7 +20762,9 @@ sub main()
                 SetField("m_ConflictSide", CONFLICT_SIDE_NEUTRAL);
                 SetField("m_ConsiderGroup", "1");
                 SetField("m_CrippleBonesEnable", "0");
-                SetField("m_CustomDataPreset", "npc");
+                SetField("m_KnowledgeBasePreset", "shooter");
+                SetField("m_MainGoalRulesPreset", "shooter");
+                SetField("m_KnowledgeBasePreset", "shooter");
                 SetField("m_DialogCharacterType", "1");
                 SetField("m_DialogSpeakerName", "slums_thetower_guard_ground_03");
                 SetField("m_FaceMimicPreset", "Normal");
@@ -22012,7 +22089,7 @@ sub main()
                 SetField("m_ForcedBodyScaleMin", "1.0");
                 SetField("m_Gender", "0");
                 SetField("m_Immortal", "1");
-                SetField("m_InvisibleToEnemies", "1");
+                SetField("m_InvisibleToEnemies", "0");
                 SetField("m_IsVip", "0");
                 SetField("m_MustHaveTags", "");
                 SetField("m_MustNotHaveTags", "");
@@ -22701,7 +22778,7 @@ sub main()
                 SetField("m_ForcedBodyScaleMin", "1.0");
                 SetField("m_Gender", "0");
                 SetField("m_Immortal", "0");
-                SetField("m_InvisibleToEnemies", "1");
+                SetField("m_InvisibleToEnemies", "0");
                 SetField("m_IsVip", "0");
                 SetField("m_MustHaveTags", "");
                 SetField("m_MustNotHaveTags", "AI_HeadCover");
@@ -22858,7 +22935,9 @@ sub main()
                 SetField("m_ConflictSide", CONFLICT_SIDE_NEUTRAL);
                 SetField("m_ConsiderGroup", "1");
                 SetField("m_CrippleBonesEnable", "0");
-                SetField("m_CustomDataPreset", "npc");
+                SetField("m_KnowledgeBasePreset", "shooter");
+                SetField("m_MainGoalRulesPreset", "shooter");
+                SetField("m_KnowledgeBasePreset", "shooter");
                 SetField("m_DialogCharacterType", "1");
                 SetField("m_DialogSpeakerName", "thetower_guard01");
                 SetField("m_FaceMimicPreset", "normal");
@@ -22883,7 +22962,9 @@ sub main()
                 SetField("m_ConflictSide", CONFLICT_SIDE_NEUTRAL);
                 SetField("m_ConsiderGroup", "1");
                 SetField("m_CrippleBonesEnable", "0");
-                SetField("m_CustomDataPreset", "npc");
+                SetField("m_KnowledgeBasePreset", "shooter");
+                SetField("m_MainGoalRulesPreset", "shooter");
+                SetField("m_KnowledgeBasePreset", "shooter");
                 SetField("m_DialogCharacterType", "1");
                 SetField("m_DialogSpeakerName", "thetower_guard02");
                 SetField("m_FaceMimicPreset", "normal");
@@ -22908,7 +22989,9 @@ sub main()
                 SetField("m_ConflictSide", CONFLICT_SIDE_NEUTRAL);
                 SetField("m_ConsiderGroup", "1");
                 SetField("m_CrippleBonesEnable", "0");
-                SetField("m_CustomDataPreset", "npc");
+                SetField("m_KnowledgeBasePreset", "shooter");
+                SetField("m_MainGoalRulesPreset", "shooter");
+                SetField("m_KnowledgeBasePreset", "shooter");
                 SetField("m_DialogCharacterType", "1");
                 SetField("m_DialogSpeakerName", "thetower_guard03");
                 SetField("m_FaceMimicPreset", "normal");
@@ -22933,7 +23016,9 @@ sub main()
                 SetField("m_ConflictSide", CONFLICT_SIDE_NEUTRAL);
                 SetField("m_ConsiderGroup", "1");
                 SetField("m_CrippleBonesEnable", "0");
-                SetField("m_CustomDataPreset", "npc");
+                SetField("m_KnowledgeBasePreset", "shooter");
+                SetField("m_MainGoalRulesPreset", "shooter");
+                SetField("m_KnowledgeBasePreset", "shooter");
                 SetField("m_DialogCharacterType", "1");
                 SetField("m_DialogSpeakerName", "thetower_guard04");
                 SetField("m_FaceMimicPreset", "normal");
@@ -22957,7 +23042,9 @@ sub main()
                 SetField("m_ConflictSide", CONFLICT_SIDE_NEUTRAL);
                 SetField("m_ConsiderGroup", "1");
                 SetField("m_CrippleBonesEnable", "0");
-                SetField("m_CustomDataPreset", "npc");
+                SetField("m_KnowledgeBasePreset", "shooter");
+                SetField("m_MainGoalRulesPreset", "shooter");
+                SetField("m_KnowledgeBasePreset", "shooter");
                 SetField("m_DialogCharacterType", "1");
                 SetField("m_DialogSpeakerName", "thetower_guard05");
                 SetField("m_FaceMimicPreset", "normal");
@@ -22981,7 +23068,9 @@ sub main()
                 SetField("m_ConflictSide", CONFLICT_SIDE_NEUTRAL);
                 SetField("m_ConsiderGroup", "1");
                 SetField("m_CrippleBonesEnable", "0");
-                SetField("m_CustomDataPreset", "npc");
+                SetField("m_KnowledgeBasePreset", "shooter");
+                SetField("m_MainGoalRulesPreset", "shooter");
+                SetField("m_KnowledgeBasePreset", "shooter");
                 SetField("m_DialogCharacterType", "1");
                 SetField("m_DialogSpeakerName", "thetower_guard06");
                 SetField("m_FaceMimicPreset", "normal");
@@ -25188,7 +25277,7 @@ sub main()
                 SetField("m_ForcedBodyScaleMin", "1.0");
                 SetField("m_Gender", "0");
                 SetField("m_Immortal", "1");
-                SetField("m_InvisibleToEnemies", "1");
+                SetField("m_InvisibleToEnemies", "0");
                 SetField("m_IsVip", "0");
                 SetField("m_MustHaveTags", "");
                 SetField("m_MustNotHaveTags", "");
@@ -25282,7 +25371,8 @@ sub main()
                 SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_PLAYER);
                 SetField("m_ConsiderGroup", "1");
                 SetField("m_CrippleBonesEnable", "1");
-                SetField("m_CustomDataPreset", "shooter");
+                SetField("m_KnowledgeBasePreset", "shooter");
+                SetField("m_MainGoalRulesPreset", "shooter");
                 SetField("m_CustomLootType", "DeadBody_Human_Firearm");
                 SetField("m_CutOffBonesEnable", "1");
                 SetField("m_DialogCharacterType", "4");
@@ -25296,8 +25386,6 @@ sub main()
                 SetField("m_InvisibleToEnemies", "0");
                 SetField("m_IsRaisMan", "1");
                 SetField("m_IsVip", "0");
-                SetField("m_KnowledgeBasePreset", "shooter");
-                SetField("m_MainGoalRulesPreset", "shooter");
                 SetField("m_MaxLevelDiff", "2");
                 SetField("m_MinLevelDiff", "1");
                 SetField("m_ModulesPreset", "1");
@@ -25319,7 +25407,8 @@ sub main()
                 SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_PLAYER);
                 SetField("m_ConsiderGroup", "1");
                 SetField("m_CrippleBonesEnable", "1");
-                SetField("m_CustomDataPreset", "shooter");
+                SetField("m_KnowledgeBasePreset", "shooter");
+                SetField("m_MainGoalRulesPreset", "shooter");
                 SetField("m_CustomLootType", "DeadBody_Human_Firearm");
                 SetField("m_CutOffBonesEnable", "1");
                 SetField("m_DialogCharacterType", "4");
@@ -25578,7 +25667,8 @@ sub main()
                 SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_PLAYER);
                 SetField("m_ConsiderGroup", "1");
                 SetField("m_CrippleBonesEnable", "1");
-                SetField("m_CustomDataPreset", "shooter");
+                SetField("m_KnowledgeBasePreset", "shooter");
+                SetField("m_MainGoalRulesPreset", "shooter");
                 SetField("m_CustomLootType", "DeadBody_Human_Firearm");
                 SetField("m_CutOffBonesEnable", "1");
                 SetField("m_DialogCharacterType", "4");
@@ -25592,8 +25682,6 @@ sub main()
                 SetField("m_InvisibleToEnemies", "0");
                 SetField("m_IsRaisMan", "1");
                 SetField("m_IsVip", "0");
-                SetField("m_KnowledgeBasePreset", "shooter");
-                SetField("m_MainGoalRulesPreset", "shooter");
                 SetField("m_MaxLevelDiff", "2");
                 SetField("m_MinLevelDiff", "0");
                 SetField("m_ModulesPreset", "1");
@@ -25652,7 +25740,8 @@ sub main()
                 SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_PLAYER);
                 SetField("m_ConsiderGroup", "1");
                 SetField("m_CrippleBonesEnable", "1");
-                SetField("m_CustomDataPreset", "shooter");
+                SetField("m_KnowledgeBasePreset", "shooter");
+                SetField("m_MainGoalRulesPreset", "shooter");
                 SetField("m_CustomLootType", "DeadBody_Human_Firearm");
                 SetField("m_CutOffBonesEnable", "1");
                 SetField("m_DialogCharacterType", "4");
@@ -25666,8 +25755,6 @@ sub main()
                 SetField("m_InvisibleToEnemies", "0");
                 SetField("m_IsRaisMan", "1");
                 SetField("m_IsVip", "0");
-                SetField("m_KnowledgeBasePreset", "shooter");
-                SetField("m_MainGoalRulesPreset", "shooter");
                 SetField("m_MaxLevelDiff", "2");
                 SetField("m_MinLevelDiff", "0");
                 SetField("m_ModulesPreset", "1");
@@ -26056,7 +26143,8 @@ sub main()
                 SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_PLAYER);
                 SetField("m_ConsiderGroup", "1");
                 SetField("m_CrippleBonesEnable", "1");
-                SetField("m_CustomDataPreset", "shooter");
+                SetField("m_KnowledgeBasePreset", "shooter");
+                SetField("m_MainGoalRulesPreset", "shooter");
                 SetField("m_CustomLootType", "DeadBody_Human_Firearm");
                 SetField("m_CutOffBonesEnable", "1");
                 SetField("m_DialogCharacterType", "4");
@@ -26208,7 +26296,8 @@ sub main()
                 SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_PLAYER);
                 SetField("m_ConsiderGroup", "1");
                 SetField("m_CrippleBonesEnable", "1");
-                SetField("m_CustomDataPreset", "shooter");
+                SetField("m_KnowledgeBasePreset", "shooter");
+                SetField("m_MainGoalRulesPreset", "shooter");
                 SetField("m_CustomLootType", "DeadBody_Human_Firearm");
                 SetField("m_CutOffBonesEnable", "1");
                 SetField("m_DialogCharacterType", "4");
@@ -26316,7 +26405,8 @@ sub main()
                 SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_PLAYER);
                 SetField("m_ConsiderGroup", "1");
                 SetField("m_CrippleBonesEnable", "1");
-                SetField("m_CustomDataPreset", "shooter");
+                SetField("m_KnowledgeBasePreset", "shooter");
+                SetField("m_MainGoalRulesPreset", "shooter");
                 SetField("m_CustomLootType", "DeadBody_Human_Firearm");
                 SetField("m_CutOffBonesEnable", "1");
                 SetField("m_DialogCharacterType", "4");
@@ -27537,7 +27627,7 @@ sub main()
                 SetField("m_ForcedBodyScaleMin", "1.0");
                 SetField("m_Gender", "0");
                 SetField("m_Immortal", "1");
-                SetField("m_InvisibleToEnemies", "1");
+                SetField("m_InvisibleToEnemies", "0");
                 SetField("m_IsVip", "0");
                 SetField("m_MainGoalRulesPreset", "enc_npc");
                 SetField("m_MustHaveTags", "");
@@ -27654,7 +27744,9 @@ sub main()
                 SetField("m_ConflictSide", CONFLICT_SIDE_NEUTRAL);
                 SetField("m_ConsiderGroup", "1");
                 SetField("m_CrippleBonesEnable", "0");
-                SetField("m_CustomDataPreset", "npc");
+                SetField("m_CustomDataPreset", "shooter_vest");
+                SetField("m_KnowledgeBasePreset", "shooter");
+                SetField("m_MainGoalRulesPreset", "shooter");
                 SetField("m_CustomLootType", "DeadBody_Human_Raisman");
                 SetField("m_DialogCharacterType", "1");
                 SetField("m_DialogSpeakerName", "ugc_raiswarehouseguard01");
