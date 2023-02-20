@@ -12080,37 +12080,6 @@ sub main()
                 SetField("m_VisRepresentationsPool", "Biter_Man");
         }
 		
-		Preset("DayWalker_Man")
-        {
-                SetField("m_CanBeInHumanity", "0");
-                SetField("m_CanEscape", "0");
-                SetField("m_CanUseAttractors", "0");
-                SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_ALL);
-                SetField("m_CrippleBonesEnable", "1");
-                SetField("m_CustomDataPreset", "daywalker");
-                SetField("m_CutOffBonesEnable", "1");
-                SetField("m_ForcedBodyScaleMax", "1.15");
-                SetField("m_ForcedBodyScaleMin", "1.0");
-                SetField("m_ForcedTargetType", "0");
-                SetField("m_Gender", "0");
-                SetField("m_GrabEnabled", "0");
-                SetField("m_HarvestingLootType", "Harvesting_Biter_Body");
-                SetField("m_IsHarvestable", "1");
-                SetField("m_IsNightCreature", "0");
-                SetField("m_KnowledgeBasePreset", "day_walker");
-                SetField("m_MaxLevelDiff", "1");
-                SetField("m_MinLevelDiff", "-5");
-                SetField("m_ModulesPreset", "day_walker");
-                SetField("m_NeverHolsterWeapon", "1");
-                SetField("m_PrimaryWeaponProbability", "0.0");
-                SetField("m_Seed", "0");
-                SetField("m_ShowFlies", "0");
-                SetField("m_SoundPreset", "NightWalkerMan");
-                SetField("m_StepPreset", "Default_Zombie");
-                SetField("m_Type", "3");
-                SetField("m_VisRepresentationsPool", "Biter_Man");
-        }
-		
 		Preset("NightWalker_Man_L4D")
         {
                 SetField("m_CanBeInHumanity", "0");
@@ -28167,6 +28136,178 @@ sub main()
                 SetField("m_StepPreset", "Default_Zombie");
                 SetField("m_Type", "3");
                 SetField("m_VisRepresentationsPool", "Biter_Woman");
+        }
+		
+		Preset("Biter_Man_Injured_01")
+        {
+                SetField("m_BurnOnStart", "0");
+                SetField("m_CanBeLimitedAttacker", "1");
+				SetField("m_CanBeBackstabbed", "1");
+                SetField("m_CanUseAttractors", "1");
+				SetField("m_CanFall", "1");
+                SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_ALL);
+                SetField("m_CrippleBonesEnable", "1");
+                SetField("m_CustomDataPreset", "anim_set_a;anim_set_b;anim_set_c");
+                SetField("m_CutOffBonesEnable", "1");
+                SetField("m_ForceStinger", "0");
+                SetField("m_ForcedBodyScaleMax", "1.15");
+                SetField("m_ForcedBodyScaleMin", "1.05");
+                SetField("m_Gender", "0");
+                SetField("m_GrabEnabled", "1");
+                SetField("m_HarvestingLootType", "Harvesting_Biter_Body");
+                SetField("m_IsHarvestable", "1");
+                SetField("m_MinLevelDiff", "-5");
+				SetField("m_MaxLevelDiff", "2");
+                SetField("m_ModulesPreset", "1");
+                SetField("m_NeverHolsterWeapon", "1");
+                SetField("m_PoisonedOnStart", "0");
+                SetField("m_PrimaryWeaponProbability", "0.5");
+                SetField("m_Seed", "0");
+                SetField("m_ShowFlies", "1");
+                SetField("m_SoundPreset", "ZombieSlowMan00;ZombieSlowMan01");
+                SetField("m_StepPreset", "Default_Zombie");
+                SetField("m_TransformIntoPreset", "NightWalker_Man");
+                SetField("m_Type", "1");
+                SetField("MeshName", "survivor_a.msh");
+                SetField("SkinName", "npc_Maalik_injured");
+        }
+		
+		Preset("Biter_Man_Injured_02")
+        {
+                SetField("m_BurnOnStart", "0");
+                SetField("m_CanBeLimitedAttacker", "1");
+				SetField("m_CanBeBackstabbed", "1");
+                SetField("m_CanUseAttractors", "1");
+				SetField("m_CanFall", "1");
+                SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_ALL);
+                SetField("m_CrippleBonesEnable", "1");
+                SetField("m_CustomDataPreset", "anim_set_a;anim_set_b;anim_set_c");
+                SetField("m_CutOffBonesEnable", "1");
+                SetField("m_ForceStinger", "0");
+                SetField("m_ForcedBodyScaleMax", "1.15");
+                SetField("m_ForcedBodyScaleMin", "1.05");
+                SetField("m_Gender", "0");
+                SetField("m_GrabEnabled", "1");
+                SetField("m_HarvestingLootType", "Harvesting_Biter_Body");
+                SetField("m_IsHarvestable", "1");
+                SetField("m_MinLevelDiff", "-5");
+				SetField("m_MaxLevelDiff", "2");
+                SetField("m_ModulesPreset", "1");
+                SetField("m_NeverHolsterWeapon", "1");
+                SetField("m_PoisonedOnStart", "0");
+                SetField("m_PrimaryWeaponProbability", "0.5");
+                SetField("m_Seed", "0");
+                SetField("m_ShowFlies", "1");
+                SetField("m_SoundPreset", "ZombieSlowMan00;ZombieSlowMan01");
+                SetField("m_StepPreset", "Default_Zombie");
+                SetField("m_TransformIntoPreset", "NightWalker_Man");
+                SetField("m_Type", "1");
+                SetField("MeshName", "survivor_a.msh");
+                SetField("SkinName", "npc_injured_a");
+        }
+		
+		Preset("Biter_Man_Injured_03")
+        {
+                SetField("m_BurnOnStart", "0");
+                SetField("m_CanBeLimitedAttacker", "1");
+				SetField("m_CanBeBackstabbed", "1");
+                SetField("m_CanUseAttractors", "1");
+				SetField("m_CanFall", "1");
+                SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_ALL);
+                SetField("m_CrippleBonesEnable", "1");
+                SetField("m_CustomDataPreset", "anim_set_a;anim_set_b;anim_set_c");
+                SetField("m_CutOffBonesEnable", "1");
+                SetField("m_ForceStinger", "0");
+                SetField("m_ForcedBodyScaleMax", "1.15");
+                SetField("m_ForcedBodyScaleMin", "1.05");
+                SetField("m_Gender", "0");
+                SetField("m_GrabEnabled", "1");
+                SetField("m_HarvestingLootType", "Harvesting_Biter_Body");
+                SetField("m_IsHarvestable", "1");
+                SetField("m_MinLevelDiff", "-5");
+				SetField("m_MaxLevelDiff", "2");
+                SetField("m_ModulesPreset", "1");
+                SetField("m_NeverHolsterWeapon", "1");
+                SetField("m_PoisonedOnStart", "0");
+                SetField("m_PrimaryWeaponProbability", "0.5");
+                SetField("m_Seed", "0");
+                SetField("m_ShowFlies", "1");
+                SetField("m_SoundPreset", "ZombieSlowMan00;ZombieSlowMan01");
+                SetField("m_StepPreset", "Default_Zombie");
+                SetField("m_TransformIntoPreset", "NightWalker_Man");
+                SetField("m_Type", "1");
+                SetField("MeshName", "survivor_a.msh");
+                SetField("SkinName", "npc_injured_b");
+        }
+		
+		Preset("Biter_Man_Injured_04")
+        {
+                SetField("m_BurnOnStart", "0");
+                SetField("m_CanBeLimitedAttacker", "1");
+				SetField("m_CanBeBackstabbed", "1");
+                SetField("m_CanUseAttractors", "1");
+				SetField("m_CanFall", "1");
+                SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_ALL);
+                SetField("m_CrippleBonesEnable", "1");
+                SetField("m_CustomDataPreset", "anim_set_a;anim_set_b;anim_set_c");
+                SetField("m_CutOffBonesEnable", "1");
+                SetField("m_ForceStinger", "0");
+                SetField("m_ForcedBodyScaleMax", "1.15");
+                SetField("m_ForcedBodyScaleMin", "1.05");
+                SetField("m_Gender", "0");
+                SetField("m_GrabEnabled", "1");
+                SetField("m_HarvestingLootType", "Harvesting_Biter_Body");
+                SetField("m_IsHarvestable", "1");
+                SetField("m_MinLevelDiff", "-5");
+				SetField("m_MaxLevelDiff", "2");
+                SetField("m_ModulesPreset", "1");
+                SetField("m_NeverHolsterWeapon", "1");
+                SetField("m_PoisonedOnStart", "0");
+                SetField("m_PrimaryWeaponProbability", "0.5");
+                SetField("m_Seed", "0");
+                SetField("m_ShowFlies", "1");
+                SetField("m_SoundPreset", "ZombieSlowMan00;ZombieSlowMan01");
+                SetField("m_StepPreset", "Default_Zombie");
+                SetField("m_TransformIntoPreset", "NightWalker_Man");
+                SetField("m_Type", "1");
+                SetField("MeshName", "survivor_a.msh");
+                SetField("SkinName", "npc_injured_c");
+        }
+		
+		Preset("Biter_Woman_Injured_01")
+        {
+                SetField("m_BurnOnStart", "0");
+                SetField("m_CanBeLimitedAttacker", "1");
+				SetField("m_CanBeBackstabbed", "1");
+                SetField("m_CanUseAttractors", "1");
+				SetField("m_CanFall", "1");
+                SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_ALL);
+                SetField("m_CrippleBonesEnable", "1");
+                SetField("m_CustomDataPreset", "woman_a;woman_b");
+                SetField("m_CutOffBonesEnable", "1");
+                SetField("m_ForceStinger", "0");
+                SetField("m_ForcedBodyScaleMax", "1.15");
+                SetField("m_ForcedBodyScaleMin", "1.05");
+                SetField("m_Gender", "1");
+                SetField("m_GrabEnabled", "1");
+                SetField("m_HarvestingLootType", "Harvesting_Biter_Body");
+                SetField("m_IsHarvestable", "1");
+                SetField("m_MinLevelDiff", "-5");
+				SetField("m_MaxLevelDiff", "2");
+                SetField("m_ModulesPreset", "1");
+                SetField("m_NeverHolsterWeapon", "1");
+                SetField("m_PoisonedOnStart", "0");
+                SetField("m_PrimaryWeaponProbability", "0.5");
+                SetField("m_Seed", "0");
+                SetField("m_ShowFlies", "1");
+                SetField("m_SoundPreset", "ZombieSlowWoman00;ZombieSlowWoman01");
+                SetField("m_StepPreset", "Default_Zombie");
+                SetField("m_TransformIntoPreset", "NightWalker_Woman");
+                SetField("m_Type", "1");
+                SetField("m_UseBaseDataSet", "0");
+                SetField("m_UseRandomDataSet", "1");
+                SetField("MeshName", "survivor_woman_a.msh");
+                SetField("SkinName", "Default");
         }
     }
 }

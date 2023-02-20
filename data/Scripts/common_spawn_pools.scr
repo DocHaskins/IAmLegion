@@ -31,20 +31,18 @@
         DisallowedMaps("old_town_outposts_radio;Sewers_Stadium")
         //MinProgressCondition(2)
         Type("base")
-        Preset("Stinger, 5;Vessel_Eating_Corpse, 5;Vessel_Lurker_Int, 5;Vessel_Stinger_Int, 5;Vessel_In_Attractor, 5;Vessel_Init, 25;Vessel_WithAToy, 5;Nurker, 10;DeadZone_Policeman, 15;Biter_Special, 15;Human_To_Infected_In_Attractor, 10;")
+        Preset("Stinger, 5;IAL_Biter_New, 5;Vessel_Eating_Corpse, 5;Vessel_Lurker_Int, 5;Vessel_Stinger_Int, 5;Vessel_In_Attractor, 5;Vessel_Init, 25;Vessel_WithAToy, 5;Nurker, 10;DeadZone_Policeman, 15;Biter_Special, 15;Human_To_Infected_In_Attractor, 10;")
 	}
 
 	Pool("base_IAL")
     {
         UseCondition("Day")
-        BannedAreaAttribs("POOR_DISTRICT")
-        DisallowedMaps("old_town_outposts_radio;Sewers_Stadium")
         MinProgressCondition(2)
         Type("base_IAL")
         Preset("Stinger, 5;Vessel_Eating_Corpse, 5;Vessel_Lurker_Int, 5;Vessel_Stinger_Int, 5;Vessel_In_Attractor, 5;")
 		Preset("Volatile_Day_IAL, 15;")
 		Preset("Vessel_Init_IAL, 25;")
-		Preset("Day_Walker, 10;")
+		Preset("IAL_Human_New, 25;")
 		Preset("Armored, 20;")//20
         Preset("Suicider, 20;")//20
         Preset("Vessel_GasTank, 10;Nurker, 10;")//20
@@ -62,14 +60,13 @@
         DisallowedMaps("old_town_outposts_radio;old_town_outposts;old_town_outposts_museum;Sewers_Stadium")
         MaxProgressCondition(1)
         Type("peak;special")
-        Preset("Vessel_Init, 20;Vessel_Lurker, 5;Vessel_DeadBody, 5;")//35
+        Preset("IAL_Biter_New, 5;Vessel_Init, 20;Vessel_Lurker, 5;Vessel_DeadBody, 5;")//35
         Preset("Human_To_Infected_In_Attractor, 10")//10
     }
 	
 	Pool("special_IAL")
     {
         UseCondition("Day")
-        DisallowedMaps("old_town_outposts_radio;old_town_outposts;old_town_outposts_museum;Sewers_Stadium")
         MaxProgressCondition(1)
         Type("peak_IAL;special_IAL")
         Preset("Vessel_Init, 20;Vessel_Lurker, 5;Vessel_DeadBody, 5;")//35
@@ -229,10 +226,9 @@
     Pool("head_hunters")
     {
         UseCondition("Day")
-        AllowedMaps("Old_Town")
         BannedAreaAttribs("BLUE_DISTRICT")
         Type("head_hunters")
-        Preset("Melee_Fighter_With_Pipe, 2;Melee_Fighter_With_Pipe_Init, 1;")
+        Preset("IAL_Human_New, 5;Melee_Fighter_With_Pipe, 2;Melee_Fighter_With_Pipe_Init, 1;")
     }
 
     Pool("ot_poor_district_pool") // POOL used ONLY at POOR_DISTRICT
@@ -243,7 +239,7 @@
         Type("base;poor_district_type")
         Preset("Suicider, 15;")
         //Preset("Running_Bomber_Init, 5;")
-        Preset("Vessel_GasTank, 10;Vessel_Lurker_Int, 5;Vessel_Stinger_Int, 5")
+        Preset("IAL_Biter_New, 5;IAL_Human_New, 5;Vessel_GasTank, 10;Vessel_Lurker_Int, 5;Vessel_Stinger_Int, 5")
     }
     
     Pool("ot_suburbs_district_pool") // POOL used ONLY at SUBURBS_DISTRICT
@@ -253,7 +249,7 @@
         RequiredAreaAttribs("SUBURBS_DISTRICT")
         Type("peak;special;base;suburbs_district_type")
         Preset("Melee_Fighter_With_Pipe, 10;Melee_Fighter_With_Pipe_Init, 5;")
-        Preset("Human_To_Infected_In_Attractor, 15")
+        Preset("IAL_Human_New, 5;Human_To_Infected_In_Attractor, 15")
     }
 
     Pool("evening")
@@ -264,7 +260,7 @@
         MinChapterAndProgressCondition(0, 0)
         MaxChapterAndProgressCondition(15, 0)
         Type("peak;special;begin;noise;pause")
-        Preset("Stinger, 10;Vessel_Eating_Corpse, 20;Vessel_In_Attractor, 30;Vessel_Init, 30")
+        Preset("Stinger, 10;IAL_Biter_New, 5;IAL_Human_New, 5;Vessel_Eating_Corpse, 20;Vessel_In_Attractor, 30;Vessel_Init, 30")
     }
 
     Pool("noise_chapter_0")
@@ -282,7 +278,7 @@
         AllowedMaps("Slums;Old_Town")
         MinProgressCondition(1)
         Type("noise_lvl_1")
-        Preset("Infected_HumanScream_Noise, 1;Infected_HumanInit_Noise, 1")
+        Preset("IAL_Biter_New, 1;Infected_HumanScream_Noise, 1;Infected_HumanInit_Noise, 1")
     }
     
     Pool("infecteds_noise_interior")
@@ -296,7 +292,7 @@
     {
         AllowedMaps("Old_Town")
         Type("dead_zone")
-        Preset("DeadZone_Policeman, 5;DeadZone_GasTank, 5;")
+        Preset("DeadZone_Policeman, 5;DeadZone_GasTank, 5;IAL_Biter_New, 5;")
     }
 
 	Pool("infecteds_hard_mode")
@@ -307,7 +303,7 @@
         MinProgressCondition(1)
         Preset("Suicider, 20;")//20
         Preset("Vessel_GasTank, 10;Nurker, 10;")//20
-        Preset("Vessel_Init, 10;Vessel_WithAToy, 5;Biter_Special, 15;")//30
+        Preset("IAL_Biter_New, 5;Vessel_Init, 10;Vessel_WithAToy, 5;Biter_Special, 15;")//30
         Preset("Human_To_Infected_In_Attractor, 10")//10
 		Preset("Infected_HumanInit_Noise, 10")//10
         Preset("Goon, 20")//20

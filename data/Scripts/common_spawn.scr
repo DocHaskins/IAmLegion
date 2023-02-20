@@ -82,8 +82,6 @@ IntensityCurve("main_medium")
 IntensityCurve("main_hard")
 {
     UseCondition("Day;Escorted_NPC_Far")
-    DisallowedMaps("old_town_outposts_radio")
-    DisallowedMaps("slums_cs")
     MinChapterAndProgressCondition(5, 0)
     MaxChapterAndProgressCondition(13, 0)
     MinTimeBtwUses(200.)
