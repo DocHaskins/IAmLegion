@@ -94,10 +94,10 @@ export float IAL_TimeScale_Interior = 8640.0; //Vanilla settings: 8640.0
 //Multiplier applied by the difficulty setting for Day and Night
 export float IAL_TimeScale_Multiplier_Day_Easy = 1.25; //Default 1.25
 export float IAL_TimeScale_Multiplier_Night_Easy = 0.75; //Default 0.75
-export float IAL_TimeScale_Multiplier_Day_Normal = 0.0; //Default 0.0
-export float IAL_TimeScale_Multiplier_Night_Normal = 0.0; //Default 0.0
-export float IAL_TimeScale_Multiplier_Day_Hard = 0.0; //Default 0.0
-export float IAL_TimeScale_Multiplier_Night_Hard = 0.0; //Default 0.0
+export float IAL_TimeScale_Multiplier_Day_Normal = 1.0; //Default 0.0
+export float IAL_TimeScale_Multiplier_Night_Normal = 1.0; //Default 0.0
+export float IAL_TimeScale_Multiplier_Day_Hard = 1.0; //Default 0.0
+export float IAL_TimeScale_Multiplier_Night_Hard = 1.0; //Default 0.0
 export float IAL_TimeScale_Multiplier_Day_Nightmare = 0.89; //Default 0.89
 export float IAL_TimeScale_Multiplier_Night_Nightmare = 2.0; //Default 2.0
 
