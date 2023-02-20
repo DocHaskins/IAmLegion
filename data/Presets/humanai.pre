@@ -3642,18 +3642,25 @@ sub main()
 				SetField("m_AttachableItem4Name", "Attachable_Flashlight");
                 SetField("m_AttachableItem4Probability", "0.2");
 				SetField("m_BurnOnStart", "0");
+				SetField("m_BroadcastRange", "6.0");
+				AddField("m_CanLeaveSpawnPos", "1");
                 SetField("m_CanBeLimitedAttacker", "1");
 				SetField("m_CanBeBackstabbed", "1");
-                SetField("m_CanUseAttractors", "1");
+                SetField("m_CanReactOnCollisionWithPlayer", "1");
+				SetField("m_CanUseAttractors", "1");
+				SetField("m_CanUseMovementCollisions", "1");
+				SetField("m_CheckCanMoveIfTargetUnreachable", "1");
 				SetField("m_CanFall", "1");
                 SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_ALL);
                 SetField("m_CrippleBonesEnable", "1");
-                SetField("m_CustomDataPreset", "anim_set_a;anim_set_b;anim_set_c");
+                SetField("m_CustomDataPreset", "anim_set_a;anim_set_b;anim_set_c;anim_set_waste");
                 SetField("m_CutOffBonesEnable", "1");
                 SetField("m_ForceStinger", "0");
                 SetField("m_ForcedBodyScaleMax", "1.15");
                 SetField("m_ForcedBodyScaleMin", "1.05");
-                SetField("m_Gender", "0");
+                SetField("m_RunningNpc", "1");
+                SetField("m_ForcePursuitSprintBehaviour", "1");
+				SetField("m_Gender", "0");
                 SetField("m_GrabEnabled", "1");
                 SetField("m_HarvestingLootType", "Harvesting_Biter_Body");
                 SetField("m_IsHarvestable", "1");
@@ -3669,6 +3676,7 @@ sub main()
                 SetField("m_StepPreset", "Default_Zombie");
                 SetField("m_TransformIntoPreset", "Biter_Man_Agressive");
                 SetField("m_Type", "1");
+				SetField("m_UseRandomDataSet", "1");
                 SetField("m_VisRepresentationsPool", "Biter_Man");
         }
 
@@ -3683,16 +3691,23 @@ sub main()
 				SetField("m_AttachableItem4Name", "Attachable_Flashlight");
                 SetField("m_AttachableItem4Probability", "0.2");
 				SetField("m_BurnOnStart", "0");
+				SetField("m_BroadcastRange", "6.0");
+				AddField("m_CanLeaveSpawnPos", "1");
                 SetField("m_CanBeLimitedAttacker", "1");
-                SetField("m_CanUseAttractors", "1");
-                SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_ALL);
+                SetField("m_CanReactOnCollisionWithPlayer", "1");
+				SetField("m_CanUseAttractors", "1");
+                SetField("m_CheckCanMoveIfTargetUnreachable", "1");
+				SetField("m_CanUseMovementCollisions", "1");
+				SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_ALL);
                 SetField("m_CrippleBonesEnable", "1");
                 SetField("m_CustomDataPreset", "anim_set_waste");
                 SetField("m_CutOffBonesEnable", "1");
                 SetField("m_ForceStinger", "0");
                 SetField("m_ForcedBodyScaleMax", "1.15");
                 SetField("m_ForcedBodyScaleMin", "1.05");
-                SetField("m_Gender", "0");
+                SetField("m_RunningNpc", "1");
+                SetField("m_ForcePursuitSprintBehaviour", "1");
+				SetField("m_Gender", "0");
                 SetField("m_GrabEnabled", "1");
                 SetField("m_HarvestingLootType", "Harvesting_Biter_Body");
                 SetField("m_IsHarvestable", "1");
@@ -3722,15 +3737,21 @@ sub main()
 				SetField("m_AttachableItem4Name", "Attachable_Flashlight");
                 SetField("m_AttachableItem4Probability", "0.2");
 				SetField("m_BurnOnStart", "0");
+				SetField("m_BroadcastRange", "8.0");
+				AddField("m_CanLeaveSpawnPos", "1");
                 SetField("m_CanBeLimitedAttacker", "1");
                 SetField("m_CanUseAttractors", "1");
-                SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_ALL);
+				SetField("m_CanUseMovementCollisions", "1");
+                SetField("m_CheckCanMoveIfTargetUnreachable", "1");
+				SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_ALL);
                 SetField("m_CrippleBonesEnable", "1");
                 SetField("m_CustomDataPreset", "anim_set_a");
                 SetField("m_CutOffBonesEnable", "1");
                 SetField("m_ForceStinger", "0");
                 SetField("m_ForcedBodyScaleMax", "1.15");
                 SetField("m_ForcedBodyScaleMin", "1.05");
+				SetField("m_RunningNpc", "1");
+                SetField("m_ForcePursuitSprintBehaviour", "1");
                 SetField("m_Gender", "0");
                 SetField("m_GrabEnabled", "1");
                 SetField("m_HarvestingLootType", "Harvesting_Biter_Body");
@@ -4079,9 +4100,14 @@ sub main()
 				SetField("m_AttachableItem2Name", "Attachable_Flashlight");
                 SetField("m_AttachableItem2Probability", "0.2");
 				SetField("m_BurnOnStart", "0");
+				SetField("m_BroadcastRange", "6.0");
+				AddField("m_CanLeaveSpawnPos", "1");
                 SetField("m_CanBeLimitedAttacker", "1");
 				SetField("m_CanBeBackstabbed", "1");
-                SetField("m_CanUseAttractors", "1");
+                SetField("m_CanReactOnCollisionWithPlayer", "1");
+				SetField("m_CanUseAttractors", "1");
+				SetField("m_CanUseMovementCollisions", "1");
+				SetField("m_CheckCanMoveIfTargetUnreachable", "1");
 				SetField("m_CanFall", "1");
                 SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_ALL);
                 SetField("m_CrippleBonesEnable", "1");
@@ -4090,7 +4116,9 @@ sub main()
                 SetField("m_ForceStinger", "0");
                 SetField("m_ForcedBodyScaleMax", "1.15");
                 SetField("m_ForcedBodyScaleMin", "1.05");
-                SetField("m_Gender", "1");
+                SetField("m_RunningNpc", "1");
+                SetField("m_ForcePursuitSprintBehaviour", "1");
+				SetField("m_Gender", "1");
                 SetField("m_GrabEnabled", "1");
                 SetField("m_HarvestingLootType", "Harvesting_Biter_Body");
                 SetField("m_IsHarvestable", "1");
@@ -4118,16 +4146,23 @@ sub main()
 				SetField("m_AttachableItem2Name", "Attachable_Flashlight");
                 SetField("m_AttachableItem2Probability", "0.2");
 				SetField("m_BurnOnStart", "0");
+				SetField("m_BroadcastRange", "6.0");
+				AddField("m_CanLeaveSpawnPos", "1");
                 SetField("m_CanBeLimitedAttacker", "1");
                 SetField("m_CanUseAttractors", "1");
-                SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_ALL);
+				SetField("m_CanReactOnCollisionWithPlayer", "1");
+				SetField("m_CanUseMovementCollisions", "1");
+                SetField("m_CheckCanMoveIfTargetUnreachable", "1");
+				SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_ALL);
                 SetField("m_CrippleBonesEnable", "1");
                 SetField("m_CustomDataPreset", "anim_set_waste");
                 SetField("m_CutOffBonesEnable", "1");
                 SetField("m_ForceStinger", "0");
                 SetField("m_ForcedBodyScaleMax", "1.15");
                 SetField("m_ForcedBodyScaleMin", "1.05");
-                SetField("m_Gender", "1");
+				SetField("m_RunningNpc", "1");
+                SetField("m_ForcePursuitSprintBehaviour", "1");
+				SetField("m_Gender", "1");
                 SetField("m_GrabEnabled", "1");
                 SetField("m_HarvestingLootType", "Harvesting_Biter_Body");
                 SetField("m_IsHarvestable", "1");
@@ -4154,6 +4189,8 @@ sub main()
                 SetField("m_AttachableItem1Probability", "0.4");
 				SetField("m_AttachableItem2Name", "Attachable_Flashlight");
                 SetField("m_AttachableItem2Probability", "0.2");
+				SetField("m_BroadcastRange", "6.0");
+				AddField("m_CanLeaveSpawnPos", "1");
 				SetField("m_CanBeInHumanity", "0");
                 SetField("m_CanUseAttractors", "1");
                 SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_ALL);
@@ -4163,6 +4200,8 @@ sub main()
                 SetField("m_ForcedBodyScaleMax", "1.15");
                 SetField("m_ForcedBodyScaleMin", "1.05");
                 SetField("m_ForcedTargetType", "-1");
+				SetField("m_RunningNpc", "1");
+                SetField("m_ForcePursuitSprintBehaviour", "1");
                 SetField("m_Gender", "1");
                 SetField("m_GrabEnabled", "1");
                 SetField("m_HarvestingLevelRequired", "1");
@@ -4189,6 +4228,7 @@ sub main()
 				SetField("m_AttachableItem2Name", "Attachable_Flashlight");
                 SetField("m_AttachableItem2Probability", "0.2");
 				SetField("m_BurnOnStart", "0");
+				SetField("m_BroadcastRange", "6.0");
                 SetField("m_CanBeLimitedAttacker", "1");
                 SetField("m_CanUseAttractors", "1");
                 SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_ALL);
@@ -4198,6 +4238,8 @@ sub main()
                 SetField("m_ForceStinger", "0");
                 SetField("m_ForcedBodyScaleMax", "1.15");
                 SetField("m_ForcedBodyScaleMin", "1.05");
+				SetField("m_RunningNpc", "1");
+                SetField("m_ForcePursuitSprintBehaviour", "1");
                 SetField("m_Gender", "1");
                 SetField("m_GrabEnabled", "1");
                 SetField("m_HarvestingLootType", "Harvesting_Biter_Body");
@@ -28592,36 +28634,6 @@ sub main()
                 SetField("m_TransformIntoPreset", "Biter_Man_Agressive;DiffLevel;Viral_m_lvl4");
                 SetField("m_Type", "1");
                 SetField("m_VisRepresentationsPool", "Viral_Man");
-        }
-		
-		Preset("Biter_Woman_Agressive")
-        {
-                SetField("m_CanBeInHumanity", "0");
-                SetField("m_CanUseAttractors", "1");
-                SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_ALL);
-                SetField("m_CrippleBonesEnable", "1");
-                SetField("m_CustomDataPreset", "viral_group");
-                SetField("m_CutOffBonesEnable", "1");
-                SetField("m_ForcedBodyScaleMax", "1.15");
-                SetField("m_ForcedBodyScaleMin", "1.05");
-                SetField("m_ForcedTargetType", "-1");
-                SetField("m_Gender", "1");
-                SetField("m_GrabEnabled", "1");
-                SetField("m_HarvestingLevelRequired", "1");
-                SetField("m_HarvestingLootType", "Harvesting_Viral_Body");
-                SetField("m_IsHarvestable", "1");
-                SetField("m_KnowledgeBasePreset", "night_walker");
-                SetField("m_MaxLevelDiff", "5");
-                SetField("m_MinLevelDiff", "3");
-                SetField("m_ModulesPreset", "night_walker");
-                SetField("m_NeverHolsterWeapon", "1");
-                SetField("m_PrimaryWeaponProbability", "0.5");
-                SetField("m_Seed", "0");
-                SetField("m_ShowFlies", "0");
-                SetField("m_SoundPreset", "ZombieInfectedFemale00");
-                SetField("m_StepPreset", "Default_Zombie");
-                SetField("m_Type", "3");
-                SetField("m_VisRepresentationsPool", "Viral_Woman");
         }
 		
 		Preset("Biter_Woman_FreshDead_02")
