@@ -1,40 +1,35 @@
 !include("ai_method.def")
 
-// pass away
+//die
 Method(Die)
 
 // attack
-Method(GrabEntry)
 Method(WaitForStingerAttack)
 Method(StingerAttack)
 Method(CarAttack)
-Method(ZombieStrikeFromStand)
 Method(FakeMeleeAttack)
-Method(GrabFromStandAttack)
 Method(Taunt)
 Method(RandomSearchForTarget)
-Method(Attracted)
-Method(ThrowWeapon)
+Method(WaitForKnockedDownTarget)
+Method(ThugMelee)
+Method(AttackRound)
 Method(MeleeWeapon)
-Method(Grab)
-Method(CrowdMelee)
+Method(Attracted)
 Method(ReachTarget)
-Method(Melee)
 Method(WaitForTargetWhenCannotStand)
 
 // melee
-Method(ArmStrikeCombo)
-Method(ArmStrike)
-Method(Bite)
-Method(WaitForTarget)
+Method(ThugArmStrike)
 
 // react_on_hit
-Method(ReactOnHitWithKnockDown)
 Method(ReactOnHitWithCounterAttack)
 Method(ZombieReactOnHitWithPain)
 
 // react_on_finisher
 Method(ZombieReactOnFinisher)
+
+// avoid_ai_region
+Method(AvoidAIRegion)
 
 // reach
 Method(QuestMove)
@@ -53,15 +48,11 @@ Method(PatrolWhenIlluminatedByFlashlight)
 Method(PatrolBasedOnPatrolPath)
 Method(PatrolAndGeneratePathBasedOnPOI)
 Method(PatrolAndGeneratePath)
-Method(Patrol)
 Method(Loiter)
-Method(Idle)
+Method(Patrol)
 
 // use_attractor
 Method(UseAttractor)
-
-// ReactOnNight
-Method(ReactOnNight)
 
 // escape
 Method(Escape)

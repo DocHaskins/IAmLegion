@@ -1,32 +1,36 @@
 !include("ai_method.def")
 
-// pass away
+//die
 Method(Die)
 
 // attack
-Method(GrabEntry)
+Method(RechargeSpit)
+Method(SpitterKeepDistFromTarget)
+Method(PushEnemy) // push enemy only if there is no possibility to run away
+Method(Spit)
+Method(SpitterThrowBlob)
 Method(WaitForStingerAttack)
 Method(StingerAttack)
-Method(CarAttack)
+Method(Regenerate)
 Method(ZombieStrikeFromStand)
+Method(SearchForLostTarget)
 Method(FakeMeleeAttack)
 Method(GrabFromStandAttack)
+Method(VolatileSummon)
 Method(Taunt)
-Method(RandomSearchForTarget)
-Method(Attracted)
-Method(ThrowWeapon)
-Method(MeleeWeapon)
-Method(Grab)
-Method(CrowdMelee)
-Method(ReachTarget)
-Method(Melee)
-Method(WaitForTargetWhenCannotStand)
+//Method(MeleeWeapon)
+//Method(Melee)
+Method(SpitterWaitForTarget)
+
+// react on decoy
+// Method(Attracted) if ReactOnDecoy is used, Attracted mustn't be turned on!
+Method(ReactOnDecoy)
 
 // melee
+Method(Clench)
 Method(ArmStrikeCombo)
 Method(ArmStrike)
 Method(Bite)
-Method(WaitForTarget)
 
 // react_on_hit
 Method(ReactOnHitWithKnockDown)
@@ -38,30 +42,28 @@ Method(ZombieReactOnFinisher)
 
 // reach
 Method(QuestMove)
-Method(ZombieMoveTo)
+Method(CrawlToTarget)
+Method(InfectedMoveTo)
 
 // keep_alive
 Method(FocusOnPotentialEnemy)
-Method(InvestigateSuspiciousPlace)
 Method(ReachForcedInvisibleTarget)
 Method(WaitForStinger)
-Method(TurnToSuspiciousLocation)
 Method(InvestigatePlayerInVisibilityCone)
 Method(ObservePlayerInVisibilityCone)
 Method(TurnToPlayerInVisibilityCone)
+Method(ReactAfterTransformation)
+Method(InvestigateSuspiciousPlace)
 Method(PatrolWhenIlluminatedByFlashlight)
 Method(PatrolBasedOnPatrolPath)
 Method(PatrolAndGeneratePathBasedOnPOI)
 Method(PatrolAndGeneratePath)
-Method(Patrol)
+//Method(Patrol)
 Method(Loiter)
 Method(Idle)
 
 // use_attractor
 Method(UseAttractor)
-
-// ReactOnNight
-Method(ReactOnNight)
 
 // escape
 Method(Escape)

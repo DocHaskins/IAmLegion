@@ -1,32 +1,23 @@
 !include("ai_method.def")
 
-// pass away
+//die
 Method(Die)
 
 // attack
-Method(GrabEntry)
-Method(WaitForStingerAttack)
-Method(StingerAttack)
-Method(CarAttack)
-Method(ZombieStrikeFromStand)
+Method(AttackRound)
+Method(ThrowProjectile)
+Method(ObjectThrow)
+Method(RamEnemy)
+Method(Regenerate)
 Method(FakeMeleeAttack)
-Method(GrabFromStandAttack)
 Method(Taunt)
 Method(RandomSearchForTarget)
-Method(Attracted)
-Method(ThrowWeapon)
-Method(MeleeWeapon)
-Method(Grab)
-Method(CrowdMelee)
-Method(ReachTarget)
 Method(Melee)
-Method(WaitForTargetWhenCannotStand)
+Method(ArmoredTaunt) // should be chosen if target exist but other methods couldn't be applied (f.e. because of unfinished calculations)
 
 // melee
 Method(ArmStrikeCombo)
 Method(ArmStrike)
-Method(Bite)
-Method(WaitForTarget)
 
 // react_on_hit
 Method(ReactOnHitWithKnockDown)
@@ -38,33 +29,23 @@ Method(ZombieReactOnFinisher)
 
 // reach
 Method(QuestMove)
-Method(ZombieMoveTo)
+Method(InfectedMoveTo)
 
 // keep_alive
 Method(FocusOnPotentialEnemy)
-Method(InvestigateSuspiciousPlace)
 Method(ReachForcedInvisibleTarget)
-Method(WaitForStinger)
-Method(TurnToSuspiciousLocation)
 Method(InvestigatePlayerInVisibilityCone)
 Method(ObservePlayerInVisibilityCone)
 Method(TurnToPlayerInVisibilityCone)
+Method(ReactAfterTransformation)
+Method(InvestigateSuspiciousPlace)
 Method(PatrolWhenIlluminatedByFlashlight)
 Method(PatrolBasedOnPatrolPath)
 Method(PatrolAndGeneratePathBasedOnPOI)
 Method(PatrolAndGeneratePath)
-Method(Patrol)
+//Method(Patrol)
 Method(Loiter)
 Method(Idle)
 
 // use_attractor
 Method(UseAttractor)
-
-// ReactOnNight
-Method(ReactOnNight)
-
-// escape
-Method(Escape)
-
-// react on light
-Method(ReactOnLight)
