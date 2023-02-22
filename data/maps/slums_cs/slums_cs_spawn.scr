@@ -15,8 +15,10 @@ SetPatrolConesAreAlwaysVis()//ustawia widocznosc stozkow nawet podczas poscigu
 SetDiffLevelDependentFormPlayerLevels(1)
 SetDiffLevelMod(-8)
 
-CrowdDynamicPatternFill(64)
-SetSpawnDistance(80.0)
+CrowdDynamicPatternLength(100.)
+CrowdDynamicPatternFill(80)
+SetSpawnDistance(500.0)
+CrowdDynamicPatternPeriod(3000.)
 HighDefCrowd()
 SetForceTargetForCrowdOnPlayer()
 

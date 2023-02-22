@@ -28,7 +28,7 @@ CrowdPresetDef(1)
 
 
 
-CrowdDynamicPatternLength(300.)
-CrowdDynamicPatternFill(8)
-CrowdDynamicPatternPeriod(1000.)
+CrowdDynamicPatternLength(100.)
+CrowdDynamicPatternFill(80)
+CrowdDynamicPatternPeriod(3000.)
 

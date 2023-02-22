@@ -14,9 +14,9 @@ SetPatrolYRangeMul(2)
 SetUse360DegVehicleSight()//ustawia 360 stopni widocznosci kiedy gracz w pojezdzie
 SetPatrolConesAreAlwaysVis()//ustawia widocznosc stozkow nawet podczas poscigu
 
-CrowdDynamicPatternLength(300.)
-CrowdDynamicPatternFill(8)
-CrowdDynamicPatternPeriod(1000.)
+CrowdDynamicPatternLength(100.)
+CrowdDynamicPatternFill(80)
+CrowdDynamicPatternPeriod(3000.)
 
 SetDiffLevelDependentFormPlayerLevels(1)
 SetDiffLevelMod(-8)
