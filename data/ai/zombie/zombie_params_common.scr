@@ -29,7 +29,7 @@ ParamFloat("damage_mul", 1.0)
 ParamFloat("jump_away_probability", 0.33)
 ParamBool("taunt_on_alarm_level_change_at_night", 0)
 ParamBool("can_attack_from_move", 1)
-ParamBool("can_dodge", 0)
+ParamBool("can_dodge", 1)
 ParamFloat("dodge_prob_mul", 0.3)
 ParamFloat("dodge_jump_prob", 0.9)
 ParamBool("navigate_through_generic_nav_mesh_connections", 1)
@@ -85,7 +85,6 @@ ParamFloat("head_damage_factor", 1.1)
     ParamFloat("experience_award", 50.0)
 
     ParamFloat("grab_bite_damage_mul", 2.0)
-
 ParamFloat("coop_damage_mul_2", 1.2) // damage multiplayer for 2 players coop
 ParamFloat("coop_damage_mul_3", 1.4) // damage multiplayer for 3 players coop
 ParamFloat("coop_damage_mul_4", 1.8) // damage multiplayer for 4 players coop

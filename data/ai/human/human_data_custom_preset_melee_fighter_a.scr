@@ -1,5 +1,6 @@
 !include("ai_data.def")
 !include("ai_timing.def")
+								 
 
 // pro melee fighter (newer animations set)
 
@@ -179,12 +180,10 @@ Data("hit_reaction:standing:confused::all:::forward:", -2,  "m_melee_fighter_a_l
 Data("hit_reaction:standing:counter_attack::all:front::backward:", -2, "M_MELEE_FIGHTER_A_Counterattack_torso_back_02", -1, 1)	//done // player attacking fighter's front (eg kicking)	
 Data("hit_reaction:standing:counter_attack::all:front::right:", -2, "M_MELEE_FIGHTER_A_Counterattack_torso_right_01", -1, 1) //done
 Data("hit_reaction:standing:counter_attack::all:front::left:", -2, "M_MELEE_FIGHTER_A_Counterattack_torso_left_01", -1, 1)  //done
-Data("hit_reaction:standing:counter_attack::all:front::left:", -2, "M_MELEE_FIGHTER_A_Counterattack_torso_left_01_fast", -1, 1)  //done
 
 Data("hit_reaction:standing:counter_attack::all:front::forward:", -2, "M_MELEE_FIGHTER_A_Counterattack_torso_right_01", -1, 1)  // wymaga wymiany  //done
 Data("hit_reaction:standing:counter_attack::all:front::up:", -2, "M_MELEE_FIGHTER_A_Counterattack_torso_right_01", -1, 1)  //done
 Data("hit_reaction:standing:counter_attack::all:front::down:", -2, "M_MELEE_FIGHTER_A_Counterattack_torso_left_01", -1, 1) //done
-Data("hit_reaction:standing:counter_attack::all:front::down:", -2, "M_MELEE_FIGHTER_A_Counterattack_torso_left_01_fast", -1, 1) //done
 //Data("hit_reaction:standing:counter_attack::all:front::left:", -2, "M_MELEE_FIGHTER_A_counterattack_berserker_head_right_01", -1, 1)
 Data("hit_reaction:standing:counter_attack::all:front::right:", -2, "M_MELEE_FIGHTER_A_counterattack_berserker_head_right_01", -1, 1)  //done
 
@@ -261,7 +260,10 @@ Data("hit_reaction:standing:pain::kick:rear::forward:heavy",  -2, "M_MELEE_FIGHT
 Data("hit_reaction:standing:pain::all:rear::forward:heavy",  -2, "M_MELEE_FIGHTER_A_hitreaction_back_hard_02", -1, 1)   //done
 Data("hit_reaction:standing:pain::all:rear::forward:",  -2, "M_MELEE_FIGHTER_A_hitreaction_back_light_01", -1, 1)      //done
 Data("hit_reaction:standing:pain::kick:front::backward:",  -2, "M_MELEE_FIGHTER_A_hitreaction_kick_medium_01", -1, 1) //done
+Data("hit_reaction:standing:pain::kick:front::backward:",  -2, "M_MELEE_FIGHTER_A_hitreaction_kick_medium_02", -1, 1) //done
+Data("hit_reaction:standing:pain::kick:front::backward:",  -2, "M_MELEE_FIGHTER_A_hitreaction_kick_medium_03", -1, 1) // TO VERIFY
 
+Data("hit_reaction:standing:pain::kick:front::backward:",  -2, "M_MELEE_FIGHTER_A_hitreaction_kick_medium_05", -1, 1) //KBpraktyki
 
 //##############
 //#### IDLE ####
@@ -381,29 +383,7 @@ Data("start:standing:::run:90:right:", -2, 	"m_melee_fighter_a_trot_start_90r", 
 Data("start:standing:::run:180:left:", -2, 	"m_melee_fighter_a_trot_start_180l", 		-1, 1)  //done
 Data("start:standing:::run:180:right:", -2,	"m_melee_fighter_a_trot_start_180r",		-1, 1) //done - lewy lokiec
 
-Data("start:standing::stick:::left:true", -2, "m_melee_fighter_a_strafe_start_left_01", -1, 1)
-Data("start:standing::stick:::right:true", -2, "m_melee_fighter_a_strafe_start_right_01", -1, 1)
-Data("start:standing::stick:::forward:true", -2, "m_melee_fighter_a_strafe_front_start_01", -1, 1)
-Data("start:standing::stick:::backward:true", -2, "m_melee_fighter_a_strafe_back_start_01", -1, 1)
 
-Data("start:standing::stick:trot:90:left:", -2,                    "m_melee_fighter_a_trot_start_90l",                  -1, 1) //done
-Data("start:standing::stick:trot:90:right:", -2,      "m_melee_fighter_a_trot_start_90r",                  -1, 1) //done
-Data("start:standing::stick:trot:0::", -2,                          "m_melee_fighter_a_trot_start_01",                   -1, 1) //done
-Data("start:standing::stick:trot:180:left:", -2,      "m_melee_fighter_a_trot_start_180l",                -1, 1) //done
-Data("start:standing::stick:trot:180:right:", -2,    "m_melee_fighter_a_trot_start_180r",                -1, 1) //done - prawa reka na poczatku nienaturalna lokiec wyciagniety w tyl
-
-Data("start:standing::stick:run:90:left:", -2,        "M_MELEE_FIGHTER_A_Run_Start_90L_01",               -1, 1) //done lewa reka bark nie bangla
-Data("start:standing::stick:run:90:right:", -2,       "M_MELEE_FIGHTER_A_Run_Start_90R_01",               -1, 1) //done lewa reka
-Data("start:standing::stick:run:0::", -2,               "m_melee_fighter_a_trot_start_01",                   -1, 1) //done
-Data("start:standing::stick:run:0::", -2,               "m_melee_fighter_a_trot_start_02",                   -1, 1) //done - chamskie przyspieszenie w polowie
-//Data("start:standing::stick:run:0::", -2,                         "m_melee_fighter_a_trot_start_03",                   -1, 1)
-Data("start:standing::stick:run:180:left:", -2,       "m_melee_fighter_a_run_start_180l_01",                       -1, 1) //done
-Data("start:standing::stick:run:180:right:", -2,     "m_melee_fighter_a_run_start_180r_01",                       -1, 1) //done
-
-Data("start:standing::stick:run:90:left:", -2,        "m_melee_fighter_a_trot_start_90l",                  -1, 1) //done - przyspieszenie
-Data("start:standing::stick:run:90:right:", -2,       "m_melee_fighter_a_trot_start_90r",                  -1, 1) //done -lewy lokiec
-Data("start:standing::stick:run:180:left:", -2,       "m_melee_fighter_a_trot_start_180l",                -1, 1)  //done
-Data("start:standing::stick:run:180:right:", -2,     "m_melee_fighter_a_trot_start_180r",                -1, 1) //done - lewy lokiec
 
 
 //##############
@@ -466,15 +446,38 @@ Data("stop:standing:::sprint:0::false:", -2, "M_MELEE_FIGHTER_A_Run_Stop_01", -1
 Data("dodge:standing::low", -2, "m_melee_fighter_a_dodgedown_01", -1, 1) //done
 Data("dodge:standing::low", -2, "m_melee_fighter_a_dodgedown_02", -1, 1) //done
 Data("dodge:standing::low", -2, "m_melee_fighter_a_dodgedown_03", -1, 1) //done
+Data("dodge:standing::low", -2, "m_melee_fighter_a_dodges_counter_left_01", -1, 1) //done
+
+Data("dodge:standing::low", -2, "m_melee_fighter_a_dodges_counter_right_01", -1, 1) //done
+Data("dodge:standing::low", -2, "m_melee_fighter_a_dodges_counter_left_01", -1, 1) //done
+
+Data("dodge:standing::low", -2, "m_melee_fighter_a_dodges_counter_right_01", -1, 1) //done
+
 Data("dodge:standing::high", -2, "m_melee_fighter_a_dodgedown_01", -1, 1) //done
 Data("dodge:standing::high", -2, "m_melee_fighter_a_dodgedown_02", -1, 1) //done
 Data("dodge:standing::high", -2, "m_melee_fighter_a_dodgedown_03", -1, 1) //done
 
 
 
+Data("dodge:standing::high", -2, "m_melee_fighter_a_dodges_down_01", -1, 1)
+Data("dodge:standing::high", -2, "m_melee_fighter_a_dodges_down_02", -1, 1)
+Data("dodge:standing::high", -2, "m_melee_fighter_a_dodges_down_03", -1, 1)
+Data("dodge:standing::high", -2, "m_melee_fighter_a_dodges_down_04", -1, 1)
+Data("dodge:standing::high", -2, "m_melee_fighter_a_dodges_down_05", -1, 1)
+Data("dodge:standing::high", -2, "m_melee_fighter_a_dodges_down_06", -1, 1)
+Data("dodge:standing::high", -2, "m_melee_fighter_a_dodges_down_07", -1, 1)
+
+Data("dodge:standing::high", -2, "m_melee_fighter_a_dodges_counter_right_01", -1, 1)
+Data("dodge:standing::high", -2, "m_melee_fighter_a_dodges_counter_right_02", -1, 1) 
+Data("dodge:standing::high", -2, "m_melee_fighter_a_dodges_counter_left_01", -1, 1) 
+
+ Data("dodge:standing::high", -2, "m_melee_fighter_a_dodges_counter_right_01", -1, 1)
+Data("dodge:standing::high", -2, "m_melee_fighter_a_dodges_counter_right_02", -1, 1) 
+Data("dodge:standing::high", -2, "m_melee_fighter_a_dodges_counter_left_01", -1, 1) 
 
 Data("dodge:standing::jump_right", -2, "M_MELEE_FIGHTER_A_dodge_jump_right_02", -1, 1) // player right side done
 Data("dodge:standing::jump_left", -2, "m_melee_fighter_a_dodge_jump_left_02", -1, 1) // player left side done
+Data("dodge:standing::jump_left", -2, "M_MELEE_FIGHTER_A_dodge_jump_left_03", -1, 1) // player left side done
 
 Data("dodge:standing::jump_back", -2, "M_MELEE_FIGHTER_A_dodge_jump_back_01", -1, 1)   // TODO za wolna done
 Data("dodge:standing::jump_back", -2, "M_MELEE_FIGHTER_A_dodge_jump_back_02", -1, 1)   // TODO za wolna done
@@ -484,16 +487,64 @@ Data("dodge:standing::jump_back", -2, "M_MELEE_FIGHTER_A_dodge_jump_back_02", -1
 Data("dodge:standing:stick:left", -2, "M_MELEE_FIGHTER_A_block_L_01", -1, 1) //done
 Data("dodge:standing:stick:left", -2, "M_MELEE_FIGHTER_A_block_L_02", -1, 1) //done
 Data("dodge:standing:stick:left", -2, "M_MELEE_FIGHTER_A_block_L_03", -1, 1) //done
+Data("dodge:standing:stick:left", -2, "M_MELEE_FIGHTER_A_block_L_03", -1, 1) //done
+
 
 Data("dodge:standing:stick:right", -2, "M_MELEE_FIGHTER_A_block_R_01", -1, 1) //done
 Data("dodge:standing:stick:right", -2, "M_MELEE_FIGHTER_A_block_R_02", -1, 1) //done
 Data("dodge:standing:stick:right", -2, "M_MELEE_FIGHTER_A_block_R_03", -1, 1) //done
 
+
+Data("dodge:standing:stick:right", -2, "m_melee_fighter_a_block_reaction_right_01", -1, 1) //done
+Data("dodge:standing:stick:right", -2, "m_melee_fighter_a_block_reaction_right_02", -1, 1) //done
+Data("dodge:standing:stick:right", -2, "m_melee_fighter_a_block_reaction_right_03", -1, 1) //done
+Data("dodge:standing:stick:right", -2, "m_melee_fighter_a_block_reaction_right_05", -1, 1) //done
+Data("dodge:standing:stick:right", -2, "m_melee_fighter_a_dodges_counter_left_03", -1, 1) //done
+
+Data("dodge:standing:stick:right", -2, "m_melee_fighter_a_block_reaction_right_01", -1, 1) //done
+Data("dodge:standing:stick:right", -2, "m_melee_fighter_a_block_reaction_right_02", -1, 1) //done
+Data("dodge:standing:stick:right", -2, "m_melee_fighter_a_block_reaction_right_03", -1, 1) //done
+Data("dodge:standing:stick:right", -2, "m_melee_fighter_a_block_reaction_right_05", -1, 1) //done
+Data("dodge:standing:stick:right", -2, "m_melee_fighter_a_dodges_counter_left_03", -1, 1) //done
+
+
+
+Data("dodge:standing:stick:left", -2, "m_melee_fighter_a_block_reaction_left_01", -1, 1) //done
+Data("dodge:standing:stick:left", -2, "m_melee_fighter_a_block_reaction_left_02", -1, 1) //done
+Data("dodge:standing:stick:left", -2, "m_melee_fighter_a_block_reaction_left_02", -1, 1) //done
+Data("dodge:standing:stick:left", -2, "m_melee_fighter_a_block_reaction_left_03", -1, 1) //done
+Data("dodge:standing:stick:left", -2, "m_melee_fighter_a_block_reaction_left_04", -1, 1) //done
+Data("dodge:standing:stick:left", -2, "m_melee_fighter_a_block_reaction_left_04", -1, 1) //done
+Data("dodge:standing:stick:left", -2, "m_melee_fighter_a_block_reaction_right_05", -1, 1) //done
+Data("dodge:standing:stick:left", -2, "m_melee_fighter_a_dodges_counter_left_03", -1, 1) //done
+
+//Data("dodge:standing:stick:left", -2, "m_melee_fighter_a_block_reaction_left_03", -1, 1) //done
+//Data("dodge:standing:stick:left", -2, "m_melee_fighter_a_block_reaction_left_04", -1, 1) //done
+
+
 Data("dodge:standing:stick:down_left", -2, "M_MELEE_FIGHTER_A_block_Down_01", -1, 1) //done
 Data("dodge:standing:stick:down_left", -2,  "M_MELEE_FIGHTER_A_block_Down_02", -1, 1) //done
+Data("dodge:standing:stick:down_left", -2,  "m_melee_fighter_a_block_reaction_down_01", -1, 1) //done
+
 Data("dodge:standing:stick:down_right", -2, "M_MELEE_FIGHTER_A_block_Down_01", -1, 1) //done
 Data("dodge:standing:stick:down_right", -2,  "M_MELEE_FIGHTER_A_block_Down_02", -1, 1) //done
+Data("dodge:standing:stick:down_right", -2,  "m_melee_fighter_a_block_reaction_down_01", -1, 1) //done
+
 Data("dodge:standing:stick:down", -2, "M_MELEE_FIGHTER_A_block_Up_01", -1, 1) //done - anemik
+
+
+////////////////////////
+// COUNTER REACTIONS  //
+////////////////////////
+Data("hit_reaction:standing:in_dodge_reaction::all::::", -2, "m_melee_fighter_a_dodge_back_reactions_01", -1, 1) //noIK
+Data("hit_reaction:standing:in_dodge_reaction::all::::", -2, "m_melee_fighter_a_dodge_back_reactions_02", -1, 1) //noIK
+Data("hit_reaction:standing:in_dodge_reaction::all::::", -2, "m_melee_fighter_a_dodge_back_reactions_03", -1, 1) //noIK
+Data("hit_reaction:standing:in_dodge_reaction::all::::", -2, "m_melee_fighter_a_dodge_back_reactions_04", -1, 1) //noIK
+Data("hit_reaction:standing:in_dodge_reaction::all::::", -2, "m_melee_fighter_a_dodge_back_reactions_07", -1, 1) //noIK
+Data("hit_reaction:standing:in_dodge_reaction::all::::", -2, "m_melee_fighter_a_dodge_back_counterreactions_01", -1, 1) //noIK
+
+//Data("hit_reaction:standing:in_dodge_reaction::all:front:::", -2, "m_melee_fighter_a_dodge_back_counterreactions_01", -1, 1) //noIK
+
 
 //##############
 //#### TURN ####
@@ -566,6 +617,20 @@ Data("recover_from_fall:standing:", -2, "M_MELEE_FIGHTER_A_stand_up_panic_right_
 Data("recover_from_fall:standing:", -2, "M_MELEE_FIGHTER_A_stand_up_panic_left_01", -1, 1) //done
 
 
+//################## 
+//#### ALARMING ####
+//##################
+//## alarming:is_standing:alarm_level:angle:direction:was_moving
+//##################
+Data("alarming:standing::alarmed:0::false", -2, "M_MELEE_FIGHTER_A_alarmed_01", -1, 1) //done
+Data("alarming:standing::alarmed:45:right:false", -2, "m_melee_fighter_a_turn_45R", -1, 1) //done
+Data("alarming:standing::alarmed:45:left:false", -2, "m_melee_fighter_a_turn_45l", -1, 1) //done
+Data("alarming:standing::alarmed:90:right:false", -2, "m_melee_fighter_a_turn_90R", -1, 1) //done
+Data("alarming:standing::alarmed:90:left:false", -2, "m_melee_fighter_a_turn_90l", -1, 1) //done
+Data("alarming:standing::alarmed:180:right:false", -2, "m_melee_fighter_a_turn_180R", -1, 1) //done
+Data("alarming:standing::alarmed:180:left:false", -2, "m_melee_fighter_a_turn_180l", -1, 1) //done
+
+
 //################
 //#### EFFECT ####
 //################
@@ -612,6 +677,8 @@ Data("die:standing:::forward_right:normal:::", -2, "M_MELEE_FIGHTER_A_death_reac
 
 Data("die:standing:::down:normal:::", -2, "M_MELEE_FIGHTER_A_death_reaction_back_01", -1, 1)
 Data("die:standing:::up:normal:::", -2, "M_MELEE_FIGHTER_A_death_reaction_back_01", -1, 1)
+
+Data("die:standing::::decapitated:::", -2, "m_zombie_death_decapitation_01", -1, 1)
 //###################
 //#### NAGE WAZA ####
 //###################
@@ -664,20 +731,19 @@ Curve(CURVE_HEALTH, "human_melee_fighter_health")
 
 
 /////////////////////////////////////////// PARAMETERS ////////////////////////////////////////////
-
 ParamFloat("dodge_prob_mul", 0.5)
 ParamFloat("group_behavior_keep_distance_optimal_dist", 7.0)
 ParamFloat("group_behavior_keep_distance_optimal_dist_ai", 4.5)
 ParamFloat("group_behavior_keep_distance_optimal_dist_vehicle", 10.0)																	 
 ParamFloat("time_to_throw_back_enemy", 1.0)
-ParamFloat("time_to_throw_back_ai_enemy", 1.0)
+ParamFloat("time_to_throw_back_ai_enemy", 2.0)
 ParamFloat("air_kick_knockdown_prob", 0.5)
 
 ParamFloat("back_strafe_speed_mult", 1.0)
 ParamFloat("side_strafe_speed_mult", 1.0)
 ParamFloat("threat_level", 3)
-ParamFloat("max_time_target_invisible", 1.0)
-ParamFloat("stay_in_cover_time_max", 2.0)       // longest time ai stays in cover before next shoot
+ParamFloat("max_time_target_invisible", 2.0)
+ParamFloat("stay_in_cover_time_max", 1.0)       // longest time ai stays in cover before next shoot
 ParamFloat("stay_in_cover_total_time_max", 3.0)
 ParamBool("can_dodge", 1)
 ParamFloat("counter_attack_prob_mul", 1.0)
@@ -695,26 +761,26 @@ ParamFloat("turn_speed", 180.0)
 ParamBool("attack_range_2_m_enabled", 1)
 ParamFloatRange("dist_for_attack_range_2_m", 1.0, 2.0)
 ParamFloatRange("dist_for_attack_range_2_m_in_move", 0.0, 2.0)
-ParamFloatRange("dist_for_attack_range_2_m_against_zombie", 2.0, 10.0)
+ParamFloatRange("dist_for_attack_range_2_m_against_zombie", 2.0, 10)
 ParamFloatRange("dist_for_attack_range_2_m_in_move_against_zombie", 1.5, 10.0)
 
 ParamBool("attack_range_3_m_enabled", 1)
 ParamFloatRange("dist_for_attack_range_3_m", 2.0, 3.5)
 ParamFloatRange("dist_for_attack_range_3_m_in_move", 2.0, 2.5)
-ParamFloatRange("dist_for_attack_range_3_m_against_zombie", 10.0, 25.0)
-ParamFloatRange("dist_for_attack_range_3_m_in_move_against_zombie", 10.0, 25.0)
+ParamFloatRange("dist_for_attack_range_3_m_against_zombie", 10, 25)
+ParamFloatRange("dist_for_attack_range_3_m_in_move_against_zombie", 10, 25.0)
 
 ParamBool("attack_range_4_m_enabled", 1)
 ParamFloatRange("dist_for_attack_range_3_m", 3.5, 6.0)
 ParamFloatRange("dist_for_attack_range_3_m_in_move", 2.5, 5.5)
-ParamFloatRange("dist_for_attack_range_3_m_against_zombie", 25, 45.0)
+ParamFloatRange("dist_for_attack_range_3_m_against_zombie", 25.0, 45.0)
 ParamFloatRange("dist_for_attack_range_3_m_in_move_against_zombie", 25, 50.0)
 
 ParamFloat("min_time_btw_attack_from_stand_attempts", 0.2)    // min time (spawner borders) between grab attempts (0 in the center of normal spawner)
 ParamFloat("max_time_btw_attack_from_stand_attempts", 0.8)    // max time (spawner borders) between grab attempts (a distance from normal spawner)
 
-ParamFloatRange("time_in_combat_idle", 0.3, 1.0)
-ParamFloatRange("time_in_combat_idle_against_zombie", 0.1, 0.4)
+ParamFloatRange("time_in_combat_idle", 0.7, 2.0)
+ParamFloatRange("time_in_combat_idle_against_zombie", 0.25, 0.75)
 ParamFloat("min_dist_to_move_back", 2.5)
 ParamFloat("min_dist_to_move_back_against_zombie", 1.25)
 
@@ -746,13 +812,10 @@ ParamFloat("sight_angle_at_max_dist", 90)
 ParamFloat("sight_angle_min_dist", 10)
 ParamFloat("sight_angle_max_dist", 30)
 
-ParamFloat("min_time_outside_enemy_sight_range_to_attack", 0.3) // czas po ktorym koles nas zaatakuje jak jest w grupie i obejdzie nas od tylu (a w zasadzie jak przestaniemy go widziec)
-ParamFloat("max_time_awaiting_attack", 8.0) // czas po, ktorym koles nie atakowal i zaatakuje jak jest w grupie i obejdzie nas od tylu (a w zasadzie jak przestaniemy go widziec)
-ParamFloat("stalk_prob_in_combat_idle", 0.1) 					// probability of stalking enemy in combat idle
-ParamFloat("stalk_prob_in_group", 1.0) 							// probability of stalking enemy in group
-ParamFloat("stalk_prob", 95.0) // prawdopodobienstwo obchodzenia wroga w grupie
-ParamFloat("stalk_prob_in_group", 1.0) 							// probability of stalking enemy in group																					   
-
+ParamFloat("min_time_outside_enemy_sight_range_to_attack", 0.1) // czas po ktorym koles nas zaatakuje jak jest w grupie i obejdzie nas od tylu (a w zasadzie jak przestaniemy go widziec)
+ParamFloat("max_time_awaiting_attack", 1.0) // czas po, ktorym koles nie atakowal i zaatakuje jak jest w grupie i obejdzie nas od tylu (a w zasadzie jak przestaniemy go widziec)
+ParamFloat("stalk_prob_in_combat_idle", 0.95) 						// probability of stalking enemy in combat idle
+ParamFloat("stalk_prob_in_group", 1.0) 								// probability of stalking enemy in group
 ParamFloat("head_horz_clamp", 70.0)
 
 ParamBool("can_run_away", 0)
@@ -766,33 +829,4 @@ ParamBool("use_advanced_target_keeping_logic", 1)
 
 ParamFloat("fall_on_wrestle_kick_prob", 0.33)
 
-
-
-
-
-
-
-///////////////////////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////// CURVES //////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////////////////////
-Curve(CURVE_HEALTH, "human_melee_fighter_health")
-
-ParamFloat("dodge_prob_mul", 0.75) // prawdopodobienstwo dodge'a
-ParamFloat("group_behavior_keep_distance_optimal_dist", 7.0) // optymalny dystans utrzymywany w grupie od gracza
-ParamFloat("group_behavior_keep_distance_optimal_dist_ai", 4.5)
-ParamFloat("time_to_throw_back_enemy", 1.75)  // min czas do kopniaka (HMF vs Player)
-ParamFloat("time_to_throw_back_ai_enemy", 3.0) // to samo co wyzej tylko w walce HMF vs AI
-ParamFloat("air_kick_knockdown_prob", 0.2) // prawdopodobienstwo knockdown'a po kopniaku z wyskoku
-
-ParamFloatRange("time_in_combat_idle", 0.7, 1.5) // czas min/max bycia w trybie combat idle (czyli takie jakby czajenie sie do ataku)
-ParamFloatRange("time_in_combat_idle_against_zombie", 0.25, 0.75) // to samo co wyzej tylko podczas walki HMF vs AI
-ParamFloat("min_dist_to_move_back", 2.5) // min dystans do odchodzenia od celu jezeli HMF dostal damage, lub gdy grupa nie pozwala mu atakowac
-ParamFloat("min_dist_to_move_back_against_zombie", 1.25) // to samo co wyzej tylko w walce HMF vs AI
-
-ParamFloat("min_time_btw_dodge_jump", 3.0) // min czas pomiedzy odskokami
-ParamFloat("max_time_btw_dodge_jump", 6.0) // max czas pomiedzy odskokami
-
-ParamFloat("defend_area_range", 40.0)
-ParamBool("allow_group_broadcast_attack", 1)
-
-ParamBool("ignore_velocities_when_hearing_sound", 0)
+ParamFloat("parry_bullet_prob", 0.4)

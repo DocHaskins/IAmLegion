@@ -27,5 +27,8 @@
     ParamFloat("blast_damage_mul", 1.0)
     ParamFloat("special_damage_mul", 1.0)
     ParamFloat("damage_mul", 1.0)
+	ParamFloat("damage_mul_vs_other_ai", 1.0)
 	
-	ParamBool("treat_vehicle_as_dangerous_object", 0)
+	ParamBool("treat_vehicle_as_dangerous_object", 0)	
+	ParamBool("can_be_alarmed_by_flashlight", 1)
+	ParamBool("can_sense_flashlight_light", 1)

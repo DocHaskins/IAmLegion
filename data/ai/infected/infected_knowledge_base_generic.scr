@@ -39,6 +39,9 @@ Method(ZombieReactOnHitWithPain)
 // react_on_finisher
 Method(ZombieReactOnFinisher)
 
+// avoid_ai_region
+Method(AvoidAIRegion)
+
 // reach
 Method(QuestMove)
 Method(CrawlToTarget)
@@ -46,6 +49,7 @@ Method(InfectedMoveTo)
 
 // keep_alive
 Method(FocusOnPotentialEnemy)
+Method(InvestigateSuspiciousPlace)
 Method(ReachForcedInvisibleTarget)
 Method(WaitForStinger)
 Method(TurnToSuspiciousLocation)
@@ -59,6 +63,7 @@ Method(PatrolBasedOnPatrolPath)
 Method(PatrolAndGeneratePathBasedOnPOI)
 Method(PatrolAndGeneratePath)
 //Method(Patrol)
+Method(Patrol)
 Method(Loiter)
 Method(Idle)
 

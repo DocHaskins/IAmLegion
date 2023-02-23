@@ -51,4 +51,7 @@ ParamBool("berserker_hit_only_if_arm_destroyed", 1)
 //HEALTH AND DAMAGE
 ParamFloat("health_mul", 0.625)						//Base health from curve 'zombie_health' is multiplied by this value.
 
-ParamFloat("stamina_to_health_ratio", 0.8)					//Base health from curve 'zombie_health' is multiplied by this value.
+ParamFloat("stamina_to_health_ratio", 0.8)					//Base health from curve 'zombie_health' is multiplied by this value.ParamFloat("health_mul", 1.0)
+ParamFloat("stamina_to_health_ratio", 0.5)	
+ParamFloat("experience_award", 20.0)
+ParamBool("draw_on_radar_during_day", 0)

@@ -373,16 +373,16 @@ Data("recover_from_fall:standing:", -2, "m_zombie_standup_fast_right_04", -1, 1)
 //## mimic:type:is_speech_played
 //##############
 
-Data("mimic:normal:", -2, "mz_mimic_normal1", -1, 1)
-Data("mimic:normal:", -2, "mz_mimic_normal2", -1, 1)
-Data("mimic:angry:", -2, "mz_mimic_angry0", -1, 1)
-Data("mimic:angry:", -2, "mz_mimic_angry1", -1, 1)
+Data("mimic:normal", -2, "mz_mimic_normal1", -1, 1)
+Data("mimic:normal", -2, "mz_mimic_normal2", -1, 1)
+Data("mimic:angry", -2, "mz_mimic_angry0", -1, 1)
+Data("mimic:angry", -2, "mz_mimic_angry1", -1, 1)
 //Data("mimic:blinded", -2, "mz_mimic_blinded", -1, 1) // not visible for now
-Data("mimic:grab:", -2, "mz_mimic_grab", -1, 1)
+Data("mimic:grab", -2, "mz_mimic_grab", -1, 1)
 //Data("mimic:nose", -2, "mz_mimic_nose", -1, 1)   // not used for now
-Data("mimic:hit_reaction:", -2, "mz_mimic_hit_reaction0", -1, 1)
-Data("mimic:hit_reaction:", -2, "mz_mimic_hit_reaction1", -1, 1)
-Data("mimic:hit_reaction:", -2, "mz_mimic_hit_reaction2", -1, 1)
+Data("mimic:hit_reaction", -2, "mz_mimic_hit_reaction0", -1, 1)
+Data("mimic:hit_reaction", -2, "mz_mimic_hit_reaction1", -1, 1)
+Data("mimic:hit_reaction", -2, "mz_mimic_hit_reaction2", -1, 1)
 
 !include("zombie_data_params.scr")
 ParamFloat("drowning_time", -1.0)

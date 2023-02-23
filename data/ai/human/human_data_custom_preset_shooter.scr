@@ -71,17 +71,19 @@ Data("attack:standing::taunt:::", -2, "m_npc_ak47_alarming_taunt", -1, 1)
 ///////////////////////////////////////////// PARAMS //////////////////////////////////////////////
 
 ParamFloat("min_time_btw_throws_projectile", 15.0)
-ParamFloat("sight_range_calm", 40.0) //converted
-ParamFloat("sight_range_calm_interior", 22.0) //[m]
+ParamFloat("sight_range_calm", 20.0) //converted
+ParamFloat("sight_range_calm_interior", 12.0) //[m]
 
-ParamFloat("sight_range", 50.0) //converted
+ParamFloat("wander_dist", 220.0)
+ParamFloat("sight_range_calm", 45.0) //converted
+ParamFloat("sight_range", 80.0) //converted
 ParamFloat("sight_additional_range", 20.0) //converted
 
-ParamFloat("stay_in_cover_time_min", 0.2)           // shortest time ai stays in cover before next shoot
-ParamFloat("stay_in_cover_time_max", 1.0)           // longest time ai stays in cover before next shoot
-ParamFloat("stay_in_cover_total_time_max", 3.0)
+ParamFloat("stay_in_cover_time_min", 0.5)           // shortest time ai stays in cover before next shoot
+ParamFloat("stay_in_cover_time_max", 2.5)           // longest time ai stays in cover before next shoot
+ParamFloat("stay_in_cover_total_time_max", 5.0)
 
-ParamFloat("max_time_target_invisible", 10.0)
+ParamFloat("max_time_target_invisible", 2.0)
 
 ParamFloat("full_angle_sight_range", 1.0)
 
@@ -98,21 +100,37 @@ ParamFloat("sight_angle_at_max_dist_interior", 90)
 ParamFloat("sight_angle_min_dist_interior", 3)
 ParamFloat("sight_angle_max_dist_interior", 10)
 
-ParamFloat("enemy_keep_time_upset", 50)
-ParamFloat("enemy_keep_time_alarmed", 20)
+ParamFloat("enemy_keep_time_upset", 60)
+ParamFloat("enemy_keep_time_alarmed", 120)
 
-ParamFloat("base_hit_pause_time_rifle", 0.5)
+ParamFloat("base_hit_pause_time_rifle", 1.0)
 
-
-//ParamFloat("damage_mul_vs_other_ai", 3.0)
+ParamFloat("damage_mul_vs_other_ai", 3.0)
 
 
 //ParamFloat("hit_legs_stamina_mul", 1.0)								//Stamina damage dealt to legs is multiplied by this factor.
 ParamFloat("fall_on_shot_prob", 0.0)
 
 //--- HEALTH
+ParamFloat("health_mul", 2.0)										//Body health is set from CURVE_HEALTH and multiplied by this parameter
+ParamFloat("head_health_mul", 1.0)									//Head health is a multiplier of body health - when head dies, AI dies.
+ParamFloat("arms_health_mul", 1.0)									//Arms health is a multiplier of body health
+ParamFloat("legs_health_mul", 1.0)									//Legs health is a multiplier of body health
+
+ParamFloat("head_damage_factor", 2.0)								//Damage dealt to particular limb is multiplied by this factor. SHOULD be the same as head_health_influence
+ParamFloat("left_arm_damage_factor", 1.0)
+ParamFloat("right_arm_damage_factor", 1.0)
+ParamFloat("left_leg_damage_factor", 1.0)
+ParamFloat("right_leg_damage_factor", 1.0)
 
 ParamFloat("pro_player_head_health_influence", 1.0)
+ParamFloat("head_health_influence", 2.0)
+ParamFloat("left_arm_health_influence", 1.0)
+ParamFloat("right_arm_health_influence", 1.0)
+ParamFloat("left_leg_health_influence", 1.0)
+ParamFloat("right_leg_health_influence", 1.0)
+ParamFloat("torso_front_health_influence", 1.0)
+ParamFloat("torso_back_health_influence", 1.0)
 
 
 // head roation
@@ -155,4 +173,4 @@ ParamFloat("arms_enable_time", 0.5)
 ParamBool("arms_enabled", 1)
 
 ParamBool("high_alarm_level_on_sound_heard_weapon_use", 1)
-ParamFloat("min_time_to_keep_alarm_level_from_sound_heard_weapon_use", 60.0)
+ParamFloat("min_time_to_keep_alarm_level_from_sound_heard_weapon_use", 120.0)
