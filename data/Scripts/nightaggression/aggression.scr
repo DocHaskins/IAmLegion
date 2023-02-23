@@ -19,7 +19,7 @@ sub main()
     Stat("Aggression")
     {
         Name("LandingInCrowd");
-        ScreamPointsPerSecond(0.3);
+        ScreamPointsPerSecond(0.8);
         
         Event("Evn_AISpotting") 
         {
@@ -31,7 +31,7 @@ sub main()
     Stat("Aggression")
     {
         Name("LandingInCrowd");
-        ScreamPointsPerSecond(0.4);
+        ScreamPointsPerSecond(0.8);
         
         Event("Evn_AISpotting") 
         {
@@ -43,7 +43,7 @@ sub main()
     Stat("Aggression")
     {
         Name("LandingInCrowd");
-        ScreamPointsPerSecond(0.5);
+        ScreamPointsPerSecond(0.95);
         
         Event("Evn_AISpotting") 
         {
@@ -56,13 +56,13 @@ sub main()
     Stat("Aggression")
     {
         Name("LandingInCrowd");
-        ScreamPointsPerSecond(0.7);
+        ScreamPointsPerSecond(1.0);
         MinAggroLevel(1);
         
         Event("Evn_AISpotting") 
         {
             BelowDistance(12);
-            MinNumber(15);
+            MinNumber(18);
         }
     }
     
@@ -82,21 +82,21 @@ sub main()
     Stat("Aggression")
     {
         Name("AggresiveDamaging");    
-        ScreamPoints(3);
+        ScreamPoints(1.0);
         
         Event("Evn_GiveDamage")
         {
             Alive();
             WillSurvive();
             PlayerDamagerAiVictim();
-            DamageType("CUT;BULLET;BLAST;PUNCH1;PUNCH2;PUNCH3;PUNCH_BLOCKED;BLUNT;CUT;RAM;POISON;IMPACT;CAR_HIT;KICK;FLARE;TOXIC;COLD;SLIDE");
+            DamageType("CUT;BULLET;BLAST;PUNCH1;PUNCH2;PUNCH3;PUNCH_BLOCKED;PUNCHED_KO;BLUNT;CUT;RAM;POISON;IMPACT;CAR_HIT;KICK;FLARE;TOXIC;COLD;SLIDE;");
         }    
     }
     
     Stat("Aggression")
     {
         Name("AggresiveKIll");    
-        ScreamPoints(0.5);
+        ScreamPoints(1.0);
         
         Event("Evn_Kill")
         {
@@ -139,7 +139,7 @@ sub main()
     {
         Name("AggresiveDrop");    
         UseStatDT();
-        PointsPerSecond(-0.15); //MZM -0.1       
+        PointsPerSecond(-0.05); //MZM -0.1       
         MaxAggroLevel(1);
         WhileInvisible();
         
@@ -153,7 +153,7 @@ sub main()
     {
         Name("AggresiveDrop");    
         UseStatDT();
-        PointsPerSecond(-0.2);
+        PointsPerSecond(-0.02);
         MinAggroLevel(2);
         MaxAggroLevel(2);
         WhileInvisible();
@@ -197,7 +197,7 @@ sub main()
     {
         Name("DropUnderwater");    
         UseStatDT();
-        PointsPerSecond(-0.1);
+        PointsPerSecond(-0.001);
         MinAggroLevel(1);    
         
         Event("Evn_GameDeltaTimePassed")
@@ -219,7 +219,7 @@ sub main()
             ZombiePlayerSpot();
             BelowDistance(10);
             PointMul(0.5);
-            MaxSpotCount(6);
+            MaxSpotCount(15);
             LocalPlayerSpotted();
         }
         
@@ -228,7 +228,7 @@ sub main()
             ZombiePlayerSpot();
             BelowDistance(15);
             PointMul(0.5);
-            MaxSpotCount(8);
+            MaxSpotCount(15);
             LocalPlayerSpotted();
         }
         
@@ -237,7 +237,7 @@ sub main()
             ZombiePlayerSpot();
             BelowDistance(20);
             PointMul(0.2);
-            MaxSpotCount(16);
+            MaxSpotCount(15);
             LocalPlayerSpotted();
         }
     }
@@ -247,18 +247,18 @@ sub main()
     Stat("Aggression")
     {
         Name("LandingInCrowd");            
-        PointsPerSecond(1);
+        PointsPerSecond(0.9);
         UseStatMul();
         MinAggroLevel(1);
         WhileBtzNotActive();
-        CannotIncreaseAbovePercent(0.99);
+        CannotIncreaseAbovePercent(1.0);
         //TriggerVisibility();
         
         Event("Evn_AISpotting") 
         {
             ZombiePlayerSpot();
             BelowDistance(10);
-            MinNumber(7);
+            MinNumber(14);
         }
     }
     
@@ -266,12 +266,12 @@ sub main()
     Stat("Aggression")
     {
         Name("AggresiveKIll");    
-        Points(0.5);                
+        Points(1.0);                
         WhileBtzNotActive();
         WhileVisible();
         //TriggerVisibility();
         MinAggroLevel(1);
-        MaxAggroLevel(2);
+        MaxAggroLevel(3);
         Event("Evn_Kill")
         {            
 			AtNight();
@@ -283,7 +283,7 @@ sub main()
 	Stat("Aggression")
     {
         Name("AggresiveKIll");    
-        Points(0.3);                
+        Points(1.0);                
         WhileBtzNotActive();
         WhileVisible();
         //TriggerVisibility();
@@ -299,11 +299,11 @@ sub main()
     Stat("Aggression")
     {
         Name("NonWalkerSpotting");            
-        PointsPerSecond(0.05);
+        PointsPerSecond(0.8);
         UseStatMul();
         MinAggroLevel(1);
         MaxAggroLevel(2); //Spotting will not increase our level above 2 - some kills are necessary
-        CannotIncreaseAbovePercent(0.9);    
+        CannotIncreaseAbovePercent(1.5);    
         WhileBtzNotActive();
         
         Event("Evn_AISpotting")
@@ -329,9 +329,9 @@ sub main()
     Stat("Aggression")
     {
         Name("PlayerDamagedClamped");            
-        Points(3);        
+        Points(1.0);        
         MinAggroLevel(1);
-        CannotIncreaseAbovePercent(0.99);
+        CannotIncreaseAbovePercent(2.8);
         WhileBtzNotActive();
                 
         Event("Evn_GiveDamage")
@@ -344,7 +344,7 @@ sub main()
     Stat("Aggression")
     {
         Name("PlayerDamaged");            
-        Points(3);        
+        Points(1.0);        
         MinAggroLevel(1);
         WhileBtzNotActive();
                 
@@ -358,9 +358,9 @@ sub main()
 	Stat("Aggression")
     {
         Name("AiDamaging");    
-        Points(5);
+        Points(1.0);
         MinAggroLevel(1);
-		MaxAggroLevel(4);
+		MaxAggroLevel(1);
         WhileBtzNotActive();
 		
         Event("Evn_GiveDamage")
@@ -368,7 +368,7 @@ sub main()
             Alive();
             WillSurvive();
             PlayerDamagerAiVictim();
-            DamageType("CUT;BULLET;BLAST;PUNCH1;PUNCH2;PUNCH3;PUNCH_BLOCKED;BLUNT;CUT;RAM;POISON;IMPACT;CAR_HIT;KICK;FLARE;TOXIC;COLD;SLIDE");
+            DamageType("CUT;BULLET;BLAST;PUNCH1;PUNCH2;PUNCH3;PUNCH_BLOCKED;PUNCHED_KO;BLUNT;CUT;RAM;POISON;IMPACT;CAR_HIT;KICK;FLARE;TOXIC;COLD;SLIDE;");
 			VictimNightZombie();
         }    
     }
@@ -376,7 +376,7 @@ sub main()
     Stat("Aggression")
     {
         Name("PlayerBitten");            
-        Points(5.0);        
+        Points(1.0);        
         WhileBtzNotActive();
         MinAggroLevel(1);
                 
@@ -404,14 +404,15 @@ sub main()
         }
     }    
 
+
     //Rage timer increase level after 1 minute of pursuit
     Stat("Aggression")
     {
         Name("RageMeterIncrease");    
         UseStatDT();
-        PointsPerSecond(0.3);
+        PointsPerSecond(0.5);
         MinAggroLevel(1);
-        MaxAggroLevel(4);
+        MaxAggroLevel(3);
         MinAggroTime(25);
         WhileBtzNotActive();
         
@@ -476,12 +477,12 @@ sub aggro_levels()
     AggressionLevel(0)
     {
         MaxAggroValue(1.0);
-        PursuitAreaRadius(50.0);
-        CrowdDensity(3);
-        PlayerHitSlowdown(0.1);
+        PursuitAreaRadius(120.0);
+        CrowdDensity(2);
+        PlayerHitSlowdown(0);
         MinAggroLevelTime(10);
-        PursuitDiffLevel(0);
-		GroupDamageMultiplayer(0.3);
+        PursuitDiffLevel(1);
+		GroupDamageMultiplayer(0.0);
     }
     
     AggressionLevel(1)
@@ -492,13 +493,13 @@ sub aggro_levels()
         PlayerHitSlowdown(0.3);
         MinAggroLevelTime(5);
         PursuitDiffLevel(1);
-		GroupDamageMultiplayer(0.4);
+		GroupDamageMultiplayer(0.0);
     }
     
     AggressionLevel(2)
     {
         MaxAggroValue(5.0);
-        PursuitAreaRadius(250.0);
+        PursuitAreaRadius(350.0);
         CrowdDensity(0);
         PlayerHitSlowdown(0.4);
         MinAggroLevelTime(5);
@@ -520,7 +521,7 @@ sub aggro_levels()
     AggressionLevel(4)
     {
         MaxAggroValue(10.0);
-        PursuitAreaRadius(600.0);
+        PursuitAreaRadius(500.0);
         CrowdDensity(0);
         PlayerHitSlowdown(0.6);
         MinAggroLevelTime(5);
@@ -553,8 +554,8 @@ sub aggro_sounds()
 		
     SoundType("EXPLOSION")
     {
-        MaxLifeTime(200.0);
-        Radius(200.0);
+        MaxLifeTime(220.0);
+        Radius(750.0);
         MinAdd(90.0);
         MaxAdd(250.0);
         MaxPower(1000.0);
@@ -565,10 +566,10 @@ sub aggro_sounds()
 
     SoundType("SHOT")
     {
-        MaxLifeTime(80.0);
-        Radius(55.0);
-        MinAdd(50.0);
-        MaxAdd(80.0);
+        MaxLifeTime(120.0);
+        Radius(600.0);
+        MinAdd(40.0);
+        MaxAdd(120.0);
         MaxPower(400.0);
         ShownOnRadar();
     }
@@ -576,10 +577,10 @@ sub aggro_sounds()
 	
 	SoundType("LIGHT_SHOT")
     {
-        MaxLifeTime(80.0);
-        Radius(65.0);
-        MinAdd(50.0);
-        MaxAdd(80.0);
+        MaxLifeTime(120.0);
+        Radius(600.0);
+        MinAdd(40.0);
+        MaxAdd(120.0);
         MaxPower(400.0);
         ShownOnRadar();
     }
@@ -587,18 +588,18 @@ sub aggro_sounds()
 	
 	SoundType("HEAVY_SHOT")
     {
-        MaxLifeTime(140.0);
-        Radius(90.0);
-        MinAdd(50.0);
-        MaxAdd(150.0);
+        MaxLifeTime(200.0);
+        Radius(700.0);
+        MinAdd(75.0);
+        MaxAdd(200.0);
         MaxPower(400.0);
         ShownOnRadar();
     }
 
     SoundType("WEAPON_MELEE_HIT")
     {
-        MaxLifeTime(5.0);
-        Radius(3.0);
+        MaxLifeTime(15.0);
+        Radius(30.0);
         Power(5.0);
         MaxPower(50.0);
         RadiusAdd(5.0);
@@ -608,8 +609,8 @@ sub aggro_sounds()
     
     SoundType("SCREAMER_SHOUT")
     {
-        MaxLifeTime(30.0);
-        Radius(120.0);
+        MaxLifeTime(90.0);
+        Radius(200.0);
         Power(70.0); //power per second
         MaxPower(900.0);
         ShownOnRadar();
@@ -636,8 +637,8 @@ sub aggro_sounds()
     
     SoundType("DESTROYABLE_SMALL")
     {
-        MaxLifeTime(5.0);
-        Radius(20.0);
+        MaxLifeTime(50.0);
+        Radius(50.0);
         Power(50.0);
         MaxPower(80.0);
         TransformRadius(5.0);
@@ -647,8 +648,8 @@ sub aggro_sounds()
     
     SoundType("DESTROYABLE_LARGE")
     {
-        MaxLifeTime(10.0);
-        Radius(100.0);
+        MaxLifeTime(100.0);
+        Radius(300.0);
         Power(120.0);
         MaxPower(220.0);
         ShownOnRadar();
@@ -658,8 +659,8 @@ sub aggro_sounds()
     
     SoundType("ZOMBIE_SCREAM")
     {
-        MaxLifeTime(10.0);
-        Radius(80.0);
+        MaxLifeTime(60.0);
+        Radius(200.0);
         MinAdd(50.0);
         MaxAdd(70.0);
         MaxPower(200.0);
@@ -678,19 +679,19 @@ sub aggro_sounds()
     
     SoundType("CAR_ENGINE")
     {
-        MaxLifeTime(1.0);
-        Radius(100.0);
-        Power(10.0);
-        MaxPower(20.0);
-		RadiusAdd(3.0);
-		ForceInvestigating();
-		MaxRadius(15.0);
+        MaxLifeTime(100.0);
+        Radius(300.0);
+        Power(100.0);
+        MaxPower(260.0);
+        RadiusAdd(2.0);
+        ForceInvestigating();
+        MaxRadius(50.0);
     }
-	    
+    
     SoundType("PLAYER_SPRINT")
     {
-        MaxLifeTime(1.0);
-        Radius(4.0);
+        MaxLifeTime(10.0);
+        Radius(16.0);
         Power(10.0);
         MaxPower(20.0);
 		RadiusAdd(3.0);
@@ -700,10 +701,10 @@ sub aggro_sounds()
     
     SoundType("GAMER_SOUND_LVL_1")
     {
-        MaxLifeTime(5.0);
-        Radius(5.0);
+        MaxLifeTime(20.0);
+        Radius(75.0);
         Power(10.0);
-        MaxPower(40.0);
+        MaxPower(60.0);
         GamerNoiseThreshold(0.3);
         ShownOnRadar();
 		ForceInvestigating();
@@ -711,10 +712,10 @@ sub aggro_sounds()
     
     SoundType("GAMER_SOUND_LVL_2")
     {
-        MaxLifeTime(10.0);
-        Radius(10.0);
+        MaxLifeTime(120.0);
+        Radius(250.0);
         Power(60.0);
-        MaxPower(70.0);
+        MaxPower(260.0);
         GamerNoiseThreshold(0.95);
 		ForceInvestigating();
         ShownOnRadar();
@@ -722,11 +723,11 @@ sub aggro_sounds()
     
     SoundType("PLANE_APPROACHING")
     {
-        MaxLifeTime(0.3);
-        Radius(50.0);
+        MaxLifeTime(30);
+        Radius(100.0);
         Power(20.0);
         MaxPower(20.0);
-		ForceInvestigating(1);
+		ForceInvestigating();
         ShownOnRadar();
     }
     
@@ -742,8 +743,8 @@ sub aggro_sounds()
     
     SoundType("DECOY")
     {
-        MaxLifeTime(0.5);
-        Radius(1.0);
+        MaxLifeTime(50);
+        Radius(90.0);
         Power(1.0);
         MaxPower(20.0);
         ShownOnRadar();
@@ -760,8 +761,8 @@ sub aggro_sounds()
 	
 	SoundType("LIGHT_EXPLOSION")
     {
-        MaxLifeTime(5.0);
-        Radius(150.0);
+        MaxLifeTime(100.0);
+        Radius(250.0);
         MinAdd(30.0);
         MaxAdd(60.0);
         MaxPower(80.0);
@@ -772,7 +773,7 @@ sub aggro_sounds()
     //AggroLevel(level, points_to_get_level, min_time_before_level_drops(s) );    
     AggroLevel(0, 50, 0.0);
     AggroLevel(1, 100, 15.0);
-    AggroLevel(2, 300, 15.0);
-    AggroLevel(3, 600, 15.0);
-    AggroLevel(4, 900, 15.0);
+    AggroLevel(2, 150, 45.0);
+    AggroLevel(3, 300, 75.0);
+    AggroLevel(4, 600, 100.0);
 }

@@ -1,6 +1,4 @@
 !include("night_spawn_presets.scr")
-!include("btz_spawn.scr")
-
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////
 //NIGHT NOISE
@@ -13,9 +11,9 @@
 		UseCondition("InfectedsSpawn;PlayerZombie_NotExist")
         DisallowedMaps("old_town_outposts_radio;old_town_outposts;old_town_outposts_museum;Sewers_Stadium")
 		PoolType("night_noise")
-		IntensityKey(1, 35)
+		IntensityKey(1, 125)
 		Wait(10)
-		IntensityKey(1, 0)
+		IntensityKey(1, 10)
 		Wait(80)
 	}
 
@@ -28,9 +26,9 @@
 		UseCondition("InfectedsSpawn;PlayerZombie_NotExist")
         DisallowedMaps("old_town_outposts_radio;old_town_outposts;old_town_outposts_museum;Sewers_Stadium")
 		PoolType("night_noise")
-		IntensityKey(1, 50)
+		IntensityKey(1, 140)
 		Wait(10)
-		IntensityKey(1, 0)
+		IntensityKey(1, 10)
 		Wait(80)
 	}
 
@@ -44,9 +42,9 @@
 		UseCondition("InfectedsSpawn;PlayerZombie_NotExist")
         DisallowedMaps("old_town_outposts_radio;old_town_outposts;old_town_outposts_museum;Sewers_Stadium")
 		PoolType("night_noise")
-		IntensityKey(1, 75)
+		IntensityKey(1, 155)
 		Wait(10)
-		IntensityKey(1, 0)
+		IntensityKey(1, 10)
 		Wait(80)
 	}
 
@@ -61,7 +59,7 @@
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////
-//BEGIN
+//SLUMS
     Pool("Night_Aggresion_Level_0_Easy")
     {
         UseCondition("Night;PlayerZombie_NotExist")
@@ -73,7 +71,7 @@
         ConditionNightAggrLvl(0)
 
         Preset("Volatile_Patrol_Easy, 100;")
-		MaxNoZombiesInPursuit(3)
+		MaxNoZombiesInPursuit(12)
     }
 
 
@@ -88,7 +86,7 @@
 
 		NoZombiesByPresets("Volatile, 65;Volatile_Nav, 35;Volatile_Patrol_Easy, 1;", 1, 1)
         NoZombiesByPresets("Night_Walker, 80;Night_Walker_Init, 20", 2, 2)
-		MaxNoZombiesInPursuit(4)
+		MaxNoZombiesInPursuit(16)
     }
 
     Pool("Night_Aggresion_Level_2_Easy")
@@ -102,7 +100,7 @@
 
         NoZombiesByPresets("Volatile, 65;Volatile_Nav, 35;Volatile_Patrol_Easy, 1;", 1, 1)
         NoZombiesByPresets("Night_Walker, 80;Night_Walker_Init, 20", 3, 3)
-		MaxNoZombiesInPursuit(8)
+		MaxNoZombiesInPursuit(24)
     }
 
     Pool("Night_Aggresion_Level_3_Easy")
@@ -111,14 +109,14 @@
         DisallowedMaps("Sewers;Old_Town")
         MaxProgressCondition(4)
         BalancedNumberOfZombies(1)
-        ConditionNightAggrLvl(10)
+        ConditionNightAggrLvl(3)
         Type("night")
 
 
         NoZombiesByPresets("Volatile, 65;Volatile_Nav, 35;Volatile_Patrol_Easy, 1;", 2, 2)
         NoZombiesByPresets("Night_Walker, 80;Night_Walker_Init, 20", 4, 4)
         
-		MaxNoZombiesInPursuit(12)
+		MaxNoZombiesInPursuit(30)
     }
 
     Pool("Night_Aggresion_Level_4_Easy")
@@ -134,23 +132,36 @@
         NoZombiesByPresets("Night_Walker, 80;Night_Walker_Init, 20", 5, 5)
         NoZombiesByPresets("Night_Suicider_Bomber, 100", 1, 2)
 
-		MaxNoZombiesInPursuit(14)
+		MaxNoZombiesInPursuit(35)
     }
 
-///////////////////////////////////////////////////////////////////////////////////////////////////////
-//SLUMS
+    Pool("Night_Aggresion_Level_5_Easy")
+    {
+        UseCondition("Night;PlayerZombie_NotExist")
+        DisallowedMaps("Sewers;Old_Town")
+        MaxProgressCondition(4)
+        BalancedNumberOfZombies(1)
+        ConditionNightAggrLvl(5)
+        Type("night")
+
+        NoZombiesByPresets("Volatile, 65;Volatile_Nav, 35", 4, 4)
+        NoZombiesByPresets("Night_Walker, 80;Night_Walker_Init, 20", 5, 6)
+        NoZombiesByPresets("Night_Suicider_Bomber, 100", 1, 2)
+    }
+
+	
 	Pool("Night_Aggresion_Level_0")
     {
         UseCondition("Night;PlayerZombie_NotExist")
         DisallowedMaps("Sewers;Old_Town")
-        MinProgressCondition(4)
+        MinChapterAndProgressCondition(3, 2)
         BalancedNumberOfZombies(0)
         Type("night")
 
         ConditionNightAggrLvl(0)
 
         Preset("Volatile_Patrol, 50;Volatile_Patrol_Super, 50;")
-		MaxNoZombiesInPursuit(6)
+		MaxNoZombiesInPursuit(0)
     }
 
     Pool("Night_Aggresion_Level_1")
@@ -165,7 +176,7 @@
 		NoZombiesByPresets("Volatile_Hard, 35;Volatile_Pit_Hard, 30;Volatile, 65;Volatile_Nav, 35;Volatile_Patrol, 1;Volatile_Patrol_Super, 1;", 1, 1)
         NoZombiesByPresets("Night_Walker, 80;Night_Walker_Init, 20", 3, 3)
 
-		MaxNoZombiesInPursuit(9)
+		MaxNoZombiesInPursuit(16)
     }
 
     Pool("Night_Aggresion_Level_2")
@@ -180,7 +191,7 @@
         NoZombiesByPresets("Volatile_Hard, 35;Volatile_Pit_Hard, 30;Volatile, 65;Volatile_Nav, 35;Volatile_Patrol, 1;Volatile_Patrol_Super, 1;", 2, 2)
         NoZombiesByPresets("Night_Walker, 80;Night_Walker_Init, 20", 4, 4)
 
-		MaxNoZombiesInPursuit(12)
+		MaxNoZombiesInPursuit(24)
     }
 
     Pool("Night_Aggresion_Level_3")
@@ -196,7 +207,7 @@
         NoZombiesByPresets("Volatile_Hard, 35;Volatile_Pit_Hard, 30;Volatile, 65;Volatile_Nav, 35;Volatile_Patrol, 1;Volatile_Patrol_Super, 1;", 3, 3)
         NoZombiesByPresets("Night_Walker, 80;Night_Walker_Init, 20", 5, 5)
         
-		MaxNoZombiesInPursuit(18)
+		MaxNoZombiesInPursuit(32)
     }
 
     Pool("Night_Aggresion_Level_4")
@@ -212,9 +223,22 @@
         NoZombiesByPresets("Night_Walker, 80;Night_Walker_Init, 20", 6, 6)
         NoZombiesByPresets("Night_Suicider_Bomber, 100", 1, 2)
 
-		MaxNoZombiesInPursuit(24)
+		MaxNoZombiesInPursuit(35)
     }
 
+    Pool("Night_Aggresion_Level_5")
+    {
+        UseCondition("Night;PlayerZombie_NotExist")
+        DisallowedMaps("Sewers;Old_Town")
+        MinProgressCondition(4)
+        BalancedNumberOfZombies(1)
+        ConditionNightAggrLvl(5)
+        Type("night")
+
+        NoZombiesByPresets("Volatile, 65;Volatile_Nav, 35", 4, 4)
+        NoZombiesByPresets("Night_Walker, 80;Night_Walker_Init, 10", 6, 6)
+        NoZombiesByPresets("Night_Suicider_Bomber, 100", 1, 2)
+    }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////
 //OLD_TOWN
@@ -229,7 +253,7 @@
 
         Preset("Volatile_Patrol_OT, 70;Volatile_Patrol_Super, 30;")
 
-		MaxNoZombiesInPursuit(8)
+		MaxNoZombiesInPursuit(20)
     }
 
     Pool("Night_Aggresion_Level_1")
@@ -243,7 +267,7 @@
 		NoZombiesByPresets("Volatile_Hard, 25;Volatile_Pit_Hard, 70;Volatile_Pit, 20;Volatile_Nav, 5;Volatile_Patrol_OT, 1;", 2, 2)
         NoZombiesByPresets("Night_Walker, 30;Night_Walker_Init, 70", 4, 4)
 
-		MaxNoZombiesInPursuit(12)
+		MaxNoZombiesInPursuit(24)
     }
 
     Pool("Night_Aggresion_Level_2")
@@ -257,7 +281,7 @@
         NoZombiesByPresets("Volatile_Hard, 25;Volatile_Pit_Hard, 70;Volatile_Pit, 20;Volatile_Nav, 5;Volatile_Patrol_OT, 1;", 3, 3)
         NoZombiesByPresets("Night_Walker, 30;Night_Walker_Init, 70", 5, 5)
 
-		MaxNoZombiesInPursuit(16)
+		MaxNoZombiesInPursuit(28)
     }
 
     Pool("Night_Aggresion_Level_3")
@@ -272,7 +296,7 @@
         NoZombiesByPresets("Volatile_Hard, 25;Volatile_Pit_Hard, 70;Volatile_Pit, 20;Volatile_Nav, 5;Volatile_Patrol_OT, 1;", 4, 4)
         NoZombiesByPresets("Night_Walker, 30;Night_Walker_Init, 70", 6, 6)
 
-		MaxNoZombiesInPursuit(20)
+		MaxNoZombiesInPursuit(36)
     }
 
     Pool("Night_Aggresion_Level_4")
@@ -287,7 +311,7 @@
         NoZombiesByPresets("Night_Walker, 30;Night_Walker_Init, 70", 8, 8)
         NoZombiesByPresets("Night_Suicider_Bomber, 100", 1, 2)
 
-		MaxNoZombiesInPursuit(24)
+		MaxNoZombiesInPursuit(38)
     }
 
 
@@ -303,7 +327,6 @@
         BalancedNumberOfZombies(1)
 		NoZombiesByPresets("Volatile_PrimeGuard, 65", 5, 5)
 		DisallowedMaps("old_town_outposts_radio;old_town_outposts;old_town_outposts_museum;Sewers_Stadium")
-		MaxNoZombiesInPursuit(24)
     }
 
 

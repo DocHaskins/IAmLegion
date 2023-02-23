@@ -47,9 +47,14 @@ sub main()
                 MinStatusLevel(5);
                 Limited();
             }
+            Set("Quartermaster_Bow",    			"blue_only",			1, 1)
+            {
+                MinStatusLevel(3);
+                Limited();
+            }
             Set("Quatermaster_Silencer",    		"blue_only",		2)
             {
-                MinStatusLevel(12);
+                MinStatusLevel(9);
                 Limited();
             }
 		}	
@@ -100,13 +105,13 @@ sub main()
 
             Set("Quartermaster_Bow",    			"blue_only",			1, 1)
             {
-                MinStatusLevel(25);
+                MinStatusLevel(3);
                 Limited();
             }
 
             Set("Quatermaster_Silencer",    		"blue_only",		2)
             {
-                MinStatusLevel(12);
+                MinStatusLevel(9);
                 Limited();
             }
         }
@@ -170,10 +175,10 @@ sub main()
         Buy()
         {
 			use Weapons();
-			use Weapons2H();
-			use Firearms();
-			use Ammo();
-            use Throwable_Weapons();
+			//use Weapons2H();
+			//use Firearms();
+			//use Ammo();
+            //use Throwable_Weapons();
             //use Healing_Items();
             //use Miscellaneous();
             use Crafting_Materials();
@@ -197,12 +202,12 @@ sub main()
         {
 			use Weapons();
 			use Weapons2H();
-            use Throwable_Weapons();
-			use Firearms();
-			use Ammo();
+            //use Throwable_Weapons();
+			//use Firearms();
+			//use Ammo();
             //use Healing_Items();
             //use Miscellaneous();
-            use Crafting_Materials();	
+            //use Crafting_Materials();	
 			use Universal_Blueprints();	
 			use ElementalBoost_Blueprints();		
 
@@ -249,12 +254,12 @@ sub main()
         {
 			use Weapons();
 			use Weapons2H();
-			use Firearms();
-			use Ammo();
+			//use Firearms();
+			//use Ammo();
             use Throwable_Weapons();
             //use Healing_Items();
             //use Miscellaneous();
-            use Crafting_Materials();
+            //use Crafting_Materials();
 			use Universal_Blueprints();	
 			use ElementalBoost_Blueprints();	
 
@@ -275,12 +280,12 @@ sub main()
         {
 			use Weapons();
 			use Weapons2H();
-			use Firearms();
+			//use Firearms();
 			use Ammo();
-            use Throwable_Weapons();
+            //use Throwable_Weapons();
             //use Healing_Items();
             //use Miscellaneous();
-            use Crafting_Materials();
+            //use Crafting_Materials();
 			use Universal_Blueprints();	
 			use ElementalBoost_Blueprints();	
 
@@ -301,12 +306,12 @@ sub main()
         {
 			use Weapons();
 			use Weapons2H();
-			use Firearms();
-			use Ammo();
-            use Throwable_Weapons();
+			//use Firearms();
+			//use Ammo();
+            //use Throwable_Weapons();
             //use Healing_Items();
             //use Miscellaneous();
-            use Crafting_Materials();
+            //use Crafting_Materials();
 			use Universal_Blueprints();	
 			use ElementalBoost_Blueprints();	
 
@@ -326,12 +331,12 @@ sub main()
         Buy()
         {
 			use Weapons();
-			use Weapons2H();
-			use Firearms();
+			//use Weapons2H();
+			//use Firearms();
 			use Ammo();
-            use Throwable_Weapons();
-            //use Healing_Items();
-            //use Miscellaneous();
+            //use Throwable_Weapons();
+            use Healing_Items();
+            use Miscellaneous();
             use Crafting_Materials();
 			use Universal_Blueprints();	
 			use ElementalBoost_Blueprints();
@@ -353,9 +358,9 @@ sub main()
         {
 			use Weapons();
 			use Weapons2H();
-			use Firearms();
-			use Ammo();
-            use Throwable_Weapons();
+			//use Firearms();
+			//use Ammo();
+            //use Throwable_Weapons();
             //use Healing_Items();
             //use Miscellaneous();
             use Crafting_Materials();
@@ -379,8 +384,8 @@ sub main()
         {
 			use Weapons();
 			use Weapons2H();
-			use Firearms();
-			use Ammo();
+			//use Firearms();
+			//use Ammo();
             use Throwable_Weapons();
             //use Healing_Items();
             //use Miscellaneous();
@@ -410,8 +415,8 @@ sub main()
 			use Firearms();
 			use Ammo();
             use Throwable_Weapons();
-            //use Healing_Items();
-            //use Miscellaneous();
+            use Healing_Items();
+            use Miscellaneous();
             use Crafting_Materials();
 			use Universal_Blueprints();
 			use ElementalBoost_Blueprints();
@@ -433,9 +438,9 @@ sub main()
         {
 			use Weapons();
 			use Weapons2H();
-			use Firearms();
+			//use Firearms();
 			use Ammo();
-            use Throwable_Weapons();
+            //use Throwable_Weapons();
             //use Healing_Items();
             //use Miscellaneous();
             use Crafting_Materials();
@@ -461,9 +466,9 @@ sub main()
 			use Weapons2H();
 			use Firearms();
 			use Ammo();
-            use Throwable_Weapons();
+            //use Throwable_Weapons();
             //use Healing_Items();
-            //use Miscellaneous();
+            use Miscellaneous();
             use Crafting_Materials();
 			use Universal_Blueprints();
 			use ElementalBoost_Blueprints();	
@@ -484,12 +489,12 @@ sub main()
         Buy()
         {
 			use Weapons();
-			use Weapons2H();
+			//use Weapons2H();
 			use Firearms();
 			use Ammo();
-            use Throwable_Weapons();
-            //use Healing_Items();
-            //use Miscellaneous();
+            //use Throwable_Weapons();
+            use Healing_Items();
+            use Miscellaneous();
             use Crafting_Materials();
 			use Universal_Blueprints();
 			use ElementalBoost_Blueprints();	
@@ -511,12 +516,12 @@ sub main()
         {
 			use Weapons();
 			use Weapons2H();
-			use Firearms();
-			use Ammo();
-            use Throwable_Weapons();
+			//use Firearms();
+			//use Ammo();
+            //use Throwable_Weapons();
             //use Healing_Items();
             //use Miscellaneous();
-            use Crafting_Materials();
+            //use Crafting_Materials();
 			use Universal_Blueprints();	
 			use ElementalBoost_Blueprints();
 
@@ -562,9 +567,9 @@ sub main()
         Buy()
         {
 			use Weapons();
-			use Weapons2H();
-			use Firearms();
-			use Ammo();
+			//use Weapons2H();
+			//use Firearms();
+			//use Ammo();
             use Throwable_Weapons();
             //use Healing_Items();
             //use Miscellaneous();
@@ -589,10 +594,10 @@ sub main()
         {
 			use Weapons();
 			use Weapons2H();
-			use Firearms();
+			//use Firearms();
 			use Ammo();
             use Throwable_Weapons();
-            //use Healing_Items();
+            use Healing_Items();
             //use Miscellaneous();
             use Crafting_Materials();
 			use Universal_Blueprints();
@@ -615,8 +620,8 @@ sub main()
         {
 			use Weapons();
 			use Weapons2H();
-			use Firearms();
-			use Ammo();
+			//use Firearms();
+			//use Ammo();
             use Throwable_Weapons();
             //use Healing_Items();
             //use Miscellaneous();
@@ -639,8 +644,8 @@ sub main()
     {
         Buy()
         {
-			use Weapons();
-			use Weapons2H();
+			//use Weapons();
+			//use Weapons2H();
 			use Firearms();
 			use Ammo();
             use Throwable_Weapons();
@@ -665,14 +670,14 @@ sub main()
     {
         Buy()
         {
-			use Weapons();
+			//use Weapons();
 			use Weapons2H();
 			use Firearms();
 			use Ammo();
-            use Throwable_Weapons();
+            //use Throwable_Weapons();
             //use Healing_Items();
             //use Miscellaneous();
-            use Crafting_Materials();
+            //use Crafting_Materials();
 			use Universal_Blueprints();
 			use ElementalBoost_Blueprints();	
 
@@ -693,8 +698,8 @@ sub main()
         {
 			use Weapons();
 			use Weapons2H();
-			use Firearms();
-			use Ammo();
+			//use Firearms();
+			//use Ammo();
             use Throwable_Weapons();
             //use Healing_Items();
             //use Miscellaneous();
@@ -770,8 +775,8 @@ sub main()
         Buy()
         {
 			use Weapons();
-			use Weapons2H();
-			use Firearms();
+			//use Weapons2H();
+			//use Firearms();
 			use Ammo();
             use Throwable_Weapons();
             //use Healing_Items();
@@ -800,7 +805,7 @@ sub main()
 			use Encounter_Shop_Weapons();
 			use Weapons2H();
 			use Firearms();
-			use Ammo();
+			//use Ammo();
 			use Crafting_Materials_Encounter_Shop();
 			
 			use ArrowsBlueprintElementals();

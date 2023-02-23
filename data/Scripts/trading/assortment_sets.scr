@@ -955,48 +955,47 @@ sub Firearms(){
     Set("Firearms_Level_9",              "shop_slums_exploration",   0, 1)
     {
         MinStatusLevel(2);
-        MaxStatusLevel(6);
-		Limited();
-        Cycle("Hour", 12);
-    }
 
-	Set("Firearms_Level_10",              "shop_slums_exploration",   0, 1)
-    {
-        MinStatusLevel(6);
-		MaxStatusLevel(11);
-        Limited();
-        Cycle("Hour", 12);
     }
 	
+	Set("Firearms_Level_10",              "shop_slums_exploration",   0, 1)
+    {
+        MinStatusLevel(5);
+
+		
+		
+		
+    }
+    
     Set("Firearms_Level_12",              "shop_slums_exploration",   0, 1)
     {
-        MinStatusLevel(12);
+        MinStatusLevel(7);
         Limited();
         Cycle("Hour", 12);
     }
 	Set("Firearms_Level_18",              "shop_slums_exploration",   0, 1)
     {
-        MinStatusLevel(18);
+        MinStatusLevel(8);
         Limited();
         Cycle("Hour", 12);
     }
 	Set("Firearms_Level_24",              "shop_slums_exploration",   0, 1)
     {
-        MinStatusLevel(24);
+        MinStatusLevel(9);
         Limited();
         Cycle("Hour", 12);
     }
 	Set("Firearms_Level_25",              "shop_slums_exploration",   0, 1)
     {
-        MinStatusLevel(25);
+        MinStatusLevel(12);
         Limited();
         Cycle("Hour", 12);
     }
-}
+}	
 sub FirearmsFollowing(){
     Set("Firearms_Level_9",              "shop_slums_exploration",   0, 1)
     {
-        MinStatusLevel(4);
+        MinStatusLevel(9);
         MaxStatusLevel(9);
 		Limited();
         Cycle("Hour", 12);
@@ -1039,63 +1038,55 @@ sub FirearmsFollowing(){
 sub Ammo(){
     Set("Pistol_Ammo",              "whites_only",   2, 3)
     {
-        MinStatusLevel(1);
+        MinStatusLevel(5);
         Cycle("Hour", 12);
-		Limited(2);
-		ExcludeInDifficultyMode("Nightmare");
+		Limited(3);
     }
 
     Set("Rifle_Ammo",              "whites_only",   2, 3)
     {
-        MinStatusLevel(4);
+        MinStatusLevel(5);
 		Cycle("Hour", 12);
-        Limited(2);
-		ExcludeInDifficultyMode("Nightmare");
+        Limited(3);
     }
 	Set("Shotgun_Ammo",              "whites_only",   2, 3)
     {
-        MinStatusLevel(8);
+        MinStatusLevel(5);
 		Cycle("Hour", 12);
-        Limited(2);
-		ExcludeInDifficultyMode("Nightmare");
+        Limited(3);
     }
 	Set("SMG_Ammo",              "whites_only",   2, 3)
     {
-        MinStatusLevel(8);
+        MinStatusLevel(5);
 		Cycle("Hour", 12);
-        Limited(2);
-		ExcludeInDifficultyMode("Nightmare");
+        Limited(3);
     }
 }
 sub AmmoFollowing(){
     Set("Pistol_Ammo",              "whites_only",   2, 3)
     {
-        MinStatusLevel(1);
+        MinStatusLevel(5);
         Cycle("Hour", 12);
-		Limited(2);
-		ExcludeInDifficultyMode("Nightmare");
+		Limited(3);
     }
 
     Set("Rifle_Ammo",              "whites_only",   2, 3)
     {
-        MinStatusLevel(4);
+        MinStatusLevel(5);
 		Cycle("Hour", 12);
-        Limited(2);
-		ExcludeInDifficultyMode("Nightmare");
+        Limited(3);
     }
 	Set("Shotgun_Ammo",              "whites_only",   2, 3)
     {
-        MinStatusLevel(8);
+        MinStatusLevel(5);
 		Cycle("Hour", 12);
-        Limited(2);
-		ExcludeInDifficultyMode("Nightmare");
+        Limited(3);
     }
 	Set("SMG_Ammo",              "whites_only",   2, 3)
     {
-        MinStatusLevel(8);
+        MinStatusLevel(5);
 		Cycle("Hour", 12);
-        Limited(2);
-		ExcludeInDifficultyMode("Nightmare");
+        Limited(3);
     }
 }
 
@@ -1103,7 +1094,7 @@ sub Healing_Items(){
     Set("Medkits",                              "whites_only",              1)            
         {
             MinStatusLevel(1);
-			Limited(2);
+
         }
 }
 
@@ -1114,7 +1105,7 @@ sub Miscellaneous(){
         }
     Set("Lockpicks",                        "whites_only",      0, 1)
         {
-            MinStatusLevel(2);
+            MinStatusLevel(1);
         }
 }
 
