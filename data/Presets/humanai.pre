@@ -3644,7 +3644,7 @@ sub main()
                 SetField("m_AttachableItem4Probability", "0.2");
 				SetField("m_BurnOnStart", "0");
 				SetField("m_BroadcastRange", "6.0");
-				AddField("m_CanLeaveSpawnPos", "1");
+				SetField("m_CanLeaveSpawnPos", "1");
                 SetField("m_CanBeLimitedAttacker", "1");
 				SetField("m_CanBeBackstabbed", "1");
                 SetField("m_CanReactOnCollisionWithPlayer", "1");
@@ -3664,11 +3664,10 @@ sub main()
 				SetField("m_Gender", "0");
                 SetField("m_GrabEnabled", "1");
                 SetField("m_HarvestingLootType", "Harvesting_Biter_Body");
-                SetField("m_IsHarvestable", "1");
-				SetField("m_KnowledgeBasePreset", "infected_humanity");										   
+                SetField("m_IsHarvestable", "1");									   
                 SetField("m_MinLevelDiff", "-5");
 				SetField("m_MaxLevelDiff", "2");
-                SetField("m_ModulesPreset", "infected_humanity");
+                SetField("m_ModulesPreset", "1");
                 SetField("m_NeverHolsterWeapon", "1");
                 SetField("m_PoisonedOnStart", "0");
                 SetField("m_PrimaryWeaponProbability", "0.5");
@@ -3693,7 +3692,7 @@ sub main()
                 SetField("m_AttachableItem4Probability", "0.2");
 				SetField("m_BurnOnStart", "0");
 				SetField("m_BroadcastRange", "6.0");
-				AddField("m_CanLeaveSpawnPos", "1");
+				SetField("m_CanLeaveSpawnPos", "1");
                 SetField("m_CanBeLimitedAttacker", "1");
                 SetField("m_CanReactOnCollisionWithPlayer", "1");
 				SetField("m_CanUseAttractors", "1");
@@ -3739,7 +3738,7 @@ sub main()
                 SetField("m_AttachableItem4Probability", "0.2");
 				SetField("m_BurnOnStart", "0");
 				SetField("m_BroadcastRange", "8.0");
-				AddField("m_CanLeaveSpawnPos", "1");
+				SetField("m_CanLeaveSpawnPos", "1");
                 SetField("m_CanBeLimitedAttacker", "1");
                 SetField("m_CanUseAttractors", "1");
 				SetField("m_CanUseMovementCollisions", "1");
@@ -4102,7 +4101,7 @@ sub main()
                 SetField("m_AttachableItem2Probability", "0.2");
 				SetField("m_BurnOnStart", "0");
 				SetField("m_BroadcastRange", "6.0");
-				AddField("m_CanLeaveSpawnPos", "1");
+				SetField("m_CanLeaveSpawnPos", "1");
                 SetField("m_CanBeLimitedAttacker", "1");
 				SetField("m_CanBeBackstabbed", "1");
 				SetField("m_CanBeInHumanity", "1");
@@ -4123,11 +4122,10 @@ sub main()
 				SetField("m_Gender", "1");
                 SetField("m_GrabEnabled", "1");
                 SetField("m_HarvestingLootType", "Harvesting_Biter_Body");
-                SetField("m_IsHarvestable", "1");
-				SetField("m_KnowledgeBasePreset", "infected_humanity");										   
+                SetField("m_IsHarvestable", "1");								   
                 SetField("m_MinLevelDiff", "-5");
 				SetField("m_MaxLevelDiff", "2");
-                SetField("m_ModulesPreset", "infected_humanity");
+                SetField("m_ModulesPreset", "1");
                 SetField("m_NeverHolsterWeapon", "1");
                 SetField("m_PoisonedOnStart", "0");
                 SetField("m_PrimaryWeaponProbability", "0.5");
@@ -4150,7 +4148,7 @@ sub main()
                 SetField("m_AttachableItem2Probability", "0.2");
 				SetField("m_BurnOnStart", "0");
 				SetField("m_BroadcastRange", "6.0");
-				AddField("m_CanLeaveSpawnPos", "1");
+				SetField("m_CanLeaveSpawnPos", "1");
                 SetField("m_CanBeLimitedAttacker", "1");
                 SetField("m_CanUseAttractors", "1");
 				SetField("m_CanReactOnCollisionWithPlayer", "1");
@@ -4193,7 +4191,7 @@ sub main()
 				SetField("m_AttachableItem2Name", "Attachable_Flashlight");
                 SetField("m_AttachableItem2Probability", "0.2");
 				SetField("m_BroadcastRange", "6.0");
-				AddField("m_CanLeaveSpawnPos", "1");
+				SetField("m_CanLeaveSpawnPos", "1");
 				SetField("m_CanBeInHumanity", "0");
                 SetField("m_CanUseAttractors", "1");
                 SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_ALL);
