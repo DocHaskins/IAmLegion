@@ -90,14 +90,6 @@ sub main()
 		Weapon("Firearm_Rifle_B_Sand_AI", 5, 0, 100);
 		Weapon("Firearm_Rifle_C_AI", 5, 0, 100);
 		Weapon("Firearm_Rifle_Sniper_AI", 5, 0, 100);
-		Weapon("ZZZZZ_Firearm_SubmachineA", 5, 0, 100);
-		Weapon("ZZZZZ_Firearm_SubmachineB", 5, 0, 100);
-		Weapon("ZZZZZ_Firearm_SubmachineAColor_D", 5, 0, 100);
-		Weapon("ZZZZZ_Firearm_ShotgunBGen", 5, 0, 100);
-		Weapon("ZZZZZ_Firearm_ShotgunCGenSand", 5, 0, 100);
-		Weapon("ZZZZZ_Firearm_ShotgunCGen", 5, 0, 100);
-		Weapon("Firearm_Rifle_Tactical", 5, 0, 100);
-		Weapon("Firearm_Shotgun_Tactical", 5, 0, 100);
 	}
 		
 

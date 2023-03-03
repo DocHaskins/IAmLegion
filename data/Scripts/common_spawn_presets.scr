@@ -76,9 +76,9 @@
     PresetDef("Vessel_Eating_Corpse")
     {
         Difficult(7)
-        AIPreset("Biter_Man_Fresh;Biter_Woman_Fresh")
-        SpawnCondition("nav_mesh, -1;__any__, 1;t_INIT, -1;p_ROOF, -1")
-		DiffLvlTableName("Biter_Man_Wast;Biter_Woman_Wast")
+        AIPreset("Biter_Man;Biter_Woman")
+        DiffLvlTableName("Biter_Man_Wast;Biter_Woman_Wast")   
+		SpawnCondition("nav_mesh, -1;__any__, 1;t_INIT, -1;p_ROOF, -1")
         DisallowedMaps("Stadium")
         AttractorToSpawnWithAI("virtual_corpse_a")
         MeshToSpawnWithAI("dead_body_c.msh", [0.03, 0, 1.20])
@@ -91,16 +91,12 @@
     PresetDef("Vessel_DeadBody")
     {
         Difficult(7)
-        AIPreset("Biter_Man_Fresh;Biter_Woman_Fresh")
+        AIPreset("Biter_Man;Biter_Woman")
+		DiffLvlTableName("Biter_Man;Biter_Woman")
         SpawnCondition("nav_mesh, -1;__any__, 1;t_INIT, -1;p_ROOF, -1")
-		DiffLvlTableName("Biter_Man_Wast;Biter_Woman_Wast")
         SpawnOnFlatTerrain(1)
         ForceTargetType(-1)
         SetDeadBody("mz_upset_standup_v01")
-		CustomDataPreset("anim_set_waste")
-        ForceTargetType(3)
-        TimeBtwSpawnZombies(3)
-        CanSpawnIntoCrowd(1,"_AG")
     }
 
     PresetDef("Vessel_Lurker")
@@ -134,7 +130,7 @@
     PresetDef("Vessel_In_Attractor")
     {
         Difficult(7)
-        AIPreset("Biter_Man_Fresh;Biter_Woman_Fresh")
+        AIPreset("Biter_Man;Biter_Woman")
 		DiffLvlTableName("Biter_Man;Biter_Woman")
         SpawnCondition("nav_mesh, -1;__any__, 1;p_ROOF, -1")
         MinDistBtwZombies(1)
@@ -194,7 +190,7 @@
     {
         Difficult(15)
         AIPreset("ViralHumanity_Man_OldTown;ViralHumanity_Woman_OldTown")
-		DiffLvlTableName("Biter_Man_Fresh;Biter_Woman_Fresh;Viral_Man;Viral_Woman")
+		DiffLvlTableName("Biter_Man;Biter_Woman;Biter_Man_Fresh;Biter_Woman_Fresh;Viral_Man;Viral_Woman")
 		BannedAreaAttribs("NOISE_SPAWN_BLOCKER")
         SpawnCondition("t_INIT, 0.7;z_INFECTED, 0.7;p_ROOF, 1")
         MinDistBtwZombies(15)
@@ -209,7 +205,7 @@
     {
         Difficult(15)
         AIPreset("ViralHumanity_Man_OldTown;ViralHumanity_Woman_OldTown")
-		DiffLvlTableName("Biter_Man_Fresh;Biter_Woman_Fresh;Viral_Man;Viral_Woman")
+		DiffLvlTableName("Biter_Man;Biter_Woman;Biter_Man_Fresh;Biter_Woman_Fresh;Viral_Man;Viral_Woman")
 		BannedAreaAttribs("NOISE_SPAWN_BLOCKER")
 		SpawnCondition("t_INIT, 0.4;z_INFECTED, 0.4;p_ROOF, 0.4")
         MinDistBtwZombies(15)

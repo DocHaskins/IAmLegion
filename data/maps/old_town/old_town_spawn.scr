@@ -9,8 +9,7 @@
 //CROWD
 ///////////////////////////////////////////////////////////////////
 
-SetDiffLevelDependentFormPlayerLevels(1)
-SetDiffLevelMod(-8)
+
 
 CrowdDynamicPatternLength(200.)
 CrowdDynamicPatternFill(80)
