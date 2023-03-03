@@ -138,7 +138,7 @@ sub main()
                 SetField("m_AlarmedMimicPreset", "normal");
                 SetField("m_AllowInitialArmsDamage", "1");
                 SetField("m_CustomDataPreset", "man_level_0_a");
-                SetField("m_TransformIntoPreset", "Biter_Man_Agressive;DiffLevel;Viral_m_lvl0");
+                SetField("m_TransformIntoPreset", "Bitter_Man_Agressive;DiffLevel;Viral_m_lvl0");
         }
 
         Preset("Biter_m_lv1")
@@ -172,7 +172,7 @@ sub main()
                 SetField("m_CustomDataPreset", "man_level_1_b;man_level_1_c");
                 SetField("m_CustomLootType", "DeadBody_Thug");
                 SetField("m_CustomLootTypeString", "Biter_lvl1_wast");
-                SetField("m_TransformIntoPreset", "Biter_Man_Agressive;DiffLevel;Viral_m_lvl1");
+                SetField("m_TransformIntoPreset", "Bitter_Man_Agressive;DiffLevel;Viral_m_lvl1");
         }
 
         Preset("Biter_m_lv2")
@@ -202,7 +202,7 @@ sub main()
                 SetField("m_AllowInitialArmsDamage", "0");
                 SetField("m_CustomDataPreset", "man_level_2_b;man_level_2_c");
                 SetField("m_CustomLootTypeString", "Biter_lvl2_wast");
-                SetField("m_TransformIntoPreset", "Biter_Man_Agressive;DiffLevel;Viral_m_lvl2");
+                SetField("m_TransformIntoPreset", "Bitter_Man_Agressive;DiffLevel;Viral_m_lvl2");
         }
 
         Preset("Biter_m_lv3")
@@ -255,7 +255,7 @@ sub main()
                 SetField("m_AllowInitialArmsDamage", "0");
                 SetField("m_CustomDataPreset", "man_level_3_b;man_level_3_c");
                 SetField("m_CustomLootTypeString", "Biter_lvl3_wast");
-                SetField("m_TransformIntoPreset", "Biter_Man_Agressive;DiffLevel;Viral_m_lvl3");
+                SetField("m_TransformIntoPreset", "Bitter_Man_Agressive;DiffLevel;Viral_m_lvl3");
                 SetField("m_VisRepresentationsPool", "Biter_Heavy");
         }
 
@@ -275,7 +275,7 @@ sub main()
                 SetField("m_AllowInitialArmsDamage", "0");
                 SetField("m_CustomDataPreset", "man_level_4_b;man_level_4_c");
                 SetField("m_CustomLootTypeString", "Biter_lvl4_wast");
-                SetField("m_TransformIntoPreset", "Biter_Man_Agressive;DiffLevel;Viral_m_lvl4");
+                SetField("m_TransformIntoPreset", "Bitter_Man_Agressive;DiffLevel;Viral_m_lvl4");
                 SetField("m_VisRepresentationsPool", "biter_very_heavy");
         }
 
@@ -298,7 +298,7 @@ sub main()
                 SetField("m_CustomDataPreset", "man_level_5_b;man_level_5_c");
                 SetField("m_CustomLootTypeString", "Biter_lvl5_wast");
                 SetField("m_GrabEnabled", "0");
-                SetField("m_TransformIntoPreset", "Biter_Man_Agressive;DiffLevel;Viral_m_lvl4");
+                SetField("m_TransformIntoPreset", "Bitter_Man_Agressive;DiffLevel;Viral_m_lvl4");
         }
 		
 		Preset("Biter_w_lv_easy_0")
@@ -2064,9 +2064,9 @@ sub main()
 				SetField("m_AttachableItem2Name", "fire_helmet");
                 SetField("m_AttachableItem2Probability", "0.1");
 				SetField("m_AttachableItem3Name", "miner_helmet");
-                SetField("m_AttachableItem3Probability", "0.1");
+                SetField("m_AttachableItem3Probability", "0.01");
 				SetField("m_AttachableItem4Name", "Attachable_Flashlight");
-                SetField("m_AttachableItem4Probability", "0.2");
+                SetField("m_AttachableItem4Probability", "0.1");
 				SetField("m_BurnOnStart", "0");
                 SetField("m_CanBeLimitedAttacker", "1");
                 SetField("m_CanUseAttractors", "1");
@@ -2102,9 +2102,9 @@ sub main()
 				SetField("m_AttachableItem2Name", "fire_helmet");
                 SetField("m_AttachableItem2Probability", "0.1");
 				SetField("m_AttachableItem3Name", "miner_helmet");
-                SetField("m_AttachableItem3Probability", "0.1");
+                SetField("m_AttachableItem3Probability", "0.01");
 				SetField("m_AttachableItem4Name", "Attachable_Flashlight");
-                SetField("m_AttachableItem4Probability", "0.2");
+                SetField("m_AttachableItem4Probability", "0.1");
 				SetField("m_BurnOnStart", "0");
                 SetField("m_CanBeLimitedAttacker", "0");
                 SetField("m_CanUseAttractors", "1");
@@ -3638,9 +3638,9 @@ sub main()
 				SetField("m_AttachableItem2Name", "fire_helmet");
                 SetField("m_AttachableItem2Probability", "0.1");
 				SetField("m_AttachableItem3Name", "miner_helmet");
-                SetField("m_AttachableItem3Probability", "0.1");
+                SetField("m_AttachableItem3Probability", "0.01");
 				SetField("m_AttachableItem4Name", "Attachable_Flashlight");
-                SetField("m_AttachableItem4Probability", "0.2");
+                SetField("m_AttachableItem4Probability", "0.1");
 				SetField("m_BurnOnStart", "0");
 				SetField("m_BroadcastRange", "6.0");
 				AddField("m_CanLeaveSpawnPos", "1");
@@ -3674,7 +3674,7 @@ sub main()
                 SetField("m_ShowFlies", "1");
                 SetField("m_SoundPreset", "ZombieSlowMan00;ZombieSlowMan01");
                 SetField("m_StepPreset", "Default_Zombie");
-                SetField("m_TransformIntoPreset", "Biter_Man_Agressive");
+                SetField("m_TransformIntoPreset", "Bitter_Man_Agressive");
                 SetField("m_Type", "1");
 				SetField("m_UseRandomDataSet", "1");
                 SetField("m_VisRepresentationsPool", "Biter_Man");
@@ -3687,9 +3687,9 @@ sub main()
 				SetField("m_AttachableItem2Name", "fire_helmet");
                 SetField("m_AttachableItem2Probability", "0.1");
 				SetField("m_AttachableItem3Name", "miner_helmet");
-                SetField("m_AttachableItem3Probability", "0.1");
+                SetField("m_AttachableItem3Probability", "0.01");
 				SetField("m_AttachableItem4Name", "Attachable_Flashlight");
-                SetField("m_AttachableItem4Probability", "0.2");
+                SetField("m_AttachableItem4Probability", "0.1");
 				SetField("m_BurnOnStart", "0");
 				SetField("m_BroadcastRange", "6.0");
 				AddField("m_CanLeaveSpawnPos", "1");
@@ -3721,7 +3721,7 @@ sub main()
                 SetField("m_ShowFlies", "1");
                 SetField("m_SoundPreset", "ZombieSlowMan00;ZombieSlowMan01");
                 SetField("m_StepPreset", "Default_Zombie");
-                SetField("m_TransformIntoPreset", "Biter_Man_Agressive");
+                SetField("m_TransformIntoPreset", "Bitter_Man_Agressive");
                 SetField("m_Type", "1");
                 SetField("m_VisRepresentationsPool", "Biter_Man");
         }
@@ -3733,9 +3733,9 @@ sub main()
 				SetField("m_AttachableItem2Name", "fire_helmet");
                 SetField("m_AttachableItem2Probability", "0.1");
 				SetField("m_AttachableItem3Name", "miner_helmet");
-                SetField("m_AttachableItem3Probability", "0.1");
+                SetField("m_AttachableItem3Probability", "0.01");
 				SetField("m_AttachableItem4Name", "Attachable_Flashlight");
-                SetField("m_AttachableItem4Probability", "0.2");
+                SetField("m_AttachableItem4Probability", "0.1");
 				SetField("m_BurnOnStart", "0");
 				SetField("m_BroadcastRange", "8.0");
 				AddField("m_CanLeaveSpawnPos", "1");
@@ -4330,7 +4330,7 @@ sub main()
                 SetField("m_VisRepresentationsPool", "Biter_Worker");
         }
 
-        Preset("Biter_Man_Agressive")
+        Preset("Bitter_Man_Agressive")
         {
                 SetField("m_AttachableItem1Name", "Zombie_Blister");
                 SetField("m_AttachableItem1Probability", "0.4");
@@ -24445,9 +24445,9 @@ sub main()
 				SetField("m_AttachableItem2Name", "fire_helmet");
                 SetField("m_AttachableItem2Probability", "0.1");
 				SetField("m_AttachableItem3Name", "miner_helmet");
-                SetField("m_AttachableItem3Probability", "0.1");
+                SetField("m_AttachableItem3Probability", "0.01");
 				SetField("m_AttachableItem4Name", "Attachable_Flashlight");
-                SetField("m_AttachableItem4Probability", "0.2");
+                SetField("m_AttachableItem4Probability", "0.1");
 				SetField("m_CanBeInHumanity", "1");
                 SetField("m_CanUseAttractors", "1");
                 SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_ALL);
@@ -24483,9 +24483,9 @@ sub main()
 				SetField("m_AttachableItem2Name", "fire_helmet");
                 SetField("m_AttachableItem2Probability", "0.1");
 				SetField("m_AttachableItem3Name", "miner_helmet");
-                SetField("m_AttachableItem3Probability", "0.1");
+                SetField("m_AttachableItem3Probability", "0.01");
 				SetField("m_AttachableItem4Name", "Attachable_Flashlight");
-                SetField("m_AttachableItem4Probability", "0.2");
+                SetField("m_AttachableItem4Probability", "0.1");
 				SetField("m_CanBeInHumanity", "0");
                 SetField("m_CanUseAttractors", "1");
                 SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_ALL);
@@ -24521,9 +24521,9 @@ sub main()
 				SetField("m_AttachableItem2Name", "fire_helmet");
                 SetField("m_AttachableItem2Probability", "0.1");
 				SetField("m_AttachableItem3Name", "miner_helmet");
-                SetField("m_AttachableItem3Probability", "0.1");
+                SetField("m_AttachableItem3Probability", "0.01");
 				SetField("m_AttachableItem4Name", "Attachable_Flashlight");
-                SetField("m_AttachableItem4Probability", "0.2");
+                SetField("m_AttachableItem4Probability", "0.1");
 				SetField("m_CanBeInHumanity", "1");
                 SetField("m_CanUseAttractors", "1");
                 SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_ALL);
@@ -28396,7 +28396,7 @@ sub main()
                 SetField("m_ShowFlies", "1");
                 SetField("m_SoundPreset", "ZombieSlowMan00;ZombieSlowMan01");
                 SetField("m_StepPreset", "Default_Zombie");
-                SetField("m_TransformIntoPreset", "Biter_Man_Agressive;DiffLevel;Viral_m_lvl4");
+                SetField("m_TransformIntoPreset", "Bitter_Man_Agressive;DiffLevel;Viral_m_lvl4");
                 SetField("m_Type", "1");
                 SetField("m_VisRepresentationsPool", "humantoviral_man");
         }
@@ -28459,7 +28459,7 @@ sub main()
                 SetField("m_ShowFlies", "1");
                 SetField("m_SoundPreset", "ZombieSlowMan00;ZombieSlowMan01");
                 SetField("m_StepPreset", "Default_Zombie");
-                SetField("m_TransformIntoPreset", "Biter_Man_Agressive;DiffLevel;Viral_m_lvl4");
+                SetField("m_TransformIntoPreset", "Bitter_Man_Agressive;DiffLevel;Viral_m_lvl4");
                 SetField("m_Type", "1");
                 SetField("MeshName", "survivor_a.msh");
                 SetField("SkinName", "npc_Maalik_injured");
@@ -28493,7 +28493,7 @@ sub main()
                 SetField("m_ShowFlies", "1");
                 SetField("m_SoundPreset", "ZombieSlowMan00;ZombieSlowMan01");
                 SetField("m_StepPreset", "Default_Zombie");
-                SetField("m_TransformIntoPreset", "Biter_Man_Agressive;DiffLevel;Viral_m_lvl4");
+                SetField("m_TransformIntoPreset", "Bitter_Man_Agressive;DiffLevel;Viral_m_lvl4");
                 SetField("m_Type", "1");
                 SetField("MeshName", "survivor_a.msh");
                 SetField("SkinName", "npc_injured_a");
@@ -28527,7 +28527,7 @@ sub main()
                 SetField("m_ShowFlies", "1");
                 SetField("m_SoundPreset", "ZombieSlowMan00;ZombieSlowMan01");
                 SetField("m_StepPreset", "Default_Zombie");
-                SetField("m_TransformIntoPreset", "Biter_Man_Agressive;DiffLevel;Viral_m_lvl4");
+                SetField("m_TransformIntoPreset", "Bitter_Man_Agressive;DiffLevel;Viral_m_lvl4");
                 SetField("m_Type", "1");
                 SetField("MeshName", "survivor_a.msh");
                 SetField("SkinName", "npc_injured_b");
@@ -28561,7 +28561,7 @@ sub main()
                 SetField("m_ShowFlies", "1");
                 SetField("m_SoundPreset", "ZombieSlowMan00;ZombieSlowMan01");
                 SetField("m_StepPreset", "Default_Zombie");
-                SetField("m_TransformIntoPreset", "Biter_Man_Agressive;DiffLevel;Viral_m_lvl4");
+                SetField("m_TransformIntoPreset", "Bitter_Man_Agressive;DiffLevel;Viral_m_lvl4");
                 SetField("m_Type", "1");
                 SetField("MeshName", "survivor_a.msh");
                 SetField("SkinName", "npc_injured_c");
@@ -28631,7 +28631,7 @@ sub main()
                 SetField("m_ShowFlies", "1");
                 SetField("m_SoundPreset", "ZombieSlowMan00;ZombieSlowMan01");
                 SetField("m_StepPreset", "Default_Zombie");
-                SetField("m_TransformIntoPreset", "Biter_Man_Agressive;DiffLevel;Viral_m_lvl4");
+                SetField("m_TransformIntoPreset", "Bitter_Man_Agressive;DiffLevel;Viral_m_lvl4");
                 SetField("m_Type", "1");
                 SetField("m_VisRepresentationsPool", "Viral_Man");
         }
@@ -28699,7 +28699,7 @@ sub main()
                 SetField("m_ShowFlies", "1");
                 SetField("m_SoundPreset", "ZombieSlowMan00;ZombieSlowMan01");
                 SetField("m_StepPreset", "Default_Zombie");
-                SetField("m_TransformIntoPreset", "Biter_Man_Agressive;DiffLevel;Viral_m_lvl4");
+                SetField("m_TransformIntoPreset", "Bitter_Man_Agressive;DiffLevel;Viral_m_lvl4");
                 SetField("m_Type", "1");
                 SetField("MeshName", "zombie_goon.msh");
                 SetField("SkinName", "Zombie_Fireman");

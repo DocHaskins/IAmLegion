@@ -9,7 +9,7 @@
 //CROWD
 ///////////////////////////////////////////////////////////////////
 CrowdDynamicPatternFill(54)
-SetSpawnDistance(500.0)
+SetSpawnDistance(100.0)
 HighDefCrowd()
 SetForceTargetForCrowdOnPlayer()
 
