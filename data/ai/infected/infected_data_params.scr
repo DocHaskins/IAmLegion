@@ -35,11 +35,11 @@ Curve(CURVE_SIGHT_RANGE_HEIGHT_REDUCTION_MUL, "infected_sight_range_height_reduc
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-ParamFloat("acceleration", 6.0) 
+ParamFloat("acceleration", 4.0) 
 ParamFloat("deceleration", 3.0) 
 ParamFloat("back_strafe_speed_mult", 0.75)
 ParamFloat("side_strafe_speed_mult", 0.65)
-ParamFloat("berserker_speed", 8.0) 
+ParamFloat("berserker_speed", 5.0) 
 ParamFloat("crawl_turn_speed", 45.0)
 ParamFloat("move_turn_speed_mult", 1.0)
 ParamFloat("turn_speed", 240.0)
@@ -237,7 +237,7 @@ ParamBool("use_parallel_hit_reactions", 0)
 ParamBool("can_attack_enemy_in_vehicle", 1)
 ParamBool("fall_on_head_collision", 1)
 ParamBool("fall_on_players_ram", 1)
-ParamBool("increase_aggression_level_on_enemy_present", 0)
+ParamBool("increase_aggression_level_on_enemy_present", 1)
 ParamFloat("threat_level", 5)
 ParamFloat("time_after_attack_before_loiter", 1.0)
 ParamFloat("detect_enemy_delay", 1.0)
