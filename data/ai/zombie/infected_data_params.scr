@@ -35,7 +35,7 @@ Curve(CURVE_SIGHT_RANGE_HEIGHT_REDUCTION_MUL, "infected_sight_range_height_reduc
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-ParamFloat("acceleration", 6.0) 
+ParamFloat("acceleration", 4.0) 
 ParamFloat("deceleration", 3.0) 
 ParamFloat("back_strafe_speed_mult", 0.75)
 ParamFloat("side_strafe_speed_mult", 0.65)
@@ -45,11 +45,11 @@ ParamFloat("move_turn_speed_mult", 1.0)
 ParamFloat("turn_speed", 240.0)
 ParamFloat("static_path_node_radius", 0.4) 
 ParamFloat("dynamic_path_node_radius", 0.3) 
-ParamFloat("max_default_movement_turn_speed", 300.0)
-ParamFloat("max_walk_movement_turn_speed", 200.0)
-ParamFloat("max_trot_movement_turn_speed", 300.0)
-ParamFloat("max_run_movement_turn_speed", 300.0)
-ParamFloat("max_sprint_movement_turn_speed", 300.0)
+ParamFloat("max_default_movement_turn_speed", 30.0)
+ParamFloat("max_walk_movement_turn_speed", 20.0)
+ParamFloat("max_trot_movement_turn_speed", 30.0)
+ParamFloat("max_run_movement_turn_speed", 30.0)
+ParamFloat("max_sprint_movement_turn_speed", 30.0)
 ParamFloat("calm_turn_speed", 150.0)
 ParamFloat("berserker_fall_prob", 100.0)
 ParamFloat("berserker_dist", 4.5)                 // max dist to start berserker while moving 
