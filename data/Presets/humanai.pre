@@ -127,13 +127,10 @@ sub main()
         {
                 SetField("m_AISkinName", "zombie_weak");
                 SetField("m_AllowInitialArmsDamage", "1");
-                SetField("m_CustomDataPreset", "day_walker");
+                SetField("m_CustomDataPreset", "man_level_0_a;infected_humanity_lvl1");
                 SetField("m_AlarmedMimicPreset", "angry");
                 SetField("m_TransformIntoPreset", "");
 				SetField("m_CanBeBackstabbed", "1");
-                SetField("m_KnowledgeBasePreset", "day_walker");
-                SetField("m_MainGoalRulesPreset", "prime"); 
-                SetField("m_ModulesPreset", "day_walker"); 
                 SetField("m_RunningNpc", "1");
                 SetField("m_Type", "3"); 
 		
@@ -166,11 +163,7 @@ sub main()
                 SetField("m_TransformIntoPreset", "");
 				SetField("m_CanBeBackstabbed", "1");
                 SetField("m_KnowledgeBasePreset", "day_walker");
-                SetField("m_MainGoalRulesPreset", "prime"); 
                 SetField("m_ModulesPreset", "day_walker"); 
-                SetField("m_RunningNpc", "1");
-                SetField("m_Type", "3"); 
-		
         }
 
         Preset("Biter_m_lv1_liveops_christmas")
