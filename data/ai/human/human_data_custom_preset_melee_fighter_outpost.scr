@@ -488,7 +488,7 @@ ParamFloatRange("dist_for_attack_range_3_m_in_move_against_zombie", 10, 25.0)
 
 ParamBool("attack_range_4_m_enabled", 1)
 ParamFloatRange("dist_for_attack_range_3_m", 3.5, 6.0)
-ParamFloatRange("dist_for_attack_range_3_m_in_move", 2.5, 5.5).0
+ParamFloatRange("dist_for_attack_range_3_m_in_move", 2.5, 5.5)
 ParamFloatRange("dist_for_attack_range_3_m_against_zombie", 25, 45)
 ParamFloatRange("dist_for_attack_range_3_m_in_move_against_zombie", 25, 50.0)
 
