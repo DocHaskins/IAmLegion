@@ -10,7 +10,7 @@
 ///////////////////////////////////////////////////////////////////
 
 CrowdDynamicPatternLength(100.)
-CrowdDynamicPatternFill(80)
+CrowdDynamicPatternFill(12)
 SetSpawnDistance(100.0)
 CrowdDynamicPatternPeriod(3000.)
 HighDefCrowd()
