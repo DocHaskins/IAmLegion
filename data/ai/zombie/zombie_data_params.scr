@@ -33,9 +33,9 @@ Curve(CURVE_SIGHT_RANGE_HEIGHT_REDUCTION_MUL, "zombie_sight_range_height_reducti
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-ParamFloat("acceleration", 15.0) //[m]
-ParamFloat("deceleration", 15.0) //[m]
-ParamFloat("berserker_speed", 15.2) //[m]
+ParamFloat("acceleration", 6.0) //[m]
+ParamFloat("deceleration", 5.0) //[m]
+ParamFloat("berserker_speed", 9.2) //[m]
 ParamFloat("crawl_turn_speed", 5.0)
 ParamFloat("move_turn_speed_mult", 2.0)
 ParamFloat("static_path_node_radius", 0.6) //[m]
