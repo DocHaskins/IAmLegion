@@ -2374,11 +2374,7 @@ sub main()
 
         Preset("BTZ_Biter_Woman")
         {
-                SetField("m_AttachableItem1Name", "Zombie_Blister");
-                SetField("m_AttachableItem1Probability", "0.4");
-				SetField("m_AttachableItem2Name", "Attachable_Flashlight");
-                SetField("m_AttachableItem2Probability", "0.2");
-				SetField("m_BurnOnStart", "0");
+                SetField("m_BurnOnStart", "0");
                 SetField("m_CanBeLimitedAttacker", "1");
                 SetField("m_CanUseAttractors", "1");
                 SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_ALL);
@@ -2411,11 +2407,7 @@ sub main()
 
         Preset("BTZ_Biter_Woman_Hard")
         {
-                SetField("m_AttachableItem1Name", "Zombie_Blister");
-                SetField("m_AttachableItem1Probability", "0.4");
-				SetField("m_AttachableItem2Name", "Attachable_Flashlight");
-                SetField("m_AttachableItem2Probability", "0.2");
-				SetField("m_BurnOnStart", "0");
+                SetField("m_BurnOnStart", "0");
                 SetField("m_CanBeLimitedAttacker", "1");
                 SetField("m_CanUseAttractors", "1");
                 SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_ALL);
@@ -2622,11 +2614,7 @@ sub main()
 
         Preset("BTZ_NightWalker_Woman")
         {
-                SetField("m_AttachableItem1Name", "Zombie_Blister");
-                SetField("m_AttachableItem1Probability", "0.4");
-				SetField("m_AttachableItem2Name", "Attachable_Flashlight");
-                SetField("m_AttachableItem2Probability", "0.2");
-				SetField("m_CanBeInHumanity", "0");
+                SetField("m_CanBeInHumanity", "0");
                 SetField("m_CanEscape", "1");
                 SetField("m_CanUseAttractors", "0");
                 SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_ALL);
@@ -2691,11 +2679,7 @@ sub main()
 
         Preset("BTZ_NightWalker_Woman_Hard")
         {
-                SetField("m_AttachableItem1Name", "Zombie_Blister");
-                SetField("m_AttachableItem1Probability", "0.4");
-				SetField("m_AttachableItem2Name", "Attachable_Flashlight");
-                SetField("m_AttachableItem2Probability", "0.2");
-				SetField("m_CanBeInHumanity", "0");
+                SetField("m_CanBeInHumanity", "0");
                 SetField("m_CanEscape", "1");
                 SetField("m_CanUseAttractors", "0");
                 SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_ALL);
@@ -3328,6 +3312,7 @@ sub main()
                 SetField("m_Gender", "0");
                 SetField("m_GrabEnabled", "0");
                 SetField("m_HarvestingLootType", "Harvesting_Biter_Body");
+                SetField("m_HealthMul", "0.001");
                 SetField("m_IsHarvestable", "0");
                 SetField("m_MinLevelDiff", "-5");
                 SetField("m_ModulesPreset", "1");
@@ -4225,21 +4210,9 @@ sub main()
 
         Preset("Biter_Woman")
         {
-				SetField("m_AttachableItem1Name", "Zombie_Blister");
-                SetField("m_AttachableItem1Probability", "0.4");
-				SetField("m_AttachableItem2Name", "Attachable_Flashlight");
-                SetField("m_AttachableItem2Probability", "0.2");
-				SetField("m_BurnOnStart", "0");
-				SetField("m_BroadcastRange", "6.0");
-				SetField("m_CanLeaveSpawnPos", "1");
+                SetField("m_BurnOnStart", "0");
                 SetField("m_CanBeLimitedAttacker", "1");
-				SetField("m_CanBeBackstabbed", "1");
-				SetField("m_CanBeInHumanity", "1");
-                SetField("m_CanReactOnCollisionWithPlayer", "1");
-				SetField("m_CanUseAttractors", "1");
-				SetField("m_CanUseMovementCollisions", "1");
-				SetField("m_CheckCanMoveIfTargetUnreachable", "1");
-				SetField("m_CanFall", "1");
+                SetField("m_CanUseAttractors", "1");
                 SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_ALL);
                 SetField("m_HealthMul", IAL_Difficulty_Health_Multiplier_Infected);
                 SetField("m_CrippleBonesEnable", "1");
@@ -4248,14 +4221,11 @@ sub main()
                 SetField("m_ForceStinger", "0");
                 SetField("m_ForcedBodyScaleMax", "1.15");
                 SetField("m_ForcedBodyScaleMin", "1.05");
-                SetField("m_RunningNpc", "1");
-                SetField("m_ForcePursuitSprintBehaviour", "1");
-				SetField("m_Gender", "1");
+                SetField("m_Gender", "1");
                 SetField("m_GrabEnabled", "1");
                 SetField("m_HarvestingLootType", "Harvesting_Biter_Body");
-                SetField("m_IsHarvestable", "1");								   
+                SetField("m_IsHarvestable", "1");
                 SetField("m_MinLevelDiff", "-5");
-				SetField("m_MaxLevelDiff", "2");
                 SetField("m_ModulesPreset", "1");
                 SetField("m_NeverHolsterWeapon", "1");
                 SetField("m_PoisonedOnStart", "0");
@@ -4266,25 +4236,16 @@ sub main()
                 SetField("m_StepPreset", "Default_Zombie");
                 SetField("m_TransformIntoPreset", "NightWalker_Woman");
                 SetField("m_Type", "1");
-                SetField("m_UseBaseDataSet", "0");
-                SetField("m_UseRandomDataSet", "1");
+                SetField("m_UseBaseDataSet", "1");
+                SetField("m_UseRandomDataSet", "0");
                 SetField("m_VisRepresentationsPool", "Biter_Woman");
         }
 
         Preset("Biter_Woman_AG")
         {
-                SetField("m_AttachableItem1Name", "Zombie_Blister");
-                SetField("m_AttachableItem1Probability", "0.4");
-				SetField("m_AttachableItem2Name", "Attachable_Flashlight");
-                SetField("m_AttachableItem2Probability", "0.2");
-				SetField("m_BurnOnStart", "0");
-				SetField("m_BroadcastRange", "6.0");
-				SetField("m_CanLeaveSpawnPos", "1");
+                SetField("m_BurnOnStart", "0");
                 SetField("m_CanBeLimitedAttacker", "1");
                 SetField("m_CanUseAttractors", "1");
-				SetField("m_CanReactOnCollisionWithPlayer", "1");
-				SetField("m_CanUseMovementCollisions", "1");
-                SetField("m_CheckCanMoveIfTargetUnreachable", "1");
 				SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_ALL);
                                 SetField("m_HealthMul", IAL_Difficulty_Health_Multiplier_Infected);
                 SetField("m_CrippleBonesEnable", "1");
@@ -4293,9 +4254,7 @@ sub main()
                 SetField("m_ForceStinger", "0");
                 SetField("m_ForcedBodyScaleMax", "1.15");
                 SetField("m_ForcedBodyScaleMin", "1.05");
-				SetField("m_RunningNpc", "1");
-                SetField("m_ForcePursuitSprintBehaviour", "1");
-				SetField("m_Gender", "1");
+                SetField("m_Gender", "1");
                 SetField("m_GrabEnabled", "1");
                 SetField("m_HarvestingLootType", "Harvesting_Biter_Body");
                 SetField("m_IsHarvestable", "1");
@@ -4318,13 +4277,7 @@ sub main()
 
         Preset("Biter_Woman_Agressive")
         {
-                SetField("m_AttachableItem1Name", "Zombie_Blister");
-                SetField("m_AttachableItem1Probability", "0.4");
-				SetField("m_AttachableItem2Name", "Attachable_Flashlight");
-                SetField("m_AttachableItem2Probability", "0.2");
-				SetField("m_BroadcastRange", "6.0");
-				SetField("m_CanLeaveSpawnPos", "1");
-				SetField("m_CanBeInHumanity", "0");
+                SetField("m_CanBeInHumanity", "0");
                 SetField("m_CanUseAttractors", "1");
                 SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_ALL);
                 SetField("m_HealthMul", IAL_Difficulty_Health_Multiplier_Infected);
@@ -4334,8 +4287,6 @@ sub main()
                 SetField("m_ForcedBodyScaleMax", "1.15");
                 SetField("m_ForcedBodyScaleMin", "1.05");
                 SetField("m_ForcedTargetType", "-1");
-				SetField("m_RunningNpc", "1");
-                SetField("m_ForcePursuitSprintBehaviour", "1");
                 SetField("m_Gender", "1");
                 SetField("m_GrabEnabled", "1");
                 SetField("m_HarvestingLevelRequired", "1");
@@ -4357,12 +4308,7 @@ sub main()
 
         Preset("Biter_Woman_NW")
         {
-                SetField("m_AttachableItem1Name", "Zombie_Blister");
-                SetField("m_AttachableItem1Probability", "0.4");
-				SetField("m_AttachableItem2Name", "Attachable_Flashlight");
-                SetField("m_AttachableItem2Probability", "0.2");
-				SetField("m_BurnOnStart", "0");
-				SetField("m_BroadcastRange", "6.0");
+                SetField("m_BurnOnStart", "0");
                 SetField("m_CanBeLimitedAttacker", "1");
                 SetField("m_CanUseAttractors", "1");
                 SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_ALL);
@@ -4373,8 +4319,6 @@ sub main()
                 SetField("m_ForceStinger", "0");
                 SetField("m_ForcedBodyScaleMax", "1.15");
                 SetField("m_ForcedBodyScaleMin", "1.05");
-				SetField("m_RunningNpc", "1");
-                SetField("m_ForcePursuitSprintBehaviour", "1");
                 SetField("m_Gender", "1");
                 SetField("m_GrabEnabled", "1");
                 SetField("m_HarvestingLootType", "Harvesting_Biter_Body");
