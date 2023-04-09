@@ -136,18 +136,11 @@ sub main()
         Preset("Biter_m_lv0")
         {
                 SetField("m_AISkinName", "zombie_weak");
+                SetField("m_AlarmedMimicPreset", "normal");
                 SetField("m_AllowInitialArmsDamage", "1");
-                SetField("m_HealthMul", IAL_Difficulty_Health_Multiplier_Infected);
-                SetField("m_CustomDataPreset", "day_walker");
-                SetField("m_AlarmedMimicPreset", "angry");
-                SetField("m_TransformIntoPreset", "");
-				SetField("m_CanBeBackstabbed", "1");
-                SetField("m_KnowledgeBasePreset", "day_walker");
-                SetField("m_MainGoalRulesPreset", "prime"); 
-                SetField("m_ModulesPreset", "day_walker"); 
-                SetField("m_RunningNpc", "1");
-                SetField("m_Type", "3"); 
-		
+				SetField("m_HealthMul", IAL_Difficulty_Health_Multiplier_Infected);
+                SetField("m_CustomDataPreset", "man_level_0_a");
+                SetField("m_TransformIntoPreset", "NightWalker_Man;DiffLevel;NightWalker_m_lvl0");
         }
 
         Preset("Biter_m_lv0_wast")
@@ -170,20 +163,13 @@ sub main()
         Preset("Biter_m_lv1")
         {
                 SetField("m_AISkinName", "default");
+                SetField("m_AlarmedMimicPreset", "normal");
                 SetField("m_HealthMul", IAL_Difficulty_Health_Multiplier_Infected);
-                SetField("m_CustomDataPreset", "day_walker");
+				SetField("m_AllowInitialArmsDamage", "1");
+                SetField("m_CustomDataPreset", "man_level_1_b;man_level_1_c");
                 SetField("m_CustomLootType", "DeadBody_Thug");
                 SetField("m_CustomLootTypeString", "Biter_lvl1");
-                SetField("m_AllowInitialArmsDamage", "1");
-                SetField("m_AlarmedMimicPreset", "angry");
-                SetField("m_TransformIntoPreset", "");
-				SetField("m_CanBeBackstabbed", "1");
-                SetField("m_KnowledgeBasePreset", "day_walker");
-                SetField("m_MainGoalRulesPreset", "prime"); 
-                SetField("m_ModulesPreset", "day_walker"); 
-                SetField("m_RunningNpc", "1");
-                SetField("m_Type", "3"); 
-		
+                SetField("m_TransformIntoPreset", "NightWalker_Man;DiffLevel;NightWalker_m_lvl1");
         }
 
         Preset("Biter_m_lv1_liveops_christmas")
@@ -434,17 +420,11 @@ sub main()
         Preset("Biter_w_lv0")
         {
                 SetField("m_AISkinName", "zombie_weak");
-                SetField("m_CustomDataPreset", "day_walker");
-                SetField("m_AlarmedMimicPreset", "angry");
+                SetField("m_AlarmedMimicPreset", "normal");
                 SetField("m_AllowInitialArmsDamage", "1");
-                SetField("m_HealthMul", IAL_Difficulty_Health_Multiplier_Infected);
-                SetField("m_TransformIntoPreset", "");
-				SetField("m_CanBeBackstabbed", "1");
-                SetField("m_KnowledgeBasePreset", "day_walker");
-                SetField("m_ModulesPreset", "day_walker"); 
-                SetField("m_RunningNpc", "1");
-                SetField("m_Type", "3"); 
-		
+				SetField("m_HealthMul", IAL_Difficulty_Health_Multiplier_Infected);
+                SetField("m_CustomDataPreset", "woman_level_0_a");
+                SetField("m_TransformIntoPreset", "NightWalker_Woman;DiffLevel;NightWalker_w_lvl0");
         }
 
         Preset("Biter_w_lv0_wast")
@@ -465,18 +445,12 @@ sub main()
         Preset("Biter_w_lv1")
         {
                 SetField("m_AISkinName", "default");
-                SetField("m_HealthMul", IAL_Difficulty_Health_Multiplier_Infected);
-                SetField("m_CustomDataPreset", "day_walker");
-                SetField("m_CustomLootTypeString", "Biter_lvl1");
-                SetField("m_AlarmedMimicPreset", "angry");
+                SetField("m_AlarmedMimicPreset", "normal");
                 SetField("m_AllowInitialArmsDamage", "1");
-                SetField("m_TransformIntoPreset", "");
-				SetField("m_CanBeBackstabbed", "1");
-                SetField("m_KnowledgeBasePreset", "day_walker");
-                SetField("m_ModulesPreset", "day_walker"); 
-                SetField("m_RunningNpc", "1");
-                SetField("m_Type", "3"); 
-		
+				SetField("m_HealthMul", IAL_Difficulty_Health_Multiplier_Infected);
+                SetField("m_CustomDataPreset", "woman_level_1_b");
+                SetField("m_CustomLootTypeString", "Biter_lvl1");
+                SetField("m_TransformIntoPreset", "NightWalker_Woman;DiffLevel;NightWalker_w_lvl1");
         }
 
         Preset("Biter_w_lv1_wast")
@@ -565,7 +539,7 @@ sub main()
 		Preset("Biter_w_lv5")
         {
                 SetField("m_AlarmedMimicPreset", "angry");
-		SetField("m_HealthMul", IAL_Difficulty_Health_Multiplier_Infected);
+				SetField("m_HealthMul", IAL_Difficulty_Health_Multiplier_Infected);
                 SetField("m_AllowInitialArmsDamage", "0");
                 SetField("m_CustomDataPreset", "day_walker");
 				SetField("m_GrabEnabled", "0");
