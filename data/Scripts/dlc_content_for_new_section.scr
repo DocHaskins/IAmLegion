@@ -177,7 +177,7 @@ sub main()
 	//////////////////////////////////////////////////////////////////////////////////////////////////////
 
 	// I Am Legion - Survivor
-	DLC(347090, "ULTIMATESURVIVOR", "12fff3c1-356e-442b-8468-726bab622a6f", "e922b43e49034080937cb80169cd498b", "Bundle", "Paid", true)
+	DLC(1, "IAMLEGION", "", "", "Expansion", "Paid", true)
 	{
 		Title("I Am Legion - Survivor");
 		Image("dlc_new_section_ultimate_survivor_bundle");
