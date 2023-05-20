@@ -600,6 +600,27 @@ sub main()
     {
         Item("Firearm_PistolAGen");
 		Item("Firearm_PistolBGen");
+		Item("basic_crossbow_01_weak", 0.5);
+		Item("basic_crossbow_01", 0.5);
+		Item("basic_crossbow_01_Improved", 0.5);
+		Item("basic_crossbow_01_Rapid", 0.1);
+		Item("basic_crossbow_02_Rapid", 0.1);
+		Item("basic_crossbow_01_assassin", 0.1);
+		Item("ironclad_crossbow_01_weak", 0.5);
+		Item("ironclad_crossbow_02", 0.5);
+		Item("ironclad_siege_crossbow", 0.1);
+		Item("ironclad_annihilator", 0.1);
+		Item("titanium_piercer_crossbow", 0.1);
+		Item("marksmen_crossbow_01_initiate", 0.5);
+		Item("marksmen_crossbow_01_intermediate", 0.5);
+		Item("marksmen_crossbow_03_advanced", 0.1);
+		Item("marksmen_crossbow_04_elite", 0.1);
+		Item("marksmen_crossbow_05_master", 0.1);
+		Item("RapidfireCrossbow_T1", 0.5);
+		Item("RapidfireCrossbow_T2", 0.5);
+		Item("RapidfireCrossbow_T3", 0.1);
+		Item("RapidfireCrossBow_T4", 0.1);
+		Item("RapidfireCrossBow_T5", 0.1);
 	}    
 	
 	ItemSet("Firearms_Level_10")				//ItemID, Weight. Default WEIGHT is 1.
@@ -608,6 +629,27 @@ sub main()
 		Item("Firearm_PistolBGen");
         Item("Firearm_ShotgunAGen");
 		Item("Firearm_ShotgunAGenRust");
+		Item("basic_crossbow_01_weak", 0.5);
+		Item("basic_crossbow_01", 0.5);
+		Item("basic_crossbow_01_Improved", 0.5);
+		Item("basic_crossbow_01_Rapid", 0.1);
+		Item("basic_crossbow_02_Rapid", 0.1);
+		Item("basic_crossbow_01_assassin", 0.1);
+		Item("ironclad_crossbow_01_weak", 0.5);
+		Item("ironclad_crossbow_02", 0.5);
+		Item("ironclad_siege_crossbow", 0.1);
+		Item("ironclad_annihilator", 0.1);
+		Item("titanium_piercer_crossbow", 0.1);
+		Item("marksmen_crossbow_01_initiate", 0.5);
+		Item("marksmen_crossbow_01_intermediate", 0.5);
+		Item("marksmen_crossbow_03_advanced", 0.1);
+		Item("marksmen_crossbow_04_elite", 0.1);
+		Item("marksmen_crossbow_05_master", 0.1);
+		Item("RapidfireCrossbow_T1", 0.5);
+		Item("RapidfireCrossbow_T2", 0.5);
+		Item("RapidfireCrossbow_T3", 0.1);
+		Item("RapidfireCrossBow_T4", 0.1);
+		Item("RapidfireCrossBow_T5", 0.1);
 	}    
 	
 	ItemSet("Firearms_Level_12")				//ItemID, Weight. Default WEIGHT is 1.
@@ -622,6 +664,27 @@ sub main()
 		Item("Firearm_RifleBGenSand");
         Item("Firearm_ShotgunAGen");
 		Item("Firearm_ShotgunAGenRust");
+		Item("basic_crossbow_01_weak", 0.5);
+		Item("basic_crossbow_01", 0.5);
+		Item("basic_crossbow_01_Improved", 0.5);
+		Item("basic_crossbow_01_Rapid", 0.1);
+		Item("basic_crossbow_02_Rapid", 0.1);
+		Item("basic_crossbow_01_assassin", 0.1);
+		Item("ironclad_crossbow_01_weak", 0.5);
+		Item("ironclad_crossbow_02", 0.5);
+		Item("ironclad_siege_crossbow", 0.1);
+		Item("ironclad_annihilator", 0.1);
+		Item("titanium_piercer_crossbow", 0.1);
+		Item("marksmen_crossbow_01_initiate", 0.5);
+		Item("marksmen_crossbow_01_intermediate", 0.5);
+		Item("marksmen_crossbow_03_advanced", 0.1);
+		Item("marksmen_crossbow_04_elite", 0.1);
+		Item("marksmen_crossbow_05_master", 0.1);
+		Item("RapidfireCrossbow_T1", 0.5);
+		Item("RapidfireCrossbow_T2", 0.5);
+		Item("RapidfireCrossbow_T3", 0.1);
+		Item("RapidfireCrossBow_T4", 0.1);
+		Item("RapidfireCrossBow_T5", 0.1);
 	}
 
 	ItemSet("Firearms_Level_18")				//ItemID, Weight. Default WEIGHT is 1.
@@ -635,6 +698,27 @@ sub main()
 		Item("Firearm_RifleBGenOlivePlastic");
 		Item("Firearm_RifleBGenSandPlastic");
         Item("Firearm_ShotgunAGenPlastic");
+		Item("basic_crossbow_01_weak", 0.5);
+		Item("basic_crossbow_01", 0.5);
+		Item("basic_crossbow_01_Improved", 0.5);
+		Item("basic_crossbow_01_Rapid", 0.1);
+		Item("basic_crossbow_02_Rapid", 0.1);
+		Item("basic_crossbow_01_assassin", 0.1);
+		Item("ironclad_crossbow_01_weak", 0.5);
+		Item("ironclad_crossbow_02", 0.5);
+		Item("ironclad_siege_crossbow", 0.1);
+		Item("ironclad_annihilator", 0.1);
+		Item("titanium_piercer_crossbow", 0.1);
+		Item("marksmen_crossbow_01_initiate", 0.5);
+		Item("marksmen_crossbow_01_intermediate", 0.5);
+		Item("marksmen_crossbow_03_advanced", 0.1);
+		Item("marksmen_crossbow_04_elite", 0.1);
+		Item("marksmen_crossbow_05_master", 0.1);
+		Item("RapidfireCrossbow_T1", 0.5);
+		Item("RapidfireCrossbow_T2", 0.5);
+		Item("RapidfireCrossbow_T3", 0.1);
+		Item("RapidfireCrossBow_T4", 0.1);
+		Item("RapidfireCrossBow_T5", 0.1);
 	}  
 
 	ItemSet("Firearms_Level_24")				//ItemID, Weight. Default WEIGHT is 1.
@@ -642,6 +726,27 @@ sub main()
 		Item("Firearm_PistolAGenSpecial");
 		Item("Firearm_PistolBGenSpecial");
 		Item("Firearm_ShotgunAGenSpecial");
+		Item("basic_crossbow_01_weak", 0.5);
+		Item("basic_crossbow_01", 0.5);
+		Item("basic_crossbow_01_Improved", 0.5);
+		Item("basic_crossbow_01_Rapid", 0.1);
+		Item("basic_crossbow_02_Rapid", 0.1);
+		Item("basic_crossbow_01_assassin", 0.1);
+		Item("ironclad_crossbow_01_weak", 0.5);
+		Item("ironclad_crossbow_02", 0.5);
+		Item("ironclad_siege_crossbow", 0.1);
+		Item("ironclad_annihilator", 0.1);
+		Item("titanium_piercer_crossbow", 0.1);
+		Item("marksmen_crossbow_01_initiate", 0.5);
+		Item("marksmen_crossbow_01_intermediate", 0.5);
+		Item("marksmen_crossbow_03_advanced", 0.1);
+		Item("marksmen_crossbow_04_elite", 0.1);
+		Item("marksmen_crossbow_05_master", 0.1);
+		Item("RapidfireCrossbow_T1", 0.5);
+		Item("RapidfireCrossbow_T2", 0.5);
+		Item("RapidfireCrossbow_T3", 0.1);
+		Item("RapidfireCrossBow_T4", 0.1);
+		Item("RapidfireCrossBow_T5", 0.1);
 	}
 	ItemSet("Firearms_Level_25")				//ItemID, Weight. Default WEIGHT is 1.
     {
@@ -655,7 +760,28 @@ sub main()
 		Item("Firearm_PistolBGen");
         Item("Firearm_ShotgunAGen");
 		Item("ZZZZZ_Firearm_ShotgunBGen");
-		Item("ZZZZZ_Firearm_ShotgunCGen");		
+		Item("ZZZZZ_Firearm_ShotgunCGen");	
+		Item("basic_crossbow_01_weak", 0.5);
+		Item("basic_crossbow_01", 0.5);
+		Item("basic_crossbow_01_Improved", 0.5);
+		Item("basic_crossbow_01_Rapid", 0.1);
+		Item("basic_crossbow_02_Rapid", 0.1);
+		Item("basic_crossbow_01_assassin", 0.1);
+		Item("ironclad_crossbow_01_weak", 0.5);
+		Item("ironclad_crossbow_02", 0.5);
+		Item("ironclad_siege_crossbow", 0.1);
+		Item("ironclad_annihilator", 0.1);
+		Item("titanium_piercer_crossbow", 0.1);
+		Item("marksmen_crossbow_01_initiate", 0.5);
+		Item("marksmen_crossbow_01_intermediate", 0.5);
+		Item("marksmen_crossbow_03_advanced", 0.1);
+		Item("marksmen_crossbow_04_elite", 0.1);
+		Item("marksmen_crossbow_05_master", 0.1);
+		Item("RapidfireCrossbow_T1", 0.5);
+		Item("RapidfireCrossbow_T2", 0.5);
+		Item("RapidfireCrossbow_T3", 0.1);
+		Item("RapidfireCrossBow_T4", 0.1);
+		Item("RapidfireCrossBow_T5", 0.1);		
 	}    
 	
 	ItemSet("Firearms_Level_12_Following")				//ItemID, Weight. Default WEIGHT is 1.
@@ -673,6 +799,27 @@ sub main()
 		Item("ZZZZZ_Firearm_ShotgunCGen");
 		Item("ZZZZZ_Firearm_SubmachineA");
 		Item("ZZZZZ_Firearm_SubmachineB");
+		Item("basic_crossbow_01_weak", 0.5);
+		Item("basic_crossbow_01", 0.5);
+		Item("basic_crossbow_01_Improved", 0.5);
+		Item("basic_crossbow_01_Rapid", 0.1);
+		Item("basic_crossbow_02_Rapid", 0.1);
+		Item("basic_crossbow_01_assassin", 0.1);
+		Item("ironclad_crossbow_01_weak", 0.5);
+		Item("ironclad_crossbow_02", 0.5);
+		Item("ironclad_siege_crossbow", 0.1);
+		Item("ironclad_annihilator", 0.1);
+		Item("titanium_piercer_crossbow", 0.1);
+		Item("marksmen_crossbow_01_initiate", 0.5);
+		Item("marksmen_crossbow_01_intermediate", 0.5);
+		Item("marksmen_crossbow_03_advanced", 0.1);
+		Item("marksmen_crossbow_04_elite", 0.1);
+		Item("marksmen_crossbow_05_master", 0.1);
+		Item("RapidfireCrossbow_T1", 0.5);
+		Item("RapidfireCrossbow_T2", 0.5);
+		Item("RapidfireCrossbow_T3", 0.1);
+		Item("RapidfireCrossBow_T4", 0.1);
+		Item("RapidfireCrossBow_T5", 0.1);
 	}
 
 	ItemSet("Firearms_Level_18_Following")				//ItemID, Weight. Default WEIGHT is 1.
@@ -696,6 +843,27 @@ sub main()
         Item("ZZZZZ_Firearm_ShotgunCGenOlive");
 		Item("ZZZZZ_Firearm_ShotgunCGenSand");
 		Item("ZZZZZ_Firearm_ShotgunCGenAircraft");
+		Item("basic_crossbow_01_weak", 0.5);
+		Item("basic_crossbow_01", 0.5);
+		Item("basic_crossbow_01_Improved", 0.5);
+		Item("basic_crossbow_01_Rapid", 0.1);
+		Item("basic_crossbow_02_Rapid", 0.1);
+		Item("basic_crossbow_01_assassin", 0.1);
+		Item("ironclad_crossbow_01_weak", 0.5);
+		Item("ironclad_crossbow_02", 0.5);
+		Item("ironclad_siege_crossbow", 0.1);
+		Item("ironclad_annihilator", 0.1);
+		Item("titanium_piercer_crossbow", 0.1);
+		Item("marksmen_crossbow_01_initiate", 0.5);
+		Item("marksmen_crossbow_01_intermediate", 0.5);
+		Item("marksmen_crossbow_03_advanced", 0.1);
+		Item("marksmen_crossbow_04_elite", 0.1);
+		Item("marksmen_crossbow_05_master", 0.1);
+		Item("RapidfireCrossbow_T1", 0.5);
+		Item("RapidfireCrossbow_T2", 0.5);
+		Item("RapidfireCrossbow_T3", 0.1);
+		Item("RapidfireCrossBow_T4", 0.1);
+		Item("RapidfireCrossBow_T5", 0.1);
 	} 
 
 	ItemSet("Firearms_Level_24_Following")				//ItemID, Weight. Default WEIGHT is 1.
@@ -706,6 +874,27 @@ sub main()
 		Item("ZZZZZ_Firearm_SubmachineASpecial");
 		Item("ZZZZZ_Firearm_SubmachineBSpecial");
 		Item("ZZZZZ_Firearm_ShotgunBGenSpecial");
+		Item("basic_crossbow_01_weak", 0.5);
+		Item("basic_crossbow_01", 0.5);
+		Item("basic_crossbow_01_Improved", 0.5);
+		Item("basic_crossbow_01_Rapid", 0.1);
+		Item("basic_crossbow_02_Rapid", 0.1);
+		Item("basic_crossbow_01_assassin", 0.1);
+		Item("ironclad_crossbow_01_weak", 0.5);
+		Item("ironclad_crossbow_02", 0.5);
+		Item("ironclad_siege_crossbow", 0.1);
+		Item("ironclad_annihilator", 0.1);
+		Item("titanium_piercer_crossbow", 0.1);
+		Item("marksmen_crossbow_01_initiate", 0.5);
+		Item("marksmen_crossbow_01_intermediate", 0.5);
+		Item("marksmen_crossbow_03_advanced", 0.1);
+		Item("marksmen_crossbow_04_elite", 0.1);
+		Item("marksmen_crossbow_05_master", 0.1);
+		Item("RapidfireCrossbow_T1", 0.5);
+		Item("RapidfireCrossbow_T2", 0.5);
+		Item("RapidfireCrossbow_T3", 0.1);
+		Item("RapidfireCrossBow_T4", 0.1);
+		Item("RapidfireCrossBow_T5", 0.1);
 	}
 
 	ItemSet("Firearms_Level_25_Following")				//ItemID, Weight. Default WEIGHT is 1.
@@ -1222,12 +1411,54 @@ sub main()
 		Item("Firearm_RifleAGen");
 		Item("Firearm_RifleAGenOlive");
 		Item("Firearm_RifleAGenSand");
+		Item("basic_crossbow_01_weak", 0.5);
+		Item("basic_crossbow_01", 0.5);
+		Item("basic_crossbow_01_Improved", 0.5);
+		Item("basic_crossbow_01_Rapid", 0.1);
+		Item("basic_crossbow_02_Rapid", 0.1);
+		Item("basic_crossbow_01_assassin", 0.1);
+		Item("ironclad_crossbow_01_weak", 0.5);
+		Item("ironclad_crossbow_02", 0.5);
+		Item("ironclad_siege_crossbow", 0.1);
+		Item("ironclad_annihilator", 0.1);
+		Item("titanium_piercer_crossbow", 0.1);
+		Item("marksmen_crossbow_01_initiate", 0.5);
+		Item("marksmen_crossbow_01_intermediate", 0.5);
+		Item("marksmen_crossbow_03_advanced", 0.1);
+		Item("marksmen_crossbow_04_elite", 0.1);
+		Item("marksmen_crossbow_05_master", 0.1);
+		Item("RapidfireCrossbow_T1", 0.5);
+		Item("RapidfireCrossbow_T2", 0.5);
+		Item("RapidfireCrossbow_T3", 0.1);
+		Item("RapidfireCrossBow_T4", 0.1);
+		Item("RapidfireCrossBow_T5", 0.1);
  	}
 	ItemSet("Firearm_RifleBGen")
     {
 		Item("Firearm_RifleBGen");
 		Item("Firearm_RifleBGenOlive");
 		Item("Firearm_RifleBGenSand");
+		Item("basic_crossbow_01_weak", 0.5);
+		Item("basic_crossbow_01", 0.5);
+		Item("basic_crossbow_01_Improved", 0.5);
+		Item("basic_crossbow_01_Rapid", 0.1);
+		Item("basic_crossbow_02_Rapid", 0.1);
+		Item("basic_crossbow_01_assassin", 0.1);
+		Item("ironclad_crossbow_01_weak", 0.5);
+		Item("ironclad_crossbow_02", 0.5);
+		Item("ironclad_siege_crossbow", 0.1);
+		Item("ironclad_annihilator", 0.1);
+		Item("titanium_piercer_crossbow", 0.1);
+		Item("marksmen_crossbow_01_initiate", 0.5);
+		Item("marksmen_crossbow_01_intermediate", 0.5);
+		Item("marksmen_crossbow_03_advanced", 0.1);
+		Item("marksmen_crossbow_04_elite", 0.1);
+		Item("marksmen_crossbow_05_master", 0.1);
+		Item("RapidfireCrossbow_T1", 0.5);
+		Item("RapidfireCrossbow_T2", 0.5);
+		Item("RapidfireCrossbow_T3", 0.1);
+		Item("RapidfireCrossBow_T4", 0.1);
+		Item("RapidfireCrossBow_T5", 0.1);
  	}
 	ItemSet("Firearm_ShotgunAGen")
     {
@@ -1564,6 +1795,27 @@ sub main()
         Item("Firearm_RifleAGen");
 		Item("Firearm_RifleAGenOlive");
 		Item("Firearm_RifleAGenSand");
+		Item("basic_crossbow_01_weak", 0.5);
+		Item("basic_crossbow_01", 0.5);
+		Item("basic_crossbow_01_Improved", 0.5);
+		Item("basic_crossbow_01_Rapid", 0.1);
+		Item("basic_crossbow_02_Rapid", 0.1);
+		Item("basic_crossbow_01_assassin", 0.1);
+		Item("ironclad_crossbow_01_weak", 0.5);
+		Item("ironclad_crossbow_02", 0.5);
+		Item("ironclad_siege_crossbow", 0.1);
+		Item("ironclad_annihilator", 0.1);
+		Item("titanium_piercer_crossbow", 0.1);
+		Item("marksmen_crossbow_01_initiate", 0.5);
+		Item("marksmen_crossbow_01_intermediate", 0.5);
+		Item("marksmen_crossbow_03_advanced", 0.1);
+		Item("marksmen_crossbow_04_elite", 0.1);
+		Item("marksmen_crossbow_05_master", 0.1);
+		Item("RapidfireCrossbow_T1", 0.5);
+		Item("RapidfireCrossbow_T2", 0.5);
+		Item("RapidfireCrossbow_T3", 0.1);
+		Item("RapidfireCrossBow_T4", 0.1);
+		Item("RapidfireCrossBow_T5", 0.1);
 	}
 
 	ItemSet("Melees")
