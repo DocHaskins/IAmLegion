@@ -136,7 +136,7 @@
     <prop n="StaminaWarningLevel" v="0"/>                       <!-- Hud will warn user they are low stamina at this level -->
     <prop n="CanUseHook" v="0"/>
 	<prop n="HookClimbingEnabled" v="1"/>
-	<prop n="GrapplingHookPullEnabled" v="0"/>
+	<prop n="GrapplingHookPullEnabled" v="1"/>
 	<prop n="GrapplingHookExtraGravityOnAttach" v="1"/>	
 	<prop n="GrapplingHookExtraGravityValue" v="10.0"/>	
 	<prop n="ThrowHookCanUseInAir" v="1"/>
@@ -308,7 +308,7 @@
     <prop n="BulletAttackSpeedMul" v="0"/>
     
     <prop n="QuickSlotsCount" v="4"/>
-    <prop n="InventorySize" v="3"/>
+    <prop n="InventorySize" v="16"/>
     
     <prop n="SwimMoveSpeed" v="3"/>
     <prop n="SwimSprintSpeed" v="4.0"/>

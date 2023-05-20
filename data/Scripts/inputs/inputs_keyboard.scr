@@ -135,8 +135,8 @@ sub Keyboard()
 
             AddAction(_ACTION_EQUIPEMENT_NEXT,                  EInputTarget_Player, EInputDevice_Keyboard, false, EKey__2, false, false);
             AddAction(_ACTION_EQUIPEMENT_PREV,                  EInputTarget_Player, EInputDevice_Keyboard, false, EKey__3, false, false);
-			AddAction(_ACTION_LOOK_AT_WATCH,                  	EInputTarget_Player, EInputDevice_Keyboard, false, EKey__4, false, false);																															
-			AddAction(_ACTION_STOP_LOOKING_AT_WATCH,            EInputTarget_Player, EInputDevice_Keyboard, false, EKey__4, false, false);																																	
+			AddAction(_ACTION_LOOK_AT_WATCH,                  	EInputTarget_Player, EInputDevice_Keyboard, false, EKey__N, false, false);																															
+			AddAction(_ACTION_STOP_LOOKING_AT_WATCH,            EInputTarget_Player, EInputDevice_Keyboard, false, EKey__N, false, false);																																	
 
 
             AddAction(_ACTION_WEAPON_SLOT1,                     EInputTarget_Player, EInputDevice_Keyboard, false, -1, false, false);
@@ -346,8 +346,8 @@ sub Keyboard()
 	
 	LayoutKeybinding("Keybinding_Watch", _CATEGORY_HUMAN, _COLLIDE_HUMAN)
     {
-        Action(_ACTION_LOOK_AT_WATCH); // EInputTarget_Player, EInputDevice_Keyboard, EKey__4
-        Action(_ACTION_STOP_LOOKING_AT_WATCH); // EInputTarget_Player, EInputDevice_Keyboard, EKey__4
+        Action(_ACTION_LOOK_AT_WATCH); // EInputTarget_Player, EInputDevice_Keyboard, EKey__N
+        Action(_ACTION_STOP_LOOKING_AT_WATCH); // EInputTarget_Player, EInputDevice_Keyboard, EKey__N
     }
 
     LayoutKeybinding("Keybinding_Chat", _CATEGORY_HUMAN, _COLLIDE_HUMAN)

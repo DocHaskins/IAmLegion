@@ -447,6 +447,7 @@ sub main()
     Item("Craft_MetalScrap", CategoryType_CraftComponent)
     {
         ItemType(ItemType_CraftComponent);
+        AutoPickup(IAL_Loot_Auto_Pickup);  
         Visibility(true);
         Price(20);
         HudIcon("repair_part");
@@ -461,6 +462,7 @@ sub main()
     Item("Craft_PlasticTube", CategoryType_CraftComponent)
     {
         ItemType(ItemType_CraftComponent);
+        AutoPickup(IAL_Loot_Auto_Pickup);  
         Visibility(true);
         Price(20);
         HudIcon("component_misc");
@@ -475,6 +477,7 @@ sub main()
     Item("Craft_Sugar", CategoryType_CraftComponent)
     {
         ItemType(ItemType_CraftComponent);
+        AutoPickup(IAL_Loot_Auto_Pickup);  
         Visibility(true);
         Price(20);
         HudIcon("component_chemical");
@@ -489,6 +492,7 @@ sub main()
     Item("Craft_Nails", CategoryType_CraftComponent)
     {
         ItemType(ItemType_CraftComponent);
+        AutoPickup(IAL_Loot_Auto_Pickup);  
         Visibility(true);
         Price(20);
         HudIcon("component_misc");
@@ -503,6 +507,7 @@ sub main()
     Item("Craft_String", CategoryType_CraftComponent)
     {
         ItemType(ItemType_CraftComponent);
+        AutoPickup(IAL_Loot_Auto_Pickup);  
         Visibility(true);
         Price(20);
         HudIcon("component_misc");
@@ -517,6 +522,7 @@ sub main()
     Item("Craft_DuctTape", CategoryType_CraftComponent)
     {
         ItemType(ItemType_CraftComponent);
+        AutoPickup(IAL_Loot_Auto_Pickup);  
         Visibility(true);
         Price(20);
         HudIcon("component_misc");
@@ -531,6 +537,7 @@ sub main()
     Item("Craft_Alcohol", CategoryType_CraftComponent)
     {
         ItemType(ItemType_CraftComponent);
+        AutoPickup(IAL_Loot_Auto_Pickup);  
         Visibility(true);
         Price(20);
         HudIcon("component_chemical");
@@ -545,6 +552,7 @@ sub main()
     Item("Craft_Gauze", CategoryType_CraftComponent)
     {
         ItemType(ItemType_CraftComponent);
+        AutoPickup(IAL_Loot_Auto_Pickup);  
         Visibility(true);
         Price(80);
         HudIcon("component_misc");
@@ -559,6 +567,7 @@ sub main()
     Item("Craft_Batteries", CategoryType_CraftComponent)
     {
         ItemType(ItemType_CraftComponent);
+        AutoPickup(IAL_Loot_Auto_Pickup);  
         Visibility(true);
         Price(40);
         HudIcon("component_electronic");
@@ -573,6 +582,7 @@ sub main()
     Item("Craft_Insecticide", CategoryType_CraftComponent)
     {
         ItemType(ItemType_CraftComponent);
+        AutoPickup(IAL_Loot_Auto_Pickup);  
         Visibility(true);
         Price(40);
         HudIcon("component_chemical");
@@ -587,6 +597,7 @@ sub main()
     Item("Craft_Bleach", CategoryType_CraftComponent)
     {
         ItemType(ItemType_CraftComponent);
+        AutoPickup(IAL_Loot_Auto_Pickup);  
         Visibility(true);
         Price(40);
         HudIcon("component_chemical");
@@ -601,6 +612,7 @@ sub main()
     Item("Craft_RazorBlade", CategoryType_CraftComponent)
     {
         ItemType(ItemType_CraftComponent);
+        AutoPickup(IAL_Loot_Auto_Pickup);  
         Visibility(true);
         Price(40);
         HudIcon("component_misc");
@@ -615,6 +627,7 @@ sub main()
     Item("Craft_TinCan", CategoryType_CraftComponent)
     {
         ItemType(ItemType_CraftComponent);
+        AutoPickup(IAL_Loot_Auto_Pickup);  
         Visibility(true);
         Price(40);
         HudIcon("component_misc");
@@ -629,6 +642,7 @@ sub main()
     Item("Craft_InstantColdPack", CategoryType_CraftComponent)
     {
         ItemType(ItemType_CraftComponent);
+        AutoPickup(IAL_Loot_Auto_Pickup);  
         Visibility(true);
         Price(80);
         HudIcon("component_misc");
@@ -643,6 +657,7 @@ sub main()
     Item("Craft_PowerCable", CategoryType_CraftComponent)
     {
         ItemType(ItemType_CraftComponent);
+        AutoPickup(IAL_Loot_Auto_Pickup);  
         Visibility(true);
         Price(80);
         HudIcon("component_electronic");
@@ -657,6 +672,7 @@ sub main()
     Item("Craft_Electronics", CategoryType_CraftComponent)
     {
         ItemType(ItemType_CraftComponent);
+        AutoPickup(IAL_Loot_Auto_Pickup);  
         Visibility(true);
         Price(160);
         HudIcon("component_electronic");
@@ -671,6 +687,7 @@ sub main()
     Item("Craft_ToxicPlant", CategoryType_CraftComponent)
     {
         ItemType(ItemType_CraftComponent);
+        AutoPickup(IAL_Loot_Auto_Pickup);  
         Visibility(true);
         Price(10);
         HudIcon("quest_herb_a");
@@ -685,6 +702,7 @@ sub main()
     Item("Craft_UnderwaterAlgae", CategoryType_CraftComponent)
     {
         ItemType(ItemType_CraftComponent);
+        AutoPickup(IAL_Loot_Auto_Pickup);  
         Visibility(true);
         Price(25);
         HudIcon("quest_herb_a");
@@ -699,6 +717,7 @@ sub main()
     Item("Craft_Lichen", CategoryType_CraftComponent)
     {
         ItemType(ItemType_CraftComponent);
+        AutoPickup(IAL_Loot_Auto_Pickup);  
         Visibility(true);
         Price(50);
         HudIcon("quest_herb_a");
@@ -713,6 +732,7 @@ sub main()
     Item("Craft_Shroom", CategoryType_CraftComponent)
     {
         ItemType(ItemType_CraftComponent);
+        AutoPickup(IAL_Loot_Auto_Pickup);  
         Visibility(true);
         Price(50);
         HudIcon("quest_herb_a");
@@ -727,6 +747,7 @@ sub main()
     Item("Craft_GreenAlgae", CategoryType_CraftComponent)
     {
         ItemType(ItemType_CraftComponent);
+        AutoPickup(IAL_Loot_Auto_Pickup);  
         Visibility(true);
         Price(10);
         HudIcon("quest_herb_a");
@@ -741,6 +762,7 @@ sub main()
     Item("Craft_LighterGas", CategoryType_CraftComponent)
     {
         ItemType(ItemType_CraftComponent);
+        AutoPickup(IAL_Loot_Auto_Pickup);  
         Visibility(true);
         Price(20);
         HudIcon("component_chemical");
@@ -755,6 +777,7 @@ sub main()
     Item("Craft_Syringe", CategoryType_CraftComponent)
     {
         ItemType(ItemType_CraftComponent);
+        AutoPickup(IAL_Loot_Auto_Pickup);  
         Visibility(true);
         Price(20);
         HudIcon("component_misc");
@@ -769,6 +792,7 @@ sub main()
     Item("Craft_Painkiller", CategoryType_CraftComponent)
     {
         ItemType(ItemType_CraftComponent);
+        AutoPickup(IAL_Loot_Auto_Pickup);  
         Visibility(true);
         Price(20);
         HudIcon("component_chemical");
@@ -783,6 +807,7 @@ sub main()
     Item("Craft_PrimeTissue", CategoryType_CraftComponent)
     {
         ItemType(ItemType_CraftComponent);
+        AutoPickup(IAL_Loot_Auto_Pickup);  
         Visibility(true);
         Price(1000);
         HudIcon("component_organic");
@@ -797,6 +822,7 @@ sub main()
     Item("Craft_HunterGland", CategoryType_CraftComponent)
     {
         ItemType(ItemType_CraftComponent);
+        AutoPickup(IAL_Loot_Auto_Pickup);  
         Visibility(true);
         Price(4000);
         HudIcon("component_organic");
@@ -811,6 +837,7 @@ sub main()
     Item("Craft_VenomGland", CategoryType_CraftComponent)
     {
         ItemType(ItemType_CraftComponent);
+        AutoPickup(IAL_Loot_Auto_Pickup);  
         Visibility(true);
         Price(10);
         HudIcon("component_organic");
@@ -825,6 +852,7 @@ sub main()
     Item("Craft_BomberKidney", CategoryType_CraftComponent)
     {
         ItemType(ItemType_CraftComponent);
+        AutoPickup(IAL_Loot_Auto_Pickup);  
         Visibility(true);
         Price(10);
         HudIcon("component_organic");
@@ -839,6 +867,7 @@ sub main()
     Item("Craft_PutrescentLiver", CategoryType_CraftComponent)
     {
         ItemType(ItemType_CraftComponent);
+        AutoPickup(IAL_Loot_Auto_Pickup);  
         Visibility(true);
         Price(10);
         HudIcon("component_organic");
@@ -870,6 +899,7 @@ sub main()
     Item("Craft_ZZZZ3_FollowingAlgae", CategoryType_CraftComponent)
     {
         ItemType(ItemType_CraftComponent);
+        AutoPickup(IAL_Loot_Auto_Pickup);  
         Visibility(true);
         Price(25);
         HudIcon("quest_emmisive");
@@ -5840,8 +5870,9 @@ sub main()
         ItemType(ItemType_ThrowingStar);
         Visibility(true);
         AmmoCount(5);
-        MaxStackCount(99);
-        Price(35);
+        MaxStackCount(9999);
+        Price(35);     
+        AutoPickup(IAL_Loot_Auto_Pickup);   
         Mesh("wn_throwing_knife_a.msh");
         AnimPrefix("Thrower");
         PhysicsScript("single_dropped_inventory.phx");
@@ -5893,9 +5924,10 @@ sub main()
         Name("&Throwable_ThrowingKnifeAGen_N&");
         Description("&Throwable_ThrowingKnifeAGen_D&");
         ItemType(ItemType_ThrowingStar);
-        Visibility(true);
+        Visibility(true);     
+        AutoPickup(IAL_Loot_Auto_Pickup);   
         AmmoCount(5);
-        MaxStackCount(99);
+        MaxStackCount(9999);
         Price(31);
         Mesh("wn_throwing_knife_a.msh");
         AnimPrefix("Thrower");
@@ -5948,9 +5980,10 @@ sub main()
         Name("&Throwable_ThrowingKnifeAGen_N&");
         Description("&Throwable_ThrowingKnifeAGen_D&");
         ItemType(ItemType_ThrowingStar);
-        Visibility(true);
+        Visibility(true);     
+        AutoPickup(IAL_Loot_Auto_Pickup);   
         AmmoCount(5);
-        MaxStackCount(99);
+        MaxStackCount(9999);
         Price(45);
         Mesh("wn_throwing_knife_a.msh");
         AnimPrefix("Thrower");
@@ -6003,9 +6036,10 @@ sub main()
         Name("&Throwable_ThrowingKnifeAGen_N&");
         Description("&Throwable_ThrowingKnifeAGen_D&");
         ItemType(ItemType_ThrowingStar);
-        Visibility(true);
+        Visibility(true);     
+        AutoPickup(IAL_Loot_Auto_Pickup);   
         AmmoCount(5);
-        MaxStackCount(99);
+        MaxStackCount(9999);
         Price(52);
         Mesh("wn_throwing_knife_a.msh");
         AnimPrefix("Thrower");
@@ -6058,9 +6092,10 @@ sub main()
         Name("&Throwable_ThrowingKnifeAGen_N&");
         Description("&Throwable_ThrowingKnifeAGen_D&");
         ItemType(ItemType_ThrowingStar);
-        Visibility(true);
+        Visibility(true);     
+        AutoPickup(IAL_Loot_Auto_Pickup);   
         AmmoCount(5);
-        MaxStackCount(99);
+        MaxStackCount(9999);
         Price(70);
         Mesh("wn_throwing_knife_a.msh");
         AnimPrefix("Thrower");
@@ -6112,8 +6147,9 @@ sub main()
         ItemType(ItemType_ThrowingStar);
         Visibility(true);
         AmmoCount(5);
-        MaxStackCount(99);
-        Price(31);
+        MaxStackCount(9999);
+        Price(31);     
+        AutoPickup(IAL_Loot_Auto_Pickup);   
         Mesh("wn_throwing_knife_b.msh");
         AnimPrefix("Thrower");
         PhysicsScript("single_dropped_inventory.phx");
@@ -6164,8 +6200,9 @@ sub main()
         ItemType(ItemType_ThrowingStar);
         Visibility(true);
         AmmoCount(5);
-        MaxStackCount(99);
-        Price(0);
+        MaxStackCount(9999);
+        Price(0);     
+        AutoPickup(IAL_Loot_Auto_Pickup);   
         Mesh("wn_throwing_knife_a.msh");
         AnimPrefix("Thrower");
         PhysicsScript("single_dropped_inventory.phx");
@@ -6216,8 +6253,9 @@ sub main()
         ItemType(ItemType_ThrowingStar);
         Visibility(true);
         AmmoCount(5);
-        MaxStackCount(99);
-        Price(43);
+        MaxStackCount(9999);
+        Price(43);     
+        AutoPickup(IAL_Loot_Auto_Pickup);   
         Mesh("wn_throwing_axe_a.msh");
         AnimPrefix("Thrower");
         PhysicsScript("single_dropped_inventory.phx");
@@ -6269,9 +6307,10 @@ sub main()
         Name("&Throwable_ThrowingAxeAGen_N&");
         Description("&Throwable_ThrowingAxeAGen_D&");
         ItemType(ItemType_ThrowingStar);
-        Visibility(true);
+        Visibility(true);     
+        AutoPickup(IAL_Loot_Auto_Pickup);   
         AmmoCount(5);
-        MaxStackCount(99);
+        MaxStackCount(9999);
         Price(34);
         Mesh("wn_throwing_axe_a.msh");
         AnimPrefix("Thrower");
@@ -6324,9 +6363,10 @@ sub main()
         Name("&Throwable_ThrowingAxeAGen_N&");
         Description("&Throwable_ThrowingAxeAGen_D&");
         ItemType(ItemType_ThrowingStar);
-        Visibility(true);
+        Visibility(true);     
+        AutoPickup(IAL_Loot_Auto_Pickup);   
         AmmoCount(5);
-        MaxStackCount(99);
+        MaxStackCount(9999);
         Price(38);
         Mesh("wn_throwing_axe_a.msh");
         AnimPrefix("Thrower");
@@ -6379,9 +6419,10 @@ sub main()
         Name("&Throwable_ThrowingAxeAGen_N&");
         Description("&Throwable_ThrowingAxeAGen_D&");
         ItemType(ItemType_ThrowingStar);
-        Visibility(true);
+        Visibility(true);     
+        AutoPickup(IAL_Loot_Auto_Pickup);   
         AmmoCount(5);
-        MaxStackCount(99);
+        MaxStackCount(9999);
         Price(64);
         Mesh("wn_throwing_axe_a.msh");
         AnimPrefix("Thrower");
@@ -6434,9 +6475,10 @@ sub main()
         Name("&Throwable_ThrowingAxeAGen_N&");
         Description("&Throwable_ThrowingAxeAGen_D&");
         ItemType(ItemType_ThrowingStar);
-        Visibility(true);
+        Visibility(true);     
+        AutoPickup(IAL_Loot_Auto_Pickup);   
         AmmoCount(5);
-        MaxStackCount(99);
+        MaxStackCount(9999);
         Price(85);
         Mesh("wn_throwing_axe_a.msh");
         AnimPrefix("Thrower");
@@ -6488,8 +6530,9 @@ sub main()
         ItemType(ItemType_ThrowingStar);
         Visibility(true);
         AmmoCount(5);
-        MaxStackCount(99);
-        Price(39);
+        MaxStackCount(9999);
+        Price(39);     
+        AutoPickup(IAL_Loot_Auto_Pickup);   
         Mesh("wn_throwing_axe_b.msh");
         AnimPrefix("Thrower");
         PhysicsScript("single_dropped_inventory.phx");
@@ -6541,9 +6584,10 @@ sub main()
         Name("&Throwable_ThrowingAxeBGen_N&");
         Description("&Throwable_ThrowingAxeBGen_D&");
         ItemType(ItemType_ThrowingStar);
-        Visibility(true);
+        Visibility(true);     
+        AutoPickup(IAL_Loot_Auto_Pickup);   
         AmmoCount(5);
-        MaxStackCount(99);
+        MaxStackCount(9999);
         Price(31);
         Mesh("wn_throwing_axe_b.msh");
         AnimPrefix("Thrower");
@@ -6596,9 +6640,10 @@ sub main()
         Name("&Throwable_ThrowingAxeBGen_N&");
         Description("&Throwable_ThrowingAxeBGen_D&");
         ItemType(ItemType_ThrowingStar);
-        Visibility(true);
+        Visibility(true);     
+        AutoPickup(IAL_Loot_Auto_Pickup);   
         AmmoCount(5);
-        MaxStackCount(99);
+        MaxStackCount(9999);
         Price(35);
         Mesh("wn_throwing_axe_b.msh");
         AnimPrefix("Thrower");
@@ -6651,9 +6696,10 @@ sub main()
         Name("&Throwable_ThrowingAxeBGen_N&");
         Description("&Throwable_ThrowingAxeBGen_D&");
         ItemType(ItemType_ThrowingStar);
-        Visibility(true);
+        Visibility(true);     
+        AutoPickup(IAL_Loot_Auto_Pickup);   
         AmmoCount(5);
-        MaxStackCount(99);
+        MaxStackCount(9999);
         Price(58);
         Mesh("wn_throwing_axe_b.msh");
         AnimPrefix("Thrower");
@@ -6706,9 +6752,10 @@ sub main()
         Name("&Throwable_ThrowingAxeBGen_N&");
         Description("&Throwable_ThrowingAxeBGen_D&");
         ItemType(ItemType_ThrowingStar);
-        Visibility(true);
+        Visibility(true);     
+        AutoPickup(IAL_Loot_Auto_Pickup);   
         AmmoCount(5);
-        MaxStackCount(99);
+        MaxStackCount(9999);
         Price(78);
         Mesh("wn_throwing_axe_b.msh");
         AnimPrefix("Thrower");
@@ -6760,8 +6807,9 @@ sub main()
         ItemType(ItemType_ThrowingStar);
         Visibility(true);
         AmmoCount(5);
-        MaxStackCount(99);
-        Price(46);
+        MaxStackCount(9999);
+        Price(46);     
+        AutoPickup(IAL_Loot_Auto_Pickup);   
         Mesh("wn_throwing_axe_c.msh");
         AnimPrefix("Thrower");
         PhysicsScript("single_dropped_inventory.phx");
@@ -6813,9 +6861,10 @@ sub main()
         Name("&Throwable_ThrowingAxeCGen_N&");
         Description("&Throwable_ThrowingAxeCGen_D&");
         ItemType(ItemType_ThrowingStar);
-        Visibility(true);
+        Visibility(true);     
+        AutoPickup(IAL_Loot_Auto_Pickup);   
         AmmoCount(5);
-        MaxStackCount(99);
+        MaxStackCount(9999);
         Price(37);
         Mesh("wn_throwing_axe_c.msh");
         AnimPrefix("Thrower");
@@ -6868,9 +6917,10 @@ sub main()
         Name("&Throwable_ThrowingAxeCGen_N&");
         Description("&Throwable_ThrowingAxeCGen_D&");
         ItemType(ItemType_ThrowingStar);
-        Visibility(true);
+        Visibility(true);     
+        AutoPickup(IAL_Loot_Auto_Pickup);   
         AmmoCount(5);
-        MaxStackCount(99);
+        MaxStackCount(9999);
         Price(42);
         Mesh("wn_throwing_axe_c.msh");
         AnimPrefix("Thrower");
@@ -6923,9 +6973,10 @@ sub main()
         Name("&Throwable_ThrowingAxeCGen_N&");
         Description("&Throwable_ThrowingAxeCGen_D&");
         ItemType(ItemType_ThrowingStar);
-        Visibility(true);
+        Visibility(true);     
+        AutoPickup(IAL_Loot_Auto_Pickup);   
         AmmoCount(5);
-        MaxStackCount(99);
+        MaxStackCount(9999);
         Price(44);
         Mesh("wn_throwing_axe_c.msh");
         AnimPrefix("Thrower");
@@ -6978,9 +7029,10 @@ sub main()
         Name("&Throwable_ThrowingAxeCGen_N&");
         Description("&Throwable_ThrowingAxeCGen_D&");
         ItemType(ItemType_ThrowingStar);
-        Visibility(true);
+        Visibility(true);     
+        AutoPickup(IAL_Loot_Auto_Pickup);   
         AmmoCount(5);
-        MaxStackCount(99);
+        MaxStackCount(9999);
         Price(69);
         Mesh("wn_throwing_axe_c.msh");
         AnimPrefix("Thrower");
@@ -7033,9 +7085,10 @@ sub main()
         Name("&Throwable_ThrowingAxeCGen_N&");
         Description("&Throwable_ThrowingAxeCGen_D&");
         ItemType(ItemType_ThrowingStar);
-        Visibility(true);
+        Visibility(true);     
+        AutoPickup(IAL_Loot_Auto_Pickup);   
         AmmoCount(5);
-        MaxStackCount(99);
+        MaxStackCount(9999);
         Price(93);
         Mesh("wn_throwing_axe_c.msh");
         AnimPrefix("Thrower");
@@ -7087,8 +7140,9 @@ sub main()
         ItemType(ItemType_ThrowingStar);
         Visibility(true);
         AmmoCount(5);
-        MaxStackCount(99);
-        Price(0);
+        MaxStackCount(9999);
+        Price(0);     
+        AutoPickup(IAL_Loot_Auto_Pickup);   
         Mesh("wn_throwing_axe_b.msh");
         AnimPrefix("Thrower");
         PhysicsScript("single_dropped_inventory.phx");
@@ -7139,8 +7193,9 @@ sub main()
         ItemType(ItemType_ThrowingStar);
         Visibility(true);
         AmmoCount(5);
-        MaxStackCount(99);
-        Price(28);
+        MaxStackCount(9999);
+        Price(28);     
+        AutoPickup(IAL_Loot_Auto_Pickup);   
         Mesh("wn_shuriken_a.msh");
         AnimPrefix("Thrower");
         PhysicsScript("single_dropped_inventory.phx");
@@ -7192,9 +7247,10 @@ sub main()
         Name("&Throwable_ShurikenAGen_N&");
         Description("&Throwable_ShurikenAGen_D&");
         ItemType(ItemType_ThrowingStar);
-        Visibility(true);
+        Visibility(true);     
+        AutoPickup(IAL_Loot_Auto_Pickup);   
         AmmoCount(5);
-        MaxStackCount(99);
+        MaxStackCount(9999);
         Price(31);
         Mesh("wn_shuriken_a.msh");
         AnimPrefix("Thrower");
@@ -7247,9 +7303,10 @@ sub main()
         Name("&Throwable_ShurikenAGen_N&");
         Description("&Throwable_ShurikenAGen_D&");
         ItemType(ItemType_ThrowingStar);
-        Visibility(true);
+        Visibility(true);     
+        AutoPickup(IAL_Loot_Auto_Pickup);   
         AmmoCount(5);
-        MaxStackCount(99);
+        MaxStackCount(9999);
         Price(36);
         Mesh("wn_shuriken_a.msh");
         AnimPrefix("Thrower");
@@ -7302,9 +7359,10 @@ sub main()
         Name("&Throwable_ShurikenAGen_N&");
         Description("&Throwable_ShurikenAGen_D&");
         ItemType(ItemType_ThrowingStar);
-        Visibility(true);
+        Visibility(true);     
+        AutoPickup(IAL_Loot_Auto_Pickup);   
         AmmoCount(5);
-        MaxStackCount(99);
+        MaxStackCount(9999);
         Price(42);
         Mesh("wn_shuriken_a.msh");
         AnimPrefix("Thrower");
@@ -7357,9 +7415,10 @@ sub main()
         Name("&Throwable_ShurikenAGen_N&");
         Description("&Throwable_ShurikenAGen_D&");
         ItemType(ItemType_ThrowingStar);
-        Visibility(true);
+        Visibility(true);     
+        AutoPickup(IAL_Loot_Auto_Pickup);   
         AmmoCount(5);
-        MaxStackCount(99);
+        MaxStackCount(9999);
         Price(56);
         Mesh("wn_shuriken_a.msh");
         AnimPrefix("Thrower");
@@ -7411,8 +7470,9 @@ sub main()
         ItemType(ItemType_ThrowingStar);
         Visibility(true);
         AmmoCount(5);
-        MaxStackCount(99);
-        Price(24);
+        MaxStackCount(9999);
+        Price(24);     
+        AutoPickup(IAL_Loot_Auto_Pickup);   
         Mesh("wn_shuriken_b.msh");
         AnimPrefix("Thrower");
         PhysicsScript("single_dropped_inventory.phx");
@@ -7463,8 +7523,9 @@ sub main()
         ItemType(ItemType_ThrowingStar);
         Visibility(true);
         AmmoCount(5);
-        MaxStackCount(99);
-        Price(0);
+        MaxStackCount(9999);
+        Price(0);     
+        AutoPickup(IAL_Loot_Auto_Pickup);   
         Mesh("wn_shuriken_a.msh");
         AnimPrefix("Thrower");
         PhysicsScript("single_dropped_inventory.phx");
@@ -7514,10 +7575,11 @@ sub main()
     {
         ItemType(ItemType_Decoy);
         Visibility(true);
-        MaxStackCount(99);
+        MaxStackCount(9999);
         Price(20);
         Mesh("wn_petard_a.msh");
-        Skin("default");
+     
+     AutoPickup(IAL_Loot_Auto_Pickup);   Skin("default");
         AnimPrefix("Decoy");
         PhysicsScript("single_dropped_inventory.phx");
         HudIcon("weapon_throw_decoy");
@@ -7545,8 +7607,9 @@ sub main()
         ItemType(ItemType_Grenade);
         Visibility(true);
         AmmoCount(3);
-        MaxStackCount(99);
-        Price(100);
+        MaxStackCount(9999);
+        Price(100);     
+        AutoPickup(IAL_Loot_Auto_Pickup);   
         Mesh("smoke_granade_static.msh");
         Skin("fire");
         AnimPrefix("Grenade");
@@ -7579,8 +7642,9 @@ sub main()
         ItemType(ItemType_Decoy);
         Visibility(true);
         AmmoCount(3);
-        MaxStackCount(99);
-        Price(200);
+        MaxStackCount(9999);
+        Price(200);     
+        AutoPickup(IAL_Loot_Auto_Pickup);   
         Mesh("smoke_granade_static.msh");
         Skin("default");
         AnimPrefix("Decoy");
@@ -7617,8 +7681,9 @@ sub main()
         ItemType(ItemType_Grenade);
         Visibility(true);
         AmmoCount(3);
-        MaxStackCount(99);
-        Price(100);
+        MaxStackCount(9999);
+        Price(100);     
+        AutoPickup(IAL_Loot_Auto_Pickup);   
         Mesh("smoke_granade_static.msh");
         Skin("nail");
         AnimPrefix("Grenade");
@@ -7650,8 +7715,9 @@ sub main()
         ItemType(ItemType_Grenade);
         Visibility(true);
         AmmoCount(3);
-        MaxStackCount(99);
-        Price(150);
+        MaxStackCount(9999);
+        Price(150);     
+        AutoPickup(IAL_Loot_Auto_Pickup);   
         Mesh("smoke_granade_static.msh");
         Skin("toxic");
         AnimPrefix("Grenade");
@@ -7685,7 +7751,8 @@ sub main()
         Visibility(true);
         AmmoCount(1);
         MaxStackCount(4);
-        Price(150);
+        Price(150);     
+        AutoPickup(IAL_Loot_Auto_Pickup);   
         Mesh("smoke_granade_static.msh");
         Skin("default");
         AnimPrefix("Grenade");
@@ -7717,8 +7784,9 @@ sub main()
         ItemType(ItemType_ThrowingStar);
         Visibility(true);
         AmmoCount(5);
-        MaxStackCount(99);
-        Price(75);
+        MaxStackCount(9999);
+        Price(75);     
+        AutoPickup(IAL_Loot_Auto_Pickup);   
         Mesh("wn_shuriken_b.msh");
         AnimPrefix("Thrower");
         PhysicsScript("single_dropped_inventory.phx");
@@ -7768,8 +7836,9 @@ sub main()
         ItemType(ItemType_Grenade);
         Visibility(true);
         AmmoCount(3);
-        MaxStackCount(99);
-        Price(150);
+        MaxStackCount(9999);
+        Price(150);     
+        AutoPickup(IAL_Loot_Auto_Pickup);   
         Mesh("smoke_granade_static.msh");
         Skin("frost");
         AnimPrefix("Grenade");
@@ -7803,8 +7872,9 @@ sub main()
         ItemType(ItemType_ThrowingStar);
         Visibility(true);
         AmmoCount(5);
-        MaxStackCount(99);
-        Price(75);
+        MaxStackCount(9999);
+        Price(75);     
+        AutoPickup(IAL_Loot_Auto_Pickup);   
         Mesh("wn_shuriken_b.msh");
         AnimPrefix("Thrower");
         PhysicsScript("single_dropped_inventory.phx");
@@ -7855,8 +7925,9 @@ sub main()
         ItemType(ItemType_ThrowingStar);
         Visibility(true);
         AmmoCount(5);
-        MaxStackCount(99);
-        Price(75);
+        MaxStackCount(9999);
+        Price(75);     
+        AutoPickup(IAL_Loot_Auto_Pickup);   
         Mesh("wn_shuriken_b.msh");
         AnimPrefix("Thrower");
         PhysicsScript("single_dropped_inventory.phx");
@@ -7905,8 +7976,9 @@ sub main()
         ItemType(ItemType_Decoy);
         Visibility(true);
         AmmoCount(5);
-        MaxStackCount(99);
-        Price(200);
+        MaxStackCount(9999);
+        Price(200);     
+        AutoPickup(IAL_Loot_Auto_Pickup);   
         Mesh("wn_petard_a.msh");
         Skin("default");
         AnimPrefix("Decoy");
@@ -7941,8 +8013,9 @@ sub main()
         ItemType(ItemType_Decoy);
         Visibility(true);
         AmmoCount(5);
-        MaxStackCount(99);
-        Price(150);
+        MaxStackCount(9999);
+        Price(150);     
+        AutoPickup(IAL_Loot_Auto_Pickup);   
         Mesh("wn_petard_a.msh");
         Skin("default");
         AnimPrefix("Decoy");
@@ -7977,8 +8050,9 @@ sub main()
         ItemType(ItemType_Decoy);
         Visibility(true);
         AmmoCount(5);
-        MaxStackCount(99);
-        Price(150);
+        MaxStackCount(9999);
+        Price(150);     
+        AutoPickup(IAL_Loot_Auto_Pickup);   
         Mesh("wn_petard_a.msh");
         Skin("default");
         AnimPrefix("Decoy");
@@ -8013,8 +8087,9 @@ sub main()
         ItemType(ItemType_ThrowingStar);
         Visibility(true);
         AmmoCount(5);
-        MaxStackCount(99);
-        Price(66);
+        MaxStackCount(9999);
+        Price(66);     
+        AutoPickup(IAL_Loot_Auto_Pickup);   
         Mesh("wn_throwing_axe_c.msh");
         Skin("Pearl");
         AnimPrefix("Thrower");
@@ -8064,9 +8139,10 @@ sub main()
     {
         ItemType(ItemType_Molotov);
         Visibility(true);
-        MaxStackCount(99);
+        MaxStackCount(9999);
         Price(100);
         Mesh("bottle_e_explosive.msh");
+        AutoPickup(IAL_Loot_Auto_Pickup);
         AnimPrefix("Molotov");
         PhysicsScript("single_dropped_inventory.phx");
         HudIcon("weapon_molotov");
@@ -8119,9 +8195,10 @@ sub main()
     {
         ItemType(ItemType_Molotov);
         Visibility(true);
-        MaxStackCount(99);
+        MaxStackCount(9999);
         Price(100);
         Mesh("bottle_e_explosive.msh");
+        AutoPickup(IAL_Loot_Auto_Pickup);
         AnimPrefix("Molotov");
         PhysicsScript("single_dropped_inventory.phx");
         HudIcon("weapon_molotov");
@@ -8175,10 +8252,11 @@ sub main()
     {
         ItemType(ItemType_PoisonBomb);
         Visibility(true);
-        MaxStackCount(99);
+        MaxStackCount(9999);
         Price(300);
         Mesh("bottle_e_explosive.msh");
-        AnimPrefix("Grenade");
+     
+     AutoPickup(IAL_Loot_Auto_Pickup);   AnimPrefix("Grenade");
         PhysicsScript("single_dropped_inventory.phx");
         HudIcon("weapon_frag_grenade");
         Damage(10.0 *IAL_Weapon_Global_Damage_Mul);
@@ -8206,14 +8284,14 @@ sub main()
         Visibility(true);
         BulletId("Bullet_Pistol");
         AmmoCount(15);
-        MaxStackCount(99);
+        MaxStackCount(9999);
         Price(250);
         Mesh("loot_ok_ammo_short.msh");
         HudIcon("ammo_pistol");
         Skin("Default");
         PhysicsScript("single_dropped_inventory.phx");
         Color(Color_White);
-        AutoPickup(false);
+        AutoPickup(IAL_Loot_Auto_Pickup);
     }
 
     Item("Ammo_PistolBig", CategoryType_Ammo)
@@ -8222,14 +8300,14 @@ sub main()
         Visibility(true);
         BulletId("Bullet_Pistol");
         AmmoCount(30);
-        MaxStackCount(99);
+        MaxStackCount(9999);
         Price(700);
         Mesh("loot_ok_ammo_short.msh");
         HudIcon("ammo_pistol");
         Skin("Default");
         PhysicsScript("single_dropped_inventory.phx");
         Color(Color_Green);
-        AutoPickup(false);
+        AutoPickup(IAL_Loot_Auto_Pickup);
     }
 
     Item("Ammo_RifleSmall", CategoryType_Ammo)
@@ -8238,14 +8316,14 @@ sub main()
         Visibility(true);
         BulletId("Bullet_Rifle");
         AmmoCount(30);
-        MaxStackCount(99);
+        MaxStackCount(9999);
         Price(250);
         Mesh("loot_ok_ammo_long.msh");
         HudIcon("ammo_rifle");
         Skin("Default");
         PhysicsScript("single_dropped_inventory.phx");
         Color(Color_White);
-        AutoPickup(false);
+        AutoPickup(IAL_Loot_Auto_Pickup);
     }
 
     Item("Ammo_RifleBig", CategoryType_Ammo)
@@ -8254,14 +8332,14 @@ sub main()
         Visibility(true);
         BulletId("Bullet_Rifle");
         AmmoCount(60);
-        MaxStackCount(99);
+        MaxStackCount(9999);
         Price(700);
         Mesh("loot_ok_ammo_long.msh");
         HudIcon("ammo_rifle");
         Skin("Default");
         PhysicsScript("single_dropped_inventory.phx");
         Color(Color_Green);
-        AutoPickup(false);
+        AutoPickup(IAL_Loot_Auto_Pickup);
     }
 
     Item("Ammo_ShotgunSmall", CategoryType_Ammo)
@@ -8270,14 +8348,14 @@ sub main()
         Visibility(true);
         BulletId("Bullet_Shotgun");
         AmmoCount(10);
-        MaxStackCount(99);
+        MaxStackCount(9999);
         Price(250);
         Mesh("ammo_gauge.msh");
         HudIcon("ammo_shotgun");
         Skin("Default");
         PhysicsScript("single_dropped_inventory.phx");
         Color(Color_White);
-        AutoPickup(false);
+        AutoPickup(IAL_Loot_Auto_Pickup);
     }
 
     Item("Ammo_ShotgunBig", CategoryType_Ammo)
@@ -8286,14 +8364,14 @@ sub main()
         Visibility(true);
         BulletId("Bullet_Shotgun");
         AmmoCount(20);
-        MaxStackCount(99);
+        MaxStackCount(9999);
         Price(700);
         Mesh("ammo_gauge.msh");
         HudIcon("ammo_shotgun");
         Skin("Default");
         PhysicsScript("single_dropped_inventory.phx");
         Color(Color_Green);
-        AutoPickup(false);
+        AutoPickup(IAL_Loot_Auto_Pickup);
     }
 
     Item("Medkit_HealthPackLarge", CategoryType_Medkit)
@@ -8302,7 +8380,7 @@ sub main()
         ItemType(ItemType_Medkit);
         PhysicsScript("single_dropped_inventory.phx");
         Price(100);
-        MaxStackCount(99);
+        MaxStackCount(9999);
         Mesh("loot_ok_first_aid_a.MSH");
         InventoryMesh("bandage_roll_b.msh");
         ColorPreset("red");
@@ -8326,7 +8404,7 @@ sub main()
         ItemType(ItemType_Medkit);
         PhysicsScript("single_dropped_inventory.phx");
         Price(10);
-        MaxStackCount(99);
+        MaxStackCount(9999);
         Mesh("loot_food_a.MSH");
         Skin("default");
         InventoryMesh("loot_food_eat.msh");
@@ -8351,7 +8429,7 @@ sub main()
         ItemType(ItemType_Medkit);
         PhysicsScript("single_dropped_inventory.phx");
         Price(10);
-        MaxStackCount(99);
+        MaxStackCount(9999);
         Mesh("loot_food_a.MSH");
         Skin("Skin_b");
         InventoryMesh("loot_food_eat.msh");
@@ -8376,7 +8454,7 @@ sub main()
         ItemType(ItemType_Medkit);
         PhysicsScript("single_dropped_inventory.phx");
         Price(10);
-        MaxStackCount(99);
+        MaxStackCount(9999);
         Mesh("loot_food_a.MSH");
         Skin("Skin_c");
         InventoryMesh("loot_food_eat.msh");
@@ -8401,7 +8479,7 @@ sub main()
         ItemType(ItemType_Medkit);
         PhysicsScript("single_dropped_inventory.phx");
         Price(30);
-        MaxStackCount(99);
+        MaxStackCount(9999);
         Mesh("loot_food_b.MSH");
         Skin("default");
         InventoryMesh("loot_food_eat.msh");
@@ -8426,7 +8504,7 @@ sub main()
         ItemType(ItemType_Medkit);
         PhysicsScript("single_dropped_inventory.phx");
         Price(30);
-        MaxStackCount(99);
+        MaxStackCount(9999);
         Mesh("loot_food_b.MSH");
         Skin("Skin_b");
         InventoryMesh("loot_food_eat.msh");
@@ -8451,7 +8529,7 @@ sub main()
         ItemType(ItemType_Medkit);
         PhysicsScript("single_dropped_inventory.phx");
         Price(30);
-        MaxStackCount(99);
+        MaxStackCount(9999);
         Mesh("loot_food_b.MSH");
         Skin("Skin_c");
         InventoryMesh("loot_food_eat.msh");
@@ -8476,7 +8554,7 @@ sub main()
         ItemType(ItemType_Medkit);
         PhysicsScript("single_dropped_inventory.phx");
         Price(50);
-        MaxStackCount(99);
+        MaxStackCount(9999);
         Mesh("loot_food_c.MSH");
         Skin("Skin_c");
         InventoryMesh("loot_food_eat.msh");
@@ -8501,7 +8579,7 @@ sub main()
         ItemType(ItemType_Medkit);
         PhysicsScript("single_dropped_inventory.phx");
         Price(50);
-        MaxStackCount(99);
+        MaxStackCount(9999);
         Mesh("loot_food_c.MSH");
         Skin("Skin_b");
         InventoryMesh("loot_food_eat.msh");
@@ -8526,7 +8604,7 @@ sub main()
         ItemType(ItemType_Medkit);
         PhysicsScript("single_dropped_inventory.phx");
         Price(50);
-        MaxStackCount(99);
+        MaxStackCount(9999);
         Mesh("loot_food_c.MSH");
         Skin("default");
         InventoryMesh("loot_food_eat.msh");
@@ -8551,7 +8629,7 @@ sub main()
         ItemType(ItemType_Injector);
         PhysicsScript("single_dropped_inventory.phx");
         Price(200);
-        MaxStackCount(99);
+        MaxStackCount(9999);
         Mesh("lab_bottle_b.msh");
         Skin("fitness");
         InventoryMesh("loot_ok_bottle_d.msh");
@@ -8578,7 +8656,7 @@ sub main()
         ItemType(ItemType_Injector);
         PhysicsScript("single_dropped_inventory.phx");
         Price(200);
-        MaxStackCount(99);
+        MaxStackCount(9999);
         Mesh("lab_bottle_b.msh");
         Skin("seeindark");
         InventoryMesh("loot_ok_bottle_d.msh");
@@ -8605,7 +8683,7 @@ sub main()
         ItemType(ItemType_Injector);
         PhysicsScript("single_dropped_inventory.phx");
         Price(200);
-        MaxStackCount(99);
+        MaxStackCount(9999);
         Mesh("lab_bottle_b.msh");
         Skin("damage");
         InventoryMesh("loot_ok_bottle_d.msh");
@@ -8632,7 +8710,7 @@ sub main()
         ItemType(ItemType_Injector);
         PhysicsScript("single_dropped_inventory.phx");
         Price(400);
-        MaxStackCount(99);
+        MaxStackCount(9999);
         Mesh("lab_bottle_b.msh");
         Skin("stamina");
         InventoryMesh("loot_ok_bottle_d.msh");
@@ -8659,7 +8737,7 @@ sub main()
         ItemType(ItemType_Injector);
         PhysicsScript("single_dropped_inventory.phx");
         Price(1000);
-        MaxStackCount(99);
+        MaxStackCount(9999);
         Mesh("lab_bottle_b.msh");
         Skin("godmode");
         InventoryMesh("loot_ok_bottle_d.msh");
@@ -8689,7 +8767,7 @@ sub main()
         ItemType(ItemType_Medkit);
         PhysicsScript("single_dropped_inventory.phx");
         Price(100);
-        MaxStackCount(99);
+        MaxStackCount(9999);
         Mesh("loot_ok_first_aid_a.MSH");
         Skin("first_aid");
         InventoryMesh("bandage_roll_b.msh");
@@ -8768,7 +8846,7 @@ sub main()
         Skin("coffee");
         PhysicsScript("single_dropped_inventory.phx");
         Color(Color_Green);
-        MaxStackCount(99);
+        MaxStackCount(9999);
         GenType(GenType_None);
     }
 
@@ -8782,7 +8860,7 @@ sub main()
         Skin("Default");
         PhysicsScript("single_dropped_inventory.phx");
         Color(Color_White);
-        MaxStackCount(99);
+        MaxStackCount(9999);
         GenType(GenType_None);
     }
 
@@ -8796,7 +8874,7 @@ sub main()
         Skin("Air_freshener");
         PhysicsScript("single_dropped_inventory.phx");
         Color(Color_Blue);
-        MaxStackCount(99);
+        MaxStackCount(9999);
         GenType(GenType_None);
     }
 
@@ -8810,7 +8888,7 @@ sub main()
         Skin("Default");
         PhysicsScript("single_dropped_inventory.phx");
         Color(Color_Violet);
-        MaxStackCount(99);
+        MaxStackCount(9999);
         GenType(GenType_None);
     }
 
@@ -8824,7 +8902,7 @@ sub main()
         Skin("Default");
         PhysicsScript("single_dropped_inventory.phx");
         Color(Color_Orange);
-        MaxStackCount(99);
+        MaxStackCount(9999);
         GenType(GenType_None);
     }
 
@@ -8834,7 +8912,7 @@ sub main()
         Mesh("supplies_box_a.msh");
         HudIcon("quest_survivor_pack");
         Color(Color_Orange);
-        MaxStackCount(99);
+        MaxStackCount(9999);
         GenType(GenType_None);
 		CanBePickedByOtherPlayer(false);
     }
@@ -8849,7 +8927,7 @@ sub main()
         Skin("cigarettes_b");
         PhysicsScript("single_dropped_inventory.phx");
         Color(Color_Green);
-        MaxStackCount(99);
+        MaxStackCount(9999);
         GenType(GenType_None);
         GameVersion(8);
     }
@@ -8864,7 +8942,7 @@ sub main()
         Skin("higiene_kit");
         PhysicsScript("single_dropped_inventory.phx");
         Color(Color_Blue);
-        MaxStackCount(99);
+        MaxStackCount(9999);
         GenType(GenType_None);
         GameVersion(8);
     }
@@ -8879,7 +8957,7 @@ sub main()
         Skin("pouch");
         PhysicsScript("single_dropped_inventory.phx");
         Color(Color_Violet);
-        MaxStackCount(99);
+        MaxStackCount(9999);
         GenType(GenType_None);
         GameVersion(8);
     }
@@ -8894,7 +8972,7 @@ sub main()
         Skin("jewellery_b");
         PhysicsScript("single_dropped_inventory.phx");
         Color(Color_Orange);
-        MaxStackCount(99);
+        MaxStackCount(9999);
         GenType(GenType_None);
         GameVersion(8);
     }
@@ -9533,6 +9611,11 @@ sub main()
         BundleItems()
         {
             Item("ZZZZZ_Ammo_SMG_Big", 120);
+            Item("ZZZZ3_Ammo_Crossbow", 250);
+            Item("ZZZZ_Ammo_Arrow", 125);
+            Item("ZZZZ_Ammo_Arrow_Burning", 60);
+            Item("ZZZZ_Ammo_Arrow_Shock", 60);
+            Item("ZZZZ_Ammo_Arrow_Explode", 60);
             Item("Ammo_PistolBig", 60);
             Item("Ammo_RifleBig", 90);
             Item("Ammo_ShotgunBig", 30);
@@ -9550,7 +9633,7 @@ sub main()
         BundleItems()
         {
             Item("ZZZZ3_Crossbow", 1);
-            Item("ZZZZ3_Ammo_Crossbow", 1);
+            Item("ZZZZ3_Ammo_Crossbow", 6);
             Item("ZZZZ3_Craftplan_Crossbow", 1);
             Item("ZZZZ3_Craftplan_CrossbowBolt", 1);
         }
