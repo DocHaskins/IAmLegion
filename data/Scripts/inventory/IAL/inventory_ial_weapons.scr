@@ -268,7 +268,7 @@ sub ial_weapons()
         UsageType(UsageType_Normal);
         DefaultBulletId("ZZZZ3_Bullet_Bolt");
         AmmoType(AmmoType_Bolt);
-		AmmoCount(90);
+		AmmoCount(30);
         BulletSpeed(80.0);
         BulletGravityFactor(0.05);
         Visibility(true);
@@ -353,7 +353,7 @@ sub ial_weapons()
         UsageType(UsageType_Normal);
         DefaultBulletId("ZZZZ3_Bullet_Bolt");
         AmmoType(AmmoType_Bolt);
-		AmmoCount(150);
+		AmmoCount(60);
         BulletSpeed(80.0);
         BulletGravityFactor(0.05);
         Visibility(true);
@@ -415,7 +415,7 @@ sub ial_weapons()
 		JumpInertiaFactor(0.1);
         ShotTime(0.2);
         ClipReload(true);
-        BulletsPerShot(1);
+        BulletsPerShot(5);
         ShootAnimFactor(1.0);
         Silenced(true);
         EnablePenetration(false);

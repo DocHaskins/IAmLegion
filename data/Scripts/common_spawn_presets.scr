@@ -573,7 +573,7 @@
 	PresetDef("IAL_Biter_New")
     {
         Difficult(9)
-        AIPreset("Biter_Man_FireFighter;Biter_Man_FreshDead_02;Biter_Woman_FreshDead_02;BTZ_Biter_RaisBandit;BTZ_Biter_Policeman;Biter_Worker;Biter_Man_Injured_01;Biter_Man_Injured_02;Biter_Man_Injured_03;Biter_Man_Injured_04;Biter_Woman_Injured_01;Biter_DZ_Steam_Man;Biter_DZ_Steam_Woman;Biter_Man_AG;Biter_Man_SmashedHead;Biter_Prologue;Biter_RaisBandit;Biter_Woman_AG;Biter_Woman_Agressive;Bitter_Man_Agressive;Bucket_ZMan;DeadZone_Biter;Dead_Body_Biter_Man_A;Dead_Body_Biter_Man_B;Dead_Body_Biter_Man_C;Dead_Body_Biter_Woman_A;Dead_Body_Biter_Woman_B;GasTank_NoTank;GasTank_Ram;Jim;Lifebuoy_ZWoman;Quest_Clinic_Worker;Quest_DawudInfected;Quest_Dungeons_RupertsWife;Quest_ProjectMayhem_RabbitViral;Quest_RobinAndMaurice_ZombieGirls;TraficCone_ZMan;ViralBlister_Man;ViralBlister_Woman")
+        AIPreset("Biter_Man_FireFighter;Biter_Man_FreshDead_02;Biter_Woman_FreshDead_02;BTZ_Biter_RaisBandit;BTZ_Biter_Policeman;Biter_Worker;Biter_Man_Injured_01;Biter_Man_Injured_02;Biter_Man_Injured_03;Biter_Man_Injured_04;Biter_Woman_Injured_01;Biter_DZ_Steam_Man;Biter_DZ_Steam_Woman;Biter_Man_AG;Biter_Man_SmashedHead;Biter_Prologue;Biter_RaisBandit;Biter_Woman_AG;Biter_Woman_Agressive;Bitter_Man_Agressive;ViralBlister_Man;ViralBlister_Woman")
         SpawnCondition("t_INIT, 0.4;z_VESSEL, 0.7;z_INFECTED, 1;p_WIDE, 1;p_SQUARE, 1;__any__, 1;p_ROOF, 1")
         DiffLvlTableName("Biter_Man_Wast;Biter_Woman_Wast")
 		MinDistBtwZombies(3)
@@ -585,7 +585,7 @@
     {
         Difficult(7)
         DiffLvlTableName("Biter_Man_Wast;Biter_Woman_Wast")
-		AIPreset("Medieval_Armored;Friendly_Survivor;Enemy_Survivor;enc_gaas_oldtown_new_enemy_00;enc_oldtown_bandit_lvl04;enc_gaas_oldtown_new_enemy_01;enc_gaas_oldtown_new_enemy_02;enc_gaas_oldtown_new_enemy_03;enc_oldtown_survivor_fighter_01;HR_Gather_Guard;HR_Gather_Mage_Priest;HR_Gather_Mage_Warrior")
+		AIPreset("Medieval_Armored;Friendly_Survivor;Enemy_Survivor;enc_gaas_oldtown_new_enemy_00;enc_oldtown_bandit_lvl04;enc_gaas_oldtown_new_enemy_01;enc_gaas_oldtown_new_enemy_02;enc_gaas_oldtown_new_enemy_03;enc_oldtown_survivor_fighter_01")
         SpawnCondition("t_INIT, 0.4;z_VESSEL, 0.7;z_INFECTED, 1;p_WIDE, 1;p_SQUARE, 1;__any__, 1;p_ROOF, 1")
         ForceTargetType(-1)
         MinDistBtwZombies(15)

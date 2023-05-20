@@ -108,6 +108,7 @@
         Type("peak;special")
         Preset("Vessel_Init_IAL, 20;Vessel_DeadBody, 20;Vessel_WithAToy, 10;")//50
         Preset("Human_To_Infected_In_Attractor, 30")//30
+		Preset("IAL_Human_New, 15;")
         Preset("Goon, 20;")//20
     }
 
@@ -122,6 +123,7 @@
         Preset("Vessel_Init, 30;Vessel_WithAToy, 15;")//45
         Preset("Human_To_Infected_In_Attractor, 30")//30
 		Preset("Infected_HumanInit_Noise, 5")//10
+		Preset("IAL_Human_New, 15;")
         Preset("Goon, 10;")//10
     }
 
@@ -137,6 +139,7 @@
         Preset("Human_To_Infected_In_Attractor, 15")//15
 		Preset("Infected_HumanInit_Noise, 5")//10
         Preset("Goon, 15;")//15
+		Preset("IAL_Human_New, 15;")
         Preset("Toad_Medium, 30;")//30
     }
 
@@ -154,6 +157,7 @@
 		Preset("Infected_HumanInit_Noise, 10")//10
         Preset("Goon, 15;")//15
         Preset("Toad_Medium, 15;")//15
+		Preset("IAL_Human_New, 15;")
         Preset("Melee_Fighter_With_Pipe, 10;Melee_Fighter_With_Pipe_Init, 5;")//15
     }
 
@@ -171,6 +175,7 @@
         Preset("Human_To_Infected_In_Attractor, 15")//15
 		Preset("Infected_HumanInit_Noise, 10")//10
         Preset("Goon, 15")//15
+		Preset("IAL_Human_New, 15;")
         Preset("Toad_Hard, 20;")//20
     }
 
@@ -186,6 +191,7 @@
         Preset("Vessel_GasTank, 5;Nurker, 10;")//10
         Preset("Human_To_Infected_In_Attractor, 10")//10
 		Preset("Infected_HumanInit_Noise, 10")//10
+		Preset("IAL_Human_New, 15;")
         Preset("Goon, 30")//30
     }
 
