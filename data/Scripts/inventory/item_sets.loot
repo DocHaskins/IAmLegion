@@ -358,6 +358,27 @@ export int Other = 9;
         {
             Item("Firearm_PistolAGen", 1.0);
             Item("Firearm_PistolBGen", 1.0);
+			Item("basic_crossbow_01_weak", 0.5);
+			Item("basic_crossbow_01", 0.5);
+			Item("basic_crossbow_01_Improved", 0.5);
+			Item("basic_crossbow_01_Rapid", 0.1);
+			Item("basic_crossbow_02_Rapid", 0.1);
+			Item("basic_crossbow_01_assassin", 0.1);
+			Item("ironclad_crossbow_01_weak", 0.5);
+			Item("ironclad_crossbow_02", 0.5);
+			Item("ironclad_siege_crossbow", 0.1);
+			Item("ironclad_annihilator", 0.1);
+			Item("titanium_piercer_crossbow", 0.1);
+			Item("marksmen_crossbow_01_initiate", 0.5);
+			Item("marksmen_crossbow_01_intermediate", 0.5);
+			Item("marksmen_crossbow_03_advanced", 0.1);
+			Item("marksmen_crossbow_04_elite", 0.1);
+			Item("marksmen_crossbow_05_master", 0.1);
+			Item("RapidfireCrossbow_T1", 0.5);
+			Item("RapidfireCrossbow_T2", 0.5);
+			Item("RapidfireCrossbow_T3", 0.1);
+			Item("RapidfireCrossBow_T4", 0.1);
+			Item("RapidfireCrossBow_T5", 0.1);
         }
     }
 
@@ -813,6 +834,27 @@ export int Other = 9;
         Set(Weapon, weight, prob)
         {
             Item("Bundle_Pistol_A", 1.0);
+			Item("basic_crossbow_01_weak", 0.5);
+			Item("basic_crossbow_01", 0.5);
+			Item("basic_crossbow_01_Improved", 0.5);
+			Item("basic_crossbow_01_Rapid", 0.1);
+			Item("basic_crossbow_02_Rapid", 0.1);
+			Item("basic_crossbow_01_assassin", 0.1);
+			Item("ironclad_crossbow_01_weak", 0.5);
+			Item("ironclad_crossbow_02", 0.5);
+			Item("ironclad_siege_crossbow", 0.1);
+			Item("ironclad_annihilator", 0.1);
+			Item("titanium_piercer_crossbow", 0.1);
+			Item("marksmen_crossbow_01_initiate", 0.5);
+			Item("marksmen_crossbow_01_intermediate", 0.5);
+			Item("marksmen_crossbow_03_advanced", 0.1);
+			Item("marksmen_crossbow_04_elite", 0.1);
+			Item("marksmen_crossbow_05_master", 0.1);
+			Item("RapidfireCrossbow_T1", 0.5);
+			Item("RapidfireCrossbow_T2", 0.5);
+			Item("RapidfireCrossbow_T3", 0.1);
+			Item("RapidfireCrossBow_T4", 0.1);
+			Item("RapidfireCrossBow_T5", 0.1);
         }
     }
 
@@ -1339,6 +1381,27 @@ export int Other = 9;
         {
             Item("Firearm_PistolAGen", 1.0);
             Item("Firearm_PistolBGen", 1.0);
+			Item("basic_crossbow_01_weak", 0.5);
+			Item("basic_crossbow_01", 0.5);
+			Item("basic_crossbow_01_Improved", 0.5);
+			Item("basic_crossbow_01_Rapid", 0.1);
+			Item("basic_crossbow_02_Rapid", 0.1);
+			Item("basic_crossbow_01_assassin", 0.1);
+			Item("ironclad_crossbow_01_weak", 0.5);
+			Item("ironclad_crossbow_02", 0.5);
+			Item("ironclad_siege_crossbow", 0.1);
+			Item("ironclad_annihilator", 0.1);
+			Item("titanium_piercer_crossbow", 0.1);
+			Item("marksmen_crossbow_01_initiate", 0.5);
+			Item("marksmen_crossbow_01_intermediate", 0.5);
+			Item("marksmen_crossbow_03_advanced", 0.1);
+			Item("marksmen_crossbow_04_elite", 0.1);
+			Item("marksmen_crossbow_05_master", 0.1);
+			Item("RapidfireCrossbow_T1", 0.5);
+			Item("RapidfireCrossbow_T2", 0.5);
+			Item("RapidfireCrossbow_T3", 0.1);
+			Item("RapidfireCrossBow_T4", 0.1);
+			Item("RapidfireCrossBow_T5", 0.1);
         }
     }
 
@@ -1353,6 +1416,27 @@ export int Other = 9;
             Item("Firearm_RifleBGenOlive", 1.0);
             Item("Firearm_RifleBGenSand", 1.0);
             Item("Firearm_Challenge_RifleBGen", 1.0);
+			Item("basic_crossbow_01_weak", 0.5);
+			Item("basic_crossbow_01", 0.5);
+			Item("basic_crossbow_01_Improved", 0.5);
+			Item("basic_crossbow_01_Rapid", 0.1);
+			Item("basic_crossbow_02_Rapid", 0.1);
+			Item("basic_crossbow_01_assassin", 0.1);
+			Item("ironclad_crossbow_01_weak", 0.5);
+			Item("ironclad_crossbow_02", 0.5);
+			Item("ironclad_siege_crossbow", 0.1);
+			Item("ironclad_annihilator", 0.1);
+			Item("titanium_piercer_crossbow", 0.1);
+			Item("marksmen_crossbow_01_initiate", 0.5);
+			Item("marksmen_crossbow_01_intermediate", 0.5);
+			Item("marksmen_crossbow_03_advanced", 0.1);
+			Item("marksmen_crossbow_04_elite", 0.1);
+			Item("marksmen_crossbow_05_master", 0.1);
+			Item("RapidfireCrossbow_T1", 0.5);
+			Item("RapidfireCrossbow_T2", 0.5);
+			Item("RapidfireCrossbow_T3", 0.1);
+			Item("RapidfireCrossBow_T4", 0.1);
+			Item("RapidfireCrossBow_T5", 0.1);
         }
     }
 
@@ -1374,6 +1458,27 @@ export int Other = 9;
             Item("Firearm_RifleBGenOlive", 1.0);
             Item("Firearm_RifleBGenSand", 1.0);
             Item("Firearm_Challenge_RifleBGen", 1.0);
+			Item("basic_crossbow_01_weak", 0.5);
+			Item("basic_crossbow_01", 0.5);
+			Item("basic_crossbow_01_Improved", 0.5);
+			Item("basic_crossbow_01_Rapid", 0.1);
+			Item("basic_crossbow_02_Rapid", 0.1);
+			Item("basic_crossbow_01_assassin", 0.1);
+			Item("ironclad_crossbow_01_weak", 0.5);
+			Item("ironclad_crossbow_02", 0.5);
+			Item("ironclad_siege_crossbow", 0.1);
+			Item("ironclad_annihilator", 0.1);
+			Item("titanium_piercer_crossbow", 0.1);
+			Item("marksmen_crossbow_01_initiate", 0.5);
+			Item("marksmen_crossbow_01_intermediate", 0.5);
+			Item("marksmen_crossbow_03_advanced", 0.1);
+			Item("marksmen_crossbow_04_elite", 0.1);
+			Item("marksmen_crossbow_05_master", 0.1);
+			Item("RapidfireCrossbow_T1", 0.5);
+			Item("RapidfireCrossbow_T2", 0.5);
+			Item("RapidfireCrossbow_T3", 0.1);
+			Item("RapidfireCrossBow_T4", 0.1);
+			Item("RapidfireCrossBow_T5", 0.1);
         }
     }
 

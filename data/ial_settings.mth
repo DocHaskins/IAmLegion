@@ -119,7 +119,7 @@ export float IAL_Camera_FOV = 70.0; //Default is 57.0
 
 //////////// -------  LOOTING  ------- \\\\\\\\\\\\\\\\\\\\\\\ 
 //- LOCATION - (scripts/player/player_variables_hard.scr) -----\\
-
+export bool IAL_Loot_Auto_Pickup = TRUE; //Default: False
 
 //////////// -------  CAMOFLAGE  ------- \\\\\\\\\\\\\\\\\\\\\\\ 
 //- LOCATION - (scripts/difficultyparams.scr) -----\\\\\\\\\\\\\

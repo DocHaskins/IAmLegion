@@ -589,7 +589,7 @@ sub main()
         ItemType(ItemType_Bullet);
         AmmoType(AmmoType_Arrow);
         BulletVis(BulletVis_Arrow);
-        MaxAmmoCount(60);
+        MaxAmmoCount(250);
         Color(Color_White);
         HudIcon("ammo_arrow");
         Mesh("weapon_arrow_a.msh");
@@ -604,7 +604,7 @@ sub main()
         AmmoType(AmmoType_Arrow);
         BulletVis(BulletVis_ArrowElectricity);
         Elemental(Elemental_ShockElectricity, 3);
-        MaxAmmoCount(60);
+        MaxAmmoCount(250);
         
         HudIcon("ammo_arrow_electricity");
         Mesh("weapon_arrow_d.msh");
@@ -623,7 +623,7 @@ sub main()
         AmmoType(AmmoType_Arrow);
         BulletVis(BulletVis_ArrowFire);
         Elemental(Elemental_Burning, 1);
-        MaxAmmoCount(60);
+        MaxAmmoCount(250);
         
         HudIcon("ammo_arrow_fire");
         Mesh("weapon_arrow_c.msh");
@@ -642,7 +642,7 @@ sub main()
         AmmoType(AmmoType_Arrow);
         BulletVis(BulletVis_ArrowExploding);
         Elemental(Elemental_Explosive, 2);
-        MaxAmmoCount(60);
+        MaxAmmoCount(250);
         Color(Color_Blue);
         HudIcon("ammo_arrow_explosive");
         Mesh("weapon_arrow_b.msh");
@@ -7511,7 +7511,7 @@ sub main()
         ItemType(ItemType_Bullet);
         AmmoType(AmmoType_Bolt);
         BulletVis(BulletVis_Bolt);
-        MaxAmmoCount(60);
+        MaxAmmoCount(250);
         
         HudIcon("ammo_bolt");
         Mesh("dlc_wn_crossbow_bolt_a.msh");
@@ -9114,7 +9114,7 @@ sub main()
         ItemType(ItemType_Bullet);
         AmmoType(AmmoType_Arrow);
         BulletVis(BulletVis_Arrow);
-        MaxAmmoCount(60);
+        MaxAmmoCount(250);
         Color(Color_White);
         HudIcon("ammo_arrow");
         Mesh("weapon_arrow_a.msh");
