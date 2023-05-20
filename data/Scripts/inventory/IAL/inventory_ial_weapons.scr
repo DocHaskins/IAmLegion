@@ -10,7 +10,8 @@ sub ial_weapons()
 ///////////////////////////////CROSSBOWS	
 	Item("basic_crossbow_01_weak", CategoryType_Firearm)
     {
-        Name("Weak Crossbow");
+        Name("&WeakBasicCrossBow_N&");
+        Description("&WeakBasicCrossBow_D&");
 		DamageType(DamageType_Arrow);
         UsageType(UsageType_Normal);
         DefaultBulletId("ZZZZ3_Bullet_Bolt");
@@ -93,7 +94,8 @@ sub ial_weapons()
 
     Item("basic_crossbow_01", CategoryType_Firearm)
     {
-        Name("Basic Crossbow");
+        Name("&BasicCrossBow_N&");
+        Description("&BasicCrossBow_D&");
 		DamageType(DamageType_Arrow);
         UsageType(UsageType_Normal);
         DefaultBulletId("ZZZZ3_Bullet_Bolt");
@@ -176,7 +178,8 @@ sub ial_weapons()
 
     Item("basic_crossbow_01_Improved", CategoryType_Firearm)
     {
-        Name("Reinforced CrossBow");
+        Name("&ReinforcedCrossBow_N&");
+        Description("&ReinforcedCrossBow_D&");
         DamageType(DamageType_Arrow);
         UsageType(UsageType_Normal);
         DefaultBulletId("ZZZZ3_Bullet_Bolt");
@@ -259,7 +262,8 @@ sub ial_weapons()
 
     Item("basic_crossbow_01_Rapid", CategoryType_Firearm)
     {
-        Name("Rapid Fire CrossBow");
+        Name("&AutomaticCrossBow_N&");
+        Description("&AutomaticCrossBow_D&");
         DamageType(DamageType_Arrow);
         UsageType(UsageType_Normal);
         DefaultBulletId("ZZZZ3_Bullet_Bolt");
@@ -343,7 +347,8 @@ sub ial_weapons()
 
     Item("basic_crossbow_02_Rapid", CategoryType_Firearm)
     {
-        Name("Automatic CrossBow Type B");
+        Name("&AutomaticCrossBowTypeB_N&");
+        Description("&AutomaticCrossBowTypeB_D&");
         DamageType(DamageType_Arrow);
         UsageType(UsageType_Normal);
         DefaultBulletId("ZZZZ3_Bullet_Bolt");
@@ -427,7 +432,8 @@ sub ial_weapons()
 
     Item("basic_crossbow_01_assassin", CategoryType_Firearm)
     {
-        Name("Assassin CrossBow");
+        Name("&AssassinCrossBow_N&");
+        Description("&AssassinCrossBow_D&");
         DamageType(DamageType_Arrow);
         UsageType(UsageType_Normal);
         DefaultBulletId("ZZZZ3_Bullet_Bolt");
@@ -512,7 +518,8 @@ sub ial_weapons()
 	
 	Item("ironclad_crossbow_01_weak", CategoryType_Firearm)
 	{
-		Name("Weak Ironclad Crossbow");
+		Name("&IroncladCrossbow_N&");
+        Description("&IroncladCrossbow_D&");
 		DamageType(DamageType_Arrow);
         UsageType(UsageType_Normal);
         DefaultBulletId("ZZZZ3_Bullet_Bolt");
@@ -594,9 +601,10 @@ sub ial_weapons()
 		ReloadAnimSpeed(1.1);
 	}
 	
-	Item("ironclad_crossbow_01", CategoryType_Firearm)
+	Item("ironclad_crossbow_02", CategoryType_Firearm)
 	{
-		Name("Heavy Ironclad Crossbow");
+		Name("&BasicCrossBow_T2_Heavy_Ironclad_N&");
+        Description("&BasicCrossBow_T2_Heavy_Ironclad_D&");
 		DamageType(DamageType_Arrow);
         UsageType(UsageType_Normal);
         DefaultBulletId("ZZZZ3_Bullet_Bolt");
@@ -680,7 +688,8 @@ sub ial_weapons()
 	
 	Item("ironclad_siege_crossbow", CategoryType_Firearm)
 	{
-		Name("Ironclad Siege Crossbow");
+		Name("&IroncladSiegeCrossBow_N&");
+        Description("&IroncladSiegeCrossBow_D&");
 		DamageType(DamageType_Arrow);
         UsageType(UsageType_Normal);
         DefaultBulletId("ZZZZ3_Bullet_Bolt");
@@ -764,7 +773,8 @@ sub ial_weapons()
 	
 	Item("ironclad_annihilator", CategoryType_Firearm)
 	{
-		Name("Ironclad Annihilator");
+		Name("&IroncladAnnihilator_N&");
+        Description("&IroncladAnnihilator_D&");
 		DamageType(DamageType_Arrow);
         UsageType(UsageType_Normal);
         DefaultBulletId("ZZZZ3_Bullet_Bolt");
@@ -848,7 +858,8 @@ sub ial_weapons()
 	
 	Item("titanium_piercer_crossbow", CategoryType_Firearm)
 	{
-		Name("Titanium Piercer Automatic Crossbow");
+		Name("&TitaniumPiercerAutomaticCrossBow_N&");
+        Description("&TitaniumPiercerAutomaticCrossBow_D&");
 		DamageType(DamageType_Arrow);
         UsageType(UsageType_Normal);
         DefaultBulletId("ZZZZ3_Bullet_Bolt");
@@ -929,5 +940,434 @@ sub ial_weapons()
 		HandOffset(HandModification_Normal, [0.0,-0.01,-0.11]);
         HandOffset(HandModification_Custom, [0.0,-0.01,-0.11]);
 		ReloadAnimSpeed(0.7);
+	}
+
+//////////////MARKSMEN
+	
+	Item("marksmen_crossbow_01_initiate", CategoryType_Firearm)
+    {
+        Name("&SharpshooterCrossbow_N&");
+        Description("&SharpshooterCrossbow_D&");
+        DamageType(DamageType_Arrow);
+        UsageType(UsageType_Normal);
+        DefaultBulletId("ZZZZ3_Bullet_Bolt");
+        AmmoType(AmmoType_Bolt);
+        BulletSpeed(75.0);
+        BulletGravityFactor(0.1);
+        Visibility(true);
+        ItemType(ItemType_Crossbow);
+        PhysicsScript("single_dropped_inventory.phx");
+        UpgradeLevel(0);
+        Condition(35.0);
+        CriticalProb(0.1);
+        CriticalDamage(1.2);
+		DuckInertiaFactor(0.1);
+        DamageHeadMult(12.0);
+        DamageToPhysicsObjects(20.0);
+        FirePointRange(0, 15.0);
+        FirePointDamage(0, 140.0);
+        FirePointForce(0, 95.0);
+        FirePointPhysicsDamage(0, 1.6);
+        FirePointRange(1, 30.0);
+        FirePointDamage(1, 120.0);
+        FirePointForce(1, 85.0);
+        FirePointPhysicsDamage(1, 1.4);
+        FirePointRange(2, 55.0);
+        FirePointDamage(2, 100.0);
+        FirePointForce(2, 65.0);
+        FirePointPhysicsDamage(2, 1.2);
+        Mesh("dlc_wn_crossbow_a_upgrade_a.msh");
+		BarrelHelperName("bolt_pose");
+        AnimPrefix("crossbow");
+        HudIcon("weapon_crossbow_a");        
+        TwoHanded(true);        
+        DestroySound("break_wooden_weapon_00.wav");
+        AiHitSound("crossbow");
+        use HitEffects_Sharp();
+        BloodSplatFactor(0.25);
+        use PickupSounds_Default();
+        DamageSize(15.0);
+        StatsType(StatsType_Cut);
+        LootLevel(1);
+        LootType(LootType_Sharp);
+        FF_Left(0.6);
+        FF_Right(0.6);
+        FF_Duration(0.2);
+        FF_FadeOut(0.0);
+        Color(Color_White);
+		SwayMaxAngle(0.02);
+		JumpInertiaFactor(0.1);
+        ShotTime(0.5);
+        ClipReload(true);
+        BulletsPerShot(1);
+        ShootAnimFactor(1.0);
+        ShootStatAccuracy(87.0);
+		ShootMinAngle(0.10);
+        ShootMaxAngle(0.60);
+        ShootMaxHorzAngle(0.60);
+        ShootMinHorzAngle(0.10);
+        ShootAngleVel(1.0);
+        ShootAngleCooldown(1.0);
+        ShootVertRecoil(0.08);
+        ShootVertRecoilSpread(0.02);
+        ShootVertRecoilSpreadMax(0.04);
+        ShootHorzRecoil(0.1);
+        ShootHorzRecoilSpread(0.005);
+        ShootHorzRecoilSpreadMax(0.07);
+        ShootRecoilTime(0.4);
+        AmmoCount(1);
+        Silenced(true);
+        EnablePenetration(false);
+        MoveAcurancyLoseFactor(0.2);
+		DodgeAccuracyLoseFactor(5.0);
+        AimFov(1.6);
+        ShotSound("crossbow_shot_XX.wav");
+		EmptySound("crossbow_empty_XX.wav");
+		BaseSoundPrefix("crossbow");
+		HandOffset(HandModification_Normal, [0.0,-0.01,-0.11]);
+        HandOffset(HandModification_Custom, [0.0,-0.01,-0.11]);
+		ReloadAnimSpeed(1.0);
+	}
+	
+	Item("marksmen_crossbow_01_intermediate", CategoryType_Firearm)
+    {
+        Name("&BasicCrossBow_T2_Marksman_N&");
+        Description("&BasicCrossBow_T2_Marksman_D&");
+        DamageType(DamageType_Arrow);
+        UsageType(UsageType_Normal);
+        DefaultBulletId("ZZZZ3_Bullet_Bolt");
+        AmmoType(AmmoType_Bolt);
+        BulletSpeed(85.0);
+        BulletGravityFactor(0.1);
+        Visibility(true);
+        ItemType(ItemType_Crossbow);
+        PhysicsScript("single_dropped_inventory.phx");
+        UpgradeLevel(0);
+        Condition(65.0);
+        CriticalProb(0.15);
+        CriticalDamage(1.3);
+		DuckInertiaFactor(0.1);
+        DamageHeadMult(12.5);
+        DamageToPhysicsObjects(22.5);
+        FirePointRange(0, 15.0);
+        FirePointDamage(0, 160.0);
+        FirePointForce(0, 100.0);
+        FirePointPhysicsDamage(0, 1.6);
+        FirePointRange(1, 30.0);
+        FirePointDamage(1, 140.0);
+        FirePointForce(1, 90.0);
+        FirePointPhysicsDamage(1, 1.4);
+        FirePointRange(2, 55.0);
+        FirePointDamage(2, 120.0);
+        FirePointForce(2, 70.0);
+        FirePointPhysicsDamage(2, 1.2);
+        Mesh("dlc_wn_crossbow_a_upgrade_a.msh");
+		BarrelHelperName("bolt_pose");
+        AnimPrefix("crossbow");
+        HudIcon("weapon_crossbow_a");        
+        TwoHanded(true);        
+        DestroySound("break_wooden_weapon_00.wav");
+        AiHitSound("crossbow");
+        use HitEffects_Sharp();
+        BloodSplatFactor(0.25);
+        use PickupSounds_Default();
+        DamageSize(15.0);
+        StatsType(StatsType_Cut);
+        LootLevel(2);
+        LootType(LootType_Sharp);
+        FF_Left(0.6);
+        FF_Right(0.6);
+        FF_Duration(0.2);
+        FF_FadeOut(0.0);
+        Color(Color_Green);
+		SwayMaxAngle(0.02);
+		JumpInertiaFactor(0.1);
+        ShotTime(0.45);
+        ClipReload(true);
+        BulletsPerShot(1);
+        ShootAnimFactor(0.9);
+        ShootStatAccuracy(92.0);
+		ShootMinAngle(0.10);
+        ShootMaxAngle(0.55);
+        ShootMaxHorzAngle(0.55);
+        ShootMinHorzAngle(0.10);
+        ShootAngleVel(1.0);
+        ShootAngleCooldown(1.0);
+        ShootVertRecoil(0.07);
+        ShootVertRecoilSpread(0.02);
+        ShootVertRecoilSpreadMax(0.04);
+        ShootHorzRecoil(0.09);
+        ShootHorzRecoilSpread(0.004);
+        ShootHorzRecoilSpreadMax(0.05);
+        ShootRecoilTime(0.35);
+        AmmoCount(1);
+        Silenced(true);
+        EnablePenetration(false);
+        MoveAcurancyLoseFactor(0.2);
+		DodgeAccuracyLoseFactor(5.0);
+        ShootStatAccuracy(94.0);
+        AimFov(1.6);
+        ShotSound("crossbow_shot_XX.wav");
+		EmptySound("crossbow_empty_XX.wav");
+		BaseSoundPrefix("crossbow");
+		HandOffset(HandModification_Normal, [0.0,-0.01,-0.11]);
+        HandOffset(HandModification_Custom, [0.0,-0.01,-0.11]);
+		ReloadAnimSpeed(1.0);
+    }
+	
+	Item("marksmen_crossbow_03_advanced", CategoryType_Firearm)
+	{
+		Name("&HawkeyeCrossBow_N&");
+        Description("&HawkeyeCrossBow_D&");
+		DamageType(DamageType_Arrow);
+		UsageType(UsageType_Normal);
+		DefaultBulletId("ZZZZ3_Bullet_Bolt");
+		AmmoType(AmmoType_Bolt);
+		BulletSpeed(90.0);
+		BulletGravityFactor(0.05);
+		Visibility(true);
+		ItemType(ItemType_Crossbow);
+		PhysicsScript("single_dropped_inventory.phx");
+		UpgradeLevel(0);
+		Condition(120.0);
+		CriticalProb(0.1);
+		CriticalDamage(2.0);
+		DuckInertiaFactor(0.1);
+		DamageHeadMult(10.0);
+		DamageToPhysicsObjects(25.0);
+		FirePointRange(0, 15.0);
+		FirePointDamage(0, 250.0);
+		FirePointForce(0, 120.0);
+		FirePointPhysicsDamage(0, 1.8);
+		FirePointRange(1, 30.0);
+		FirePointDamage(1, 220.0);
+		FirePointForce(1, 110.0);
+		FirePointPhysicsDamage(1, 1.5);
+		FirePointRange(2, 60.0);
+		FirePointDamage(2, 200.0);
+		FirePointForce(2, 100.0);
+		FirePointPhysicsDamage(2, 1.3);
+		Mesh("dlc_wn_crossbow_a.msh");        
+		BarrelHelperName("bolt_pose");
+		AnimPrefix("crossbow");
+		HudIcon("weapon_crossbow_a");        
+		TwoHanded(true);        
+		DestroySound("break_wooden_weapon_00.wav");
+		AiHitSound("crossbow");
+		use HitEffects_Sharp();
+		BloodSplatFactor(0.25);
+		use PickupSounds_Default();
+		DamageSize(15.0);
+		StatsType(StatsType_Cut);
+		LootLevel(3);
+		LootType(LootType_Sharp);
+		FF_Left(0.6);
+		FF_Right(0.6);
+		FF_Duration(0.2);
+		FF_FadeOut(0.0);
+		Color(Color_Blue);
+		SwayMaxAngle(0.0);
+		JumpInertiaFactor(0.1);
+		ShotTime(0.3);
+		ClipReload(true);
+		BulletsPerShot(1);
+		ShootAnimFactor(0.5);
+		ShootMinAngle(0.05);
+		ShootMaxAngle(0.40);
+		ShootMaxHorzAngle(0.40);
+		ShootMinHorzAngle(0.05);
+		ShootAngleVel(1.0);
+		ShootAngleCooldown(1.0);
+		ShootVertRecoil(0.03);
+		ShootVertRecoilSpread(0.01);
+		ShootVertRecoilSpreadMax(0.02);
+		ShootHorzRecoil(0.03);
+		ShootHorzRecoilSpread(0.002);
+		ShootHorzRecoilSpreadMax(0.03);
+		ShootRecoilTime(0.25);
+		AmmoCount(1);
+		Silenced(true);
+		EnablePenetration(false);
+		MoveAcurancyLoseFactor(0.2);
+		DodgeAccuracyLoseFactor(5.0);
+		ShootStatAccuracy(100.0);
+		AimFov(1.6);
+		ShotSound("crossbow_shot_XX.wav");
+		EmptySound("crossbow_empty_XX.wav");
+		BaseSoundPrefix("crossbow");
+		HandOffset(HandModification_Normal, [0.0,-0.01,-0.11]);
+        HandOffset(HandModification_Custom, [0.0,-0.01,-0.11]);
+		ReloadAnimSpeed(1.0);
+    }
+	
+	Item("marksmen_crossbow_04_elite", CategoryType_Firearm)
+	{
+		Name("&DeadshotCrossBow_N&");
+        Description("&DeadshotCrossBow_D&");
+		DamageType(DamageType_Arrow);
+		UsageType(UsageType_Normal);
+		DefaultBulletId("ZZZZ3_Bullet_Bolt");
+		AmmoType(AmmoType_Bolt);
+		BulletSpeed(100.0);
+		BulletGravityFactor(0.04);
+		Visibility(true);
+		ItemType(ItemType_Crossbow);
+		PhysicsScript("single_dropped_inventory.phx");
+		UpgradeLevel(0);
+		Condition(140.0);
+		CriticalProb(0.15);
+		CriticalDamage(2.5);
+		DuckInertiaFactor(0.1);
+		DamageHeadMult(12.0);
+		DamageToPhysicsObjects(30.0);
+		FirePointRange(0, 20.0);
+		FirePointDamage(0, 300.0);
+		FirePointForce(0, 150.0);
+		FirePointPhysicsDamage(0, 2.0);
+		FirePointRange(1, 40.0);
+		FirePointDamage(1, 280.0);
+		FirePointForce(1, 140.0);
+		FirePointPhysicsDamage(1, 1.7);
+		FirePointRange(2, 80.0);
+		FirePointDamage(2, 260.0);
+		FirePointForce(2, 130.0);
+		FirePointPhysicsDamage(2, 1.5);
+		Mesh("dlc_wn_crossbow_a.msh");        
+		BarrelHelperName("bolt_pose");
+		AnimPrefix("crossbow");
+		HudIcon("weapon_crossbow_a");        
+		TwoHanded(true);        
+		DestroySound("break_wooden_weapon_00.wav");
+		AiHitSound("crossbow");
+		use HitEffects_Sharp();
+		BloodSplatFactor(0.3);
+		use PickupSounds_Default();
+		DamageSize(20.0);
+		StatsType(StatsType_Cut);
+		LootLevel(4);
+		LootType(LootType_Sharp);
+		FF_Left(0.7);
+		FF_Right(0.7);
+		FF_Duration(0.2);
+		FF_FadeOut(0.0);
+		Color(Color_Violet);
+		SwayMaxAngle(0.0);
+		JumpInertiaFactor(0.1);
+		ShotTime(0.25);
+		ClipReload(true);
+		BulletsPerShot(1);
+		ShootAnimFactor(0.5);
+		ShootMinAngle(0.04);
+		ShootMaxAngle(0.35);
+		ShootMaxHorzAngle(0.35);
+		ShootMinHorzAngle(0.04);
+		ShootAngleVel(1.2);
+		ShootAngleCooldown(1.0);
+		ShootVertRecoil(0.025);
+		ShootVertRecoilSpread(0.008);
+		ShootVertRecoilSpreadMax(0.015);
+		ShootHorzRecoil(0.025);
+		ShootHorzRecoilSpread(0.0015);
+		ShootHorzRecoilSpreadMax(0.025);
+		ShootRecoilTime(0.2);
+		AmmoCount(1);
+		Silenced(true);
+		EnablePenetration(true);
+		MoveAcurancyLoseFactor(0.15);
+		DodgeAccuracyLoseFactor(4.0);
+		ShootStatAccuracy(100.0);
+		AimFov(1.5);
+		ShotSound("crossbow_shot_XX.wav");
+		EmptySound("crossbow_empty_XX.wav");
+		BaseSoundPrefix("crossbow");
+		HandOffset(HandModification_Normal, [0.0,-0.01,-0.11]);
+        HandOffset(HandModification_Custom, [0.0,-0.01,-0.11]);
+		ReloadAnimSpeed(1.0);
+	}
+	
+	Item("marksmen_crossbow_05_master", CategoryType_Firearm)
+	{
+		Name("&HawksEyeAutomaticCrossBow_N&");
+        Description("&HawksEyeAutomaticCrossBow_D&");
+		DamageType(DamageType_Arrow);
+		UsageType(UsageType_Normal);
+		DefaultBulletId("ZZZZ3_Bullet_Bolt");
+		AmmoType(AmmoType_Bolt);
+		BulletSpeed(110.0);
+		BulletGravityFactor(0.03);
+		Visibility(true);
+		ItemType(ItemType_Crossbow);
+		PhysicsScript("single_dropped_inventory.phx");
+		UpgradeLevel(0);
+		Condition(160.0);
+		CriticalProb(0.2);
+		CriticalDamage(3.0);
+		DuckInertiaFactor(0.1);
+		DamageHeadMult(15.0);
+		DamageToPhysicsObjects(35.0);
+		FirePointRange(0, 25.0);
+		FirePointDamage(0, 350.0);
+		FirePointForce(0, 180.0);
+		FirePointPhysicsDamage(0, 2.2);
+		FirePointRange(1, 50.0);
+		FirePointDamage(1, 320.0);
+		FirePointForce(1, 170.0);
+		FirePointPhysicsDamage(1, 2.0);
+		FirePointRange(2, 100.0);
+		FirePointDamage(2, 300.0);
+		FirePointForce(2, 160.0);
+		FirePointPhysicsDamage(2, 1.8);
+		Mesh("dlc_wn_crossbow_a.msh");        
+		BarrelHelperName("bolt_pose");
+		AnimPrefix("crossbow");
+		HudIcon("weapon_crossbow_a");        
+		TwoHanded(true);        
+		DestroySound("break_wooden_weapon_00.wav");
+		AiHitSound("crossbow");
+		use HitEffects_Sharp();
+		BloodSplatFactor(0.35);
+		use PickupSounds_Default();
+		DamageSize(25.0);
+		StatsType(StatsType_Cut);
+		LootLevel(5);
+		LootType(LootType_Sharp);
+		FF_Left(0.8);
+		FF_Right(0.8);
+		FF_Duration(0.2);
+		FF_FadeOut(0.0);
+		Color(Color_Orange);
+		SwayMaxAngle(0.0);
+		JumpInertiaFactor(0.1);
+		ShotTime(0.2);
+		ClipReload(true);
+		BulletsPerShot(1);
+		ShootAnimFactor(0.5);
+		ShootMinAngle(0.03);
+		ShootMaxAngle(0.3);
+		ShootMaxHorzAngle(0.3);
+		ShootMinHorzAngle(0.03);
+		ShootAngleVel(1.5);
+		ShootAngleCooldown(1.0);
+		ShootVertRecoil(0.02);
+		ShootVertRecoilSpread(0.006);
+		ShootVertRecoilSpreadMax(0.01);
+		ShootHorzRecoil(0.02);
+		ShootHorzRecoilSpread(0.001);
+		ShootHorzRecoilSpreadMax(0.02);
+		ShootRecoilTime(0.15);
+		ShootMode(ShotMode_Automatic);
+		AmmoCount(1);
+		Silenced(true);
+		EnablePenetration(false);
+		MoveAcurancyLoseFactor(0.1);
+		DodgeAccuracyLoseFactor(3.0);
+		ShootStatAccuracy(150.0);
+		AimFov(1.4);
+		ShotSound("crossbow_shot_XX.wav");
+		EmptySound("crossbow_empty_XX.wav");
+		BaseSoundPrefix("crossbow");
+		HandOffset(HandModification_Normal, [0.0,-0.01,-0.11]);
+        HandOffset(HandModification_Custom, [0.0,-0.01,-0.11]);
+		ReloadAnimSpeed(1.0);
 	}
 }
