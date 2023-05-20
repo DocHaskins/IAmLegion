@@ -211,7 +211,7 @@
 	<prop n="BozakKnockdownTimeToDeath" v="45"/>
 	<prop n="KnockdownAfterKnockdownMinTime" v="0.6"/>
     
-    <prop n="NearbyEnemiesSearchRange" v="100.0"/>
+    <prop n="NearbyEnemiesSearchRange" v="40.0"/>
 	<prop n="SwimLookTimetMul" v="0.4"/>    
     <prop n="LookVertSpeed_Pad" v="140.0"/>
     <prop n="LookHorzSpeed_Pad" v="260.0"/>
