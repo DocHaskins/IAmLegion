@@ -103,6 +103,7 @@ sub main()
 	ItemSet("Quartermaster_Arrows")                   //ItemID, Weight. Default WEIGHT is 1.
     {
         Item("ZZZZ_Ammo_Arrow");
+		Item("ZZZZ3_Ammo_Crossbow");
     }
 	ItemSet("Quartermaster_ArrowsBlueprint")                   //ItemID, Weight. Default WEIGHT is 1.
     {
@@ -114,6 +115,7 @@ sub main()
         Item("ZZZZ_Ammo_Arrow_Shock");
 		Item("ZZZZ_Ammo_Arrow_Burning");
 		Item("ZZZZ_Ammo_Arrow_Explode");
+		Item("ZZZZ3_Ammo_Crossbow");
     }
 	
     ItemSet("Melee_Level_1")
@@ -1063,6 +1065,7 @@ sub main()
 		Item("Ammo_PistolSmall");
 		Item("Ammo_RifleSmall");
 		Item("Ammo_ShotgunSmall");
+		Item("ZZZZ3_Ammo_Crossbow");
 		Item("ZZZZZ_Ammo_SMG_Big");
 		Item("Craft_Upgrade_Dam");
         Item("Craft_Upgrade_Dur");
@@ -1203,18 +1206,22 @@ sub main()
 	ItemSet("Pistol_Ammo")
     {
 		Item("Ammo_PistolSmall");
+		Item("ZZZZ3_Ammo_Crossbow");
  	}
 	ItemSet("Rifle_Ammo")
     {
 		Item("Ammo_RifleSmall");
+		Item("ZZZZ3_Ammo_Crossbow");
  	}
 	ItemSet("Shotgun_Ammo")
     {
 		Item("Ammo_ShotgunSmall");
+		Item("ZZZZ3_Ammo_Crossbow");
  	}
 	ItemSet("SMG_Ammo")
     {
 		Item("ZZZZZ_Ammo_SMG_Big");
+		Item("ZZZZ3_Ammo_Crossbow");
  	}
 	
 	/////////////////////////////////////////////////////////////USED FOR COMPANION APP
