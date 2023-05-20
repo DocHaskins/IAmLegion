@@ -258,7 +258,7 @@
 
     <prop n="CameraDefaultFOV" v="60.0"/>
     <prop n="BulletHitMissEffects" v="1.0"/>
-    <prop n="HideWeaponsDuringSprint" v="1"/>
+    <prop n="HideWeaponsDuringSprint" v="0.0"/>
     
     <!-- HEALTH AND REGENERATION -->
     <prop n="MaxHealth" v="100"/>                               <!-- Amount of player health -->

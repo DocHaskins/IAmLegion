@@ -848,7 +848,7 @@ line 2</Text>
 <ClassOverride>UiButtonMainDi</ClassOverride>
 <Visual>ButtonMainNewV</Visual>
 <!-- Add navigation properties as needed -->
-<Text>I Am Legion - 1.28a</Text>
+<Text>I Am Legion - 1.28b</Text>
 <MarginBottom>3.000000</MarginBottom>
 <AutoAdjustWidth>true</AutoAdjustWidth>
 <AdjustToLeft>true</AdjustToLeft>
