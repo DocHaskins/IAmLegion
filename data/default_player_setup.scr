@@ -463,12 +463,13 @@ sub main()
 		Item("ZZZZ3_Crossbow");								//Crossbow
 		Item("ZZZZ3_Crossbow_Upgraded");					//Upgraded Crossbow
 		Item("ZZZZ3_Valentine_Crossbow");					//Valentine's Crossbow
-		Item("basic_crossbow_01_weak");							//Deadeye's Crossbow
-		Item("basic_crossbow_01");						//Heatwave Crossbow
-		Item("basic_crossbow_01_Improved");								//Gust of Wind Crossbow
+		Item("ironclad_crossbow_01_weak");							//Deadeye's Crossbow
+		Item("ironclad_crossbow_01");						//Heatwave Crossbow
+		Item("ironclad_siege_crossbow");								//Gust of Wind Crossbow
 		Item("basic_crossbow_01_Rapid");							//Heart Piercer Crossbow
 		Item("basic_crossbow_02_Rapid");	
-		Item("basic_crossbow_01_assassin");
+		Item("ironclad_annihilator");
+		Item("titanium_piercer_crossbow");
 		//
 		Item("ZZZZ3_Bundle_Ammo_Bundle");							//Ammo - Regular Arrow
 		Item("ZZZZ_Ammo_Arrow_Burning");					//Ammo - Burning Arrow
