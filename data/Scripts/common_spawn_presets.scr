@@ -585,7 +585,7 @@
     {
         Difficult(7)
         DiffLvlTableName("Biter_Man_Wast;Biter_Woman_Wast")
-		AIPreset("Medieval_Armored;Friendly_Survivor;Enemy_Survivor;enc_gaas_oldtown_new_enemy_00;enc_oldtown_bandit_lvl04;enc_gaas_oldtown_new_enemy_01;enc_gaas_oldtown_new_enemy_02;enc_gaas_oldtown_new_enemy_03;enc_oldtown_survivor_fighter_01")
+		AIPreset("Friendly_Survivor;Enemy_Survivor;enc_gaas_oldtown_new_enemy_00;enc_oldtown_bandit_lvl04;enc_gaas_oldtown_new_enemy_01;enc_gaas_oldtown_new_enemy_02;enc_gaas_oldtown_new_enemy_03;enc_oldtown_survivor_fighter_01")
         SpawnCondition("t_INIT, 0.4;z_VESSEL, 0.7;z_INFECTED, 1;p_WIDE, 1;p_SQUARE, 1;__any__, 1;p_ROOF, 1")
         ForceTargetType(-1)
         MinDistBtwZombies(15)
