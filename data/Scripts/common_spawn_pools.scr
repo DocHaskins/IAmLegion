@@ -39,10 +39,10 @@
         UseCondition("Day")
         MinProgressCondition(2)
         Type("base_IAL")
+		DisallowedMaps("hellraid")
         Preset("IAL_Human_New, 5;IAL_Biter_New, 5;Stinger, 5;Vessel_Eating_Corpse, 5;Vessel_Lurker_Int, 5;Vessel_Stinger_Int, 5;Vessel_In_Attractor, 5;")
 		Preset("Volatile_Day_IAL, 15;")
 		Preset("Vessel_Init_IAL, 25;")
-		Preset("IAL_Human_New, 25;")
 		Preset("Armored, 20;")//20
         Preset("Suicider, 20;")//20
         Preset("Vessel_GasTank, 10;Nurker, 10;")//20
@@ -102,7 +102,7 @@
     Pool("special_3_4") // +VIRAL
     {
         UseCondition("Day")
-        DisallowedMaps("old_town_outposts_radio;old_town_outposts;old_town_outposts_museum;Sewers_Stadium")
+        DisallowedMaps("hellraid;old_town_outposts_radio;old_town_outposts;old_town_outposts_museum;Sewers_Stadium")
         MinProgressCondition(1)
         MaxProgressCondition(5)
         Type("peak;special")
@@ -115,7 +115,7 @@
     Pool("special_4_5") // +GASTANK
     {
         UseCondition("Day")
-        DisallowedMaps("old_town_outposts_radio;old_town_outposts;old_town_outposts_museum;Sewers_Stadium")
+        DisallowedMaps("hellraid;old_town_outposts_radio;old_town_outposts;old_town_outposts_museum;Sewers_Stadium")
         MinProgressCondition(2)
         MaxProgressCondition(5)
         Type("peak;special")
@@ -130,7 +130,7 @@
     Pool("special_5_6") // +TOAD
     {
         Type("peak;special")
-        DisallowedMaps("old_town_outposts_radio;old_town_outposts;old_town_outposts_museum;Sewers_Stadium")
+        DisallowedMaps("hellraid;old_town_outposts_radio;old_town_outposts;old_town_outposts_museum;Sewers_Stadium")
         MinProgressCondition(3)
         MaxProgressCondition(6)
         Type("peak;special")
@@ -146,7 +146,7 @@
     Pool("special_6_7") // +BOMBER, BITER BURN
     {
         UseCondition("Day")
-        DisallowedMaps("old_town_outposts_radio;old_town_outposts;old_town_outposts_museum;Sewers_Stadium")
+        DisallowedMaps("hellraid;old_town_outposts_radio;old_town_outposts;old_town_outposts_museum;Sewers_Stadium")
         MinProgressCondition(1)
         MaxProgressCondition(7)
         Type("peak;special")
@@ -164,7 +164,7 @@
     Pool("special_7_8") // +PRIME
     {
         UseCondition("Day")
-        DisallowedMaps("old_town_outposts_radio;old_town_outposts;old_town_outposts_museum;Sewers_Stadium")
+        DisallowedMaps("hellraid;old_town_outposts_radio;old_town_outposts;old_town_outposts_museum;Sewers_Stadium")
         MinProgressCondition(2)
         MaxProgressCondition(8)
         Type("peak;special")
@@ -182,7 +182,7 @@
     Pool("special_8_9") // +DEMOLISHER, HEAD HUNTERS, BITER SPECIAL (biter lvl 3)
     {
         UseCondition("Day")
-        DisallowedMaps("old_town_outposts_radio;old_town_outposts;old_town_outposts_museum;Sewers_Stadium")
+        DisallowedMaps("hellraid;old_town_outposts_radio;old_town_outposts;old_town_outposts_museum;Sewers_Stadium")
         MinProgressCondition(2)
         MaxProgressCondition(9)
         Type("peak;special")
@@ -232,6 +232,7 @@
     Pool("head_hunters")
     {
         UseCondition("Day")
+		DisallowedMaps("hellraid")
         BannedAreaAttribs("BLUE_DISTRICT")
         Type("head_hunters")
         Preset("IAL_Human_New, 5;Melee_Fighter_With_Pipe, 2;Melee_Fighter_With_Pipe_Init, 1;")
@@ -262,7 +263,7 @@
     {
         UseCondition("Evening")
         AllowedMaps("Slums;Old_Town;Wasteland")
-		DisallowedMaps("old_town_outposts_radio;old_town_outposts;old_town_outposts_museum;Sewers_Stadium")
+		DisallowedMaps("hellraid;old_town_outposts_radio;old_town_outposts;old_town_outposts_museum;Sewers_Stadium")
         MinChapterAndProgressCondition(0, 0)
         MaxChapterAndProgressCondition(15, 0)
         Type("peak;special;begin;noise;pause")
