@@ -283,7 +283,16 @@ export int Other = 9;
     {
         Set(Other, weight, prob)
         {
+            Item("Craft_Alcohol", 1.0);
+            Item("Craft_Nails", 1.0);
+            Item("Craft_PlasticTube", 1.0);
+            Item("Craft_Bleach", 1.0);
+            Item("Craft_DuctTape", 1.0);
             Item("Craft_Electronics", 1.0);
+            Item("Craft_Insecticide", 1.0);
+            Item("Craft_Batteries", 1.0);
+            Item("Craft_PowerCable", 1.0);
+            Item("Craft_RazorBlade", 1.0);
         }
     }
 

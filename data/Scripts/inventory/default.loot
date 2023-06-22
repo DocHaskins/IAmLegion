@@ -213,7 +213,7 @@ sub Loot()
         use CashSmall(weight = 1.25);
         use CashMedium(weight = 0.5);
         use CashPenny(weight = 0.75);
-        use Crafting_Biter(weight = 1.0);
+        use Crafting_Biter(weight = 0.5);
         use Valuables_Biter(weight = 1.0);
         use Biter_Healing_Craftparts(weight = 0.5);
     }
@@ -224,7 +224,7 @@ sub Loot()
         use CashSmall(weight = 1.0);
         use CashMedium(weight = 1.0);
         use CashPenny(weight = 0.5);
-        use Crafting_Biter(weight = 1.0);
+        use Crafting_Biter(weight = 0.5);
         use Valuables_Biter(weight = 1.0);
         use Biter_Healing_Craftparts(weight = 0.5);
     }
@@ -253,7 +253,7 @@ sub Loot()
         use CashSmall(weight = 0.5);
         use CashMedium(weight = 1.5);
         use CashPenny(weight = 0.25);
-        use Crafting_Biter(weight = 1.0);
+        use Crafting_Biter(weight = 0.5);
         use Valuables_Biter(weight = 1.25);
         use Biter_Healing_Craftparts(weight = 0.5);
     }
@@ -264,7 +264,7 @@ sub Loot()
         use CashSmall(weight = 0.0);
         use CashMedium(weight = 2.0);
         use CashPenny(weight = 0.0);
-        use Crafting_Biter(weight = 1.0);
+        use Crafting_Biter(weight = 0.5);
         use Valuables_Biter(weight = 1.5);
         use Biter_Healing_Craftparts(weight = 0.5);
     }
@@ -1537,7 +1537,7 @@ sub Loot()
         use CashSmall(weight = 0.0);
         use CashMedium(weight = 2.0);
         use CashPenny(weight = 0.0);
-        use Crafting_Biter(weight = 1.0);
+        use Crafting_Biter(weight = 0.5);
         use Valuables_Biter(weight = 1.5);
         use Biter_Healing_Craftparts(weight = 0.5);
     }
@@ -1548,7 +1548,7 @@ sub Loot()
         use CashSmall(weight = 1.0);
         use CashMedium(weight = 1.0);
         use CashPenny(weight = 0.5);
-        use Crafting_Biter(weight = 1.0);
+        use Crafting_Biter(weight = 0.5);
         use Valuables_Biter(weight = 1.0);
         use Biter_Healing_Craftparts(weight = 0.5);
     }
@@ -1559,7 +1559,7 @@ sub Loot()
         use CashSmall(weight = 0.5);
         use CashMedium(weight = 1.5);
         use CashPenny(weight = 0.25);
-        use Crafting_Biter(weight = 1.0);
+        use Crafting_Biter(weight = 0.5);
         use Valuables_Biter(weight = 1.25);
         use Biter_Healing_Craftparts(weight = 0.5);
     }
@@ -1570,7 +1570,7 @@ sub Loot()
         use CashSmall(weight = 0.0);
         use CashMedium(weight = 2.0);
         use CashPenny(weight = 0.0);
-        use Crafting_Biter(weight = 1.0);
+        use Crafting_Biter(weight = 0.5);
         use Valuables_Biter(weight = 1.5);
         use Biter_Healing_Craftparts(weight = 0.5);
     }
@@ -1581,7 +1581,7 @@ sub Loot()
         use CashSmall(weight = 0.0);
         use CashMedium(weight = 2.0);
         use CashPenny(weight = 0.0);
-        use Crafting_Biter(weight = 1.0);
+        use Crafting_Biter(weight = 0.5);
         use Valuables_Biter(weight = 1.5);
         use Biter_Healing_Craftparts(weight = 0.5);
     }
@@ -1667,7 +1667,7 @@ sub Loot()
         use CashSmall(weight = 1.25);
         use CashMedium(weight = 0.5);
         use CashPenny(weight = 0.75);
-        use Crafting_Biter(weight = 1.0);
+        use Crafting_Biter(weight = 0.5);
         use Valuables_Biter(weight = 1.0);
         use Healing_Gauze(weight = 5.0);
     }

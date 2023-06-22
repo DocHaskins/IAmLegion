@@ -17,11 +17,13 @@ SetDiffLevelDependentFormPlayerLevels(1)
 SetDiffLevelMod(-8)
 
 SetMaxHeightDiffForCrowdMove(0.2)
-TurnOffScreams()
-SetSpawnDistance(60.0)
 
-//HighDefCrowd()
-//UseFullShadows()
+CrowdDynamicPatternLength(100.)
+CrowdDynamicPatternFill(80)
+SetSpawnDistance(100.0)
+CrowdDynamicPatternPeriod(3000.)
+HighDefCrowd()
+SetForceTargetForCrowdOnPlayer()
 
 ///////////////////////////////////////////////////////////////////
 //ERROR

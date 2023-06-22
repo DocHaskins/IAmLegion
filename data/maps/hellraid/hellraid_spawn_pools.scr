@@ -5,7 +5,6 @@
 
 	//NOT SETUP FOR HELLRAID
 	
-	/*
     Pool("default")
     {
         /*Type("default")
@@ -15,8 +14,7 @@
     Pool("empty")
     {
         /*Type("empty")
-        Preset("Immposible, 10")*/
+        Preset("Stinger, 10;Vessel_Eating_Corpse, 10;Vessel_In_Attractor, 10;Vessel_Init, 10;Immposible, 10")*/
     }
 
-	*/
 	
