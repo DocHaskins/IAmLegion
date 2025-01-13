@@ -12,10 +12,7 @@
 
 
 SetForceDiffLevelProgress(21)
-CrowdDynamicPatternLength(100.0)
-CrowdDynamicPatternFill(80)
-SetSpawnDistance(100.0)
-CrowdDynamicPatternPeriod(3000.0)
+SetForceDiffLevelProgress(21)
 
 ///////////////////////////////////////////////////////////////////
 //PRESETS

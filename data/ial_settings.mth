@@ -1,67 +1,64 @@
+//VERSION - 1.0
+//[START]
+//{WELCOME}
+//--I Am Legion - Reborn - Mod Config
+//COMMENT Welcome and thank you for downloading and supporting I Am Legion Reborn for Dying Light. You can utilize the above sections to enhance the game and modify IAL to fit your ideal playstyle. Please make sure to check out the IALR Configs on the left, as these will allow you to immediately load in the different difficulty settings and modify them to your own preferences.
+//--IALR Discord Channel
+//LOCATION https://discord.gg/HbTvgxKCRk
+//COMMENT This mod wouldn't be possible without the feedback and support the community has offered. If you have not joined the Discord community but are curious about the latest news and tech support for this mod, please make sure to drop by the Discord and let me know your feedback.
+
+//--IALR Config Share
+//LOCATION https://discord.com/channels/938426300362784788/1055204891989114970
+//COMMENT If you would like to share your config with others, you can use the "Share Config" button to be directed to the file location of your unique config. Feel free to share this config on the IALR Discord - ialr-config-share board with some descriptions of your custom settings so others can enjoy your work. Thanks for downloading and happy gaming.
+
+//{MOD SUPPORT}
+//--IALR Mod Support
+//COMMENT This mod was created on Apr 8th, 2015 by DocOnHoliday and consisted of over 400 updates to the mod with thousands of hours of development for updates and new features designed with feedback from the Dying Light Community. Additionally, this mod has been taken even further in 2022 with Dying Light 2 with hundreds of updates and thousands of hours of support and development. If you would like to support the mods development or are interested in the exclusive content for this mod, make sure to check out the Patreon page to find out more about the supporters content developed for the mod.
+//--IALR Patreon Support Page
+//LOCATION https://www.patreon.com/DocOnHoliday
+
+//{LINKS}
+//--IALR Nexus Link
+//LOCATION https://www.nexusmods.com/dyinglight/mods/128/
+//--IALR Mod Manual
+//LOCATION https://docs.google.com/document/d/1UW9j2i1lIobFrVdOISNPgxWvG50Et-d9DEQ2fbhyuX8/edit#heading=h.ew7msqmpbo32
+//--IALR Discord Channel
+//LOCATION https://discord.gg/HbTvgxKCRk
+//--IALR Youtube Channel
+//LOCATION https://www.youtube.com/@DocOnHoliday
+
+//[Gameplay]
 /////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-//          -    I Am Legion Global Config -                    \\
-//           Casual Survivor Difficulty Settings                \\
-//   This config will allow you to better balance the game to   \\
-//   your specific play style. Feedback is appreciated on the   \\
-//   discord channel if you have any requests or features you'd \\
-//   like included in the config. Some values cannot be added   \\
-//   to the config without messing up the game. This specific   \\
-//   feature takes the most time to test and balance.           \\
-//    Thank you for your support of IALR and enjoy.             \\
-//                      DocOnHoliday                            \\
-/////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-/*
-Sections: (Search for these to quick jump)
-GAMEPLAY
-DIFFICULTY
-PHYSICS
-COMMERCE
-INTERFACE OPTIONS
-INVENTORY
-EXPERIENCE
-WEAPONS
-SPAWN DENSITY
-SPAWN LOGIC
-AI SPAWN DIFFICULTY
-AI BEHAVIOR
-AI FALL HEIGHT
-DISMEMBER SYSTEM
-CHASE SYSTEM
-CHEATS
-*/
-/////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-/////////////////////////GAMEPLAY\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-/////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-//////////////// -------  HEALTH  ------- \\\\\\\\\\\\\\\\\\\\\\\\
-//- LOCATION - (scripts/difficultyparams.scr) -----\\\\\\\\\\\\\\\
-//Multiplier of time needed to regenerate Player's health from critical health.
+//{HEALTH}
+//DATACOMMENT LOCATION - (scripts/difficultyparams.scr) -----\\\\\\\\\\\\\\\
+//COMMENT Multiplier of time needed to regenerate Player's health from critical health.
 export float IAL_Health_Regen_Easy = 3.0; //Default 3.0
 export float IAL_Health_Regen_Normal = 2.5; //Default 3.0
 export float IAL_Health_Regen_Hard = 2.0; //Default 3.0
 export float IAL_Health_Regen_Nightmare = 1.5; //Default 3.0
 
-//Multiplier for amount of health received by using medkit.
+//COMMENT Multiplier for amount of health received by using medkit.
 export float IAL_Health_Medkit_Gain_Easy = 3.0; //Default 3.0
 export float IAL_Health_Medkit_Gain_Normal = 3.0; //Default 3.0
 export float IAL_Health_Medkit_Gain_Hard = 3.0; //Default 3.0
 export float IAL_Health_Medkit_Gain_Nightmare = 0.5; //Default 0.5
 
-/////////////// -------  STAMINA  ------- \\\\\\\\\\\\\\\\\\\\\\\\
-//- LOCATION - (scripts/difficultyparams.scr) -----\\\\\\\\\\\\\\\
-//The amount of stamina drained when running based on difficulty
+//{STAMINA}
+//DATACOMMENT LOCATION - (scripts/difficultyparams.scr) -----\\\\\\\\\\\\\\\
+//COMMENT The amount of stamina drained when running based on difficulty
 export float IAL_Stamina_Run_Drain_Easy = 0.75; //Default is 0.75
 export float IAL_Stamina_Run_Drain_Normal = 1.0; //Default is 1.0
 export float IAL_Stamina_Run_Drain_Hard = 1.1; //Default is 1.0
 export float IAL_Stamina_Run_Drain_Nightmare = 1.2; //Default is 1.0
 
-//The amount of stamina drained when attacking on difficulty
+//COMMENT The amount of stamina drained when attacking on difficulty
 export float IAL_Stamina_Attack_Drain_Easy = 0.75; //Default is 0.75
 export float IAL_Stamina_Attack_Drain_Normal = 1.0; //Default is 1.0
 export float IAL_Stamina_Attack_Drain_Hard = 1.1; //Default is 1.0
 export float IAL_Stamina_Attack_Drain_Nightmare = 1.2; //Default is 1.0
 
-//////////////// -------  COMBAT  ------- \\\\\\\\\\\\\\\\\\\\\\\\
-//- LOCATION - (ai/player/player_variables_hard.scr) -----\\
+//{COMBAT}
+//DATACOMMENT LOCATION - (ai/player/player_variables_hard.scr) -----\\
 export float IAL_Combat_Human_Overall_DmgMulti = 1.0; //Default: 1.0
 export float IAL_Combat_Human_Overall_DmgMulti_COOP2player = 1.1; //Default: 1.1
 export float IAL_Combat_Human_Overall_DmgMulti_COOP3player = 1.2; //Default: 1.2
@@ -69,29 +66,29 @@ export float IAL_Combat_Human_Overall_DmgMulti_COOP4player = 1.3; //Default: 1.3
 export float IAL_Combat_Human_Overall_DmgVsAIMulti = 1.0; //Default: 1.0
 export float IAL_Combat_AirKick_PhysicsDmg = 5.0; //Default is 2.0
 
-////////////// -------  DEATH  ------- \\\\\\\\\\\\\\\\\\\\\\
-//- LOCATION - (scripts/difficultyparams.scr) -----\\\\\\\\\\\\\\\
-//Death penalty for XP
+//{DEATH}
+//DATACOMMENT LOCATION - (scripts/difficultyparams.scr) -----\\\\\\\\\\\\\\\
+//COMMENT Death penalty for XP
 export float IAL_Death_Penalty_XP_Easy = 0.0; //Default 0.0
 export float IAL_Death_Penalty_XP_Normal = 0.5; //Default 0.5
 export float IAL_Death_Penalty_XP_Hard = 2.5; //Default 2.5
 export float IAL_Death_Penalty_XP_Nightmare = 2.5; //Default 2.5
 
-//Death penalty for Legend XP
+//COMMENT Death penalty for Legend XP
 export float IAL_Death_Penalty_LegendXP_Easy = 0.0; //Default 0.0
 export float IAL_Death_Penalty_LegendXP_Normal = 0.0; //Default 0.0
 export float IAL_Death_Penalty_LegendXP_Hard = 0.0; //Default 0.0
 export float IAL_Death_Penalty_LegendXP_Nightmare = 1.0; //Default 1.0
 
-//////////// -------  TIMESCALE  ------- \\\\\\\\\\\\\\\\\\\\
-//- LOCATION - (scripts/dw_weather_def.scr) -----\\\\\\\\\\\\\\\\\
-//Total time for each day, currently it's around 2x as long for days and 4x for nights
+//{TIMESCALE}
+//DATACOMMENT LOCATION - (scripts/dw_weather_def.scr) -----\\\\\\\\\\\\\\\\\
+//COMMENT Total time for each day, currently it's around 2x as long for days and 4x for nights
 export float IAL_TimeScale_Day = 8200.0; //Vanilla settings: 4800.0
 export float IAL_TimeScale_Night = 8200.0; //Vanilla settings: 2400.0 Nights are much shorter in vanilla
 export float IAL_TimeScale_Interior = 8640.0; //Vanilla settings: 8640.0
 
-//- LOCATION 2 - (scripts/difficultyparams.scr) -----\\\\\\\\\\\\\\\\\
-//Multiplier applied by the difficulty setting for Day and Night
+//DATACOMMENT LOCATION - (scripts/difficultyparams.scr) -----\\\\\\\\\\\\\\\\\
+//COMMENT Multiplier applied by the difficulty setting for Day and Night
 export float IAL_TimeScale_Multiplier_Day_Easy = 1.25; //Default 1.25
 export float IAL_TimeScale_Multiplier_Night_Easy = 0.75; //Default 0.75
 export float IAL_TimeScale_Multiplier_Day_Normal = 1.0; //Default 0.0
@@ -101,29 +98,13 @@ export float IAL_TimeScale_Multiplier_Night_Hard = 1.0; //Default 0.0
 export float IAL_TimeScale_Multiplier_Day_Nightmare = 0.89; //Default 0.89
 export float IAL_TimeScale_Multiplier_Night_Nightmare = 2.0; //Default 2.0
 
-//////////// -------  CAMERA  ------- \\\\\\\\\\\\\\\\\\\\\\\ 
-//- LOCATION - (scripts/player/player_variables_hard.scr) -----\\
+//{CAMERA}
+//DATACOMMENT LOCATION - (scripts/player/player_variables_hard.scr) -----\\
 export float IAL_Camera_FOV = 70.0; //Default is 57.0
 
-//////////// -------  SLOWMO  ------- \\\\\\\\\\\\\\\\\\\\\\\ 
-//- LOCATION - (scripts/player/player_variables_hard.scr) -----\\
-
-
-//////////// -------  XRAY  ------- \\\\\\\\\\\\\\\\\\\\\\\ 
-//- LOCATION - (scripts/player/player_variables_hard.scr) -----\\
-
-
-//////////// -------  ZIPLINE  ------- \\\\\\\\\\\\\\\\\\\\\\\ 
-//- LOCATION - (scripts/player/player_variables_hard.scr) -----\\
-
-
-//////////// -------  LOOTING  ------- \\\\\\\\\\\\\\\\\\\\\\\ 
-//- LOCATION - (scripts/player/player_variables_hard.scr) -----\\
-export bool IAL_Loot_Auto_Pickup = TRUE; //Default: False
-
-//////////// -------  CAMOFLAGE  ------- \\\\\\\\\\\\\\\\\\\\\\\ 
-//- LOCATION - (scripts/difficultyparams.scr) -----\\\\\\\\\\\\\
-//Boosts applied to Camoflage based on difficulty
+//{CAMOFLAGE}
+//DATACOMMENT LOCATION - (scripts/difficultyparams.scr) -----\\\\\\\\\\\\\
+//COMMENT Boosts applied to Camoflage based on difficulty
 export float IAL_Camo_Duration_Multiplier_Easy = 1.25; //Default: 0.66
 export float IAL_Camo_Duration_Multiplier_Normal = 1.0; //Default: 0.66
 export float IAL_Camo_Duration_Multiplier_Hard = 0.66; //Default: 0.66
@@ -131,16 +112,16 @@ export float IAL_Camo_Duration_Multiplier_Nightmare = 0.66; //Default: 0.66
 
 
 /////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-////////////////////////DIFFICULTY\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+//[DIFFICULTY]
 /////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-//- LOCATION - (scripts/difficultyparams.scr) -----\\\\\\\\\\\\\\\
-////////////////// -------  AI  ------- \\\\\\\\\\\\\\\\\\\\\\\\\\
+//DATACOMMENT LOCATION - (scripts/difficultyparams.scr) -----\\\\\\\\\\\\\\\
+//{AI}
 export float IAL_Difficulty_NightSpotting_Easy = 2.0; //Default: 1.0
 export float IAL_Difficulty_NightSpotting_Normal = 1.0; //Default: 1.0
 export float IAL_Difficulty_NightSpotting_Hard = 1.0; //Default: 1.0
 export float IAL_Difficulty_NightSpotting_Nightmare = 1.0; //Default: 1.0
 
-///////////////ENEMY HEALTH
+//{ENEMY HEALTH}
 export string IAL_Difficulty_Health_Multiplier_Infected_Prologue = "1.0"; //Common Infected Multiplier DEFAULT: 0.001
 export string IAL_Difficulty_Health_Multiplier_Infected = "1.0"; //Common Infected Multiplier
 export string IAL_Difficulty_Health_Multiplier_Infected_Heavy = "1.0"; //Common Infected Multiplier
@@ -171,45 +152,45 @@ export string IAL_Difficulty_Health_Multiplier_Human_Boss = "2.0"; //Rais's men 
 
 export string IAL_Difficulty_Health_Multiplier_HellRaid = "1.0"; //Common Infected Multiplier
 
-/////////////// -------  AIRDROPS  ------- \\\\\\\\\\\\\\\\\\\\\\\
-//This is the time percentage for Rais' patrols and Airdrops
+//{AIRDROPS}
+//COMMENT This is the time percentage for Rais' patrols and Airdrops
 export float IAL_Difficulty_Airdrops_Easy = 1.5; //Default: 2.0, 
 export float IAL_Difficulty_Airdrops_Normal = 1.0; //Default: 1.0
 export float IAL_Difficulty_Airdrops_Hard = 0.3; //Default: 0.3
 export float IAL_Difficulty_Airdrops_Nightmare = 0.3; //Default: 0.3
 
-///////////////// -------  GUNS  ------- \\\\\\\\\\\\\\\\\\\\\\\\\
-//This is the percentage of chance for hitting the target
+//{GUNS}
+//COMMENT This is the percentage of chance for hitting the target
 export float IAL_Difficulty_ShotAccuracy_Easy = 1.5; //Default: 1.0, 
 export float IAL_Difficulty_ShotAccuracy_Normal = 1.0; //Default: 1.0
 export float IAL_Difficulty_ShotAccuracy_Hard = 0.9; //Default: 1.25
 export float IAL_Difficulty_ShotAccuracy_Nightmare = 0.9; //Default: 1.25
 
 /////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-//////////////////////////PHYSICS\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+//[PHYSICS]
 /////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-//- LOCATION - (scripts/difficultyparams.scr) -----\\\\\\\\\\\\\\\
-//Additional force applied based on game difficulty
+//DATACOMMENT LOCATION - (scripts/difficultyparams.scr) -----\\\\\\\\\\\\\\\
+//COMMENT Additional force applied based on game difficulty
 export float IAL_Overall_Phys_To_Enemies_Easy = 0.0; //Default: 0.0
 export float IAL_Overall_Phys_To_Enemies_Normal = 0.0; //Default: 0.0
 export float IAL_Overall_Phys_To_Enemies_Hard = 0.7; //Default: 0.0
 export float IAL_Overall_Phys_To_Enemies_Nightmare = 1.7; //Default: 0.0
 
 /////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-/////////////////////INTERFACE OPTIONS\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+//[UI]
 /////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-//- LOCATION - (scripts/locations.scr) -----\\
-// "TRUE" is on, "FALSE" is off
+//DATACOMMENT LOCATION - (scripts/locations.scr) -----\\
+//COMMENT "TRUE" is on, "FALSE" is off
 export bool IAL_Interface_HUD_Show3D = TRUE;
 
-//- LOCATION 2 - (scripts/difficultyparams.scr) -----\\\\\\\\\\\\\\\\\
-//Setting for turning on and off Hud Tips
+//DATACOMMENT LOCATION - (scripts/difficultyparams.scr) -----\\\\\\\\\\\\\\\\\
+//COMMENT Setting for turning on and off Hud Tips
 export bool IAL_Interface_HudTips_Easy = TRUE; //Default: False
 export bool IAL_Interface_HudTips_Normal = TRUE; //Default: False
 export bool IAL_Interface_HudTips_Hard = TRUE; //Default: False
 export bool IAL_Interface_HudTips_Nightmare = FALSE; //Default: False
 
-//Setting for turning on and off patrol cones
+//COMMENT Setting for turning on and off patrol cones
 export bool IAL_Interface_PatrolCone_Easy = TRUE; //Default: False
 export bool IAL_Interface_PatrolCone_Normal = TRUE; //Default: False
 export bool IAL_Interface_PatrolCone_Hard = FALSE; //Default: False
@@ -217,16 +198,16 @@ export bool IAL_Interface_PatrolCone_Nightmare = FALSE; //Default: False
 /////////////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
 /////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-/////////////////////////COMMERCE\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+//[COMMERCE]
 /////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-/////////////// -------  TRADERS  ------- \\\\\\\\\\\\\\\\\\\\\\\\
-//This allows Hard tier weapons on Easy difficulty in shops
+//{TRADERS}
+//COMMENT This allows Hard tier weapons on Easy difficulty in shops
 export bool IAL_Commerce_AllowHardShopItems_Easy = TRUE; //Default: False, 
 export bool IAL_Commerce_AllowHardShopItems_Normal = TRUE; //Default: False
 export bool IAL_Commerce_AllowHardShopItems_Hard = TRUE; //Default: True
 export bool IAL_Commerce_AllowHardShopItems_Nightmare = TRUE; //Default: False
 
-//This is the multiplier for shop prices based on difficulty
+//COMMENT This is the multiplier for shop prices based on difficulty
 export float IAL_Commerce_SellingPrices_Easy = 1.2; //Default: 1.2, 
 export float IAL_Commerce_SellingPrices_Normal = 1.0; //Default: 1.0
 export float IAL_Commerce_SellingPrices_Hard = 0.8; //Default: 1.0
@@ -234,35 +215,17 @@ export float IAL_Commerce_SellingPrices_Nightmare = 0.5; //Default: 1.0
 /////////////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
 /////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-/////////////////////////INVENTORY\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+//[EXPERIENCE]
 /////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-//DISABLED DUE TO 1.9.0 Update, for now
-/////////////// -------  INVENTORY  ------- \\\\\\\\\\\\\\\\\\\\\\
-//- LOCATION - (scripts/player/player_variables_hard.scr) -----\\\
-//export string IAL_Inventory_Weapon_Slots = "16"; //Default is 99, Ultimate = 10, Survivor = 12, Casual = 99
-//export string IAL_Inventory_Equipment_Slots = "16"; //Default is 99, Ultimate = 10, Survivor = 12, Casual = 99
-//export string IAL_Inventory_Consumables_Slots = "16"; //Default is 99, Ultimate = 12, Survivor = 24, Casual = 99
-//export string IAL_Inventory_Ammo_Slots = "24"; //Default is 12, Ultimate = 12, Survivor = 24, Casual = 99
-
-/////////////// -------  STORAGE  ------- \\\\\\\\\\\\\\\\\\\\\\\ 
-//- LOCATION - (scripts/player/player_variables_hard.scr) -----\\\\\
-//export int IAL_Storage_Size_Equipment = 25; //Default is 25, Ultimate = 15, Survivor = 25, Casual = 150
-//export int IAL_Storage_Size_Consumables = 50; //Default is 99, Ultimate = 20, Survivor = 50, Casual = 99
-//export int IAL_Storage_Size_Ammo = 100; //Default is 100, Ultimate = 100, Survivor = 100, Casual = 100
-//export int IAL_Storage_Size = 125; //Default is 25, Ultimate = 100, Survivor = 125, Casual = 150
-
-/////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-////////////////////////EXPERIENCE\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-/////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-//- LOCATION - (scripts/difficultyparams.scr) -----\\\\\\\\\\\\\\\\\
+//DATACOMMENT LOCATION - (scripts/difficultyparams.scr) -----\\\\\\\\\\\\\\\\\
 ////////// -------  LEGEND EXPERIENCE  ------- \\\\\\\\\\\\\\\\\\\\\ 
-//Amount of Legend experience you will recieve based on difficulty
+//COMMENT Amount of Legend experience you will recieve based on difficulty
 export float IAL_Experience_Legend_XP_Easy = 0.5; //Default is 0.5
 export float IAL_Experience_Legend_XP_Normal = 1.0; //Default is 1.0
 export float IAL_Experience_Legend_XP_Hard = 2.5; //Default is 2.5
 export float IAL_Experience_Legend_XP_Nightmare = 10.0; //Default is 10.0
 
-//Amount of Legend experience you will recieve playing Coop while playing based on difficulty
+//COMMENT Amount of Legend experience you will recieve playing Coop while playing based on difficulty
 export float IAL_Experience_Legend_XP_2Player_Easy = 1.1; //Default is 1.1
 export float IAL_Experience_Legend_XP_2Player_Normal = 1.1; //Default is 1.1
 export float IAL_Experience_Legend_XP_2Player_Hard = 1.1; //Default is 1.1
@@ -279,32 +242,32 @@ export float IAL_Experience_Legend_XP_4Player_Hard = 1.3; //Default is 1.3
 export float IAL_Experience_Legend_XP_4Player_Nightmare = 1.3; //Default is 1.3
 
 /////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-//////////////////////////WEAPONS\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+//[WEAPONS]
 /////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-//////////// -------  GENERAL SETTINGS  ------- \\\\\\\\\\\\\\\\\\
-//- LOCATION - (scripts/player/player_variables_hard.scr) -----\\\
+//{GENERAL SETTINGS}
+//DATACOMMENT LOCATION - (scripts/player/player_variables_hard.scr) -----\\\
 
 
-////////////// -------  RANGED  ------- \\\\\\\\\\\\\\\\\\\\\\\
-//- LOCATION - (scripts/iventory/inventory_special.scr) -----\\
+//{RANGED}
+//DATACOMMENT LOCATION - (scripts/iventory/inventory_special.scr) -----\\
 export float IAL_Weapons_Ranged_Zombie_NightmareDif_HeadshotDMG_Mul = 2.1;//Default: 2.0
 export float IAL_Weapons_Ranged_Zombie_HeadshotDMG_Mul = 1.1;//Default: 1.0
 export float IAL_Weapons_Ranged_Zombie_BodyDMG_Mul = 0.3;//Default: 0.4
 export float IAL_Weapons_Ranged_Human_HeadshotDMG_Mul = 2.0; //Default: 2.0
 export float IAL_Weapons_Ranged_Human_BodyDMG_Mul = 1.0; //Default: 1.0
 
-///////////////// -------  EXPLOSIVES  ------- \\\\\\\\\\\\\\\\\\\\\\\
-//These settings effect the different explosive types in the game and their reactions\\
+//{EXPLOSIVES}
+//COMMENT These settings effect the different explosive types in the game and their reactions\\
 export float IAL_Explosive_Zombie_Damage = 1.3;//Default: 1.0
 export float IAL_Explosive_Human_Damage = 1.3;//Default: 1.3
 
-///////////////// -------  AI EXPLOSIVE REACTIONS  ------- \\\\\\\\\\\\\\\
-//- LOCATION - (ai/ai_manager.scr) -----\\
+//{AI EXPLOSIVE REACTIONS}
+//DATACOMMENT LOCATION - (ai/ai_manager.scr) -----\\
 export int IAL_AI_DistanceToReact_Explosion_Min = 70;
 export int IAL_AI_DistanceToReact_Explosion_Max = 120;
 
-////////////// -------  DAMAGE MODIFIERS  ------- \\\\\\\\\\\\\\\\\\\\\\\\
-//GENERAL MODIFIER\\
+//[DAMAGE MODIFIERS]
+//{GENERAL MODIFIER}
 export float IAL_Overall_Fall_Dmg_To_Player = 1.5;
 export float IAL_Overall_Dmg_To_Player_Min_Easy = 0.5; //Default: 1.3
 export float IAL_Overall_Dmg_To_Player_Max_Easy = 1.0; //Default: 1.3
@@ -329,144 +292,11 @@ export float IAL_Weapon_Elemental_Damage_Mul = 1.1; //Default: 1.0
 /////////////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
 /////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-///////////////////////SPAWN DENSITY\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+//[FALL HEIGHT]
 /////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-//- LOCATION - (scripts/densitiesSettings.scr) -----\\\\\\\\\\\\\\
-//This is the Day Time density average for all groups
-//Percentage of spawn points used per area
-
-//////////// -------  INTERIORS - DAY  ------- \\\\\\\\\\\\\\\\\\\
-
-
-//////////// -------  INTERIORS - NIGHT  ------- \\\\\\\\\\\\\\\\\
-
-
-//////////// -------  OPEN WORLD - DAY  ------- \\\\\\\\\\\\\\\\\\
-//This is the Day Time density average for all groups\\
-// The lower the number, the more zombies spawn
-
-
-/////////////// -- OPEN WORLD - NIGHT  ------- \\\\\\\\\\\\\\\\\\\\\\\ 
-//This is the Night Time density average for all groups\\
-// The lower the number, the more zombies spawn
-
-
-/////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-////////////////////////SPAWN LOGIC\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-/////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-//- LOCATION - (spawn/dynamic_spawn_logic_params.scr) -----\\
-
-
-
-/////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-/////////////////////AI SPAWN DIFFICULTY\\\\\\\\\\\\\\\\\\\\\\\\\\
-/////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-//Change the min and max values here to add additional variation to the levels spawned ingame\\
-//////////// -------  AI SPAWN SETTINGS BY ZONE  ------- \\\\\\\\\\\\\\\\\\\\\\\ 
-//- LOCATION - (scripts/factions/zonelevels.scr) -----\\
-//These settings change the max level of the AI in zones leading up to the ending\\
-
-
-//These settings change the max level of the AI's gear in zones leading up to the ending\\
-//////////// -------  INFECTED Difficulty Tiers Settings  ------- \\\\\\\\\\\\\\\\\\\\\\\ 
-
-
-//////////// -------  INFECTED ENDGAME Difficulty Tiers Settings  ------- \\\\\\\\\\\\\\\\\\\\\\\ 
-
-
-//////////// -------  HUMAN GANG Difficulty Tiers Settings  ------- \\\\\\\\\\\\\\\\\\\\\\\ 
-
-/////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-
-/////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-/////////////////////////AI BEHAVIOR\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-/////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-
-//////////// -------  Biter Movement Settings  ------- \\\\\\\\\\\
-
-//////////// -------  Biter Climbing Settings  ------- \\\\\\\\\\\\
-
-
-//////////// -------  Infected Damage  ------- \\\\\\\\\\\\\\\\\\\\\\\ 
-
-
-//////////// -------  Goon Movement Settings  ------- \\\\\\\\\\\\\\\\\\\\\\\ 
-
-//////////// ------- Human Grouping System  ------- \\\\\\\\\\\\\\\\\\\\\ 
-
-/////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-////////////////////////FALL HEIGHT\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-/////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-//- LOCATION - (scripts/difficultyparams.scr) -----\\\\\\\\\\\\\\\\\
-//Amount of Legend experience you will recieve based on difficulty
+//DATACOMMENT LOCATION - (scripts/difficultyparams.scr) -----\\\\\\\\\\\\\\\\\
+//COMMENT Amount of Legend experience you will recieve based on difficulty
 export float IAL_Fall_Height_Dmg_Multi_Easy = 0.5; //Default is 0.5
 export float IAL_Fall_Height_Dmg_Multi_Normal = 1.0; //Default is 0.5
 export float IAL_Fall_Height_Dmg_Multi_Hard = 1.1; //Default is 0.5
 export float IAL_Fall_Height_Dmg_Multi_Nightmare = 1.2; //Default is 0.5
-
-/////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-//////////////////AI WEAPON DROP LOGIC\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-/////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-//- LOCATION - (presets/logic/humanai/humanai_open_world.def) -----\\
-// Set to "1" to turn on weapon dropping on each group!
-
-/////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-/////////////////////DISMEMBER SYSTEM\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-/////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-//- LOCATION - (AI/DamageModel/body_elements.scr) -----\\
-//Probably to cut Infected Limbs and Arms
-//////////// -------  HUMANS  ------- \\\\\\\\\\\\\\\\\\\\\\\ 
-
-//////////// -------  INFECTED  ------- \\\\\\\\\\\\\\\\\\\\\\\
-
-//////////// -------  BITERS  ------- \\\\\\\\\\\\\\\\\\\\\\\
-
-//////////// -------  VIRALS  ------- \\\\\\\\\\\\\\\\\\\\\\\
-
-/////////////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-
-/////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-///////////////////////CHASE SYSTEM\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-/////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-//- LOCATION - (ai/chasedata/chase_base_data.scr) -----\\
-
-
-//- LOCATION - (ai/chasedata/chase_base_data.scr) -----\\
-//Chase Data for the night intensity after Chase begins
-//Delay before Zombies start Chasing you
-
-//Point increase on chase based on infected class - GENERAL Settings\\
-
-
-//Range for the screamers screen to cause chase points to increase\\
-export int IAL_Chase_MaxRangeForScreamer = 20;
-
-//Time before chase ends\\
-
-
-//Time before chase ends under UV Light\\
-
-
-//These are the amount of points required to move to next levels in chase\\
-
-
-//Time before the chase ends after the player is lost by AI\\
-
-
-//Number of Infected based on Chase Points - SINGLE PLAYER\\
-
-	
-//Number of Infected based on Chase Points - COOP\\
-
-//CHASE GENERAL COOP Settings\\
-
-
-//Intensity times and cooldowns\\
-
-//CHASE DAMAGE MODIFIER\\
-
-/////////////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-
-////////////CHEATS\\\\\\\\\\\\\\\\\\\
-
-/////////////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\

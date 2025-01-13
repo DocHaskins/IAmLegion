@@ -844,11 +844,14 @@ line 2</Text>
 <Id>B_IAmLegion</Id>
 <Width>300.000000</Width>
 <Height>54.000000</Height>
-<Position>0.000000,-108.000000,0.000000</Position>
+<Position>0.000000,0.000000,0.000000</Position>
 <ClassOverride>UiButtonMainDi</ClassOverride>
 <Visual>ButtonMainNewV</Visual>
-<!-- Add navigation properties as needed -->
-<Text>I Am Legion - 1.29</Text>
+<NavUp>B_WhatsNew</NavUp>
+<NavDown>B_LIVEParty</NavDown>
+<NavTabForward>B_LIVEParty</NavTabForward>
+<NavTabBackward>B_WhatsNew</NavTabBackward>
+<Text>I Am Legion - 1.30</Text>
 <MarginBottom>3.000000</MarginBottom>
 <AutoAdjustWidth>true</AutoAdjustWidth>
 <AdjustToLeft>true</AdjustToLeft>

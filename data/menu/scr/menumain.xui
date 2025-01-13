@@ -654,6 +654,24 @@ line 2</Text>
 </Properties>
 <AdvButton>
 <Properties>
+<Id>B_IAmLegion</Id>
+<Width>300.000000</Width>
+<Height>54.000000</Height>
+<Position>0.000000,0.000000,0.000000</Position>
+<ClassOverride>UiButtonMainDi</ClassOverride>
+<Visual>ButtonMainNewV</Visual>
+<NavUp>B_WhatsNew</NavUp>
+<NavDown>B_LIVEParty</NavDown>
+<NavTabForward>B_LIVEParty</NavTabForward>
+<NavTabBackward>B_WhatsNew</NavTabBackward>
+<Text>I Am Legion - 1.30</Text>
+<MarginBottom>3.000000</MarginBottom>
+<AutoAdjustWidth>true</AutoAdjustWidth>
+<AdjustToLeft>true</AdjustToLeft>
+</Properties>
+</AdvButton>
+<AdvButton>
+<Properties>
 <Id>B_LIVEParty</Id>
 <Width>300.000000</Width>
 <Height>54.000000</Height>
@@ -882,22 +900,6 @@ line 2</Text>
 <NavTabForward>B_PlayGame</NavTabForward>
 <NavTabBackward>B_LeaveParty</NavTabBackward>
 <Text>&amp;MenuMain_Continue&amp;</Text>
-<MarginBottom>3.000000</MarginBottom>
-<AutoAdjustWidth>true</AutoAdjustWidth>
-<AdjustToLeft>true</AdjustToLeft>
-</Properties>
-</AdvButton>
-</AdvButton>
-<AdvButton>
-<Properties>
-<Id>B_IAmLegion</Id>
-<Width>300.000000</Width>
-<Height>54.000000</Height>
-<Position>0.000000,-108.000000,0.000000</Position>
-<ClassOverride>UiButtonMainDi</ClassOverride>
-<Visual>ButtonMainNewV</Visual>
-<!-- Add navigation properties as needed -->
-<Text>I Am Legion - 1.28a</Text>
 <MarginBottom>3.000000</MarginBottom>
 <AutoAdjustWidth>true</AutoAdjustWidth>
 <AdjustToLeft>true</AdjustToLeft>

@@ -11,36 +11,51 @@
 
 
 
-SetForceDiffLevelProgress(21)
-CrowdDynamicPatternLength(100.0)
+
+CrowdDynamicPatternLength(100.)
 CrowdDynamicPatternFill(80)
 SetSpawnDistance(100.0)
-CrowdDynamicPatternPeriod(3000.0)
+CrowdDynamicPatternPeriod(3000.)
+HighDefCrowd()
+SetForceTargetForCrowdOnPlayer()
 
 ///////////////////////////////////////////////////////////////////
 //PRESETS
 ///////////////////////////////////////////////////////////////////
 
     
-    PresetDef("Volatile_Tunnel")
+
+    PresetDef("Infected_HumanScream")
     {
-        Difficult(40)
-        AIPreset("Volatile")
-        SpawnCondition("z_VOLATILE, 1")
-        MinDistBtwZombies(5)
+        Difficult(15)
+        AIPreset("ViralHumanity_Man;ViralHumanity_Woman")
+		DiffLvlTableName("Viral_Man;Viral_Woman")
+        SpawnCondition("nav_mesh, -1;__any__, 1;t_INIT, -1;p_ROOF, -1")
         ForceTargetType(1)
-        TimeBtwSpawnZombies(15)
-        SarcophagusTime(3)
+        TimeBtwSpawnZombies(2)
+    }
+	
+	PresetDef("Infected_HumanInit_Noise")
+    {
+        Difficult(15)
+        AIPreset("ViralHumanity_Man;ViralHumanity_Woman")
+		DiffLvlTableName("Viral_Man;Viral_Woman")
+        SpawnCondition("t_INIT, 0.7;z_INFECTED, 0.7")
+        MinDistBtwZombies(30)
+        RemoveDistanceIfNotContact(20)
+        ForceTargetType(3)
+        TimeBtwSpawnZombies(30)
+        RelativePresets("Vessel_Init;Volatile_Pit")
     }
     
-    PresetDef("Night_Walker_Tunnel")
+	PresetDef("Infected_Human")
     {
-        Difficult(20)
-        AIPreset("Biter_Man;Biter_Woman")
-        ForceTargetType(1)
-        TimeBtwSpawnZombies(5)
-        CanSpawnIntoCrowd(1,"_NW")
-        DieProbality(10)
+        Difficult(15)
+        AIPreset("ViralHumanity_Man;ViralHumanity_Woman")
+		DiffLvlTableName("Viral_Man;Viral_Woman")
+        SpawnCondition("p_WIDE, 1;p_SQUARE, 1;p_ROOF, -1")
+        MinDistBtwZombies(30)
+        TimeBtwSpawnZombies(7)
     }
     
 	
@@ -75,13 +90,10 @@ CrowdDynamicPatternPeriod(3000.0)
 
     AreaPool("Cleansing_Railway_Tunnel")
     {
-            Preset("Volatile_Tunnel, 1;Night_Walker_Tunnel, 1;Suicider_Tunnel,	1;Tunnel_Lurker,	1")
+            Preset("Infected_Human, 2;Suicider_Tunnel,	1;Infected_HumanScream,	1")
     }
 	
-	AreaPool("Cleansing_Sidetrack_Tunnel")
-    {
-            Preset("Night_Walker_Tunnel, 1;Suicider_Tunnel,	1")
-    }
+
 
 
 ///////////////////////////////////////////////////////////////////
@@ -95,9 +107,4 @@ CrowdDynamicPatternPeriod(3000.0)
         Wait(600)
     }
 	
-	AreaIntensityCurve("Cleansing_Sidetrack_Tunnel")
-    {
 
-        IntensityKey(20, 120)
-        Wait(600)
-    }
