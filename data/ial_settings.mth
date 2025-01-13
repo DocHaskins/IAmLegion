@@ -102,6 +102,10 @@ export float IAL_TimeScale_Multiplier_Night_Nightmare = 2.0; //Default 2.0
 //DATACOMMENT LOCATION - (scripts/player/player_variables_hard.scr) -----\\
 export float IAL_Camera_FOV = 70.0; //Default is 57.0
 
+//{LOOTING}
+//DATACOMMENT LOCATION - (scripts/player/player_variables_hard.scr) -----\\
+export bool IAL_Loot_Auto_Pickup = TRUE; //Default: False
+
 //{CAMOFLAGE}
 //DATACOMMENT LOCATION - (scripts/difficultyparams.scr) -----\\\\\\\\\\\\\
 //COMMENT Boosts applied to Camoflage based on difficulty
@@ -215,6 +219,10 @@ export float IAL_Commerce_SellingPrices_Nightmare = 0.5; //Default: 1.0
 /////////////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
 /////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+//[INVENTORY]
+/////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+/////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 //[EXPERIENCE]
 /////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 //DATACOMMENT LOCATION - (scripts/difficultyparams.scr) -----\\\\\\\\\\\\\\\\\
@@ -246,7 +254,6 @@ export float IAL_Experience_Legend_XP_4Player_Nightmare = 1.3; //Default is 1.3
 /////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 //{GENERAL SETTINGS}
 //DATACOMMENT LOCATION - (scripts/player/player_variables_hard.scr) -----\\\
-
 
 //{RANGED}
 //DATACOMMENT LOCATION - (scripts/iventory/inventory_special.scr) -----\\

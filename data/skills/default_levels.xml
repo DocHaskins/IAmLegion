@@ -141,7 +141,7 @@
 	<prop n="GrapplingHookExtraGravityValue" v="10.0"/>	
 	<prop n="ThrowHookCanUseInAir" v="1"/>
     <!-- <prop n="MaxFitness" v="1.0"/> -->
-	<prop n="CanUseSonarInSprint" v="1"/>
+	<prop n="CanUseSonarInSprint" v="0"/>
 	<prop n="CanUseSonarInVehicle" v="1"/>
     <prop n="FitnessCriticalLevel" v="0.05"/>
     <prop n="SprintExhausted" v="1"/>
