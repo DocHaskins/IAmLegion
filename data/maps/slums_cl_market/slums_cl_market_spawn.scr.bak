@@ -11,11 +11,13 @@
 
 
 
-SetForceDiffLevelProgress(21)
-CrowdDynamicPatternLength(100.0)
+
+CrowdDynamicPatternLength(100.)
 CrowdDynamicPatternFill(80)
 SetSpawnDistance(100.0)
-CrowdDynamicPatternPeriod(3000.0)
+CrowdDynamicPatternPeriod(3000.)
+HighDefCrowd()
+SetForceTargetForCrowdOnPlayer()
 
 ///////////////////////////////////////////////////////////////////
 //PRESETS

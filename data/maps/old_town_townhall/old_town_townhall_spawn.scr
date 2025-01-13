@@ -12,12 +12,10 @@
 
 
 
-CrowdDynamicPatternLength(100.)
+CrowdDynamicPatternLength(100.0)
 CrowdDynamicPatternFill(80)
 SetSpawnDistance(100.0)
-CrowdDynamicPatternPeriod(3000.)
-HighDefCrowd()
-SetForceTargetForCrowdOnPlayer()
+CrowdDynamicPatternPeriod(3000.0)
 
 ///////////////////////////////////////////////////////////////////
 //PRESETS

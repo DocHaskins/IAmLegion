@@ -3,7 +3,7 @@ sub main()
 	Update("I Am Legion")
 	{
 		ID(0);
-		Header("I Am Legion Update");
+		Header("I Am Legion");
 		Date("Easter Weekend");
 		Image("dlc_new_section_ultimate_survivor_bundle");
 		Paragraph("I Am Legion");
