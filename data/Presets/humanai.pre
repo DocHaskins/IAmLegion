@@ -136,18 +136,11 @@ sub main()
         Preset("Biter_m_lv0")
         {
                 SetField("m_AISkinName", "zombie_weak");
+                SetField("m_AlarmedMimicPreset", "normal");
                 SetField("m_AllowInitialArmsDamage", "1");
-                SetField("m_HealthMul", IAL_Difficulty_Health_Multiplier_Infected);
-                SetField("m_CustomDataPreset", "day_walker");
-                SetField("m_AlarmedMimicPreset", "angry");
-                SetField("m_TransformIntoPreset", "");
-				SetField("m_CanBeBackstabbed", "1");
-                SetField("m_KnowledgeBasePreset", "day_walker");
-                SetField("m_MainGoalRulesPreset", "prime"); 
-                SetField("m_ModulesPreset", "day_walker"); 
-                SetField("m_RunningNpc", "1");
-                SetField("m_Type", "3"); 
-		
+				SetField("m_HealthMul", IAL_Difficulty_Health_Multiplier_Infected);
+                SetField("m_CustomDataPreset", "man_level_0_a");
+                SetField("m_TransformIntoPreset", "NightWalker_Man;DiffLevel;NightWalker_m_lvl0");
         }
 
         Preset("Biter_m_lv0_wast")
@@ -170,20 +163,13 @@ sub main()
         Preset("Biter_m_lv1")
         {
                 SetField("m_AISkinName", "default");
+                SetField("m_AlarmedMimicPreset", "normal");
                 SetField("m_HealthMul", IAL_Difficulty_Health_Multiplier_Infected);
-                SetField("m_CustomDataPreset", "day_walker");
+				SetField("m_AllowInitialArmsDamage", "1");
+                SetField("m_CustomDataPreset", "man_level_1_b;man_level_1_c");
                 SetField("m_CustomLootType", "DeadBody_Thug");
                 SetField("m_CustomLootTypeString", "Biter_lvl1");
-                SetField("m_AllowInitialArmsDamage", "1");
-                SetField("m_AlarmedMimicPreset", "angry");
-                SetField("m_TransformIntoPreset", "");
-				SetField("m_CanBeBackstabbed", "1");
-                SetField("m_KnowledgeBasePreset", "day_walker");
-                SetField("m_MainGoalRulesPreset", "prime"); 
-                SetField("m_ModulesPreset", "day_walker"); 
-                SetField("m_RunningNpc", "1");
-                SetField("m_Type", "3"); 
-		
+                SetField("m_TransformIntoPreset", "NightWalker_Man;DiffLevel;NightWalker_m_lvl1");
         }
 
         Preset("Biter_m_lv1_liveops_christmas")
@@ -434,17 +420,11 @@ sub main()
         Preset("Biter_w_lv0")
         {
                 SetField("m_AISkinName", "zombie_weak");
-                SetField("m_CustomDataPreset", "day_walker");
-                SetField("m_AlarmedMimicPreset", "angry");
+                SetField("m_AlarmedMimicPreset", "normal");
                 SetField("m_AllowInitialArmsDamage", "1");
-                SetField("m_HealthMul", IAL_Difficulty_Health_Multiplier_Infected);
-                SetField("m_TransformIntoPreset", "");
-				SetField("m_CanBeBackstabbed", "1");
-                SetField("m_KnowledgeBasePreset", "day_walker");
-                SetField("m_ModulesPreset", "day_walker"); 
-                SetField("m_RunningNpc", "1");
-                SetField("m_Type", "3"); 
-		
+				SetField("m_HealthMul", IAL_Difficulty_Health_Multiplier_Infected);
+                SetField("m_CustomDataPreset", "woman_level_0_a");
+                SetField("m_TransformIntoPreset", "NightWalker_Woman;DiffLevel;NightWalker_w_lvl0");
         }
 
         Preset("Biter_w_lv0_wast")
@@ -465,18 +445,12 @@ sub main()
         Preset("Biter_w_lv1")
         {
                 SetField("m_AISkinName", "default");
-                SetField("m_HealthMul", IAL_Difficulty_Health_Multiplier_Infected);
-                SetField("m_CustomDataPreset", "day_walker");
-                SetField("m_CustomLootTypeString", "Biter_lvl1");
-                SetField("m_AlarmedMimicPreset", "angry");
+                SetField("m_AlarmedMimicPreset", "normal");
                 SetField("m_AllowInitialArmsDamage", "1");
-                SetField("m_TransformIntoPreset", "");
-				SetField("m_CanBeBackstabbed", "1");
-                SetField("m_KnowledgeBasePreset", "day_walker");
-                SetField("m_ModulesPreset", "day_walker"); 
-                SetField("m_RunningNpc", "1");
-                SetField("m_Type", "3"); 
-		
+				SetField("m_HealthMul", IAL_Difficulty_Health_Multiplier_Infected);
+                SetField("m_CustomDataPreset", "woman_level_1_b");
+                SetField("m_CustomLootTypeString", "Biter_lvl1");
+                SetField("m_TransformIntoPreset", "NightWalker_Woman;DiffLevel;NightWalker_w_lvl1");
         }
 
         Preset("Biter_w_lv1_wast")
@@ -565,7 +539,7 @@ sub main()
 		Preset("Biter_w_lv5")
         {
                 SetField("m_AlarmedMimicPreset", "angry");
-		SetField("m_HealthMul", IAL_Difficulty_Health_Multiplier_Infected);
+				SetField("m_HealthMul", IAL_Difficulty_Health_Multiplier_Infected);
                 SetField("m_AllowInitialArmsDamage", "0");
                 SetField("m_CustomDataPreset", "day_walker");
 				SetField("m_GrabEnabled", "0");
@@ -2255,15 +2229,7 @@ sub main()
 
         Preset("BTZ_Biter_Man")
         {
-                SetField("m_AttachableItem1Name", "Zombie_Blister");
-                SetField("m_AttachableItem1Probability", "0.4");
-				SetField("m_AttachableItem2Name", "fire_helmet");
-                SetField("m_AttachableItem2Probability", "0.1");
-				SetField("m_AttachableItem3Name", "miner_helmet");
-                SetField("m_AttachableItem3Probability", "0.01");
-				SetField("m_AttachableItem4Name", "Attachable_Flashlight");
-                SetField("m_AttachableItem4Probability", "0.1");
-				SetField("m_BurnOnStart", "0");
+                
                 SetField("m_CanBeLimitedAttacker", "1");
                 SetField("m_CanUseAttractors", "1");
                 SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_ALL);
@@ -2294,15 +2260,7 @@ sub main()
 
         Preset("BTZ_Biter_Man_Hard")
         {
-                SetField("m_AttachableItem1Name", "Zombie_Blister");
-                SetField("m_AttachableItem1Probability", "0.4");
-				SetField("m_AttachableItem2Name", "fire_helmet");
-                SetField("m_AttachableItem2Probability", "0.1");
-				SetField("m_AttachableItem3Name", "miner_helmet");
-                SetField("m_AttachableItem3Probability", "0.01");
-				SetField("m_AttachableItem4Name", "Attachable_Flashlight");
-                SetField("m_AttachableItem4Probability", "0.1");
-				SetField("m_BurnOnStart", "0");
+                
                 SetField("m_CanBeLimitedAttacker", "0");
                 SetField("m_CanUseAttractors", "1");
                 SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_ALL);
@@ -2372,8 +2330,7 @@ sub main()
 
         Preset("BTZ_Biter_RaisBandit")
         {
-				SetField("m_AttachableItem1Name", "Attachable_Flashlight");
-                SetField("m_AttachableItem1Probability", "0.2");
+		
 				SetField("m_Boss", "0");
                 SetField("m_BurnOnStart", "0");
                 SetField("m_CanBeBackstabbed", "0");
@@ -2446,10 +2403,7 @@ sub main()
 
         Preset("BTZ_Biter_Soldier")
         {
-                SetField("m_AttachableItem1Name", "Zombie_Blister");
-                SetField("m_AttachableItem1Probability", "0.4");
-				SetField("m_AttachableItem2Name", "Attachable_Flashlight");
-                SetField("m_AttachableItem2Probability", "0.2");
+                
 				SetField("m_Boss", "0");
                 SetField("m_BurnOnStart", "0");
                 SetField("m_CanBeBackstabbed", "0");
@@ -2487,10 +2441,7 @@ sub main()
 
         Preset("BTZ_Biter_Woman")
         {
-                SetField("m_AttachableItem1Name", "Zombie_Blister");
-                SetField("m_AttachableItem1Probability", "0.4");
-				SetField("m_AttachableItem2Name", "Attachable_Flashlight");
-                SetField("m_AttachableItem2Probability", "0.2");
+                
 				SetField("m_BurnOnStart", "0");
                 SetField("m_CanBeLimitedAttacker", "1");
                 SetField("m_CanUseAttractors", "1");
@@ -2524,10 +2475,7 @@ sub main()
 
         Preset("BTZ_Biter_Woman_Hard")
         {
-                SetField("m_AttachableItem1Name", "Zombie_Blister");
-                SetField("m_AttachableItem1Probability", "0.4");
-				SetField("m_AttachableItem2Name", "Attachable_Flashlight");
-                SetField("m_AttachableItem2Probability", "0.2");
+                
 				SetField("m_BurnOnStart", "0");
                 SetField("m_CanBeLimitedAttacker", "1");
                 SetField("m_CanUseAttractors", "1");
@@ -2561,10 +2509,7 @@ sub main()
 
         Preset("BTZ_Biter_Worker")
         {
-                SetField("m_AttachableItem1Name", "Zombie_Blister");
-                SetField("m_AttachableItem1Probability", "0.4");
-				SetField("m_AttachableItem2Name", "Attachable_Flashlight");
-                SetField("m_AttachableItem2Probability", "0.2");
+                
 				SetField("m_AlarmedMimicPreset", "angry");
                 SetField("m_BurnOnStart", "0");
                 SetField("m_CanBeLimitedAttacker", "1");
@@ -2597,10 +2542,7 @@ sub main()
 
         Preset("BTZ_NightWalker_Man")
         {
-                SetField("m_AttachableItem1Name", "Zombie_Blister");
-                SetField("m_AttachableItem1Probability", "0.4");
-				SetField("m_AttachableItem2Name", "Attachable_Flashlight");
-                SetField("m_AttachableItem2Probability", "0.2");
+                
 				SetField("m_CanBeInHumanity", "0");
                 SetField("m_CanEscape", "1");
                 SetField("m_CanUseAttractors", "0");
@@ -2666,10 +2608,7 @@ sub main()
 
         Preset("BTZ_NightWalker_Man_Hard")
         {
-                SetField("m_AttachableItem1Name", "Zombie_Blister");
-                SetField("m_AttachableItem1Probability", "0.4");
-				SetField("m_AttachableItem2Name", "Attachable_Flashlight");
-                SetField("m_AttachableItem2Probability", "0.2");
+                
 				SetField("m_CanBeInHumanity", "0");
                 SetField("m_CanEscape", "1");
                 SetField("m_CanUseAttractors", "0");
@@ -2735,10 +2674,7 @@ sub main()
 
         Preset("BTZ_NightWalker_Woman")
         {
-                SetField("m_AttachableItem1Name", "Zombie_Blister");
-                SetField("m_AttachableItem1Probability", "0.4");
-				SetField("m_AttachableItem2Name", "Attachable_Flashlight");
-                SetField("m_AttachableItem2Probability", "0.2");
+                
 				SetField("m_CanBeInHumanity", "0");
                 SetField("m_CanEscape", "1");
                 SetField("m_CanUseAttractors", "0");
@@ -2804,10 +2740,7 @@ sub main()
 
         Preset("BTZ_NightWalker_Woman_Hard")
         {
-                SetField("m_AttachableItem1Name", "Zombie_Blister");
-                SetField("m_AttachableItem1Probability", "0.4");
-				SetField("m_AttachableItem2Name", "Attachable_Flashlight");
-                SetField("m_AttachableItem2Probability", "0.2");
+                
 				SetField("m_CanBeInHumanity", "0");
                 SetField("m_CanEscape", "1");
                 SetField("m_CanUseAttractors", "0");
@@ -3878,15 +3811,7 @@ sub main()
         Preset("Biter_Man")
         {
 				SetField("m_CanBeInHumanity", "1");
-                SetField("m_AttachableItem1Name", "Zombie_Blister");
-                SetField("m_AttachableItem1Probability", "0.4");
-				SetField("m_AttachableItem2Name", "fire_helmet");
-                SetField("m_AttachableItem2Probability", "0.1");
-				SetField("m_AttachableItem3Name", "miner_helmet");
-                SetField("m_AttachableItem3Probability", "0.01");
-				SetField("m_AttachableItem4Name", "Attachable_Flashlight");
-                SetField("m_AttachableItem4Probability", "0.1");
-				SetField("m_BurnOnStart", "0");
+                
 				SetField("m_BroadcastRange", "6.0");
 				SetField("m_CanLeaveSpawnPos", "1");
                 SetField("m_CanBeLimitedAttacker", "1");
@@ -3927,15 +3852,7 @@ sub main()
 
         Preset("Biter_Man_AG")
         {
-                SetField("m_AttachableItem1Name", "Zombie_Blister");
-                SetField("m_AttachableItem1Probability", "0.4");
-				SetField("m_AttachableItem2Name", "fire_helmet");
-                SetField("m_AttachableItem2Probability", "0.1");
-				SetField("m_AttachableItem3Name", "miner_helmet");
-                SetField("m_AttachableItem3Probability", "0.01");
-				SetField("m_AttachableItem4Name", "Attachable_Flashlight");
-                SetField("m_AttachableItem4Probability", "0.1");
-				SetField("m_BurnOnStart", "0");
+                
 				SetField("m_BroadcastRange", "6.0");
 				SetField("m_CanLeaveSpawnPos", "1");
                 SetField("m_CanBeLimitedAttacker", "1");
@@ -3974,10 +3891,7 @@ sub main()
 
         Preset("Biter_Man_NW")
         {
-                SetField("m_AttachableItem1Name", "Zombie_Blister");
-                SetField("m_AttachableItem1Probability", "0.4");
-				SetField("m_AttachableItem4Name", "Attachable_Flashlight");
-                SetField("m_AttachableItem4Probability", "0.1");
+                
 				SetField("m_BurnOnStart", "0");
 				SetField("m_BroadcastRange", "8.0");
 				SetField("m_CanLeaveSpawnPos", "1");
@@ -4304,10 +4218,7 @@ sub main()
 
         Preset("Biter_Soldier")
         {
-                SetField("m_AttachableItem1Name", "Zombie_Blister");
-                SetField("m_AttachableItem1Probability", "0.4");
-				SetField("m_AttachableItem2Name", "Attachable_Flashlight");
-                SetField("m_AttachableItem2Probability", "0.2");
+                
 				SetField("m_Boss", "0");
                 SetField("m_BurnOnStart", "0");
                 SetField("m_CanBeBackstabbed", "0");
@@ -4346,10 +4257,7 @@ sub main()
 
         Preset("Biter_Woman")
         {
-				SetField("m_AttachableItem1Name", "Zombie_Blister");
-                SetField("m_AttachableItem1Probability", "0.4");
-				SetField("m_AttachableItem2Name", "Attachable_Flashlight");
-                SetField("m_AttachableItem2Probability", "0.2");
+				
 				SetField("m_BurnOnStart", "0");
 				SetField("m_BroadcastRange", "6.0");
 				SetField("m_CanLeaveSpawnPos", "1");
@@ -4394,10 +4302,7 @@ sub main()
 
         Preset("Biter_Woman_AG")
         {
-                SetField("m_AttachableItem1Name", "Zombie_Blister");
-                SetField("m_AttachableItem1Probability", "0.4");
-				SetField("m_AttachableItem2Name", "Attachable_Flashlight");
-                SetField("m_AttachableItem2Probability", "0.2");
+                
 				SetField("m_BurnOnStart", "0");
 				SetField("m_BroadcastRange", "6.0");
 				SetField("m_CanLeaveSpawnPos", "1");
@@ -4439,10 +4344,7 @@ sub main()
 
         Preset("Biter_Woman_Agressive")
         {
-                SetField("m_AttachableItem1Name", "Zombie_Blister");
-                SetField("m_AttachableItem1Probability", "0.4");
-				SetField("m_AttachableItem2Name", "Attachable_Flashlight");
-                SetField("m_AttachableItem2Probability", "0.2");
+                
 				SetField("m_BroadcastRange", "6.0");
 				SetField("m_CanLeaveSpawnPos", "1");
 				SetField("m_CanBeInHumanity", "0");
@@ -4478,10 +4380,7 @@ sub main()
 
         Preset("Biter_Woman_NW")
         {
-                SetField("m_AttachableItem1Name", "Zombie_Blister");
-                SetField("m_AttachableItem1Probability", "0.4");
-				SetField("m_AttachableItem2Name", "Attachable_Flashlight");
-                SetField("m_AttachableItem2Probability", "0.2");
+                
 				SetField("m_BurnOnStart", "0");
 				SetField("m_BroadcastRange", "6.0");
                 SetField("m_CanBeLimitedAttacker", "1");
@@ -4553,10 +4452,7 @@ sub main()
 	
         Preset("Biter_Worker")
         {
-                SetField("m_AttachableItem1Name", "Zombie_Blister");
-                SetField("m_AttachableItem1Probability", "0.4");
-				SetField("m_AttachableItem2Name", "Attachable_Flashlight");
-                SetField("m_AttachableItem2Probability", "0.2");
+                
 				SetField("m_AlarmedMimicPreset", "angry");
                 SetField("m_BurnOnStart", "0");
                 SetField("m_CanBeLimitedAttacker", "1");
@@ -4590,10 +4486,7 @@ sub main()
 
         Preset("Bitter_Man_Agressive")
         {
-                SetField("m_AttachableItem1Name", "Zombie_Blister");
-                SetField("m_AttachableItem1Probability", "0.4");
-				SetField("m_AttachableItem2Name", "Attachable_Flashlight");
-                SetField("m_AttachableItem2Probability", "0.2");
+                
 				SetField("m_CanBeInHumanity", "0");
                 SetField("m_CanUseAttractors", "1");
                 SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_ALL);
@@ -25398,10 +25291,7 @@ sub main()
 
         Preset("Viral_Man")
         {
-                SetField("m_AttachableItem1Name", "Zombie_Blister");
-                SetField("m_AttachableItem1Probability", "0.4");
-				SetField("m_AttachableItem4Name", "Attachable_Flashlight");
-                SetField("m_AttachableItem4Probability", "0.1");
+                
 				SetField("m_CanBeInHumanity", "1");
                 SetField("m_CanUseAttractors", "1");
                 SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_ALL);
@@ -25433,10 +25323,7 @@ sub main()
 
         Preset("Viral_Man_Group")
         {
-                SetField("m_AttachableItem1Name", "Zombie_Blister");
-                SetField("m_AttachableItem1Probability", "0.4");
-				SetField("m_AttachableItem4Name", "Attachable_Flashlight");
-                SetField("m_AttachableItem4Probability", "0.1");
+                
 				SetField("m_CanBeInHumanity", "0");
                 SetField("m_CanUseAttractors", "1");
                 SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_ALL);
@@ -25468,10 +25355,7 @@ sub main()
 
         Preset("Viral_Man_Museum")
         {
-                SetField("m_AttachableItem1Name", "Zombie_Blister");
-                SetField("m_AttachableItem1Probability", "0.4");
-				SetField("m_AttachableItem4Name", "Attachable_Flashlight");
-                SetField("m_AttachableItem4Probability", "0.1");
+                
 				SetField("m_CanBeInHumanity", "1");
                 SetField("m_CanUseAttractors", "1");
                 SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_ALL);
@@ -25563,10 +25447,7 @@ sub main()
 
         Preset("Viral_Woman")
         {
-                SetField("m_AttachableItem1Name", "Zombie_Blister");
-                SetField("m_AttachableItem1Probability", "0.4");
-				SetField("m_AttachableItem2Name", "Attachable_Flashlight");
-                SetField("m_AttachableItem2Probability", "0.2");
+                
 				SetField("m_CanBeInHumanity", "1");
                 SetField("m_CanUseAttractors", "1");
                 SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_ALL);
@@ -25598,10 +25479,7 @@ sub main()
 
         Preset("Viral_Woman_Group")
         {
-                SetField("m_AttachableItem1Name", "Zombie_Blister");
-                SetField("m_AttachableItem1Probability", "0.4");
-				SetField("m_AttachableItem2Name", "Attachable_Flashlight");
-                SetField("m_AttachableItem2Probability", "0.2");
+                
 				SetField("m_CanBeInHumanity", "0");
                 SetField("m_CanUseAttractors", "1");
                 SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_ALL);
@@ -25633,10 +25511,7 @@ sub main()
 
         Preset("Viral_Woman_Museum")
         {
-                SetField("m_AttachableItem1Name", "Zombie_Blister");
-                SetField("m_AttachableItem1Probability", "0.4");
-				SetField("m_AttachableItem2Name", "Attachable_Flashlight");
-                SetField("m_AttachableItem2Probability", "0.2");
+                
 				SetField("m_CanBeInHumanity", "1");
                 SetField("m_CanUseAttractors", "1");
                 SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_ALL);
