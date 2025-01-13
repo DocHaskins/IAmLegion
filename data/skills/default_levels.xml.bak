@@ -141,7 +141,7 @@
 	<prop n="GrapplingHookExtraGravityValue" v="10.0"/>	
 	<prop n="ThrowHookCanUseInAir" v="1"/>
     <!-- <prop n="MaxFitness" v="1.0"/> -->
-	<prop n="CanUseSonarInSprint" v="1"/>
+	<prop n="CanUseSonarInSprint" v="0"/>
 	<prop n="CanUseSonarInVehicle" v="1"/>
     <prop n="FitnessCriticalLevel" v="0.05"/>
     <prop n="SprintExhausted" v="1"/>
@@ -211,7 +211,7 @@
 	<prop n="BozakKnockdownTimeToDeath" v="45"/>
 	<prop n="KnockdownAfterKnockdownMinTime" v="0.6"/>
     
-    <prop n="NearbyEnemiesSearchRange" v="40.0"/>
+    <prop n="NearbyEnemiesSearchRange" v="100.0"/>
 	<prop n="SwimLookTimetMul" v="0.4"/>    
     <prop n="LookVertSpeed_Pad" v="140.0"/>
     <prop n="LookHorzSpeed_Pad" v="260.0"/>

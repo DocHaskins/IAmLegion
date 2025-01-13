@@ -11,7 +11,7 @@
 
 
 
-SetForceDiffLevelProgress(21)
+
 CrowdDynamicPatternLength(100.0)
 CrowdDynamicPatternFill(80)
 SetSpawnDistance(100.0)
