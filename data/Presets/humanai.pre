@@ -156,7 +156,9 @@ sub main()
                 SetField("m_MainGoalRulesPreset", "prime"); 
                 SetField("m_ModulesPreset", "day_walker"); 
                 SetField("m_RunningNpc", "1");
-                SetField("m_Type", "3"); 
+                SetField("m_Type", "3");
+                SetField("m_SoundPreset", "NightWalkerMan");
+                SetField("m_StepPreset", "Default_Zombie"); 
 		
         }
 
@@ -199,7 +201,9 @@ sub main()
                 SetField("m_KnowledgeBasePreset", "day_walker");
                 SetField("m_ModulesPreset", "day_walker"); 
                 SetField("m_RunningNpc", "1");
-                SetField("m_Type", "3"); 
+                SetField("m_Type", "3");
+                SetField("m_SoundPreset", "NightWalkerMan");
+                SetField("m_StepPreset", "Default_Zombie"); 
 		
         }
 
@@ -215,7 +219,9 @@ sub main()
                 SetField("m_KnowledgeBasePreset", "day_walker");
                 SetField("m_ModulesPreset", "day_walker"); 
                 SetField("m_RunningNpc", "1");
-                SetField("m_Type", "3"); 
+                SetField("m_Type", "3");
+                SetField("m_SoundPreset", "NightWalkerMan");
+                SetField("m_StepPreset", "Default_Zombie"); 
 		
         }
 
@@ -244,7 +250,9 @@ sub main()
                 SetField("m_KnowledgeBasePreset", "day_walker");
                 SetField("m_ModulesPreset", "day_walker"); 
                 SetField("m_RunningNpc", "1");
-                SetField("m_Type", "3"); 
+                SetField("m_Type", "3");
+                SetField("m_SoundPreset", "NightWalkerMan");
+                SetField("m_StepPreset", "Default_Zombie"); 
 		
         }
 
@@ -261,7 +269,9 @@ sub main()
                 SetField("m_KnowledgeBasePreset", "day_walker");
                 SetField("m_ModulesPreset", "day_walker"); 
                 SetField("m_RunningNpc", "1");
-                SetField("m_Type", "3"); 
+                SetField("m_Type", "3");
+                SetField("m_SoundPreset", "NightWalkerMan");
+                SetField("m_StepPreset", "Default_Zombie"); 
 		
         }
 
@@ -296,7 +306,9 @@ sub main()
                 SetField("m_KnowledgeBasePreset", "prime"); //bez tego zombie szuka najbliszego miejsca, zeby usiasc, siada i siedzi :D
                 SetField("m_ModulesPreset", "prime"); //bez tego gra sie zwiesza
                 SetField("m_RunningNpc", "1");
-                SetField("m_Type", "3"); //bez tego leci asercja		
+                SetField("m_Type", "3");
+                SetField("m_SoundPreset", "NightWalkerMan");
+                SetField("m_StepPreset", "Default_Zombie"); //bez tego leci asercja		
 				
         }
 
@@ -313,7 +325,9 @@ sub main()
                 SetField("m_KnowledgeBasePreset", "day_walker");
                 SetField("m_ModulesPreset", "day_walker"); 
                 SetField("m_RunningNpc", "1");
-                SetField("m_Type", "3"); 
+                SetField("m_Type", "3");
+                SetField("m_SoundPreset", "NightWalkerMan");
+                SetField("m_StepPreset", "Default_Zombie"); 
 		
         }
 
@@ -330,7 +344,9 @@ sub main()
                 SetField("m_KnowledgeBasePreset", "day_walker");
                 SetField("m_ModulesPreset", "day_walker"); 
                 SetField("m_RunningNpc", "1");
-                SetField("m_Type", "3"); 
+                SetField("m_Type", "3");
+                SetField("m_SoundPreset", "NightWalkerMan");
+                SetField("m_StepPreset", "Default_Zombie"); 
 		
         }
 
@@ -347,7 +363,9 @@ sub main()
                 SetField("m_KnowledgeBasePreset", "day_walker");
                 SetField("m_ModulesPreset", "day_walker"); 
                 SetField("m_RunningNpc", "1");
-                SetField("m_Type", "3"); 
+                SetField("m_Type", "3");
+                SetField("m_SoundPreset", "NightWalkerMan");
+                SetField("m_StepPreset", "Default_Zombie"); 
 		
         }
 
@@ -364,7 +382,9 @@ sub main()
                 SetField("m_KnowledgeBasePreset", "day_walker");
                 SetField("m_ModulesPreset", "day_walker"); 
                 SetField("m_RunningNpc", "1");
-                SetField("m_Type", "3"); 
+                SetField("m_Type", "3");
+                SetField("m_SoundPreset", "NightWalkerMan");
+                SetField("m_StepPreset", "Default_Zombie"); 
 		
         }
 
@@ -381,7 +401,9 @@ sub main()
                 SetField("m_KnowledgeBasePreset", "day_walker");
                 SetField("m_ModulesPreset", "day_walker"); 
                 SetField("m_RunningNpc", "1");
-                SetField("m_Type", "3"); 
+                SetField("m_Type", "3");
+                SetField("m_SoundPreset", "NightWalkerMan");
+                SetField("m_StepPreset", "Default_Zombie"); 
 		
         }
 		
@@ -394,10 +416,12 @@ sub main()
                 SetField("m_AlarmedMimicPreset", "angry");
                 SetField("m_TransformIntoPreset", "");
 				SetField("m_CanBeBackstabbed", "1");
-                SetField("m_KnowledgeBasePreset", "day_walker");
                 SetField("m_ModulesPreset", "day_walker"); 
                 SetField("m_RunningNpc", "1");
-                SetField("m_Type", "3"); 
+                SetField("m_Type", "3");
+                SetField("m_KnowledgeBasePreset", "day_walker");
+                SetField("m_SoundPreset", "NightWalkerWoman");
+                SetField("m_StepPreset", "Default_Zombie"); 
 		
         }
 		
@@ -410,10 +434,12 @@ sub main()
                 SetField("m_AlarmedMimicPreset", "angry");
                 SetField("m_TransformIntoPreset", "");
 				//SetField("m_CanBeBackstabbed", "1");
-                SetField("m_KnowledgeBasePreset", "day_walker");
                 SetField("m_ModulesPreset", "day_walker"); 
                 SetField("m_RunningNpc", "1");
-                SetField("m_Type", "3"); 
+                SetField("m_Type", "3");
+                SetField("m_KnowledgeBasePreset", "day_walker");
+                SetField("m_SoundPreset", "NightWalkerWoman");
+                SetField("m_StepPreset", "Default_Zombie"); 
 		
         }
 
@@ -438,7 +464,9 @@ sub main()
                 SetField("m_KnowledgeBasePreset", "day_walker");
                 SetField("m_ModulesPreset", "day_walker"); 
                 SetField("m_RunningNpc", "1");
-                SetField("m_Type", "3"); 
+                SetField("m_Type", "3");
+                SetField("m_SoundPreset", "NightWalkerWoman");
+                SetField("m_StepPreset", "Default_Zombie"); 
 		
         }
 
@@ -451,6 +479,12 @@ sub main()
                 SetField("m_CustomDataPreset", "woman_level_1_b");
                 SetField("m_CustomLootTypeString", "Biter_lvl1");
                 SetField("m_TransformIntoPreset", "NightWalker_Woman;DiffLevel;NightWalker_w_lvl1");
+                SetField("m_HealthMul", IAL_Difficulty_Health_Multiplier_Infected);
+                SetField("m_RunningNpc", "1");
+                SetField("m_Type", "3");
+                SetField("m_KnowledgeBasePreset", "day_walker");
+                SetField("m_SoundPreset", "NightWalkerWoman");
+                SetField("m_StepPreset", "Default_Zombie"); 
         }
 
         Preset("Biter_w_lv1_wast")
@@ -463,10 +497,12 @@ sub main()
                 SetField("m_CustomLootTypeString", "Biter_lvl1_wast");
                 SetField("m_TransformIntoPreset", "");
 				SetField("m_CanBeBackstabbed", "1");
-                SetField("m_KnowledgeBasePreset", "day_walker");
                 SetField("m_ModulesPreset", "day_walker"); 
                 SetField("m_RunningNpc", "1");
-                SetField("m_Type", "3"); 
+                SetField("m_Type", "3");
+                SetField("m_KnowledgeBasePreset", "day_walker");
+                SetField("m_SoundPreset", "NightWalkerWoman");
+                SetField("m_StepPreset", "Default_Zombie"); 
 		
         }
 
@@ -479,10 +515,12 @@ sub main()
                 SetField("m_CustomLootTypeString", "Biter_lvl2");
                 SetField("m_TransformIntoPreset", "");
 				SetField("m_CanBeBackstabbed", "1");
-                SetField("m_KnowledgeBasePreset", "day_walker");
                 SetField("m_ModulesPreset", "day_walker"); 
                 SetField("m_RunningNpc", "1");
-                SetField("m_Type", "3"); 
+                SetField("m_Type", "3");
+                SetField("m_KnowledgeBasePreset", "day_walker");
+                SetField("m_SoundPreset", "NightWalkerWoman");
+                SetField("m_StepPreset", "Default_Zombie"); 
 		
         }
 
