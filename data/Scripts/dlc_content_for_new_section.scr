@@ -89,6 +89,14 @@ sub main()
 	// FEATURED
 	//////////////////////////////////////////////////////////////////////////////////////////////////////
 	
+	//10th Anniversary Bundle
+	DLC(3454290, "10THANNIVERSARY0", "47355039-374d-305a-c047-36524d525100", "e94cfa3362cb4b54813dc7c9d3e0ca31", "Bundle", "Paid", true)
+    {
+        Image("dlc_new_section_10th_anniversary_skin");
+		Platforms(true, true, true, true, true);
+		EpicUrl("https://www.epicgames.com/store/p/dying-light/");
+    }
+	
 	//Dieselpunk
 	DLC(1935540, "DISELPUNK0000000", "37384e39-344b-3034-c042-355a424e0a00", "c5db31b8fab84e21b8a2062d987e8322", "Bundle", "Paid", true)
     {
@@ -226,6 +234,14 @@ sub main()
 	// BUNDLE
 	//////////////////////////////////////////////////////////////////////////////////////////////////////
 
+	//10th Anniversary Bundle
+	DLC(3454290, "10THANNIVERSARY0", "47355039-374d-305a-c047-36524d525100", "e94cfa3362cb4b54813dc7c9d3e0ca31", "Bundle", "Paid", false)
+    {
+        Image("dlc_new_section_10th_anniversary_skin");
+		Platforms(true, true, true, true, true);
+		EpicUrl("https://www.epicgames.com/store/p/dying-light/");
+    }
+	
 	//Dieselpunk
 	DLC(1935540, "DISELPUNK0000000", "37384e39-344b-3034-c042-355a424e0a00", "c5db31b8fab84e21b8a2062d987e8322", "Bundle", "Paid", false)
     {
