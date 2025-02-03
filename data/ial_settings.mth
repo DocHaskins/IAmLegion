@@ -110,8 +110,8 @@ export float IAL_Camo_Duration_Multiplier_Normal = 1.0; //Default: 0.66
 export float IAL_Camo_Duration_Multiplier_Hard = 0.66; //Default: 0.66
 export float IAL_Camo_Duration_Multiplier_Nightmare = 0.66; //Default: 0.66
 
-//////////// -------  LOOTING  ------- \\\\\\\\\\\\\\\\\\\\\\\ 
-//- LOCATION - (scripts/player/player_variables_hard.scr) -----\\
+//{LOOTING}
+//DATACOMMENT LOCATION - (scripts/player/player_variables_hard.scr) -----\\
 export bool IAL_Loot_Auto_Pickup = TRUE; //Default: False
 
 /////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
