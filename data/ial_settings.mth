@@ -1,4 +1,7 @@
+//PROJECT - DyingLight
+
 //VERSION - 1.0
+
 //[START]
 //{WELCOME}
 //--I Am Legion - Reborn - Mod Config
@@ -6,7 +9,6 @@
 //--IALR Discord Channel
 //LOCATION https://discord.gg/HbTvgxKCRk
 //COMMENT This mod wouldn't be possible without the feedback and support the community has offered. If you have not joined the Discord community but are curious about the latest news and tech support for this mod, please make sure to drop by the Discord and let me know your feedback.
-
 //--IALR Config Share
 //LOCATION https://discord.com/channels/938426300362784788/1055204891989114970
 //COMMENT If you would like to share your config with others, you can use the "Share Config" button to be directed to the file location of your unique config. Feel free to share this config on the IALR Discord - ialr-config-share board with some descriptions of your custom settings so others can enjoy your work. Thanks for downloading and happy gaming.
@@ -27,271 +29,248 @@
 //--IALR Youtube Channel
 //LOCATION https://www.youtube.com/@DocOnHoliday
 
+
 //[Gameplay]
 //{HEALTH}
-//DATACOMMENT LOCATION - (scripts/difficultyparams.scr) -----\\\\\\\\\\\\\\\
-//COMMENT Multiplier of time needed to regenerate Player's health from critical health.
-export float IAL_Health_Regen_Easy = 3.0; //Default 3.0
-export float IAL_Health_Regen_Normal = 2.5; //Default 3.0
-export float IAL_Health_Regen_Hard = 2.0; //Default 3.0
-export float IAL_Health_Regen_Nightmare = 1.5; //Default 3.0
-
+//LOCATION - (scripts/difficultyparams.scr) -----\\\\\\\\\\\\\\\
 //COMMENT Multiplier for amount of health received by using medkit.
-export float IAL_Health_Medkit_Gain_Easy = 3.0; //Default 3.0
-export float IAL_Health_Medkit_Gain_Normal = 3.0; //Default 3.0
-export float IAL_Health_Medkit_Gain_Hard = 3.0; //Default 3.0
-export float IAL_Health_Medkit_Gain_Nightmare = 0.5; //Default 0.5
+export float IAL_Health_Regen_Easy = 3.0; //DATACOMMENT Casual = 0.00, Survivor = 3.00, Ultimate = 3.00, Insanity = 3.00
+export float IAL_Health_Regen_Normal = 2.5; //DATACOMMENT Casual = 0.00, Survivor = 2.50, Ultimate = 2.50, Insanity = 2.50
+export float IAL_Health_Regen_Hard = 2.0; //DATACOMMENT Casual = 0.00, Survivor = 2.00, Ultimate = 2.00, Insanity = 2.00
+export float IAL_Health_Regen_Nightmare = 1.5; //DATACOMMENT Casual = 0.00, Survivor = 1.50, Ultimate = 1.50, Insanity = 1.50
+export float IAL_Health_Medkit_Gain_Easy = 3.0; //DATACOMMENT Casual = 0.00, Survivor = 3.00, Ultimate = 3.00, Insanity = 3.00
+export float IAL_Health_Medkit_Gain_Normal = 3.0; //DATACOMMENT Casual = 0.00, Survivor = 3.00, Ultimate = 3.00, Insanity = 3.00
+export float IAL_Health_Medkit_Gain_Hard = 3.0; //DATACOMMENT Casual = 0.00, Survivor = 3.00, Ultimate = 3.00, Insanity = 3.00
+export float IAL_Health_Medkit_Gain_Nightmare = 0.5; //DATACOMMENT Casual = 0.00, Survivor = 0.50, Ultimate = 0.50, Insanity = 0.50
 
 //{STAMINA}
-//DATACOMMENT LOCATION - (scripts/difficultyparams.scr) -----\\\\\\\\\\\\\\\
-//COMMENT The amount of stamina drained when running based on difficulty
-export float IAL_Stamina_Run_Drain_Easy = 0.75; //Default is 0.75
-export float IAL_Stamina_Run_Drain_Normal = 1.0; //Default is 1.0
-export float IAL_Stamina_Run_Drain_Hard = 1.1; //Default is 1.0
-export float IAL_Stamina_Run_Drain_Nightmare = 1.2; //Default is 1.0
-
+//LOCATION - (scripts/difficultyparams.scr) -----\\\\\\\\\\\\\\\
 //COMMENT The amount of stamina drained when attacking on difficulty
-export float IAL_Stamina_Attack_Drain_Easy = 0.75; //Default is 0.75
-export float IAL_Stamina_Attack_Drain_Normal = 1.0; //Default is 1.0
-export float IAL_Stamina_Attack_Drain_Hard = 1.1; //Default is 1.0
-export float IAL_Stamina_Attack_Drain_Nightmare = 1.2; //Default is 1.0
+export float IAL_Stamina_Run_Drain_Easy = 0.8; //DATACOMMENT Casual = 0.00, Survivor = 0.75, Ultimate = 0.75, Insanity = 0.75
+export float IAL_Stamina_Run_Drain_Normal = 1.0; //DATACOMMENT Casual = 0.00, Survivor = 1.00, Ultimate = 1.00, Insanity = 1.00
+export float IAL_Stamina_Run_Drain_Hard = 1.1; //DATACOMMENT Casual = 0.00, Survivor = 1.10, Ultimate = 1.10, Insanity = 1.10
+export float IAL_Stamina_Run_Drain_Nightmare = 1.2; //DATACOMMENT Casual = 0.00, Survivor = 1.20, Ultimate = 1.20, Insanity = 1.20
+export float IAL_Stamina_Attack_Drain_Easy = 0.8; //DATACOMMENT Casual = 0.00, Survivor = 0.75, Ultimate = 0.75, Insanity = 0.75
+export float IAL_Stamina_Attack_Drain_Normal = 1.0; //DATACOMMENT Casual = 0.00, Survivor = 1.00, Ultimate = 1.00, Insanity = 1.00
+export float IAL_Stamina_Attack_Drain_Hard = 1.1; //DATACOMMENT Casual = 0.00, Survivor = 1.10, Ultimate = 1.10, Insanity = 1.10
+export float IAL_Stamina_Attack_Drain_Nightmare = 1.2; //DATACOMMENT Casual = 0.00, Survivor = 1.20, Ultimate = 1.20, Insanity = 1.20
 
 //{COMBAT}
-//DATACOMMENT LOCATION - (ai/player/player_variables_hard.scr) -----\\
-export float IAL_Combat_Human_Overall_DmgMulti = 1.0; //Default: 1.0
-export float IAL_Combat_Human_Overall_DmgMulti_COOP2player = 1.1; //Default: 1.1
-export float IAL_Combat_Human_Overall_DmgMulti_COOP3player = 1.2; //Default: 1.2
-export float IAL_Combat_Human_Overall_DmgMulti_COOP4player = 1.3; //Default: 1.3
-export float IAL_Combat_Human_Overall_DmgVsAIMulti = 1.0; //Default: 1.0
-export float IAL_Combat_AirKick_PhysicsDmg = 5.0; //Default is 2.0
+//LOCATION - (ai/player/player_variables_hard.scr) -----\\
+export float IAL_Combat_Human_Overall_DmgMulti = 1.0; //DATACOMMENT Casual = 0.00, Survivor = 1.00, Ultimate = 1.00, Insanity = 1.00
+export float IAL_Combat_Human_Overall_DmgMulti_COOP2player = 1.1; //DATACOMMENT Casual = 0.00, Survivor = 1.10, Ultimate = 1.10, Insanity = 1.10
+export float IAL_Combat_Human_Overall_DmgMulti_COOP3player = 1.2; //DATACOMMENT Casual = 0.00, Survivor = 1.20, Ultimate = 1.20, Insanity = 1.20
+export float IAL_Combat_Human_Overall_DmgMulti_COOP4player = 1.3; //DATACOMMENT Casual = 0.00, Survivor = 1.30, Ultimate = 1.30, Insanity = 1.30
+export float IAL_Combat_Human_Overall_DmgVsAIMulti = 1.0; //DATACOMMENT Casual = 0.00, Survivor = 1.00, Ultimate = 1.00, Insanity = 1.00
+export float IAL_Combat_AirKick_PhysicsDmg = 5.0; //DATACOMMENT Casual = 0.00, Survivor = 5.00, Ultimate = 5.00, Insanity = 5.00
 
 //{DEATH}
-//DATACOMMENT LOCATION - (scripts/difficultyparams.scr) -----\\\\\\\\\\\\\\\
-//COMMENT Death penalty for XP
-export float IAL_Death_Penalty_XP_Easy = 0.0; //Default 0.0
-export float IAL_Death_Penalty_XP_Normal = 0.5; //Default 0.5
-export float IAL_Death_Penalty_XP_Hard = 2.5; //Default 2.5
-export float IAL_Death_Penalty_XP_Nightmare = 2.5; //Default 2.5
-
+//LOCATION - (scripts/difficultyparams.scr) -----\\\\\\\\\\\\\\\
 //COMMENT Death penalty for Legend XP
-export float IAL_Death_Penalty_LegendXP_Easy = 0.0; //Default 0.0
-export float IAL_Death_Penalty_LegendXP_Normal = 0.0; //Default 0.0
-export float IAL_Death_Penalty_LegendXP_Hard = 0.0; //Default 0.0
-export float IAL_Death_Penalty_LegendXP_Nightmare = 1.0; //Default 1.0
+export float IAL_Death_Penalty_XP_Easy = 0.0; //DATACOMMENT Casual = 0.00, Survivor = 0.00, Ultimate = 0.00, Insanity = 0.00
+export float IAL_Death_Penalty_XP_Normal = 0.5; //DATACOMMENT Casual = 0.00, Survivor = 0.50, Ultimate = 0.50, Insanity = 0.50
+export float IAL_Death_Penalty_XP_Hard = 2.5; //DATACOMMENT Casual = 0.00, Survivor = 2.50, Ultimate = 2.50, Insanity = 2.50
+export float IAL_Death_Penalty_XP_Nightmare = 2.5; //DATACOMMENT Casual = 0.00, Survivor = 2.50, Ultimate = 2.50, Insanity = 2.50
+export float IAL_Death_Penalty_LegendXP_Easy = 0.0; //DATACOMMENT Casual = 0.00, Survivor = 0.00, Ultimate = 0.00, Insanity = 0.00
+export float IAL_Death_Penalty_LegendXP_Normal = 0.0; //DATACOMMENT Casual = 0.00, Survivor = 0.00, Ultimate = 0.00, Insanity = 0.00
+export float IAL_Death_Penalty_LegendXP_Hard = 0.0; //DATACOMMENT Casual = 0.00, Survivor = 0.00, Ultimate = 0.00, Insanity = 0.00
+export float IAL_Death_Penalty_LegendXP_Nightmare = 1.0; //DATACOMMENT Casual = 0.00, Survivor = 1.00, Ultimate = 1.00, Insanity = 1.00
 
 //{TIMESCALE}
-//DATACOMMENT LOCATION - (scripts/dw_weather_def.scr) -----\\\\\\\\\\\\\\\\\
-//COMMENT Total time for each day, currently it's around 2x as long for days and 4x for nights
-export float IAL_TimeScale_Day = 8200.0; //Vanilla settings: 4800.0
-export float IAL_TimeScale_Night = 8200.0; //Vanilla settings: 2400.0 Nights are much shorter in vanilla
-export float IAL_TimeScale_Interior = 8640.0; //Vanilla settings: 8640.0
-
-//DATACOMMENT LOCATION - (scripts/difficultyparams.scr) -----\\\\\\\\\\\\\\\\\
+//LOCATION - (scripts/difficultyparams.scr) -----\\\\\\\\\\\\\\\\\
 //COMMENT Multiplier applied by the difficulty setting for Day and Night
-export float IAL_TimeScale_Multiplier_Day_Easy = 1.25; //Default 1.25
-export float IAL_TimeScale_Multiplier_Night_Easy = 0.75; //Default 0.75
-export float IAL_TimeScale_Multiplier_Day_Normal = 1.0; //Default 0.0
-export float IAL_TimeScale_Multiplier_Night_Normal = 1.0; //Default 0.0
-export float IAL_TimeScale_Multiplier_Day_Hard = 1.0; //Default 0.0
-export float IAL_TimeScale_Multiplier_Night_Hard = 1.0; //Default 0.0
-export float IAL_TimeScale_Multiplier_Day_Nightmare = 0.89; //Default 0.89
-export float IAL_TimeScale_Multiplier_Night_Nightmare = 2.0; //Default 2.0
+export float IAL_TimeScale_Day = 8200.0; //DATACOMMENT Casual = 0.00, Survivor = 8200.00, Ultimate = 8200.00, Insanity = 8200.00
+export float IAL_TimeScale_Night = 8200.0; //DATACOMMENT Casual = 0.00, Survivor = 8200.00, Ultimate = 8200.00, Insanity = 8200.00
+export float IAL_TimeScale_Interior = 8640.0; //DATACOMMENT Casual = 0.00, Survivor = 8640.00, Ultimate = 8640.00, Insanity = 8640.00
+export float IAL_TimeScale_Multiplier_Day_Easy = 1.3; //DATACOMMENT Casual = 0.00, Survivor = 1.25, Ultimate = 1.25, Insanity = 1.25
+export float IAL_TimeScale_Multiplier_Night_Easy = 0.8; //DATACOMMENT Casual = 0.00, Survivor = 0.75, Ultimate = 0.75, Insanity = 0.75
+export float IAL_TimeScale_Multiplier_Day_Normal = 1.0; //DATACOMMENT Casual = 0.00, Survivor = 1.00, Ultimate = 1.00, Insanity = 1.00
+export float IAL_TimeScale_Multiplier_Night_Normal = 1.0; //DATACOMMENT Casual = 0.00, Survivor = 1.00, Ultimate = 1.00, Insanity = 1.00
+export float IAL_TimeScale_Multiplier_Day_Hard = 1.0; //DATACOMMENT Casual = 0.00, Survivor = 1.00, Ultimate = 1.00, Insanity = 1.00
+export float IAL_TimeScale_Multiplier_Night_Hard = 1.0; //DATACOMMENT Casual = 0.00, Survivor = 1.00, Ultimate = 1.00, Insanity = 1.00
+export float IAL_TimeScale_Multiplier_Day_Nightmare = 0.9; //DATACOMMENT Casual = 0.00, Survivor = 0.89, Ultimate = 0.89, Insanity = 0.89
+export float IAL_TimeScale_Multiplier_Night_Nightmare = 2.0; //DATACOMMENT Casual = 0.00, Survivor = 2.00, Ultimate = 2.00, Insanity = 2.00
 
 //{CAMERA}
-//DATACOMMENT LOCATION - (scripts/player/player_variables_hard.scr) -----\\
-export float IAL_Camera_FOV = 70.0; //Default is 57.0
+//LOCATION - (scripts/player/player_variables_hard.scr) -----\\
+export float IAL_Camera_FOV = 70.0; //DATACOMMENT Casual = 0.00, Survivor = 70.00, Ultimate = 70.00, Insanity = 70.00
 
 //{CAMOFLAGE}
-//DATACOMMENT LOCATION - (scripts/difficultyparams.scr) -----\\\\\\\\\\\\\
+//LOCATION - (scripts/difficultyparams.scr) -----\\\\\\\\\\\\\
 //COMMENT Boosts applied to Camoflage based on difficulty
-export float IAL_Camo_Duration_Multiplier_Easy = 1.25; //Default: 0.66
-export float IAL_Camo_Duration_Multiplier_Normal = 1.0; //Default: 0.66
-export float IAL_Camo_Duration_Multiplier_Hard = 0.66; //Default: 0.66
-export float IAL_Camo_Duration_Multiplier_Nightmare = 0.66; //Default: 0.66
+export float IAL_Camo_Duration_Multiplier_Easy = 1.3; //DATACOMMENT Casual = 0.00, Survivor = 1.25, Ultimate = 1.25, Insanity = 1.25
+export float IAL_Camo_Duration_Multiplier_Normal = 1.0; //DATACOMMENT Casual = 0.00, Survivor = 1.00, Ultimate = 1.00, Insanity = 1.00
+export float IAL_Camo_Duration_Multiplier_Hard = 0.7; //DATACOMMENT Casual = 0.00, Survivor = 0.66, Ultimate = 0.66, Insanity = 0.66
+export float IAL_Camo_Duration_Multiplier_Nightmare = 0.7; //DATACOMMENT Casual = 0.00, Survivor = 0.66, Ultimate = 0.66, Insanity = 0.66
 
 //{LOOTING}
-//DATACOMMENT LOCATION - (scripts/player/player_variables_hard.scr) -----\\
-export bool IAL_Loot_Auto_Pickup = TRUE; //Default: False
+//LOCATION - (scripts/player/player_variables_hard.scr) -----\\
+export bool IAL_Loot_Auto_Pickup = true; //DATACOMMENT Casual = 0, Survivor = 1, Ultimate = 1, Insanity = 1
 
-/////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
 //[DIFFICULTY]
-/////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-//DATACOMMENT LOCATION - (scripts/difficultyparams.scr) -----\\\\\\\\\\\\\\\
 //{AI}
-export float IAL_Difficulty_NightSpotting_Easy = 2.0; //Default: 1.0
-export float IAL_Difficulty_NightSpotting_Normal = 1.0; //Default: 1.0
-export float IAL_Difficulty_NightSpotting_Hard = 1.0; //Default: 1.0
-export float IAL_Difficulty_NightSpotting_Nightmare = 1.0; //Default: 1.0
+export float IAL_Difficulty_NightSpotting_Easy = 2.0; //DATACOMMENT Casual = 0.00, Survivor = 2.00, Ultimate = 2.00, Insanity = 2.00
+export float IAL_Difficulty_NightSpotting_Normal = 1.0; //DATACOMMENT Casual = 0.00, Survivor = 1.00, Ultimate = 1.00, Insanity = 1.00
+export float IAL_Difficulty_NightSpotting_Hard = 1.0; //DATACOMMENT Casual = 0.00, Survivor = 1.00, Ultimate = 1.00, Insanity = 1.00
+export float IAL_Difficulty_NightSpotting_Nightmare = 1.0; //DATACOMMENT Casual = 0.00, Survivor = 1.00, Ultimate = 1.00, Insanity = 1.00
 
 //{ENEMY HEALTH}
-export string IAL_Difficulty_Health_Multiplier_Infected_Prologue = "1.0"; //Common Infected Multiplier DEFAULT: 0.001
-export string IAL_Difficulty_Health_Multiplier_Infected = "1.0"; //Common Infected Multiplier
-export string IAL_Difficulty_Health_Multiplier_Infected_Heavy = "1.0"; //Common Infected Multiplier
-export string IAL_Difficulty_Health_Multiplier_Infected_Deadzone = "10.0"; //DEFAULT: 10.0
-export string IAL_Difficulty_Health_Multiplier_Infected_Boss = "6.0"; //Various Bosses around the world Default:6.0
-
-export string IAL_Difficulty_Health_Multiplier_GasTank = "1.0"; //Common Infected Multiplier
-
-export string IAL_Difficulty_Health_Multiplier_Bomber = "1.0"; //Common Infected Multiplier
-export string IAL_Difficulty_Health_Multiplier_Demolisher = "1.0"; //Common Infected Multiplier
-export string IAL_Difficulty_Health_Multiplier_Demolisher_Wasteland = "1.2"; //Common Infected Multiplier
-export string IAL_Difficulty_Health_Multiplier_Goon = "1.0"; //Common Infected Multiplier
-export string IAL_Difficulty_Health_Multiplier_Goon_Deadzone = "1.2"; //Common Infected Multiplier
-export string IAL_Difficulty_Health_Multiplier_Hive = "1.0"; //Common Infected Multiplier
-export string IAL_Difficulty_Health_Multiplier_Screamer = "1.0"; //Common Infected Multiplier
-export string IAL_Difficulty_Health_Multiplier_Spitter = "1.0"; //Common Infected Multiplier
-export string IAL_Difficulty_Health_Multiplier_Volatile = "1.1"; //Common Infected Multiplier
-export string IAL_Difficulty_Health_Multiplier_Volatile_Super = "1.2"; //Common Infected Multiplier
-export string IAL_Difficulty_Health_Multiplier_Volatile_Prime = "1.3"; //Common Infected Multiplier
-
-export string IAL_Difficulty_Health_Multiplier_RaisBandit = "1.3"; //Rais's men Multiplier
-export string IAL_Difficulty_Health_Multiplier_Human = "1.0"; //Rais's men Multiplier
-export string IAL_Difficulty_Health_Multiplier_Human_Quest_Escort = "3.0"; //Rais's men Multiplier
-export string IAL_Difficulty_Health_Multiplier_Human_Armored = "1.1"; //Rais's men Multiplier
-export string IAL_Difficulty_Health_Multiplier_Human_Heavy_Armored = "1.2"; //Rais's men Multiplier
-export string IAL_Difficulty_Health_Multiplier_Human_Bozak = "1.5"; //DEFAULT: 1.5
-export string IAL_Difficulty_Health_Multiplier_Human_Boss = "2.0"; //Rais's men Multiplier
-
-export string IAL_Difficulty_Health_Multiplier_HellRaid = "1.0"; //Common Infected Multiplier
+export string IAL_Difficulty_Health_Multiplier_Infected_Prologue = "1.0"; //DATACOMMENT Casual = , Survivor = 1.0, Ultimate = 1.0, Insanity = 1.0
+export string IAL_Difficulty_Health_Multiplier_Infected = "1.0"; //DATACOMMENT Casual = , Survivor = 1.0, Ultimate = 1.0, Insanity = 1.0
+export string IAL_Difficulty_Health_Multiplier_Infected_Heavy = "1.0"; //DATACOMMENT Casual = , Survivor = 1.0, Ultimate = 1.0, Insanity = 1.0
+export string IAL_Difficulty_Health_Multiplier_Infected_Deadzone = "10.0"; //DATACOMMENT Casual = , Survivor = 10.0, Ultimate = 10.0, Insanity = 10.0
+export string IAL_Difficulty_Health_Multiplier_Infected_Boss = "6.0"; //DATACOMMENT Casual = , Survivor = 6.0, Ultimate = 6.0, Insanity = 6.0
+export string IAL_Difficulty_Health_Multiplier_GasTank = "1.0"; //DATACOMMENT Casual = , Survivor = 1.0, Ultimate = 1.0, Insanity = 1.0
+export string IAL_Difficulty_Health_Multiplier_Bomber = "1.0"; //DATACOMMENT Casual = , Survivor = 1.0, Ultimate = 1.0, Insanity = 1.0
+export string IAL_Difficulty_Health_Multiplier_Demolisher = "1.0"; //DATACOMMENT Casual = , Survivor = 1.0, Ultimate = 1.0, Insanity = 1.0
+export string IAL_Difficulty_Health_Multiplier_Demolisher_Wasteland = "1.2"; //DATACOMMENT Casual = , Survivor = 1.2, Ultimate = 1.2, Insanity = 1.2
+export string IAL_Difficulty_Health_Multiplier_Goon = "1.0"; //DATACOMMENT Casual = , Survivor = 1.0, Ultimate = 1.0, Insanity = 1.0
+export string IAL_Difficulty_Health_Multiplier_Goon_Deadzone = "1.2"; //DATACOMMENT Casual = , Survivor = 1.2, Ultimate = 1.2, Insanity = 1.2
+export string IAL_Difficulty_Health_Multiplier_Hive = "1.0"; //DATACOMMENT Casual = , Survivor = 1.0, Ultimate = 1.0, Insanity = 1.0
+export string IAL_Difficulty_Health_Multiplier_Screamer = "1.0"; //DATACOMMENT Casual = , Survivor = 1.0, Ultimate = 1.0, Insanity = 1.0
+export string IAL_Difficulty_Health_Multiplier_Spitter = "1.0"; //DATACOMMENT Casual = , Survivor = 1.0, Ultimate = 1.0, Insanity = 1.0
+export string IAL_Difficulty_Health_Multiplier_Volatile = "1.1"; //DATACOMMENT Casual = , Survivor = 1.1, Ultimate = 1.1, Insanity = 1.1
+export string IAL_Difficulty_Health_Multiplier_Volatile_Super = "1.2"; //DATACOMMENT Casual = , Survivor = 1.2, Ultimate = 1.2, Insanity = 1.2
+export string IAL_Difficulty_Health_Multiplier_Volatile_Prime = "1.3"; //DATACOMMENT Casual = , Survivor = 1.3, Ultimate = 1.3, Insanity = 1.3
+export string IAL_Difficulty_Health_Multiplier_RaisBandit = "1.3"; //DATACOMMENT Casual = , Survivor = 1.3, Ultimate = 1.3, Insanity = 1.3
+export string IAL_Difficulty_Health_Multiplier_Human = "1.0"; //DATACOMMENT Casual = , Survivor = 1.0, Ultimate = 1.0, Insanity = 1.0
+export string IAL_Difficulty_Health_Multiplier_Human_Quest_Escort = "3.0"; //DATACOMMENT Casual = , Survivor = 3.0, Ultimate = 3.0, Insanity = 3.0
+export string IAL_Difficulty_Health_Multiplier_Human_Armored = "1.1"; //DATACOMMENT Casual = , Survivor = 1.1, Ultimate = 1.1, Insanity = 1.1
+export string IAL_Difficulty_Health_Multiplier_Human_Heavy_Armored = "1.2"; //DATACOMMENT Casual = , Survivor = 1.2, Ultimate = 1.2, Insanity = 1.2
+export string IAL_Difficulty_Health_Multiplier_Human_Bozak = "1.5"; //DATACOMMENT Casual = , Survivor = 1.5, Ultimate = 1.5, Insanity = 1.5
+export string IAL_Difficulty_Health_Multiplier_Human_Boss = "2.0"; //DATACOMMENT Casual = , Survivor = 2.0, Ultimate = 2.0, Insanity = 2.0
+export string IAL_Difficulty_Health_Multiplier_HellRaid = "1.0"; //DATACOMMENT Casual = , Survivor = 1.0, Ultimate = 1.0, Insanity = 1.0
 
 //{AIRDROPS}
 //COMMENT This is the time percentage for Rais' patrols and Airdrops
-export float IAL_Difficulty_Airdrops_Easy = 1.5; //Default: 2.0, 
-export float IAL_Difficulty_Airdrops_Normal = 1.0; //Default: 1.0
-export float IAL_Difficulty_Airdrops_Hard = 0.3; //Default: 0.3
-export float IAL_Difficulty_Airdrops_Nightmare = 0.3; //Default: 0.3
+export float IAL_Difficulty_Airdrops_Easy = 1.5; //DATACOMMENT Casual = 0.00, Survivor = 1.50, Ultimate = 1.50, Insanity = 1.50
+export float IAL_Difficulty_Airdrops_Normal = 1.0; //DATACOMMENT Casual = 0.00, Survivor = 1.00, Ultimate = 1.00, Insanity = 1.00
+export float IAL_Difficulty_Airdrops_Hard = 0.3; //DATACOMMENT Casual = 0.00, Survivor = 0.30, Ultimate = 0.30, Insanity = 0.30
+export float IAL_Difficulty_Airdrops_Nightmare = 0.3; //DATACOMMENT Casual = 0.00, Survivor = 0.30, Ultimate = 0.30, Insanity = 0.30
 
 //{GUNS}
 //COMMENT This is the percentage of chance for hitting the target
-export float IAL_Difficulty_ShotAccuracy_Easy = 1.5; //Default: 1.0, 
-export float IAL_Difficulty_ShotAccuracy_Normal = 1.0; //Default: 1.0
-export float IAL_Difficulty_ShotAccuracy_Hard = 0.9; //Default: 1.25
-export float IAL_Difficulty_ShotAccuracy_Nightmare = 0.9; //Default: 1.25
+export float IAL_Difficulty_ShotAccuracy_Easy = 1.5; //DATACOMMENT Casual = 0.00, Survivor = 1.50, Ultimate = 1.50, Insanity = 1.50
+export float IAL_Difficulty_ShotAccuracy_Normal = 1.0; //DATACOMMENT Casual = 0.00, Survivor = 1.00, Ultimate = 1.00, Insanity = 1.00
+export float IAL_Difficulty_ShotAccuracy_Hard = 0.9; //DATACOMMENT Casual = 0.00, Survivor = 0.90, Ultimate = 0.90, Insanity = 0.90
+export float IAL_Difficulty_ShotAccuracy_Nightmare = 0.9; //DATACOMMENT Casual = 0.00, Survivor = 0.90, Ultimate = 0.90, Insanity = 0.90
 
-/////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
 //[PHYSICS]
-/////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-//DATACOMMENT LOCATION - (scripts/difficultyparams.scr) -----\\\\\\\\\\\\\\\
+//{Physics}
+//LOCATION - (scripts/difficultyparams.scr) -----\\\\\\\\\\\\\\\
 //COMMENT Additional force applied based on game difficulty
-export float IAL_Overall_Phys_To_Enemies_Easy = 0.0; //Default: 0.0
-export float IAL_Overall_Phys_To_Enemies_Normal = 0.0; //Default: 0.0
-export float IAL_Overall_Phys_To_Enemies_Hard = 0.7; //Default: 0.0
-export float IAL_Overall_Phys_To_Enemies_Nightmare = 1.7; //Default: 0.0
+export float IAL_Overall_Phys_To_Enemies_Easy = 0.0; //DATACOMMENT Casual = 0.00, Survivor = 0.00, Ultimate = 0.00, Insanity = 0.00
+export float IAL_Overall_Phys_To_Enemies_Normal = 0.0; //DATACOMMENT Casual = 0.00, Survivor = 0.00, Ultimate = 0.00, Insanity = 0.00
+export float IAL_Overall_Phys_To_Enemies_Hard = 0.7; //DATACOMMENT Casual = 0.00, Survivor = 0.70, Ultimate = 0.70, Insanity = 0.70
+export float IAL_Overall_Phys_To_Enemies_Nightmare = 1.7; //DATACOMMENT Casual = 0.00, Survivor = 1.70, Ultimate = 1.70, Insanity = 1.70
 
-/////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
 //[UI]
-/////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-//DATACOMMENT LOCATION - (scripts/locations.scr) -----\\
-//COMMENT "TRUE" is on, "FALSE" is off
-export bool IAL_Interface_HUD_Show3D = TRUE;
-
-//DATACOMMENT LOCATION - (scripts/difficultyparams.scr) -----\\\\\\\\\\\\\\\\\
-//COMMENT Setting for turning on and off Hud Tips
-export bool IAL_Interface_HudTips_Easy = TRUE; //Default: False
-export bool IAL_Interface_HudTips_Normal = TRUE; //Default: False
-export bool IAL_Interface_HudTips_Hard = TRUE; //Default: False
-export bool IAL_Interface_HudTips_Nightmare = FALSE; //Default: False
-
+//{UI}
+//LOCATION - (scripts/difficultyparams.scr) -----\\\\\\\\\\\\\\\\\
 //COMMENT Setting for turning on and off patrol cones
-export bool IAL_Interface_PatrolCone_Easy = TRUE; //Default: False
-export bool IAL_Interface_PatrolCone_Normal = TRUE; //Default: False
-export bool IAL_Interface_PatrolCone_Hard = FALSE; //Default: False
-export bool IAL_Interface_PatrolCone_Nightmare = FALSE; //Default: False
-/////////////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+export bool IAL_Interface_HUD_Show3D = true; //DATACOMMENT Casual = 0, Survivor = 1, Ultimate = 1, Insanity = 1
+export bool IAL_Interface_HudTips_Easy = true; //DATACOMMENT Casual = 0, Survivor = 1, Ultimate = 1, Insanity = 1
+export bool IAL_Interface_HudTips_Normal = true; //DATACOMMENT Casual = 0, Survivor = 1, Ultimate = 1, Insanity = 1
+export bool IAL_Interface_HudTips_Hard = true; //DATACOMMENT Casual = 0, Survivor = 1, Ultimate = 1, Insanity = 1
+export bool IAL_Interface_HudTips_Nightmare = false; //DATACOMMENT Casual = 0, Survivor = 0, Ultimate = 0, Insanity = 0
+export bool IAL_Interface_PatrolCone_Easy = true; //DATACOMMENT Casual = 0, Survivor = 1, Ultimate = 1, Insanity = 1
+export bool IAL_Interface_PatrolCone_Normal = true; //DATACOMMENT Casual = 0, Survivor = 1, Ultimate = 1, Insanity = 1
+export bool IAL_Interface_PatrolCone_Hard = false; //DATACOMMENT Casual = 0, Survivor = 0, Ultimate = 0, Insanity = 0
+export bool IAL_Interface_PatrolCone_Nightmare = false; //DATACOMMENT Casual = 0, Survivor = 0, Ultimate = 0, Insanity = 0
 
-/////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
 //[COMMERCE]
-/////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 //{TRADERS}
-//COMMENT This allows Hard tier weapons on Easy difficulty in shops
-export bool IAL_Commerce_AllowHardShopItems_Easy = TRUE; //Default: False, 
-export bool IAL_Commerce_AllowHardShopItems_Normal = TRUE; //Default: False
-export bool IAL_Commerce_AllowHardShopItems_Hard = TRUE; //Default: True
-export bool IAL_Commerce_AllowHardShopItems_Nightmare = TRUE; //Default: False
-
 //COMMENT This is the multiplier for shop prices based on difficulty
-export float IAL_Commerce_SellingPrices_Easy = 1.2; //Default: 1.2, 
-export float IAL_Commerce_SellingPrices_Normal = 1.0; //Default: 1.0
-export float IAL_Commerce_SellingPrices_Hard = 0.8; //Default: 1.0
-export float IAL_Commerce_SellingPrices_Nightmare = 0.5; //Default: 1.0
-/////////////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+export bool IAL_Commerce_AllowHardShopItems_Easy = true; //DATACOMMENT Casual = 0, Survivor = 1, Ultimate = 1, Insanity = 1
+export bool IAL_Commerce_AllowHardShopItems_Normal = true; //DATACOMMENT Casual = 0, Survivor = 1, Ultimate = 1, Insanity = 1
+export bool IAL_Commerce_AllowHardShopItems_Hard = true; //DATACOMMENT Casual = 0, Survivor = 1, Ultimate = 1, Insanity = 1
+export bool IAL_Commerce_AllowHardShopItems_Nightmare = true; //DATACOMMENT Casual = 0, Survivor = 1, Ultimate = 1, Insanity = 1
+export float IAL_Commerce_SellingPrices_Easy = 1.2; //DATACOMMENT Casual = 0.00, Survivor = 1.20, Ultimate = 1.20, Insanity = 1.20
+export float IAL_Commerce_SellingPrices_Normal = 1.0; //DATACOMMENT Casual = 0.00, Survivor = 1.00, Ultimate = 1.00, Insanity = 1.00
+export float IAL_Commerce_SellingPrices_Hard = 0.8; //DATACOMMENT Casual = 0.00, Survivor = 0.80, Ultimate = 0.80, Insanity = 0.80
+export float IAL_Commerce_SellingPrices_Nightmare = 0.5; //DATACOMMENT Casual = 0.00, Survivor = 0.50, Ultimate = 0.50, Insanity = 0.50
 
-/////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
 //[EXPERIENCE]
-/////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-//DATACOMMENT LOCATION - (scripts/difficultyparams.scr) -----\\\\\\\\\\\\\\\\\
-////////// -------  LEGEND EXPERIENCE  ------- \\\\\\\\\\\\\\\\\\\\\ 
-//COMMENT Amount of Legend experience you will recieve based on difficulty
-export float IAL_Experience_Legend_XP_Easy = 0.5; //Default is 0.5
-export float IAL_Experience_Legend_XP_Normal = 1.0; //Default is 1.0
-export float IAL_Experience_Legend_XP_Hard = 2.5; //Default is 2.5
-export float IAL_Experience_Legend_XP_Nightmare = 10.0; //Default is 10.0
-
+//{EXPERIENCE}
+//LOCATION - (scripts/difficultyparams.scr) -----\\\\\\\\\\\\\\\\\
 //COMMENT Amount of Legend experience you will recieve playing Coop while playing based on difficulty
-export float IAL_Experience_Legend_XP_2Player_Easy = 1.1; //Default is 1.1
-export float IAL_Experience_Legend_XP_2Player_Normal = 1.1; //Default is 1.1
-export float IAL_Experience_Legend_XP_2Player_Hard = 1.1; //Default is 1.1
-export float IAL_Experience_Legend_XP_2Player_Nightmare = 1.1; //Default is 1.1
+export float IAL_Experience_Legend_XP_Easy = 0.5; //DATACOMMENT Casual = 0.00, Survivor = 0.50, Ultimate = 0.50, Insanity = 0.50
+export float IAL_Experience_Legend_XP_Normal = 1.0; //DATACOMMENT Casual = 0.00, Survivor = 1.00, Ultimate = 1.00, Insanity = 1.00
+export float IAL_Experience_Legend_XP_Hard = 2.5; //DATACOMMENT Casual = 0.00, Survivor = 2.50, Ultimate = 2.50, Insanity = 2.50
+export float IAL_Experience_Legend_XP_Nightmare = 10.0; //DATACOMMENT Casual = 0.00, Survivor = 10.00, Ultimate = 10.00, Insanity = 10.00
+export float IAL_Experience_Legend_XP_2Player_Easy = 1.1; //DATACOMMENT Casual = 0.00, Survivor = 1.10, Ultimate = 1.10, Insanity = 1.10
+export float IAL_Experience_Legend_XP_2Player_Normal = 1.1; //DATACOMMENT Casual = 0.00, Survivor = 1.10, Ultimate = 1.10, Insanity = 1.10
+export float IAL_Experience_Legend_XP_2Player_Hard = 1.1; //DATACOMMENT Casual = 0.00, Survivor = 1.10, Ultimate = 1.10, Insanity = 1.10
+export float IAL_Experience_Legend_XP_2Player_Nightmare = 1.1; //DATACOMMENT Casual = 0.00, Survivor = 1.10, Ultimate = 1.10, Insanity = 1.10
+export float IAL_Experience_Legend_XP_3Player_Easy = 1.2; //DATACOMMENT Casual = 0.00, Survivor = 1.20, Ultimate = 1.20, Insanity = 1.20
+export float IAL_Experience_Legend_XP_3Player_Normal = 1.2; //DATACOMMENT Casual = 0.00, Survivor = 1.20, Ultimate = 1.20, Insanity = 1.20
+export float IAL_Experience_Legend_XP_3Player_Hard = 1.2; //DATACOMMENT Casual = 0.00, Survivor = 1.20, Ultimate = 1.20, Insanity = 1.20
+export float IAL_Experience_Legend_XP_3Player_Nightmare = 1.2; //DATACOMMENT Casual = 0.00, Survivor = 1.20, Ultimate = 1.20, Insanity = 1.20
+export float IAL_Experience_Legend_XP_4Player_Easy = 1.3; //DATACOMMENT Casual = 0.00, Survivor = 1.30, Ultimate = 1.30, Insanity = 1.30
+export float IAL_Experience_Legend_XP_4Player_Normal = 1.3; //DATACOMMENT Casual = 0.00, Survivor = 1.30, Ultimate = 1.30, Insanity = 1.30
+export float IAL_Experience_Legend_XP_4Player_Hard = 1.3; //DATACOMMENT Casual = 0.00, Survivor = 1.30, Ultimate = 1.30, Insanity = 1.30
+export float IAL_Experience_Legend_XP_4Player_Nightmare = 1.3; //DATACOMMENT Casual = 0.00, Survivor = 1.30, Ultimate = 1.30, Insanity = 1.30
 
-export float IAL_Experience_Legend_XP_3Player_Easy = 1.2; //Default is 1.2
-export float IAL_Experience_Legend_XP_3Player_Normal = 1.2; //Default is 1.2
-export float IAL_Experience_Legend_XP_3Player_Hard = 1.2; //Default is 1.2
-export float IAL_Experience_Legend_XP_3Player_Nightmare = 1.2; //Default is 1.2
 
-export float IAL_Experience_Legend_XP_4Player_Easy = 1.3; //Default is 1.3
-export float IAL_Experience_Legend_XP_4Player_Normal = 1.3; //Default is 1.3
-export float IAL_Experience_Legend_XP_4Player_Hard = 1.3; //Default is 1.3
-export float IAL_Experience_Legend_XP_4Player_Nightmare = 1.3; //Default is 1.3
+//[WEAPONS]
+//{GENERAL SETTINGS}
+//LOCATION - (scripts/player/player_variables_hard.scr) -----\\\
 
 //{RANGED}
-//DATACOMMENT LOCATION - (scripts/iventory/inventory_special.scr) -----\\
-export float IAL_Weapons_Ranged_Zombie_NightmareDif_HeadshotDMG_Mul = 2.1;//Default: 2.0
-export float IAL_Weapons_Ranged_Zombie_HeadshotDMG_Mul = 1.1;//Default: 1.0
-export float IAL_Weapons_Ranged_Zombie_BodyDMG_Mul = 0.3;//Default: 0.4
-export float IAL_Weapons_Ranged_Human_HeadshotDMG_Mul = 2.0; //Default: 2.0
-export float IAL_Weapons_Ranged_Human_BodyDMG_Mul = 1.0; //Default: 1.0
+//LOCATION - (scripts/iventory/inventory_special.scr) -----\\
+export float IAL_Weapons_Ranged_Zombie_NightmareDif_HeadshotDMG_Mul = 2.1; //DATACOMMENT Casual = 0.00, Survivor = 2.10, Ultimate = 2.10, Insanity = 2.10
+export float IAL_Weapons_Ranged_Zombie_HeadshotDMG_Mul = 1.1; //DATACOMMENT Casual = 0.00, Survivor = 1.10, Ultimate = 1.10, Insanity = 1.10
+export float IAL_Weapons_Ranged_Zombie_BodyDMG_Mul = 0.3; //DATACOMMENT Casual = 0.00, Survivor = 0.30, Ultimate = 0.30, Insanity = 0.30
+export float IAL_Weapons_Ranged_Human_HeadshotDMG_Mul = 2.0; //DATACOMMENT Casual = 0.00, Survivor = 2.00, Ultimate = 2.00, Insanity = 2.00
+export float IAL_Weapons_Ranged_Human_BodyDMG_Mul = 1.0; //DATACOMMENT Casual = 0.00, Survivor = 1.00, Ultimate = 1.00, Insanity = 1.00
 
 //{EXPLOSIVES}
 //COMMENT These settings effect the different explosive types in the game and their reactions\\
-export float IAL_Explosive_Zombie_Damage = 1.3;//Default: 1.0
-export float IAL_Explosive_Human_Damage = 1.3;//Default: 1.3
+export float IAL_Explosive_Zombie_Damage = 1.3; //DATACOMMENT Casual = 0.00, Survivor = 1.30, Ultimate = 1.30, Insanity = 1.30
+export float IAL_Explosive_Human_Damage = 1.3; //DATACOMMENT Casual = 0.00, Survivor = 1.30, Ultimate = 1.30, Insanity = 1.30
 
 //{AI EXPLOSIVE REACTIONS}
-//DATACOMMENT LOCATION - (ai/ai_manager.scr) -----\\
-export int IAL_AI_DistanceToReact_Explosion_Min = 70;
-export int IAL_AI_DistanceToReact_Explosion_Max = 120;
+//LOCATION - (ai/ai_manager.scr) -----\\
+export int IAL_AI_DistanceToReact_Explosion_Min = 70; //DATACOMMENT Casual = 0, Survivor = 70, Ultimate = 70, Insanity = 70
+export int IAL_AI_DistanceToReact_Explosion_Max = 120; //DATACOMMENT Casual = 0, Survivor = 120, Ultimate = 120, Insanity = 120
+
 
 //[DAMAGE MODIFIERS]
 //{GENERAL MODIFIER}
-export float IAL_Overall_Fall_Dmg_To_Player = 1.5;
-export float IAL_Overall_Dmg_To_Player_Min_Easy = 0.5; //Default: 1.3
-export float IAL_Overall_Dmg_To_Player_Max_Easy = 1.0; //Default: 1.3
-export float IAL_Overall_Dmg_To_Enemies_Easy = 0.7; //Default: 0.7
-export float IAL_Overall_Dmg_To_Player_Min_Normal = 0.5; //Default: 1.3
-export float IAL_Overall_Dmg_To_Player_Max_Normal = 1.0; //Default: 1.3
-export float IAL_Overall_Dmg_To_Enemies_Normal = 0.7; //Default: 0.7
-export float IAL_Overall_Dmg_To_Player_Min_Hard = 0.5; //Default: 1.3
-export float IAL_Overall_Dmg_To_Player_Max_Hard = 1.0; //Default: 1.3
-export float IAL_Overall_Dmg_To_Enemies_Hard = 0.7; //Default: 0.7
-export float IAL_Overall_Dmg_To_Player_Min_Nightmare = 0.5; //Default: 1.3
-export float IAL_Overall_Dmg_To_Player_Max_Nightmare = 1.0; //Default: 1.3
-export float IAL_Overall_Dmg_To_Enemies_Nightmare = 0.7; //Default: 0.7
+export float IAL_Overall_Fall_Dmg_To_Player = 1.5; //DATACOMMENT Casual = 0.00, Survivor = 1.50, Ultimate = 1.50, Insanity = 1.50
+export float IAL_Overall_Dmg_To_Player_Min_Easy = 0.5; //DATACOMMENT Casual = 0.00, Survivor = 0.50, Ultimate = 0.50, Insanity = 0.50
+export float IAL_Overall_Dmg_To_Player_Max_Easy = 1.0; //DATACOMMENT Casual = 0.00, Survivor = 1.00, Ultimate = 1.00, Insanity = 1.00
+export float IAL_Overall_Dmg_To_Enemies_Easy = 0.7; //DATACOMMENT Casual = 0.00, Survivor = 0.70, Ultimate = 0.70, Insanity = 0.70
+export float IAL_Overall_Dmg_To_Player_Min_Normal = 0.5; //DATACOMMENT Casual = 0.00, Survivor = 0.50, Ultimate = 0.50, Insanity = 0.50
+export float IAL_Overall_Dmg_To_Player_Max_Normal = 1.0; //DATACOMMENT Casual = 0.00, Survivor = 1.00, Ultimate = 1.00, Insanity = 1.00
+export float IAL_Overall_Dmg_To_Enemies_Normal = 0.7; //DATACOMMENT Casual = 0.00, Survivor = 0.70, Ultimate = 0.70, Insanity = 0.70
+export float IAL_Overall_Dmg_To_Player_Min_Hard = 0.5; //DATACOMMENT Casual = 0.00, Survivor = 0.50, Ultimate = 0.50, Insanity = 0.50
+export float IAL_Overall_Dmg_To_Player_Max_Hard = 1.0; //DATACOMMENT Casual = 0.00, Survivor = 1.00, Ultimate = 1.00, Insanity = 1.00
+export float IAL_Overall_Dmg_To_Enemies_Hard = 0.7; //DATACOMMENT Casual = 0.00, Survivor = 0.70, Ultimate = 0.70, Insanity = 0.70
+export float IAL_Overall_Dmg_To_Player_Min_Nightmare = 0.5; //DATACOMMENT Casual = 0.00, Survivor = 0.50, Ultimate = 0.50, Insanity = 0.50
+export float IAL_Overall_Dmg_To_Player_Max_Nightmare = 1.0; //DATACOMMENT Casual = 0.00, Survivor = 1.00, Ultimate = 1.00, Insanity = 1.00
+export float IAL_Overall_Dmg_To_Enemies_Nightmare = 0.7; //DATACOMMENT Casual = 0.00, Survivor = 0.70, Ultimate = 0.70, Insanity = 0.70
+export float IAL_Weapon_Global_Damage_Mul = 1.1; //DATACOMMENT Casual = 0.00, Survivor = 1.10, Ultimate = 1.10, Insanity = 1.10
+export float IAL_Weapon_Blunt_Damage_Mul = 1.1; //DATACOMMENT Casual = 0.00, Survivor = 1.10, Ultimate = 1.10, Insanity = 1.10
+export float IAL_Weapon_Cut_Damage_Mul = 1.1; //DATACOMMENT Casual = 0.00, Survivor = 1.10, Ultimate = 1.10, Insanity = 1.10
+export float IAL_Weapon_Firearm_Damage_Mul = 1.1; //DATACOMMENT Casual = 0.00, Survivor = 1.10, Ultimate = 1.10, Insanity = 1.10
+export float IAL_Weapon_Bow_Damage_Mul = 1.1; //DATACOMMENT Casual = 0.00, Survivor = 1.10, Ultimate = 1.10, Insanity = 1.10
+export float IAL_Weapon_Crossbow_Damage_Mul = 1.1; //DATACOMMENT Casual = 0.00, Survivor = 1.10, Ultimate = 1.10, Insanity = 1.10
+export float IAL_Weapon_Elemental_Damage_Mul = 1.1; //DATACOMMENT Casual = 0.00, Survivor = 1.10, Ultimate = 1.10, Insanity = 1.10
 
-export float IAL_Weapon_Global_Damage_Mul = 1.1; //Default: 1.0
-export float IAL_Weapon_Blunt_Damage_Mul = 1.1; //Default: 1.0
-export float IAL_Weapon_Cut_Damage_Mul = 1.1; //Default: 1.0
-export float IAL_Weapon_Firearm_Damage_Mul = 1.1; //Default: 1.0
-export float IAL_Weapon_Bow_Damage_Mul = 1.1; //Default: 1.0
-export float IAL_Weapon_Crossbow_Damage_Mul = 1.1; //Default: 1.0
-export float IAL_Weapon_Elemental_Damage_Mul = 1.1; //Default: 1.0
-/////////////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
-/////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 //[FALL HEIGHT]
-/////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-//DATACOMMENT LOCATION - (scripts/difficultyparams.scr) -----\\\\\\\\\\\\\\\\\
+//{FALL HEIGHT}
+//LOCATION - (scripts/difficultyparams.scr) -----\\\\\\\\\\\\\\\\\
 //COMMENT Amount of Legend experience you will recieve based on difficulty
-export float IAL_Fall_Height_Dmg_Multi_Easy = 0.5; //Default is 0.5
-export float IAL_Fall_Height_Dmg_Multi_Normal = 1.0; //Default is 0.5
-export float IAL_Fall_Height_Dmg_Multi_Hard = 1.1; //Default is 0.5
-export float IAL_Fall_Height_Dmg_Multi_Nightmare = 1.2; //Default is 0.5
+export float IAL_Fall_Height_Dmg_Multi_Easy = 0.5; //DATACOMMENT Casual = 0.00, Survivor = 0.50, Ultimate = 0.50, Insanity = 0.50
+export float IAL_Fall_Height_Dmg_Multi_Normal = 1.0; //DATACOMMENT Casual = 0.00, Survivor = 1.00, Ultimate = 1.00, Insanity = 1.00
+export float IAL_Fall_Height_Dmg_Multi_Hard = 1.1; //DATACOMMENT Casual = 0.00, Survivor = 1.10, Ultimate = 1.10, Insanity = 1.10
+export float IAL_Fall_Height_Dmg_Multi_Nightmare = 1.2; //DATACOMMENT Casual = 0.00, Survivor = 1.20, Ultimate = 1.20, Insanity = 1.20
+
+
