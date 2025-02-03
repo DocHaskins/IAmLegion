@@ -101,10 +101,6 @@ export float IAL_TimeScale_Multiplier_Night_Nightmare = 2.0; //Default 2.0
 //DATACOMMENT LOCATION - (scripts/player/player_variables_hard.scr) -----\\
 export float IAL_Camera_FOV = 70.0; //Default is 57.0
 
-//{LOOTING}
-//DATACOMMENT LOCATION - (scripts/player/player_variables_hard.scr) -----\\
-export bool IAL_Loot_Auto_Pickup = TRUE; //Default: False
-
 //{CAMOFLAGE}
 //DATACOMMENT LOCATION - (scripts/difficultyparams.scr) -----\\\\\\\\\\\\\
 //COMMENT Boosts applied to Camoflage based on difficulty
@@ -113,6 +109,9 @@ export float IAL_Camo_Duration_Multiplier_Normal = 1.0; //Default: 0.66
 export float IAL_Camo_Duration_Multiplier_Hard = 0.66; //Default: 0.66
 export float IAL_Camo_Duration_Multiplier_Nightmare = 0.66; //Default: 0.66
 
+//{LOOTING}
+//DATACOMMENT LOCATION - (scripts/player/player_variables_hard.scr) -----\\
+export bool IAL_Loot_Auto_Pickup = TRUE; //Default: False
 
 /////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 //[DIFFICULTY]
