@@ -839,24 +839,18 @@ line 2</Text>
 <AdjustToLeft>true</AdjustToLeft>
 </Properties>
 </AdvButton>
-<AdvButton>
+<MyText>
 <Properties>
-<Id>B_IAmLegion</Id>
+<Id>T_IAmLegion</Id>
 <Width>300.000000</Width>
 <Height>54.000000</Height>
-<Position>0.000000,0.000000,0.000000</Position>
-<ClassOverride>UiButtonMainDi</ClassOverride>
-<Visual>ButtonMainNewV</Visual>
-<NavUp>B_WhatsNew</NavUp>
-<NavDown>B_LIVEParty</NavDown>
-<NavTabForward>B_LIVEParty</NavTabForward>
-<NavTabBackward>B_WhatsNew</NavTabBackward>
-<Text>I Am Legion - 1.33</Text>
-<MarginBottom>3.000000</MarginBottom>
-<AutoAdjustWidth>true</AutoAdjustWidth>
-<AdjustToLeft>true</AdjustToLeft>
+<Position>5.000000,2.500000,0.000000</Position>
+<Text>I Am Legion - 1.33a</Text>
+<TextColor>0xffe5e5e5</TextColor>
+<Font>boxed_b_17</Font>
+<TextStyle>4352</TextStyle>
 </Properties>
-</AdvButton>
+</MyText>
 <Timelines>
 <NamedFrames>
 <NamedFrame>
