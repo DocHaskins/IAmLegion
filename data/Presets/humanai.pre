@@ -2251,8 +2251,6 @@ sub main()
 
         Preset("BTZ_Biter_RaisBandit")
         {
-				SetField("m_AttachableItem1Name", "Attachable_Flashlight");
-                SetField("m_AttachableItem1Probability", "0.2");
 				SetField("m_Boss", "0");
                 SetField("m_BurnOnStart", "0");
                 SetField("m_CanBeBackstabbed", "0");
@@ -16678,7 +16676,10 @@ sub main()
                 SetField("m_HealthMul", IAL_Difficulty_Health_Multiplier_Human);
                 SetField("m_ConsiderGroup", "1");
                 SetField("m_CrippleBonesEnable", "0");
-                SetField("m_CustomDataPreset", "npc");
+                SetField("m_CustomDataPreset", "shooter_vest");
+                SetField("m_KnowledgeBasePreset", "shooter");
+                SetField("m_MainGoalRulesPreset", "shooter");
+                SetField("m_PrimaryWeaponName", "Firearm_Rifle_AI");
                 SetField("m_CustomLootType", "DeadBody_Human_Raisman");
                 SetField("m_DialogCharacterType", "1");
                 SetField("m_DialogSpeakerName", "raiswarehouseguard02");
@@ -16705,7 +16706,10 @@ sub main()
                 SetField("m_HealthMul", IAL_Difficulty_Health_Multiplier_Human);
                 SetField("m_ConsiderGroup", "1");
                 SetField("m_CrippleBonesEnable", "0");
-                SetField("m_CustomDataPreset", "npc");
+                SetField("m_CustomDataPreset", "shooter_vest");
+                SetField("m_KnowledgeBasePreset", "shooter");
+                SetField("m_MainGoalRulesPreset", "shooter");
+                SetField("m_PrimaryWeaponName", "Firearm_Rifle_AI");
                 SetField("m_CustomLootType", "DeadBody_Human_Raisman");
                 SetField("m_DialogCharacterType", "1");
                 SetField("m_DialogSpeakerName", "raiswarehouseguard03");
@@ -16762,7 +16766,10 @@ sub main()
                 SetField("m_HealthMul", IAL_Difficulty_Health_Multiplier_Human);
                 SetField("m_ConsiderGroup", "1");
                 SetField("m_CrippleBonesEnable", "0");
-                SetField("m_CustomDataPreset", "npc");
+                SetField("m_CustomDataPreset", "shooter_vest");
+                SetField("m_KnowledgeBasePreset", "shooter");
+                SetField("m_MainGoalRulesPreset", "shooter");
+                SetField("m_PrimaryWeaponName", "Firearm_Rifle_AI");
                 SetField("m_CustomLootType", "DeadBody_Human_Raisman");
                 SetField("m_DialogCharacterType", "1");
                 SetField("m_DialogSpeakerName", "raiswarehouseguard05");
@@ -16789,7 +16796,10 @@ sub main()
                 SetField("m_HealthMul", IAL_Difficulty_Health_Multiplier_Human);
                 SetField("m_ConsiderGroup", "1");
                 SetField("m_CrippleBonesEnable", "0");
-                SetField("m_CustomDataPreset", "npc");
+                SetField("m_CustomDataPreset", "shooter_vest");
+                SetField("m_KnowledgeBasePreset", "shooter");
+                SetField("m_MainGoalRulesPreset", "shooter");
+                SetField("m_PrimaryWeaponName", "Firearm_Rifle_AI");
                 SetField("m_CustomLootType", "DeadBody_Human_Raisman");
                 SetField("m_DialogCharacterType", "1");
                 SetField("m_DialogSpeakerName", "raiswarehouseguard06");
@@ -20888,7 +20898,9 @@ sub main()
                 SetField("m_HealthMul", IAL_Difficulty_Health_Multiplier_Human);
                 SetField("m_ConsiderGroup", "1");
                 SetField("m_CrippleBonesEnable", "0");
-                SetField("m_CustomDataPreset", "man_helpful");
+                SetField("m_CustomDataPreset", "shooter_vest");
+                SetField("m_KnowledgeBasePreset", "shooter");
+                SetField("m_MainGoalRulesPreset", "shooter");
                 SetField("m_CustomLootType", "DeadBody_Human_Raisman");
                 SetField("m_DialogCharacterType", "1");
                 SetField("m_DialogSpeakerName", "slums_raiswarehouseguard01");
@@ -20981,7 +20993,10 @@ sub main()
                 SetField("m_HealthMul", IAL_Difficulty_Health_Multiplier_Human);
                 SetField("m_ConsiderGroup", "1");
                 SetField("m_CrippleBonesEnable", "0");
-                SetField("m_CustomDataPreset", "npc");
+                SetField("m_CustomDataPreset", "shooter_vest");
+                SetField("m_KnowledgeBasePreset", "shooter");
+                SetField("m_MainGoalRulesPreset", "shooter");
+                SetField("m_PrimaryWeaponName", "Firearm_Rifle_AI");
                 SetField("m_CustomLootType", "DeadBody_Human_Raisman");
                 SetField("m_DialogCharacterType", "1");
                 SetField("m_DialogSpeakerName", "slums_raiswarehouseguard04");
@@ -21008,7 +21023,10 @@ sub main()
                 SetField("m_HealthMul", IAL_Difficulty_Health_Multiplier_Human);
                 SetField("m_ConsiderGroup", "1");
                 SetField("m_CrippleBonesEnable", "0");
-                SetField("m_CustomDataPreset", "npc");
+                SetField("m_CustomDataPreset", "shooter_vest");
+                SetField("m_KnowledgeBasePreset", "shooter");
+                SetField("m_MainGoalRulesPreset", "shooter");
+                SetField("m_PrimaryWeaponName", "Firearm_Rifle_AI");
                 SetField("m_CustomLootType", "DeadBody_Human_Raisman");
                 SetField("m_DialogCharacterType", "1");
                 SetField("m_DialogSpeakerName", "slums_raiswarehouseguard05");
@@ -21035,7 +21053,10 @@ sub main()
                 SetField("m_HealthMul", IAL_Difficulty_Health_Multiplier_Human);
                 SetField("m_ConsiderGroup", "1");
                 SetField("m_CrippleBonesEnable", "0");
-                SetField("m_CustomDataPreset", "npc");
+                SetField("m_CustomDataPreset", "shooter_vest");
+                SetField("m_KnowledgeBasePreset", "shooter");
+                SetField("m_MainGoalRulesPreset", "shooter");
+                SetField("m_PrimaryWeaponName", "Firearm_Rifle_AI");
                 SetField("m_CustomLootType", "DeadBody_Human_Raisman");
                 SetField("m_DialogCharacterType", "1");
                 SetField("m_DialogSpeakerName", "slums_raiswarehouseguard06");
@@ -21062,7 +21083,10 @@ sub main()
                 SetField("m_HealthMul", IAL_Difficulty_Health_Multiplier_Human);
                 SetField("m_ConsiderGroup", "1");
                 SetField("m_CrippleBonesEnable", "0");
-                SetField("m_CustomDataPreset", "npc");
+                SetField("m_CustomDataPreset", "shooter_vest");
+                SetField("m_KnowledgeBasePreset", "shooter");
+                SetField("m_MainGoalRulesPreset", "shooter");
+                SetField("m_PrimaryWeaponName", "Firearm_Rifle_AI");
                 SetField("m_CustomLootType", "DeadBody_Human_Raisman");
                 SetField("m_DialogCharacterType", "1");
                 SetField("m_DialogSpeakerName", "slums_raiswarehouseguard07");
@@ -21089,7 +21113,10 @@ sub main()
                 SetField("m_HealthMul", IAL_Difficulty_Health_Multiplier_Human);
                 SetField("m_ConsiderGroup", "1");
                 SetField("m_CrippleBonesEnable", "0");
-                SetField("m_CustomDataPreset", "npc");
+                SetField("m_CustomDataPreset", "shooter_vest");
+                SetField("m_KnowledgeBasePreset", "shooter");
+                SetField("m_MainGoalRulesPreset", "shooter");
+                SetField("m_PrimaryWeaponName", "Firearm_Rifle_AI");
                 SetField("m_CustomLootType", "DeadBody_Human_Raisman");
                 SetField("m_DialogCharacterType", "1");
                 SetField("m_DialogSpeakerName", "slums_raiswarehouseguard08");
@@ -25180,10 +25207,6 @@ sub main()
 
         Preset("Viral_Man")
         {
-                SetField("m_AttachableItem1Name", "Zombie_Blister");
-                SetField("m_AttachableItem1Probability", "0.4");
-				SetField("m_AttachableItem4Name", "Attachable_Flashlight");
-                SetField("m_AttachableItem4Probability", "0.1");
 				SetField("m_CanBeInHumanity", "1");
                 SetField("m_CanUseAttractors", "1");
                 SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_ALL);
@@ -25215,10 +25238,6 @@ sub main()
 
         Preset("Viral_Man_Group")
         {
-                SetField("m_AttachableItem1Name", "Zombie_Blister");
-                SetField("m_AttachableItem1Probability", "0.4");
-				SetField("m_AttachableItem4Name", "Attachable_Flashlight");
-                SetField("m_AttachableItem4Probability", "0.1");
 				SetField("m_CanBeInHumanity", "0");
                 SetField("m_CanUseAttractors", "1");
                 SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_ALL);
@@ -25250,10 +25269,6 @@ sub main()
 
         Preset("Viral_Man_Museum")
         {
-                SetField("m_AttachableItem1Name", "Zombie_Blister");
-                SetField("m_AttachableItem1Probability", "0.4");
-				SetField("m_AttachableItem4Name", "Attachable_Flashlight");
-                SetField("m_AttachableItem4Probability", "0.1");
 				SetField("m_CanBeInHumanity", "1");
                 SetField("m_CanUseAttractors", "1");
                 SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_ALL);
@@ -29520,8 +29535,6 @@ sub main()
                 SetField("m_Type", "1");
                 SetField("MeshName", "zombie_goon.msh");
                 SetField("SkinName", "Zombie_Fireman");
-                SetField("m_AttachableItem1Name", "fire_helmet");
-                SetField("m_AttachableItem1Probability", "0.5");
         }
     }
 }
