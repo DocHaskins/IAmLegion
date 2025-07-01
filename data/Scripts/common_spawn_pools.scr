@@ -6,7 +6,7 @@
     Pool("default")
     {
         Type("default")
-        Preset("Stinger, 10;IAL_Human_New, 5;IAL_Biter_New, 10;Vessel_Eating_Corpse, 10;Vessel_In_Attractor, 10;Vessel_Init, 10;DeadZone_Policeman, 25;")
+        Preset("Stinger, 10;IAL_Human_New, 5;IAL_Biter_New, 10;Vessel_Eating_Corpse, 10;Vessel_In_Attractor, 10;Vessel_Init, 10;DeadZone_Policeman, 25;IAL_Human_Friendly_Melee, 2;IAL_Human_Enemy_Melee, 2;IAL_Human_Enemy_Shooter, 1;")
         Preset("Vessel_Lurker, 2;Goon, 1;")
     }
 
@@ -23,7 +23,7 @@
         //MaxProgressCondition(2)
         Type("base")
         Preset("Stinger, 5;Vessel_Eating_Corpse, 10;Vessel_In_Attractor, 10;Vessel_Init, 40;")
-        Preset("Vessel_Lurker, 3;IAL_Biter_New, 2;Vessel_WithAToy, 1;Goon, 1;")
+        Preset("Vessel_Lurker, 3;IAL_Biter_New, 2;Vessel_WithAToy, 1;Goon, 1;IAL_Human_Friendly_Melee, 2;")
     }
 
     Pool("base")
@@ -34,7 +34,7 @@
         //MinProgressCondition(2)
         Type("base")
         Preset("Stinger, 5;IAL_Biter_New, 5;Vessel_Eating_Corpse, 5;Vessel_Lurker_Int, 5;Vessel_Stinger_Int, 5;Vessel_In_Attractor, 5;Vessel_Init, 25;Vessel_WithAToy, 5;Nurker, 10;DeadZone_Policeman, 15;Biter_Special, 15;Human_To_Infected_In_Attractor, 10;")
-        Preset("Goon, 3;Suicider, 2;Vessel_GasTank, 2;IAL_Human_Enemy_Melee, 2;IAL_Human_Enemy_Shooter, 1;")
+        Preset("Goon, 3;Suicider, 2;Vessel_GasTank, 2;IAL_Human_Enemy_Melee, 2;IAL_Human_Enemy_Shooter, 1;IAL_Human_Friendly_Melee, 2;")
     }
 
     Pool("special_0_1")
@@ -44,7 +44,7 @@
         MaxProgressCondition(1)
         Type("peak;special")
         Preset("IAL_Biter_New, 5;Vessel_Init, 20;Vessel_Lurker, 5;Vessel_DeadBody, 5;")//35
-        Preset("Human_To_Infected_In_Attractor, 10;IAL_Human_Enemy_Melee, 2;")//10
+        Preset("Human_To_Infected_In_Attractor, 10;IAL_Human_Enemy_Melee, 2;IAL_Human_Friendly_Melee, 1;")//10
         Preset("Goon, 2;Vessel_WithAToy, 2;Suicider, 1;")
     }
 
@@ -56,7 +56,7 @@
         MaxProgressCondition(2)
         Type("peak;special")
         Preset("Vessel_Init, 40;Vessel_Lurker, 15;Vessel_DeadBody, 15;Vessel_WithAToy, 10;")//70
-        Preset("Human_To_Infected_In_Attractor, 10;IAL_Human_Enemy_Melee, 5;")//30
+        Preset("Human_To_Infected_In_Attractor, 10;IAL_Human_Enemy_Melee, 5;IAL_Human_Friendly_Melee, 3;")//30
         Preset("Goon, 3;IAL_Biter_New, 3;Vessel_GasTank, 2;")
     }
 
@@ -67,7 +67,7 @@
         MinProgressCondition(1)
         MaxProgressCondition(5)
         Type("peak;special")
-        Preset("Vessel_Init, 35;Vessel_Lurker, 5;Vessel_DeadBody, 10;Vessel_WithAToy, 5;Biter_Special, 10;")//65
+        Preset("Vessel_Init, 35;Vessel_Lurker, 5;Vessel_DeadBody, 10;Vessel_WithAToy, 5;Biter_Special, 10;IAL_Human_Friendly_Melee, 2;")//65
         Preset("Human_To_Infected_In_Attractor, 20")//20
         Preset("Goon, 15;IAL_Human_Enemy_Melee, 4;IAL_Human_Enemy_Shooter, 2;")//15
         Preset("Suicider, 2;Vessel_GasTank, 3;IAL_Human_New, 2;")
@@ -82,7 +82,7 @@
         Type("peak;special")
         Preset("Vessel_Init_IAL, 20;Vessel_DeadBody, 20;Vessel_WithAToy, 10;")//50
         Preset("Human_To_Infected_In_Attractor, 30")//30
-        Preset("IAL_Human_New, 15;IAL_Human_Enemy_Melee, 6;IAL_Human_Enemy_Shooter, 4;")
+        Preset("IAL_Human_New, 15;IAL_Human_Enemy_Melee, 6;IAL_Human_Enemy_Shooter, 4;IAL_Human_Friendly_Melee, 3;")
         Preset("Goon, 20;")//20
         Preset("Infected_HumanInit_Noise, 3;Suicider, 3;Toad_Easy, 2;")
     }
@@ -98,7 +98,7 @@
         Preset("Vessel_Init, 30;Vessel_WithAToy, 15;")//45
         Preset("Human_To_Infected_In_Attractor, 30")//30
         Preset("Infected_HumanInit_Noise, 5")//10
-        Preset("IAL_Human_New, 15;IAL_Human_Enemy_Melee, 8;IAL_Human_Enemy_Shooter, 5;")
+        Preset("IAL_Human_New, 15;IAL_Human_Enemy_Melee, 8;IAL_Human_Enemy_Shooter, 5;IAL_Human_Friendly_Melee, 3;")
         Preset("Goon, 10;")//10
         Preset("Suicider, 5;Toad_Medium, 3;Armored, 1;")
     }
@@ -113,9 +113,9 @@
         Preset("Vessel_GasTank, 30;")//30
         Preset("Vessel_Init, 5;Vessel_WithAToy, 5;")//10
         Preset("Human_To_Infected_In_Attractor, 15")//15
-		Preset("Infected_HumanInit_Noise, 5")//10
+        Preset("Infected_HumanInit_Noise, 5")//10
         Preset("Goon, 15;")//15
-        Preset("IAL_Human_New, 15;IAL_Human_Enemy_Melee, 10;IAL_Human_Enemy_Shooter, 6;")
+        Preset("IAL_Human_New, 15;IAL_Human_Enemy_Melee, 10;IAL_Human_Enemy_Shooter, 6;IAL_Human_Friendly_Melee, 6;")
         Preset("Toad_Medium, 30;")//30
         Preset("Suicider, 8;Armored, 2;Screamer, 1;")
     }
@@ -131,10 +131,10 @@
         Preset("Vessel_GasTank, 15;")//15
         Preset("Vessel_Init, 5;Vessel_WithAToy, 5;Biter_Burn, 5;")//15
         Preset("Human_To_Infected_In_Attractor, 10")//10
-		Preset("Infected_HumanInit_Noise, 10")//10
+        Preset("Infected_HumanInit_Noise, 10")//10
         Preset("Goon, 15;")//15
         Preset("Toad_Medium, 15;")//15
-        Preset("IAL_Human_New, 15;IAL_Human_Enemy_Melee, 12;IAL_Human_Enemy_Shooter, 8;")
+        Preset("IAL_Human_New, 15;IAL_Human_Enemy_Melee, 12;IAL_Human_Enemy_Shooter, 8;IAL_Human_Friendly_Melee, 5;")
         Preset("Melee_Fighter_With_Pipe, 10;Melee_Fighter_With_Pipe_Init, 5;")//15
         Preset("Armored, 3;Toad_Hard, 3;Screamer, 1;")
     }
@@ -146,14 +146,14 @@
         MinProgressCondition(2)
         MaxProgressCondition(8)
         Type("peak;special")
-		Preset("Vessel_Lurker_Int, 5;Vessel_Stinger_Int, 5")
+        Preset("Vessel_Lurker_Int, 5;Vessel_Stinger_Int, 5")
         Preset("Suicider, 10;")//10
         Preset("Vessel_GasTank, 15;Nurker, 10;")//25
         Preset("Vessel_Init, 5;Vessel_WithAToy, 5;Biter_Burn, 5;")//15
         Preset("Human_To_Infected_In_Attractor, 15")//15
-		Preset("Infected_HumanInit_Noise, 10")//10
+        Preset("Infected_HumanInit_Noise, 10")//10
         Preset("Goon, 15")//15
-        Preset("IAL_Human_New, 15;IAL_Human_Enemy_Melee, 15;IAL_Human_Enemy_Shooter, 10;")
+        Preset("IAL_Human_New, 15;IAL_Human_Enemy_Melee, 15;IAL_Human_Enemy_Shooter, 10;IAL_Human_Friendly_Melee, 5;")
         Preset("Toad_Hard, 20;")//20
         Preset("Prime_Winter, 2;Armored, 5;Screamer, 2;")
     }
@@ -165,12 +165,12 @@
         MinProgressCondition(2)
         MaxProgressCondition(9)
         Type("peak;special")
-		Preset("Vessel_Lurker_Int, 5;Vessel_Stinger_Int, 5")
+        Preset("Vessel_Lurker_Int, 5;Vessel_Stinger_Int, 5")
         Preset("Suicider, 10;")//10
         Preset("Vessel_GasTank, 5;Nurker, 10;")//10
         Preset("Human_To_Infected_In_Attractor, 10")//10
         Preset("Infected_HumanInit_Noise, 10")//10
-        Preset("IAL_Human_New, 15;IAL_Human_Enemy_Melee, 18;IAL_Human_Enemy_Shooter, 12;")
+        Preset("IAL_Human_New, 15;IAL_Human_Enemy_Melee, 18;IAL_Human_Enemy_Shooter, 12;IAL_Human_Friendly_Melee, 5;")
         Preset("Goon, 30")//30
         Preset("Armored, 8;Screamer, 3;Toad_Hard, 5;Toad_OldTown, 3;")
     }
@@ -185,11 +185,11 @@
         Preset("Suicider, 10;")//10
         Preset("Vessel_GasTank, 5;Nurker, 10;")//10
         Preset("Human_To_Infected_In_Attractor, 10")//10
-		Preset("Infected_HumanInit_Noise, 10")//10
+        Preset("Infected_HumanInit_Noise, 10")//10
         Preset("Goon, 20")//20
         Preset("Toad_Hard, 15;Toad_OldTown, 15")//30
         Preset("Melee_Fighter_With_Pipe, 5;Melee_Fighter_With_Pipe_Init, 5;")//10
-        Preset("Screamer, 8;Armored, 10;Volatile_Eating_Corpse, 1;IAL_Human_Enemy_Melee, 12;IAL_Human_Enemy_Shooter, 8;")
+        Preset("Screamer, 8;Armored, 10;Volatile_Eating_Corpse, 1;IAL_Human_Enemy_Melee, 12;IAL_Human_Enemy_Shooter, 8;IAL_Human_Friendly_Melee, 12;")
     }
 
     Pool("special_10_up") // MAKE IT HARD!
@@ -198,26 +198,22 @@
         DisallowedMaps("old_town_outposts_radio;old_town_outposts;old_town_outposts_museum;Sewers_Stadium")
         MinProgressCondition(10)
         Type("peak;special")
-        //Preset("Screamer, 20")//20
-        //Preset("Armored, 20")//20
         Preset("Suicider, 20;")//20
         Preset("Vessel_GasTank, 10;Nurker, 10;")//20
-        //Preset("Vessel_Init, 10;Vessel_WithAToy, 5;Biter_Special, 15;")//30
         Preset("Human_To_Infected_In_Attractor, 10")//10
-		Preset("Infected_HumanInit_Noise, 10")//10
+        Preset("Infected_HumanInit_Noise, 10")//10
         Preset("Goon, 20")//20
         Preset("Toad_Hard, 5;Toad_OldTown, 5")//10
-        //Preset("Melee_Fighter_With_Pipe, 5;Melee_Fighter_With_Pipe_Init, 5;")//10
         Preset("Screamer, 15;Armored, 15;")//30
         Preset("Volatile_Eating_Corpse, 2;Prime_Winter, 1;")//3
         Preset("Vessel_Init, 8;Vessel_WithAToy, 4;Biter_Special, 12;")//24
-        Preset("Melee_Fighter_With_Pipe, 4;Melee_Fighter_With_Pipe_Init, 4;IAL_Human_Enemy_Melee, 16;IAL_Human_Enemy_Shooter, 12;")//8
+        Preset("Melee_Fighter_With_Pipe, 4;Melee_Fighter_With_Pipe_Init, 4;IAL_Human_Enemy_Melee, 16;IAL_Human_Enemy_Shooter, 12;IAL_Human_Friendly_Melee, 12;")//8
     }
 
     Pool("head_hunters")
     {
         UseCondition("Day")
-		DisallowedMaps("hellraid")
+        DisallowedMaps("hellraid")
         BannedAreaAttribs("BLUE_DISTRICT")
         Type("head_hunters")
         Preset("IAL_Human_New, 5;Melee_Fighter_With_Pipe, 2;Melee_Fighter_With_Pipe_Init, 1;IAL_Human_Enemy_Melee, 10;IAL_Human_Enemy_Shooter, 8;")
@@ -251,7 +247,7 @@
     {
         UseCondition("Evening")
         AllowedMaps("Slums;Old_Town;Wasteland")
-		DisallowedMaps("old_town_outposts_radio;old_town_outposts;old_town_outposts_museum;Sewers_Stadium")
+        DisallowedMaps("old_town_outposts_radio;old_town_outposts;old_town_outposts_museum;Sewers_Stadium")
         MinChapterAndProgressCondition(0, 0)
         MaxChapterAndProgressCondition(15, 0)
         Type("peak;special;begin;noise;pause")
@@ -395,4 +391,29 @@
         DisallowedMaps("hellraid")
         Type("base")
         Preset("IAL_Human_Enemy_Melee, 6;IAL_Human_Enemy_Shooter, 4;")
+    }
+
+    Pool("human_rooftop_patrol")
+    {
+        UseCondition("Day")
+        Type("rooftop_humans")
+        Preset("IAL_Human_Enemy_Melee, 8;IAL_Human_Enemy_Shooter, 6;IAL_Human_Friendly_Melee, 4;")
+        Preset("Melee_Fighter_With_Pipe, 3;Enemy_Fighter, 2;Friendly_Fighter, 2;")
+    }
+
+    Pool("human_rooftop_heavy")
+    {
+        UseCondition("Day") 
+        Type("rooftop_humans_heavy")
+        Preset("IAL_Human_Enemy_Shooter, 10;IAL_Human_Enemy_Melee, 8;")
+        Preset("Enemy_Fighter, 3;Melee_Fighter_With_Pipe, 5;")
+    }
+
+    Pool("mixed_rooftop_activity")
+    {
+        UseCondition("Day")
+        Type("rooftop_mixed")
+        Preset("IAL_Human_New, 5;IAL_Human_Enemy_Melee, 8;IAL_Human_Enemy_Shooter, 6;")
+        Preset("IAL_Biter_New, 3;Vessel_Init, 4;Stinger, 2;") // Some infected for variety
+        Preset("Friendly_Fighter, 2;Enemy_Fighter, 3;")
     }

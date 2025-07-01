@@ -900,3 +900,45 @@ IntensityCurve("human_enemies_hard_mode")
     IntensityKey(10, 0)
     Wait(15)
 }
+
+///////////////////////////////////////////////////////////////////
+//HUMAN ENEMY ROOFTOPS
+///////////////////////////////////////////////////////////////////
+
+IntensityCurve("rooftop_human_patrol")
+{
+    UseCondition("Day;DeadZone_Far;Escorted_NPC_Far")
+    AllowedMaps("slums_cs;Old_Town")
+    MinTimeBtwUses(10.)
+    PoolType("rooftop_humans")
+    IntensityKey(8, 40)
+    Wait(15)
+    IntensityKey(5, 20)
+    Wait(25)
+    IntensityKey(10, 0)
+    Wait(30)
+}
+
+IntensityCurve("rooftop_sniper_watch")
+{
+    UseCondition("Day;DeadZone_Far;Escorted_NPC_Far")
+    AllowedMaps("slums_cs;Old_Town") // Urban areas with tall buildings
+    MinTimeBtwUses(10.)
+    PoolType("rooftop_humans_heavy")
+    IntensityKey(5, 60)
+    Wait(30)
+    IntensityKey(8, 0)
+    Wait(45)
+}
+
+IntensityCurve("mixed_rooftop_activity")
+{
+    UseCondition("Day;DeadZone_Far;Escorted_NPC_Far")
+    AllowedMaps("slums_cs;Old_Town")
+    MinTimeBtwUses(10.)
+    PoolType("rooftop_mixed")
+    IntensityKey(12, 35)
+    Wait(20)
+    IntensityKey(6, 15)
+    Wait(40)
+}
