@@ -99,7 +99,7 @@ IntensityCurve("main_hard")
 IntensityCurve("Special_HeadHunters")
 {
     UseCondition("Day;Scavegers_Outpost_Far;Escorted_NPC_Far")
-    AllowedMaps("Old_Town")
+    AllowedMaps("slums_cs;Old_Town")
 	BannedAreaAttribs("POOR_DISTRICT")
     MinTimeBtwUses(120)
     PoolType("head_hunters")
@@ -756,5 +756,189 @@ IntensityCurve("noise_event_hard_mode")
     IntensityKey(20, 150)
     Wait(10)
     IntensityKey(20, 0)
+    Wait(40)
+}
+
+///////////////////////////////////////////////////////////////////
+//IALR
+///////////////////////////////////////////////////////////////////
+
+IntensityCurve("human_enemies_early")
+{
+    UseCondition("Day;DeadZone_Far;Escorted_NPC_Far")
+    MinChapterAndProgressCondition(1, 0)
+    MaxChapterAndProgressCondition(5, 0)
+    MinTimeBtwUses(180.)
+    PoolType("human_enemies_melee")
+    IntensityKey(5, 20)
+    Wait(10)
+    IntensityKey(5, 0)
+    Wait(30)
+}
+
+IntensityCurve("human_enemies_medium")
+{
+    UseCondition("Day;DeadZone_Far;Escorted_NPC_Far")
+    MinChapterAndProgressCondition(3, 0)
+    MaxChapterAndProgressCondition(8, 0)
+    MinTimeBtwUses(150.)
+    PoolType("human_enemies_mixed")
+    IntensityKey(8, 30)
+    Wait(15)
+    IntensityKey(5, 0)
+    Wait(20)
+}
+
+IntensityCurve("human_enemies_advanced")
+{
+    UseCondition("Day;DeadZone_Far;Escorted_NPC_Far")
+    MinChapterAndProgressCondition(5, 0)
+    MaxChapterAndProgressCondition(10, 0)
+    MinTimeBtwUses(120.)
+    PoolType("human_enemies_shooter")
+    IntensityKey(5, 25)
+    Wait(8)
+    PoolType("human_enemies_melee")
+    IntensityKey(10, 40)
+    Wait(12)
+    IntensityKey(8, 0)
+    Wait(15)
+}
+
+IntensityCurve("human_enemies_endgame")
+{
+    UseCondition("Day;DeadZone_Far;Escorted_NPC_Far")
+    MinChapterAndProgressCondition(8, 0)
+    MinTimeBtwUses(100.)
+    PoolType("human_enemies_mixed")
+    IntensityKey(12, 50)
+    Wait(20)
+    IntensityKey(10, 20)
+    Wait(10)
+    IntensityKey(15, 0)
+    Wait(25)
+}
+
+IntensityCurve("human_enemies_slums_patrol")
+{
+    UseCondition("Day;DeadZone_Far;Escorted_NPC_Far")
+    AllowedMaps("Slums")
+    MinChapterAndProgressCondition(2, 0)
+    MinTimeBtwUses(200.)
+    PoolType("human_enemies_melee")
+    IntensityKey(6, 30)
+    Wait(12)
+    IntensityKey(6, 0)
+    Wait(25)
+}
+
+IntensityCurve("human_enemies_oldtown_patrol")
+{
+    UseCondition("Day;DeadZone_Far;Escorted_NPC_Far")
+    AllowedMaps("Old_Town")
+    MinChapterAndProgressCondition(3, 0)
+    MinTimeBtwUses(160.)
+    PoolType("human_enemies_shooter")
+    IntensityKey(4, 25)
+    Wait(8)
+    PoolType("human_enemies_melee")
+    IntensityKey(8, 35)
+    Wait(15)
+    IntensityKey(6, 0)
+    Wait(20)
+}
+
+IntensityCurve("human_enemies_wasteland_patrol")
+{
+    UseCondition("Day;DeadZone_Far;Escorted_NPC_Far")
+    AllowedMaps("Wasteland")
+    MinChapterAndProgressCondition(4, 0)
+    MinTimeBtwUses(140.)
+    PoolType("human_enemies_mixed")
+    IntensityKey(10, 45)
+    Wait(18)
+    IntensityKey(8, 0)
+    Wait(22)
+}
+
+///////////////////////////////////////////////////////////////////
+//HUMAN ENEMY NOISE RESPONSE
+///////////////////////////////////////////////////////////////////
+
+IntensityCurve("human_enemies_noise_response")
+{
+    Event(1)
+    UseCondition("Day")
+    MinChapterAndProgressCondition(2, 0)
+    ConditionNoiseLvl(1)
+    PoolType("human_enemies_mixed")
+    DirectionalSpawn(1)
+    IntensityKey(1, 15)
+    Wait(8)
+    DirectionalSpawn(0)
+    IntensityKey(1, 25)
+    Wait(12)
+    IntensityKey(1, 0)
+    Wait(30)
+}
+
+///////////////////////////////////////////////////////////////////
+//HUMAN ENEMY HARD MODE
+///////////////////////////////////////////////////////////////////
+
+IntensityCurve("human_enemies_hard_mode")
+{
+    UseCondition("Day;DeadZone_Far;Escorted_NPC_Far")
+    UseCondition("HardMode_On")
+    MinChapterAndProgressCondition(3, 0)
+    MinTimeBtwUses(90.)
+    AllowedMaps("Old_Town;Slums")
+    PoolType("human_enemies_mixed")
+    PlaySound("infected_spawn_far_ext_00.wav")
+    IntensityKey(15, 60)
+    Wait(25)
+    IntensityKey(10, 0)
+    Wait(15)
+}
+
+///////////////////////////////////////////////////////////////////
+//HUMAN ENEMY ROOFTOPS
+///////////////////////////////////////////////////////////////////
+
+IntensityCurve("rooftop_human_patrol")
+{
+    UseCondition("Day;DeadZone_Far;Escorted_NPC_Far")
+    AllowedMaps("slums_cs;Old_Town")
+    MinTimeBtwUses(10.)
+    PoolType("rooftop_humans")
+    IntensityKey(8, 40)
+    Wait(15)
+    IntensityKey(5, 20)
+    Wait(25)
+    IntensityKey(10, 0)
+    Wait(30)
+}
+
+IntensityCurve("rooftop_sniper_watch")
+{
+    UseCondition("Day;DeadZone_Far;Escorted_NPC_Far")
+    AllowedMaps("slums_cs;Old_Town") // Urban areas with tall buildings
+    MinTimeBtwUses(10.)
+    PoolType("rooftop_humans_heavy")
+    IntensityKey(5, 60)
+    Wait(30)
+    IntensityKey(8, 0)
+    Wait(45)
+}
+
+IntensityCurve("mixed_rooftop_activity")
+{
+    UseCondition("Day;DeadZone_Far;Escorted_NPC_Far")
+    AllowedMaps("slums_cs;Old_Town")
+    MinTimeBtwUses(10.)
+    PoolType("rooftop_mixed")
+    IntensityKey(12, 35)
+    Wait(20)
+    IntensityKey(6, 15)
     Wait(40)
 }

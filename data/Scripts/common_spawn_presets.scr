@@ -20,7 +20,7 @@
 	PresetDef("Friendly_Fighter_Init")
     {
         Difficult(20)
-        AIPreset("Friendly_Survivor")
+        AIPreset("Friendly_Survivor;IALR_male_000;IALR_male_001;IALR_male_002;IALR_male_003;IALR_male_004;IALR_male_005;IALR_male_006;IALR_male_007;IALR_male_008;IALR_male_009;IALR_male_010;IALR_male_011;IALR_male_012;IALR_male_013;IALR_male_014;IALR_male_015;IALR_male_016;IALR_male_017;IALR_male_018;IALR_male_019;IALR_male_020;IALR_male_021;IALR_male_022;IALR_male_023;IALR_male_024;IALR_male_025;IALR_male_026;IALR_male_027;IALR_male_028;IALR_male_029;IALR_male_030;IALR_male_031;IALR_male_032;IALR_male_033;IALR_male_034;IALR_male_035;IALR_male_036;IALR_male_037;IALR_male_038;IALR_male_039;IALR_male_040;IALR_male_041;IALR_male_042;IALR_male_043;IALR_male_044;IALR_male_045;IALR_male_046;IALR_male_047;IALR_male_048;IALR_male_049;IALR_male_050;IALR_male_051;IALR_male_052;IALR_male_053;IALR_male_054;IALR_male_055;IALR_male_056;IALR_male_057;IALR_male_058;IALR_male_059;IALR_male_060;IALR_male_061;IALR_male_062;IALR_male_063;IALR_male_064;IALR_male_065;IALR_male_066;IALR_male_067;IALR_male_068;IALR_male_069;IALR_male_070;IALR_male_071;IALR_male_072;IALR_male_073;IALR_male_074;IALR_male_075;IALR_male_076;IALR_male_077;IALR_male_078;IALR_male_079;IALR_male_080;IALR_male_081;IALR_male_082;IALR_male_083;IALR_male_084;IALR_male_085;IALR_male_086;IALR_male_087;IALR_male_088;IALR_male_089;IALR_male_090;IALR_male_091;IALR_male_092;IALR_male_093;IALR_male_094;IALR_male_095;IALR_male_096;IALR_male_097;IALR_male_098;IALR_male_099;IALR_male_100;IALR_male_101;IALR_male_102;IALR_male_103;IALR_male_104;IALR_male_105;IALR_male_106;IALR_male_107;IALR_male_108;IALR_male_109;IALR_male_110;IALR_male_111;IALR_male_112;IALR_male_113;IALR_male_114;IALR_male_115;IALR_male_116;IALR_male_117;IALR_male_118;IALR_male_119;IALR_male_120;IALR_male_121;IALR_male_122;IALR_male_123;IALR_male_124;IALR_male_125;IALR_male_126;IALR_male_127;IALR_male_128;IALR_male_129;IALR_male_130;IALR_male_131;IALR_male_132;IALR_male_133;IALR_male_134;IALR_male_135;IALR_male_136;IALR_male_137;IALR_male_138;IALR_male_139;IALR_male_140;IALR_male_141;IALR_male_142;IALR_male_143;IALR_male_144;IALR_male_145;IALR_male_146;IALR_male_147;IALR_male_148;IALR_male_149;IALR_male_150;IALR_male_151;IALR_male_152;IALR_male_153;IALR_male_154;IALR_male_155;IALR_male_156;IALR_male_157;IALR_male_158;IALR_male_159;IALR_male_160;IALR_male_161;IALR_male_162;IALR_male_163;IALR_male_164;IALR_male_165;IALR_male_166;IALR_male_167;IALR_male_168;IALR_male_169;IALR_male_170;IALR_male_171;IALR_male_172;IALR_male_173;IALR_male_174;IALR_male_175;IALR_male_176;IALR_male_177;IALR_male_178;IALR_male_179;IALR_male_180;IALR_male_181;IALR_male_182;IALR_male_183;IALR_male_184;IALR_male_185;IALR_male_186;IALR_male_187;IALR_male_188;IALR_male_189;IALR_male_190;IALR_male_191;IALR_male_192;IALR_male_193;IALR_male_194;IALR_male_195;IALR_male_196;IALR_male_197;IALR_male_198;IALR_male_199;IALR_male_200;IALR_male_201;IALR_male_202;IALR_male_203;IALR_male_204;IALR_male_205;IALR_male_206;IALR_male_207;IALR_male_208;IALR_male_209;IALR_male_210;IALR_male_211;IALR_male_212;IALR_male_213;IALR_male_214;IALR_male_215;IALR_male_216;IALR_male_217;IALR_male_218;IALR_male_219;IALR_male_220;IALR_male_221;IALR_male_222;IALR_male_223;IALR_male_224;IALR_male_225;IALR_male_226;IALR_male_227;IALR_male_228;IALR_male_229;IALR_male_230;IALR_male_231;IALR_male_232;IALR_male_233;IALR_male_234;IALR_male_235;IALR_male_236;IALR_male_237;IALR_male_238;IALR_male_239;IALR_male_240;IALR_male_241;IALR_male_242;IALR_male_243;IALR_male_244;IALR_male_245;IALR_male_246;IALR_male_247;IALR_male_248;IALR_male_249;IALR_male_250;IALR_male_251;IALR_male_252;IALR_male_253;IALR_male_254;IALR_male_255;IALR_male_256;IALR_male_257;IALR_male_258;IALR_male_259;IALR_male_260;IALR_male_261;IALR_male_262;IALR_male_263;IALR_male_264;IALR_male_265;IALR_male_266;IALR_male_267;IALR_male_268;IALR_male_269;IALR_male_270;IALR_male_271;IALR_male_272;IALR_male_273;IALR_male_274;IALR_male_275;IALR_male_276;IALR_male_277;IALR_male_278;IALR_male_279;IALR_male_280;IALR_male_281;IALR_male_282;IALR_male_283;IALR_male_284;IALR_male_285;IALR_male_286;IALR_male_287;IALR_male_288;IALR_male_289;IALR_male_290;IALR_male_291;IALR_male_292;IALR_male_293;IALR_male_294;IALR_male_295;IALR_male_296;IALR_male_297;IALR_male_298;IALR_male_299;IALR_male_300;IALR_male_301;IALR_male_302;IALR_male_303;IALR_male_304;IALR_male_305;IALR_male_306;IALR_male_307;IALR_male_308;IALR_male_309;IALR_male_310;IALR_male_311;IALR_male_312;IALR_male_313;IALR_male_314;IALR_male_315;IALR_male_316;IALR_male_317;IALR_male_318;IALR_male_319;IALR_male_320;IALR_male_321;IALR_male_322;IALR_male_323;IALR_male_324;IALR_male_325;IALR_male_326;IALR_male_327;IALR_male_328;IALR_male_329;IALR_male_330;IALR_male_331;IALR_female_000;IALR_female_001;IALR_female_002;IALR_female_003;IALR_female_004;IALR_female_005;IALR_female_006;IALR_female_007;IALR_female_008;IALR_female_009;IALR_female_010;IALR_female_011;IALR_female_012;IALR_female_013;IALR_female_014;IALR_female_015;IALR_female_016;IALR_female_017;IALR_female_018;IALR_female_019;IALR_female_020;IALR_female_021;IALR_female_022;IALR_female_023;IALR_female_024;IALR_female_025;IALR_female_026;IALR_female_027;IALR_female_028;IALR_female_029;IALR_female_030;IALR_female_031;IALR_female_032;IALR_female_033;IALR_female_034;IALR_female_035;IALR_female_036;IALR_female_037;IALR_female_038;IALR_female_039;IALR_female_040;IALR_female_041;IALR_female_042;IALR_female_043;IALR_female_044;IALR_female_045;IALR_female_046;IALR_female_047;IALR_female_048;IALR_female_049")
         SpawnCondition("t_INIT, 0.7;z_MELEE_FIGHTER, 0.7")
         //AllowedMaps("Old_Town")
         MinDistBtwZombies(30)
@@ -33,8 +33,8 @@
     PresetDef("Friendly_Fighter")
     {
         Difficult(20)
-        SpawnCondition("z_MELEE_FIGHTER, 1;p_WIDE, 1;p_SQUARE, 1;p_ROOF, -1")
-        AIPreset("Friendly_Survivor")
+        SpawnCondition("z_MELEE_FIGHTER, 1;p_WIDE, 1;p_SQUARE, 1;p_ROOF, 1")
+        AIPreset("Friendly_Survivor;IALR_male_000;IALR_male_001;IALR_male_002;IALR_male_003;IALR_male_004;IALR_male_005;IALR_male_006;IALR_male_007;IALR_male_008;IALR_male_009;IALR_male_010;IALR_male_011;IALR_male_012;IALR_male_013;IALR_male_014;IALR_male_015;IALR_male_016;IALR_male_017;IALR_male_018;IALR_male_019;IALR_male_020;IALR_male_021;IALR_male_022;IALR_male_023;IALR_male_024;IALR_male_025;IALR_male_026;IALR_male_027;IALR_male_028;IALR_male_029;IALR_male_030;IALR_male_031;IALR_male_032;IALR_male_033;IALR_male_034;IALR_male_035;IALR_male_036;IALR_male_037;IALR_male_038;IALR_male_039;IALR_male_040;IALR_male_041;IALR_male_042;IALR_male_043;IALR_male_044;IALR_male_045;IALR_male_046;IALR_male_047;IALR_male_048;IALR_male_049;IALR_male_050;IALR_male_051;IALR_male_052;IALR_male_053;IALR_male_054;IALR_male_055;IALR_male_056;IALR_male_057;IALR_male_058;IALR_male_059;IALR_male_060;IALR_male_061;IALR_male_062;IALR_male_063;IALR_male_064;IALR_male_065;IALR_male_066;IALR_male_067;IALR_male_068;IALR_male_069;IALR_male_070;IALR_male_071;IALR_male_072;IALR_male_073;IALR_male_074;IALR_male_075;IALR_male_076;IALR_male_077;IALR_male_078;IALR_male_079;IALR_male_080;IALR_male_081;IALR_male_082;IALR_male_083;IALR_male_084;IALR_male_085;IALR_male_086;IALR_male_087;IALR_male_088;IALR_male_089;IALR_male_090;IALR_male_091;IALR_male_092;IALR_male_093;IALR_male_094;IALR_male_095;IALR_male_096;IALR_male_097;IALR_male_098;IALR_male_099;IALR_male_100;IALR_male_101;IALR_male_102;IALR_male_103;IALR_male_104;IALR_male_105;IALR_male_106;IALR_male_107;IALR_male_108;IALR_male_109;IALR_male_110;IALR_male_111;IALR_male_112;IALR_male_113;IALR_male_114;IALR_male_115;IALR_male_116;IALR_male_117;IALR_male_118;IALR_male_119;IALR_male_120;IALR_male_121;IALR_male_122;IALR_male_123;IALR_male_124;IALR_male_125;IALR_male_126;IALR_male_127;IALR_male_128;IALR_male_129;IALR_male_130;IALR_male_131;IALR_male_132;IALR_male_133;IALR_male_134;IALR_male_135;IALR_male_136;IALR_male_137;IALR_male_138;IALR_male_139;IALR_male_140;IALR_male_141;IALR_male_142;IALR_male_143;IALR_male_144;IALR_male_145;IALR_male_146;IALR_male_147;IALR_male_148;IALR_male_149;IALR_male_150;IALR_male_151;IALR_male_152;IALR_male_153;IALR_male_154;IALR_male_155;IALR_male_156;IALR_male_157;IALR_male_158;IALR_male_159;IALR_male_160;IALR_male_161;IALR_male_162;IALR_male_163;IALR_male_164;IALR_male_165;IALR_male_166;IALR_male_167;IALR_male_168;IALR_male_169;IALR_male_170;IALR_male_171;IALR_male_172;IALR_male_173;IALR_male_174;IALR_male_175;IALR_male_176;IALR_male_177;IALR_male_178;IALR_male_179;IALR_male_180;IALR_male_181;IALR_male_182;IALR_male_183;IALR_male_184;IALR_male_185;IALR_male_186;IALR_male_187;IALR_male_188;IALR_male_189;IALR_male_190;IALR_male_191;IALR_male_192;IALR_male_193;IALR_male_194;IALR_male_195;IALR_male_196;IALR_male_197;IALR_male_198;IALR_male_199;IALR_male_200;IALR_male_201;IALR_male_202;IALR_male_203;IALR_male_204;IALR_male_205;IALR_male_206;IALR_male_207;IALR_male_208;IALR_male_209;IALR_male_210;IALR_male_211;IALR_male_212;IALR_male_213;IALR_male_214;IALR_male_215;IALR_male_216;IALR_male_217;IALR_male_218;IALR_male_219;IALR_male_220;IALR_male_221;IALR_male_222;IALR_male_223;IALR_male_224;IALR_male_225;IALR_male_226;IALR_male_227;IALR_male_228;IALR_male_229;IALR_male_230;IALR_male_231;IALR_male_232;IALR_male_233;IALR_male_234;IALR_male_235;IALR_male_236;IALR_male_237;IALR_male_238;IALR_male_239;IALR_male_240;IALR_male_241;IALR_male_242;IALR_male_243;IALR_male_244;IALR_male_245;IALR_male_246;IALR_male_247;IALR_male_248;IALR_male_249;IALR_male_250;IALR_male_251;IALR_male_252;IALR_male_253;IALR_male_254;IALR_male_255;IALR_male_256;IALR_male_257;IALR_male_258;IALR_male_259;IALR_male_260;IALR_male_261;IALR_male_262;IALR_male_263;IALR_male_264;IALR_male_265;IALR_male_266;IALR_male_267;IALR_male_268;IALR_male_269;IALR_male_270;IALR_male_271;IALR_male_272;IALR_male_273;IALR_male_274;IALR_male_275;IALR_male_276;IALR_male_277;IALR_male_278;IALR_male_279;IALR_male_280;IALR_male_281;IALR_male_282;IALR_male_283;IALR_male_284;IALR_male_285;IALR_male_286;IALR_male_287;IALR_male_288;IALR_male_289;IALR_male_290;IALR_male_291;IALR_male_292;IALR_male_293;IALR_male_294;IALR_male_295;IALR_male_296;IALR_male_297;IALR_male_298;IALR_male_299;IALR_male_300;IALR_male_301;IALR_male_302;IALR_male_303;IALR_male_304;IALR_male_305;IALR_male_306;IALR_male_307;IALR_male_308;IALR_male_309;IALR_male_310;IALR_male_311;IALR_male_312;IALR_male_313;IALR_male_314;IALR_male_315;IALR_male_316;IALR_male_317;IALR_male_318;IALR_male_319;IALR_male_320;IALR_male_321;IALR_male_322;IALR_male_323;IALR_male_324;IALR_male_325;IALR_male_326;IALR_male_327;IALR_male_328;IALR_male_329;IALR_male_330;IALR_male_331;IALR_female_000;IALR_female_001;IALR_female_002;IALR_female_003;IALR_female_004;IALR_female_005;IALR_female_006;IALR_female_007;IALR_female_008;IALR_female_009;IALR_female_010;IALR_female_011;IALR_female_012;IALR_female_013;IALR_female_014;IALR_female_015;IALR_female_016;IALR_female_017;IALR_female_018;IALR_female_019;IALR_female_020;IALR_female_021;IALR_female_022;IALR_female_023;IALR_female_024;IALR_female_025;IALR_female_026;IALR_female_027;IALR_female_028;IALR_female_029;IALR_female_030;IALR_female_031;IALR_female_032;IALR_female_033;IALR_female_034;IALR_female_035;IALR_female_036;IALR_female_037;IALR_female_038;IALR_female_039;IALR_female_040;IALR_female_041;IALR_female_042;IALR_female_043;IALR_female_044;IALR_female_045;IALR_female_046;IALR_female_047;IALR_female_048;IALR_female_049")
         //AllowedMaps("Old_Town")
         MinDistBtwZombies(30)
         TimeBtwSpawnZombies(5)
@@ -58,7 +58,7 @@
     PresetDef("Enemy_Fighter")
     {
         Difficult(40)
-        SpawnCondition("z_MELEE_FIGHTER, 1;p_WIDE, 1;p_SQUARE, 1;p_ROOF, -1")
+        SpawnCondition("z_MELEE_FIGHTER, 1;p_WIDE, 1;p_SQUARE, 1;p_ROOF, 1")
         AIPreset("Enemy_Survivor")
         //AllowedMaps("Old_Town")
         MinDistBtwZombies(30)
@@ -66,23 +66,24 @@
         ForceTargetType(2)
         //UseCondition("Scavegers_Outpost_Far")
     }
+
     PresetDef("Stinger")
     {
         Difficult(7)
-        AIPreset("BiterStinger_Man;BiterStinger_Woman")
+        AIPreset("BiterStinger_Man;BiterStinger_Woman;BiterStinger_Redneck")
         SpawnCondition("z_STINGER, 1")
     }
 
     PresetDef("Vessel_Eating_Corpse")
     {
         Difficult(7)
-        AIPreset("Biter_Man;Biter_Woman")
+        AIPreset("Biter_Man;Biter_Woman;Biter_Man_Fresh;Biter_Woman_Fresh;Biter_Man_Injured_01;Biter_Man_Injured_02;Biter_Man_Injured_03;Biter_Man_Injured_04;Biter_Woman_Injured_01;BiterBurn_Man;BiterBurn_Woman;Biter_Worker;Biter_Redneck;Biter_Soldier;Biter_Policeman;Biter_RaisBandit;Biter_Man_FreshDead_02;Biter_Woman_FreshDead_02;Biter_Man_FireFighter;BTZ_Biter_Man;BTZ_Biter_Woman;BTZ_Biter_Policeman;BTZ_Biter_RaisBandit;BTZ_Biter_Redneck;BTZ_Biter_Soldier;BTZ_Biter_Worker;BiterHangar_Man;BiterHangar_Woman;Bucket_ZMan;Lifebuoy_ZWoman;Miner_ZMan;TraficCone_ZMan")
         DiffLvlTableName("Biter_Man_Wast;Biter_Woman_Wast")   
-		SpawnCondition("nav_mesh, -1;__any__, 1;t_INIT, -1;p_ROOF, -1")
+        SpawnCondition("nav_mesh, -1;__any__, 1;t_INIT, -1;p_ROOF, -1")
         DisallowedMaps("Stadium")
         AttractorToSpawnWithAI("virtual_corpse_a")
         MeshToSpawnWithAI("dead_body_c.msh", [0.03, 0, 1.20])
-		CustomDataPreset("anim_set_waste")
+        CustomDataPreset("anim_set_waste")
         ForceTargetType(3)
         TimeBtwSpawnZombies(3)
         CanSpawnIntoCrowd(1,"_AG")
@@ -91,8 +92,8 @@
     PresetDef("Vessel_DeadBody")
     {
         Difficult(7)
-        AIPreset("Biter_Man;Biter_Woman")
-		DiffLvlTableName("Biter_Man;Biter_Woman")
+        AIPreset("Biter_Man;Biter_Woman;Biter_Man_Fresh;Biter_Woman_Fresh;Biter_Man_Injured_01;Biter_Man_Injured_02;Biter_Man_Injured_03;Biter_Man_Injured_04;Biter_Woman_Injured_01;Biter_Worker;Biter_Redneck;Biter_Soldier;Biter_Policeman;Dead_Body_Biter_Man_A;Dead_Body_Biter_Man_B;Dead_Body_Biter_Man_C;Dead_Body_Biter_Woman_A;Dead_Body_Biter_Woman_B")
+        DiffLvlTableName("Biter_Man;Biter_Woman")
         SpawnCondition("nav_mesh, -1;__any__, 1;t_INIT, -1;p_ROOF, -1")
         SpawnOnFlatTerrain(1)
         ForceTargetType(-1)
@@ -121,7 +122,7 @@
 	PresetDef("Vessel_Stinger_Int")
     {
         Difficult(7)
-        AIPreset("BiterStinger_Man;BiterStinger_Woman")
+        AIPreset("BiterStinger_Man;BiterStinger_Woman;BiterStinger_Redneck")
         SpawnCondition("z_STINGER, 0.6;z_SPECIAL, 0.6")
         MinDistBtwZombies(25)
         RemoveDistanceIfNotContact(45)
@@ -130,8 +131,8 @@
     PresetDef("Vessel_In_Attractor")
     {
         Difficult(7)
-        AIPreset("Biter_Man;Biter_Woman")
-		DiffLvlTableName("Biter_Man;Biter_Woman")
+        AIPreset("Biter_Man;Biter_Woman;Biter_Man_Fresh;Biter_Woman_Fresh;Biter_Man_Injured_01;Biter_Man_Injured_02;Biter_Man_Injured_03;Biter_Man_Injured_04;Biter_Woman_Injured_01;Biter_Worker;Biter_Redneck;Biter_Soldier")
+        DiffLvlTableName("Biter_Man;Biter_Woman")
         SpawnCondition("nav_mesh, -1;__any__, 1;p_ROOF, -1")
         MinDistBtwZombies(1)
         ForceTargetType(-1)
@@ -142,7 +143,7 @@
     {
         Difficult(7)
         DiffLvlTableName("Biter_Man_Wast;Biter_Woman_Wast")
-		AIPreset("Biter_Man;Biter_Woman")
+        AIPreset("Biter_Man;Biter_Woman;Biter_Man_Fresh;Biter_Woman_Fresh;Biter_Man_Injured_01;Biter_Man_Injured_02;Biter_Man_Injured_03;Biter_Man_Injured_04;Biter_Woman_Injured_01;BiterBurn_Man;BiterBurn_Woman;Biter_Worker;Biter_Redneck;Biter_Soldier;Biter_Policeman;Biter_RaisBandit;Biter_Man_FreshDead_02;Biter_Woman_FreshDead_02;Biter_Man_FireFighter;BTZ_Biter_Man;BTZ_Biter_Woman;BTZ_Biter_Man_Hard;BTZ_Biter_Woman_Hard;BTZ_BiterBurn_Man;BTZ_BiterBurn_Woman;BiterHangar_Man;BiterHangar_Woman;BiterNoGrab_Man;BiterNoGrab_Woman;Biter_Man_NW;Biter_Woman_NW;Biter_Man_PreNW;Biter_Woman_PreNW;Biter_Redneck_NW")
         SpawnCondition("t_INIT, 0.4;z_VESSEL, 0.7;z_INFECTED, 1;p_WIDE, 1;p_SQUARE, 1;__any__, 1;p_ROOF, 1")
         ForceTargetType(-1)
         TimeBtwSpawnZombies(3)
@@ -163,7 +164,7 @@
     {
         Difficult(10)
         MinChapterAndProgressCondition(1, 9)
-        AIPreset("GasTank;GasTank;GasTank;GasTankGray")
+        AIPreset("GasTank;GasTankGray;GasTank_NoTank;GasTank_Ram")
         SpawnCondition("nav_mesh, -1;__any__, 1;t_INIT, -1;p_ROOF, -1")
         DisallowedMaps("Wasteland")
         MinDistBtwZombies(20)
@@ -175,8 +176,8 @@
     PresetDef("HotGround_Infected")
     {
         Difficult(15)
-        AIPreset("Enemy_S_Bandit_FirearmDefender001;enc_slums_maskedbandit_leader_lvl00;enc_slums_maskedbandit_leader_lvl01;enc_slums_maskedbandit_leader_lvl02;enc_slums_maskedbandit_leader_lvl03;enc_slums_maskedbandit_lvl00;enc_slums_maskedbandit_lvl01;enc_slums_maskedbandit_lvl02;Biter_Man;Biter_Woman;ViralHumanity_Man;ViralHumanity_Woman")
-		DiffLvlTableName("Biter_Man_Fresh;Biter_Woman_Fresh;Viral_Man;Viral_Woman")
+        AIPreset("Biter_Man;Biter_Woman;Biter_Man_Fresh;Biter_Woman_Fresh;ViralHumanity_Man;ViralHumanity_Woman;ViralBurn_Man;ViralBurn_Woman;BiterBurn_Man;BiterBurn_Woman")
+        DiffLvlTableName("Biter_Man_Fresh;Biter_Woman_Fresh;Viral_Man;Viral_Woman")
         SpawnCondition("__any__, 1;nav_mesh, -1;t_INIT, -1;p_ROOF, -1;p_INTERIOR, -1")
         MinDistBtwZombies(15)
         TimeBtwSpawnZombies(1)
@@ -189,10 +190,10 @@
     PresetDef("HotGround_Infected_Init")
     {
         Difficult(15)
-        AIPreset("ViralHumanity_Man_OldTown;ViralHumanity_Woman_OldTown")
-		DiffLvlTableName("Biter_Man;Biter_Woman;Biter_Man_Fresh;Biter_Woman_Fresh;Viral_Man;Viral_Woman")
-		BannedAreaAttribs("NOISE_SPAWN_BLOCKER")
-        SpawnCondition("t_INIT, 0.7;z_INFECTED, 0.7;p_ROOF, 1")
+        AIPreset("ViralHumanity_Man_OldTown;ViralHumanity_Woman_OldTown;ViralBurn_Man;ViralBurn_Woman;ViralBlister_Man;ViralBlister_Woman")
+        DiffLvlTableName("Biter_Man;Biter_Woman;Biter_Man_Fresh;Biter_Woman_Fresh;Viral_Man;Viral_Woman")
+        BannedAreaAttribs("NOISE_SPAWN_BLOCKER")
+        SpawnCondition("t_INIT, 0.7;z_INFECTED, 0.7;p_ROOF, 0.3")
         MinDistBtwZombies(15)
         RemoveDistanceIfNotContact(20)
         ForceTargetType(3)
@@ -204,10 +205,10 @@
     PresetDef("HotGround_Infected_Roof_Init")
     {
         Difficult(15)
-        AIPreset("ViralHumanity_Man_OldTown;ViralHumanity_Woman_OldTown")
-		DiffLvlTableName("Biter_Man;Biter_Woman;Biter_Man_Fresh;Biter_Woman_Fresh;Viral_Man;Viral_Woman")
-		BannedAreaAttribs("NOISE_SPAWN_BLOCKER")
-		SpawnCondition("t_INIT, 0.4;z_INFECTED, 0.4;p_ROOF, 0.4")
+        AIPreset("ViralHumanity_Man_OldTown;ViralHumanity_Woman_OldTown;ViralBurn_Man;ViralBurn_Woman;ViralBlister_Man;ViralBlister_Woman")
+        DiffLvlTableName("Biter_Man;Biter_Woman;Biter_Man_Fresh;Biter_Woman_Fresh;Viral_Man;Viral_Woman")
+        BannedAreaAttribs("NOISE_SPAWN_BLOCKER")
+        SpawnCondition("t_INIT, 0.4;z_INFECTED, 0.4;p_ROOF, 0.4")
         MinDistBtwZombies(15)
         ForceTargetType(3)
         TimeBtwSpawnZombies(5)
@@ -217,9 +218,9 @@
     PresetDef("Infected_Human")
     {
         Difficult(15)
-        AIPreset("ViralHumanity_Man;ViralHumanity_Woman")
-		DiffLvlTableName("Viral_Man;Viral_Woman")
-        SpawnCondition("p_WIDE, 1;p_SQUARE, 1;p_ROOF, -1")
+        AIPreset("ViralHumanity_Man;ViralHumanity_Woman;ViralBurn_Man;ViralBurn_Woman;ViralBlister_Man;ViralBlister_Woman;ViralPoison_Man;ViralPoison_Woman;Viral_RaisBandit;Viral_Redneck;ViralHumanity_Man_OldTown;ViralHumanity_Woman_OldTown;ViralHumanity_Man_BlockVehJump;ViralHumanity_Woman_BlockVehJump;Viral_Big_Humanity;Viral_Humanity_Jump;Viral_Man_Group;Viral_Woman_Group;Viral_Man_Museum;Viral_Woman_Museum;Stadium_ViralBurn_Man;Stadium_ViralBurn_Woman")
+        DiffLvlTableName("Viral_Man;Viral_Woman")
+        SpawnCondition("p_WIDE, 1;p_SQUARE, 1;p_ROOF, 0.3")
         MinDistBtwZombies(30)
         TimeBtwSpawnZombies(7)
 		CanSpawnIntoCrowd(1,"_AG")
@@ -228,19 +229,18 @@
 	PresetDef("Infected_L4D")
     {
         Difficult(7)
-        AIPreset("ViralHumanity_Man;ViralHumanity_Woman")
-		DiffLvlTableName("Viral_Man;Viral_Woman")
+        AIPreset("ViralHumanity_Man;ViralHumanity_Woman;Viral_Man;Viral_Woman;ViralBurn_Man;ViralBurn_Woman")
+        DiffLvlTableName("Viral_Man;Viral_Woman")
         SpawnCondition("p_WIDE, 1;p_SQUARE, 1;p_ROOF, -1;t_INIT, 1;")
         MinDistBtwZombies(30)
         TimeBtwSpawnZombies(3)
     }
 
-		
     PresetDef("Infected_HumanPeak")
     {
         Difficult(15)
-        AIPreset("ViralHumanity_Man;ViralHumanity_Woman")
-		DiffLvlTableName("Viral_Man;Viral_Woman")
+        AIPreset("ViralHumanity_Man;ViralHumanity_Woman;ViralBurn_Man;ViralBurn_Woman;ViralBlister_Man;ViralBlister_Woman;ViralPoison_Man;ViralPoison_Woman")
+        DiffLvlTableName("Viral_Man;Viral_Woman")
         SpawnCondition("nav_mesh, -1;__any__, 1;t_INIT, -1;p_ROOF, -1")
         MinDistBtwZombies(25)
         TimeBtwSpawnZombies(5)
@@ -249,9 +249,9 @@
     PresetDef("Infected_HumanInit")
     {
         Difficult(15)
-        AIPreset("ViralHumanity_Man;ViralHumanity_Woman")
-		DiffLvlTableName("Viral_Man;Viral_Woman")
-        SpawnCondition("t_INIT, 0.7;z_INFECTED, 0.7")
+        AIPreset("ViralHumanity_Man;ViralHumanity_Woman;ViralBurn_Man;ViralBurn_Woman;ViralBlister_Man;ViralBlister_Woman")
+        DiffLvlTableName("Viral_Man;Viral_Woman")
+        SpawnCondition("t_INIT, 0.7;z_INFECTED, 0.7;p_ROOF, 0.3")
         MinDistBtwZombies(30)
         RemoveDistanceIfNotContact(20)
         ForceTargetType(1)
@@ -262,8 +262,8 @@
     PresetDef("Infected_HumanScream")
     {
         Difficult(15)
-        AIPreset("ViralHumanity_Man;ViralHumanity_Woman")
-		DiffLvlTableName("Viral_Man;Viral_Woman")
+        AIPreset("ViralHumanity_Man;ViralHumanity_Woman;ViralBurn_Man;ViralBurn_Woman;ViralBlister_Man;ViralBlister_Woman")
+        DiffLvlTableName("Viral_Man;Viral_Woman")
         SpawnCondition("nav_mesh, -1;__any__, 1;t_INIT, -1;p_ROOF, -1")
         ForceTargetType(1)
         TimeBtwSpawnZombies(2)
@@ -272,10 +272,10 @@
     PresetDef("Infected_HumanInit_Noise")
     {
         Difficult(15) 
-        AIPreset("ViralHumanity_Man;ViralHumanity_Woman") 
-		BannedAreaAttribs("NOISE_SPAWN_BLOCKER")
-		DiffLvlTableName("Viral_Man;Viral_Woman")
-        SpawnCondition("t_INIT, 1;z_INFECTED, 1;p_WIDE, 1;p_SQUARE, 1")
+        AIPreset("ViralHumanity_Man;ViralHumanity_Woman;ViralBurn_Man;ViralBurn_Woman;ViralBlister_Man;ViralBlister_Woman;ViralPoison_Man;ViralPoison_Woman") 
+        BannedAreaAttribs("NOISE_SPAWN_BLOCKER")
+        DiffLvlTableName("Viral_Man;Viral_Woman")
+        SpawnCondition("t_INIT, 1;z_INFECTED, 1;p_WIDE, 1;p_SQUARE, 1;p_ROOF, 0.3")
         MinDistBtwZombies(30)
         RemoveDistanceIfNotContact(50)
         ForceTargetType(3)
@@ -286,9 +286,9 @@
     PresetDef("Infected_HumanScream_Noise")
     {
         Difficult(15)
-        AIPreset("ViralHumanity_Man;ViralHumanity_Woman")
-		DiffLvlTableName("Viral_Man;Viral_Woman")
-        SpawnCondition("nav_mesh, -1;__any__, 1;t_INIT, -1;p_ROOF, -1")
+        AIPreset("ViralHumanity_Man;ViralHumanity_Woman;ViralBurn_Man;ViralBurn_Woman;ViralBlister_Man;ViralBlister_Woman")
+        DiffLvlTableName("Viral_Man;Viral_Woman")
+        SpawnCondition("nav_mesh, -1;__any__, 1;t_INIT, -1;p_ROOF, 0.3")
         ForceTargetType(3)
         TimeBtwSpawnZombies(2)
     }
@@ -296,8 +296,8 @@
     PresetDef("Infected_HumanEatingCorpse")
     {
         Difficult(10)
-        AIPreset("ViralHumanity_Man;ViralHumanity_Woman")
-		DiffLvlTableName("Viral_Man;Viral_Woman")
+        AIPreset("ViralHumanity_Man;ViralHumanity_Woman;ViralBurn_Man;ViralBurn_Woman")
+        DiffLvlTableName("Viral_Man;Viral_Woman")
         SpawnCondition("nav_mesh, -1;__any__, 1;t_INIT, -1")
         AttractorToSpawnWithAI("virtual_corpse_a")
         MeshToSpawnWithAI("dead_body_c.msh", [0.03, 0, 1.20])
@@ -308,8 +308,8 @@
     PresetDef("Infected_HumanFakeTarget")
     {
         Difficult(15)
-        AIPreset("ViralHumanity_Man;ViralHumanity_Woman")
-		DiffLvlTableName("Viral_Man;Viral_Woman")
+        AIPreset("ViralHumanity_Man;ViralHumanity_Woman;ViralBurn_Man;ViralBurn_Woman;ViralBlister_Man;ViralBlister_Woman")
+        DiffLvlTableName("Viral_Man;Viral_Woman")
         SpawnCondition("nav_mesh, 1")
         ForceTargetType(3)
         TimeBtwSpawnZombies(2)
@@ -318,7 +318,7 @@
     PresetDef("Goon")
     {
         Difficult(15)
-        AIPreset("Goon_Slums")
+        AIPreset("Goon_Slums;Goon_OldTown;Goon_Wasteland;Goon_Hazmat;Goon_Poison;Goon_Blisters;Goon_OldTown_Gaas;Goon_SlumsEncounters;Goon_DeadZone;Goon_Demolition;Goon_EnemyPresentation;Goon_OldTown_Interior;Stadium_Goon_lvl2;Stadium_Goon_lvl3;Goon_ZombieHunt")
         SpawnCondition("p_WIDE, 1;p_SQUARE, 1;p_ROOF, -1")
         MinDistBtwZombies(40)
         RemoveDistanceIfNotContact(45)
@@ -330,8 +330,8 @@
     PresetDef("Toad_Easy")
     {
         Difficult(20)
-        AIPreset("Toad_Slums")
-        SpawnCondition("p_WIDE, 1;p_SQUARE, 1;z_SPECIAL, 1;z_SPITTER, 1;")
+        AIPreset("Toad_Slums;Toad_Stationary")
+        SpawnCondition("p_WIDE, 1;p_SQUARE, 1;z_SPECIAL, 1;z_SPITTER, 1;p_ROOF, 0.3")
         DisallowedMaps("Old_Town")
         MinDistBtwZombies(30)
         RemoveDistanceIfNotContact(45)
@@ -342,8 +342,8 @@
     PresetDef("Toad_Medium")
     {
         Difficult(20)
-        AIPreset("Toad_Wasteland")
-        SpawnCondition("p_WIDE, 1;p_SQUARE, 1;z_SPECIAL, 1;z_SPITTER, 1;")
+        AIPreset("Toad_Wasteland;Toad_Poison;Toad_Stationary;Toad_Boss")
+        SpawnCondition("p_WIDE, 1;p_SQUARE, 1;z_SPECIAL, 1;z_SPITTER, 1;p_ROOF, 0.3")
         DisallowedMaps("Old_Town")
         MinDistBtwZombies(30)
         RemoveDistanceIfNotContact(45)
@@ -354,8 +354,8 @@
     PresetDef("Toad_Hard")
     {
         Difficult(20)
-        AIPreset("Toad_OldTown")
-        SpawnCondition("p_WIDE, 1;p_SQUARE, 1;z_SPECIAL, 1;z_SPITTER, 1;")
+        AIPreset("Toad_OldTown;Toad_Poison;Toad_Demolition;Toad_PerfectMurder;Toad_Stadium_Hard;Toad_Stadium_Stationary_Hard")
+        SpawnCondition("p_WIDE, 1;p_SQUARE, 1;z_SPECIAL, 1;z_SPITTER, 1;p_ROOF, 0.3")
         MinDistBtwZombies(30)
         RemoveDistanceIfNotContact(45)
         TimeBtwSpawnZombies(120)
@@ -365,9 +365,9 @@
     PresetDef("Toad_OldTown")
     {
         Difficult(20)
-        AIPreset("Toad_OldTown")
+        AIPreset("Toad_OldTown;Toad_Poison;Toad_Demolition;Toad_PerfectMurder")
         AllowedMaps("Old_Town")
-        SpawnCondition("z_SPITTER, 1;")
+        SpawnCondition("p_WIDE, 1;p_SQUARE, 1;z_SPECIAL, 1;z_SPITTER, 1;p_ROOF, 0.3")
         MinDistBtwZombies(30)
         RemoveDistanceIfNotContact(45)
 		TimeBtwSpawnZombies(120)
@@ -378,7 +378,7 @@
     {
         Difficult(20)
         MinChapterAndProgressCondition(1, 8)
-        AIPreset("Bomber")
+        AIPreset("Bomber;Bomber_Poison;Bomber_Wast;Bomber_Stationary;BTZ_Suicider")
         SpawnCondition("p_WIDE, 1;p_INTERIOR, 1;z_SPECIAL, 1")
         MinDistBtwZombies(60)
         RemoveDistanceIfNotContact(45)
@@ -388,7 +388,7 @@
     PresetDef("Armored")
     {
         Difficult(40)
-        AIPreset("Demolisher")
+        AIPreset("Demolisher;Demolisher_Wasteland;DemolisherTough;Demolisher_Blister;Demolisher_Arena;Demolisher_Arena_Rand;Demolisher_Prison;Demolisher_Arena_Stadium;Demolisher_Clinic;Demolisher_Indoor;Demolisher_Presentation;Demolisher_SlumsAntenna;Demolisher_Stationary;Demolisher_ZombieHunt")
         SpawnCondition("z_DEMOLISHER, 1")
         DisallowedMaps("Slums")
         MinDistBtwZombies(80)
@@ -399,7 +399,7 @@
     PresetDef("Screamer")
     {
         Difficult(20)
-        AIPreset("Screamer")
+        AIPreset("Screamer;Screamer_Wasteland")
         SpawnCondition("p_WIDE, 1;p_SQUARE, 1;z_SPECIAL, 1")
         DisallowedMaps("Slums")
         MinDistBtwZombies(100)
@@ -410,7 +410,7 @@
     PresetDef("Running_Bomber")
     {
         Difficult(20)
-        AIPreset("RunningBomber")
+        AIPreset("RunningBomber;RunningBomber_Final")
         SpawnCondition("nav_mesh, -1;__any__, 1;t_INIT, -1;p_ROOF, -1")
         AllowedMaps("Old_Town")
         MinDistBtwZombies(15)
@@ -422,7 +422,7 @@
     PresetDef("Running_Bomber_Init")
     {
         Difficult(20)
-        AIPreset("RunningBomber")
+        AIPreset("RunningBomber;RunningBomber_Final")
         SpawnCondition("t_INIT, 0.7;z_INFECTED, 0.7;p_ROOF, -1")
         AllowedMaps("Old_Town")
         MinDistBtwZombies(15)
@@ -434,7 +434,7 @@
     PresetDef("Running_Bomber_Nav")
     {
         Difficult(20)
-        AIPreset("RunningBomber")
+        AIPreset("RunningBomber;RunningBomber_Final")
         SpawnCondition("nav_mesh, 1")
         AllowedMaps("Wasteland")
         MinDistBtwZombies(10)
@@ -446,7 +446,7 @@
     PresetDef("z_Stinger")
     {
         Difficult(3)
-        AIPreset("BiterStinger_Man;BiterStinger_Woman")
+        AIPreset("BiterStinger_Man;BiterStinger_Woman;BiterStinger_Redneck")
         SpawnCondition("z_STINGER, 1")
         MinDistBtwZombies(25)
         RemoveDistanceIfNotContact(45)
@@ -455,8 +455,8 @@
     PresetDef("Melee_Fighter_With_Pipe_Init")
     {
         Difficult(20)
-        AIPreset("Enemy_Headhunter_Melee")
-        SpawnCondition("t_INIT, 0.7;z_MELEE_FIGHTER, 0.7")
+        AIPreset("Enemy_Headhunter_Melee;Melee_Fighter_Armored;Quest_Intruders_MeleeFighter;Quest_Intruders_MeleeFighterBoss;Quest_Warehouse_MeleeFighter;Quest_ElectricMachete_RaisMeleeFighter;Quest_ElectricMachete_RaisMeleeFighterLeader")
+        SpawnCondition("t_INIT, 0.7;z_MELEE_FIGHTER, 0.7;p_ROOF, 1")
         AllowedMaps("Old_Town")
         MinDistBtwZombies(30)
         RemoveDistanceIfNotContact(45)
@@ -469,8 +469,8 @@
     PresetDef("Melee_Fighter_With_Pipe")
     {
         Difficult(20)
-        SpawnCondition("z_MELEE_FIGHTER, 1;p_WIDE, 1;p_SQUARE, 1;p_ROOF, -1")
-        AIPreset("Enemy_Headhunter_Melee")
+        SpawnCondition("z_MELEE_FIGHTER, 1;p_WIDE, 1;p_SQUARE, 1;p_ROOF, 1")
+        AIPreset("Enemy_Headhunter_Melee;Melee_Fighter_Armored;Quest_Intruders_MeleeFighter;Quest_Warehouse_MeleeFighter;Quest_Hotel_OP_GuardMelee;Quest_Office_OP_GuardMelee;Quest_OutOfTheAir_FirstGuardMelee")
         AllowedMaps("Old_Town")
         MinDistBtwZombies(30)
         TimeBtwSpawnZombies(5)
@@ -482,7 +482,7 @@
     PresetDef("Volatile_Eating_Corpse")
     {
         Difficult(40)
-        AIPreset("Volatile")
+        AIPreset("Volatile;Volatile_Wast;Volatile_Blister;Volatile_smaller;Volatile_Halloween;Volatile_Unturned;Volatile_Super_Unturned;Volatile_Iced;Volatile_Final;Volatile_Group;Volatile_No_Spit;Volatile_Suicider;Volatile_Super")
         SpawnCondition("nav_mesh, -1;__any__, 1;t_INIT, -1")
         DisallowedMaps("Stadium")
 		DisallowedMaps("old_town_outposts_museum")
@@ -497,8 +497,8 @@
     PresetDef("Human_To_Infected_In_Attractor")
     {
         Difficult(15)
-        AIPreset("HumanToViralTransformation_Man;")
-		DiffLvlTableName("Viral_Man")
+        AIPreset("HumanToViralTransformation_Man;HumanToViralTransformation_Woman")
+        DiffLvlTableName("Viral_Man")
         SpawnCondition("t_TRANSFORM, 0.7.;z_INFECTED, 0.7")
         MinDistBtwZombies(30)
         ForceTargetType(-1)
@@ -529,7 +529,7 @@
         AllowedMaps("Old_Town")
         UseCondition("Day;DeadZone_Close;")
         Difficult(7)
-        AIPreset("Biter_Policeman")
+        AIPreset("Biter_Policeman;DeadZone_Biter;DeadZone_Biter_Boss_Man;DeadZone_Biter_Boss_Woman")
         SpawnCondition("__any__, 1;nav_mesh, -1;t_INIT, -1;p_ROOF, -1;")
         MinDistBtwZombies(6)
         ForceTargetType(-1)
@@ -538,7 +538,7 @@
     PresetDef("DeadZone_GasTank")
     {
         Difficult(10)
-        AIPreset("GasTank;GasTank;GasTankGray")
+        AIPreset("GasTank;GasTankGray;Viral_Gastank")
         AllowedMaps("Old_Town")
         UseCondition("Day;DeadZone_Close;")
         SpawnCondition("__any__, 1;nav_mesh, -1;t_INIT, -1;p_ROOF, -1;")
@@ -550,18 +550,17 @@
     PresetDef("Biter_Burn")
     {
         Difficult(7)
-        AIPreset("BiterBurn_Man;BiterBurn_Woman;")
+        AIPreset("BiterBurn_Man;BiterBurn_Woman;BiterPoison_Man;BiterPoison_Woman;ViralBurn_Man;ViralBurn_Woman")
         SpawnCondition("nav_mesh, -1;__any__, 1;t_INIT, -1")
         MinDistBtwZombies(20)
         ForceTargetType(-1)
         TimeBtwSpawnZombies(10)
     }
 
-
     PresetDef("Biter_Special")
     {
         Difficult(9)
-        AIPreset("BiterBurn_Man;BiterBurn_Woman;Biter_Worker")
+        AIPreset("BiterBurn_Man;BiterBurn_Woman;Biter_Worker;BiterPoison_Man;BiterPoison_Woman;BiterBlister_Man;BiterBlister_Woman;BiterMushroom_Man;ViralBurn_Man;ViralBurn_Woman;ViralBlister_Man;ViralBlister_Woman;ViralPoison_Man;ViralPoison_Woman;BTZ_BiterBurn_Man;BTZ_BiterBurn_Woman;BTZ_BiterPoison_Man;BTZ_BiterPoison_Woman;BiterHangar_Man;BiterHangar_Woman;Biter_BlisterMulti;DeadZone_Biter;DeadZone_Biter_Boss_Man;DeadZone_Biter_Boss_Woman;Viral_Winter_Goblin;Quest_Clinic_Biter;Quest_Clinic_Worker")
         SpawnCondition("nav_mesh, -1;__any__, 1;t_INIT, -1")
         MinDistBtwZombies(20)
         ForceTargetType(-1)
@@ -573,8 +572,8 @@
 	PresetDef("IAL_Biter_New")
     {
         Difficult(9)
-        AIPreset("Biter_Man_FireFighter;Biter_Man_FreshDead_02;Biter_Woman_FreshDead_02;BTZ_Biter_RaisBandit;BTZ_Biter_Policeman;Biter_Worker;Biter_Man_Injured_01;Biter_Man_Injured_02;Biter_Man_Injured_03;Biter_Man_Injured_04;Biter_Woman_Injured_01;Biter_DZ_Steam_Man;Biter_DZ_Steam_Woman;Biter_Man_AG;Biter_Man_SmashedHead;Biter_Prologue;Biter_RaisBandit;Biter_Woman_AG;Biter_Woman_Agressive;Bitter_Man_Agressive;ViralBlister_Man;ViralBlister_Woman")
-        SpawnCondition("t_INIT, 0.4;z_VESSEL, 0.7;z_INFECTED, 1;p_WIDE, 1;p_SQUARE, 1;__any__, 1;p_ROOF, 1")
+        AIPreset("Biter_Man_FireFighter;Biter_Man_FreshDead_02;Biter_Woman_FreshDead_02;BTZ_Biter_RaisBandit;BTZ_Biter_Policeman;Biter_Worker;Biter_Man_Injured_01;Biter_Man_Injured_02;Biter_Man_Injured_03;Biter_Man_Injured_04;Biter_Woman_Injured_01;Biter_DZ_Steam_Man;Biter_DZ_Steam_Woman;Biter_Man_AG;Biter_Man_SmashedHead;Biter_Prologue;Biter_RaisBandit;Biter_Woman_AG;Biter_Woman_Agressive;Bitter_Man_Agressive;ViralBlister_Man;ViralBlister_Woman;BiterBurn_Man;BiterBurn_Woman;BiterBlister_Man;BiterBlister_Woman;BiterPoison_Man;BiterPoison_Woman;Biter_Man_Fresh;Biter_Woman_Fresh;Biter_Redneck;Biter_Soldier;BTZ_Biter_Man;BTZ_Biter_Woman;BTZ_Biter_Man_Hard;BTZ_Biter_Woman_Hard;BTZ_BiterBurn_Man;BTZ_BiterBurn_Woman;BTZ_BiterPoison_Man;BTZ_BiterPoison_Woman;BTZ_Biter_Redneck;BTZ_Biter_Soldier;BTZ_Biter_Worker;BiterHangar_Man;BiterHangar_Woman;BiterMushroom_Man;Biter_BlisterMulti;Bucket_ZMan;Lifebuoy_ZWoman;Miner_ZMan;TraficCone_ZMan")
+        SpawnCondition("t_INIT, 0.4;z_VESSEL, 0.7;z_INFECTED, 1;p_WIDE, 1;p_SQUARE, 1;__any__, 1;p_ROOF, 0.2")
         DiffLvlTableName("Biter_Man_Wast;Biter_Woman_Wast")
 		MinDistBtwZombies(3)
         ForceTargetType(-1)
@@ -585,10 +584,103 @@
     {
         Difficult(7)
         DiffLvlTableName("Biter_Man_Wast;Biter_Woman_Wast")
-		AIPreset("Friendly_Survivor;Enemy_Survivor;enc_gaas_oldtown_new_enemy_00;enc_oldtown_bandit_lvl04;enc_gaas_oldtown_new_enemy_01;enc_gaas_oldtown_new_enemy_02;enc_gaas_oldtown_new_enemy_03;enc_oldtown_survivor_fighter_01")
-        SpawnCondition("t_INIT, 0.4;z_VESSEL, 0.7;z_INFECTED, 1;p_WIDE, 1;p_SQUARE, 1;__any__, 1;p_ROOF, 1")
+        AIPreset("Friendly_Survivor;Enemy_Survivor;enc_gaas_oldtown_new_enemy_00;enc_oldtown_bandit_lvl04;enc_gaas_oldtown_new_enemy_01;enc_gaas_oldtown_new_enemy_02;enc_gaas_oldtown_new_enemy_03;enc_oldtown_survivor_fighter_01;Challenge_NPC_Bozak;Slums_Challenge_NPC_02_killer;Quest_Airdrop_AirdropBandit01;Quest_Airdrop_AirdropBandit02;Quest_Airdrop_AirdropBandit03;Quest_BringGalib_BringGalibBandit01;Quest_BringGalib_BringGalibBandit02;Quest_BringGalib_BringGalibBandit03;Quest_Intruders_HumanFirearm;Quest_Museum_HMF_Leader;Quest_Runaway_HumanFirearm;Quest_Runaway_HumanFirearm_Grenader;Quest_Saviors_RaisBandit01;Quest_Saviors_RaisBandit02;Quest_Saviors_RaisBandit03;Quest_Saviors_RaisBanditFirearm01;Quest_Saviors_RaisBanditFirearm02;Quest_Saviors_RaisBanditFirearm03;Quest_Warehouse_HumanFirearm")
+        SpawnCondition("z_MELEE_FIGHTER, 0.7;p_WIDE, 1;p_SQUARE, 1;p_ROOF, 1")
         ForceTargetType(-1)
         MinDistBtwZombies(15)
-		TimeBtwSpawnZombies(1)
+        TimeBtwSpawnZombies(1)
         RelativePresets("Volatile_Pit;Infected_HumanInit")
     }
+
+    PresetDef("IAL_Human_Enemy_Melee")
+    {
+        Difficult(7)
+        DiffLvlTableName("Biter_Man_Wast;Biter_Woman_Wast")
+        AIPreset("Enemy_S_Bandit_Melee001;Enemy_S_Bandit_Melee001_BFZ_01;Enemy_S_Bandit_Melee001_BFZ_02;Enemy_S_Bandit_Melee002;Enemy_S_Bandit_Melee003;Enemy_S_Boss_Melee_Explosives;Enemy_S_Boss_Melee_Warehouse;Melee_Fighter_Armored;Quest_Intruders_MeleeFighter;Quest_Intruders_MeleeFighterBoss;Quest_Warehouse_MeleeFighter;Quest_ElectricMachete_RaisMeleeFighter;Quest_ElectricMachete_RaisMeleeFighterLeader;Quest_Hotel_OP_GuardMelee;Quest_Office_OP_GuardMelee;Quest_OutOfTheAir_FirstGuardMelee;enc_maskedbandit_01_weapon;enc_maskedbandit_02_weapon;enc_maskedbandit_03_weapon;enc_slums_maskedbandit_leader_lvl00;enc_slums_maskedbandit_leader_lvl01;enc_slums_maskedbandit_leader_lvl02;enc_slums_maskedbandit_leader_lvl03;enc_slums_maskedbandit_leader_lvl04;enc_slums_maskedbandit_lvl01;enc_slums_maskedbandit_lvl02;enc_slums_maskedbandit_lvl03;enc_slums_maskedbandit_lvl04;enc_oldtown_bandit_leader_lvl00;enc_oldtown_bandit_leader_lvl01;enc_oldtown_bandit_leader_lvl02;enc_oldtown_bandit_leader_lvl03;enc_oldtown_bandit_leader_lvl04;enc_oldtown_bandit_lvl00;enc_oldtown_bandit_lvl01;enc_oldtown_bandit_lvl02;enc_oldtown_bandit_lvl03;enc_oldtown_bandit_lvl04;Enemy_SaviorsBandit04;Quest_Saviors_RaisBandit01;Quest_Saviors_RaisBandit02;Quest_Saviors_RaisBandit03;Quest_BringGalib_BringGalibBandit01;Quest_BringGalib_BringGalibBandit02;Quest_BringGalib_BringGalibBandit03;Quest_Airdrop_AirdropBandit01;Quest_Airdrop_AirdropBandit02;Quest_Airdrop_AirdropBandit03;Quest_AscentTheGallows_Boss;Quest_Museum_HMF_Leader;Quest_Museum_TahirBoss;Quest_Museum_TahirBoss_Keep_Dist;Quest_Warehouse_Boss;Challenge_NPC_Bozak;Slums_Challenge_NPC_02_killer")
+        SpawnCondition("z_MELEE_FIGHTER, 1;p_WIDE, 1;p_SQUARE, 1;p_ROOF, 1;p_INTERIOR, 1")
+        ForceTargetType(-1)
+        MinDistBtwZombies(5)
+        TimeBtwSpawnZombies(1)
+        CanSpawnIntoCrowd(1,"_AG")
+    }
+
+    PresetDef("IAL_Human_Enemy_Shooter")
+    {
+        Difficult(7)
+        DiffLvlTableName("Biter_Man_Wast;Biter_Woman_Wast")
+        AIPreset("Enemy_S_Bandit_Firearm001;Enemy_S_Bandit_FirearmDefender001;Enc_Test_Enemy_S_Bandit_Firearm;Quest_Intruders_HumanFirearm;Quest_Runaway_HumanFirearm;Quest_Runaway_HumanFirearm_Grenader;Quest_Saviors_RaisBanditFirearm01;Quest_Saviors_RaisBanditFirearm02;Quest_Saviors_RaisBanditFirearm03;Quest_Warehouse_HumanFirearm;enc_slums_maskedbanditrifle_leader_armor_lvl04;enc_slums_maskedbanditrifle_leader_lvl00;enc_slums_maskedbanditrifle_leader_lvl01;enc_slums_maskedbanditrifle_leader_lvl02;enc_slums_maskedbanditrifle_leader_lvl03;enc_slums_maskedbanditrifle_leader_lvl04;enc_slums_maskedbanditrifle_lvl00;enc_slums_maskedbanditrifle_lvl01;enc_slums_maskedbanditrifle_lvl02;enc_slums_maskedbanditrifle_lvl03;enc_slums_maskedbanditrifle_lvl04")
+        SpawnCondition("z_MELEE_FIGHTER, 0.8;p_WIDE, 1;p_SQUARE, 1;p_ROOF, 1;p_INTERIOR, 1")
+        ForceTargetType(-1)
+        MinDistBtwZombies(5)
+        TimeBtwSpawnZombies(1)
+        CanSpawnIntoCrowd(1,"_AG")
+    }
+
+    PresetDef("Vessel_Init_IAL") 
+    {
+        Difficult(7)
+        DiffLvlTableName("Biter_Man_Wast;Biter_Woman_Wast")
+        AIPreset("Biter_Man;Biter_Woman;Biter_Man_Fresh;Biter_Woman_Fresh;Biter_Man_Injured_01;Biter_Man_Injured_02;Biter_Man_Injured_03;Biter_Man_Injured_04;Biter_Woman_Injured_01;BiterBurn_Man;BiterBurn_Woman;Biter_Worker;Biter_Redneck;Biter_Soldier;Biter_Policeman;Biter_RaisBandit;Biter_Man_FreshDead_02;Biter_Woman_FreshDead_02;Biter_Man_FireFighter;BiterBlister_Man;BiterBlister_Woman;BiterPoison_Man;BiterPoison_Woman;ViralBlister_Man;ViralBlister_Woman")
+        SpawnCondition("t_INIT, 0.4;z_VESSEL, 0.7;z_INFECTED, 1;p_WIDE, 1;p_SQUARE, 1;p_ROOF, 0.3")
+        ForceTargetType(-1)
+        TimeBtwSpawnZombies(3)
+        RelativePresets("Volatile_Pit;Infected_HumanInit")
+    }
+
+    PresetDef("Volatile_Pit")
+    {
+        Difficult(40)
+        AIPreset("Volatile;Volatile_Wast;Volatile_Blister;Volatile_smaller;Volatile_Final;Volatile_Group;Volatile_Super;NightWalker_Man;NightWalker_Woman;NightWalker_Redneck;NightWalker_Man_L4D;NightWalker_Woman_L4D;NightWalker_Man_L4D_NW;BTZ_NightWalker_Man;BTZ_NightWalker_Woman;BTZ_NightWalker_Man_Burn;BTZ_NightWalker_Woman_Burn;BTZ_NightWalker_Man_Hard;BTZ_NightWalker_Woman_Hard;BTZ_NightWalker_Man_Poison;BTZ_NightWalker_Woman_Poison")
+        SpawnCondition("nav_mesh, -1;__any__, 1;t_INIT, -1")
+        DisallowedMaps("Stadium")
+        DisallowedMaps("old_town_outposts_museum")
+        DisallowedMaps("old_town_outposts_radio")
+        DisallowedMaps("old_town_outposts_office")
+        MinDistBtwZombies(80)
+        RemoveDistanceIfNotContact(100)
+        ForceTargetType(-1)
+        TimeBtwSpawnZombies(120)
+    }
+
+    PresetDef("IAL_Human_Friendly_Melee")
+    {
+        Difficult(7)
+        DiffLvlTableName("Biter_Man_Wast;Biter_Woman_Wast")
+        AIPreset("IALR_male_000;IALR_male_001;IALR_male_002;IALR_male_003;IALR_male_004;IALR_male_005;IALR_male_006;IALR_male_007;IALR_male_008;IALR_male_009;IALR_male_010;IALR_male_011;IALR_male_012;IALR_male_013;IALR_male_014;IALR_male_015;IALR_male_016;IALR_male_017;IALR_male_018;IALR_male_019;IALR_male_020;IALR_male_021;IALR_male_022;IALR_male_023;IALR_male_024;IALR_male_025;IALR_male_026;IALR_male_027;IALR_male_028;IALR_male_029;IALR_male_030;IALR_male_031;IALR_male_032;IALR_male_033;IALR_male_034;IALR_male_035;IALR_male_036;IALR_male_037;IALR_male_038;IALR_male_039;IALR_male_040;IALR_male_041;IALR_male_042;IALR_male_043;IALR_male_044;IALR_male_045;IALR_male_046;IALR_male_047;IALR_male_048;IALR_male_049;IALR_male_050;IALR_male_051;IALR_male_052;IALR_male_053;IALR_male_054;IALR_male_055;IALR_male_056;IALR_male_057;IALR_male_058;IALR_male_059;IALR_male_060;IALR_male_061;IALR_male_062;IALR_male_063;IALR_male_064;IALR_male_065;IALR_male_066;IALR_male_067;IALR_male_068;IALR_male_069;IALR_male_070;IALR_male_071;IALR_male_072;IALR_male_073;IALR_male_074;IALR_male_075;IALR_male_076;IALR_male_077;IALR_male_078;IALR_male_079;IALR_male_080;IALR_male_081;IALR_male_082;IALR_male_083;IALR_male_084;IALR_male_085;IALR_male_086;IALR_male_087;IALR_male_088;IALR_male_089;IALR_male_090;IALR_male_091;IALR_male_092;IALR_male_093;IALR_male_094;IALR_male_095;IALR_male_096;IALR_male_097;IALR_male_098;IALR_male_099;IALR_male_100;IALR_male_101;IALR_male_102;IALR_male_103;IALR_male_104;IALR_male_105;IALR_male_106;IALR_male_107;IALR_male_108;IALR_male_109;IALR_male_110;IALR_male_111;IALR_male_112;IALR_male_113;IALR_male_114;IALR_male_115;IALR_male_116;IALR_male_117;IALR_male_118;IALR_male_119;IALR_male_120;IALR_male_121;IALR_male_122;IALR_male_123;IALR_male_124;IALR_male_125;IALR_male_126;IALR_male_127;IALR_male_128;IALR_male_129;IALR_male_130;IALR_male_131;IALR_male_132;IALR_male_133;IALR_male_134;IALR_male_135;IALR_male_136;IALR_male_137;IALR_male_138;IALR_male_139;IALR_male_140;IALR_male_141;IALR_male_142;IALR_male_143;IALR_male_144;IALR_male_145;IALR_male_146;IALR_male_147;IALR_male_148;IALR_male_149;IALR_male_150;IALR_male_151;IALR_male_152;IALR_male_153;IALR_male_154;IALR_male_155;IALR_male_156;IALR_male_157;IALR_male_158;IALR_male_159;IALR_male_160;IALR_male_161;IALR_male_162;IALR_male_163;IALR_male_164;IALR_male_165;IALR_male_166;IALR_male_167;IALR_male_168;IALR_male_169;IALR_male_170;IALR_male_171;IALR_male_172;IALR_male_173;IALR_male_174;IALR_male_175;IALR_male_176;IALR_male_177;IALR_male_178;IALR_male_179;IALR_male_180;IALR_male_181;IALR_male_182;IALR_male_183;IALR_male_184;IALR_male_185;IALR_male_186;IALR_male_187;IALR_male_188;IALR_male_189;IALR_male_190;IALR_male_191;IALR_male_192;IALR_male_193;IALR_male_194;IALR_male_195;IALR_male_196;IALR_male_197;IALR_male_198;IALR_male_199;IALR_male_200;IALR_male_201;IALR_male_202;IALR_male_203;IALR_male_204;IALR_male_205;IALR_male_206;IALR_male_207;IALR_male_208;IALR_male_209;IALR_male_210;IALR_male_211;IALR_male_212;IALR_male_213;IALR_male_214;IALR_male_215;IALR_male_216;IALR_male_217;IALR_male_218;IALR_male_219;IALR_male_220;IALR_male_221;IALR_male_222;IALR_male_223;IALR_male_224;IALR_male_225;IALR_male_226;IALR_male_227;IALR_male_228;IALR_male_229;IALR_male_230;IALR_male_231;IALR_male_232;IALR_male_233;IALR_male_234;IALR_male_235;IALR_male_236;IALR_male_237;IALR_male_238;IALR_male_239;IALR_male_240;IALR_male_241;IALR_male_242;IALR_male_243;IALR_male_244;IALR_male_245;IALR_male_246;IALR_male_247;IALR_male_248;IALR_male_249;IALR_male_250;IALR_male_251;IALR_male_252;IALR_male_253;IALR_male_254;IALR_male_255;IALR_male_256;IALR_male_257;IALR_male_258;IALR_male_259;IALR_male_260;IALR_male_261;IALR_male_262;IALR_male_263;IALR_male_264;IALR_male_265;IALR_male_266;IALR_male_267;IALR_male_268;IALR_male_269;IALR_male_270;IALR_male_271;IALR_male_272;IALR_male_273;IALR_male_274;IALR_male_275;IALR_male_276;IALR_male_277;IALR_male_278;IALR_male_279;IALR_male_280;IALR_male_281;IALR_male_282;IALR_male_283;IALR_male_284;IALR_male_285;IALR_male_286;IALR_male_287;IALR_male_288;IALR_male_289;IALR_male_290;IALR_male_291;IALR_male_292;IALR_male_293;IALR_male_294;IALR_male_295;IALR_male_296;IALR_male_297;IALR_male_298;IALR_male_299;IALR_male_300;IALR_male_301;IALR_male_302;IALR_male_303;IALR_male_304;IALR_male_305;IALR_male_306;IALR_male_307;IALR_male_308;IALR_male_309;IALR_male_310;IALR_male_311;IALR_male_312;IALR_male_313;IALR_male_314;IALR_male_315;IALR_male_316;IALR_male_317;IALR_male_318;IALR_male_319;IALR_male_320;IALR_male_321;IALR_male_322;IALR_male_323;IALR_male_324;IALR_male_325;IALR_male_326;IALR_male_327;IALR_male_328;IALR_male_329;IALR_male_330;IALR_male_331;IALR_female_000;IALR_female_001;IALR_female_002;IALR_female_003;IALR_female_004;IALR_female_005;IALR_female_006;IALR_female_007;IALR_female_008;IALR_female_009;IALR_female_010;IALR_female_011;IALR_female_012;IALR_female_013;IALR_female_014;IALR_female_015;IALR_female_016;IALR_female_017;IALR_female_018;IALR_female_019;IALR_female_020;IALR_female_021;IALR_female_022;IALR_female_023;IALR_female_024;IALR_female_025;IALR_female_026;IALR_female_027;IALR_female_028;IALR_female_029;IALR_female_030;IALR_female_031;IALR_female_032;IALR_female_033;IALR_female_034;IALR_female_035;IALR_female_036;IALR_female_037;IALR_female_038;IALR_female_039;IALR_female_040;IALR_female_041;IALR_female_042;IALR_female_043;IALR_female_044;IALR_female_045;IALR_female_046;IALR_female_047;IALR_female_048;IALR_female_049")
+        SpawnCondition("z_MELEE_FIGHTER, 1;p_WIDE, 1;p_SQUARE, 1;p_ROOF, 1;p_INTERIOR, 1")
+        ForceTargetType(-1)
+        MinDistBtwZombies(5)
+        TimeBtwSpawnZombies(1)
+        CanSpawnIntoCrowd(1,"_AG")
+    }
+
+    PresetDef("Rooftop_Human_Sniper")
+    {
+        Difficult(15)
+        AIPreset("IAL_Human_Enemy_Shooter;Enemy_S_Bandit_Firearm001;Quest_Museum_HumanFirearm")
+        SpawnCondition("p_ROOF, 1;p_WIDE, 0.3;p_SQUARE, 0.3")
+        MinDistBtwZombies(1)
+        ForceTargetType(-1)
+        TimeBtwSpawnZombies(2)
+    }
+
+    PresetDef("Rooftop_Human_Patrol")
+    {
+        Difficult(10)
+        AIPreset("IAL_Human_Enemy_Melee;Enemy_S_Bandit_Melee001;Melee_Fighter_Armored")
+        SpawnCondition("p_ROOF, 1;p_WIDE, 0.2;p_SQUARE, 0.2")
+        MinDistBtwZombies(1)
+        ForceTargetType(-1)
+        TimeBtwSpawnZombies(2)
+    }
+
+    PresetDef("Rooftop_Friendly_Lookout")
+    {
+        Difficult(8)
+        AIPreset("Friendly_Survivor;IALR_male_000;IALR_male_001;IALR_male_002;IALR_male_003;IALR_male_004;IALR_male_005;IALR_male_006;IALR_male_007;IALR_male_008;IALR_male_009;IALR_male_010;IALR_male_011;IALR_male_012;IALR_male_013;IALR_male_014;IALR_male_015;IALR_male_016;IALR_male_017;IALR_male_018;IALR_male_019;IALR_male_020;IALR_male_021;IALR_male_022;IALR_male_023;IALR_male_024;IALR_male_025;IALR_male_026;IALR_male_027;IALR_male_028;IALR_male_029;IALR_male_030;IALR_male_031;IALR_male_032;IALR_male_033;IALR_male_034;IALR_male_035;IALR_male_036;IALR_male_037;IALR_male_038;IALR_male_039;IALR_male_040;IALR_male_041;IALR_male_042;IALR_male_043;IALR_male_044;IALR_male_045;IALR_male_046;IALR_male_047;IALR_male_048;IALR_male_049;IALR_male_050;IALR_male_051;IALR_male_052;IALR_male_053;IALR_male_054;IALR_male_055;IALR_male_056;IALR_male_057;IALR_male_058;IALR_male_059;IALR_male_060;IALR_male_061;IALR_male_062;IALR_male_063;IALR_male_064;IALR_male_065;IALR_male_066;IALR_male_067;IALR_male_068;IALR_male_069;IALR_male_070;IALR_male_071;IALR_male_072;IALR_male_073;IALR_male_074;IALR_male_075;IALR_male_076;IALR_male_077;IALR_male_078;IALR_male_079;IALR_male_080;IALR_male_081;IALR_male_082;IALR_male_083;IALR_male_084;IALR_male_085;IALR_male_086;IALR_male_087;IALR_male_088;IALR_male_089;IALR_male_090;IALR_male_091;IALR_male_092;IALR_male_093;IALR_male_094;IALR_male_095;IALR_male_096;IALR_male_097;IALR_male_098;IALR_male_099;IALR_male_100;IALR_male_101;IALR_male_102;IALR_male_103;IALR_male_104;IALR_male_105;IALR_male_106;IALR_male_107;IALR_male_108;IALR_male_109;IALR_male_110;IALR_male_111;IALR_male_112;IALR_male_113;IALR_male_114;IALR_male_115;IALR_male_116;IALR_male_117;IALR_male_118;IALR_male_119;IALR_male_120;IALR_male_121;IALR_male_122;IALR_male_123;IALR_male_124;IALR_male_125;IALR_male_126;IALR_male_127;IALR_male_128;IALR_male_129;IALR_male_130;IALR_male_131;IALR_male_132;IALR_male_133;IALR_male_134;IALR_male_135;IALR_male_136;IALR_male_137;IALR_male_138;IALR_male_139;IALR_male_140;IALR_male_141;IALR_male_142;IALR_male_143;IALR_male_144;IALR_male_145;IALR_male_146;IALR_male_147;IALR_male_148;IALR_male_149;IALR_male_150;IALR_male_151;IALR_male_152;IALR_male_153;IALR_male_154;IALR_male_155;IALR_male_156;IALR_male_157;IALR_male_158;IALR_male_159;IALR_male_160;IALR_male_161;IALR_male_162;IALR_male_163;IALR_male_164;IALR_male_165;IALR_male_166;IALR_male_167;IALR_male_168;IALR_male_169;IALR_male_170;IALR_male_171;IALR_male_172;IALR_male_173;IALR_male_174;IALR_male_175;IALR_male_176;IALR_male_177;IALR_male_178;IALR_male_179;IALR_male_180;IALR_male_181;IALR_male_182;IALR_male_183;IALR_male_184;IALR_male_185;IALR_male_186;IALR_male_187;IALR_male_188;IALR_male_189;IALR_male_190;IALR_male_191;IALR_male_192;IALR_male_193;IALR_male_194;IALR_male_195;IALR_male_196;IALR_male_197;IALR_male_198;IALR_male_199;IALR_male_200;IALR_male_201;IALR_male_202;IALR_male_203;IALR_male_204;IALR_male_205;IALR_male_206;IALR_male_207;IALR_male_208;IALR_male_209;IALR_male_210;IALR_male_211;IALR_male_212;IALR_male_213;IALR_male_214;IALR_male_215;IALR_male_216;IALR_male_217;IALR_male_218;IALR_male_219;IALR_male_220;IALR_male_221;IALR_male_222;IALR_male_223;IALR_male_224;IALR_male_225;IALR_male_226;IALR_male_227;IALR_male_228;IALR_male_229;IALR_male_230;IALR_male_231;IALR_male_232;IALR_male_233;IALR_male_234;IALR_male_235;IALR_male_236;IALR_male_237;IALR_male_238;IALR_male_239;IALR_male_240;IALR_male_241;IALR_male_242;IALR_male_243;IALR_male_244;IALR_male_245;IALR_male_246;IALR_male_247;IALR_male_248;IALR_male_249;IALR_male_250;IALR_male_251;IALR_male_252;IALR_male_253;IALR_male_254;IALR_male_255;IALR_male_256;IALR_male_257;IALR_male_258;IALR_male_259;IALR_male_260;IALR_male_261;IALR_male_262;IALR_male_263;IALR_male_264;IALR_male_265;IALR_male_266;IALR_male_267;IALR_male_268;IALR_male_269;IALR_male_270;IALR_male_271;IALR_male_272;IALR_male_273;IALR_male_274;IALR_male_275;IALR_male_276;IALR_male_277;IALR_male_278;IALR_male_279;IALR_male_280;IALR_male_281;IALR_male_282;IALR_male_283;IALR_male_284;IALR_male_285;IALR_male_286;IALR_male_287;IALR_male_288;IALR_male_289;IALR_male_290;IALR_male_291;IALR_male_292;IALR_male_293;IALR_male_294;IALR_male_295;IALR_male_296;IALR_male_297;IALR_male_298;IALR_male_299;IALR_male_300;IALR_male_301;IALR_male_302;IALR_male_303;IALR_male_304;IALR_male_305;IALR_male_306;IALR_male_307;IALR_male_308;IALR_male_309;IALR_male_310;IALR_male_311;IALR_male_312;IALR_male_313;IALR_male_314;IALR_male_315;IALR_male_316;IALR_male_317;IALR_male_318;IALR_male_319;IALR_male_320;IALR_male_321;IALR_male_322;IALR_male_323;IALR_male_324;IALR_male_325;IALR_male_326;IALR_male_327;IALR_male_328;IALR_male_329;IALR_male_330;IALR_male_331;IALR_female_000;IALR_female_001;IALR_female_002;IALR_female_003;IALR_female_004;IALR_female_005;IALR_female_006;IALR_female_007;IALR_female_008;IALR_female_009;IALR_female_010;IALR_female_011;IALR_female_012;IALR_female_013;IALR_female_014;IALR_female_015;IALR_female_016;IALR_female_017;IALR_female_018;IALR_female_019;IALR_female_020;IALR_female_021;IALR_female_022;IALR_female_023;IALR_female_024;IALR_female_025;IALR_female_026;IALR_female_027;IALR_female_028;IALR_female_029;IALR_female_030;IALR_female_031;IALR_female_032;IALR_female_033;IALR_female_034;IALR_female_035;IALR_female_036;IALR_female_037;IALR_female_038;IALR_female_039;IALR_female_040;IALR_female_041;IALR_female_042;IALR_female_043;IALR_female_044;IALR_female_045;IALR_female_046;IALR_female_047;IALR_female_048;IALR_female_049")
+        SpawnCondition("p_ROOF, 1;p_WIDE, 0.1")
+        MinDistBtwZombies(1)
+        ForceTargetType(-1)
+        TimeBtwSpawnZombies(2)
+    }
+        
